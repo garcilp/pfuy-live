@@ -1,0 +1,143 @@
+{
+  "player": {
+    "tag": "Pato",
+    "photo": "assets/players/2123673.png",
+    "sponsor": "Oca de Oro",
+    "city": "ciudad de méxico",
+    "country": "Mexico",
+    "location": "ciudad de méxico, Mexico",
+    "activeSince": "2021-09-19",
+    "startgg": "https://www.start.gg/user/9c4cefa4",
+    "startggPlayerId": "2123673",
+    "aliases": [
+      "Pato"
+    ]
+  },
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [
+        {
+          "opponent": "Alberti",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Fraps",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "L'Ongels",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "ElDenis",
+          "sets": 1,
+          "wins": 1
+        }
+      ],
+      "events": 1,
+      "wins": 2,
+      "losses": 2,
+      "upsets": 0,
+      "bestPlace": 5,
+      "bestEvent": "TORNEO RZ SUPER SMASH BROS ULTIMATE ( LOCAL ) · Torneo LOCAL RZeSports SSBU - #1",
+      "avgPlace": 5.0,
+      "avgSeed": 6,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "torneo cat B rzesports septiembre · Torneo Local CAT B rzesports",
+          "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
+          "date": "2021-09-19",
+          "seed": 6,
+          "place": 5,
+          "entrants": 20,
+          "sets": [
+            {
+              "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
+              "event": "torneo cat B rzesports septiembre · Torneo Local CAT B rzesports",
+              "phase": "Categoria B",
+              "round": "Winners Round 2",
+              "opponent": "ElDenis",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1632082640,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
+              "event": "torneo cat B rzesports septiembre · Torneo Local CAT B rzesports",
+              "phase": "Categoria B",
+              "round": "Winners Quarter-Final",
+              "opponent": "L'Ongels",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1632086100,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
+              "event": "torneo cat B rzesports septiembre · Torneo Local CAT B rzesports",
+              "phase": "Categoria B",
+              "round": "Winners Semi-Final",
+              "opponent": "Alberti",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1632087738,
+              "phaseOrder": 1,
+              "roundOrder": 4
+            },
+            {
+              "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
+              "event": "torneo cat B rzesports septiembre · Torneo Local CAT B rzesports",
+              "phase": "Categoria B",
+              "round": "Losers Quarter-Final",
+              "opponent": "Fraps",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1632088833,
+              "phaseOrder": 1,
+              "roundOrder": -8
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
+              "event": "torneo cat B rzesports septiembre · Torneo Local CAT B rzesports",
+              "date": "2021-09-19",
+              "seed": 6,
+              "place": 5,
+              "entrants": 20,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

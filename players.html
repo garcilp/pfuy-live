@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050B1F">
+<title>Players · Platfighters.uy</title>
+<link rel="icon" href="assets/logo.jpg">
+<script>
+(function(){
+  var t=null;
+  try{t=localStorage.getItem('pfuy-theme');}catch(e){}
+  if(!t){
+    if(window.matchMedia&&window.matchMedia('(prefers-contrast: more)').matches){t='high-contrast';}
+    else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches){t='daylight';}
+    else{t='default';}
+  }
+  document.documentElement.dataset.theme=t;
+})();
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar glass pill">
+  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt=""><span>Platfighters<span class="tld">.uy</span></span></a>
+  <span class="spacer"></span>
+  <nav><a class="nav-active" aria-current="page" href="players.html" data-i18n="nav.players">Players</a><a href="events.html" data-i18n="nav.events">Events</a><a href="rankings.html" data-i18n="nav.rankings">Rankings</a></nav>
+  <div class="lang glass pill"><button type="button" class="lang-btn on" data-lang="en">EN</button><button type="button" class="lang-btn" data-lang="es">ES</button></div>
+</header>
+<main class="directory page-single">
+  <section class="directory-head">
+    <div><div class="eyebrow mono" data-i18n="players.eyebrow">START.GG PLAYER DATA</div><h1 data-i18n="players.title">Players</h1><p class="muted" data-i18n="players.desc">Browse competitors across the games we follow.</p></div>
+    <div class="directory-controls">
+      <label class="search glass"><span aria-hidden="true">⌕</span><input id="player-search" type="search" placeholder="Search players or tags" data-i18n-placeholder="players.search.placeholder" autocomplete="off" aria-label="Search players"></label>
+      <div class="directory-filter-row">
+        <label class="game-filter-wrap"><span class="sr-only">Filter by game</span><select id="game-filter" class="game-filter glass" aria-label="Filter players by game"><option value="" data-i18n="players.filter.allGames">All games</option></select></label>
+        <label class="game-filter-wrap"><span class="sr-only">Player list display</span><select id="player-view" class="game-filter glass" aria-label="Player list display"><option value="condensed" selected data-i18n="players.view.condensed">Condensed list</option><option value="cards" data-i18n="players.view.cards">Cards</option></select></label>
+      </div>
+    </div>
+  </section>
+  <p id="directory-status" class="directory-status mono muted" aria-live="polite" data-i18n="players.loading">Loading player profiles…</p>
+  <section id="player-list" class="player-list" aria-label="Player list"></section>
+</main>
+<footer class="foot mono muted" data-i18n="footer.players">Platfighters.uy · Player directory</footer>
+<script src="js/i18n.js"></script>
+<script src="js/pr-badges.js"></script>
+<script src="js/players.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

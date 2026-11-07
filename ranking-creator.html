@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050B1F">
+<title>Ranking Creator · Platfighters.uy</title>
+<link rel="icon" href="assets/logo.jpg">
+<script>
+(function(){
+  var t=null;
+  try{t=localStorage.getItem('pfuy-theme');}catch(e){}
+  if(!t){
+    if(window.matchMedia&&window.matchMedia('(prefers-contrast: more)').matches){t='high-contrast';}
+    else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches){t='daylight';}
+    else{t='default';}
+  }
+  document.documentElement.dataset.theme=t;
+})();
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/creator.css">
+</head>
+<body class="creator-page">
+<header class="topbar glass pill">
+  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt=""><span>Platfighters<span class="tld">.uy</span></span></a>
+  <span class="spacer"></span>
+  <nav>
+    <a href="players.html" data-i18n="nav.players">Players</a>
+    <a href="events.html" data-i18n="nav.events">Events</a>
+    <a class="nav-active" aria-current="page" href="rankings.html" data-i18n="nav.rankings">Rankings</a>
+  </nav>
+  <div class="lang glass pill"><button type="button" class="lang-btn on" data-lang="en">EN</button><button type="button" class="lang-btn" data-lang="es">ES</button></div>
+</header>
+
+<main class="page">
+  <section class="head-panel glass">
+    <div class="head-text">
+      <div class="crumb">Rankings › <span id="crumbGame">Rivals 2</span> › New ranking</div>
+      <div class="title-row"><h1>New power ranking</h1><span class="tagpill">DRAFT</span></div>
+      <div id="sub" class="muted" style="font-size:14px"></div>
+    </div>
+    <div class="actions">
+      <div class="action-group-preview">
+        <button type="button" id="previewBtn" class="btn glass pill" data-act="preview">Preview</button>
+      </div>
+      <div class="action-group-io">
+        <button type="button" id="importBtn" class="btn glass pill" data-act="import">Import</button>
+        <button type="button" id="exportBtn" class="btn glass pill" data-act="export">Export</button>
+      </div>
+      <div class="action-group-share">
+        <button type="button" id="shareBtn" class="btn glass pill" data-act="share">Share</button>
+        <button type="button" id="exportImgBtn" class="btn glass pill" data-act="export-image">Export Image</button>
+      </div>
+      <div id="adminActionGroup" class="action-group-admin" hidden>
+        <button type="button" id="publishBtn" class="btn primary pill" data-act="publish">Publish</button>
+      </div>
+      <input type="file" id="importFileInput" accept=".json,application/json" hidden>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div id="side" class="side-col"></div>
+    <div class="col">
+      <section id="details" class="panel glass"></section>
+      <section id="editor" class="panel glass"></section>
+    </div>
+  </div>
+
+  <dialog id="player-select-modal" class="player-select-modal glass">
+    <div class="modal-header">
+      <div>
+        <h2 id="playerModalTitle">Select Player</h2>
+        <div id="playerModalSub" class="sub muted">Search and select a player from the directory</div>
+      </div>
+      <button type="button" class="x glass pill" id="closePlayerModalBtn" aria-label="Close">×</button>
+    </div>
+    <div class="player-search-bar">
+      <input type="search" id="playerSearchInput" class="inp" placeholder="Search by gamer tag, ID, or alias..." autocomplete="off">
+    </div>
+    <div id="playerSelectList" class="player-select-list"></div>
+  </dialog>
+
+  <dialog id="win-select-modal" class="player-select-modal glass">
+    <div class="modal-header">
+      <div>
+        <h2 id="winModalTitle">Select Notable Win</h2>
+        <div id="winModalSub" class="sub muted">Select an opponent defeated during this period</div>
+      </div>
+      <button type="button" class="x glass pill" id="closeWinModalBtn" aria-label="Close">×</button>
+    </div>
+    <div id="winSelectList" class="player-select-list"></div>
+    <div style="margin-top:14px;display:flex;justify-content:flex-end;">
+      <button type="button" class="btn glass pill" id="addBlankWinBtn">+ Add blank win</button>
+    </div>
+  </dialog>
+
+  <dialog id="event-select-modal" class="player-select-modal glass">
+    <div class="modal-header">
+      <div>
+        <h2 id="eventModalTitle">Select Event Result</h2>
+        <div id="eventModalSub" class="sub muted">Select an event from this player's tournament history</div>
+      </div>
+      <button type="button" class="x glass pill" id="closeEventModalBtn" aria-label="Close">×</button>
+    </div>
+    <div id="eventSelectList" class="player-select-list"></div>
+    <div style="margin-top:14px;display:flex;justify-content:flex-end;">
+      <button type="button" class="btn glass pill" id="addBlankResultBtn">+ Add blank result</button>
+    </div>
+  </dialog>
+
+  <dialog id="crop-modal" class="player-select-modal glass crop-modal">
+    <div class="modal-header">
+      <div>
+        <h2 id="cropModalTitle">Crop Player Picture</h2>
+        <div id="cropModalSub" class="sub muted">Drag image to adjust crop position and use the slider to zoom</div>
+      </div>
+      <button type="button" class="x glass pill" id="closeCropModalBtn" aria-label="Close">×</button>
+    </div>
+    <div class="crop-modal-body">
+      <div class="crop-viewport" id="cropViewport">
+        <canvas id="cropCanvas" width="240" height="293"></canvas>
+      </div>
+      <div class="crop-controls">
+        <div class="crop-control-group">
+          <label for="cropZoomSlider" class="sub mono" id="cropZoomLabel">ZOOM</label>
+          <input type="range" id="cropZoomSlider" min="1" max="3" step="0.01" value="1" class="crop-zoom-slider">
+        </div>
+      </div>
+    </div>
+    <div class="crop-modal-footer">
+      <button type="button" class="btn glass pill" id="cancelCropBtn">Cancel</button>
+      <button type="button" class="btn glass pill crop-apply-btn" id="applyCropBtn">Apply Picture</button>
+    </div>
+  </dialog>
+</main>
+
+<footer class="foot mono muted" data-i18n="footer.creator">Platfighters.uy · Community Rankings</footer>
+<script src="js/i18n.js"></script>
+<script src="js/common.js"></script>
+<script src="js/export.js"></script>
+<script src="js/creator.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+{
+  "player": {
+    "tag": "Pantufla",
+    "photo": "assets/players/2065560.png",
+    "sponsor": "",
+    "city": "",
+    "country": "Argentina",
+    "location": "Argentina",
+    "activeSince": "2021-10-24",
+    "startgg": "https://www.start.gg/user/ffefa393",
+    "startggPlayerId": "2065560",
+    "aliases": [
+      "Pantufla"
+    ]
+  },
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [
+        {
+          "opponent": "Malek",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "S",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Gerix",
+          "sets": 1,
+          "wins": 1
+        }
+      ],
+      "events": 1,
+      "wins": 1,
+      "losses": 2,
+      "upsets": 0,
+      "bestPlace": 13,
+      "bestEvent": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
+      "avgPlace": 13.0,
+      "avgSeed": 20,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+          "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+          "date": "2021-10-24",
+          "seed": 20,
+          "place": 13,
+          "entrants": 22,
+          "sets": [
+            {
+              "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+              "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+              "phase": "Categoria B",
+              "round": "Winners Round 1",
+              "opponent": "Gerix",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1635105706,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+              "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+              "phase": "Categoria B",
+              "round": "Winners Round 2",
+              "opponent": "S",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1635106789,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+              "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+              "phase": "Categoria B",
+              "round": "Losers Round 2",
+              "opponent": "Malek",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1635107755,
+              "phaseOrder": 1,
+              "roundOrder": -5
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+              "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+              "date": "2021-10-24",
+              "seed": 20,
+              "place": 13,
+              "entrants": 22,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

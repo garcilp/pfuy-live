@@ -1,0 +1,300 @@
+{
+  "player": {
+    "tag": "Sagat",
+    "photo": "assets/players/1724813.png",
+    "sponsor": "",
+    "city": "",
+    "country": "Uruguay",
+    "location": "Uruguay",
+    "activeSince": "2017-05-27",
+    "startgg": "",
+    "startggPlayerId": "1724813",
+    "aliases": [
+      "Sagat"
+    ]
+  },
+  "games": [
+    {
+      "id": "melee",
+      "slug": "melee",
+      "name": "Melee",
+      "headToHead": [
+        {
+          "opponent": "RazorBlade",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Iguana",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "Renzo",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pladson",
+          "sets": 1,
+          "wins": 1
+        }
+      ],
+      "events": 1,
+      "wins": 4,
+      "losses": 2,
+      "upsets": 0,
+      "bestPlace": 2,
+      "bestEvent": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+      "avgPlace": 2.0,
+      "avgSeed": null,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+          "date": "2017-05-27",
+          "seed": null,
+          "place": 2,
+          "entrants": 16,
+          "sets": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Pladson",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495909335,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Renzo",
+              "score": "3–2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495911389,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Semi-Final",
+              "opponent": "Iguana",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495913300,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Final",
+              "opponent": "RazorBlade",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495914260,
+              "phaseOrder": 1,
+              "roundOrder": 4
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Final",
+              "opponent": "Iguana",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495917467,
+              "phaseOrder": 1,
+              "roundOrder": -8
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Grand Final",
+              "opponent": "RazorBlade",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495918175,
+              "phaseOrder": 1,
+              "roundOrder": 5
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
+              "date": "2017-05-27",
+              "seed": null,
+              "place": 2,
+              "entrants": 16,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-plus",
+      "slug": "project-plus",
+      "name": "Project+",
+      "headToHead": [
+        {
+          "opponent": "RazorBlade",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Renzo",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "DIO",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Transformación",
+          "sets": 1,
+          "wins": 1
+        }
+      ],
+      "events": 1,
+      "wins": 2,
+      "losses": 2,
+      "upsets": 0,
+      "bestPlace": 5,
+      "bestEvent": "Montevideo Melee Monthly 2017 #5 · PM Singles",
+      "avgPlace": 5.0,
+      "avgSeed": null,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Montevideo Melee Monthly 2017 #5 · PM Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
+          "date": "2017-05-27",
+          "seed": null,
+          "place": 5,
+          "entrants": 16,
+          "sets": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · PM Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "DIO",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495922876,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · PM Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "Transformación",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495924029,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · PM Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "Renzo",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495925109,
+              "phaseOrder": 1,
+              "roundOrder": -5
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · PM Singles",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "RazorBlade",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1495925553,
+              "phaseOrder": 1,
+              "roundOrder": -6
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
+              "event": "Montevideo Melee Monthly 2017 #5 · PM Singles",
+              "date": "2017-05-27",
+              "seed": null,
+              "place": 5,
+              "entrants": 16,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
