@@ -76,6 +76,12 @@ Promise.all(loadPromises)
       draft.createdBy = draft.createdBy || '';
       if (draft.status === 'current') draft.status = 'yearly';
       else if (draft.status === 'final') draft.status = 'seasonal';
+      if (draft.players) {
+        draft.players.forEach(p => {
+          if (p.notableResults) sortNotableResults(p.notableResults);
+          if (p.notableWins) sortNotableWins(p.notableWins, draft.players);
+        });
+      }
       dirty = false;
     } else if (prSnapshot) {
       const matchingGame = games.find(gm => gm.slug === prSnapshot.game?.slug || gm.id === prSnapshot.game?.id) || games[0];
@@ -391,6 +397,7 @@ function selectWinOpponent(idx) {
   } else {
     p.notableWins.push({ opponent: w.opponent, tournament: w.tournament || '' });
   }
+  sortNotableWins(p.notableWins, draft.players);
   dirty = true;
   closeWinModal();
   preserveScroll(() => {
@@ -527,6 +534,7 @@ function selectEventForNotableResult(idx) {
     event: tournamentName,
     entrants: ev.entrants ?? null
   });
+  sortNotableResults(p.notableResults);
   dirty = true;
   closeEventModal();
   preserveScroll(() => {
@@ -599,6 +607,7 @@ async function updateNotableWinStats(winIndex, opponentTag, opponentId) {
     console.warn('Could not compute notable win stats:', err);
   }
 
+  sortNotableWins(p.notableWins, draft.players);
   dirty = true;
   refresh();
   renderEditor();
@@ -637,6 +646,7 @@ document.addEventListener('click', e => {
     if (p) {
       p.notableResults = p.notableResults || [];
       p.notableResults.push({ placement: null, event: '', entrants: null });
+      sortNotableResults(p.notableResults);
       dirty = true;
       closeEventModal();
       preserveScroll(() => {
@@ -660,6 +670,7 @@ document.addEventListener('click', e => {
     if (p) {
       p.notableWins = p.notableWins || [];
       p.notableWins.push({ opponent: '', tournament: '' });
+      sortNotableWins(p.notableWins, draft.players);
       dirty = true;
       closeWinModal();
       preserveScroll(() => {
@@ -929,6 +940,49 @@ document.addEventListener('drop', e => {
 
 const OPT = { realName: '', mains: [], text: '', notableWins: [], notableResults: [] };
 const nums = v => String(v).trim() === '' ? null : Number(String(v).replace(/[^\d]/g, ''));
+
+function sortNotableResults(results) {
+  if (!Array.isArray(results) || results.length <= 1) return results;
+  return results.sort((a, b) => {
+    const placeA = (a.placement !== null && a.placement !== undefined && !Number.isNaN(Number(a.placement))) ? Number(a.placement) : Infinity;
+    const placeB = (b.placement !== null && b.placement !== undefined && !Number.isNaN(Number(b.placement))) ? Number(b.placement) : Infinity;
+    if (placeA !== placeB) {
+      return placeA - placeB;
+    }
+    const entA = (a.entrants !== null && a.entrants !== undefined && !Number.isNaN(Number(a.entrants))) ? Number(a.entrants) : -Infinity;
+    const entB = (b.entrants !== null && b.entrants !== undefined && !Number.isNaN(Number(b.entrants))) ? Number(b.entrants) : -Infinity;
+    if (entA !== entB) {
+      return entB - entA;
+    }
+    return (a.event || '').localeCompare(b.event || '');
+  });
+}
+
+function getOpponentRankingPoints(opponentName, players) {
+  if (!opponentName || !Array.isArray(players)) return -Infinity;
+  const target = String(opponentName).trim().toLowerCase();
+  const matched = players.find(p => {
+    if (p.tag && String(p.tag).trim().toLowerCase() === target) return true;
+    if (p.playerId && String(p.playerId).trim() === target) return true;
+    return false;
+  });
+  if (matched && matched.points !== null && matched.points !== undefined && !Number.isNaN(Number(matched.points))) {
+    return Number(matched.points);
+  }
+  return -Infinity;
+}
+
+function sortNotableWins(wins, players = draft?.players) {
+  if (!Array.isArray(wins) || wins.length <= 1) return wins;
+  return wins.sort((a, b) => {
+    const ptsA = getOpponentRankingPoints(a.opponent, players);
+    const ptsB = getOpponentRankingPoints(b.opponent, players);
+    if (ptsA !== ptsB) {
+      return ptsB - ptsA;
+    }
+    return (a.opponent || '').localeCompare(b.opponent || '');
+  });
+}
 const parseDecimal = v => {
   const s = String(v ?? '').trim().replace(/,/g, '');
   if (!s) return null;
@@ -991,19 +1045,19 @@ async function getProfileData(playerId, tag) {
 function resolvePlayerPortrait(p) {
   const gslug = draft?.game?.slug || 'ultimate';
   if (p && Array.isArray(p.mains) && p.mains.length) {
-    const cslug = charStockSlug(p.mains[0]);
-    return `assets/renders/${gslug}/portraits/${cslug}.webp`;
+    return charPortraitPath(gslug, p.mains[0]);
   }
   const defaultChar = (gameCharacters[gslug] && gameCharacters[gslug][0]) ? gameCharacters[gslug][0] : 'other';
-  return `assets/renders/${gslug}/portraits/${charStockSlug(defaultChar)}.webp`;
+  return charPortraitPath(gslug, defaultChar);
 }
 
 function getPlayerPictureSrc(p) {
+  const gslug = draft?.game?.slug || 'ultimate';
   const isAdminCreation = isAdmin && requestedMode === 'admin';
   if (isAdminCreation) {
-    return p._preview || p.photo || (p.playerId ? `assets/players/${p.playerId}.png` : '');
+    return p._preview || p.photo || (p.playerId ? `assets/players/${p.playerId}.png` : (p._resolvedPortrait || (p.mains && p.mains.length ? charPortraitPath(gslug, p.mains[0]) : '')));
   }
-  return p._resolvedPortrait || (p.mains && p.mains.length ? `assets/renders/${draft?.game?.slug || 'ultimate'}/portraits/${charStockSlug(p.mains[0])}.webp` : '');
+  return p._resolvedPortrait || (p.mains && p.mains.length ? charPortraitPath(gslug, p.mains[0]) : `assets/renders/${gslug}/portraits/other.webp`);
 }
 
 const rowId = () => draft.id || `${draft.game.id}-${slug(draft.title || 'ranking')}`;
@@ -1031,21 +1085,69 @@ function renderSub() {
   $('#sub').textContent = `${isEs ? 'Comunidad de ' + draft.game.name : draft.game.name + ' community'} · ${statusStr}`;
 }
 
-function populateFromSnapshot(count) {
+async function populateFromSnapshot(count) {
   if (!prSnapshot || !prSnapshot.players || !prSnapshot.players.length) return;
   const countNum = parseInt(count, 10);
   const playersToTake = prSnapshot.players.slice(0, countNum);
 
-  draft.players = playersToTake.map((p, idx) => ({
-    placement: idx + 1,
-    tag: p.tag || '',
-    points: p.points !== null && p.points !== undefined ? p.points : null,
-    photo: p.photo || '',
-    playerId: p.playerId || ''
-  }));
+  draft.players = playersToTake.map((p, idx) => {
+    const matchedProfile = allProfiles.find(x =>
+      (p.playerId && String(x.playerId) === String(p.playerId)) ||
+      (p.tag && x.tag && x.tag.trim().toLowerCase() === String(p.tag).trim().toLowerCase())
+    );
+    const sponsor = (p.sponsor !== undefined && p.sponsor !== null && p.sponsor !== '')
+      ? p.sponsor
+      : (matchedProfile?.sponsor || '');
+
+    const playerObj = {
+      placement: idx + 1,
+      tag: p.tag || '',
+      sponsor: sponsor,
+      points: p.points !== null && p.points !== undefined ? p.points : null,
+      photo: p.photo || '',
+      playerId: p.playerId || ''
+    };
+
+    if (Array.isArray(p.mains) && p.mains.length) {
+      playerObj.mains = [...p.mains];
+    }
+
+    return playerObj;
+  });
+
+  // Automatically populate most-used character for each player from profile data
+  const gslug = draft.game?.slug || prSnapshot.game?.slug || 'ultimate';
+
+  const enrichPromises = draft.players.map(async (p) => {
+    try {
+      const prof = await getProfileData(p.playerId, p.tag);
+      if (prof) {
+        if (!p.sponsor && prof.player && prof.player.sponsor) {
+          p.sponsor = prof.player.sponsor;
+        }
+        if (!p.mains || !p.mains.length) {
+          const gamesArr = prof.games || [];
+          const curGame = gamesArr.find(g => g.slug === gslug || g.id === gslug) || gamesArr[0];
+          if (curGame && Array.isArray(curGame.characters) && curGame.characters.length > 0) {
+            const specificChar = curGame.characters.find(c => c && c.name && c.name !== 'Other');
+            const topChar = specificChar || curGame.characters[0];
+            if (topChar && topChar.name) {
+              p.mains = [topChar.name];
+            }
+          }
+        }
+      }
+    } catch (err) {
+      console.warn('Could not enrich player from profile:', p.tag, err);
+    }
+    p._resolvedPortrait = resolvePlayerPortrait(p);
+  });
 
   sel = 0;
   dirty = true;
+  renderAll();
+
+  await Promise.all(enrichPromises);
   renderAll();
 }
 
@@ -1188,8 +1290,11 @@ function renderEditor() {
   const p = draft.players[sel] || draft.players[0];
   const n = sel + 1, k = kind(p);
   const isAdminCreation = isAdmin && requestedMode === 'admin';
+  const gslug = draft?.game?.slug || 'ultimate';
   const picSrc = getPlayerPictureSrc(p);
-  const pic = picSrc ? `<img src="${esc(picSrc)}" alt="" onerror="this.remove()">` : '';
+  const genericFallback = `assets/renders/${gslug}/portraits/other.webp`;
+  const portraitFallback = p._resolvedPortrait || (p.mains && p.mains.length ? charPortraitPath(gslug, p.mains[0]) : genericFallback);
+  const pic = picSrc ? `<img src="${esc(picSrc)}" data-portrait="${esc(portraitFallback)}" data-generic="${esc(genericFallback)}" alt="" onerror="if(!this.dataset.triedPortrait && this.dataset.portrait && this.src !== this.dataset.portrait){this.dataset.triedPortrait='1';this.src=this.dataset.portrait;}else if(!this.dataset.triedGeneric && this.src !== this.dataset.generic){this.dataset.triedGeneric='1';this.src=this.dataset.generic;}else{this.remove();}">` : '';
   const sec = (key, title, body) => { const on = p[key] !== undefined;
     return `<div class="sec glass" data-sec="${key}"><div class="sh"><b>${title}</b><span class="sp"></span><button type="button" class="tog${on ? ' on' : ''}" role="switch" aria-checked="${on}" aria-label="${title}" data-act="toggle" data-k="${key}"></button></div>${on ? body : ''}</div>`; };
   const seg = (i, cur) => `<span class="seg glass pill">${[['tournament', 'Tournament'], ['times', 'Times']].map(([v, l]) => `<button type="button" class="${cur === v ? 'on' : ''}" data-act="fmt" data-i="${i}" data-v="${v}">${l}</button>`).join('')}</span>`;
@@ -1269,11 +1374,30 @@ function onInput(e) {
   } else if (d.pbind) {
     const p = draft.players[sel];
     p[d.pbind] = d.pbind === 'points' ? parseDecimal(t.value) : t.value;
+    if (d.pbind === 'points') {
+      if (draft.players) {
+        draft.players.forEach(pl => {
+          if (pl.notableWins) sortNotableWins(pl.notableWins, draft.players);
+        });
+      }
+    }
     if (d.pbind === 'text') $('#textCount').textContent = `${t.value.length} characters`;
-    if (d.pbind === 'tag') $('.nm').textContent = t.value || 'New player';
+    if (d.pbind === 'tag') {
+      $('.nm').textContent = t.value || 'New player';
+      if (draft.players) {
+        draft.players.forEach(pl => {
+          if (pl.notableWins) sortNotableWins(pl.notableWins, draft.players);
+        });
+      }
+    }
   } else if (d.row) {
     const r = draft.players[sel][d.row][+d.i];
     r[d.f] = ['times', 'placement', 'entrants'].includes(d.f) ? nums(t.value) : t.value;
+    if (d.row === 'notableResults') {
+      sortNotableResults(draft.players[sel].notableResults);
+    } else if (d.row === 'notableWins') {
+      sortNotableWins(draft.players[sel].notableWins, draft.players);
+    }
   } else return;
   dirty = true; refresh();
 }
@@ -1780,6 +1904,7 @@ function validateAndSanitizeImport(data) {
         times: (w.times !== undefined && w.times !== null && !Number.isNaN(Number(w.times))) ? Number(w.times) : undefined,
         tournament: typeof w.tournament === 'string' ? w.tournament.slice(0, 100) : undefined
       }));
+      sortNotableWins(playerObj.notableWins, data.players);
     }
 
     if (Array.isArray(p.notableResults)) {
@@ -1788,6 +1913,7 @@ function validateAndSanitizeImport(data) {
         event: r.event.slice(0, 120),
         entrants: (r.entrants !== null && r.entrants !== undefined) ? Number(r.entrants) : null
       }));
+      sortNotableResults(playerObj.notableResults);
     }
 
     sanitized.players.push(playerObj);
