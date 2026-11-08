@@ -10,6 +10,7 @@
     "startgg": "https://www.start.gg/user/d0cf96f0",
     "startggPlayerId": "228886",
     "aliases": [
+      "Franco",
       "Pencil"
     ]
   },
@@ -20,7 +21,12 @@
       "name": "Melee",
       "headToHead": [
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
+          "sets": 12,
+          "wins": 4
+        },
+        {
+          "opponent": "Smeag",
           "sets": 12,
           "wins": 4
         },
@@ -30,19 +36,14 @@
           "wins": 1
         },
         {
+          "opponent": "Transformación",
+          "sets": 11,
+          "wins": 0
+        },
+        {
           "opponent": "francokiwi",
           "sets": 11,
           "wins": 1
-        },
-        {
-          "opponent": "Smeag",
-          "sets": 11,
-          "wins": 4
-        },
-        {
-          "opponent": "Transformación",
-          "sets": 10,
-          "wins": 0
         },
         {
           "opponent": "kalarse",
@@ -60,6 +61,11 @@
           "wins": 1
         },
         {
+          "opponent": "Sagat",
+          "sets": 8,
+          "wins": 1
+        },
+        {
           "opponent": "Pladson",
           "sets": 7,
           "wins": 2
@@ -70,14 +76,14 @@
           "wins": 0
         },
         {
-          "opponent": "Rockletz",
+          "opponent": "S1R",
           "sets": 6,
           "wins": 1
         },
         {
-          "opponent": "Sagat",
-          "sets": 5,
-          "wins": 0
+          "opponent": "Rockletz",
+          "sets": 6,
+          "wins": 1
         },
         {
           "opponent": "Zeeka",
@@ -85,14 +91,19 @@
           "wins": 4
         },
         {
-          "opponent": "S1R",
-          "sets": 5,
-          "wins": 0
-        },
-        {
           "opponent": "Azrad",
           "sets": 4,
           "wins": 4
+        },
+        {
+          "opponent": "Cody",
+          "sets": 4,
+          "wins": 0
+        },
+        {
+          "opponent": "Cubax",
+          "sets": 3,
+          "wins": 0
         },
         {
           "opponent": "DIO",
@@ -125,16 +136,6 @@
           "wins": 0
         },
         {
-          "opponent": "Cody",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "cubax",
-          "sets": 2,
-          "wins": 0
-        },
-        {
           "opponent": "Trim",
           "sets": 2,
           "wins": 2
@@ -155,6 +156,11 @@
           "wins": 1
         },
         {
+          "opponent": "Alfa",
+          "sets": 1,
+          "wins": 1
+        },
+        {
           "opponent": "anki",
           "sets": 1,
           "wins": 1
@@ -165,14 +171,14 @@
           "wins": 1
         },
         {
-          "opponent": "EpicDVD",
+          "opponent": "ElFida",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "PorritoCody",
+          "opponent": "EpicDVD",
           "sets": 1,
-          "wins": 0
+          "wins": 1
         },
         {
           "opponent": "XxJudioSlayerxX",
@@ -235,18 +241,18 @@
           "wins": 0
         },
         {
-          "opponent": "Rey rata(no me mires)",
+          "opponent": "Rey Rata",
           "sets": 1,
           "wins": 1
         }
       ],
-      "events": 43,
-      "wins": 50,
-      "losses": 110,
-      "upsets": 12,
-      "bestPlace": 4,
-      "bestEvent": "2 times",
-      "avgPlace": 8.7,
+      "events": 46,
+      "wins": 54,
+      "losses": 116,
+      "upsets": 15,
+      "bestPlace": 3,
+      "bestEvent": "ColisionSmash Melee · Melee Singles",
+      "avgPlace": 8.6,
       "avgSeed": 9,
       "characters": [
         {
@@ -259,6 +265,18 @@
         }
       ],
       "notableWins": [
+        {
+          "opponent": "S1R",
+          "seed": 1,
+          "ownSeed": 9,
+          "upsetFactor": 9.0,
+          "score": "2–0",
+          "phase": "Melee Singles",
+          "round": "Winners Quarter-Final",
+          "event": "ColisionSmash Melee · Melee Singles",
+          "date": "2025-05-12",
+          "count": 1
+        },
         {
           "opponent": "Sol!d",
           "seed": 3,
@@ -294,18 +312,6 @@
           "event": "Montevideo Melee Monthly 2019 #8 · Melee Singles",
           "date": "2019-08-31",
           "count": 1
-        },
-        {
-          "opponent": "Smeag",
-          "seed": 5,
-          "ownSeed": 10,
-          "upsetFactor": 2.0,
-          "score": "3–1",
-          "phase": "Melee Singles Bracket",
-          "round": "Winners Round 1",
-          "event": "Montevideo Melee Monthly 2019 #1 · Melee Singles",
-          "date": "2019-01-26",
-          "count": 1
         }
       ],
       "results": [
@@ -322,7 +328,7 @@
               "event": "Montevideo Melee Monthly 2026 #5 · Super Smash Bros. Melee",
               "phase": "Bracket",
               "round": "Winners Round 1",
-              "opponent": "PorritoCody",
+              "opponent": "Cody",
               "score": "0–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -854,6 +860,108 @@
           ]
         },
         {
+          "event": "ColisionSmash Melee · Melee Singles",
+          "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
+          "date": "2025-05-12",
+          "seed": 9,
+          "place": 3,
+          "entrants": 10,
+          "sets": [
+            {
+              "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
+              "event": "ColisionSmash Melee · Melee Singles",
+              "phase": "Melee Singles",
+              "round": "Winners Round 1",
+              "opponent": "Sagat",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 8,
+              "isUpset": true,
+              "startedAt": 1747016720,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
+              "event": "ColisionSmash Melee · Melee Singles",
+              "phase": "Melee Singles",
+              "round": "Winners Quarter-Final",
+              "opponent": "S1R",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 1,
+              "isUpset": true,
+              "startedAt": 1747016742,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
+              "event": "ColisionSmash Melee · Melee Singles",
+              "phase": "Melee Singles",
+              "round": "Winners Semi-Final",
+              "opponent": "ElFida",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 5,
+              "isUpset": true,
+              "startedAt": 1747016794,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
+              "event": "ColisionSmash Melee · Melee Singles",
+              "phase": "Melee Singles",
+              "round": "Winners Final",
+              "opponent": "Cubax",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 7,
+              "isUpset": false,
+              "startedAt": 1747016807,
+              "phaseOrder": 1,
+              "roundOrder": 4
+            },
+            {
+              "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
+              "event": "ColisionSmash Melee · Melee Singles",
+              "phase": "Melee Singles",
+              "round": "Losers Final",
+              "opponent": "Sagat",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 8,
+              "isUpset": false,
+              "startedAt": 1747016871,
+              "phaseOrder": 1,
+              "roundOrder": -8
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
+              "event": "ColisionSmash Melee · Melee Singles",
+              "date": "2025-05-12",
+              "seed": 9,
+              "place": 3,
+              "entrants": 10,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Montevideo Melee Monthly 2025 #4 · Super Smash Bros. Melee",
           "eventKey": "tournament/montevideo-melee-monthly-2025-4/event/super-smash-bros-melee",
           "date": "2025-05-05",
@@ -914,7 +1022,7 @@
               "event": "Montevideo Melee Monthly 2025 #4 · Super Smash Bros. Melee",
               "phase": "Melee Singles",
               "round": "Losers Round 3",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–2",
               "outcome": "win",
               "opponentExcluded": false,
@@ -1378,6 +1486,130 @@
           ]
         },
         {
+          "event": "Montevideo Melee Monthly 6 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+          "date": "2024-07-28",
+          "seed": 8,
+          "place": 9,
+          "entrants": 11,
+          "sets": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Sagat",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 8,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1722140284,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 1",
+              "opponent": "Cody",
+              "score": "1–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 8,
+              "opponentSeed": 3,
+              "isUpset": false,
+              "startedAt": 1722140401,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "date": "2024-07-28",
+              "seed": 8,
+              "place": 9,
+              "entrants": 11,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+          "date": "2024-07-27",
+          "seed": 1,
+          "place": 9,
+          "entrants": 17,
+          "sets": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 2",
+              "opponent": "Alfa",
+              "score": "3–2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 16,
+              "isUpset": false,
+              "startedAt": 1722118317,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Transformación",
+              "score": "2–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 8,
+              "isUpset": false,
+              "startedAt": 1722118405,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "Smeag",
+              "score": "2–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 2,
+              "isUpset": false,
+              "startedAt": 1722118576,
+              "phaseOrder": 1,
+              "roundOrder": -6
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "date": "2024-07-27",
+              "seed": 1,
+              "place": 9,
+              "entrants": 17,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Montevideo Melee Monthly 2024 #5 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2024-5-1/event/melee-singles",
           "date": "2024-06-01",
@@ -1512,7 +1744,7 @@
               "event": "Montevideo Melee Monthly 2024 #4 · Melee Singles",
               "phase": "Melee Singles",
               "round": "Losers Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1776,7 +2008,7 @@
               "event": "CrossUp '23 · Melee Singles",
               "phase": "Bracket",
               "round": "Winners Round 1",
-              "opponent": "Rey rata(no me mires)",
+              "opponent": "Rey Rata",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -1824,7 +2056,7 @@
               "event": "CrossUp '23 · Melee Singles",
               "phase": "Bracket",
               "round": "Losers Round 3",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -2286,7 +2518,7 @@
               "event": "Montevideo Melee Monthly Revival #4 · Melee Singles",
               "phase": "Bracket",
               "round": "Losers Round 2",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–2",
               "outcome": "win",
               "opponentExcluded": false,
@@ -2402,7 +2634,7 @@
               "event": "Montevideo Melee Monthly ¡Revival! 3/23 · Melee Singles",
               "phase": "Bracket",
               "round": "Winners Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "1–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -2646,7 +2878,7 @@
               "event": "Montevideo Melee Monthly 2019 #7 · Melee Singles Event",
               "phase": "Bracket",
               "round": "Winners Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -2826,7 +3058,7 @@
               "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Winners Round 1",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "0–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -2842,7 +3074,7 @@
               "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Losers Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–2",
               "outcome": "win",
               "opponentExcluded": false,
@@ -2948,7 +3180,7 @@
               "event": "Montevideo Melee Monthly 2019 #3 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Winners Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3054,7 +3286,7 @@
               "event": "Montevideo Melee Monthly 2019 #2 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Losers Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "1–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3096,7 +3328,7 @@
               "event": "Montevideo Melee Monthly 2019 #1 · Melee Singles",
               "phase": "Melee Round Robin",
               "round": "Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3470,7 +3702,7 @@
               "event": "Montevideo Melee Monthly 2018 #3 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Losers Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "1–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3524,7 +3756,7 @@
               "event": "Montevideo Melee Monthly 2018 #2 · Melee Singles",
               "phase": "Melee Round Robin",
               "round": "Round 2",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3575,7 +3807,7 @@
               "opponent": "Hiro",
               "score": "0–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 13,
               "opponentSeed": 11,
               "isUpset": false,
@@ -3922,7 +4154,7 @@
               "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
               "phase": "Bracket",
               "round": "Losers Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3960,7 +4192,7 @@
           "wins": 1
         },
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
           "sets": 3,
           "wins": 0
         },
@@ -4000,7 +4232,7 @@
           "wins": 1
         },
         {
-          "opponent": "Rey rata(no me mires)",
+          "opponent": "Rey Rata",
           "sets": 1,
           "wins": 0
         },
@@ -4236,7 +4468,7 @@
               "event": "Montevideo Melee Monthly 2026 #3 · Project +",
               "phase": "Bracket",
               "round": "Losers Round 3",
-              "opponent": "Rey rata(no me mires)",
+              "opponent": "Rey Rata",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -4472,7 +4704,7 @@
               "event": "Montevideo Melee Monthly 2019 #3 · PM Singles",
               "phase": "Bracket",
               "round": "Winners Round 2",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -4650,7 +4882,7 @@
               "event": "Montevideo Melee Monthly 2017 #11 · PM Singles",
               "phase": "Bracket",
               "round": "Round 3",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -4752,7 +4984,7 @@
               "event": "Montevideo Melee Monthly 2017 #4 · PM Singles",
               "phase": "Bracket",
               "round": "Losers Round 2",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -4932,7 +5164,7 @@
           "wins": 0
         },
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
           "sets": 1,
           "wins": 0
         },
@@ -5064,7 +5296,7 @@
               "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
               "phase": "Bracket",
               "round": "Winners Round 2",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,

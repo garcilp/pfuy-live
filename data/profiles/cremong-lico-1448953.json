@@ -2,17 +2,18 @@
   "player": {
     "tag": "Cremongólico",
     "photo": "assets/players/1448953.png",
-    "sponsor": "Double Bacon",
+    "sponsor": "DBD",
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": "2019-08-31",
+    "activeSince": "2019-08-11",
     "startgg": "https://www.start.gg/user/b6fadd19",
     "startggPlayerId": "1448953",
     "aliases": [
       "2",
       "Cremongòlico",
-      "Cremongólico"
+      "Cremongólico",
+      "THE KRAKEN UA"
     ]
   },
   "games": [
@@ -22,17 +23,22 @@
       "name": "Ultimate",
       "headToHead": [
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
+          "sets": 3,
+          "wins": 0
+        },
+        {
+          "opponent": "Aminas",
+          "sets": 3,
+          "wins": 0
+        },
+        {
+          "opponent": "RandomX",
           "sets": 2,
           "wins": 0
         },
         {
           "opponent": "Mitsu",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "Aminas",
           "sets": 2,
           "wins": 0
         },
@@ -52,17 +58,27 @@
           "wins": 0
         },
         {
-          "opponent": "RandomX",
+          "opponent": "emesse",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "MS360",
+          "opponent": "The Randomancer",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Fantasma 1",
+          "opponent": "Wom",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "CASTIGADOR",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "fantasma",
           "sets": 1,
           "wins": 0
         },
@@ -97,7 +113,7 @@
           "wins": 0
         },
         {
-          "opponent": "Pos3idóN",
+          "opponent": "Poseidón",
           "sets": 1,
           "wins": 0
         },
@@ -127,7 +143,7 @@
           "wins": 0
         },
         {
-          "opponent": "Trap",
+          "opponent": "Fasian",
           "sets": 1,
           "wins": 0
         },
@@ -137,7 +153,7 @@
           "wins": 0
         },
         {
-          "opponent": "DarkFlame",
+          "opponent": "Darkflame",
           "sets": 1,
           "wins": 0
         },
@@ -197,30 +213,30 @@
           "wins": 0
         }
       ],
-      "events": 11,
+      "events": 10,
       "wins": 3,
-      "losses": 37,
+      "losses": 43,
       "upsets": 1,
       "bestPlace": 25,
-      "bestEvent": "2 times",
-      "avgPlace": 31.4,
-      "avgSeed": 32,
+      "bestEvent": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
+      "avgPlace": 33,
+      "avgSeed": 39,
       "characters": [
         {
           "name": "Ganondorf",
-          "usage": 65.9
+          "usage": 62.5
         },
         {
           "name": "King K. Rool",
-          "usage": 15.9
+          "usage": 14.6
         },
         {
           "name": "Random Character",
-          "usage": 9.1
+          "usage": 8.3
         },
         {
           "name": "Other",
-          "usage": 9.1
+          "usage": 14.6
         }
       ],
       "notableWins": [],
@@ -330,7 +346,7 @@
               "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Singles",
               "phase": "Pools",
               "round": "Round 5",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -388,37 +404,11 @@
               "startedAt": 1661023942,
               "phaseOrder": 1,
               "roundOrder": 3
-            }
-          ],
-          "characterCounts": {
-            "Ganondorf": 10
-          },
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
-              "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Singles",
-              "date": "2022-08-20",
-              "seed": 42,
-              "place": 41,
-              "entrants": 48,
-              "characterCounts": {
-                "Ganondorf": 10
-              }
-            }
-          ]
-        },
-        {
-          "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Categoria B",
-          "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
-          "date": "2022-08-20",
-          "seed": 13,
-          "place": 27,
-          "entrants": 14,
-          "sets": [
+            },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
               "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Round 1",
               "opponent": "Thithi",
               "score": "0–2",
@@ -434,7 +424,7 @@
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
               "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Losers Round 1",
               "opponent": "Azrad",
               "score": "0–2",
@@ -449,16 +439,27 @@
             }
           ],
           "characterCounts": {
-            "Ganondorf": 3,
+            "Ganondorf": 13,
             "King K. Rool": 1
           },
           "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
+              "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Singles",
+              "date": "2022-08-20",
+              "seed": 42,
+              "place": 41,
+              "entrants": 48,
+              "characterCounts": {
+                "Ganondorf": 10
+              }
+            },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
               "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Categoria B",
               "date": "2022-08-20",
               "seed": 13,
-              "place": 27,
+              "place": 61,
               "entrants": 14,
               "characterCounts": {
                 "Ganondorf": 3,
@@ -480,7 +481,7 @@
               "event": "Ultimate Smashdown #6 · Singles",
               "phase": "Pools",
               "round": "Round 5",
-              "opponent": "DarkFlame",
+              "opponent": "Darkflame",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -554,41 +555,11 @@
               "startedAt": 1653160394,
               "phaseOrder": 1,
               "roundOrder": 4
-            }
-          ],
-          "characterCounts": {
-            "Ganondorf": 4,
-            "King K. Rool": 3,
-            "Random Character": 2
-          },
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/ultimate-smashdown-6/event/singles",
-              "event": "Ultimate Smashdown #6 · Singles",
-              "date": "2022-05-21",
-              "seed": 48,
-              "place": 33,
-              "entrants": 48,
-              "characterCounts": {
-                "Ganondorf": 4,
-                "King K. Rool": 3,
-                "Random Character": 2
-              }
-            }
-          ]
-        },
-        {
-          "event": "Ultimate Smashdown #6 · Ultimate Smashdown #6 - Categoria B",
-          "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
-          "date": "2022-05-21",
-          "seed": 1,
-          "place": 25,
-          "entrants": 16,
-          "sets": [
+            },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
               "event": "Ultimate Smashdown #6 · Ultimate Smashdown #6 - Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Round 1",
               "opponent": "Azrad",
               "score": "2–0",
@@ -604,7 +575,7 @@
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
               "event": "Ultimate Smashdown #6 · Ultimate Smashdown #6 - Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Quarter-Final",
               "opponent": "Shojin",
               "score": "0–2",
@@ -620,7 +591,7 @@
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
               "event": "Ultimate Smashdown #6 · Ultimate Smashdown #6 - Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Losers Round 2",
               "opponent": "MAXTER",
               "score": "0–2",
@@ -635,16 +606,30 @@
             }
           ],
           "characterCounts": {
-            "Ganondorf": 5,
-            "King K. Rool": 1
+            "Ganondorf": 9,
+            "King K. Rool": 4,
+            "Random Character": 2
           },
           "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-6/event/singles",
+              "event": "Ultimate Smashdown #6 · Singles",
+              "date": "2022-05-21",
+              "seed": 48,
+              "place": 33,
+              "entrants": 48,
+              "characterCounts": {
+                "Ganondorf": 4,
+                "King K. Rool": 3,
+                "Random Character": 2
+              }
+            },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
               "event": "Ultimate Smashdown #6 · Ultimate Smashdown #6 - Categoria B",
               "date": "2022-05-21",
               "seed": 1,
-              "place": 25,
+              "place": 57,
               "entrants": 16,
               "characterCounts": {
                 "Ganondorf": 5,
@@ -666,10 +651,10 @@
               "event": "Ultimate Smashdown #4 · Singles",
               "phase": "Pools",
               "round": "Round 2",
-              "opponent": "Trap",
+              "opponent": "Fasian",
               "score": "0–2",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 43,
               "opponentSeed": 11,
               "isUpset": false,
@@ -776,7 +761,7 @@
               "event": "TORNEO RZ SUPER SMASH BROS ULTIMATE ( LOCAL ) · Torneo LOCAL RZeSports SSBU - #1",
               "phase": "Pools ( eliminatorios )",
               "round": "Round 3",
-              "opponent": "Pos3idóN",
+              "opponent": "Poseidón",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -903,7 +888,7 @@
               "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
               "phase": "Pools",
               "round": "Round 5",
-              "opponent": "Fantasma 1",
+              "opponent": "fantasma",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1021,7 +1006,7 @@
               "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
               "phase": "Pools",
               "round": "Round 2",
-              "opponent": "MS360",
+              "opponent": "emesse",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1053,7 +1038,7 @@
               "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
               "phase": "Pools",
               "round": "Round 3",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1114,6 +1099,130 @@
                 "Ganondorf": 1,
                 "Little Mac": 1,
                 "Lucario": 2
+              }
+            }
+          ]
+        },
+        {
+          "event": "Pato's Invitational · Ultimate Singles",
+          "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+          "date": "2019-08-11",
+          "seed": 35,
+          "place": 33,
+          "entrants": 35,
+          "sets": [
+            {
+              "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+              "event": "Pato's Invitational · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 3",
+              "opponent": "RandomX",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 35,
+              "opponentSeed": 21,
+              "isUpset": false,
+              "startedAt": 1565549105,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+              "event": "Pato's Invitational · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 5",
+              "opponent": "The Randomancer",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 35,
+              "opponentSeed": 22,
+              "isUpset": false,
+              "startedAt": 1565553452,
+              "phaseOrder": 1,
+              "roundOrder": 5
+            },
+            {
+              "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+              "event": "Pato's Invitational · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 1",
+              "opponent": "Aminas",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 35,
+              "opponentSeed": 8,
+              "isUpset": false,
+              "startedAt": 1565553469,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+              "event": "Pato's Invitational · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 2",
+              "opponent": "Pritah",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 35,
+              "opponentSeed": 7,
+              "isUpset": false,
+              "startedAt": 1565554548,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+              "event": "Pato's Invitational · Ultimate Singles",
+              "phase": "Braacket",
+              "round": "Winners Round 1",
+              "opponent": "CASTIGADOR",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 35,
+              "opponentSeed": 30,
+              "isUpset": false,
+              "startedAt": 1565555368,
+              "phaseOrder": 2,
+              "roundOrder": 1
+            },
+            {
+              "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+              "event": "Pato's Invitational · Ultimate Singles",
+              "phase": "Braacket",
+              "round": "Losers Round 1",
+              "opponent": "Wom",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 35,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1565556295,
+              "phaseOrder": 2,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {
+            "Ganondorf": 1,
+            "Mewtwo": 3
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+              "event": "Pato's Invitational · Ultimate Singles",
+              "date": "2019-08-11",
+              "seed": 35,
+              "place": 33,
+              "entrants": 35,
+              "characterCounts": {
+                "Ganondorf": 1,
+                "Mewtwo": 3
               }
             }
           ]

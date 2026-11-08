@@ -20,7 +20,7 @@
       "name": "Melee",
       "headToHead": [
         {
-          "opponent": "Rey rata(no me mires)",
+          "opponent": "Rey Rata",
           "sets": 1,
           "wins": 0
         },
@@ -70,7 +70,7 @@
               "event": "CrossUp '23 · Melee Singles",
               "phase": "Bracket",
               "round": "Losers Round 1",
-              "opponent": "Rey rata(no me mires)",
+              "opponent": "Rey Rata",
               "score": "0–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -103,7 +103,7 @@
       "name": "Rivals of Aether",
       "headToHead": [
         {
-          "opponent": "Batipeta",
+          "opponent": "Casipeta",
           "sets": 1,
           "wins": 0
         },
@@ -162,7 +162,7 @@
               "event": "CrossUp '23 · Rivals Singles",
               "phase": "Bracket",
               "round": "Losers Round 1",
-              "opponent": "Batipeta",
+              "opponent": "Casipeta",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -256,7 +256,7 @@
           "wins": 0
         },
         {
-          "opponent": "Faaq",
+          "opponent": "FaaQ",
           "sets": 3,
           "wins": 0
         },
@@ -316,7 +316,7 @@
           "wins": 0
         },
         {
-          "opponent": "Batipeta",
+          "opponent": "Casipeta",
           "sets": 2,
           "wins": 0
         },
@@ -371,7 +371,7 @@
           "wins": 1
         },
         {
-          "opponent": "Bits",
+          "opponent": "BITS",
           "sets": 2,
           "wins": 0
         },
@@ -521,7 +521,7 @@
           "wins": 0
         },
         {
-          "opponent": "Guillermo",
+          "opponent": "Palmera",
           "sets": 1,
           "wins": 0
         },
@@ -636,14 +636,14 @@
           "wins": 0
         }
       ],
-      "events": 29,
+      "events": 28,
       "wins": 43,
       "losses": 106,
       "upsets": 1,
-      "bestPlace": 14,
-      "bestEvent": "Ultimo Smashdown · Categoria B",
-      "avgPlace": 31.5,
-      "avgSeed": 36,
+      "bestPlace": 17,
+      "bestEvent": "4 times",
+      "avgPlace": 32.1,
+      "avgSeed": 37,
       "characters": [
         {
           "name": "Incineroar",
@@ -719,37 +719,11 @@
               "startedAt": 1781979941,
               "phaseOrder": 1,
               "roundOrder": -4
-            }
-          ],
-          "characterCounts": {
-            "Incineroar": 6
-          },
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/ultimo-smashdown/event/smash-ultimate-singles",
-              "event": "Ultimo Smashdown · Smash Ultimate singles",
-              "date": "2026-06-20",
-              "seed": 30,
-              "place": 33,
-              "entrants": 45,
-              "characterCounts": {
-                "Incineroar": 6
-              }
-            }
-          ]
-        },
-        {
-          "event": "Ultimo Smashdown · Categoria B",
-          "eventKey": "tournament/ultimo-smashdown/event/categoria-b",
-          "date": "2026-06-20",
-          "seed": 2,
-          "place": 14,
-          "entrants": 11,
-          "sets": [
+            },
             {
               "eventKey": "tournament/ultimo-smashdown/event/categoria-b",
               "event": "Ultimo Smashdown · Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Quarter-Final",
               "opponent": "Dono",
               "score": "2–1",
@@ -765,7 +739,7 @@
             {
               "eventKey": "tournament/ultimo-smashdown/event/categoria-b",
               "event": "Ultimo Smashdown · Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Semi-Final",
               "opponent": "SFAN",
               "score": "2–0",
@@ -781,9 +755,9 @@
             {
               "eventKey": "tournament/ultimo-smashdown/event/categoria-b",
               "event": "Ultimo Smashdown · Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Final",
-              "opponent": "Bits",
+              "opponent": "BITS",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -797,7 +771,7 @@
             {
               "eventKey": "tournament/ultimo-smashdown/event/categoria-b",
               "event": "Ultimo Smashdown · Categoria B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Losers Final",
               "opponent": "SFAN",
               "score": "0–2",
@@ -812,15 +786,26 @@
             }
           ],
           "characterCounts": {
-            "Incineroar": 10
+            "Incineroar": 16
           },
           "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimo-smashdown/event/smash-ultimate-singles",
+              "event": "Ultimo Smashdown · Smash Ultimate singles",
+              "date": "2026-06-20",
+              "seed": 30,
+              "place": 33,
+              "entrants": 45,
+              "characterCounts": {
+                "Incineroar": 6
+              }
+            },
             {
               "eventKey": "tournament/ultimo-smashdown/event/categoria-b",
               "event": "Ultimo Smashdown · Categoria B",
               "date": "2026-06-20",
               "seed": 2,
-              "place": 14,
+              "place": 48,
               "entrants": 11,
               "characterCounts": {
                 "Incineroar": 10
@@ -857,7 +842,7 @@
               "event": "Mashito GO! #4 · Smash Ultimate singles",
               "phase": "Pools",
               "round": "Winners Quarter-Final",
-              "opponent": "Batipeta",
+              "opponent": "Casipeta",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -889,7 +874,7 @@
               "event": "Mashito GO! #4 · Smash Ultimate singles",
               "phase": "Singles A",
               "round": "Winners Round 1",
-              "opponent": "Faaq",
+              "opponent": "FaaQ",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1164,7 +1149,7 @@
               "event": "Ultimate Smashdown #35 · Ultimate Singles",
               "phase": "Bracket B",
               "round": "Winners Round 2",
-              "opponent": "Guillermo",
+              "opponent": "Palmera",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1518,7 +1503,7 @@
               "event": "Ultimate Smashdown #30 · Ultimate Singles",
               "phase": "Pools",
               "round": "Winners Quarter-Final",
-              "opponent": "Faaq",
+              "opponent": "FaaQ",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1808,7 +1793,7 @@
               "event": "Ultimate Smashdown #28 · Ultimate Singles",
               "phase": "Bracket A",
               "round": "Losers Round 1",
-              "opponent": "Faaq",
+              "opponent": "FaaQ",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -2726,7 +2711,7 @@
               "event": "Ultimate Smashdown #22 · Ultimate Singles",
               "phase": "Pools",
               "round": "Winners Quarter-Final",
-              "opponent": "Batipeta",
+              "opponent": "Casipeta",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3622,7 +3607,7 @@
               "event": "Ultimate Smashdown #14 · Ultimate Singles",
               "phase": "Pools",
               "round": "Round 4",
-              "opponent": "Bits",
+              "opponent": "BITS",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,

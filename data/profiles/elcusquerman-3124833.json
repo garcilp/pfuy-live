@@ -193,6 +193,11 @@
           "wins": 0
         },
         {
+          "opponent": "Galletas con Membrillo",
+          "sets": 4,
+          "wins": 4
+        },
+        {
           "opponent": "JoaquinYn",
           "sets": 4,
           "wins": 4
@@ -218,7 +223,7 @@
           "wins": 0
         },
         {
-          "opponent": "DarkFlame",
+          "opponent": "Darkflame",
           "sets": 3,
           "wins": 0
         },
@@ -228,7 +233,7 @@
           "wins": 0
         },
         {
-          "opponent": "Bits",
+          "opponent": "BITS",
           "sets": 3,
           "wins": 1
         },
@@ -246,11 +251,6 @@
           "opponent": "SFAN",
           "sets": 3,
           "wins": 1
-        },
-        {
-          "opponent": "Galletas con membrillo",
-          "sets": 3,
-          "wins": 3
         },
         {
           "opponent": "Cryos",
@@ -276,6 +276,11 @@
           "opponent": "Diecordea",
           "sets": 2,
           "wins": 2
+        },
+        {
+          "opponent": "FvckFalcon",
+          "sets": 2,
+          "wins": 1
         },
         {
           "opponent": "Boudin",
@@ -306,6 +311,11 @@
           "opponent": "RoLo",
           "sets": 2,
           "wins": 2
+        },
+        {
+          "opponent": "IamPro104",
+          "sets": 2,
+          "wins": 1
         },
         {
           "opponent": "Salvawillwin",
@@ -343,12 +353,7 @@
           "wins": 0
         },
         {
-          "opponent": "Garoxmuzza",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "FvckFalcon",
+          "opponent": "Garox",
           "sets": 1,
           "wins": 0
         },
@@ -388,7 +393,7 @@
           "wins": 0
         },
         {
-          "opponent": "Rey rata(no me mires)",
+          "opponent": "Rey Rata",
           "sets": 1,
           "wins": 0
         },
@@ -403,7 +408,7 @@
           "wins": 1
         },
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
           "sets": 1,
           "wins": 0
         },
@@ -428,7 +433,7 @@
           "wins": 0
         },
         {
-          "opponent": "Batipeta",
+          "opponent": "Casipeta",
           "sets": 1,
           "wins": 0
         },
@@ -441,11 +446,6 @@
           "opponent": "Sol!d",
           "sets": 1,
           "wins": 0
-        },
-        {
-          "opponent": "IamPro104",
-          "sets": 1,
-          "wins": 1
         },
         {
           "opponent": "Harad",
@@ -498,22 +498,12 @@
           "wins": 0
         },
         {
-          "opponent": "iampro104",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "ALFA",
+          "opponent": "Alfa",
           "sets": 1,
           "wins": 0
         },
         {
           "opponent": "Maty",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Galletas con Membrillo",
           "sets": 1,
           "wins": 1
         },
@@ -553,17 +543,12 @@
           "wins": 0
         },
         {
-          "opponent": "Falcon",
-          "sets": 1,
-          "wins": 1
-        },
-        {
           "opponent": "smorales",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Robotico25",
+          "opponent": "Robótico25",
           "sets": 1,
           "wins": 1
         },
@@ -618,7 +603,7 @@
           "wins": 1
         },
         {
-          "opponent": "Faaq",
+          "opponent": "FaaQ",
           "sets": 1,
           "wins": 0
         },
@@ -643,14 +628,14 @@
           "wins": 1
         }
       ],
-      "events": 38,
+      "events": 36,
       "wins": 87,
       "losses": 126,
       "upsets": 7,
-      "bestPlace": 8,
-      "bestEvent": "Mashito? GO! #7 · Falsa B",
-      "avgPlace": 24.7,
-      "avgSeed": 27,
+      "bestPlace": 9,
+      "bestEvent": "Ultimate Smashdown #33 · Ultimate Singles",
+      "avgPlace": 25.3,
+      "avgSeed": 28,
       "characters": [
         {
           "name": "Zelda",
@@ -740,7 +725,7 @@
               "event": "Mashito? GO! #8 · Smash Ultimate singles",
               "phase": "Bracket",
               "round": "Losers Round 1",
-              "opponent": "Galletas con membrillo",
+              "opponent": "Galletas con Membrillo",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -824,39 +809,13 @@
               "startedAt": 1789838457,
               "phaseOrder": 1,
               "roundOrder": -4
-            }
-          ],
-          "characterCounts": {
-            "Zelda": 5
-          },
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/mashito-go-7/event/ultimate-singles",
-              "event": "Mashito? GO! #7 · Ultimate Singles",
-              "date": "2026-09-19",
-              "seed": 13,
-              "place": 17,
-              "entrants": 27,
-              "characterCounts": {
-                "Zelda": 5
-              }
-            }
-          ]
-        },
-        {
-          "event": "Mashito? GO! #7 · Falsa B",
-          "eventKey": "tournament/mashito-go-7/event/falsa-b",
-          "date": "2026-09-19",
-          "seed": 1,
-          "place": 8,
-          "entrants": 7,
-          "sets": [
+            },
             {
               "eventKey": "tournament/mashito-go-7/event/falsa-b",
               "event": "Mashito? GO! #7 · Falsa B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Semi-Final",
-              "opponent": "Robotico25",
+              "opponent": "Robótico25",
               "score": "2–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -870,7 +829,7 @@
             {
               "eventKey": "tournament/mashito-go-7/event/falsa-b",
               "event": "Mashito? GO! #7 · Falsa B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Final",
               "opponent": "JoaquinYn",
               "score": "2–0",
@@ -886,7 +845,7 @@
             {
               "eventKey": "tournament/mashito-go-7/event/falsa-b",
               "event": "Mashito? GO! #7 · Falsa B",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Grand Final",
               "opponent": "JoaquinYn",
               "score": "2–0",
@@ -901,15 +860,26 @@
             }
           ],
           "characterCounts": {
-            "Zelda": 7
+            "Zelda": 12
           },
           "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-7/event/ultimate-singles",
+              "event": "Mashito? GO! #7 · Ultimate Singles",
+              "date": "2026-09-19",
+              "seed": 13,
+              "place": 17,
+              "entrants": 27,
+              "characterCounts": {
+                "Zelda": 5
+              }
+            },
             {
               "eventKey": "tournament/mashito-go-7/event/falsa-b",
               "event": "Mashito? GO! #7 · Falsa B",
               "date": "2026-09-19",
               "seed": 1,
-              "place": 8,
+              "place": 28,
               "entrants": 7,
               "characterCounts": {
                 "Zelda": 7
@@ -1010,7 +980,7 @@
               "event": "Mashito GO! #6 · Categoria B",
               "phase": "Categoria B",
               "round": "Losers Quarter-Final",
-              "opponent": "Falcon",
+              "opponent": "FvckFalcon",
               "score": "2–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -1095,7 +1065,7 @@
               "event": "Mashito GO! #5 · Smash Ultimate singles",
               "phase": "Bracket A",
               "round": "Winners Round 2",
-              "opponent": "Bits",
+              "opponent": "BITS",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1137,37 +1107,11 @@
               "startedAt": 1784401912,
               "phaseOrder": 1,
               "roundOrder": -6
-            }
-          ],
-          "characterCounts": {
-            "Zelda": 7
-          },
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
-              "event": "Mashito GO! #5 · Smash Ultimate singles",
-              "date": "2026-07-18",
-              "seed": 15,
-              "place": 17,
-              "entrants": 34,
-              "characterCounts": {
-                "Zelda": 7
-              }
-            }
-          ]
-        },
-        {
-          "event": "Mashito GO! #5 · Categoria BITS",
-          "eventKey": "tournament/mashito-go-5/event/categoria-bits",
-          "date": "2026-07-18",
-          "seed": 3,
-          "place": 17,
-          "entrants": 12,
-          "sets": [
+            },
             {
               "eventKey": "tournament/mashito-go-5/event/categoria-bits",
               "event": "Mashito GO! #5 · Categoria BITS",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Winners Quarter-Final",
               "opponent": "warwick",
               "score": "1–2",
@@ -1183,7 +1127,7 @@
             {
               "eventKey": "tournament/mashito-go-5/event/categoria-bits",
               "event": "Mashito GO! #5 · Categoria BITS",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Losers Round 1",
               "opponent": "Dieguix2004",
               "score": "2–1",
@@ -1199,7 +1143,7 @@
             {
               "eventKey": "tournament/mashito-go-5/event/categoria-bits",
               "event": "Mashito GO! #5 · Categoria BITS",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Losers Round 2",
               "opponent": "Kami",
               "score": "2–0",
@@ -1215,7 +1159,7 @@
             {
               "eventKey": "tournament/mashito-go-5/event/categoria-bits",
               "event": "Mashito GO! #5 · Categoria BITS",
-              "phase": "Bracket",
+              "phase": "Categoria B",
               "round": "Losers Quarter-Final",
               "opponent": "Cryos",
               "score": "0–2",
@@ -1230,15 +1174,26 @@
             }
           ],
           "characterCounts": {
-            "Zelda": 10
+            "Zelda": 17
           },
           "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
+              "event": "Mashito GO! #5 · Smash Ultimate singles",
+              "date": "2026-07-18",
+              "seed": 15,
+              "place": 17,
+              "entrants": 34,
+              "characterCounts": {
+                "Zelda": 7
+              }
+            },
             {
               "eventKey": "tournament/mashito-go-5/event/categoria-bits",
               "event": "Mashito GO! #5 · Categoria BITS",
               "date": "2026-07-18",
               "seed": 3,
-              "place": 17,
+              "place": 39,
               "entrants": 12,
               "characterCounts": {
                 "Zelda": 10
@@ -1519,7 +1474,7 @@
               "event": "Mashito GO! #3 · Smash Ultimate singles",
               "phase": "Pools",
               "round": "Losers Round 2",
-              "opponent": "Bits",
+              "opponent": "BITS",
               "score": "2–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -1715,7 +1670,7 @@
               "event": "Mashito? GO · Smash Ultimate singles",
               "phase": "Pools",
               "round": "Winners Quarter-Final",
-              "opponent": "ALFA",
+              "opponent": "Alfa",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1731,7 +1686,7 @@
               "event": "Mashito? GO · Smash Ultimate singles",
               "phase": "Pools",
               "round": "Losers Round 2",
-              "opponent": "iampro104",
+              "opponent": "IamPro104",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -1763,7 +1718,7 @@
               "event": "Mashito? GO · Smash Ultimate singles",
               "phase": "Bracket B",
               "round": "Winners Quarter-Final",
-              "opponent": "Galletas con membrillo",
+              "opponent": "Galletas con Membrillo",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -1811,7 +1766,7 @@
               "event": "Mashito? GO · Smash Ultimate singles",
               "phase": "Bracket B",
               "round": "Losers Final",
-              "opponent": "Galletas con membrillo",
+              "opponent": "Galletas con Membrillo",
               "score": "2–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -1917,7 +1872,7 @@
               "event": "Ultimate Smashdown #35 · Ultimate Singles",
               "phase": "Bracket A",
               "round": "Winners Round 1",
-              "opponent": "DarkFlame",
+              "opponent": "Darkflame",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -2187,7 +2142,7 @@
               "event": "Ultimate Smashdown #32 · Ultimate Singles",
               "phase": "Pools",
               "round": "Winners Quarter-Final",
-              "opponent": "DarkFlame",
+              "opponent": "Darkflame",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -2813,7 +2768,7 @@
               "event": "Ultimate Smashdown #26 · Ultimate Singles",
               "phase": "Pools",
               "round": "Winners Semi-Final",
-              "opponent": "Batipeta",
+              "opponent": "Casipeta",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3057,7 +3012,7 @@
               "event": "Koopa Series · Ultimate Singles",
               "phase": "Bracket B",
               "round": "Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3163,7 +3118,7 @@
               "event": "Ultimate Smashdown #25 · Ultimate Singles",
               "phase": "Bracket B",
               "round": "Winners Round 2",
-              "opponent": "Rey rata(no me mires)",
+              "opponent": "Rey Rata",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3499,7 +3454,7 @@
               "event": "Ultimate Smashdown #23 · Ultimate Singles",
               "phase": "Bracket B",
               "round": "Losers Quarter-Final",
-              "opponent": "Bits",
+              "opponent": "BITS",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3679,7 +3634,7 @@
               "event": "Ultimate Smashdown #21 · Ultimate Singles",
               "phase": "Pools",
               "round": "Winners Quarter-Final",
-              "opponent": "DarkFlame",
+              "opponent": "Darkflame",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -4141,7 +4096,7 @@
               "event": "Ultimate Smashdown #18 · Ultimate Singles",
               "phase": "Bracket B",
               "round": "Losers Round 3",
-              "opponent": "Garoxmuzza",
+              "opponent": "Garox",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -4799,7 +4754,7 @@
               "event": "Ultimate Smashdown #13 · Singles",
               "phase": "Bracket B",
               "round": "Losers Round 2",
-              "opponent": "Faaq",
+              "opponent": "FaaQ",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -4918,7 +4873,7 @@
               "opponent": "Delong",
               "score": "0–2",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 69,
               "opponentSeed": 16,
               "isUpset": false,

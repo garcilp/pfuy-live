@@ -21,13 +21,13 @@
       "headToHead": [
         {
           "opponent": "Sagat",
-          "sets": 66,
-          "wins": 20
+          "sets": 70,
+          "wins": 22
         },
         {
           "opponent": "Sol!d",
-          "sets": 51,
-          "wins": 38
+          "sets": 54,
+          "wins": 39
         },
         {
           "opponent": "Transformación",
@@ -46,18 +46,18 @@
         },
         {
           "opponent": "Smeag",
-          "sets": 17,
-          "wins": 17
+          "sets": 18,
+          "wins": 18
         },
         {
           "opponent": "Mingudai",
-          "sets": 16,
-          "wins": 13
+          "sets": 17,
+          "wins": 14
         },
         {
-          "opponent": "cubax",
-          "sets": 13,
-          "wins": 9
+          "opponent": "Cubax",
+          "sets": 15,
+          "wins": 10
         },
         {
           "opponent": "S1R",
@@ -66,8 +66,8 @@
         },
         {
           "opponent": "BugSmasher",
-          "sets": 9,
-          "wins": 9
+          "sets": 10,
+          "wins": 10
         },
         {
           "opponent": "kalarse",
@@ -80,17 +80,17 @@
           "wins": 7
         },
         {
+          "opponent": "DIO",
+          "sets": 6,
+          "wins": 6
+        },
+        {
           "opponent": "Pencil",
           "sets": 6,
           "wins": 6
         },
         {
-          "opponent": "DIO",
-          "sets": 5,
-          "wins": 5
-        },
-        {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
           "sets": 5,
           "wins": 5
         },
@@ -126,13 +126,23 @@
         },
         {
           "opponent": "Cody",
-          "sets": 2,
-          "wins": 2
+          "sets": 3,
+          "wins": 3
+        },
+        {
+          "opponent": "ElAbuelo",
+          "sets": 3,
+          "wins": 3
         },
         {
           "opponent": "Azrad",
           "sets": 2,
           "wins": 2
+        },
+        {
+          "opponent": "Razor",
+          "sets": 2,
+          "wins": 1
         },
         {
           "opponent": "Pollo",
@@ -146,6 +156,11 @@
         },
         {
           "opponent": "EpicDVD",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "Celi",
           "sets": 2,
           "wins": 2
         },
@@ -185,9 +200,9 @@
           "wins": 2
         },
         {
-          "opponent": "ElAbuelo",
-          "sets": 2,
-          "wins": 2
+          "opponent": "Renzo",
+          "sets": 1,
+          "wins": 1
         },
         {
           "opponent": "Codigoseptimo",
@@ -210,7 +225,7 @@
           "wins": 1
         },
         {
-          "opponent": "Gab",
+          "opponent": "GAB",
           "sets": 1,
           "wins": 1
         },
@@ -221,11 +236,6 @@
         },
         {
           "opponent": "Cerdo",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Celi",
           "sets": 1,
           "wins": 1
         },
@@ -265,7 +275,7 @@
           "wins": 1
         },
         {
-          "opponent": "freshflower",
+          "opponent": "zenhead",
           "sets": 1,
           "wins": 1
         },
@@ -305,9 +315,9 @@
           "wins": 1
         }
       ],
-      "events": 62,
-      "wins": 284,
-      "losses": 85,
+      "events": 65,
+      "wins": 297,
+      "losses": 91,
       "upsets": 43,
       "bestPlace": 1,
       "bestEvent": "22 times",
@@ -600,6 +610,128 @@
               "entrants": 14,
               "characterCounts": {
                 "Peach": 16
+              }
+            }
+          ]
+        },
+        {
+          "event": "El Japi Beerday · Super Smash Bros. Melee",
+          "eventKey": "tournament/el-japi-beerday/event/super-smash-bros-melee",
+          "date": "2026-05-23",
+          "seed": 1,
+          "place": 2,
+          "entrants": 13,
+          "sets": [
+            {
+              "eventKey": "tournament/el-japi-beerday/event/super-smash-bros-melee",
+              "event": "El Japi Beerday · Super Smash Bros. Melee",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Cody",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 8,
+              "isUpset": false,
+              "startedAt": 1779590886,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/el-japi-beerday/event/super-smash-bros-melee",
+              "event": "El Japi Beerday · Super Smash Bros. Melee",
+              "phase": "Bracket",
+              "round": "Winners Semi-Final",
+              "opponent": "Celi",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 5,
+              "isUpset": false,
+              "startedAt": 1779592256,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/el-japi-beerday/event/super-smash-bros-melee",
+              "event": "El Japi Beerday · Super Smash Bros. Melee",
+              "phase": "Bracket",
+              "round": "Winners Final",
+              "opponent": "Sol!d",
+              "score": "1–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 2,
+              "isUpset": false,
+              "startedAt": 1779593489,
+              "phaseOrder": 1,
+              "roundOrder": 4
+            },
+            {
+              "eventKey": "tournament/el-japi-beerday/event/super-smash-bros-melee",
+              "event": "El Japi Beerday · Super Smash Bros. Melee",
+              "phase": "Bracket",
+              "round": "Losers Final",
+              "opponent": "Mingudai",
+              "score": "3–2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 4,
+              "isUpset": false,
+              "startedAt": 1779600616,
+              "phaseOrder": 1,
+              "roundOrder": -8
+            },
+            {
+              "eventKey": "tournament/el-japi-beerday/event/super-smash-bros-melee",
+              "event": "El Japi Beerday · Super Smash Bros. Melee",
+              "phase": "Bracket",
+              "round": "Grand Final",
+              "opponent": "Sol!d",
+              "score": "3–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 2,
+              "isUpset": false,
+              "startedAt": 1779600663,
+              "phaseOrder": 1,
+              "roundOrder": 5
+            },
+            {
+              "eventKey": "tournament/el-japi-beerday/event/super-smash-bros-melee",
+              "event": "El Japi Beerday · Super Smash Bros. Melee",
+              "phase": "Bracket",
+              "round": "Grand Final Reset",
+              "opponent": "Sol!d",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 2,
+              "isUpset": false,
+              "startedAt": 1779600688,
+              "phaseOrder": 1,
+              "roundOrder": 5
+            }
+          ],
+          "characterCounts": {
+            "Peach": 22
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/el-japi-beerday/event/super-smash-bros-melee",
+              "event": "El Japi Beerday · Super Smash Bros. Melee",
+              "date": "2026-05-23",
+              "seed": 1,
+              "place": 2,
+              "entrants": 13,
+              "characterCounts": {
+                "Peach": 22
               }
             }
           ]
@@ -1018,7 +1150,7 @@
               "opponent": "Linksolidus",
               "score": "3–1",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 3,
               "isUpset": false,
@@ -1937,6 +2069,258 @@
               "characterCounts": {
                 "Peach": 21
               }
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 6 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+          "date": "2024-07-28",
+          "seed": 4,
+          "place": 2,
+          "entrants": 11,
+          "sets": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "BugSmasher",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 4,
+              "opponentSeed": 5,
+              "isUpset": false,
+              "startedAt": 1722140336,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Semi-Final",
+              "opponent": "Sagat",
+              "score": "3–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 4,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1722140374,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Final",
+              "opponent": "Smeag",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 4,
+              "opponentSeed": 11,
+              "isUpset": false,
+              "startedAt": 1722140496,
+              "phaseOrder": 1,
+              "roundOrder": 4
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Grand Final",
+              "opponent": "Sagat",
+              "score": "1–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 4,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1722140592,
+              "phaseOrder": 1,
+              "roundOrder": 5
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Grand Final Reset",
+              "opponent": "Sagat",
+              "score": "2–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 4,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1722140624,
+              "phaseOrder": 1,
+              "roundOrder": 5
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 6 · Melee Singles",
+              "date": "2024-07-28",
+              "seed": 4,
+              "place": 2,
+              "entrants": 11,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+          "date": "2024-07-27",
+          "seed": 3,
+          "place": 2,
+          "entrants": 17,
+          "sets": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 2",
+              "opponent": "ElAbuelo",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 14,
+              "isUpset": false,
+              "startedAt": 1722118375,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "DIO",
+              "score": "3–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": 1722118435,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Semi-Final",
+              "opponent": "Razor",
+              "score": "1–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 15,
+              "isUpset": false,
+              "startedAt": 1722118454,
+              "phaseOrder": 1,
+              "roundOrder": 4
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "Renzo",
+              "score": "3–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 5,
+              "isUpset": false,
+              "startedAt": 1722118633,
+              "phaseOrder": 1,
+              "roundOrder": -8
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Semi-Final",
+              "opponent": "Sagat",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 10,
+              "isUpset": false,
+              "startedAt": 1722118654,
+              "phaseOrder": 1,
+              "roundOrder": -9
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Final",
+              "opponent": "Razor",
+              "score": "3–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 15,
+              "isUpset": false,
+              "startedAt": 1722120131,
+              "phaseOrder": 1,
+              "roundOrder": -10
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Grand Final",
+              "opponent": "Cubax",
+              "score": "3–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 4,
+              "isUpset": false,
+              "startedAt": 1722120192,
+              "phaseOrder": 1,
+              "roundOrder": 6
+            },
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Grand Final Reset",
+              "opponent": "Cubax",
+              "score": "2–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 4,
+              "isUpset": false,
+              "startedAt": 1722120208,
+              "phaseOrder": 1,
+              "roundOrder": 6
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "date": "2024-07-27",
+              "seed": 3,
+              "place": 2,
+              "entrants": 17,
+              "characterCounts": {}
             }
           ]
         },
@@ -3045,7 +3429,7 @@
               "event": "Montevideo Melee Monthly Revival #4 · Melee Singles",
               "phase": "Bracket",
               "round": "Winners Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -3732,7 +4116,7 @@
               "opponent": "Papyrus",
               "score": "1–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 2,
               "isUpset": false,
@@ -3748,7 +4132,7 @@
               "opponent": "Hengi",
               "score": "3–0",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 7,
               "isUpset": false,
@@ -3850,7 +4234,7 @@
               "opponent": "Y-AS",
               "score": "1–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 9,
               "isUpset": false,
@@ -3952,7 +4336,7 @@
               "opponent": "Syn",
               "score": "2–0",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 4,
               "isUpset": false,
@@ -4032,7 +4416,7 @@
               "opponent": "Papyrus",
               "score": "2–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 3,
               "isUpset": false,
@@ -4182,7 +4566,7 @@
               "opponent": "Papyrus",
               "score": "1–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 2,
               "isUpset": false,
@@ -4214,7 +4598,7 @@
               "opponent": "Papyrus",
               "score": "3–2",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 2,
               "isUpset": false,
@@ -4230,7 +4614,7 @@
               "opponent": "Papyrus",
               "score": "3–0",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 1,
               "opponentSeed": 2,
               "isUpset": false,
@@ -4281,10 +4665,10 @@
               "event": "Montevideo Melee Monthly 2020  #4 · Melee Singles",
               "phase": "Pools",
               "round": "Round 2",
-              "opponent": "freshflower",
+              "opponent": "zenhead",
               "score": "2–0",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 2,
               "opponentSeed": 10,
               "isUpset": false,
@@ -4300,7 +4684,7 @@
               "opponent": "Cariño",
               "score": "2–0",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 2,
               "opponentSeed": 7,
               "isUpset": false,
@@ -4332,7 +4716,7 @@
               "opponent": "Abu Dabi",
               "score": "2–0",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 2,
               "opponentSeed": 6,
               "isUpset": false,
@@ -4364,7 +4748,7 @@
               "opponent": "Black6667",
               "score": "3–2",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 2,
               "opponentSeed": 4,
               "isUpset": false,
@@ -4380,7 +4764,7 @@
               "opponent": "Guasausky",
               "score": "3–2",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 2,
               "opponentSeed": 1,
               "isUpset": true,
@@ -4396,7 +4780,7 @@
               "opponent": "Guasausky",
               "score": "1–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 2,
               "opponentSeed": 1,
               "isUpset": false,
@@ -4412,7 +4796,7 @@
               "opponent": "Guasausky",
               "score": "2–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 2,
               "opponentSeed": 1,
               "isUpset": false,
@@ -4482,7 +4866,7 @@
               "opponent": "Cariño",
               "score": "3–0",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 3,
               "opponentSeed": 14,
               "isUpset": false,
@@ -4498,7 +4882,7 @@
               "opponent": "Abu Dabi",
               "score": "3–0",
               "outcome": "win",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 3,
               "opponentSeed": 6,
               "isUpset": false,
@@ -4514,7 +4898,7 @@
               "opponent": "Guasausky",
               "score": "1–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 3,
               "opponentSeed": 9,
               "isUpset": false,
@@ -4546,7 +4930,7 @@
               "opponent": "Guasausky",
               "score": "0–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 3,
               "opponentSeed": 9,
               "isUpset": false,
@@ -5161,7 +5545,7 @@
               "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
               "phase": "Melee Round Robin",
               "round": "Round 2",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -5273,7 +5657,7 @@
               "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Losers Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -5549,7 +5933,7 @@
               "event": "Montevideo Melee Monthly 2019 #2 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Winners Semi-Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "2–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -5597,7 +5981,7 @@
               "event": "Montevideo Melee Monthly 2019 #2 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Losers Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -5703,7 +6087,7 @@
               "event": "Montevideo Melee Monthly 2019 #1 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Winners Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -6141,7 +6525,7 @@
               "event": "Montevideo Melee Monthly 2018 #8 · Melee Singles",
               "phase": "Melee Round Robin",
               "round": "Round 3",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -6655,7 +7039,7 @@
               "event": "Montevideo Melee Monthly 2018 #3 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Winners Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -6735,7 +7119,7 @@
               "event": "Montevideo Melee Monthly 2018 #3 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Losers Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -6837,7 +7221,7 @@
               "event": "Montevideo Melee Monthly 2018 #2 · Melee Singles",
               "phase": "Bracket",
               "round": "Winners Semi-Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–2",
               "outcome": "win",
               "opponentExcluded": false,
@@ -6869,7 +7253,7 @@
               "event": "Montevideo Melee Monthly 2018 #2 · Melee Singles",
               "phase": "Bracket",
               "round": "Grand Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "1–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -6885,7 +7269,7 @@
               "event": "Montevideo Melee Monthly 2018 #2 · Melee Singles",
               "phase": "Bracket",
               "round": "Grand Final Reset",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -6923,7 +7307,7 @@
               "event": "Montevideo Melee Monthly 2018 #1 · Melee Singles",
               "phase": "Round robin",
               "round": "Round 2",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -6987,7 +7371,7 @@
               "event": "Montevideo Melee Monthly 2018 #1 · Melee Singles",
               "phase": "Brackets",
               "round": "Winners Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "1–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -7309,7 +7693,7 @@
               "event": "Montevideo Melee Monthly 2017 #8 · Melee Singles",
               "phase": "Bracket",
               "round": "Winners Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -7325,7 +7709,7 @@
               "event": "Montevideo Melee Monthly 2017 #8 · Melee Singles",
               "phase": "Bracket",
               "round": "Grand Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -7427,7 +7811,7 @@
               "event": "Montevideo Melee Monthly 2017 #7 · Melee Singles",
               "phase": "Bracket",
               "round": "Losers Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -7545,7 +7929,7 @@
               "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
               "phase": "Bracket",
               "round": "Losers Semi-Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -7717,7 +8101,7 @@
               "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
               "phase": "Bracket",
               "round": "Winners Round 2",
-              "opponent": "Gab",
+              "opponent": "GAB",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -7849,7 +8233,7 @@
           "wins": 1
         },
         {
-          "opponent": "cubax",
+          "opponent": "Cubax",
           "sets": 4,
           "wins": 4
         },
@@ -7889,7 +8273,7 @@
           "wins": 1
         },
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
           "sets": 2,
           "wins": 2
         },
@@ -7909,7 +8293,7 @@
           "wins": 0
         },
         {
-          "opponent": "PorritoCody",
+          "opponent": "Cody",
           "sets": 1,
           "wins": 1
         },
@@ -8010,7 +8394,7 @@
           "count": 4
         },
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
           "seed": 2,
           "ownSeed": 4,
           "upsetFactor": 2.0,
@@ -8548,7 +8932,7 @@
               "event": "Montevideo Melee Monthly 2026 #2 · Project +",
               "phase": "Bracket",
               "round": "Losers Round 4",
-              "opponent": "PorritoCody",
+              "opponent": "Cody",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -8641,7 +9025,7 @@
               "opponent": "Linksolidus",
               "score": "0–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 4,
               "opponentSeed": 5,
               "isUpset": false,
@@ -9436,7 +9820,7 @@
               "event": "Montevideo Melee Monthly 2017 #11 · PM Singles",
               "phase": "Bracket",
               "round": "Round 6",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -9490,7 +9874,7 @@
               "event": "Montevideo Melee Monthly 2017 #7 · PM Singles",
               "phase": "Bracket",
               "round": "Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -9608,7 +9992,7 @@
               "event": "Montevideo Melee Monthly 2017 #5 · PM Singles",
               "phase": "Bracket",
               "round": "Winners Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -9624,7 +10008,7 @@
               "event": "Montevideo Melee Monthly 2017 #5 · PM Singles",
               "phase": "Bracket",
               "round": "Grand Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -9710,7 +10094,7 @@
               "event": "Montevideo Melee Monthly 2017 #4 · PM Singles",
               "phase": "Bracket",
               "round": "Winners Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -9726,7 +10110,7 @@
               "event": "Montevideo Melee Monthly 2017 #4 · PM Singles",
               "phase": "Bracket",
               "round": "Grand Final",
-              "opponent": "cubax",
+              "opponent": "Cubax",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -9811,7 +10195,7 @@
               "opponent": "Linksolidus",
               "score": "0–3",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 3,
               "opponentSeed": 6,
               "isUpset": false,
@@ -10028,13 +10412,18 @@
       "headToHead": [
         {
           "opponent": "Mitsu",
-          "sets": 11,
+          "sets": 12,
           "wins": 5
         },
         {
           "opponent": "Lazerth",
-          "sets": 4,
+          "sets": 5,
           "wins": 3
+        },
+        {
+          "opponent": "Pritah",
+          "sets": 4,
+          "wins": 2
         },
         {
           "opponent": "Trim",
@@ -10042,9 +10431,14 @@
           "wins": 2
         },
         {
-          "opponent": "Walachia",
+          "opponent": "Rockletz",
           "sets": 3,
-          "wins": 1
+          "wins": 3
+        },
+        {
+          "opponent": "ZAPO",
+          "sets": 3,
+          "wins": 2
         },
         {
           "opponent": "Cerdo",
@@ -10052,7 +10446,12 @@
           "wins": 1
         },
         {
-          "opponent": "Rockletz",
+          "opponent": "RIGONARDO",
+          "sets": 2,
+          "wins": 1
+        },
+        {
+          "opponent": "Riku",
           "sets": 2,
           "wins": 2
         },
@@ -10070,6 +10469,11 @@
           "opponent": "Aminas",
           "sets": 2,
           "wins": 2
+        },
+        {
+          "opponent": "Pos3idóN",
+          "sets": 2,
+          "wins": 1
         },
         {
           "opponent": "DIO",
@@ -10127,12 +10531,17 @@
           "wins": 1
         },
         {
-          "opponent": "Fronk",
+          "opponent": "KaeL",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "l3golas",
+          "opponent": "Sherom",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Fronk",
           "sets": 1,
           "wins": 1
         },
@@ -10142,22 +10551,12 @@
           "wins": 0
         },
         {
-          "opponent": "ZAPO",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "luchomorales",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "VRN",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "cuvr5",
+          "opponent": "curv5",
           "sets": 1,
           "wins": 0
         },
@@ -10182,11 +10581,6 @@
           "wins": 1
         },
         {
-          "opponent": "Riku",
-          "sets": 1,
-          "wins": 1
-        },
-        {
           "opponent": "GINTOKI",
           "sets": 1,
           "wins": 1
@@ -10195,21 +10589,16 @@
           "opponent": "Shysce",
           "sets": 1,
           "wins": 1
-        },
-        {
-          "opponent": "RIGONARDO",
-          "sets": 1,
-          "wins": 0
         }
       ],
-      "events": 9,
-      "wins": 36,
-      "losses": 23,
+      "events": 10,
+      "wins": 44,
+      "losses": 25,
       "upsets": 9,
       "bestPlace": 1,
       "bestEvent": "Montevideo Melee Monthly 2019 #1 · Ultimate Singles",
-      "avgPlace": 4.2,
-      "avgSeed": 7,
+      "avgPlace": 4.3,
+      "avgSeed": 6,
       "characters": [
         {
           "name": "Richter",
@@ -10477,7 +10866,7 @@
               "opponent": "Idle",
               "score": "0–2",
               "outcome": "loss",
-              "opponentExcluded": false,
+              "opponentExcluded": true,
               "ownSeed": 33,
               "opponentSeed": 16,
               "isUpset": false,
@@ -10596,7 +10985,7 @@
               "event": "Montevideo Melee Monthly 2019 #6 · Ultimate Singles",
               "phase": "Bracket",
               "round": "Winners Round 2",
-              "opponent": "l3golas",
+              "opponent": "Pos3idóN",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -10612,7 +11001,7 @@
               "event": "Montevideo Melee Monthly 2019 #6 · Ultimate Singles",
               "phase": "Bracket",
               "round": "Winners Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -10660,7 +11049,7 @@
               "event": "Montevideo Melee Monthly 2019 #6 · Ultimate Singles",
               "phase": "Bracket",
               "round": "Losers Semi-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -10702,7 +11091,7 @@
               "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
               "phase": "Bracket",
               "round": "Round 3",
-              "opponent": "luchomorales",
+              "opponent": "Pos3idóN",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -10766,7 +11155,7 @@
               "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
               "phase": "Bracket",
               "round": "Round 1",
-              "opponent": "cuvr5",
+              "opponent": "curv5",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -10846,7 +11235,7 @@
               "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
               "phase": "braket final julio",
               "round": "Losers Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "0–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -10976,6 +11365,188 @@
                 "Lucina": 2,
                 "Richter": 12
               }
+            }
+          ]
+        },
+        {
+          "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+          "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+          "date": "2019-05-11",
+          "seed": 1,
+          "place": 5,
+          "entrants": 36,
+          "sets": [
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 5",
+              "opponent": "Rockletz",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 16,
+              "isUpset": false,
+              "startedAt": 1557580988,
+              "phaseOrder": 1,
+              "roundOrder": 5
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 4",
+              "opponent": "ZAPO",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 17,
+              "isUpset": false,
+              "startedAt": 1557582851,
+              "phaseOrder": 1,
+              "roundOrder": 4
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 2",
+              "opponent": "Sherom",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 33,
+              "isUpset": false,
+              "startedAt": 1557584383,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 3",
+              "opponent": "KaeL",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 32,
+              "isUpset": false,
+              "startedAt": 1557585195,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 2",
+              "opponent": "Riku",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 30,
+              "isUpset": false,
+              "startedAt": 1557587590,
+              "phaseOrder": 2,
+              "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 3",
+              "opponent": "RIGONARDO",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 20,
+              "isUpset": false,
+              "startedAt": 1557589760,
+              "phaseOrder": 2,
+              "roundOrder": 3
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Lazerth",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 8,
+              "isUpset": false,
+              "startedAt": 1557593896,
+              "phaseOrder": 2,
+              "roundOrder": 4
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 5",
+              "opponent": "Pritah",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": 1557596576,
+              "phaseOrder": 2,
+              "roundOrder": -8
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 6",
+              "opponent": "ZAPO",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 16,
+              "isUpset": false,
+              "startedAt": 1557597673,
+              "phaseOrder": 2,
+              "roundOrder": -9
+            },
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "Mitsu",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 3,
+              "isUpset": false,
+              "startedAt": 1557598420,
+              "phaseOrder": 2,
+              "roundOrder": -10
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+              "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
+              "date": "2019-05-11",
+              "seed": 1,
+              "place": 5,
+              "entrants": 36,
+              "characterCounts": {}
             }
           ]
         },

@@ -75,6 +75,16 @@
           "wins": 0
         },
         {
+          "opponent": "ojo de oro",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Riku",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Psycho",
           "sets": 1,
           "wins": 0
@@ -85,9 +95,9 @@
           "wins": 0
         }
       ],
-      "events": 3,
+      "events": 4,
       "wins": 0,
-      "losses": 13,
+      "losses": 15,
       "upsets": 0,
       "bestPlace": 33,
       "bestEvent": "Mashito Cup",
@@ -237,6 +247,38 @@
               "startedAt": 1635101713,
               "phaseOrder": 1,
               "roundOrder": 2
+            },
+            {
+              "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+              "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+              "phase": "Categoria B",
+              "round": "Winners Round 1",
+              "opponent": "Riku",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1635105640,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+              "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+              "phase": "Categoria B",
+              "round": "Losers Round 1",
+              "opponent": "ojo de oro",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1635107212,
+              "phaseOrder": 1,
+              "roundOrder": -4
             }
           ],
           "characterCounts": {},
@@ -248,6 +290,15 @@
               "seed": 44,
               "place": 41,
               "entrants": 46,
+              "characterCounts": {}
+            },
+            {
+              "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+              "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+              "date": "2021-10-24",
+              "seed": 22,
+              "place": 17,
+              "entrants": 22,
               "characterCounts": {}
             }
           ]
