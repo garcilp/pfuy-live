@@ -206,12 +206,14 @@ async function init() {
     window.PRBadges.loadAllRankings().catch(e => console.warn(e));
   }
 
-  // Load available games
+  // Load available games (prefer static data/games.json for published site, fallback to DEFAULT_GAMES)
   try {
-    const res = await fetch('/api/games');
+    const res = await fetch('data/games.json');
     if (res.ok) {
       const json = await res.json();
-      if (json.games && json.games.length) availableGames = json.games;
+      if (Array.isArray(json) && json.length) {
+        availableGames = json.map(g => ({ slug: g.slug || g.id, name: g.name }));
+      }
     }
   } catch (err) {
     // Fallback to DEFAULT_GAMES
@@ -640,30 +642,57 @@ async function loadData() {
   }
 }
 
+// In-memory cache for loaded game JSON datasets and calculated ranking snapshots
+const staticGameDataCache = new Map();
+const calculatedRankingsCache = new Map();
+
+async function getGameData(game, signal) {
+  if (staticGameDataCache.has(game)) {
+    return staticGameDataCache.get(game);
+  }
+  const url = `data/rankings/data/${encodeURIComponent(game)}.json`;
+  const res = await fetch(url, { signal });
+  if (!res.ok) {
+    throw new Error(`Failed to load ranking data for ${game}`);
+  }
+  const json = await res.json();
+  staticGameDataCache.set(game, json);
+  return json;
+}
+
 async function fetchSystemData(game, system, mode, start, end, signal) {
-  const apiURL = `/api/rankings?game=${encodeURIComponent(game)}&system=${encodeURIComponent(system)}&mode=${encodeURIComponent(mode)}${start ? `&start_date=${encodeURIComponent(start)}` : ''}${end ? `&end_date=${encodeURIComponent(end)}` : ''}`;
-  try {
-    const res = await fetch(apiURL, { signal });
-    if (res.ok) {
-      return await res.json();
-    } else {
-      const errJson = await res.json().catch(() => ({}));
-      if (errJson.error) return { error: errJson.error };
-    }
-  } catch (err) {
-    if (err.name === 'AbortError') throw err;
-    // Fallback
+  const cacheKey = `${game}_${system}_${mode}_${start || ''}_${end || ''}`;
+  if (calculatedRankingsCache.has(cacheKey)) {
+    return calculatedRankingsCache.get(cacheKey);
   }
 
-  const staticURL = `data/rankings/${encodeURIComponent(game)}-${encodeURIComponent(system)}-historical.json`;
+  // 1. If mode is historical (no date filter applied), load pre-calculated snapshot directly for fast load
+  if (mode === 'historical') {
+    const staticURL = `data/rankings/${encodeURIComponent(game)}-${encodeURIComponent(system)}-historical.json`;
+    try {
+      const res = await fetch(staticURL, { signal });
+      if (res.ok) {
+        const json = await res.json();
+        calculatedRankingsCache.set(cacheKey, json);
+        return json;
+      }
+    } catch (err) {
+      if (err.name === 'AbortError') throw err;
+    }
+  }
+
+  // 2. Perform client-side ranking calculation using static game data
   try {
-    const res = await fetch(staticURL, { signal });
-    if (res.ok) {
-      return await res.json();
+    const gameData = await getGameData(game, signal);
+    if (window.ClientRankingEngine) {
+      const engine = new window.ClientRankingEngine(gameData);
+      const computed = engine.calculate(system, mode, start || null, end || null, null);
+      calculatedRankingsCache.set(cacheKey, computed);
+      return computed;
     }
   } catch (err) {
     if (err.name === 'AbortError') throw err;
-    // Snapshot not found
+    return { error: err.message };
   }
 
   return null;
@@ -1621,7 +1650,7 @@ function renderComparison() {
             <span class="mono">${p.quality_wins ? (p.quality_wins.rank ? `#${p.quality_wins.rank} (${p.quality_wins.score})` : `Unranked (${p.quality_wins.score})`) : '-'}</span>
             <span class="mono">${p.loss_quality ? (p.loss_quality.rank ? `#${p.loss_quality.rank} (${p.loss_quality.score})` : `- (${p.loss_quality.score})`) : '-'}</span>
             <div>
-              <button class="quiet-button diagnostic-btn" onclick="openDiagnosticModal('${esc(p.playerId)}')">Diagnostic</button>
+              <button class="quiet-button diagnostic-btn" onclick="openDiagnosticModal('${esc(p.playerId)}')">${(window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es') ? 'Diagnóstico' : 'Diagnostic'}</button>
             </div>
           </div>
         `).join('') : '<div class="empty-state"><p class="muted">No players match the filter.</p></div>'}
@@ -1649,33 +1678,29 @@ window.openDiagnosticModal = async function(playerId) {
   const start = isHistorical ? '' : startDateInput.value;
   const end = isHistorical ? '' : endDateInput.value;
 
-  modalPlayerInfo.innerHTML = '<p class="muted">Loading calculation diagnostic trace…</p>';
+  const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
+  modalPlayerInfo.innerHTML = `<p class="muted">${isEs ? 'Cargando traza diagnóstica de cálculo…' : 'Loading calculation diagnostic trace…'}</p>`;
   modalBody.innerHTML = '';
   diagnosticModal.showModal();
 
   let diagData = null;
 
-  const weightsQuery = system === 'custom' ? `&weights=${encodeURIComponent(JSON.stringify(prWeights))}` : '';
-  const apiURL = `/api/rankings/diagnostic?game=${encodeURIComponent(game)}&system=${encodeURIComponent(system)}&mode=${encodeURIComponent(mode)}${start ? `&start_date=${encodeURIComponent(start)}` : ''}${end ? `&end_date=${encodeURIComponent(end)}` : ''}&player_id=${encodeURIComponent(playerId)}${weightsQuery}`;
+  // Calculate diagnostic data client-side from static game JSON
   try {
-    const res = await fetch(apiURL);
-    if (res.ok) {
-      diagData = await res.json();
-    } else {
-      const errJson = await res.json().catch(() => ({}));
-      if (errJson.error) {
-        modalPlayerInfo.innerHTML = `<h2>Player Diagnostic Error</h2>`;
-        modalBody.innerHTML = `<p class="muted">${esc(errJson.error)}</p>`;
-        return;
-      }
+    const gameData = await getGameData(game);
+    if (window.ClientRankingEngine) {
+      const engine = new window.ClientRankingEngine(gameData);
+      diagData = engine.calculate(system, mode, start || null, end || null, playerId, prWeights);
     }
   } catch (err) {
-    // Fallback
+    modalPlayerInfo.innerHTML = `<h2>${isEs ? 'Error de Diagnóstico del Jugador' : 'Player Diagnostic Error'}</h2>`;
+    modalBody.innerHTML = `<p class="muted">${esc(err.message)}</p>`;
+    return;
   }
 
   if (!diagData || !diagData.diagnostic) {
-    modalPlayerInfo.innerHTML = `<h2>Player ID ${esc(playerId)}</h2>`;
-    modalBody.innerHTML = '<p class="muted">Detailed calculation diagnostic trace requires local server endpoint (/api/rankings/diagnostic).</p>';
+    modalPlayerInfo.innerHTML = `<h2>${isEs ? 'Jugador' : 'Player'} ID ${esc(playerId)}</h2>`;
+    modalBody.innerHTML = `<p class="muted">${isEs ? 'No hay traza diagnóstica disponible para este jugador y selección.' : 'No diagnostic trace available for this player and selection.'}</p>`;
     return;
   }
 
