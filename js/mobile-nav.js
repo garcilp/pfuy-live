@@ -173,12 +173,10 @@
     sheet.setAttribute('aria-label', t('menu.navigationMenu', 'Navigation menu'));
     sheet.setAttribute('data-i18n-aria', 'menu.navigationMenu');
 
-    // Hub metadata (default player counts or dynamic)
     const hubs = [
-      { name: 'Smash Ultimate', count: '130+ players', url: 'events.html?game=ultimate' },
-      { name: 'Melee', count: '45+ players', url: 'events.html?game=melee' },
-      { name: 'Rivals 2', count: '30+ players', url: 'events.html?game=rivals-2' },
-      { name: 'Project+', count: '25+ players', url: 'events.html?game=project-plus' },
+      { slug: 'rivals-2', name: 'Rivals 2' }, { slug: 'ultimate', name: 'Ultimate' },
+      { slug: 'project-plus', name: 'Project+' }, { slug: 'rivals-of-aether', name: 'Rivals of Aether' },
+      { slug: 'melee', name: 'Melee' }
     ];
 
     // Theme metadata from authoritative source
@@ -218,12 +216,12 @@
 
       <div class="mobile-menu-section">
         <div class="mobile-menu-title" data-i18n="menu.communityHubs">${t('menu.communityHubs', 'Community Hubs')}</div>
-        ${hubs.map(h => `
-          <a href="${h.url}" class="mobile-menu-row">
-            <span>${h.name}</span>
-            <span class="mobile-tag-pill">${h.count}</span>
-          </a>
-        `).join('')}
+        <div class="mobile-hub-list">${hubs.map(h => `
+          <div class="mobile-menu-row mobile-hub-row">
+            <a href="rankings.html?game=${h.slug}" class="mobile-hub-link"><span>${h.name}</span><span class="mobile-tag-pill" data-hub-count="${h.slug}">…</span></a>
+            <a href="events.html?game=${h.slug}#upcoming-events-section" class="mobile-tag-pill mobile-upcoming-pill" data-hub-upcoming="${h.slug}" hidden>Upcoming</a>
+          </div>
+        `).join('')}</div>
       </div>
 
       <div class="mobile-menu-section">
@@ -260,6 +258,7 @@
 
     sheet.innerHTML = html;
     document.body.appendChild(sheet);
+    loadHubBadges(hubs);
 
     // Event listeners inside menu
     const closeBtn = document.getElementById('mobile-menu-close-btn');
@@ -313,6 +312,48 @@
 
     // Keyboard navigation & Escape key handling
     document.addEventListener('keydown', handleDocumentKeyDown);
+  }
+
+  async function loadHubBadges(hubs) {
+    try {
+      const [playersRes, eventsRes] = await Promise.all([
+        fetch('data/profiles/index.json', { cache: 'no-store' }),
+        fetch('data/events-index.json', { cache: 'no-store' })
+      ]);
+      if (!playersRes.ok || !eventsRes.ok) return;
+      const [players, events] = await Promise.all([playersRes.json(), eventsRes.json()]);
+      const today = new Date().toISOString().slice(0, 10);
+      const hubStats = new Map();
+      hubs.forEach(hub => {
+        const count = players.filter(p => (p.games || []).some(g => (g.slug || g.id) === hub.slug)).length;
+        const countEl = document.querySelector(`[data-hub-count="${hub.slug}"]`);
+        if (countEl) countEl.textContent = `${Math.floor(count / 5) * 5}+ players`;
+        const gameEvents = events.filter(event => (event.gameSlug || '').toLowerCase() === hub.slug);
+        const hasUpcoming = gameEvents.some(event => {
+          const takenPlace = event.hasTakenPlace !== undefined
+            ? event.hasTakenPlace
+            : (event.date ? event.date <= today : true);
+          return !takenPlace;
+        });
+        const latestEventDate = gameEvents.reduce((latest, event) => event.date && event.date > latest ? event.date : latest, '');
+        hubStats.set(hub.slug, { hasUpcoming, latestEventDate });
+        const badge = document.querySelector(`[data-hub-upcoming="${hub.slug}"]`);
+        if (badge) badge.hidden = !hasUpcoming;
+      });
+      const list = document.querySelector('.mobile-hub-list');
+      if (list) {
+        [...hubs].sort((a, b) => {
+          const aStats = hubStats.get(a.slug) || {};
+          const bStats = hubStats.get(b.slug) || {};
+          return Number(!!bStats.hasUpcoming) - Number(!!aStats.hasUpcoming)
+            || (bStats.latestEventDate || '').localeCompare(aStats.latestEventDate || '')
+            || a.name.localeCompare(b.name);
+        }).forEach(hub => {
+          const row = list.querySelector(`[data-hub-count="${hub.slug}"]`)?.closest('.mobile-hub-row');
+          if (row) list.appendChild(row);
+        });
+      }
+    } catch (e) { /* Keep the menu usable if directory data is unavailable. */ }
   }
 
   function handleDocumentKeyDown(e) {

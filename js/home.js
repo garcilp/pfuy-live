@@ -341,16 +341,22 @@ async function renderRecentResults() {
 // 4. On this week
 async function renderOnThisWeek() {
   const container = $('#history');
-  const todayLabel = $('#today');
+  const subtitle = $('#history-sub-text');
   if (!container) return;
 
   const now = new Date();
-  if (todayLabel) {
-    const startOfWeek = new Date(now);
-    startOfWeek.setDate(now.getDate() - 3);
-    const endOfWeek = new Date(now);
-    endOfWeek.setDate(now.getDate() + 3);
-    todayLabel.textContent = `${startOfWeek.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} – ${endOfWeek.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+  const startOfWeek = new Date(now);
+  startOfWeek.setDate(now.getDate() - 3);
+  const endOfWeek = new Date(now);
+  endOfWeek.setDate(now.getDate() + 3);
+  const weekRange = `${startOfWeek.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} – ${endOfWeek.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+  const updateSubtitle = () => {
+    if (subtitle) subtitle.textContent = window.i18n ? window.i18n.t('home.history.sub', { today: weekRange }) : `Tournaments played this week (${weekRange}) in past years`;
+  };
+  updateSubtitle();
+  if (subtitle && window.i18n && window.i18n.onChange && !subtitle.dataset.langListener) {
+    subtitle.dataset.langListener = '1';
+    window.i18n.onChange(updateSubtitle);
   }
 
   const currentYear = now.getFullYear();

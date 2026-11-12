@@ -6,10 +6,11 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": "2024-10-05",
+    "activeSince": "2019-04-27",
     "startgg": "https://www.start.gg/user/dcc1228a",
     "startggPlayerId": "4352886",
     "aliases": [
+      "Balg",
       "Pollo",
       "valormung"
     ]
@@ -31,17 +32,22 @@
           "wins": 0
         },
         {
+          "opponent": "SrPaz",
+          "sets": 3,
+          "wins": 0
+        },
+        {
           "opponent": "Iguana",
           "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "SrPaz",
+          "opponent": "Pencil",
           "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "Pencil",
+          "opponent": "Pladson",
           "sets": 2,
           "wins": 0
         },
@@ -77,11 +83,6 @@
         },
         {
           "opponent": "Catwo",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Pladson",
           "sets": 1,
           "wins": 0
         },
@@ -129,11 +130,26 @@
           "opponent": "francokiwi",
           "sets": 1,
           "wins": 1
+        },
+        {
+          "opponent": "Aminas",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "kalarse",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "BugSmasher",
+          "sets": 1,
+          "wins": 0
         }
       ],
-      "events": 14,
-      "wins": 13,
-      "losses": 28,
+      "events": 15,
+      "wins": 15,
+      "losses": 31,
       "upsets": 5,
       "bestPlace": 5,
       "bestEvent": "Montevideo Melee Monthly 2026 #11 · Super Smash Bros. Melee",
@@ -142,15 +158,15 @@
       "characters": [
         {
           "name": "Falco",
-          "usage": 47.2
+          "usage": 50.3
         },
         {
           "name": "Fox",
-          "usage": 45.3
+          "usage": 42.6
         },
         {
           "name": "Captain Falcon",
-          "usage": 6.9
+          "usage": 6.5
         },
         {
           "name": "Other",
@@ -1289,6 +1305,122 @@
               "entrants": 17,
               "characterCounts": {
                 "Falco": 7
+              }
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
+          "date": "2019-04-27",
+          "seed": 12,
+          "place": 9,
+          "entrants": 15,
+          "sets": [
+            {
+              "setId": "20052462",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
+              "phase": "Melee Round Robin",
+              "round": "Round 3",
+              "opponent": "Aminas",
+              "opponentPlayerId": "1000031",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 12,
+              "opponentSeed": 13,
+              "isUpset": false,
+              "startedAt": 1556389633,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "setId": "20052458",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
+              "phase": "Melee Round Robin",
+              "round": "Round 1",
+              "opponent": "BugSmasher",
+              "opponentPlayerId": "328352",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 12,
+              "opponentSeed": 5,
+              "isUpset": false,
+              "startedAt": 1556391928,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "setId": "20058731",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
+              "phase": "Melee Singles Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Pladson",
+              "opponentPlayerId": "330339",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 12,
+              "opponentSeed": 7,
+              "isUpset": false,
+              "startedAt": 1556393924,
+              "phaseOrder": 2,
+              "roundOrder": 1
+            },
+            {
+              "setId": "20058763",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
+              "phase": "Melee Singles Bracket",
+              "round": "Losers Round 1",
+              "opponent": "kalarse",
+              "opponentPlayerId": "152484",
+              "score": "3–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 12,
+              "opponentSeed": 14,
+              "isUpset": false,
+              "startedAt": 1556394653,
+              "phaseOrder": 2,
+              "roundOrder": -3
+            },
+            {
+              "setId": "20058767",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
+              "phase": "Melee Singles Bracket",
+              "round": "Losers Round 2",
+              "opponent": "SrPaz",
+              "opponentPlayerId": "895125",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 12,
+              "opponentSeed": 10,
+              "isUpset": false,
+              "startedAt": 1556397350,
+              "phaseOrder": 2,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {
+            "Falco": 10
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
+              "date": "2019-04-27",
+              "seed": 12,
+              "place": 9,
+              "entrants": 15,
+              "characterCounts": {
+                "Falco": 10
               }
             }
           ]

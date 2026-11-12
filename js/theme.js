@@ -203,7 +203,9 @@
       toggleBtn.setAttribute('aria-expanded', 'true');
       const selected = dropdown.querySelector('.theme-option.selected') || dropdown.querySelector('.theme-option');
       if (selected) {
-        selected.focus();
+        // Focusing an option in the positioned dropdown can scroll the page
+        // horizontally, which makes the fixed theme button appear to move.
+        selected.focus({ preventScroll: true });
       }
     }
 

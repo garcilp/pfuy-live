@@ -45,6 +45,7 @@
   let playersById = new Map(); // id -> player object
   let tiers = [];
   let history = []; // Undo stack of tier states
+  let tierStateLoaded = false;
 
   // Preserved Players directory state
   let preservedDirState = null;
@@ -179,8 +180,6 @@
   }
 
   async function loadGameData(gameSlug) {
-    history = [];
-    playersById.clear();
 
     try {
       const res = await fetch(`data/tiermaker/${gameSlug}.json`, { cache: 'no-store' });
@@ -192,24 +191,43 @@
     }
 
     // Populate players map
-    (catalog.players || []).forEach(p => playersById.set(String(p.id), { ...p, is_international: false }));
-    (catalog.international || []).forEach(p => playersById.set(String(p.id), { ...p, is_international: true }));
+    (catalog.players || []).forEach(p => playersById.set(playerKey(gameSlug, p.id), { ...p, _game: gameSlug, is_international: false }));
+    (catalog.international || []).forEach(p => playersById.set(playerKey(gameSlug, p.id), { ...p, _game: gameSlug, is_international: true }));
+
+    if (!tierStateLoaded) {
+      const otherGames = ['ultimate', 'melee', 'project-plus', 'rivals-2', 'rivals-of-aether'].filter(game => game !== gameSlug);
+      await Promise.all(otherGames.map(async game => {
+        try {
+          const response = await fetch(`data/tiermaker/${game}.json`, { cache: 'no-store' });
+          if (!response.ok) return;
+          const otherCatalog = await response.json();
+          (otherCatalog.players || []).forEach(p => playersById.set(playerKey(game, p.id), { ...p, _game: game, is_international: false }));
+          (otherCatalog.international || []).forEach(p => playersById.set(playerKey(game, p.id), { ...p, _game: game, is_international: true }));
+        } catch (e) { /* Preserve available catalog data if another game is unavailable. */ }
+      }));
+    }
 
     // Load saved tiers from localStorage
-    loadState(gameSlug);
+    if (!tierStateLoaded) {
+      loadState(gameSlug);
+      tierStateLoaded = true;
+    }
     renderAll();
   }
 
   function loadState(gameSlug) {
     try {
-      const saved = localStorage.getItem(STORAGE_PREFIX + gameSlug);
+      const saved = localStorage.getItem(STORAGE_PREFIX + 'all-games') || localStorage.getItem(STORAGE_PREFIX + gameSlug);
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
           // Filter out player IDs that no longer exist in catalog
           tiers = parsed.map(tier => ({
             ...tier,
-            playerIds: (tier.playerIds || []).filter(pid => playersById.has(String(pid)))
+            playerIds: (tier.playerIds || []).map(pid => {
+              const key = String(pid).includes('|') ? String(pid) : playerKey(gameSlug, pid);
+              return playersById.has(key) ? key : null;
+            }).filter(Boolean)
           }));
           return;
         }
@@ -222,10 +240,18 @@
 
   function saveState() {
     try {
-      localStorage.setItem(STORAGE_PREFIX + activeGame, JSON.stringify(tiers));
+      localStorage.setItem(STORAGE_PREFIX + 'all-games', JSON.stringify(tiers));
     } catch (e) {
       console.warn('Failed to save tiermaker state:', e);
     }
+  }
+
+  function playerKey(game, id) {
+    return `${game}|${String(id)}`;
+  }
+
+  function getPlayerByKey(key) {
+    return playersById.get(String(key));
   }
 
   function pushHistory() {
@@ -331,7 +357,7 @@
       itemsBox.dataset.tierId = tier.id;
 
       (tier.playerIds || []).forEach(pid => {
-        const p = playersById.get(String(pid));
+        const p = getPlayerByKey(pid);
         if (p) {
           itemsBox.appendChild(createBadgeElement(p));
         }
@@ -405,7 +431,7 @@
     const placed = getPlacedPlayerIds();
 
     // Regular Pool
-    const unrankedPlayers = (catalog?.players || []).filter(p => !placed.has(String(p.id)));
+    const unrankedPlayers = (catalog?.players || []).map(p => playersById.get(playerKey(activeGame, p.id)) || p).filter(p => !placed.has(playerKey(activeGame, p.id)));
     const sortedUnranked = sortPlayerList(unrankedPlayers);
     unrankedPoolEl.innerHTML = '';
     unrankedCountEl.textContent = sortedUnranked.length;
@@ -414,7 +440,7 @@
     });
 
     // International Pool
-    const intlPlayers = (catalog?.international || []).filter(p => !placed.has(String(p.id)));
+    const intlPlayers = (catalog?.international || []).map(p => playersById.get(playerKey(activeGame, p.id)) || { ...p, _game: activeGame, is_international: true }).filter(p => !placed.has(playerKey(activeGame, p.id)));
     const sortedIntl = sortPlayerList(intlPlayers);
     intlPoolEl.innerHTML = '';
     intlCountEl.textContent = sortedIntl.length;
@@ -427,12 +453,13 @@
     const el = document.createElement('div');
     el.className = 'tm-badge';
     el.draggable = true;
-    el.dataset.playerId = String(player.id);
+    const key = playerKey(player._game || activeGame, player.id);
+    el.dataset.playerId = key;
     el.dataset.isInternational = player.is_international ? 'true' : 'false';
     el.title = `${player.tag} (${player.event_count || 0} events)`;
 
     const img = document.createElement('img');
-    img.src = `assets/players/tiermaker/${activeGame}/${player.id}.webp`;
+    img.src = `assets/players/tiermaker/${player._game || activeGame}/${player.id}.webp`;
     img.alt = player.tag;
     img.loading = 'lazy';
     el.appendChild(img);
@@ -440,7 +467,7 @@
     // Tap/Click interaction for mobile or quick placement
     el.addEventListener('click', (e) => {
       e.stopPropagation();
-      handleBadgeClick(player.id, e.currentTarget);
+      handleBadgeClick(key, e.currentTarget);
     });
 
     return el;
@@ -701,7 +728,9 @@
             resolve();
           };
           img.onerror = () => resolve();
-          img.src = `assets/players/tiermaker/${activeGame}/${pid}.webp`;
+          const player = getPlayerByKey(pid);
+          if (!player) return resolve();
+          img.src = `assets/players/tiermaker/${player._game || activeGame}/${player.id}.webp`;
         });
       }));
 

@@ -6,7 +6,7 @@
     "city": "Montevideo",
     "country": "Uruguay",
     "location": "Montevideo, Uruguay",
-    "activeSince": "2017-03-25",
+    "activeSince": "2017-02-25",
     "startgg": "https://www.start.gg/user/48913780",
     "startggPlayerId": "330635",
     "aliases": [
@@ -232,100 +232,6 @@
         }
       ],
       "results": [
-        {
-          "event": "Montevideo Melee Monthly · Melee Singles",
-          "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
-          "date": "2024-07-27",
-          "seed": 6,
-          "place": 7,
-          "entrants": 17,
-          "sets": [
-            {
-              "setId": "77675358",
-              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
-              "event": "Montevideo Melee Monthly · Melee Singles",
-              "phase": "Bracket",
-              "round": "Winners Round 2",
-              "opponent": "Sol!d",
-              "opponentPlayerId": "330371",
-              "score": "3–0",
-              "outcome": "win",
-              "opponentExcluded": false,
-              "ownSeed": 6,
-              "opponentSeed": 11,
-              "isUpset": false,
-              "startedAt": 1722118382,
-              "phaseOrder": 1,
-              "roundOrder": 2
-            },
-            {
-              "setId": "77675362",
-              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
-              "event": "Montevideo Melee Monthly · Melee Singles",
-              "phase": "Bracket",
-              "round": "Winners Quarter-Final",
-              "opponent": "Iguana",
-              "opponentPlayerId": "264244",
-              "score": "1–3",
-              "outcome": "loss",
-              "opponentExcluded": false,
-              "ownSeed": 6,
-              "opponentSeed": 3,
-              "isUpset": false,
-              "startedAt": 1722118435,
-              "phaseOrder": 1,
-              "roundOrder": 3
-            },
-            {
-              "setId": "77675422",
-              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
-              "event": "Montevideo Melee Monthly · Melee Singles",
-              "phase": "Bracket",
-              "round": "Losers Round 3",
-              "opponent": "Cody",
-              "opponentPlayerId": "4732812",
-              "score": "3–0",
-              "outcome": "win",
-              "opponentExcluded": false,
-              "ownSeed": 6,
-              "opponentSeed": 13,
-              "isUpset": false,
-              "startedAt": 1722118584,
-              "phaseOrder": 1,
-              "roundOrder": -6
-            },
-            {
-              "setId": "77675425",
-              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
-              "event": "Montevideo Melee Monthly · Melee Singles",
-              "phase": "Bracket",
-              "round": "Losers Round 4",
-              "opponent": "Sagat",
-              "opponentPlayerId": "263974",
-              "score": "0–3",
-              "outcome": "loss",
-              "opponentExcluded": false,
-              "ownSeed": 6,
-              "opponentSeed": 10,
-              "isUpset": false,
-              "startedAt": 1722118618,
-              "phaseOrder": 1,
-              "roundOrder": -7
-            }
-          ],
-          "characterCounts": {},
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
-              "event": "Montevideo Melee Monthly · Melee Singles",
-              "date": "2024-07-27",
-              "seed": 6,
-              "place": 7,
-              "entrants": 17,
-              "characterCounts": {}
-            }
-          ]
-        },
         {
           "event": "Montevideo Melee Monthly 2020  #2 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2020-2/event/melee-singles",
@@ -1776,6 +1682,100 @@
               "seed": 8,
               "place": 3,
               "entrants": 20,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+          "date": "2017-02-25",
+          "seed": 6,
+          "place": 7,
+          "entrants": 17,
+          "sets": [
+            {
+              "setId": "77675358",
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 2",
+              "opponent": "Sol!d",
+              "opponentPlayerId": "330371",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 6,
+              "opponentSeed": 11,
+              "isUpset": false,
+              "startedAt": 1722118382,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "setId": "77675362",
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Iguana",
+              "opponentPlayerId": "264244",
+              "score": "1–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 6,
+              "opponentSeed": 3,
+              "isUpset": false,
+              "startedAt": 1722118435,
+              "phaseOrder": 1,
+              "roundOrder": 3
+            },
+            {
+              "setId": "77675422",
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "Cody",
+              "opponentPlayerId": "4732812",
+              "score": "3–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 6,
+              "opponentSeed": 13,
+              "isUpset": false,
+              "startedAt": 1722118584,
+              "phaseOrder": 1,
+              "roundOrder": -6
+            },
+            {
+              "setId": "77675425",
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 4",
+              "opponent": "Sagat",
+              "opponentPlayerId": "263974",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 6,
+              "opponentSeed": 10,
+              "isUpset": false,
+              "startedAt": 1722118618,
+              "phaseOrder": 1,
+              "roundOrder": -7
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly · Melee Singles",
+              "date": "2017-02-25",
+              "seed": 6,
+              "place": 7,
+              "entrants": 17,
               "characterCounts": {}
             }
           ]

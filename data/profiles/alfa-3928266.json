@@ -6,7 +6,7 @@
     "city": "Buenos Aires",
     "country": "Argentina",
     "location": "Buenos Aires, Argentina",
-    "activeSince": "2017-03-25",
+    "activeSince": "2017-02-25",
     "startgg": "https://www.start.gg/user/8a0b2be2",
     "startggPlayerId": "3928266",
     "aliases": [
@@ -64,9 +64,67 @@
       "notableWins": [],
       "results": [
         {
+          "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
+          "date": "2017-03-25",
+          "seed": 11,
+          "place": 17,
+          "entrants": 20,
+          "sets": [
+            {
+              "setId": "7865283",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 2",
+              "opponent": "Smeag",
+              "opponentPlayerId": "312977",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 11,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": 1490469714,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "setId": "7865333",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 1",
+              "opponent": "Transformación",
+              "opponentPlayerId": "312992",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 11,
+              "opponentSeed": 17,
+              "isUpset": false,
+              "startedAt": 1490471244,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
+              "date": "2017-03-25",
+              "seed": 11,
+              "place": 17,
+              "entrants": 20,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Montevideo Melee Monthly · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
-          "date": "2024-07-27",
+          "date": "2017-02-25",
           "seed": 16,
           "place": 9,
           "entrants": 17,
@@ -149,68 +207,10 @@
             {
               "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
               "event": "Montevideo Melee Monthly · Melee Singles",
-              "date": "2024-07-27",
+              "date": "2017-02-25",
               "seed": 16,
               "place": 9,
               "entrants": 17,
-              "characterCounts": {}
-            }
-          ]
-        },
-        {
-          "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
-          "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
-          "date": "2017-03-25",
-          "seed": 11,
-          "place": 17,
-          "entrants": 20,
-          "sets": [
-            {
-              "setId": "7865283",
-              "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
-              "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
-              "phase": "Bracket",
-              "round": "Winners Round 2",
-              "opponent": "Smeag",
-              "opponentPlayerId": "312977",
-              "score": "0–3",
-              "outcome": "loss",
-              "opponentExcluded": false,
-              "ownSeed": 11,
-              "opponentSeed": 6,
-              "isUpset": false,
-              "startedAt": 1490469714,
-              "phaseOrder": 1,
-              "roundOrder": 2
-            },
-            {
-              "setId": "7865333",
-              "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
-              "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
-              "phase": "Bracket",
-              "round": "Losers Round 1",
-              "opponent": "Transformación",
-              "opponentPlayerId": "312992",
-              "score": "0–3",
-              "outcome": "loss",
-              "opponentExcluded": false,
-              "ownSeed": 11,
-              "opponentSeed": 17,
-              "isUpset": false,
-              "startedAt": 1490471244,
-              "phaseOrder": 1,
-              "roundOrder": -4
-            }
-          ],
-          "characterCounts": {},
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
-              "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
-              "date": "2017-03-25",
-              "seed": 11,
-              "place": 17,
-              "entrants": 20,
               "characterCounts": {}
             }
           ]

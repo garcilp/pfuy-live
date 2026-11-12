@@ -92,12 +92,6 @@
             <option value="recent" data-i18n="tiermaker.sort.recent">Most recently entered</option>
           </select>
         </div>
-        <div class="tm-toolbar-group">
-          <label class="tm-checkbox-label">
-            <input type="checkbox" id="tm-show-intl" class="tm-checkbox">
-            <span data-i18n="tiermaker.showIntl">Show international players</span>
-          </label>
-        </div>
         <div class="tm-toolbar-group tm-toolbar-actions">
           <button type="button" id="tm-add-tier-btn" class="pill-btn glass tm-action-btn" data-i18n="tiermaker.addTier">+ Add Tier</button>
         </div>
@@ -114,6 +108,10 @@
       <section class="tm-pool-section glass">
         <div class="tm-pool-header">
           <h2 class="tm-pool-title" data-i18n="tiermaker.unrankedTitle">Player List</h2>
+          <label class="tm-checkbox-label">
+            <input type="checkbox" id="tm-show-intl" class="tm-checkbox">
+            <span data-i18n="tiermaker.showIntl">Show international players</span>
+          </label>
           <span id="tm-unranked-count" class="mono muted">0</span>
         </div>
         <div id="tm-unranked-pool" class="tm-pool-dropzone" data-pool="regular"></div>

@@ -74,32 +74,60 @@ function renderEvent(event) {
     </section>
   `;
 
-  const subEventsHtml = event.subEvents && event.subEvents.length
-    ? event.subEvents.map(sub => renderBracketCard(sub, event)).join('')
+  const subEvents = event.subEvents || [];
+  const subEventsHtml = subEvents.length
+    ? subEvents.map(sub => renderBracketCard(sub)).join('')
     : '<div class="panel glass empty-state"><p class="muted">No bracket standings available for this tournament.</p></div>';
+  const vodGames = [...new Map(subEvents.map(sub => [normalizeGameName(sub.game), sub.game])).values()];
+  const gameVods = vodGames.map(game => renderEventVods(
+    (event.vods || []).filter(vod => normalizeGameName(vod.game) === normalizeGameName(game)),
+    game
+  )).filter(Boolean);
+  const vodsSectionHtml = gameVods.length
+    ? `<h2 class="sec" style="margin:28px 0 12px;">${isEs ? 'Partidas grabadas (VODs)' : 'Tournament Matches (VODs)'}</h2><div class="brackets-grid">${gameVods.join('')}</div>`
+    : '';
 
-  const vodsHtml = renderEventVods(event);
-
-  main.innerHTML = `${headerBarHtml}<div class="brackets-grid">${subEventsHtml}</div>${vodsHtml}`;
+  main.innerHTML = `${headerBarHtml}<h2 class="sec" style="margin:28px 0 12px;">${isEs ? 'Posiciones' : 'Standings'}</h2><div class="brackets-grid">${subEventsHtml}</div>${vodsSectionHtml}`;
 }
 
-function renderEventVods(event) {
-  if (!event.vods || !event.vods.length) return '';
+function normalizeGameName(name) {
+  return String(name || '').trim().toLocaleLowerCase();
+}
+
+function vodPhaseSortKey(vod) {
+  const phase = String(vod.phaseLabel || vod.phase || vod.round || '').trim();
+  const normalized = phase.toLocaleLowerCase().replace(/[–—]/g, '-').replace(/\s+/g, ' ');
+  let match = normalized.match(/^winners?\s+round\s+(\d+)$/);
+  if (match) return [0, Number(match[1])];
+  if (/^winners?\s+quarter[- ]?finals?$/.test(normalized)) return [1, 0];
+  if (/^winners?\s+semi[- ]?finals?$/.test(normalized)) return [2, 0];
+  if (/^winners?\s+finals?$/.test(normalized)) return [3, 0];
+  match = normalized.match(/^losers?\s+round\s+(\d+)$/);
+  if (match) return [4, Number(match[1])];
+  if (/^losers?\s+quarter[- ]?finals?$/.test(normalized)) return [5, 0];
+  if (/^losers?\s+semi[- ]?finals?$/.test(normalized)) return [6, 0];
+  if (/^losers?\s+finals?$/.test(normalized)) return [7, 0];
+  if (/^grand\s+finals?$/.test(normalized)) return [8, 0];
+  return [9, 0, normalized];
+}
+
+function renderEventVods(vods, gameName) {
+  if (!vods || !vods.length) return '';
 
   const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
-  const vodsTitle = isEs ? 'Partidas grabadas (VODs)' : 'Tournament Matches (VODs)';
   const watchText = isEs ? 'Ver en YouTube ↗' : 'Watch on YouTube ↗';
 
-  // Group VODs by Phase / Round
-  const groups = {};
-  for (const vod of event.vods) {
-    const groupKey = vod.phaseLabel || vod.phase || vod.round || 'Bracket';
-    if (!groups[groupKey]) groups[groupKey] = [];
-    groups[groupKey].push(vod);
-  }
+  const sortedVods = vods.map((vod, index) => ({ vod, index, key: vodPhaseSortKey(vod) }))
+    .sort((a, b) => {
+      for (let i = 0; i < Math.max(a.key.length, b.key.length); i++) {
+        const av = a.key[i] ?? '';
+        const bv = b.key[i] ?? '';
+        if (av !== bv) return typeof av === 'number' && typeof bv === 'number' ? av - bv : String(av).localeCompare(String(bv));
+      }
+      return a.index - b.index;
+    }).map(entry => entry.vod);
 
-  const groupSections = Object.entries(groups).map(([phaseName, vodList]) => {
-    const itemsHtml = vodList.map(vod => {
+  const itemsHtml = sortedVods.map(vod => {
       const p1Id = vod.player1?.playerId;
       const p2Id = vod.player2?.playerId;
 
@@ -149,32 +177,17 @@ function renderEventVods(event) {
           </div>
         </div>
       `;
-    }).join('');
-
-    return `
-      <div style="margin-bottom:18px;">
-        <h3 class="mono muted" style="font-size:13px; text-transform:uppercase; margin:0 0 8px 4px; letter-spacing:0.5px;">${esc(phaseName)}</h3>
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          ${itemsHtml}
-        </div>
-      </div>
-    `;
   }).join('');
 
   return `
-    <section class="panel glass" style="margin-top:28px;">
-      <div style="margin-bottom:18px;">
-        <h2 style="margin:0 0 4px 0;">${esc(vodsTitle)}</h2>
-        <p class="mono muted" style="margin:0; font-size:13px;">${event.vods.length} ${isEs ? 'video(s) disponible(s)' : 'video(s) available'}</p>
-      </div>
-      <div>
-        ${groupSections}
-      </div>
+    <section class="panel glass event-game-vods">
+      <h3 style="margin:0 0 12px 0;">${esc(gameName)}</h3>
+      <div style="display:flex; flex-direction:column; gap:8px;">${itemsHtml}</div>
     </section>
   `;
 }
 
-function renderBracketCard(sub, tournament) {
+function renderBracketCard(sub) {
   const standingsHtml = sub.standings && sub.standings.length
     ? sub.standings.map(st => {
         const isTop3 = st.placement <= 3;
@@ -203,12 +216,15 @@ function renderBracketCard(sub, tournament) {
   const entrantsLabel = isEs
     ? `${sub.entrants} participante${sub.entrants === 1 ? '' : 's'}`
     : `${sub.entrants} entrant${sub.entrants === 1 ? '' : 's'}`;
+  const gameLabel = normalizeGameName(sub.title) === normalizeGameName(sub.game)
+    ? entrantsLabel
+    : `${sub.game} · ${entrantsLabel}`;
 
   return `
     <section class="panel glass bracket-card ${sub.isAmateur ? 'amateur-bracket' : 'main-bracket'}">
       <div class="bracket-card-head">
         <h2>${esc(sub.title)}</h2>
-        <p class="mono muted">${esc(sub.game)} · ${entrantsLabel}</p>
+        <p class="mono muted">${esc(gameLabel)}</p>
       </div>
       <div class="standings-list">
         ${standingsHtml}

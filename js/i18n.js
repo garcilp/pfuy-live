@@ -1077,10 +1077,16 @@
     if (el.hasAttribute('data-i18n')) {
       const key = el.getAttribute('data-i18n');
       if (key) {
+        const params = {};
+        for (const attr of el.attributes) {
+          if (attr.name.startsWith('data-i18n-param-')) {
+            params[attr.name.slice('data-i18n-param-'.length)] = attr.value;
+          }
+        }
         if (el.hasAttribute('data-i18n-html')) {
-          el.innerHTML = t(key);
+          el.innerHTML = t(key, params);
         } else {
-          el.textContent = t(key);
+          el.textContent = t(key, params);
         }
       }
     }

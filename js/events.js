@@ -97,6 +97,8 @@ function populateGameFilter() {
   gameFilter.innerHTML = `<option value="">${isEs ? 'Todos los juegos' : 'All games'}</option>` +
     [...games].sort((a, b) => collator.compare(a[1], b[1]))
       .map(([slug, name]) => `<option value="${esc(slug)}"${slug === currentVal ? ' selected' : ''}>${esc(name)}</option>`).join('');
+  const requestedGame = new URLSearchParams(window.location.search).get('game');
+  if (requestedGame && games.has(requestedGame)) gameFilter.value = requestedGame;
 }
 
 function renderCard(event, isUpcoming = false, selectedGame = '') {
