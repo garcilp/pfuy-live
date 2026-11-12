@@ -93,7 +93,7 @@ function renderEventVods(event) {
   // Group VODs by Phase / Round
   const groups = {};
   for (const vod of event.vods) {
-    const groupKey = vod.phase || 'Bracket';
+    const groupKey = vod.phaseLabel || vod.phase || vod.round || 'Bracket';
     if (!groups[groupKey]) groups[groupKey] = [];
     groups[groupKey].push(vod);
   }
@@ -122,8 +122,9 @@ function renderEventVods(event) {
         ? `<a class="standing-tag opponent-link" href="player.html?player=${encodeURIComponent(p2Id)}">${p2Full}</a>`
         : `<span class="standing-tag">${p2Full}</span>`;
 
-      const phaseOrRound = vod.phase || vod.round || 'Bracket';
-      const roundLabel = vod.round ? `<span class="mono muted" style="font-size:12px;">${esc(vod.round)}</span>` : '';
+      const phaseOrRound = vod.phaseLabel || vod.phase || vod.round || 'Bracket';
+      const showRound = vod.round && vod.round !== phaseOrRound && phaseOrRound !== 'Pools' && !phaseOrRound.startsWith('[Cat. B] ');
+      const roundLabel = showRound ? `<span class="mono muted" style="font-size:12px;">${esc(vod.round)}</span>` : '';
       const thumbSrc = esc(vod.thumbnail || 'assets/logo.jpg');
 
       return `

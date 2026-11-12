@@ -440,25 +440,47 @@
     // Tap/Click interaction for mobile or quick placement
     el.addEventListener('click', (e) => {
       e.stopPropagation();
-      handleBadgeClick(player.id);
+      handleBadgeClick(player.id, e.currentTarget);
     });
 
     return el;
   }
 
-  function handleBadgeClick(playerId) {
-    // If we have a selected badge and click another badge or target, move it
-    if (selectedBadgeId === playerId) {
-      // Deselect
-      selectedBadgeId = null;
-      document.querySelectorAll('.tm-badge.selected').forEach(b => b.classList.remove('selected'));
+  function clearSelectedBadge() {
+    selectedBadgeId = null;
+    document.querySelectorAll('.tm-badge.selected').forEach(b => b.classList.remove('selected'));
+  }
+
+  function handleBadgeClick(playerId, targetBadge) {
+    if (selectedBadgeId !== null && String(selectedBadgeId) === String(playerId)) {
+      clearSelectedBadge();
       return;
+    }
+
+    if (selectedBadgeId !== null) {
+      const sourceId = String(selectedBadgeId);
+      const targetTierBox = targetBadge.closest('.tm-tier-items-box');
+      const targetPool = targetBadge.closest('.tm-pool-dropzone');
+
+      if (targetTierBox) {
+        const targetBadges = Array.from(targetTierBox.querySelectorAll('.tm-badge'));
+        const targetIndex = targetBadges.indexOf(targetBadge);
+        const tierId = targetTierBox.dataset.tierId;
+        clearSelectedBadge();
+        movePlayerToTier(sourceId, tierId, targetIndex);
+        return;
+      }
+
+      if (targetPool) {
+        clearSelectedBadge();
+        movePlayerToPool(sourceId);
+        return;
+      }
     }
 
     selectedBadgeId = playerId;
     document.querySelectorAll('.tm-badge.selected').forEach(b => b.classList.remove('selected'));
-    const current = document.querySelector(`.tm-badge[data-player-id="${playerId}"]`);
-    if (current) current.classList.add('selected');
+    targetBadge.classList.add('selected');
   }
 
   // Handle clicking on dropzones when a badge is selected (Tap-to-move for touch/mobile)
@@ -470,13 +492,13 @@
 
     if (targetTierBox) {
       const tierId = targetTierBox.dataset.tierId;
-      movePlayerToTier(selectedBadgeId, tierId);
-      selectedBadgeId = null;
-      document.querySelectorAll('.tm-badge.selected').forEach(b => b.classList.remove('selected'));
+      const playerId = selectedBadgeId;
+      clearSelectedBadge();
+      movePlayerToTier(playerId, tierId);
     } else if (targetPool) {
-      movePlayerToPool(selectedBadgeId);
-      selectedBadgeId = null;
-      document.querySelectorAll('.tm-badge.selected').forEach(b => b.classList.remove('selected'));
+      const playerId = selectedBadgeId;
+      clearSelectedBadge();
+      movePlayerToPool(playerId);
     }
   });
 

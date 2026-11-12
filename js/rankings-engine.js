@@ -1,6 +1,6 @@
 /**
  * rankings-engine.js
- * Client-side rankings calculation engine matching scripts/rankings_calculator.py (v2.2.0)
+ * Client-side rankings calculation engine matching scripts/rankings_calculator.py (v2.4.0)
  * Allows computing Glicko-2, SoF, Quality Wins, Consistency, and Power Rankings
  * purely from static JSON files (data/rankings/data/<game>.json).
  */
@@ -8,7 +8,18 @@
 (function (global) {
   'use strict';
 
-  const ALGORITHM_VERSION = '2.2.0';
+  const ALGORITHM_VERSION = '2.4.0';
+
+  function eventHasTakenPlace(item, nowTimestamp = Math.floor(Date.now() / 1000)) {
+    const eventDate = item && item.date;
+    if (!eventDate) return true;
+    if (typeof eventDate !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(eventDate)) return false;
+    const today = new Date(nowTimestamp * 1000).toISOString().slice(0, 10);
+    if (eventDate < today) return true;
+    if (eventDate > today) return false;
+    const timestamp = Number(item.timestamp);
+    return Number.isFinite(timestamp) && timestamp > 0 && timestamp <= nowTimestamp;
+  }
 
   function decomposeFloat(val) {
     const buf = new ArrayBuffer(8);
@@ -314,8 +325,8 @@
   class ClientRankingEngine {
     constructor(gameData) {
       this.gameData = gameData || { sets: [], placements: [], latestTags: {}, metadata: {} };
-      this.sets = this.gameData.sets || [];
-      this.placements = this.gameData.placements || [];
+      this.sets = (this.gameData.sets || []).filter(item => eventHasTakenPlace(item));
+      this.placements = (this.gameData.placements || []).filter(item => eventHasTakenPlace(item));
       this.latestTags = this.gameData.latestTags || {};
       this.gameSlug = (this.gameData.metadata && this.gameData.metadata.gameSlug) || '';
       this.glickoCalc = new Glicko2Calculator();

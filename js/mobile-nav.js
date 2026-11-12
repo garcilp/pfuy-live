@@ -7,6 +7,8 @@
 (function () {
   'use strict';
 
+  let bottomBarViewportCleanup = null;
+
   function initMobileChrome() {
     // Only initialize once
     if (document.getElementById('mobile-bottom-nav')) return;
@@ -130,6 +132,33 @@
     });
 
     document.body.appendChild(bottomBar);
+
+    const visualViewport = window.visualViewport;
+    if (visualViewport) {
+      let frameId = 0;
+      const syncToVisualViewport = () => {
+        if (frameId) return;
+        frameId = window.requestAnimationFrame(() => {
+          frameId = 0;
+          const visualBottom = visualViewport.offsetTop + visualViewport.height;
+          const layoutHeight = window.innerHeight;
+          const bottomOffset = Math.max(0, Math.round(layoutHeight - visualBottom));
+          bottomBar.style.setProperty('--mobile-visual-bottom-offset', `${bottomOffset}px`);
+        });
+      };
+
+      visualViewport.addEventListener('resize', syncToVisualViewport);
+      visualViewport.addEventListener('scroll', syncToVisualViewport);
+      window.addEventListener('resize', syncToVisualViewport);
+      syncToVisualViewport();
+      bottomBarViewportCleanup = () => {
+        visualViewport.removeEventListener('resize', syncToVisualViewport);
+        visualViewport.removeEventListener('scroll', syncToVisualViewport);
+        window.removeEventListener('resize', syncToVisualViewport);
+        if (frameId) window.cancelAnimationFrame(frameId);
+        bottomBarViewportCleanup = null;
+      };
+    }
   }
 
   function setupMenuSheet() {
@@ -442,6 +471,7 @@
   function teardownMobileChrome() {
     document.body.classList.remove('mobile-scroll-locked');
     document.removeEventListener('keydown', handleDocumentKeyDown);
+    if (bottomBarViewportCleanup) bottomBarViewportCleanup();
 
     const topActions = document.querySelectorAll('.mobile-top-actions');
     topActions.forEach(el => el.remove());

@@ -107,6 +107,7 @@
       'tiermaker.moveUp': 'Move up',
       'tiermaker.moveDown': 'Move down',
       'tiermaker.changeColor': 'Click to change color',
+      'tiermaker.touchInstructions': 'Touch: tap a player, then tap a tier or another player to place it. Tap the selected player again to cancel.',
 
       'events.eyebrow': 'START.GG TOURNAMENT DATA',
       'events.title': 'Events',
@@ -626,6 +627,7 @@
       'tiermaker.moveUp': 'Mover arriba',
       'tiermaker.moveDown': 'Mover abajo',
       'tiermaker.changeColor': 'Haz clic para cambiar el color',
+      'tiermaker.touchInstructions': 'En móvil: toca un jugador y luego un tier o a otro jugador para colocarlo. Toca de nuevo el jugador seleccionado para cancelar.',
 
       'events.eyebrow': 'DATOS DE TORNEOS DE START.GG',
       'events.title': 'Torneos',
