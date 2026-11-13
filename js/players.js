@@ -206,9 +206,13 @@ function render() {
     const eventLabel = isEs
       ? (events === 1 ? 'TORNEO' : 'TORNEOS')
       : (events === 1 ? 'EVENT' : 'EVENTS');
-    const picture = p.photo || `assets/players/${entry.playerId}.png`;
     const mostPlayedGame = [...games].sort((a, b) => (Number(b.events) || 0) - (Number(a.events) || 0))[0];
-    const stockIcon = mostPlayedGame?.mostPlayedCharacterIcon || '';
+    const selectedGameData = selectedGame
+      ? games.find(game => (game.slug || game.id) === selectedGame)
+      : null;
+    const stockIcon = (selectedGameData || mostPlayedGame)?.mostPlayedCharacterIcon || '';
+    const picture = p.photo || `assets/players/${entry.playerId}.png`;
+    const avatarImage = selectedGame ? stockIcon : (picture || stockIcon);
     const playerTag = p.tag || entry.tag;
     let miniBadgesHtml = '';
     if (window.PRBadges && playerTag) {
@@ -235,7 +239,7 @@ function render() {
     }
     return `<div class="player-card glass">
       <a class="player-card-target" href="index.html?player=${encodeURIComponent(entry.playerId)}" aria-label="${esc(playerTag)}"></a>
-      <span class="player-avatar" data-stock-icon="${esc(stockIcon)}"><img src="${esc(picture)}" alt="" loading="lazy"></span>
+      <span class="player-avatar${avatarImage && avatarImage === stockIcon ? ' character-stock' : ''}" data-stock-icon="${esc(stockIcon)}">${avatarImage ? `<img src="${esc(avatarImage)}" alt="" loading="lazy">` : esc((playerTag || '?')[0])}</span>
       <span class="player-card-copy">${p.sponsor ? `<span class="mono muted player-sponsor">${esc(p.sponsor)}</span>` : ''}<span class="player-tag-row"><b>${esc(playerTag)}</b>${miniBadgesHtml}</span><span class="muted">${esc(location || games.map(g => g.name).join(' · ') || (isEs ? 'Jugador' : 'Player'))}</span></span>
       <span class="player-card-meta"><b>${events}</b><span class="mono muted">${eventLabel}</span></span>
     </div>`;

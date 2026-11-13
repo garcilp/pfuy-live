@@ -60,6 +60,7 @@
 .event-vod-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .event-vod-playing-match{width:min(100%,920px);margin:-4px auto 14px;text-align:center;color:var(--text);font-size:20px;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,.8)}
 .event-vod-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.event-vod-group-title{grid-column:1/-1;margin:16px 0 0;font-size:1rem;color:var(--text)}
 .event-vod-card{position:relative;min-width:0;width:100%;aspect-ratio:260/184;padding:12px 13px;border:1px solid var(--glass-border);border-radius:20px;background:var(--glass-fill);box-shadow:0 8px 24px var(--glass-shadow);cursor:pointer;overflow:hidden;transition:border-color 150ms ease,background 150ms ease}
 .event-vod-card:hover,.event-vod-card.is-playing{border-color:var(--accent);background:var(--faint)}
 .event-vod-card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}

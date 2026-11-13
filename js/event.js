@@ -62,28 +62,45 @@ function renderBracket(sub) {
   return `<section class="panel glass bracket-card"><header class="bracket-card-head"><div><h2>${esc(sub.title || sub.game)}</h2></div><span class="mono muted event-entrant-count">${esc(entrantsLabel)}</span></header>${podiumHtml}<div class="standings-list">${rows || (!podium.length ? '<p class="muted">No standings recorded.</p>' : '')}</div></section>`;
 }
 
-function phaseText(vod) { return vod.phaseLabel || vod.phase || vod.round || (lang() ? 'Llaves' : 'Bracket'); }
+function isAmateurVod(vod) {
+  return vod.isAmateur === true
+    || /\b(?:cat(?:egoria)?\s*\.?\s*b|amateur)\b/i.test(String(vod.title || ''))
+    || /^\s*\[(?:cat\.?\s*b|amateur)\]/i.test(String(vod.phaseLabel || vod.phase || ''));
+}
+function phaseText(vod) {
+  const phase = String(vod.phaseLabel || vod.phase || '').trim();
+  const round = String(vod.round || '').trim();
+  if (/^pools?$/i.test(phase) || /^pools?$/i.test(round)) return phase || round;
+  if (round && !/^top\s*\d+$/i.test(round)) return round;
+  if (phase && !/^top\s*\d+$/i.test(phase)) return phase.replace(/^\s*\[(?:cat\.?\s*b|amateur)\]\s*/i, '');
+  return round || phase || (lang() ? 'Llaves' : 'Bracket');
+}
 function vodPhaseSortKey(vod) {
-  const p = norm(phaseText(vod)).replace(/[–—]/g, '-').replace(/\s+/g, ' ');
+  const phase = norm(vod.phaseLabel || vod.phase || '').replace(/[–—]/g, '-').replace(/\s+/g, ' ');
+  const round = norm(vod.round || '').replace(/[–—]/g, '-').replace(/\s+/g, ' ');
+  if (/^pools?$/.test(phase) || /^pools?$/.test(round)) return [0, 0];
+  const p = (round && !/^top\s*\d+$/.test(round) ? round : phase).replace(/^\s*\[(?:cat\.?\s*b|amateur)\]\s*/, '');
   let m = p.match(/^winners?\s+round\s+(\d+)$/); if (m) return [0, Number(m[1])];
-  if (/^winners?\s+quarter[- ]?finals?$/.test(p)) return [1, 0];
-  if (/^winners?\s+semi[- ]?finals?$/.test(p)) return [2, 0];
+  if (/^winners?\s+(?:quarter[- ]?finals?|quarters?)$/.test(p)) return [1, 0];
+  if (/^winners?\s+(?:semi[- ]?finals?|semis?)$/.test(p)) return [2, 0];
   if (/^winners?\s+finals?$/.test(p)) return [3, 0];
   m = p.match(/^losers?\s+round\s+(\d+)$/); if (m) return [4, Number(m[1])];
-  if (/^losers?\s+quarter[- ]?finals?$/.test(p)) return [5, 0];
-  if (/^losers?\s+semi[- ]?finals?$/.test(p)) return [6, 0];
+  if (/^losers?\s+(?:quarter[- ]?finals?|quarters?)$/.test(p)) return [5, 0];
+  if (/^losers?\s+(?:semi[- ]?finals?|semis?)$/.test(p)) return [6, 0];
   if (/^losers?\s+finals?$/.test(p)) return [7, 0];
   if (/^grand\s+finals?$/.test(p)) return [8, 0];
   return [9, 0, p];
 }
 function orderedVods() {
   return (currentEvent.vods || []).map((vod, index) => ({ vod, index, key: vodPhaseSortKey(vod) })).sort((a, b) => {
+    if (isAmateurVod(a.vod) !== isAmateurVod(b.vod)) return isAmateurVod(a.vod) ? 1 : -1;
     for (let i = 0; i < Math.max(a.key.length, b.key.length); i++) { const x = a.key[i] ?? '', y = b.key[i] ?? ''; if (x !== y) return typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y)); }
     return a.index - b.index;
   }).map(x => x.vod);
 }
 function vodMatches(vod) {
-  if (activeGame !== 'all' && gameKey(vod.game) !== activeGame) return false;
+  const vodGameKey = `${gameKey(vod.game)}${isAmateurVod(vod) ? '::amateur' : ''}`;
+  if (activeGame !== 'all' && vodGameKey !== activeGame) return false;
   const q = searchTerm.trim().toLocaleLowerCase();
   return !q || [vod.title, phaseText(vod), vod.game, vod.player1?.tag, vod.player1?.sponsor, vod.player2?.tag, vod.player2?.sponsor].some(v => String(v || '').toLocaleLowerCase().includes(q));
 }
@@ -136,10 +153,35 @@ function fitVodPlayerTags() {
 }
 
 function renderVods() {
-  const list = orderedVods().filter(vodMatches);
+  const filtered = orderedVods().filter(vodMatches);
   const grid = $('#event-vod-list');
   if (!grid) return;
-  grid.innerHTML = list.length ? list.map(renderVodCard).join('') : `<p class="event-vod-empty muted">${lang() ? 'No hay partidas que coincidan con los filtros.' : 'No matches found for these filters.'}</p>`;
+  const emptyMessage = `<p class="event-vod-empty muted">${lang() ? 'No hay partidas que coincidan con los filtros.' : 'No matches found for these filters.'}</p>`;
+  const eventGames = currentEvent.games || [];
+  const gameNames = new Map(eventGames.map(game => [gameKey(game.name), game.name]));
+  const groups = new Map();
+  filtered.forEach(vod => {
+    const key = gameKey(vod.game) || vod.gameSlug || 'unknown';
+    if (!groups.has(key)) groups.set(key, { name: vod.game || key, regular: [], amateur: [] });
+    groups.get(key)[isAmateurVod(vod) ? 'amateur' : 'regular'].push(vod);
+  });
+  const orderedGroups = [...groups.entries()].sort(([keyA, a], [keyB, b]) => {
+    const nameA = gameKey(a.name), nameB = gameKey(b.name);
+    const indexA = eventGames.findIndex(game => gameKey(game.name) === nameA);
+    const indexB = eventGames.findIndex(game => gameKey(game.name) === nameB);
+    if (indexA !== indexB && indexA >= 0 && indexB >= 0) return indexA - indexB;
+    if (indexA >= 0) return -1;
+    if (indexB >= 0) return 1;
+    return String(keyA).localeCompare(String(keyB));
+  });
+  const multipleGames = eventGames.length > 1 || groups.size > 1;
+  const regularHtml = orderedGroups.map(([, group]) => group.regular.length
+    ? `${multipleGames ? `<h3 class="event-vod-group-title">${esc(gameNames.get(gameKey(group.name)) || group.name)}</h3>` : ''}${group.regular.map(renderVodCard).join('')}`
+    : '').join('');
+  const amateurHtml = orderedGroups.map(([, group]) => group.amateur.length
+    ? `<h3 class="event-vod-group-title">${multipleGames ? `${esc(gameNames.get(gameKey(group.name)) || group.name)} · ` : ''}Amateur Bracket</h3>${group.amateur.map(renderVodCard).join('')}`
+    : '').join('');
+  grid.innerHTML = regularHtml || amateurHtml ? `${regularHtml}${amateurHtml}` : emptyMessage;
   requestAnimationFrame(fitVodPlayerTags);
   const player = $('#event-vod-player');
   const selectedVod = orderedVods().find(vod => vodId(vod) === activeVodId);
@@ -169,7 +211,7 @@ function renderEvent(event) {
   const brackets = (event.subEvents || []).map(renderBracket).join('');
   const vods = event.vods || [];
   const vodGames = [...new Map(vods.map(v => [gameKey(v.game), v.game]).filter(([key]) => key)).entries()];
-  const filterOptions = `<option value="all">${lang() ? 'Todos los juegos' : 'All games'}</option>${vodGames.map(([key, name]) => `<option value="${esc(key)}">${esc(name)}</option>`).join('')}`;
+  const filterOptions = `<option value="all">${lang() ? 'Todos los juegos' : 'All games'}</option>${vodGames.map(([key, name]) => `<option value="${esc(key)}">${esc(name)}</option>${vods.some(v => gameKey(v.game) === key && isAmateurVod(v)) ? `<option value="${esc(key)}::amateur">${esc(name)} · Amateur Bracket</option>` : ''}`).join('')}`;
   main.classList.toggle('event-compact-podium', (event.subEvents || []).length >= 3);
   main.innerHTML = `
     <section class="panel glass event-header-panel"><div class="event-header-top">${logo}<div class="event-header-info">${event.date ? `<p class="eyebrow mono">${esc(fmt(event.date))}</p>` : ''}<h1>${esc(event.tournament)}</h1><div class="event-games">${gamePills}</div></div><div class="event-header-actions">${event.startggUrl ? `<a class="action-button" href="${esc(event.startggUrl)}" target="_blank" rel="noopener noreferrer">${lang() ? 'Abrir en start.gg' : 'Open on start.gg'} ↗</a>` : ''}</div></div></section>
