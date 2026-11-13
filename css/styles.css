@@ -235,6 +235,8 @@ svg{width:100%;height:auto}svg text{fill:var(--muted);font:12px 'JetBrains Mono'
 .player-mini-badges,.player-mini-badges *{pointer-events:auto}
 .player-avatar{flex:0 0 56px;width:56px;height:56px;border-radius:18px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,var(--ph-a),var(--ph-b));color:var(--accent);font-size:24px;font-weight:700}
 .player-avatar img{width:100%;height:100%;object-fit:cover}
+.player-avatar.character-stock{border-radius:0;background:transparent;color:transparent}
+.player-avatar.character-stock img{object-fit:contain}
 .player-card-copy{min-width:0;display:flex;flex:1;flex-direction:column;gap:3px}
 .player-card-copy>b,.player-card-copy .player-tag-row>b{font-size:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .player-card-copy>span:last-child{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

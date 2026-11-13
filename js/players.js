@@ -207,6 +207,8 @@ function render() {
       ? (events === 1 ? 'TORNEO' : 'TORNEOS')
       : (events === 1 ? 'EVENT' : 'EVENTS');
     const picture = p.photo || `assets/players/${entry.playerId}.png`;
+    const mostPlayedGame = [...games].sort((a, b) => (Number(b.events) || 0) - (Number(a.events) || 0))[0];
+    const stockIcon = mostPlayedGame?.mostPlayedCharacterIcon || '';
     const playerTag = p.tag || entry.tag;
     let miniBadgesHtml = '';
     if (window.PRBadges && playerTag) {
@@ -233,7 +235,7 @@ function render() {
     }
     return `<div class="player-card glass">
       <a class="player-card-target" href="index.html?player=${encodeURIComponent(entry.playerId)}" aria-label="${esc(playerTag)}"></a>
-      <span class="player-avatar"><img src="${esc(picture)}" alt="" loading="lazy"></span>
+      <span class="player-avatar" data-stock-icon="${esc(stockIcon)}"><img src="${esc(picture)}" alt="" loading="lazy"></span>
       <span class="player-card-copy">${p.sponsor ? `<span class="mono muted player-sponsor">${esc(p.sponsor)}</span>` : ''}<span class="player-tag-row"><b>${esc(playerTag)}</b>${miniBadgesHtml}</span><span class="muted">${esc(location || games.map(g => g.name).join(' · ') || (isEs ? 'Jugador' : 'Player'))}</span></span>
       <span class="player-card-meta"><b>${events}</b><span class="mono muted">${eventLabel}</span></span>
     </div>`;
@@ -241,9 +243,17 @@ function render() {
 
   list.querySelectorAll('.player-avatar img').forEach(image => image.addEventListener('error', () => {
     const avatar = image.parentElement;
+    const stockIcon = avatar.dataset.stockIcon;
+    if (stockIcon && !image.dataset.stockFallback) {
+      image.dataset.stockFallback = '1';
+      avatar.classList.add('character-stock');
+      image.src = stockIcon;
+      return;
+    }
     image.remove();
+    avatar.classList.remove('character-stock');
     avatar.textContent = (avatar.closest('.player-card')?.querySelector('.player-tag-row b')?.textContent || '?')[0];
-  }, { once: true }));
+  }));
 
   let sentinel = $('#scroll-sentinel');
   if (!sentinel) {
