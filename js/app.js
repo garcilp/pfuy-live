@@ -113,12 +113,14 @@ async function loadProfile() {
     if (entry) {
       profileUrl = `data/profiles/${encodeURIComponent(entry.slug)}.json`;
     } else {
-      // Excluded players are not in index.json, look up profile slug via API
+      // Excluded players stay out of index.json, but remain directly addressable.
       try {
-        const lookupRes = await fetch(`/api/player-profile-lookup?playerId=${encodeURIComponent(canonicalId)}`);
+        const lookupRes = await fetch('data/profiles/lookup.json', { cache: 'no-store' });
         if (lookupRes.ok) {
           const lookup = await lookupRes.json();
-          profileUrl = `data/profiles/${encodeURIComponent(lookup.slug)}.json`;
+          const profileSlug = lookup[canonicalId];
+          if (!profileSlug) throw new Error('Profile not found');
+          profileUrl = `data/profiles/${encodeURIComponent(profileSlug)}.json`;
         } else {
           throw new Error(`No profile is available for start.gg player ID ${profileId}.`);
         }
@@ -139,6 +141,10 @@ Promise.all([
   window.PRBadges ? window.PRBadges.loadAllRankings() : Promise.resolve(null)
 ]).then(([d]) => {
   data = d;
+  const syncedEl = $('#synced');
+  if (syncedEl) {
+    syncedEl.textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
   render();
   addEventListener('hashchange', () => { resultPage = 1; selectedBestPlacement = null; selectedBestFinishKey = null; render(); });
 }).catch(error => {

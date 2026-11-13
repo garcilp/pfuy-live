@@ -4,7 +4,8 @@
 .event-header-top{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .event-header-avatar{position:relative;flex:0 0 84px;width:84px;height:84px;border-radius:22px;overflow:hidden;background:linear-gradient(135deg,var(--ph-a),var(--ph-b));display:grid;place-items:center;color:var(--accent);font-size:30px;font-weight:700}
 .event-header-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.event-tournament-logo{flex:0 0 84px;width:84px;height:84px;object-fit:contain;border:0;border-radius:0;background:transparent;box-shadow:none}
+.event-tournament-logo-frame{flex:0 0 84px;width:84px;height:84px;display:block;overflow:hidden;border:0;border-radius:22px;background:transparent;box-shadow:none}
+.event-tournament-logo{display:block;width:100%;height:100%;object-fit:contain;border:0;border-radius:22px;background:transparent;box-shadow:none}
 .event-header-info{flex:1;min-width:220px;display:flex;flex-direction:column;gap:7px}
 .event-header-info h1{font-size:clamp(27px,3vw,38px);line-height:1.1;overflow-wrap:anywhere}
 .event-games{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:2px}
@@ -26,17 +27,18 @@
 .event-podium-card.place-1{border-color:var(--gold);background:linear-gradient(155deg,color-mix(in srgb,var(--gold) 13%,var(--glass-fill)),var(--glass-fill))}
 .event-podium-card.place-2{border-color:color-mix(in srgb,var(--silver) 58%,var(--line))}
 .event-podium-card.place-3{border-color:color-mix(in srgb,var(--bronze) 65%,var(--line))}
+.event-compact-podium .event-podium-card{min-height:112px;padding:8px 9px 7px;border-radius:16px}
 .podium-place{font:700 13px 'JetBrains Mono',monospace;color:var(--muted);text-shadow:0 1px 3px rgba(0,0,0,.95),0 0 8px rgba(0,0,0,.75)}
 .place-1 .podium-place{color:var(--gold)}.place-3 .podium-place{color:var(--bronze)}
 .event-character{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:0 0 38px;width:38px;height:38px;overflow:hidden;border:0;border-radius:0;background:transparent;font-weight:700;color:var(--muted)}
 .event-character img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:transparent}
 .event-character-empty{font-size:13px}
-.event-podium-card .standing-tag{display:block;width:100%;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;font-size:18px;line-height:1.1;text-align:left}
+.event-podium-card .standing-tag{display:block;width:100%;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;font-size:18px;line-height:1.1;text-align:left;text-shadow:0 1px 3px rgba(0,0,0,.95),0 0 8px rgba(0,0,0,.75)}
 .podium-player{grid-column:1/-1;grid-row:1/-1;align-self:center;min-width:0;width:100%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:0;z-index:2}
 .podium-character-art{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;object-position:right bottom;opacity:.44;mask-image:linear-gradient(to right,transparent 0%,#000 48%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 48%);z-index:0;pointer-events:none}
 .podium-player,.event-podium-card .podium-place{position:relative;z-index:2}
 .event-podium-card .podium-place{grid-column:1/-1;grid-row:2;justify-self:center;align-self:end;text-align:center}
-.podium-sponsor{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:13px;line-height:1}
+.podium-sponsor{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:13px;line-height:1;text-shadow:0 1px 3px rgba(0,0,0,.95),0 0 8px rgba(0,0,0,.75)}
 .podium-character{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:11px}
 .standings-list{display:flex;flex-direction:column;gap:0}
 .bracket-card .standing-row{position:relative;min-height:44px;margin:0 -7px;padding:8px 14px;border-bottom:1px solid var(--line);border-radius:0;gap:11px}
@@ -88,7 +90,8 @@
   .event-header-panel{padding:18px;margin-bottom:28px;border-radius:24px}
   .event-header-top{align-items:flex-start;gap:12px}
   .event-header-avatar{flex-basis:56px;width:56px;height:56px;border-radius:16px;font-size:22px}
-  .event-tournament-logo{flex-basis:56px;width:56px;height:56px}
+  .event-tournament-logo-frame{flex-basis:56px;width:56px;height:56px;border-radius:16px}
+  .event-tournament-logo{border-radius:16px}
   .event-header-info{min-width:0;flex-basis:calc(100% - 72px)}
   .event-header-info h1{font-size:25px}
   .event-header-meta{flex-basis:100%;margin:4px 0 0;font-size:10px}
@@ -102,6 +105,7 @@
   .bracket-card-head h2{font-size:18px}
   .event-podium{gap:7px}
   .event-podium-card{min-height:126px;padding:9px 7px 8px;border-radius:16px;grid-template-columns:minmax(0,1fr) 43%}
+  .event-compact-podium .event-podium-card{min-height:108px;padding:7px 7px 6px}
   .podium-character-art{height:100%}
   .podium-player{gap:0}
   .event-podium-card .standing-tag{font-size:16px}

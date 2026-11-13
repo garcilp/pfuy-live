@@ -261,8 +261,8 @@ a.event-card:hover{color:var(--text);background:var(--faint);border-color:var(--
 .event-list.condensed .event-card-copy{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto;align-items:center;gap:2px 14px;flex:1}
 .event-list.condensed .event-card-copy>b{grid-column:1;grid-row:1;font-size:15px}
 .event-list.condensed .event-card-copy>span:not(.mono){grid-column:1/-1;grid-row:2;font-size:13px;text-align:left}
-.event-avatar{position:relative;order:-1;display:grid;place-items:center;flex:0 0 56px;width:56px;height:56px;overflow:hidden;border-radius:16px;background:linear-gradient(135deg,var(--ph-a),var(--ph-b));color:var(--accent);font-size:20px;font-weight:700}
-.event-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.event-avatar{position:relative;order:-1;display:grid;place-items:center;flex:0 0 56px;width:56px;height:56px;overflow:hidden;border-radius:16px;background:transparent;color:var(--accent);font-size:20px;font-weight:700}
+.event-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;background:transparent}
 .event-list.condensed .event-avatar{flex-basis:40px;width:40px;height:40px;border-radius:12px;font-size:16px}
 
 /* Upcoming event cards in Events directory */
@@ -278,9 +278,9 @@ a.event-card:hover{color:var(--text);background:var(--faint);border-color:var(--
   transform:translateY(-1px);
 }
 #upcoming-event-list .event-avatar{
-  background:color-mix(in srgb, var(--gold) 15%, transparent);
+  background:transparent;
   color:var(--gold);
-  border:1px solid color-mix(in srgb, var(--gold) 25%, transparent);
+  border:0;
 }
 #upcoming-event-list .event-card-arrow{
   color:var(--gold);
@@ -1084,6 +1084,55 @@ a.event-card:hover{color:var(--text);background:var(--faint);border-color:var(--
 .diag-impact-val.neg{color:#ffb38a}
 
 /* Summary: Score Chart */
+.diag-custom-contrib-list,
+.diag-system-factor-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:14px;
+}
+.diag-custom-contrib-row{
+  display:grid;
+  grid-template-columns:minmax(100px, 150px) minmax(60px, 1fr) 72px;
+  align-items:center;
+  gap:10px;
+}
+.diag-custom-contrib-name,
+.diag-system-factor-row span{
+  color:var(--text, #e2e8f0);
+  font-size:13px;
+}
+.diag-custom-contrib-track{
+  height:8px;
+  overflow:hidden;
+  border-radius:99px;
+  background:rgba(255,255,255,0.08);
+}
+.diag-custom-contrib-track > div{
+  height:100%;
+  border-radius:inherit;
+}
+.diag-custom-contrib-value{
+  color:var(--text, #e2e8f0);
+  text-align:right;
+  font-size:12px;
+}
+.diag-custom-contrib-total{
+  margin:2px 0 0;
+  color:var(--muted, #94a3b8);
+  font-size:12px;
+}
+.diag-system-factor-row{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  padding-bottom:9px;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+.diag-system-factor-row strong{
+  color:var(--text, #e2e8f0);
+  font-size:13px;
+}
 .diag-chart-container{
   width:100%;
   margin-top:10px;
@@ -1153,17 +1202,27 @@ a.event-card:hover{color:var(--text);background:var(--faint);border-color:var(--
 }
 .diag-sort-select{
   min-height:44px;
-  padding:0 14px;
+  min-width:172px;
+  padding:0 38px 0 14px;
+  appearance:none;
   border-radius:12px;
-  border:1px solid var(--glass-border, rgba(255,255,255,.12));
-  background:rgba(16,24,50,.8);
+  border:1px solid var(--glass-border, rgba(255,255,255,.16));
+  background-color:rgba(16,24,50,.8);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%2394a3b8' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 14px center;
   color:var(--text);
   font-size:13px;
   cursor:pointer;
+  color-scheme:dark;
 }
 .diag-sort-select:focus-visible{
   outline:2px solid var(--accent, #9fd6ff);
   outline-offset:2px;
+  border-color:var(--accent, #9fd6ff);
+}
+.diag-sort-select:hover{
+  border-color:rgba(159,214,255,.5);
 }
 
 .diag-sets-explanation{

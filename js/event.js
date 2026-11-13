@@ -59,7 +59,7 @@ function renderBracket(sub) {
   const podiumHtml = podium.length ? `<div class="event-podium">${podium.map(st => `<article class="event-podium-card place-${st.placement}">${fullCharacterArt(st.character)}<div class="podium-player">${playerSponsor(st)}${playerLink(st)}</div><span class="podium-place">${ord(st.placement)}</span></article>`).join('')}</div>` : '';
   const rows = remaining.map(st => `<div class="standing-row"><span class="placement-badge p${st.placement} mono">${ord(st.placement)}</span>${charIcon(st.character)}${playerLink(st)}</div>`).join('');
   const entrantsLabel = lang() ? `${sub.entrants} participante${sub.entrants === 1 ? '' : 's'}` : `${sub.entrants} entrant${sub.entrants === 1 ? '' : 's'}`;
-  return `<section class="panel glass bracket-card"><header class="bracket-card-head"><div>${sub.isAmateur ? `<p class="eyebrow mono">${lang() ? 'BRACKET AMATEUR' : 'AMATEUR BRACKET'}</p>` : ''}<h2>${esc(sub.title || sub.game)}</h2></div><span class="mono muted event-entrant-count">${esc(entrantsLabel)}</span></header>${podiumHtml}<div class="standings-list">${rows || (!podium.length ? '<p class="muted">No standings recorded.</p>' : '')}</div></section>`;
+  return `<section class="panel glass bracket-card"><header class="bracket-card-head"><div><h2>${esc(sub.title || sub.game)}</h2></div><span class="mono muted event-entrant-count">${esc(entrantsLabel)}</span></header>${podiumHtml}<div class="standings-list">${rows || (!podium.length ? '<p class="muted">No standings recorded.</p>' : '')}</div></section>`;
 }
 
 function phaseText(vod) { return vod.phaseLabel || vod.phase || vod.round || (lang() ? 'Llaves' : 'Bracket'); }
@@ -164,12 +164,13 @@ function renderVods() {
 function renderEvent(event) {
   document.title = `${event.tournament} · Platfighters.uy`;
   const games = event.games || [];
-  const logo = event.image ? `<img class="event-tournament-logo" src="${esc(event.image)}" alt="${esc(event.tournament)} logo" loading="lazy">` : '';
+  const logo = event.image ? `<span class="event-tournament-logo-frame"><img class="event-tournament-logo" src="${esc(event.image)}" alt="${esc(event.tournament)} logo" loading="lazy"></span>` : '';
   const gamePills = games.map(g => `<span class="game-chip">${esc(g.name)}</span>`).join('');
   const brackets = (event.subEvents || []).map(renderBracket).join('');
   const vods = event.vods || [];
   const vodGames = [...new Map(vods.map(v => [gameKey(v.game), v.game]).filter(([key]) => key)).entries()];
   const filterOptions = `<option value="all">${lang() ? 'Todos los juegos' : 'All games'}</option>${vodGames.map(([key, name]) => `<option value="${esc(key)}">${esc(name)}</option>`).join('')}`;
+  main.classList.toggle('event-compact-podium', (event.subEvents || []).length >= 3);
   main.innerHTML = `
     <section class="panel glass event-header-panel"><div class="event-header-top">${logo}<div class="event-header-info">${event.date ? `<p class="eyebrow mono">${esc(fmt(event.date))}</p>` : ''}<h1>${esc(event.tournament)}</h1><div class="event-games">${gamePills}</div></div><div class="event-header-actions">${event.startggUrl ? `<a class="action-button" href="${esc(event.startggUrl)}" target="_blank" rel="noopener noreferrer">${lang() ? 'Abrir en start.gg' : 'Open on start.gg'} ↗</a>` : ''}</div></div></section>
     <section class="event-section"><div class="event-section-head"><div><p class="eyebrow mono">${lang() ? 'RESULTADOS' : 'RESULTS'}</p><h2>${lang() ? 'Posiciones finales' : 'Final standings'}</h2></div></div><div class="brackets-grid">${brackets || '<div class="panel glass empty-state"><p class="muted">No bracket standings available for this tournament.</p></div>'}</div></section>

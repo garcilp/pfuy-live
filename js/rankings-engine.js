@@ -510,7 +510,10 @@
                     outcome: isWin ? 'win' : 'loss',
                     preScore: pyRound(pre, 1),
                     postScore: pyRound(post, 1),
-                    change: pyRound(post - pre, 1)
+                    change: pyRound(post - pre, 1),
+                    eventPreScore: pyRound(setPreScores[s.setId][pid][1], 1),
+                    eventPostScore: pyRound(post, 1),
+                    eventChange: pyRound(post - setPreScores[s.setId][pid][1], 1)
                   };
                   if (!diagnosticHistory.has(pid)) diagnosticHistory.set(pid, []);
                   diagnosticHistory.get(pid).push(trace);
@@ -1361,7 +1364,7 @@
       return result;
     }
 
-    calculateCustom(prePeriodSets, periodSets, periodPlacements, mode, startDate, endDate, targetPlayerId, weights = null) {
+    calculateCustom(prePeriodSets, periodSets, periodPlacements, mode, startDate, endDate, targetPlayerId, weights = null, fixedNormalizationRanges = null) {
       if (weights === null || weights === undefined) {
         weights = { glicko2: 50, quality_wins: 25, sof: 15, loss_quality: 10 };
       } else if (typeof weights === 'string') {
@@ -1390,10 +1393,13 @@
         cleanWeights = { glicko2: 25.0, quality_wins: 25.0, sof: 25.0, loss_quality: 25.0 };
       }
 
-      const resG2 = this.calculateGlicko2(prePeriodSets, periodSets, mode, startDate, endDate, null);
-      const resSof = this.calculateSof(prePeriodSets, periodSets, periodPlacements, mode, startDate, endDate, null);
-      const resQw = this.calculateQualityWins(prePeriodSets, periodSets, mode, startDate, endDate, null);
-      const resLq = this.calculateLossQuality(prePeriodSets, periodSets, mode, startDate, endDate, null);
+      // Keep all players in each ranking, but only build match-level trace data
+      // for the player being inspected. Custom counterfactuals call this many
+      // times and do not need diagnostic histories for the rest of the field.
+      const resG2 = this.calculateGlicko2(prePeriodSets, periodSets, mode, startDate, endDate, targetPlayerId);
+      const resSof = this.calculateSof(prePeriodSets, periodSets, periodPlacements, mode, startDate, endDate, targetPlayerId);
+      const resQw = this.calculateQualityWins(prePeriodSets, periodSets, mode, startDate, endDate, targetPlayerId);
+      const resLq = this.calculateLossQuality(prePeriodSets, periodSets, mode, startDate, endDate, targetPlayerId);
 
       const sysResults = {
         glicko2: resG2,
@@ -1424,11 +1430,16 @@
 
       const statsMinMax = {};
       for (const sysKey of knownSystems) {
-        const scores = Array.from(playersMap.values()).map(pInfo => pInfo.rawScores[sysKey] !== undefined ? pInfo.rawScores[sysKey] : 0.0);
-        if (scores.length > 0) {
-          statsMinMax[sysKey] = { min: Math.min(...scores), max: Math.max(...scores) };
+        const fixedRange = fixedNormalizationRanges && fixedNormalizationRanges[sysKey];
+        if (fixedRange && Number.isFinite(Number(fixedRange.min)) && Number.isFinite(Number(fixedRange.max))) {
+          statsMinMax[sysKey] = { min: Number(fixedRange.min), max: Number(fixedRange.max) };
         } else {
-          statsMinMax[sysKey] = { min: 0.0, max: 100.0 };
+          const scores = Array.from(playersMap.values()).map(pInfo => pInfo.rawScores[sysKey] !== undefined ? pInfo.rawScores[sysKey] : 0.0);
+          if (scores.length > 0) {
+            statsMinMax[sysKey] = { min: Math.min(...scores), max: Math.max(...scores) };
+          } else {
+            statsMinMax[sysKey] = { min: 0.0, max: 100.0 };
+          }
         }
       }
 
@@ -1463,6 +1474,7 @@
           playerId: pid,
           playerTag: pInfo.playerTag,
           score: pyRound(finalScore, 1),
+          scoreExact: finalScore,
           normalizedScores: normScores,
           weightedContributions: weightedContribs,
           weights: cleanWeightsRounded,
@@ -1501,6 +1513,7 @@
         endDate: endDate,
         totalPlayers: rankings.length,
         weights: cleanWeightsSummary,
+        normalizationRanges: statsMinMax,
         rankings: rankings,
         algorithm: {
           version: ALGORITHM_VERSION,
@@ -1566,7 +1579,7 @@
       return result;
     }
 
-    calculate(system = 'glicko2', mode = 'historical', startDate = null, endDate = null, targetPlayerId = null, weights = null) {
+    calculate(system = 'glicko2', mode = 'historical', startDate = null, endDate = null, targetPlayerId = null, weights = null, fixedNormalizationRanges = null) {
       if (startDate && endDate && startDate > endDate) {
         throw new Error('Start date must be before or on end date.');
       }
@@ -1594,7 +1607,7 @@
           return this.calculateLossQuality(prePeriodSets, periodSets, mode, startDate, endDate, targetPlayerId);
         case 'custom':
         case 'power_rankings':
-          return this.calculateCustom(prePeriodSets, periodSets, periodPlacements, mode, startDate, endDate, targetPlayerId, weights);
+          return this.calculateCustom(prePeriodSets, periodSets, periodPlacements, mode, startDate, endDate, targetPlayerId, weights, fixedNormalizationRanges);
         default:
           throw new Error(`Unknown ranking system: ${system}`);
       }

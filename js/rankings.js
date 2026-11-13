@@ -1392,7 +1392,7 @@ function renderCustomPowerRankings() {
   const budgetBoxHtml = renderFormulaBudgetBox();
   const isPeriodPerf = modeFilter.value === 'period_performance';
   const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
-  const prGridCols = isPeriodPerf ? '55px minmax(170px,1.6fr) 95px 85px repeat(4, minmax(85px, 1fr)) 100px;' : '60px minmax(180px,1.8fr) 110px repeat(4, minmax(90px, 1fr)) 110px;';
+  const prGridCols = isPeriodPerf ? '55px minmax(170px,1.6fr) 95px repeat(4, minmax(85px, 1fr)) 100px;' : '60px minmax(180px,1.8fr) 110px repeat(4, minmax(90px, 1fr)) 110px;';
 
   let html = `
     ${budgetBoxHtml}
@@ -1408,7 +1408,6 @@ function renderCustomPowerRankings() {
           <span class="sortable" onclick="changeSort('rank')">${isEs ? 'PUESTO' : 'RANK'} ${sortCol === 'rank' ? (sortAsc ? '▲' : '▼') : ''}</span>
           <span class="sortable" onclick="changeSort('playerTag')">${isEs ? 'JUGADOR' : 'PLAYER'} ${sortCol === 'playerTag' ? (sortAsc ? '▲' : '▼') : ''}</span>
           <span class="sortable" onclick="changeSort('score')">${isEs ? 'PUNTAJE' : 'SCORE'} ${sortCol === 'score' ? (sortAsc ? '▲' : '▼') : ''}</span>
-          ${isPeriodPerf ? `<span class="sortable" onclick="changeSort('change')">${isEs ? 'CAMBIO' : 'CHANGE'} ${sortCol === 'change' ? (sortAsc ? '▲' : '▼') : ''}</span>` : ''}
           <span>GLICKO-2</span>
           <span>${isEs ? 'VICTORIAS CALIDAD' : 'QUALITY WINS'}</span>
           <span>SOF</span>
@@ -1426,11 +1425,6 @@ function renderCustomPowerRankings() {
               </a>
             </div>
             <span class="score-col mono font-bold">${p.score}</span>
-            ${isPeriodPerf ? `
-              <span class="change-col mono font-bold ${p.change > 0 ? 'win' : (p.change < 0 ? 'loss' : 'muted')}">
-                ${p.change !== undefined && p.change !== null ? (p.change > 0 ? `+${p.change}` : `${p.change}`) : '-'}
-              </span>
-            ` : ''}
             <span class="mono" style="color:${PR_COMPONENTS.glicko2.color};">${Math.round((p.weightedContributions.glicko2||0)*10)/10} <small class="muted">(${Math.round((p.normalizedScores.glicko2||0)*10)/10})</small></span>
             <span class="mono" style="color:${PR_COMPONENTS.quality_wins.color};">${Math.round((p.weightedContributions.quality_wins||0)*10)/10} <small class="muted">(${Math.round((p.normalizedScores.quality_wins||0)*10)/10})</small></span>
             <span class="mono" style="color:${PR_COMPONENTS.sof.color};">${Math.round((p.weightedContributions.sof||0)*10)/10} <small class="muted">(${Math.round((p.normalizedScores.sof||0)*10)/10})</small></span>
@@ -1520,7 +1514,7 @@ function renderIndividualSystem(systemKey) {
   const sysInfo = currentData.algorithm || {};
   const isPeriodPerf = modeFilter.value === 'period_performance';
   const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
-  const indGridCols = isPeriodPerf ? '55px minmax(160px,1.8fr) 95px 95px 85px minmax(130px, 1.2fr) 90px;' : '';
+  const indGridCols = isPeriodPerf ? '55px minmax(160px,1.8fr) 95px 85px minmax(130px, 1.2fr) 90px;' : '';
 
   let html = `
     <div class="panel glass system-banner">
@@ -1536,7 +1530,6 @@ function renderIndividualSystem(systemKey) {
           <span class="sortable" onclick="changeSort('rank')">${isEs ? 'PUESTO' : 'RANK'} ${sortCol === 'rank' ? (sortAsc ? '▲' : '▼') : ''}</span>
           <span class="sortable" onclick="changeSort('playerTag')">${isEs ? 'JUGADOR' : 'PLAYER'} ${sortCol === 'playerTag' ? (sortAsc ? '▲' : '▼') : ''}</span>
           <span class="sortable" onclick="changeSort('score')">${isEs ? 'PUNTAJE' : 'SCORE'} ${sortCol === 'score' ? (sortAsc ? '▲' : '▼') : ''}</span>
-          ${isPeriodPerf ? `<span class="sortable" onclick="changeSort('change')">${isEs ? 'CAMBIO' : 'CHANGE'} ${sortCol === 'change' ? (sortAsc ? '▲' : '▼') : ''}</span>` : ''}
           <span class="sortable" onclick="changeSort('winRate')">${isEs ? '% VICTORIAS' : 'WIN %'} ${sortCol === 'winRate' ? (sortAsc ? '▲' : '▼') : ''}</span>
           <span>${isEs ? 'PARTIDAS / EVENTOS' : 'MATCHES / EVENTS'}</span>
           <span>${isEs ? 'ACCIONES' : 'ACTIONS'}</span>
@@ -1553,11 +1546,6 @@ function renderIndividualSystem(systemKey) {
               </a>
             </div>
             <span class="score-col mono font-bold">${p.isUnranked ? '-' : p.score}</span>
-            ${isPeriodPerf ? `
-              <span class="change-col mono font-bold ${p.change > 0 ? 'win' : (p.change < 0 ? 'loss' : 'muted')}">
-                ${p.change !== undefined && p.change !== null ? (p.change > 0 ? `+${p.change}` : `${p.change}`) : '-'}
-              </span>
-            ` : ''}
             <span class="winrate-col mono">${p.winRate !== undefined ? p.winRate + '%' : '-'}</span>
             <span class="matches-col mono">${p.matches !== undefined ? `${p.matches}${p.events !== undefined ? ` (${p.events} event${p.events === 1 ? '' : 's'})` : ''}` : '-'}</span>
             <div class="actions-col">
@@ -1770,65 +1758,265 @@ function getDiagHexagonSvg(rank) {
   `;
 }
 
-function generateDecidedSentence(playerTag, playerRank, sets, neighbors) {
-  if (!sets || sets.length === 0) return '';
-
-  const wins = sets.filter(s => s.won);
-  const losses = sets.filter(s => !s.won);
-
-  let sentence1 = '';
-  if (wins.length > 0) {
-    const oppWins = new Map();
-    for (const w of wins) {
-      if (w.opponentRank !== null && w.opponentRank !== undefined) {
-        if (!oppWins.has(w.opponentId)) {
-          oppWins.set(w.opponentId, { tag: w.opponentTag, rank: w.opponentRank, count: 0 });
-        }
-        oppWins.get(w.opponentId).count++;
+function getDiagnosticImpactGroups(sets, won) {
+  const groups = new Map();
+  sets.filter(s => s.won === won && s.impact !== null && s.impact !== undefined)
+    .forEach(s => {
+      const key = `${s.eventKey || s.eventId || s.eventName}|${s.opponentId}|${won}`;
+      if (!groups.has(key)) {
+        groups.set(key, { ...s, impact: 0 });
       }
+      const group = groups.get(key);
+      group.impact += Number(s.impact);
+    });
+  return Array.from(groups.values());
+}
+
+function formatDiagnosticImpact(impact) {
+  const decimals = ['custom', 'power_rankings'].includes(diagState.system) ? 2 : 1;
+  const formatted = Number(impact).toFixed(decimals);
+  return Number(formatted) > 0 ? `+${formatted}` : formatted;
+}
+
+function getDiagnosticGlickoTrend(sets) {
+  // Period-only mode resets everyone to a neutral rating, so it cannot tell us
+  // whether skill actually improved from a player's prior level.
+  // All-time profiles represent completed careers, so they get a career summary
+  // instead of language that implies the player's trajectory is still rising.
+  if (diagState.mode === 'period_only' || diagState.mode === 'historical') return null;
+
+  const byEvent = new Map();
+  sets.forEach(set => {
+    const pre = Number(set.eventPreScore);
+    const post = Number(set.eventPostScore);
+    if (!Number.isFinite(pre) || !Number.isFinite(post) || !set.eventDate) return;
+    const key = set.eventKey || set.eventId || set.eventName;
+    if (!byEvent.has(key)) byEvent.set(key, { date: set.eventDate, post });
+  });
+  const events = Array.from(byEvent.values()).sort((a, b) => a.date.localeCompare(b.date));
+  if (events.length < 4) return null;
+
+  // Compare average rating levels across adjacent stretches. Endpoint-only
+  // comparisons can hide reversals and overstate a period-long direction.
+  const split = Math.floor(events.length / 2);
+  if (split < 2 || events.length - split < 2) return null;
+  const average = rows => rows.reduce((sum, event) => sum + event.post, 0) / rows.length;
+  const earlierLevel = average(events.slice(0, split));
+  const recentLevel = average(events.slice(split));
+  const change = recentLevel - earlierLevel;
+  if (!Number.isFinite(change)) return null;
+  return { change };
+}
+
+function getAllTimeAchievementSummary(sets, events) {
+  const placements = events.filter(event => Number.isFinite(Number(event.placement)) && Number(event.placement) > 0);
+  if (placements.length) {
+    const titles = placements.filter(event => Number(event.placement) === 1);
+    const podiums = placements.filter(event => Number(event.placement) <= 3);
+    const nonTitlePodiums = podiums.length - titles.length;
+    const highlightPool = titles.length ? titles : podiums.length ? podiums : placements;
+    const highlight = [...highlightPool].sort((a, b) => {
+      const entrantDiff = (Number(b.entrants) || 0) - (Number(a.entrants) || 0);
+      return entrantDiff || String(b.date || '').localeCompare(String(a.date || ''));
+    })[0];
+    const eventCount = placements.length;
+    const highlightName = highlight?.name ? `, including ${esc(highlight.name)}` : '';
+
+    if (titles.length > 1) {
+      const otherPodiums = nonTitlePodiums ? ` and ${nonTitlePodiums} other podium finishes` : '';
+      return `${titles.length} event titles${otherPodiums} across ${eventCount} recorded events${highlightName}`;
     }
-    const sortedBeaten = Array.from(oppWins.values()).sort((a, b) => a.rank - b.rank);
-    if (sortedBeaten.length > 0) {
-      const topBeaten = sortedBeaten.slice(0, 2);
-      const parts = topBeaten.map(o => {
-        const timesStr = o.count === 2 ? ', twice' : (o.count > 2 ? `, ${o.count} times` : '');
-        return `<strong>${esc(o.tag)} (#${o.rank}${timesStr})</strong>`;
-      });
-      if (parts.length === 1) {
-        sentence1 = `${esc(playerTag)} finished <strong>#${playerRank || '-'}</strong> on the strength of wins over ${parts[0]}.`;
-      } else {
-        sentence1 = `${esc(playerTag)} finished <strong>#${playerRank || '-'}</strong> on the strength of wins over ${parts[0]} and ${parts[1]}.`;
+    if (titles.length === 1) {
+      const extraPodiums = nonTitlePodiums ? `, plus ${nonTitlePodiums} other podium finishes` : '';
+      return `a title at ${esc(highlight.name)}${extraPodiums}`;
+    }
+    if (podiums.length > 1) {
+      const best = Math.min(...placements.map(event => Number(event.placement)));
+      const bestLabel = ({ 2: 'runner-up', 3: 'third-place' })[best] || `#${best}`;
+      return `${podiums.length} podium finishes, including ${podiums.filter(event => Number(event.placement) === best).length} ${bestLabel} finishes`;
+    }
+    const best = Math.min(...placements.map(event => Number(event.placement)));
+    const bestEvent = placements.find(event => Number(event.placement) === best);
+    const ordinal = window.PRBadges?.getOrdinal ? window.PRBadges.getOrdinal(best) : `#${best}`;
+    return `a best finish of ${ordinal} at ${esc(bestEvent?.name || 'an event')}`;
+  }
+
+  if (sets.length) {
+    const wins = sets.filter(set => set.won).length;
+    const losses = sets.length - wins;
+    const eventWord = events.length === 1 ? 'event' : 'events';
+    return `a ${wins}–${losses} set record across ${events.length || 'multiple'} ${eventWord}`;
+  }
+  return 'no event placements on record';
+}
+
+function getAllTimeFactorSummary(playerRank) {
+  if (isCustomDiagnostic()) {
+    const player = getDiagnosticPlayerRankEntry(diagState.playerId) || playerRank;
+    const weights = player?.weights || {};
+    const contributions = player?.weightedContributions || {};
+    const leaderPhrases = {
+      glicko2: 'overall rating',
+      quality_wins: 'quality of wins over highly rated opponents',
+      sof: 'results in stacked fields',
+      loss_quality: 'consistency score'
+    };
+    const contributingPhrases = {
+      glicko2: 'overall rating',
+      quality_wins: 'wins over highly rated opponents',
+      sof: 'results in stacked fields',
+      loss_quality: 'consistent results'
+    };
+    const activeKeys = Object.keys(PR_COMPONENTS).filter(key => Number(weights[key]) > 0);
+    const fieldLeaders = activeKeys.filter(key =>
+      Number.isFinite(Number(contributions[key])) &&
+      Math.abs(Number(contributions[key]) - Number(weights[key])) < 0.005
+    );
+
+    if (fieldLeaders.length) {
+      if (fieldLeaders.includes('glicko2') && fieldLeaders.includes('loss_quality')) {
+        return 'The highest rating and consistency scores reinforce it.';
       }
+      const claims = fieldLeaders.map(key => leaderPhrases[key]);
+      return `${esc(player?.playerTag || diagState.playerTag)} leads the field in ${claims.join(' and ')}.`;
+    }
+
+    const mainContributions = activeKeys
+      .filter(key => Number.isFinite(Number(contributions[key])))
+      .sort((a, b) => (Number(contributions[b]) || 0) - (Number(contributions[a]) || 0))
+      .slice(0, 2)
+      .map(key => contributingPhrases[key]);
+    if (mainContributions.length) return `The main support for this score comes from ${mainContributions.join(' and ')}.`;
+  }
+
+  const systemDescriptions = {
+    glicko2: 'A strong overall rating anchors this all-time position.',
+    overview: 'A strong overall rating anchors this all-time position.',
+    comparison: 'A strong overall rating anchors this all-time position.',
+    quality_wins: 'Wins over highly rated opponents are a defining strength.',
+    sof: 'Strong finishes in stacked fields are a defining strength.',
+    loss_quality: 'Consistent results against strong opposition are a defining strength.'
+  };
+  return systemDescriptions[diagState.system] || 'Their career results support this all-time position.';
+}
+
+function generateAllTimeCareerNarrative(playerTag, playerRank, sets, events) {
+  const rankText = playerRank ? `<strong>#${playerRank}</strong>` : 'unranked';
+  const allTimeRankPhrases = {
+    1: 'at the top of the all-time rankings',
+    2: 'as the all-time runner-up',
+    3: 'on the all-time podium',
+    4: 'in the all-time top four',
+    5: 'among the all-time top five',
+    6: 'among the all-time top six',
+    7: 'among the all-time top contenders',
+    8: 'inside the all-time top eight'
+  };
+  const rankPhrase = allTimeRankPhrases[Number(playerRank)];
+  const rankSentence = rankPhrase
+    ? `<strong>${esc(playerTag)}</strong> finished ${rankText} ${rankPhrase}`
+    : `<strong>${esc(playerTag)}</strong> finished ${rankText} all-time`;
+  const achievement = getAllTimeAchievementSummary(sets, events);
+  const factors = getAllTimeFactorSummary(getDiagnosticPlayerRankEntry(diagState.playerId));
+  return `${rankSentence}, with ${achievement}. ${factors}`;
+}
+
+function generateDecidedSentence(playerTag, playerRank, sets, events = []) {
+  if ((!sets || sets.length === 0) && !(diagState.mode === 'historical' && events.length > 0)) return '';
+  sets = sets || [];
+  if (diagState.mode === 'historical') {
+    return generateAllTimeCareerNarrative(playerTag, playerRank, sets, events);
+  }
+
+  const isElite = Number(playerRank) > 0 && Number(playerRank) <= 8;
+  const rankText = playerRank ? `<strong>#${playerRank}</strong>` : 'unranked';
+  const topEightPhrases = {
+    1: 'at the top of the field',
+    2: 'as runner-up',
+    3: 'on the podium',
+    4: 'among the top contenders',
+    5: 'in the top five',
+    6: 'in the top six',
+    7: 'among the season’s leading players',
+    8: 'inside the top eight'
+  };
+  const intro = isElite
+    ? `<strong>${esc(playerTag)}</strong> finished ${rankText} ${topEightPhrases[Number(playerRank)]}`
+    : `<strong>${esc(playerTag)}</strong> finished ${rankText}`;
+
+  const placements = events.filter(event => Number.isFinite(Number(event.placement)) && Number(event.placement) > 0);
+  let achievement = '';
+  if (placements.length) {
+    const bestPlacement = Math.min(...placements.map(event => Number(event.placement)));
+    const bestEvents = placements.filter(event => Number(event.placement) === bestPlacement);
+    const ordinal = window.PRBadges?.getOrdinal
+      ? window.PRBadges.getOrdinal(bestPlacement)
+      : `#${bestPlacement}`;
+    const placePhrase = ({ 1: 'first-place', 2: 'runner-up', 3: 'third-place' })[bestPlacement] || ordinal;
+    if (bestEvents.length > 1) {
+      achievement = `${bestEvents.length} ${placePhrase} finishes`;
+    } else {
+      const bestEvent = bestEvents[0];
+      achievement = `a ${placePhrase} finish at ${esc(bestEvent.name)}`;
     }
   }
 
-  let sentence2 = '';
-  if (losses.length > 0) {
-    const sortedLosses = [...losses].sort((a, b) => a.impact - b.impact);
-    const worstLoss = sortedLosses[0];
-    if (worstLoss) {
-      const oppRankStr = worstLoss.opponentRank ? ` (#${worstLoss.opponentRank})` : '';
-      sentence2 = `The costliest result was a loss to <strong>${esc(worstLoss.opponentTag)}${oppRankStr}</strong> at ${esc(worstLoss.eventName || 'Tournament')}`;
-
-      if (neighbors && neighbors.above) {
-        const neighborAboveId = neighbors.above.playerId;
-        const setsVsAbove = sets.filter(s => s.opponentId === neighborAboveId);
-        if (setsVsAbove.length === 1 && !setsVsAbove[0].won) {
-          const s = setsVsAbove[0];
-          sentence2 += `, and the only set against <strong>${esc(neighbors.above.playerTag)} (#${neighbors.above.rank})</strong> was lost, ${esc(s.score || '1–3')}.`;
-        } else {
-          sentence2 += '.';
-        }
-      } else {
-        sentence2 += '.';
-      }
+  const trend = getDiagnosticGlickoTrend(sets);
+  let history = '';
+  const years = new Set(sets.map(set => (set.eventDate || '').slice(0, 4)).filter(year => /^\d{4}$/.test(year)));
+  const periodLabel = years.size === 1 ? 'the year' : 'the period';
+  const rankIndex = Number(playerRank);
+  const improvingPhrases = {
+    1: `${esc(playerTag)} built momentum as ${periodLabel} went on.`,
+    2: `${esc(playerTag)}'s strongest stretch came in the second half.`,
+    3: `${esc(playerTag)} finished ${periodLabel} in stronger form.`,
+    4: `${esc(playerTag)}'s results gathered strength across ${periodLabel}.`,
+    5: `${esc(playerTag)} posted stronger results in the latter half.`,
+    6: `${esc(playerTag)}'s later results were stronger than the early stretch.`,
+    7: `${esc(playerTag)} found better form in the second half.`,
+    8: `${esc(playerTag)} gained momentum later in ${periodLabel}.`
+  };
+  const steadyPhrases = {
+    1: `${esc(playerTag)} stayed at a high level throughout ${periodLabel}.`,
+    2: `${esc(playerTag)} maintained a steady level across ${periodLabel}.`,
+    3: `${esc(playerTag)} kept up strong form from start to finish.`,
+    4: `${esc(playerTag)} delivered a consistent run across ${periodLabel}.`,
+    5: `${esc(playerTag)}'s results remained solid throughout ${periodLabel}.`,
+    6: `${esc(playerTag)} held a dependable level across the season.`,
+    7: `${esc(playerTag)}'s form stayed steady across their events.`,
+    8: `${esc(playerTag)} kept their results on an even keel through ${periodLabel}.`
+  };
+  const eliteDipPhrases = {
+    1: `${esc(playerTag)} held the top spot through a tougher second half.`,
+    2: `${esc(playerTag)} kept second place despite a softer finish.`,
+    3: `${esc(playerTag)} stayed on the podium after a quieter second half.`,
+    4: `${esc(playerTag)} held a top-four finish through a tougher stretch.`,
+    5: `${esc(playerTag)} remained in the top five after a softer second half.`,
+    6: `${esc(playerTag)} secured a top-six season despite uneven late results.`,
+    7: `${esc(playerTag)} kept a top-eight place through a tougher stretch.`,
+    8: `${esc(playerTag)} stayed inside the top eight despite a softer finish.`
+  };
+  if (trend && Math.abs(trend.change) >= 45) {
+    if (trend.change > 0) {
+      history = improvingPhrases[rankIndex] || `${esc(playerTag)}'s results improved over ${periodLabel}.`;
+    } else if (isElite) {
+      history = eliteDipPhrases[rankIndex] || `${esc(playerTag)} stayed among the leaders through a tougher stretch.`;
+    } else {
+      history = `${esc(playerTag)}'s results softened as ${periodLabel} went on.`;
     }
+  } else if (trend) {
+    history = isElite
+      ? (steadyPhrases[rankIndex] || `${esc(playerTag)} maintained strong form over ${periodLabel}.`)
+      : `${esc(playerTag)}'s level stayed fairly steady over ${periodLabel}.`;
   }
 
-  if (sentence1 && sentence2) {
-    return `${sentence1} ${sentence2}`;
-  }
-  return sentence1 || sentence2 || '';
+  const achievementText = achievement ? `, with ${achievement}` : '';
+  const firstSentence = `${intro}${achievementText}.`;
+  return [firstSentence, history].filter(Boolean).join(' ');
+}
+
+function diagnosticUsesGlicko() {
+  return ['glicko2', 'overview', 'comparison'].includes(diagState.system);
 }
 
 function closeDiagnosticModal() {
@@ -1842,6 +2030,108 @@ function closeDiagnosticModal() {
   }
 }
 
+function updateDiagnosticImpactProgress(completed, total) {
+  const diagBody = $('#diag-body');
+  if (!diagBody) return;
+  diagBody.innerHTML = `
+    <div class="diag-empty-card">
+      <p>Calculating set impacts…</p>
+      <p class="mono muted">${completed} of ${total} sets</p>
+    </div>
+  `;
+}
+
+async function calculateDiagnosticCounterfactualScores({ gameData, sets, system, mode, startDate, endDate, playerId, weights, fixedNormalizationRanges }) {
+  const candidates = sets.filter(set => set.setId !== undefined && set.setId !== null);
+  const scores = {};
+  if (candidates.length === 0) return scores;
+
+  if (typeof Worker !== 'undefined') {
+    const availableWorkers = Math.max(1, (navigator.hardwareConcurrency || 2) - 1);
+    const workerCount = Math.min(8, availableWorkers, candidates.length);
+    const workerChunks = Array.from({ length: workerCount }, () => []);
+    candidates.forEach((set, index) => workerChunks[index % workerCount].push(String(set.setId)));
+
+    return await new Promise((resolve, reject) => {
+      const workers = [];
+      let completedWorkers = 0;
+      let completedSets = 0;
+      let finished = false;
+
+      const stopWorkers = () => workers.forEach(worker => worker.terminate());
+      const fail = error => {
+        if (finished) return;
+        finished = true;
+        stopWorkers();
+        reject(error);
+      };
+
+      try {
+        workerChunks.forEach(setIds => {
+          const worker = new Worker(new URL('js/rankings-diagnostic-worker.js', document.baseURI));
+          workers.push(worker);
+          worker.onmessage = event => {
+            const message = event.data || {};
+            if (message.type === 'progress') {
+              completedSets++;
+              if (completedSets === candidates.length || completedSets % 5 === 0) {
+                updateDiagnosticImpactProgress(completedSets, candidates.length);
+              }
+            } else if (message.type === 'done') {
+              Object.assign(scores, message.impacts || {});
+              completedWorkers++;
+              if (completedWorkers === workers.length && !finished) {
+                finished = true;
+                stopWorkers();
+                resolve(scores);
+              }
+            } else if (message.type === 'error') {
+              fail(new Error(message.message || 'Could not calculate set impacts.'));
+            }
+          };
+          worker.onerror = event => fail(new Error(event.message || 'Ranking diagnostic worker failed.'));
+          worker.postMessage({
+            gameData,
+            system,
+            mode,
+            startDate,
+            endDate,
+            playerId,
+            weights,
+            fixedNormalizationRanges,
+            setIds
+          });
+        });
+      } catch (error) {
+        fail(error);
+      }
+    });
+  }
+
+  for (let index = 0; index < candidates.length; index++) {
+    const setId = String(candidates[index].setId);
+    const withoutSetData = {
+      ...gameData,
+      sets: (gameData.sets || []).filter(set => String(set.setId) !== setId)
+    };
+    const result = new window.ClientRankingEngine(withoutSetData).calculate(
+      system,
+      mode,
+      startDate,
+      endDate,
+      playerId,
+      weights,
+      fixedNormalizationRanges
+    );
+    const player = result.rankings?.find(row => String(row.playerId) === String(playerId));
+    scores[setId] = player?.scoreExact ?? player?.score ?? null;
+    updateDiagnosticImpactProgress(index + 1, candidates.length);
+    await new Promise(resolve => setTimeout(resolve, 0));
+  }
+
+  return scores;
+}
+
 // Global modal open
 window.openDiagnosticModal = async function(playerId) {
   diagState.triggerElement = document.activeElement;
@@ -1850,6 +2140,14 @@ window.openDiagnosticModal = async function(playerId) {
   diagState.setsFilter = 'all';
   diagState.setsSort = 'newest';
   diagState.showAllEvents = false;
+  ['summary', 'sets', 'method'].forEach(key => {
+    const tab = $(`#diag-tab-${key}`);
+    if (!tab) return;
+    const active = key === 'summary';
+    tab.classList.toggle('active', active);
+    tab.setAttribute('aria-selected', active ? 'true' : 'false');
+    tab.setAttribute('tabindex', active ? '0' : '-1');
+  });
 
   const game = gameFilter.value;
   diagState.game = game;
@@ -1971,6 +2269,7 @@ window.openDiagnosticModal = async function(playerId) {
       return {
         setId: h.setId,
         eventId: h.eventId || h.tournamentSlug || eventTitle,
+        eventKey: h.eventKey || h.tournamentSlug || eventTitle,
         eventName: eventTitle,
         eventDate: h.date || '',
         round: h.round ? (h.phase ? `${h.phase} ${h.round}` : h.round) : (h.phase || 'Bracket'),
@@ -1980,9 +2279,41 @@ window.openDiagnosticModal = async function(playerId) {
         won: won,
         score: h.scoreDisplay || h.displayScore || (won ? 'Won' : 'Lost'),
         winChance: Math.max(0.01, Math.min(0.99, winChance)),
-        impact: impact
+        impact: impact,
+        modelImpact: impact,
+        eventChange: h.eventChange,
+        eventPreScore: h.eventPreScore,
+        eventPostScore: h.eventPostScore
       };
     });
+
+    // Measure each set's importance against the selected ranking by recalculating
+    // with that set removed, including downstream effects on later events.
+    if (diagState.allSets.length > 0 && diagState.finalScore !== null) {
+      const scoreWithAllSets = Number(pRankObj?.scoreExact ?? diagState.finalScore);
+      const fixedNormalizationRanges = calcSystem === 'custom' ? result.normalizationRanges : null;
+      const counterfactualScores = await calculateDiagnosticCounterfactualScores({
+        gameData,
+        sets: diagState.allSets,
+        system: calcSystem,
+        mode: diagState.mode,
+        startDate: diagState.startDate || null,
+        endDate: diagState.endDate || null,
+        playerId: diagState.playerId,
+        weights: prWeights,
+        fixedNormalizationRanges
+      });
+      for (const set of diagState.allSets) {
+        if (set.setId === undefined || set.setId === null) continue;
+        const scoreWithoutSet = counterfactualScores[String(set.setId)];
+        if (scoreWithoutSet !== undefined && scoreWithoutSet !== null && Number.isFinite(Number(scoreWithoutSet))) {
+          const effect = Math.abs(scoreWithAllSets - Number(scoreWithoutSet));
+          set.impact = effect * (set.won ? 1 : -1);
+        } else {
+          set.impact = null;
+        }
+      }
+    }
 
     // Extract events summary from placements or sets
     const rawPlacements = (gameData.placements || []).filter(p => String(p.playerId) === String(diagState.playerId));
@@ -2065,7 +2396,7 @@ function renderDiagnosticHeader() {
   else if (rank === 2) rankCls = 'place-silver';
   else if (rank === 3) rankCls = 'place-bronze';
 
-  const decidedSentence = generateDecidedSentence(tag, rank, diagState.allSets, neighbors);
+  const decidedSentence = generateDecidedSentence(tag, rank, diagState.allSets, diagState.allEvents);
 
   diagHeader.innerHTML = `
     <div class="diag-player-head">
@@ -2182,6 +2513,8 @@ function setDiagActiveTab(tabKey) {
     }
   });
   renderDiagnosticActiveTab();
+  const diagBody = $('#diag-body');
+  if (diagBody) diagBody.scrollTop = 0;
 }
 
 function renderDiagnosticActiveTab() {
@@ -2196,6 +2529,114 @@ function renderDiagnosticActiveTab() {
   } else if (diagState.activeTab === 'method') {
     diagBody.innerHTML = renderDiagMethodTab();
   }
+}
+
+function isCustomDiagnostic() {
+  return ['custom', 'power_rankings'].includes(diagState.system);
+}
+
+function getDiagnosticPlayerRankEntry(playerId) {
+  return diagState.allRankings.find(row => String(row.playerId) === String(playerId)) || null;
+}
+
+function renderCustomScoreBreakdown() {
+  const player = getDiagnosticPlayerRankEntry(diagState.playerId);
+  const contributions = player?.weightedContributions || {};
+  const weights = player?.weights || {};
+  const rows = Object.entries(PR_COMPONENTS).filter(([key]) => Number(weights[key]) > 0);
+
+  if (!rows.length) return '<div class="diag-empty-card">No component score details are available.</div>';
+
+  return `
+    <div class="diag-custom-contrib-list">
+      ${rows.map(([key, component]) => {
+        const contribution = Number(contributions[key]) || 0;
+        const weight = Number(weights[key]) || 0;
+        const pct = weight > 0 ? Math.max(0, Math.min(100, (contribution / weight) * 100)) : 0;
+        return `
+          <div class="diag-custom-contrib-row">
+            <span class="diag-custom-contrib-name">${esc(component.name)}</span>
+            <div class="diag-custom-contrib-track"><div style="width:${pct}%;background:${component.color};"></div></div>
+            <span class="diag-custom-contrib-value mono">${contribution.toFixed(1)} pts</span>
+          </div>
+        `;
+      }).join('')}
+      <p class="diag-custom-contrib-total">Contributions add up to the final score of ${Number(player?.score ?? diagState.finalScore).toFixed(1)}.</p>
+    </div>
+  `;
+}
+
+function renderSystemScoreFactors() {
+  const breakdown = diagState.diagData?.diagnostic?.breakdown || {};
+  let rows = [];
+  if (diagState.system === 'sof') {
+    rows = [
+      ['Events counted', breakdown.eventsCount],
+      ['Average event field', breakdown.avgFieldStrength],
+      ['Event points', breakdown.totalEventPoints]
+    ];
+  } else if (diagState.system === 'quality_wins') {
+    rows = [
+      ['Eligible wins', breakdown.eligibleWins],
+      ['Average win quality', breakdown.avgOpponentQuality],
+      ['Win confidence', Number.isFinite(Number(breakdown.confidenceFactor)) ? `${Math.round(Number(breakdown.confidenceFactor) * 100)}%` : null]
+    ];
+  } else if (diagState.system === 'loss_quality') {
+    rows = [
+      ['Wins and losses', breakdown.wins !== undefined ? `${breakdown.wins}–${breakdown.losses}` : null],
+      ['Credit from wins', breakdown.winCreditsTotal],
+      ['Penalty from losses', breakdown.lossPenaltiesTotal]
+    ];
+  }
+
+  const availableRows = rows.filter(([, value]) => value !== undefined && value !== null);
+  if (!availableRows.length) return '<div class="diag-empty-card">No score details are available for this selection.</div>';
+  return `
+    <div class="diag-system-factor-list">
+      ${availableRows.map(([label, value]) => `
+        <div class="diag-system-factor-row"><span>${esc(label)}</span><strong class="mono">${esc(String(value))}</strong></div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function explainNeighborScoreDifference(player, neighbor) {
+  const scoreDifference = Math.abs((Number(player?.score) || 0) - (Number(neighbor?.score) || 0));
+  const currentIsAhead = (Number(player?.score) || 0) >= (Number(neighbor?.score) || 0);
+  const margin = `${scoreDifference.toFixed(1)} points ${currentIsAhead ? 'ahead' : 'behind'}`;
+
+  if (isCustomDiagnostic()) {
+    const currentContribs = player?.weightedContributions || {};
+    const neighborContribs = neighbor?.weightedContributions || {};
+    const differences = Object.entries(PR_COMPONENTS).map(([key, component]) => ({
+      name: ({
+        glicko2: 'overall rating strength',
+        quality_wins: 'winning against stronger opponents',
+        sof: 'facing stronger opponents',
+        loss_quality: 'more consistent results'
+      })[key] || component.name,
+      difference: (Number(currentContribs[key]) || 0) - (Number(neighborContribs[key]) || 0)
+    }));
+    const currentEdges = differences.filter(item => item.difference > 0.05).sort((a, b) => b.difference - a.difference).slice(0, 2);
+    const neighborEdges = differences.filter(item => item.difference < -0.05).sort((a, b) => a.difference - b.difference).slice(0, 2);
+    const currentNames = currentEdges.map(item => item.name);
+    const neighborNames = neighborEdges.map(item => item.name);
+
+    if (currentIsAhead && currentNames.length && neighborNames.length) {
+      return `${esc(diagState.playerTag)}'s advantages in ${esc(currentNames.join(' and '))} outweigh ${esc(neighbor.playerTag)}'s edge in ${esc(neighborNames.join(' and '))}, putting ${esc(diagState.playerTag)} ${margin}.`;
+    }
+    if (!currentIsAhead && currentNames.length && neighborNames.length) {
+      return `Although ${esc(diagState.playerTag)} has an edge in ${esc(currentNames.join(' and '))}, ${esc(neighbor.playerTag)}'s advantage in ${esc(neighborNames.join(' and '))} leaves ${esc(diagState.playerTag)} ${margin}.`;
+    }
+    if (currentNames.length) {
+      return `${esc(diagState.playerTag)}'s advantages in ${esc(currentNames.join(' and '))} leave them ${margin} of ${esc(neighbor.playerTag)}.`;
+    }
+    if (neighborNames.length) {
+      return `${esc(neighbor.playerTag)}'s stronger ${esc(neighborNames.join(' and '))} contributions leave ${esc(diagState.playerTag)} ${margin}.`;
+    }
+  }
+
+  return `${esc(diagState.playerTag)} is ${margin} of ${esc(neighbor.playerTag)} in this ranking.`;
 }
 
 function renderDiagSummaryTab() {
@@ -2231,8 +2672,11 @@ function renderDiagSummaryTab() {
     const sortedP = [...placements].sort((a, b) => a.placement - b.placement);
     const bestP = sortedP[0];
     const ord = (window.PRBadges && window.PRBadges.getOrdinal) ? window.PRBadges.getOrdinal(bestP.placement) : `#${bestP.placement}`;
+    const bestPlacementCount = placements.filter(event => Number(event.placement) === Number(bestP.placement)).length;
     bestPlacingStr = ord;
-    bestEventSub = `${bestP.name}${bestP.entrants ? ` · ${bestP.entrants}` : ''}`;
+    bestEventSub = bestPlacementCount > 1
+      ? `${bestPlacementCount} times`
+      : `${bestP.name}${bestP.entrants ? ` · ${bestP.entrants}` : ''}`;
   }
 
   // Record vs Top 10
@@ -2287,7 +2731,6 @@ function renderDiagSummaryTab() {
           <div class="diag-h2h-info">
             <div>
               <span class="opp-tag">${esc(nb.playerTag)}</span>
-              <span class="opp-rank">#${nb.rank}</span>
             </div>
             <span class="opp-detail">${esc(desc)}</span>
           </div>
@@ -2303,17 +2746,16 @@ function renderDiagSummaryTab() {
       const vsSets = sets.filter(s => s.opponentId === String(nb.playerId));
       const w = vsSets.filter(s => s.won).length;
       const l = vsSets.filter(s => !s.won).length;
-      const ptsBehind = Math.abs(Math.round(((nb.score || 0) - (diagState.finalScore || 0)) * 10) / 10);
-      let vsStr = (vsSets.length === 1 && l === 1) ? `lost the only set against ${esc(nb.playerTag)} (${vsSets[0].score || '1–3'})` : `is ${w}–${l} against ${esc(nb.playerTag)}`;
-      whySentences.push(`<strong>Why #${rank} and not #${nb.rank}:</strong> ${esc(pTag)} ${vsStr} and finished ${ptsBehind} points behind.`);
+      const current = getDiagnosticPlayerRankEntry(pId) || { playerTag: pTag, score: diagState.finalScore };
+      whySentences.push(`<strong>Compared with ${esc(nb.playerTag)}:</strong> ${explainNeighborScoreDifference(current, nb)} Head-to-head: ${w}–${l}.`);
     }
     if (neighbors.below) {
       const nb = neighbors.below;
       const vsSets = sets.filter(s => s.opponentId === String(nb.playerId));
       const w = vsSets.filter(s => s.won).length;
       const l = vsSets.filter(s => !s.won).length;
-      const ptsAhead = Math.abs(Math.round(((diagState.finalScore || 0) - (nb.score || 0)) * 10) / 10);
-      whySentences.push(`<strong>Why not #${nb.rank}:</strong> ${esc(pTag)} leads ${esc(nb.playerTag)} ${w}–${l} and by ${ptsAhead} points.`);
+      const current = getDiagnosticPlayerRankEntry(pId) || { playerTag: pTag, score: diagState.finalScore };
+      whySentences.push(`<strong>Compared with ${esc(nb.playerTag)}:</strong> ${explainNeighborScoreDifference(current, nb)} Head-to-head: ${w}–${l}.`);
     }
 
     whereSitsHtml = `
@@ -2334,7 +2776,7 @@ function renderDiagSummaryTab() {
 
         ${whySentences.length > 0 ? `
           <div class="diag-why-box">
-            ${whySentences.join(' ')}
+            ${whySentences.join('<br><br>')}
           </div>
         ` : ''}
       </div>
@@ -2354,13 +2796,11 @@ function renderDiagSummaryTab() {
       </div>
     `;
   } else {
-    const wins = sets.filter(s => s.won).sort((a, b) => b.impact - a.impact).slice(0, 3);
-    const losses = sets.filter(s => !s.won).sort((a, b) => a.impact - b.impact).slice(0, 3);
+    const wins = getDiagnosticImpactGroups(sets, true).sort((a, b) => b.impact - a.impact).slice(0, 3);
+    const losses = getDiagnosticImpactGroups(sets, false).sort((a, b) => a.impact - b.impact).slice(0, 3);
 
     const renderMomentItem = (item) => {
-      const oppRankStr = item.opponentRank ? `<span class="opp-rank">#${item.opponentRank}</span>` : '';
-      const roundScore = `${item.round} · ${item.score}`;
-      const sign = item.impact > 0 ? `+${item.impact}` : `${item.impact}`;
+      const sign = formatDiagnosticImpact(item.impact);
       const cls = item.impact >= 0 ? 'pos' : 'neg';
 
       return `
@@ -2368,9 +2808,8 @@ function renderDiagSummaryTab() {
           <div class="diag-moment-info">
             <div>
               <span class="opp-name">${esc(item.opponentTag)}</span>
-              ${oppRankStr}
             </div>
-            <span class="event-round">${esc(item.eventName)} · ${esc(roundScore)}</span>
+            <span class="event-round">${esc(item.eventName)}</span>
           </div>
           <span class="diag-impact-val ${cls}">${sign}</span>
         </div>
@@ -2399,26 +2838,28 @@ function renderDiagSummaryTab() {
     `;
   }
 
-  // 4. Score over the period (SVG chart)
+  // 4. Show the real Glicko rating timeline or event impacts for other systems.
   let chartHtml = '';
+  const isTimeline = diagnosticUsesGlicko();
+  const chartTitle = isTimeline ? 'Score over time' : 'Event impact over time';
+  const chartSubtitle = isTimeline ? 'The rating after each event, shown on a true time scale.' : 'Combined set impacts at each event; wins are positive and losses are negative.';
   if (setsPlayedCount === 0) {
     chartHtml = `
       <div class="diag-card">
-        <h3 class="diag-card-title">Score over the period</h3>
-        <p class="diag-card-subtitle">The score after each event.</p>
+        <h3 class="diag-card-title">${chartTitle}</h3>
+        <p class="diag-card-subtitle">${chartSubtitle}</p>
         <div class="diag-empty-card">
-          No sets are recorded for this player between ${esc(diagState.startDate || 'start')} and ${esc(diagState.endDate || 'end')}, so score progression is unavailable.
+          No sets are recorded for this player between ${esc(diagState.startDate || 'start')} and ${esc(diagState.endDate || 'end')}, so this chart is unavailable.
         </div>
       </div>
     `;
   } else {
+    const scoreContent = `<div class="diag-chart-container">${isTimeline ? renderScoreChartSvg(sets, events) : renderEventImpactChartSvg(sets)}</div>`;
     chartHtml = `
       <div class="diag-card">
-        <h3 class="diag-card-title">Score over the period</h3>
-        <p class="diag-card-subtitle">The score after each event. The larger dot is the biggest gain.</p>
-        <div class="diag-chart-container">
-          ${renderScoreChartSvg(sets, events)}
-        </div>
+        <h3 class="diag-card-title">${chartTitle}</h3>
+        <p class="diag-card-subtitle">${chartSubtitle}</p>
+        ${scoreContent}
       </div>
     `;
   }
@@ -2461,10 +2902,77 @@ function renderDiagSummaryTab() {
   `;
 }
 
+// Show observed event impact values without inventing a cumulative score path.
+function renderEventImpactChartSvg(sets) {
+  const byEvent = new Map();
+  sets.forEach(set => {
+    const key = set.eventKey || set.eventId || set.eventName;
+    if (!byEvent.has(key)) byEvent.set(key, { label: set.eventName || 'Event', date: set.eventDate, impact: 0 });
+    const impact = Number(set.impact);
+    if (Number.isFinite(impact)) byEvent.get(key).impact += impact;
+  });
+  const points = Array.from(byEvent.values()).filter(point => point.date && Number.isFinite(Date.parse(`${point.date}T00:00:00`)))
+    .sort((a, b) => a.date.localeCompare(b.date));
+  if (!points.length) return '<div class="diag-empty-card">Event impact history is unavailable.</div>';
+
+  const w = 800, h = 260, padLeft = 48, padRight = 36, padTop = 28, padBottom = 40;
+  const chartW = w - padLeft - padRight, chartH = h - padTop - padBottom;
+  const minTime = Date.parse(`${points[0].date}T00:00:00`);
+  const maxTime = Date.parse(`${points[points.length - 1].date}T00:00:00`);
+  const maxAbs = Math.max(1, ...points.map(point => Math.abs(point.impact)));
+  const extent = maxAbs * 1.12;
+  const y = value => padTop + chartH / 2 - (value / (extent * 2)) * chartH;
+  const x = point => padLeft + (maxTime === minTime ? chartW / 2 : ((Date.parse(`${point.date}T00:00:00`) - minTime) / (maxTime - minTime)) * chartW);
+  const zeroY = y(0);
+  const stems = points.map(point => {
+    const px = x(point), py = y(point.impact), color = point.impact >= 0 ? '#9fd6ff' : '#ffb38a';
+    return `<line x1="${px}" y1="${zeroY}" x2="${px}" y2="${py}" stroke="${color}" stroke-width="3" stroke-linecap="round"><title>${esc(point.label)} · ${esc(point.date)} · ${point.impact >= 0 ? '+' : ''}${point.impact.toFixed(1)}</title></line><circle cx="${px}" cy="${py}" r="4" fill="${color}"/>`;
+  }).join('');
+  const ticks = [];
+  const first = new Date(minTime), last = new Date(maxTime);
+  if (last.getUTCFullYear() > first.getUTCFullYear()) {
+    const step = Math.max(1, Math.ceil((last.getUTCFullYear() - first.getUTCFullYear()) / 5));
+    for (let year = first.getUTCFullYear(); year <= last.getUTCFullYear(); year += step) ticks.push({ date: `${year}-01-01`, label: String(year) });
+    const lastYear = String(last.getUTCFullYear());
+    if (!ticks.some(tick => tick.label === lastYear)) ticks.push({ date: `${lastYear}-01-01`, label: lastYear });
+  } else {
+    const cursor = new Date(Date.UTC(first.getUTCFullYear(), first.getUTCMonth(), 1));
+    while (cursor <= last) {
+      ticks.push({ date: cursor.toISOString().slice(0, 10), label: cursor.toLocaleString('en', { month: 'short', timeZone: 'UTC' }) });
+      cursor.setUTCMonth(cursor.getUTCMonth() + 1);
+    }
+  }
+  const axisLabels = ticks.map(tick => {
+    const time = Date.parse(`${tick.date}T00:00:00`);
+    if (time < minTime || time > maxTime) return '';
+    const px = padLeft + (maxTime === minTime ? chartW / 2 : ((time - minTime) / (maxTime - minTime)) * chartW);
+    return `<text x="${px}" y="${h - 10}" fill="#94a3b8" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">${tick.label}</text>`;
+  }).join('');
+  const valueLabels = [-maxAbs, 0, maxAbs].map(value => `<text x="${padLeft - 8}" y="${y(value) + 4}" fill="#94a3b8" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="end">${value > 0 ? '+' : ''}${value.toFixed(1)}</text>`).join('');
+  return `<svg class="diag-chart-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Combined set impact by event over time"><line x1="${padLeft}" y1="${zeroY}" x2="${w - padRight}" y2="${zeroY}" stroke="rgba(255,255,255,0.2)"/>${valueLabels}${stems}${axisLabels}</svg>`;
+}
+
 // Generate the responsive SVG score chart
 function renderScoreChartSvg(sets, events) {
-  const eventsByDate = [...events].filter(e => e.date).sort((a, b) => a.date.localeCompare(b.date));
-  let runningScore = 50;
+  const isGlicko = true;
+  let eventsByDate;
+  if (isGlicko) {
+    const byEvent = new Map();
+    sets.forEach(s => {
+      const key = s.eventKey || s.eventId || s.eventName;
+      if (!byEvent.has(key)) {
+        byEvent.set(key, {
+          name: s.eventName,
+          date: s.eventDate,
+          preScore: s.eventPreScore,
+          postScore: s.eventPostScore,
+          change: s.eventChange
+        });
+      }
+    });
+    eventsByDate = Array.from(byEvent.values()).filter(e => e.date && e.postScore !== undefined)
+      .sort((a, b) => a.date.localeCompare(b.date));
+  }
   const points = [];
   let biggestGain = -Infinity;
   let biggestGainPoint = null;
@@ -2472,27 +2980,30 @@ function renderScoreChartSvg(sets, events) {
   if (eventsByDate.length === 0) {
     points.push({ label: 'Initial', score: diagState.finalScore || 70, date: '2025-01-01' });
   } else {
+    const startingScore = Number(eventsByDate[0].preScore);
+    if (Number.isFinite(startingScore)) {
+      const firstDate = new Date(`${eventsByDate[0].date}T00:00:00`);
+      firstDate.setDate(firstDate.getDate() - 1);
+      points.push({ label: 'Starting score', score: startingScore, date: firstDate.toISOString().slice(0, 10), gain: 0 });
+    }
     eventsByDate.forEach(ev => {
-      const evSets = sets.filter(s => s.eventName === ev.name);
-      let evImpact = evSets.reduce((acc, s) => acc + s.impact, 0);
-      runningScore += evImpact;
-      const pt = { label: ev.name, score: Math.round(runningScore * 10) / 10, date: ev.date, gain: evImpact };
+      const score = Number(ev.postScore);
+      const gain = Number(ev.change);
+      const pt = { label: ev.name, score, date: ev.date, gain };
       points.push(pt);
-      if (evImpact > biggestGain) {
-        biggestGain = evImpact;
+      if (gain > biggestGain) {
+        biggestGain = gain;
         biggestGainPoint = pt;
       }
     });
   }
 
-  if (diagState.finalScore !== null && points.length > 0) {
-    const delta = (diagState.finalScore - points[points.length - 1].score);
-    points.forEach(p => p.score = Math.round((p.score + delta) * 10) / 10);
-  }
-
   const scores = points.map(p => p.score);
-  const minScore = Math.floor(Math.min(...scores, 50) / 10) * 10;
-  const maxScore = Math.ceil(Math.max(...scores, 80) / 10) * 10;
+  const rawMin = Math.min(...scores);
+  const rawMax = Math.max(...scores);
+  const padding = Math.max(10, (rawMax - rawMin) * 0.08);
+  const minScore = Math.floor((rawMin - padding) / 10) * 10;
+  const maxScore = Math.ceil((rawMax + padding) / 10) * 10;
   const range = Math.max(1, maxScore - minScore);
 
   const w = 800;
@@ -2505,10 +3016,13 @@ function renderScoreChartSvg(sets, events) {
   const chartW = w - padLeft - padRight;
   const chartH = h - padTop - padBottom;
 
-  const getX = (idx) => padLeft + (points.length <= 1 ? chartW / 2 : (idx / (points.length - 1)) * chartW);
+  const dateTimes = points.map(p => Date.parse(`${p.date}T00:00:00`)).filter(Number.isFinite);
+  const minTime = Math.min(...dateTimes);
+  const maxTime = Math.max(...dateTimes);
+  const getX = (_idx, p) => padLeft + (maxTime <= minTime ? chartW / 2 : ((Date.parse(`${p.date}T00:00:00`) - minTime) / (maxTime - minTime)) * chartW);
   const getY = (val) => padTop + chartH - ((val - minScore) / range) * chartH;
 
-  const coords = points.map((p, idx) => ({ x: getX(idx), y: getY(p.score), ...p }));
+  const coords = points.map((p, idx) => ({ x: getX(idx, p), y: getY(p.score), ...p }));
 
   const lineD = coords.map((c, i) => `${i === 0 ? 'M' : 'L'} ${c.x.toFixed(1)} ${c.y.toFixed(1)}`).join(' ');
   const areaD = `${lineD} L ${coords[coords.length - 1].x.toFixed(1)} ${(padTop + chartH).toFixed(1)} L ${coords[0].x.toFixed(1)} ${(padTop + chartH).toFixed(1)} Z`;
@@ -2523,11 +3037,28 @@ function renderScoreChartSvg(sets, events) {
     `;
   }).join('');
 
-  // Months on x axis
-  const monthLetters = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
-  const monthLabels = monthLetters.map((m, i) => {
-    const x = padLeft + (i / 11) * chartW;
-    return `<text x="${x}" y="${h - 10}" fill="#94a3b8" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">${m}</text>`;
+  // Use year labels for multi-year ranges, otherwise month labels.
+  const firstDate = new Date(minTime);
+  const lastDate = new Date(maxTime);
+  const yearSpan = lastDate.getUTCFullYear() - firstDate.getUTCFullYear();
+  const axisTicks = [];
+  if (yearSpan >= 1) {
+    const step = Math.max(1, Math.ceil(yearSpan / 5));
+    for (let year = firstDate.getUTCFullYear(); year <= lastDate.getUTCFullYear(); year += step) axisTicks.push({ date: `${year}-01-01`, label: String(year) });
+    const lastYear = String(lastDate.getUTCFullYear());
+    if (!axisTicks.some(t => t.label === lastYear)) axisTicks.push({ date: `${lastYear}-01-01`, label: lastYear });
+  } else {
+    const cursor = new Date(Date.UTC(firstDate.getUTCFullYear(), firstDate.getUTCMonth(), 1));
+    while (cursor <= lastDate) {
+      axisTicks.push({ date: cursor.toISOString().slice(0, 10), label: cursor.toLocaleString('en', { month: 'short', timeZone: 'UTC' }) });
+      cursor.setUTCMonth(cursor.getUTCMonth() + 1);
+    }
+  }
+  const monthLabels = axisTicks.map(tick => {
+    const tickTime = Date.parse(`${tick.date}T00:00:00`);
+    if (tickTime < minTime || tickTime > maxTime) return '';
+    const x = padLeft + (maxTime <= minTime ? chartW / 2 : ((tickTime - minTime) / (maxTime - minTime)) * chartW);
+    return `<text x="${x}" y="${h - 10}" fill="#94a3b8" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">${tick.label}</text>`;
   }).join('');
 
   // Biggest gain point marker
@@ -2606,14 +3137,15 @@ function renderDiagSetsTab() {
   // Group by event
   const eventGroupMap = new Map();
   sorted.forEach(s => {
-    if (!eventGroupMap.has(s.eventName)) {
+    const eventGroupKey = s.eventKey || s.eventId || s.eventName;
+    if (!eventGroupMap.has(eventGroupKey)) {
       const evMeta = diagState.allEvents.find(e => e.name === s.eventName) || { name: s.eventName, date: s.eventDate, placement: null, entrants: null };
-      eventGroupMap.set(s.eventName, {
+      eventGroupMap.set(eventGroupKey, {
         meta: evMeta,
         sets: []
       });
     }
-    eventGroupMap.get(s.eventName).sets.push(s);
+    eventGroupMap.get(eventGroupKey).sets.push(s);
   });
 
   const eventGroups = Array.from(eventGroupMap.values());
@@ -2621,10 +3153,15 @@ function renderDiagSetsTab() {
 
   const winsCount = allSets.filter(s => s.won).length;
   const lossesCount = allSets.filter(s => !s.won).length;
+  const setsExplanation = diagnosticUsesGlicko()
+    ? 'Event net impact shows the score change for the whole event. Set Impact estimates this result’s contribution to the final score; wins are positive and losses negative. Repeated results against the same player in one event are combined in the Summary.'
+    : 'Win chance indicates estimated probability before the set; Impact estimates this result’s contribution to the final score. Wins are positive and losses negative. Repeated results against the same player in one event are combined in the Summary.';
 
   const eventCardsHtml = visibleGroups.map(grp => {
     const ev = grp.meta;
-    const netImpact = Math.round(grp.sets.reduce((acc, s) => acc + s.impact, 0) * 10) / 10;
+    const netImpact = diagnosticUsesGlicko()
+      ? Math.round((Number(grp.sets[0].eventChange) || 0) * 10) / 10
+      : Math.round(grp.sets.reduce((acc, s) => acc + (Number(s.modelImpact) || 0), 0) * 10) / 10;
     const netSign = netImpact > 0 ? `+${netImpact}` : `${netImpact}`;
     const netCls = netImpact >= 0 ? 'pos' : 'neg';
 
@@ -2632,18 +3169,18 @@ function renderDiagSetsTab() {
     const datePlaceStr = [ev.date, placeStr].filter(Boolean).join(' · ');
 
     const rowsHtml = grp.sets.map(s => {
-      const oppRankStr = s.opponentRank ? `<span class="opp-rank">#${s.opponentRank}</span>` : '';
       const resCls = s.won ? 'pos' : 'neg';
       const resText = s.won ? `W ${s.score}` : `L ${s.score}`;
-      const impSign = s.impact > 0 ? `+${s.impact}` : `${s.impact}`;
-      const impCls = s.impact >= 0 ? 'pos' : 'neg';
+      const hasImpact = s.impact !== null && s.impact !== undefined && Number.isFinite(Number(s.impact));
+      const impSign = hasImpact ? formatDiagnosticImpact(s.impact) : '—';
+      const impCls = !hasImpact ? 'muted' : (s.impact >= 0 ? 'pos' : 'neg');
       const pct = Math.round(s.winChance * 100);
 
       // Desktop row
       const desktopRow = `
         <div class="diag-set-row-desktop">
           <span class="set-round">${esc(s.round)}</span>
-          <span class="set-opp">${esc(s.opponentTag)} ${oppRankStr}</span>
+          <span class="set-opp">${esc(s.opponentTag)}</span>
           <span class="set-res ${resCls}">${esc(resText)}</span>
           <div class="set-chance-wrap">
             <div class="chance-bar"><div class="chance-bar-fill" style="width:${pct}%;"></div></div>
@@ -2663,7 +3200,6 @@ function renderDiagSetsTab() {
           <div class="line-2">
             <div>
               <span class="opp-bold">${esc(s.opponentTag)}</span>
-              ${oppRankStr}
             </div>
             <span class="score-res ${resCls}">${esc(resText)}</span>
           </div>
@@ -2721,7 +3257,7 @@ function renderDiagSetsTab() {
     </div>
 
     <div class="diag-sets-explanation">
-      Win chance indicates estimated probability before the set; Impact indicates points gained or lost.
+      ${setsExplanation}
     </div>
 
     <div class="diag-table-head-row">
@@ -2792,9 +3328,10 @@ function renderDiagMethodTab() {
       start: diagState.startDate || null,
       end: diagState.endDate || null
     },
-    formula: algo.parameters?.formula || algo.description || 'Conservative Rating = r - 2*RD',
     weights: diagState.diagData?.weights || prWeights,
-    parameters: algo.parameters || {}
+    parameters: Object.fromEntries(
+      Object.entries(algo.parameters || {}).filter(([key]) => !/formula/i.test(key))
+    )
   };
 
   return `
@@ -2828,8 +3365,8 @@ function renderDiagMethodTab() {
           <dd>The tournament round or bracket phase in which the match was played.</dd>
         </div>
         <div class="diag-def-item">
-          <dt>Opponent rank</dt>
-          <dd>The final standing of the opponent in this ranking.</dd>
+          <dt>Opponent</dt>
+          <dd>The player faced in this set.</dd>
         </div>
         <div class="diag-def-item">
           <dt>Result</dt>
@@ -2841,7 +3378,7 @@ function renderDiagMethodTab() {
         </div>
         <div class="diag-def-item">
           <dt>Impact</dt>
-          <dd>The signed rating or standing point delta resulting from the match outcome.</dd>
+          <dd>An estimate of this result’s contribution to the final score. Wins are positive and losses are negative.</dd>
         </div>
       </dl>
     </div>
@@ -2850,6 +3387,7 @@ function renderDiagMethodTab() {
       <h3 class="diag-card-title">Raw configuration</h3>
       <pre class="diag-code-block" tabindex="0">${esc(JSON.stringify(rawConfig, null, 2))}</pre>
     </div>
+
   `;
 }
 
