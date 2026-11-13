@@ -1772,6 +1772,28 @@ function getDiagnosticImpactGroups(sets, won) {
   return Array.from(groups.values());
 }
 
+function getDiagnosticMomentCandidates(sets) {
+  if (diagState.mode !== 'historical') return { sets, excludedTournamentCount: 0 };
+
+  const tournaments = new Map();
+  diagState.allEvents.forEach(event => {
+    if (!event.date) return;
+    const key = String(event.tournamentSlug || event.eventKey || event.name || '');
+    if (!key) return;
+    const existing = tournaments.get(key);
+    if (!existing || event.date < existing.date) tournaments.set(key, { key, date: event.date });
+  });
+  const orderedTournaments = Array.from(tournaments.values()).sort((a, b) => a.date.localeCompare(b.date));
+  // Keep all available moments when the player has fewer than two dated tournaments.
+  if (orderedTournaments.length < 2) return { sets, excludedTournamentCount: 0 };
+
+  const earlyTournamentKeys = new Set(orderedTournaments.slice(0, 2).map(tournament => tournament.key));
+  return {
+    sets: sets.filter(set => !earlyTournamentKeys.has(String(set.tournamentSlug || set.eventKey || set.eventId || set.eventName))),
+    excludedTournamentCount: 2
+  };
+}
+
 function formatDiagnosticImpact(impact) {
   const decimals = ['custom', 'power_rankings'].includes(diagState.system) ? 2 : 1;
   const formatted = Number(impact).toFixed(decimals);
@@ -2270,6 +2292,7 @@ window.openDiagnosticModal = async function(playerId) {
         setId: h.setId,
         eventId: h.eventId || h.tournamentSlug || eventTitle,
         eventKey: h.eventKey || h.tournamentSlug || eventTitle,
+        tournamentSlug: h.tournamentSlug || '',
         eventName: eventTitle,
         eventDate: h.date || '',
         round: h.round ? (h.phase ? `${h.phase} ${h.round}` : h.round) : (h.phase || 'Bracket'),
@@ -2329,9 +2352,11 @@ window.openDiagnosticModal = async function(playerId) {
 
     const eventMap = new Map();
     filteredPlacements.forEach(p => {
-      const key = p.tournamentName || p.eventName || p.eventId;
+      const key = p.eventKey || p.tournamentSlug || p.eventId || p.tournamentName || p.eventName;
       if (!eventMap.has(key)) {
         eventMap.set(key, {
+          eventKey: key,
+          tournamentSlug: p.tournamentSlug || '',
           name: p.tournamentName || p.eventName || 'Tournament',
           date: p.date || '',
           placement: p.placement,
@@ -2342,8 +2367,11 @@ window.openDiagnosticModal = async function(playerId) {
 
     // Also populate any events in sets that might be missing in placements
     diagState.allSets.forEach(s => {
-      if (!eventMap.has(s.eventName)) {
-        eventMap.set(s.eventName, {
+      const key = s.eventKey || s.eventId || s.eventName;
+      if (!eventMap.has(key)) {
+        eventMap.set(key, {
+          eventKey: key,
+          tournamentSlug: s.tournamentSlug || '',
           name: s.eventName,
           date: s.eventDate,
           placement: null,
@@ -2796,8 +2824,14 @@ function renderDiagSummaryTab() {
       </div>
     `;
   } else {
-    const wins = getDiagnosticImpactGroups(sets, true).sort((a, b) => b.impact - a.impact).slice(0, 3);
-    const losses = getDiagnosticImpactGroups(sets, false).sort((a, b) => a.impact - b.impact).slice(0, 3);
+    const momentCandidates = getDiagnosticMomentCandidates(sets);
+    const momentSubtitle = momentCandidates.excludedTournamentCount
+      ? 'The first two tournaments are omitted to reduce the effect of early rating volatility.'
+      : 'The sets that moved the score the most.';
+    const noWinsText = momentCandidates.excludedTournamentCount ? 'No wins recorded after the first two tournaments' : 'No recorded wins';
+    const noLossesText = momentCandidates.excludedTournamentCount ? 'No losses recorded after the first two tournaments' : 'No recorded losses';
+    const wins = getDiagnosticImpactGroups(momentCandidates.sets, true).sort((a, b) => b.impact - a.impact).slice(0, 3);
+    const losses = getDiagnosticImpactGroups(momentCandidates.sets, false).sort((a, b) => a.impact - b.impact).slice(0, 3);
 
     const renderMomentItem = (item) => {
       const sign = formatDiagnosticImpact(item.impact);
@@ -2819,18 +2853,18 @@ function renderDiagSummaryTab() {
     momentsHtml = `
       <div class="diag-card">
         <h3 class="diag-card-title">Moments that shaped it</h3>
-        <p class="diag-card-subtitle">The sets that moved the score the most.</p>
+        <p class="diag-card-subtitle">${momentSubtitle}</p>
         <div class="diag-moments-grid">
           <div>
             <div class="diag-section-label">Best wins</div>
             <div class="diag-moment-list">
-              ${wins.length > 0 ? wins.map(renderMomentItem).join('') : '<div class="muted font-13">No recorded wins</div>'}
+              ${wins.length > 0 ? wins.map(renderMomentItem).join('') : `<div class="muted font-13">${noWinsText}</div>`}
             </div>
           </div>
           <div>
             <div class="diag-section-label">Costliest losses</div>
             <div class="diag-moment-list">
-              ${losses.length > 0 ? losses.map(renderMomentItem).join('') : '<div class="muted font-13">No recorded losses</div>'}
+              ${losses.length > 0 ? losses.map(renderMomentItem).join('') : `<div class="muted font-13">${noLossesText}</div>`}
             </div>
           </div>
         </div>
