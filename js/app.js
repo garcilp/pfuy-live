@@ -160,6 +160,10 @@ function render() {
   const id = location.hash.slice(1) || 'overview';
   const sel = games.find(g => g.id === id);
   const G = sel ? [sel] : games;
+  const recentSetsForDisplay = sets => (Array.isArray(sets) ? sets : []).filter(set => {
+    const opponent = String(set.opponent || '').trim();
+    return opponent && !/^unknown$/i.test(opponent) && ['win', 'loss'].includes(set.outcome);
+  });
   const mostRecentlyPlayedFirst = [...games].sort((a, b) => {
     const latestDate = game => (game.results || []).reduce((latest, result) =>
       typeof result.date === 'string' && result.date > latest ? result.date : latest, '');
@@ -597,7 +601,7 @@ function render() {
     <div class="tr head"><span>EVENT</span><span>DATE</span><span>SEED</span><span>PLACE</span><span>ENTRANTS</span></div>` +
     (rows.length ? rows.map((r, index) => {
       const detailsId = `set-details-${index}`;
-      const sets = r.sets || [];
+      const sets = recentSetsForDisplay(r.sets);
       const setRows = sets.length ? sets.map(set => {
         const outcome = ['win', 'loss'].includes(set.outcome) ? set.outcome : 'unknown';
         const isPools = set.phase && /\bpools\b/i.test(set.phase);
