@@ -80,12 +80,27 @@
           "wins": 0
         },
         {
+          "opponent": "TowasPato",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Misheon",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pa.King",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Soy sordo (háganme señas)",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Soy mudo (no me hables)",
+          "opponent": "999xx99",
           "sets": 1,
           "wins": 0
         },
@@ -125,30 +140,30 @@
           "wins": 0
         }
       ],
-      "events": 6,
-      "wins": 0,
-      "losses": 26,
+      "events": 7,
+      "wins": 1,
+      "losses": 28,
       "upsets": 0,
-      "bestPlace": 33,
-      "bestEvent": "3 times",
-      "avgPlace": 45.0,
-      "avgSeed": 52,
+      "bestPlace": 23,
+      "bestEvent": "Ultimate Smashdown #24 · Categoria B",
+      "avgPlace": 41.9,
+      "avgSeed": 46,
       "characters": [
         {
           "name": "Pokemon Trainer",
-          "usage": 35.7
+          "usage": 34.7
         },
         {
           "name": "Ike",
-          "usage": 23.8
+          "usage": 30.6
         },
         {
           "name": "Bowser",
-          "usage": 21.4
+          "usage": 18.4
         },
         {
           "name": "Other",
-          "usage": 19.0
+          "usage": 16.3
         }
       ],
       "notableWins": [],
@@ -303,7 +318,7 @@
               "event": "Ultimate Smashdown #25 · Ultimate Singles",
               "phase": "Bracket B",
               "round": "Winners Round 1",
-              "opponent": "Soy mudo (no me hables)",
+              "opponent": "999xx99",
               "opponentPlayerId": "4314135",
               "score": "0–2",
               "outcome": "loss",
@@ -313,7 +328,15 @@
               "isUpset": false,
               "startedAt": 1726946429,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "vods": [
+                {
+                  "videoId": "iwRrYa9mP48",
+                  "url": "https://www.youtube.com/watch?v=iwRrYa9mP48",
+                  "title": "Ultimate Smashdown #25 | Cat B | Winners Round 1 - Soy mudo (King K. Rool) vs Josiulus (PT, Bowser)",
+                  "thumbnail": "https://i.ytimg.com/vi/iwRrYa9mP48/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "80027377",
@@ -420,6 +443,96 @@
           ]
         },
         {
+          "event": "Ultimate Smashdown #24 · Categoria B",
+          "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+          "date": "2024-08-24",
+          "seed": 12,
+          "place": 23,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "78776506",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Pa.King",
+              "opponentPlayerId": "4074261",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724527470,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "vods": [
+                {
+                  "videoId": "sjC0VS4kXpU",
+                  "url": "https://www.youtube.com/watch?v=sjC0VS4kXpU",
+                  "title": "Ultimate Smashdown #24 | Cat B | Winners Round 1 - josiulus (PT, Ike) vs Pa.King (Ridley)",
+                  "thumbnail": "https://i.ytimg.com/vi/sjC0VS4kXpU/sddefault.jpg"
+                }
+              ]
+            },
+            {
+              "setId": "78776537",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 1",
+              "opponent": "Misheon",
+              "opponentPlayerId": "3118601",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724528847,
+              "phaseOrder": 1,
+              "roundOrder": -3
+            },
+            {
+              "setId": "78776541",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "TowasPato",
+              "opponentPlayerId": "3332659",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724529415,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {
+            "Ike": 5,
+            "Pokemon Trainer": 2
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "date": "2024-08-24",
+              "seed": 12,
+              "place": 23,
+              "entrants": 14,
+              "characterCounts": {
+                "Ike": 5,
+                "Pokemon Trainer": 2
+              }
+            }
+          ]
+        },
+        {
           "event": "Ultimate Smashdown #17 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
           "date": "2023-10-21",
@@ -479,7 +592,15 @@
               "isUpset": false,
               "startedAt": 1697899609,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "vods": [
+                {
+                  "videoId": "z7XrMu4_L8I",
+                  "url": "https://www.youtube.com/watch?v=z7XrMu4_L8I",
+                  "title": "Ultimate Smashdown #17 | Pools - El Hombre Playa (Link, Zelda) vs Josiulus (Ike, Pokémon Trainer)",
+                  "thumbnail": "https://i.ytimg.com/vi/z7XrMu4_L8I/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "66670213",
@@ -771,7 +892,15 @@
               "isUpset": false,
               "startedAt": 1687631217,
               "phaseOrder": 4,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "vods": [
+                {
+                  "videoId": "AyfycosBKMQ",
+                  "url": "https://www.youtube.com/watch?v=AyfycosBKMQ",
+                  "title": "Ultimate Smashdown #14 | Cat B | Losers Round 2 - Josiulus (Bowser, Samus) vs Ketcha (Pyra/Mythra)",
+                  "thumbnail": "https://i.ytimg.com/vi/AyfycosBKMQ/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {

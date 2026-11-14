@@ -1059,9 +1059,15 @@ window.onPRWeightInput = function(sysKey, value) {
 };
 
 window.onPRWeightCommit = function(sysKey, value) {
+  const activeInput = document.activeElement;
+  const restoreNumberInput = activeInput?.matches?.('input.pr-number-input') && activeInput.dataset.sys === sysKey;
   redistributePRWeights(sysKey, value);
   prDraftWeights = null;
   renderCustomPowerRankings();
+  if (restoreNumberInput) {
+    const updatedInput = $(`input.pr-number-input[data-sys="${sysKey}"]`);
+    updatedInput?.focus({ preventScroll: true });
+  }
 };
 
 window.onPRWeightChange = function(sysKey, value) {
@@ -1158,7 +1164,7 @@ function renderFormulaBudgetBox() {
         </div>
         <div class="pr-inputs-row">
           <input type="range" class="pr-slider" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${meta.name} Weight Slider">
-          <input type="number" class="pr-number-input mono" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${meta.name} Weight Input">%
+          <span class="pr-number-wrap"><input type="number" class="pr-number-input mono" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${meta.name} Weight Input"><span aria-hidden="true">%</span></span>
         </div>
         <div class="pr-contrib-bar-wrap">
           <div class="pr-contrib-bar-fill pr-card-contrib-fill" data-sys="${sysKey}" style="width: ${dispWeight}%; background-color: ${isActive ? meta.color : '#555'};"></div>
@@ -1322,7 +1328,7 @@ function renderCustomPowerRankings() {
         </div>
         <div class="pr-inputs-row">
           <input type="range" class="pr-slider" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${meta.name} Weight Slider">
-          <input type="number" class="pr-number-input mono" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${meta.name} Weight Input">%
+          <span class="pr-number-wrap"><input type="number" class="pr-number-input mono" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${meta.name} Weight Input"><span aria-hidden="true">%</span></span>
         </div>
         <div class="pr-contrib-bar-wrap">
           <div class="pr-contrib-bar-fill pr-card-contrib-fill" data-sys="${sysKey}" style="width: ${dispWeight}%; background-color: ${isActive ? meta.color : '#555'};"></div>
@@ -1676,7 +1682,7 @@ function renderComparison() {
                 <b>${esc(p.playerTag)}</b>
               </a>
             </div>
-            <span class="mono">${p.glicko2 ? (p.glicko2.rank ? `#${p.glicko2.rank} (${p.glicko2.score}${p.glicko2.change !== undefined && p.glicko2.change !== null ? (p.glicko2.change >= 0 ? ' +' + p.glicko2.change : ' ' + p.glicko2.change) : ''})` : `- (${p.glicko2.score})`) : '-'}</span>
+            <span class="mono">${p.glicko2 ? (p.glicko2.rank ? `${p.glicko2.score} (#${p.glicko2.rank})` : `${p.glicko2.score} (-)`) : '-'}</span>
             <span class="mono">${p.sof ? (p.sof.rank ? `#${p.sof.rank} (${p.sof.score})` : `- (${p.sof.score})`) : '-'}</span>
             <span class="mono">${p.quality_wins ? (p.quality_wins.rank ? `#${p.quality_wins.rank} (${p.quality_wins.score})` : `Unranked (${p.quality_wins.score})`) : '-'}</span>
             <span class="mono">${p.loss_quality ? (p.loss_quality.rank ? `#${p.loss_quality.rank} (${p.loss_quality.score})` : `- (${p.loss_quality.score})`) : '-'}</span>

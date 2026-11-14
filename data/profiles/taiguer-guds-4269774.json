@@ -31,6 +31,16 @@
           "wins": 0
         },
         {
+          "opponent": "Pa.King",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Vodokex",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Salieri",
           "sets": 1,
           "wins": 0
@@ -51,22 +61,22 @@
           "wins": 0
         }
       ],
-      "events": 2,
+      "events": 3,
       "wins": 0,
-      "losses": 6,
+      "losses": 8,
       "upsets": 0,
-      "bestPlace": 33,
-      "bestEvent": "Ultimate Smashdown #28 · Ultimate Singles",
-      "avgPlace": 41.0,
-      "avgSeed": 44,
+      "bestPlace": 23,
+      "bestEvent": "Ultimate Smashdown #24 · Categoria B",
+      "avgPlace": 35.0,
+      "avgSeed": 32,
       "characters": [
         {
-          "name": "Link",
-          "usage": 64.3
+          "name": "Joker",
+          "usage": 50.0
         },
         {
-          "name": "Joker",
-          "usage": 35.7
+          "name": "Link",
+          "usage": 50.0
         }
       ],
       "notableWins": [],
@@ -227,6 +237,68 @@
               "entrants": 50,
               "characterCounts": {
                 "Joker": 5
+              }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #24 · Categoria B",
+          "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+          "date": "2024-08-24",
+          "seed": 10,
+          "place": 23,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "78776508",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Vodokex",
+              "opponentPlayerId": "2684562",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724527684,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "setId": "78776542",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "Pa.King",
+              "opponentPlayerId": "4074261",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724529941,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {
+            "Joker": 4
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "date": "2024-08-24",
+              "seed": 10,
+              "place": 23,
+              "entrants": 14,
+              "characterCounts": {
+                "Joker": 4
               }
             }
           ]

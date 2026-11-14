@@ -27,13 +27,18 @@
         },
         {
           "opponent": "Pato",
-          "sets": 2,
+          "sets": 4,
           "wins": 0
         },
         {
           "opponent": "TowasPato",
+          "sets": 3,
+          "wins": 2
+        },
+        {
+          "opponent": "Gerix",
           "sets": 2,
-          "wins": 1
+          "wins": 2
         },
         {
           "opponent": "Yona",
@@ -59,6 +64,16 @@
           "opponent": "FvckFalcon",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "RoLo",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Elpipo2018",
+          "sets": 1,
+          "wins": 1
         },
         {
           "opponent": "Soy sordo (háganme señas)",
@@ -89,11 +104,6 @@
           "opponent": "Casipeta",
           "sets": 1,
           "wins": 0
-        },
-        {
-          "opponent": "Gerix",
-          "sets": 1,
-          "wins": 1
         },
         {
           "opponent": "Lever",
@@ -141,22 +151,22 @@
           "wins": 0
         }
       ],
-      "events": 8,
-      "wins": 9,
-      "losses": 22,
+      "events": 9,
+      "wins": 13,
+      "losses": 24,
       "upsets": 1,
-      "bestPlace": 25,
-      "bestEvent": "2 times",
-      "avgPlace": 33.0,
-      "avgSeed": 37,
+      "bestPlace": 18,
+      "bestEvent": "Ultimate Smashdown #24 · Categoria B",
+      "avgPlace": 31.1,
+      "avgSeed": 34,
       "characters": [
         {
           "name": "Zero Suit Samus",
-          "usage": 98.4
+          "usage": 98.7
         },
         {
           "name": "Roy",
-          "usage": 1.6
+          "usage": 1.3
         }
       ],
       "notableWins": [],
@@ -409,7 +419,15 @@
               "isUpset": false,
               "startedAt": 1748121932,
               "phaseOrder": 4,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "vods": [
+                {
+                  "videoId": "PDGywgeapGQ",
+                  "url": "https://www.youtube.com/watch?v=PDGywgeapGQ",
+                  "title": "Ultimate Smashdown #29 | Cat B | Grand Final - Joserus (Zero Suit Samus) vs Merume (Incineroar)",
+                  "thumbnail": "https://i.ytimg.com/vi/PDGywgeapGQ/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "89448114",
@@ -471,7 +489,15 @@
               "isUpset": false,
               "startedAt": 1726940213,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "vods": [
+                {
+                  "videoId": "cPi4i_hhVLI",
+                  "url": "https://www.youtube.com/watch?v=cPi4i_hhVLI",
+                  "title": "Ultimate Smashdown #25 | Pools - elcusquerman (Zelda) vs Joserus (Zero Suit Samus)",
+                  "thumbnail": "https://i.ytimg.com/vi/cPi4i_hhVLI/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "80015868",
@@ -639,6 +665,140 @@
               "entrants": 50,
               "characterCounts": {
                 "Zero Suit Samus": 4
+              }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #24 · Categoria B",
+          "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+          "date": "2024-08-24",
+          "seed": 14,
+          "place": 18,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "78776509",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Gerix",
+              "opponentPlayerId": "1033952",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724527320,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "setId": "78776514",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Pato",
+              "opponentPlayerId": "575693",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724528632,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "setId": "78776540",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "Elpipo2018",
+              "opponentPlayerId": "3945951",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724530645,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            },
+            {
+              "setId": "78776544",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "TowasPato",
+              "opponentPlayerId": "3332659",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724531476,
+              "phaseOrder": 1,
+              "roundOrder": -5
+            },
+            {
+              "setId": "78776546",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "RoLo",
+              "opponentPlayerId": "4145805",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724532505,
+              "phaseOrder": 1,
+              "roundOrder": -6
+            },
+            {
+              "setId": "78776548",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Semi-Final",
+              "opponent": "Pato",
+              "opponentPlayerId": "575693",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724533320,
+              "phaseOrder": 1,
+              "roundOrder": -7
+            }
+          ],
+          "characterCounts": {
+            "Zero Suit Samus": 12
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "date": "2024-08-24",
+              "seed": 14,
+              "place": 18,
+              "entrants": 14,
+              "characterCounts": {
+                "Zero Suit Samus": 12
               }
             }
           ]
@@ -861,7 +1021,15 @@
               "isUpset": false,
               "startedAt": 1655578580,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "vods": [
+                {
+                  "videoId": "tfNzJvMopfY",
+                  "url": "https://www.youtube.com/watch?v=tfNzJvMopfY",
+                  "title": "Ultimate Smashdown #7 | Pools - Thithi (Richter) vs. Joserus (Zero Suit Samus)",
+                  "thumbnail": "https://i.ytimg.com/vi/tfNzJvMopfY/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "48569834",

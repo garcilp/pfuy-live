@@ -54,32 +54,42 @@
           "opponent": "BenjiGG",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Joserus",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Dieguix2004",
+          "sets": 1,
+          "wins": 0
         }
       ],
-      "events": 2,
+      "events": 3,
       "wins": 1,
-      "losses": 6,
+      "losses": 8,
       "upsets": 0,
-      "bestPlace": 33,
-      "bestEvent": "2 times",
-      "avgPlace": 33.0,
-      "avgSeed": 44,
+      "bestPlace": 23,
+      "bestEvent": "Ultimate Smashdown #24 · Categoria B",
+      "avgPlace": 29.7,
+      "avgSeed": 32,
       "characters": [
         {
           "name": "Bowser",
-          "usage": 42.9
+          "usage": 57.9
         },
         {
           "name": "Meta Knight",
-          "usage": 28.6
+          "usage": 21.1
         },
         {
           "name": "Marth",
-          "usage": 21.4
+          "usage": 15.8
         },
         {
           "name": "Other",
-          "usage": 7.1
+          "usage": 5.3
         }
       ],
       "notableWins": [],
@@ -144,7 +154,15 @@
               "isUpset": false,
               "startedAt": 1724523223,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "vods": [
+                {
+                  "videoId": "MNHFZqVkNaY",
+                  "url": "https://www.youtube.com/watch?v=MNHFZqVkNaY",
+                  "title": "Ultimate Smashdown #24 | Pools - Jamón con dulce de leche (Joker) vs elpipo2018 (Bowser)",
+                  "thumbnail": "https://i.ytimg.com/vi/MNHFZqVkNaY/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -160,6 +178,68 @@
               "entrants": 50,
               "characterCounts": {
                 "Bowser": 6
+              }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #24 · Categoria B",
+          "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+          "date": "2024-08-24",
+          "seed": 8,
+          "place": 23,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "78776504",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Dieguix2004",
+              "opponentPlayerId": "3863680",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724526488,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "setId": "78776540",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "Joserus",
+              "opponentPlayerId": "3202445",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724530645,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {
+            "Bowser": 5
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "date": "2024-08-24",
+              "seed": 8,
+              "place": 23,
+              "entrants": 14,
+              "characterCounts": {
+                "Bowser": 5
               }
             }
           ]
@@ -224,7 +304,15 @@
               "isUpset": false,
               "startedAt": 1710613926,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "vods": [
+                {
+                  "videoId": "pDAlVj12mu0",
+                  "url": "https://www.youtube.com/watch?v=pDAlVj12mu0",
+                  "title": "Ultimate Smashdown #20 | Cat B | Winners Round 1 - Boudin (Yoshi) vs elpipo2018 (Marth, Meta Knight)",
+                  "thumbnail": "https://i.ytimg.com/vi/pDAlVj12mu0/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "72129490",

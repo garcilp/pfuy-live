@@ -6,7 +6,7 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": "2017-03-25",
+    "activeSince": "2016-07-30",
     "startgg": "https://www.start.gg/user/438d1195",
     "startggPlayerId": "45954",
     "aliases": [
@@ -81,7 +81,7 @@
           "wins": 5
         },
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
           "sets": 6,
           "wins": 6
         },
@@ -91,7 +91,7 @@
           "wins": 5
         },
         {
-          "opponent": "Son Rolo",
+          "opponent": "Pladson",
           "sets": 5,
           "wins": 4
         },
@@ -101,7 +101,7 @@
           "wins": 4
         },
         {
-          "opponent": "PorritoCody",
+          "opponent": "Cody",
           "sets": 3,
           "wins": 2
         },
@@ -186,7 +186,7 @@
           "wins": 1
         },
         {
-          "opponent": "longels",
+          "opponent": "L'Ongels",
           "sets": 1,
           "wins": 1
         },
@@ -252,7 +252,7 @@
           "opponent": "Sol!d",
           "seed": 1,
           "ownSeed": 8,
-          "upsetFactor": 8,
+          "upsetFactor": 8.0,
           "score": "3–1",
           "phase": "Bracket",
           "round": "Winners Quarter-Final",
@@ -264,7 +264,7 @@
           "opponent": "SrPaz",
           "seed": 2,
           "ownSeed": 8,
-          "upsetFactor": 4,
+          "upsetFactor": 4.0,
           "score": "3–0",
           "phase": "Bracket",
           "round": "Losers Semi-Final",
@@ -276,7 +276,7 @@
           "opponent": "Mingudai",
           "seed": 4,
           "ownSeed": 8,
-          "upsetFactor": 2,
+          "upsetFactor": 2.0,
           "score": "3–0",
           "phase": "Bracket",
           "round": "Losers Final",
@@ -320,14 +320,15 @@
               "isUpset": false,
               "startedAt": 1788638961,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "107392834"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2026-9/event/super-smash-bros-melee",
               "event": "Montevideo Melee Monthly 2026 #9 · Super Smash Bros. Melee",
               "phase": "Bracket",
               "round": "Losers Round 1",
-              "opponent": "Son Rolo",
+              "opponent": "Pladson",
               "score": "1–3",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -384,7 +385,8 @@
               "isUpset": false,
               "startedAt": 1760216691,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "94938654"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-9/event/super-smash-bros-melee",
@@ -400,7 +402,8 @@
               "isUpset": false,
               "startedAt": 1760219220,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "94938684"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-9/event/super-smash-bros-melee",
@@ -416,7 +419,8 @@
               "isUpset": false,
               "startedAt": 1760223137,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "94938687"
             }
           ],
           "characterCounts": {
@@ -462,7 +466,8 @@
               "isUpset": false,
               "startedAt": 1754773421,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "92500143"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/super-smash-bros-melee",
@@ -478,7 +483,8 @@
               "isUpset": false,
               "startedAt": 1754775082,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "92500145"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/super-smash-bros-melee",
@@ -494,7 +500,8 @@
               "isUpset": false,
               "startedAt": 1754776963,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "92500176"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/super-smash-bros-melee",
@@ -510,7 +517,16 @@
               "isUpset": false,
               "startedAt": 1754778197,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "92500177",
+              "vods": [
+                {
+                  "videoId": "-CUK_kWizSs",
+                  "url": "https://www.youtube.com/watch?v=-CUK_kWizSs",
+                  "title": "MMM #7 - 2025 | Losers Semis - S1R (Sheik) vs. kalarse (Peach)",
+                  "thumbnail": "https://i.ytimg.com/vi/-CUK_kWizSs/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/super-smash-bros-melee",
@@ -526,7 +542,16 @@
               "isUpset": false,
               "startedAt": 1754780087,
               "phaseOrder": 1,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "92500178",
+              "vods": [
+                {
+                  "videoId": "Fidg4w1eTV8",
+                  "url": "https://www.youtube.com/watch?v=Fidg4w1eTV8",
+                  "title": "MMM #7 - 2025 | Losers Final - S1R (Sheik) vs. Transformación (Fox)",
+                  "thumbnail": "https://i.ytimg.com/vi/Fidg4w1eTV8/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -568,7 +593,8 @@
               "isUpset": false,
               "startedAt": 1751730430,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "91055581"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -584,7 +610,8 @@
               "isUpset": true,
               "startedAt": 1751731139,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "91055588"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -600,7 +627,8 @@
               "isUpset": false,
               "startedAt": 1751732854,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "91055592"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -616,7 +644,8 @@
               "isUpset": true,
               "startedAt": 1751737464,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "91055623"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -632,7 +661,8 @@
               "isUpset": true,
               "startedAt": 1751738053,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "91055625"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -648,7 +678,8 @@
               "isUpset": true,
               "startedAt": 1751738938,
               "phaseOrder": 1,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "91055626"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -664,7 +695,8 @@
               "isUpset": false,
               "startedAt": 1751739984,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "setId": "91055595"
             }
           ],
           "characterCounts": {
@@ -706,7 +738,8 @@
               "isUpset": true,
               "startedAt": 1749325108,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "90018474"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-5/event/super-smash-bros-melee",
@@ -722,7 +755,8 @@
               "isUpset": true,
               "startedAt": 1749325319,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "90018479"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-5/event/super-smash-bros-melee",
@@ -738,7 +772,8 @@
               "isUpset": false,
               "startedAt": 1749327794,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "90018481"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-5/event/super-smash-bros-melee",
@@ -754,7 +789,16 @@
               "isUpset": false,
               "startedAt": 1749331950,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "90018512",
+              "vods": [
+                {
+                  "videoId": "VwjcK5cvuCY",
+                  "url": "https://www.youtube.com/watch?v=VwjcK5cvuCY",
+                  "title": "MMM #5 - 2025 | Losers Quarters - Mingudai (Young Link) vs. SIR (Jigglypuff)",
+                  "thumbnail": "https://i.ytimg.com/vi/VwjcK5cvuCY/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -777,7 +821,7 @@
         {
           "event": "ColisionSmash Melee · Melee Singles",
           "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
-          "date": "2025-05-12",
+          "date": "2016-07-30",
           "seed": 1,
           "place": 4,
           "entrants": 10,
@@ -796,14 +840,15 @@
               "isUpset": false,
               "startedAt": 1747016742,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "88951389"
             },
             {
               "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
               "event": "ColisionSmash Melee · Melee Singles",
               "phase": "Melee Singles",
               "round": "Losers Round 2",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -819,7 +864,7 @@
               "event": "ColisionSmash Melee · Melee Singles",
               "phase": "Melee Singles",
               "round": "Losers Quarter-Final",
-              "opponent": "Son Rolo",
+              "opponent": "Pladson",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -844,7 +889,8 @@
               "isUpset": false,
               "startedAt": 1747016866,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "88951426"
             }
           ],
           "characterCounts": {},
@@ -852,7 +898,7 @@
             {
               "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
               "event": "ColisionSmash Melee · Melee Singles",
-              "date": "2025-05-12",
+              "date": "2016-07-30",
               "seed": 1,
               "place": 4,
               "entrants": 10,
@@ -882,7 +928,8 @@
               "isUpset": false,
               "startedAt": 1746423095,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "88679127"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-4/event/super-smash-bros-melee",
@@ -898,14 +945,23 @@
               "isUpset": false,
               "startedAt": 1746423251,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "88679158",
+              "vods": [
+                {
+                  "videoId": "kN0ax2bYkds",
+                  "url": "https://www.youtube.com/watch?v=kN0ax2bYkds",
+                  "title": "MMM #4 - 2025 | Losers Round 3 - S1R (Jigglypuff) vs. DTK (Sheik)",
+                  "thumbnail": "https://i.ytimg.com/vi/kN0ax2bYkds/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-4/event/super-smash-bros-melee",
               "event": "Montevideo Melee Monthly 2025 #4 · Super Smash Bros. Melee",
               "phase": "Melee Singles",
               "round": "Losers Round 2",
-              "opponent": "PorritoCody",
+              "opponent": "Cody",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -956,7 +1012,8 @@
               "isUpset": false,
               "startedAt": 1743879672,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "87479257"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -972,7 +1029,8 @@
               "isUpset": false,
               "startedAt": 1743881240,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "87479287"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -988,7 +1046,8 @@
               "isUpset": false,
               "startedAt": 1743885808,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "87479290"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -1004,7 +1063,8 @@
               "isUpset": false,
               "startedAt": 1743886911,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "87479292"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -1020,7 +1080,16 @@
               "isUpset": true,
               "startedAt": 1743888440,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "87479293",
+              "vods": [
+                {
+                  "videoId": "mZ8543-fo68",
+                  "url": "https://www.youtube.com/watch?v=mZ8543-fo68",
+                  "title": "MMM #3 - 2025 | Losers Semis - S1R (Sheik) vs. SrPaz (Fox)",
+                  "thumbnail": "https://i.ytimg.com/vi/mZ8543-fo68/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -1036,7 +1105,16 @@
               "isUpset": false,
               "startedAt": 1743889124,
               "phaseOrder": 1,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "87479294",
+              "vods": [
+                {
+                  "videoId": "IfnUQjrc2D8",
+                  "url": "https://www.youtube.com/watch?v=IfnUQjrc2D8",
+                  "title": "MMM #3 - 2025 | Losers Finals - S1R (Sheik) vs. FrancoKiwi (Zelda)",
+                  "thumbnail": "https://i.ytimg.com/vi/IfnUQjrc2D8/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1080,7 +1158,8 @@
               "isUpset": false,
               "startedAt": 1738435722,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "84906834"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-1/event/melee-singles",
@@ -1096,7 +1175,16 @@
               "isUpset": false,
               "startedAt": 1738438311,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "84906841",
+              "vods": [
+                {
+                  "videoId": "fQFbPBRTv8c",
+                  "url": "https://www.youtube.com/watch?v=fQFbPBRTv8c",
+                  "title": "MMM #1 - 2025 | Winners Quarters - Sagat (Ganondorf) vs. S1R (Sheik)",
+                  "thumbnail": "https://i.ytimg.com/vi/fQFbPBRTv8c/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-1/event/melee-singles",
@@ -1112,7 +1200,8 @@
               "isUpset": false,
               "startedAt": 1738440117,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "84906873"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-1/event/melee-singles",
@@ -1128,7 +1217,8 @@
               "isUpset": false,
               "startedAt": 1738441474,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "84906875"
             }
           ],
           "characterCounts": {
@@ -1163,7 +1253,7 @@
               "event": "Montevideo Melee Monthly 2024 #10 · Melee Singles",
               "phase": "Melee Singles",
               "round": "Winners Round 2",
-              "opponent": "Son Rolo",
+              "opponent": "Pladson",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -1188,7 +1278,8 @@
               "isUpset": false,
               "startedAt": 1731183949,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "82054987"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-10/event/melee-singles",
@@ -1204,7 +1295,8 @@
               "isUpset": false,
               "startedAt": 1731184845,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "82055049"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-10/event/melee-singles",
@@ -1220,7 +1312,8 @@
               "isUpset": true,
               "startedAt": 1731187633,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "82055052"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-10/event/melee-singles",
@@ -1236,7 +1329,16 @@
               "isUpset": false,
               "startedAt": 1731189545,
               "phaseOrder": 1,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "82055054",
+              "vods": [
+                {
+                  "videoId": "85YitUrku9k",
+                  "url": "https://www.youtube.com/watch?v=85YitUrku9k",
+                  "title": "MMM #10 - 2024 | Losers Quarters - Iguana (Peach) vs. S1R (Sheik)",
+                  "thumbnail": "https://i.ytimg.com/vi/85YitUrku9k/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1278,7 +1380,8 @@
               "isUpset": false,
               "startedAt": 1725734319,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "79413395"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
@@ -1294,7 +1397,8 @@
               "isUpset": false,
               "startedAt": 1725735975,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "79413400"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
@@ -1310,7 +1414,8 @@
               "isUpset": false,
               "startedAt": 1725736889,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "79413428"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
@@ -1326,7 +1431,8 @@
               "isUpset": false,
               "startedAt": 1725738142,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "79413431"
             }
           ],
           "characterCounts": {
@@ -1372,7 +1478,8 @@
               "isUpset": false,
               "startedAt": 1722711075,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "77925286"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-7/event/melee-singles",
@@ -1388,7 +1495,8 @@
               "isUpset": false,
               "startedAt": 1722711954,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "77925293"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-7/event/melee-singles",
@@ -1404,7 +1512,8 @@
               "isUpset": false,
               "startedAt": 1722712895,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "77925325"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-7/event/melee-singles",
@@ -1420,7 +1529,8 @@
               "isUpset": true,
               "startedAt": 1722713643,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "77925327"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-7/event/melee-singles",
@@ -1436,7 +1546,16 @@
               "isUpset": false,
               "startedAt": 1722715135,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "77925329",
+              "vods": [
+                {
+                  "videoId": "kChqtK0J_dM",
+                  "url": "https://www.youtube.com/watch?v=kChqtK0J_dM",
+                  "title": "MMM #7 - 2024 | Losers Quarters - Sol!d (C.Falcon) vs. S1R (Sheik)",
+                  "thumbnail": "https://i.ytimg.com/vi/kChqtK0J_dM/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1478,7 +1597,16 @@
               "isUpset": false,
               "startedAt": 1720289544,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "76762522",
+              "vods": [
+                {
+                  "videoId": "JiBdVV-82ik",
+                  "url": "https://www.youtube.com/watch?v=JiBdVV-82ik",
+                  "title": "MMM #6 - 2024 | Winners Round 1 - Mingudai vs. S1R",
+                  "thumbnail": "https://i.ytimg.com/vi/JiBdVV-82ik/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-6/event/melee-singles",
@@ -1494,7 +1622,16 @@
               "isUpset": false,
               "startedAt": 1720292214,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "76762555",
+              "vods": [
+                {
+                  "videoId": "qym4QB2rivY",
+                  "url": "https://www.youtube.com/watch?v=qym4QB2rivY",
+                  "title": "MMM #6 - 2024 | Losers Round 1 - S1R vs. Kapito22",
+                  "thumbnail": "https://i.ytimg.com/vi/qym4QB2rivY/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1536,7 +1673,8 @@
               "isUpset": false,
               "startedAt": 1709411419,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "71546983"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-2/event/melee-singles",
@@ -1552,7 +1690,8 @@
               "isUpset": false,
               "startedAt": 1709413153,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "71547013"
             }
           ],
           "characterCounts": {
@@ -1594,7 +1733,8 @@
               "isUpset": false,
               "startedAt": 1691261302,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "setId": "63564728"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1610,7 +1750,8 @@
               "isUpset": true,
               "startedAt": 1691267892,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "setId": "63564724"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1626,7 +1767,8 @@
               "isUpset": true,
               "startedAt": 1691268073,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "63564714"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1642,7 +1784,8 @@
               "isUpset": false,
               "startedAt": 1691268566,
               "phaseOrder": 1,
-              "roundOrder": 7
+              "roundOrder": 7,
+              "setId": "63564734"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1658,7 +1801,8 @@
               "isUpset": true,
               "startedAt": 1691268602,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "63564719"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1674,7 +1818,8 @@
               "isUpset": false,
               "startedAt": 1691268689,
               "phaseOrder": 1,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "setId": "63564731"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1690,7 +1835,8 @@
               "isUpset": false,
               "startedAt": 1691270749,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "63564709"
             }
           ],
           "characterCounts": {
@@ -1732,7 +1878,16 @@
               "isUpset": false,
               "startedAt": 1688241722,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "62190401",
+              "vods": [
+                {
+                  "videoId": "YFtNNKhoICo",
+                  "url": "https://www.youtube.com/watch?v=YFtNNKhoICo",
+                  "title": "MMM Revival #6 - 2023 | Winners Quarters - SrPaz (Falco) vs. S1R (Sheik)",
+                  "thumbnail": "https://i.ytimg.com/vi/YFtNNKhoICo/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-6/event/melee-singles",
@@ -1748,7 +1903,8 @@
               "isUpset": false,
               "startedAt": 1688242720,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "62190427"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-6/event/melee-singles",
@@ -1764,7 +1920,8 @@
               "isUpset": false,
               "startedAt": 1688243741,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "62190431"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-6/event/melee-singles",
@@ -1780,7 +1937,16 @@
               "isUpset": false,
               "startedAt": 1688245586,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "62190433",
+              "vods": [
+                {
+                  "videoId": "Reu5Mw7mlbk",
+                  "url": "https://www.youtube.com/watch?v=Reu5Mw7mlbk",
+                  "title": "MMM Revival #6 - 2023 | Losers Quarters - S1R (Sheik) vs. FrancoKiwi (Zelda)",
+                  "thumbnail": "https://i.ytimg.com/vi/Reu5Mw7mlbk/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-6/event/melee-singles",
@@ -1796,7 +1962,16 @@
               "isUpset": false,
               "startedAt": 1688247451,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "62190435",
+              "vods": [
+                {
+                  "videoId": "i35yxfJUDEE",
+                  "url": "https://www.youtube.com/watch?v=i35yxfJUDEE",
+                  "title": "MMM Revival #6 - 2023 | Losers Semis - S1R (Sheik) vs. Iguana (Peach)",
+                  "thumbnail": "https://i.ytimg.com/vi/i35yxfJUDEE/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1838,7 +2013,8 @@
               "isUpset": false,
               "startedAt": 1686425467,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "61374578"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-5-1/event/melee-singles",
@@ -1854,7 +2030,8 @@
               "isUpset": false,
               "startedAt": 1686428606,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "61374583"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-5-1/event/melee-singles",
@@ -1870,7 +2047,8 @@
               "isUpset": false,
               "startedAt": 1686428874,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "61374609"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-5-1/event/melee-singles",
@@ -1886,7 +2064,8 @@
               "isUpset": false,
               "startedAt": 1686430376,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "61374613"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-5-1/event/melee-singles",
@@ -1902,7 +2081,8 @@
               "isUpset": false,
               "startedAt": 1686431283,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "61374615"
             }
           ],
           "characterCounts": {
@@ -1944,7 +2124,16 @@
               "isUpset": false,
               "startedAt": 1683399751,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "60138334",
+              "vods": [
+                {
+                  "videoId": "YdSG_Rl4QZ0",
+                  "url": "https://www.youtube.com/watch?v=YdSG_Rl4QZ0",
+                  "title": "MMM Revival #4 - 2023 | Winners Quarter - S1R vs. Transformación",
+                  "thumbnail": "https://i.ytimg.com/vi/YdSG_Rl4QZ0/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-4/event/melee-singles",
@@ -1960,7 +2149,8 @@
               "isUpset": false,
               "startedAt": 1683401202,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "60138366"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-4/event/melee-singles",
@@ -1976,7 +2166,8 @@
               "isUpset": false,
               "startedAt": 1683403080,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "60138368"
             }
           ],
           "characterCounts": {
@@ -2018,7 +2209,8 @@
               "isUpset": false,
               "startedAt": 1678041393,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "57790630"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-2/event/melee-singles",
@@ -2034,7 +2226,8 @@
               "isUpset": false,
               "startedAt": 1678042855,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "setId": "57790646"
             }
           ],
           "characterCounts": {
@@ -2076,7 +2269,8 @@
               "isUpset": false,
               "startedAt": 1677859297,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "56661366"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-3-23/event/melee-singles",
@@ -2092,7 +2286,8 @@
               "isUpset": false,
               "startedAt": 1677859454,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "56661399"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-3-23/event/melee-singles",
@@ -2108,7 +2303,8 @@
               "isUpset": false,
               "startedAt": 1678127619,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "56661396"
             }
           ],
           "characterCounts": {
@@ -2150,7 +2346,8 @@
               "isUpset": false,
               "startedAt": 1595707354,
               "phaseOrder": 1,
-              "roundOrder": 9
+              "roundOrder": 9,
+              "setId": "30913735"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-7/event/melee-singles",
@@ -2166,7 +2363,8 @@
               "isUpset": false,
               "startedAt": 1595711666,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "30913711"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-7/event/melee-singles",
@@ -2182,7 +2380,8 @@
               "isUpset": false,
               "startedAt": 1595712932,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "30913704"
             }
           ],
           "characterCounts": {},
@@ -2220,7 +2419,8 @@
               "isUpset": false,
               "startedAt": 1593285695,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "setId": "30203014"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-6/event/melee-singles",
@@ -2236,7 +2436,8 @@
               "isUpset": true,
               "startedAt": 1593286436,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "30203009"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-6/event/melee-singles",
@@ -2252,7 +2453,8 @@
               "isUpset": false,
               "startedAt": 1593295940,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "30203001"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-6/event/melee-singles",
@@ -2268,7 +2470,8 @@
               "isUpset": false,
               "startedAt": 1593299839,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "setId": "30203012"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-6/event/melee-singles",
@@ -2284,7 +2487,8 @@
               "isUpset": false,
               "startedAt": 1593573394,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "30261439"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-6/event/melee-singles",
@@ -2300,7 +2504,8 @@
               "isUpset": true,
               "startedAt": 1593645353,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "30261473"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-6/event/melee-singles",
@@ -2316,7 +2521,8 @@
               "isUpset": true,
               "startedAt": 1593646717,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "30261476"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-6/event/melee-singles",
@@ -2332,7 +2538,8 @@
               "isUpset": false,
               "startedAt": 1593658574,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "30261478"
             }
           ],
           "characterCounts": {},
@@ -2370,7 +2577,8 @@
               "isUpset": false,
               "startedAt": 1579976832,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "26101436"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -2386,7 +2594,8 @@
               "isUpset": false,
               "startedAt": 1579976843,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "26101435"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -2402,7 +2611,8 @@
               "isUpset": false,
               "startedAt": 1579978708,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "26102870"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -2418,7 +2628,8 @@
               "isUpset": false,
               "startedAt": 1579982600,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "26102873"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -2434,7 +2645,8 @@
               "isUpset": false,
               "startedAt": 1579984311,
               "phaseOrder": 2,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "26102935"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -2450,7 +2662,8 @@
               "isUpset": false,
               "startedAt": 1579988124,
               "phaseOrder": 2,
-              "roundOrder": -9
+              "roundOrder": -9,
+              "setId": "26102937"
             }
           ],
           "characterCounts": {
@@ -2492,14 +2705,15 @@
               "isUpset": false,
               "startedAt": 1572112525,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "24217266"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
               "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
               "phase": "Melee Round Robin",
               "round": "Round 2",
-              "opponent": "longels",
+              "opponent": "L'Ongels",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -2524,7 +2738,8 @@
               "isUpset": false,
               "startedAt": 1572119672,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "24224163"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
@@ -2540,7 +2755,8 @@
               "isUpset": false,
               "startedAt": 1572121210,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "24224170"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
@@ -2556,7 +2772,8 @@
               "isUpset": false,
               "startedAt": 1572124826,
               "phaseOrder": 2,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "setId": "24224173"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
@@ -2572,7 +2789,8 @@
               "isUpset": true,
               "startedAt": 1572130897,
               "phaseOrder": 2,
-              "roundOrder": -10
+              "roundOrder": -10,
+              "setId": "24224300"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
@@ -2588,7 +2806,8 @@
               "isUpset": false,
               "startedAt": 1572132271,
               "phaseOrder": 2,
-              "roundOrder": -11
+              "roundOrder": -11,
+              "setId": "24224302"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
@@ -2604,7 +2823,8 @@
               "isUpset": false,
               "startedAt": 1572134508,
               "phaseOrder": 2,
-              "roundOrder": -12
+              "roundOrder": -12,
+              "setId": "24224303"
             }
           ],
           "characterCounts": {},
@@ -2642,7 +2862,8 @@
               "isUpset": false,
               "startedAt": 1569697917,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "23492334"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2658,7 +2879,8 @@
               "isUpset": false,
               "startedAt": 1569699963,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "23492332"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2674,7 +2896,16 @@
               "isUpset": false,
               "startedAt": 1569705378,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "23507804",
+              "vods": [
+                {
+                  "videoId": "38QuolkvgYQ",
+                  "url": "https://www.youtube.com/watch?v=38QuolkvgYQ",
+                  "title": "MMM #9 - 2019 | Winners Quarters - S1R vs. SrPaz (Resubido)",
+                  "thumbnail": "https://i.ytimg.com/vi/38QuolkvgYQ/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2690,7 +2921,16 @@
               "isUpset": false,
               "startedAt": 1569709006,
               "phaseOrder": 2,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "setId": "23507807",
+              "vods": [
+                {
+                  "videoId": "yIepd2XhL2s",
+                  "url": "https://www.youtube.com/watch?v=yIepd2XhL2s",
+                  "title": "MMM #9 - 2019 | Winners Semis - S1R vs. Ordo (Resubido)",
+                  "thumbnail": "https://i.ytimg.com/vi/yIepd2XhL2s/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2706,7 +2946,16 @@
               "isUpset": false,
               "startedAt": 1569710537,
               "phaseOrder": 2,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "setId": "23507808",
+              "vods": [
+                {
+                  "videoId": "wmSVlraiNe0",
+                  "url": "https://www.youtube.com/watch?v=wmSVlraiNe0",
+                  "title": "MMM #9 - 2019 | Winners Finals - S1R vs. Aalz (Resubido)",
+                  "thumbnail": "https://i.ytimg.com/vi/wmSVlraiNe0/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2722,7 +2971,16 @@
               "isUpset": false,
               "startedAt": 1569712737,
               "phaseOrder": 2,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "setId": "23507809",
+              "vods": [
+                {
+                  "videoId": "Q-tEtvuvx0A",
+                  "url": "https://www.youtube.com/watch?v=Q-tEtvuvx0A",
+                  "title": "MMM #9 - 2019 | Grand Finals -  Sol!d vs. S1R (Resubido)",
+                  "thumbnail": "https://i.ytimg.com/vi/Q-tEtvuvx0A/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2738,7 +2996,8 @@
               "isUpset": false,
               "startedAt": 1569713983,
               "phaseOrder": 2,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "setId": "23507810"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2754,7 +3013,8 @@
               "isUpset": false,
               "startedAt": 1740003396,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "23507798"
             }
           ],
           "characterCounts": {
@@ -2796,7 +3056,8 @@
               "isUpset": false,
               "startedAt": 1567278484,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "22834522"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -2812,7 +3073,8 @@
               "isUpset": true,
               "startedAt": 1567283091,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "setId": "22834532"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -2828,7 +3090,8 @@
               "isUpset": true,
               "startedAt": 1567283557,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "22834525"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -2844,7 +3107,8 @@
               "isUpset": false,
               "startedAt": 1567290816,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "22847562"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -2860,7 +3124,16 @@
               "isUpset": false,
               "startedAt": 1567292012,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "22847570",
+              "vods": [
+                {
+                  "videoId": "UdaT7F9qpis",
+                  "url": "https://www.youtube.com/watch?v=UdaT7F9qpis",
+                  "title": "MMM #8 - 2019 | Winners Quarters - S1R vs. Transformación",
+                  "thumbnail": "https://i.ytimg.com/vi/UdaT7F9qpis/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -2876,7 +3149,16 @@
               "isUpset": false,
               "startedAt": 1567294741,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "22847632",
+              "vods": [
+                {
+                  "videoId": "yUSLR8yPfgs",
+                  "url": "https://www.youtube.com/watch?v=yUSLR8yPfgs",
+                  "title": "MMM #8 - 2019 | Losers Round 4 - FrancoKiwi vs. S1R",
+                  "thumbnail": "https://i.ytimg.com/vi/yUSLR8yPfgs/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -2892,7 +3174,16 @@
               "isUpset": false,
               "startedAt": 1567298311,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "22847635",
+              "vods": [
+                {
+                  "videoId": "Ep9E0oiWOSI",
+                  "url": "https://www.youtube.com/watch?v=Ep9E0oiWOSI",
+                  "title": "MMM #8 - 2019 | Losers Round 5 - S1R vs. Sr.Mango",
+                  "thumbnail": "https://i.ytimg.com/vi/Ep9E0oiWOSI/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -2908,7 +3199,16 @@
               "isUpset": false,
               "startedAt": 1567299668,
               "phaseOrder": 2,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "22847637",
+              "vods": [
+                {
+                  "videoId": "Ngu_inH6hpY",
+                  "url": "https://www.youtube.com/watch?v=Ngu_inH6hpY",
+                  "title": "MMM #8 - 2019 | Losers Quarters - S1R vs. Sol!d",
+                  "thumbnail": "https://i.ytimg.com/vi/Ngu_inH6hpY/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -2950,7 +3250,8 @@
               "isUpset": false,
               "startedAt": 1558812608,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "20700227"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/melee-singles",
@@ -2966,7 +3267,8 @@
               "isUpset": true,
               "startedAt": 1558813408,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "20700233"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/melee-singles",
@@ -2982,14 +3284,15 @@
               "isUpset": false,
               "startedAt": 1558814740,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "20700236"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/melee-singles",
               "event": "Montevideo Melee Monthly 2019 #5 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Losers Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -3014,7 +3317,8 @@
               "isUpset": false,
               "startedAt": 1558824885,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "20700285"
             }
           ],
           "characterCounts": {
@@ -3056,7 +3360,8 @@
               "isUpset": false,
               "startedAt": 1553971898,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "19454373"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-3-1/event/melee-singles",
@@ -3072,14 +3377,15 @@
               "isUpset": false,
               "startedAt": 1553972295,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "19454372"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-3-1/event/melee-singles",
               "event": "Montevideo Melee Monthly 2019 #3 · Melee Singles",
               "phase": "Melee Round Robin",
               "round": "Round 1",
-              "opponent": "PorritoCody",
+              "opponent": "Cody",
               "score": "1–2",
               "outcome": "loss",
               "opponentExcluded": false,
@@ -3104,7 +3410,8 @@
               "isUpset": false,
               "startedAt": 1553977947,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "19462456"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-3-1/event/melee-singles",
@@ -3120,7 +3427,8 @@
               "isUpset": true,
               "startedAt": 1553981480,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "setId": "19462487"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-3-1/event/melee-singles",
@@ -3136,7 +3444,8 @@
               "isUpset": false,
               "startedAt": 1553982471,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "19462491"
             }
           ],
           "characterCounts": {
@@ -3180,7 +3489,8 @@
               "isUpset": false,
               "startedAt": 1540749326,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "17116392"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-9/event/melee-singles",
@@ -3196,7 +3506,8 @@
               "isUpset": false,
               "startedAt": 1540750742,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "17116394"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-9/event/melee-singles",
@@ -3212,7 +3523,8 @@
               "isUpset": false,
               "startedAt": 1540755334,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "17117566"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-9/event/melee-singles",
@@ -3228,7 +3540,8 @@
               "isUpset": false,
               "startedAt": 1540756179,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "17117571"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-9/event/melee-singles",
@@ -3244,7 +3557,8 @@
               "isUpset": false,
               "startedAt": 1540758721,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "17117602"
             }
           ],
           "characterCounts": {},
@@ -3282,7 +3596,8 @@
               "isUpset": false,
               "startedAt": 1538249249,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "16786032"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/melee-singles",
@@ -3298,7 +3613,8 @@
               "isUpset": false,
               "startedAt": 1538251093,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "16786035"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/melee-singles",
@@ -3314,7 +3630,8 @@
               "isUpset": true,
               "startedAt": 1538251617,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "16786037"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/melee-singles",
@@ -3330,7 +3647,8 @@
               "isUpset": false,
               "startedAt": 1538254642,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "16789003"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/melee-singles",
@@ -3346,7 +3664,8 @@
               "isUpset": true,
               "startedAt": 1538255978,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "16789037"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/melee-singles",
@@ -3362,7 +3681,8 @@
               "isUpset": false,
               "startedAt": 1538257078,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "16789039"
             }
           ],
           "characterCounts": {},
@@ -3400,7 +3720,8 @@
               "isUpset": false,
               "startedAt": 1532814751,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "16063753"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-6/event/melee-singles",
@@ -3416,7 +3737,8 @@
               "isUpset": true,
               "startedAt": 1532816037,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "16063756"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-6/event/melee-singles",
@@ -3432,14 +3754,15 @@
               "isUpset": false,
               "startedAt": 1532817767,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "16066510"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-6/event/melee-singles",
               "event": "Montevideo Melee Monthly 2018 #6 · Melee Singles",
               "phase": "Melee Singles Bracket",
               "round": "Winners Quarter-Final",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -3464,7 +3787,8 @@
               "isUpset": false,
               "startedAt": 1532825142,
               "phaseOrder": 2,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "setId": "16066522"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-6/event/melee-singles",
@@ -3480,7 +3804,8 @@
               "isUpset": false,
               "startedAt": 1532826059,
               "phaseOrder": 2,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "16066554"
             }
           ],
           "characterCounts": {},
@@ -3518,7 +3843,8 @@
               "isUpset": false,
               "startedAt": 1527363373,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "15256989"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-4/event/melee-singles",
@@ -3534,7 +3860,8 @@
               "isUpset": true,
               "startedAt": 1527364833,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "15256991"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-4/event/melee-singles",
@@ -3550,7 +3877,8 @@
               "isUpset": false,
               "startedAt": 1527367241,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "15259389"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-4/event/melee-singles",
@@ -3566,7 +3894,8 @@
               "isUpset": false,
               "startedAt": 1527368095,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "15259391"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-4/event/melee-singles",
@@ -3582,7 +3911,8 @@
               "isUpset": false,
               "startedAt": 1527369976,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "15259422"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-4/event/melee-singles",
@@ -3598,7 +3928,8 @@
               "isUpset": false,
               "startedAt": 1527371388,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "15259423"
             }
           ],
           "characterCounts": {},
@@ -3636,7 +3967,8 @@
               "isUpset": false,
               "startedAt": 1524940277,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "13337876"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -3652,14 +3984,15 @@
               "isUpset": true,
               "startedAt": 1524942071,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "13337879"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
               "event": "Montevideo Melee Monthly 2018 #3 · Melee Singles",
               "phase": "Melee Round Robin",
               "round": "Round 3",
-              "opponent": "PorritoCody",
+              "opponent": "Cody",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -3684,7 +4017,8 @@
               "isUpset": false,
               "startedAt": 1524943259,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "13340536"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -3700,7 +4034,8 @@
               "isUpset": false,
               "startedAt": 1524945110,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "13340543"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -3716,7 +4051,8 @@
               "isUpset": false,
               "startedAt": 1524948004,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "13340575"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -3732,7 +4068,8 @@
               "isUpset": false,
               "startedAt": 1524950576,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "13340577"
             }
           ],
           "characterCounts": {},
@@ -3770,7 +4107,8 @@
               "isUpset": false,
               "startedAt": 1522518685,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "12515703"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -3786,7 +4124,8 @@
               "isUpset": false,
               "startedAt": 1522520412,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "12515705"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -3802,7 +4141,8 @@
               "isUpset": false,
               "startedAt": 1522522253,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "12518761"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -3818,7 +4158,8 @@
               "isUpset": false,
               "startedAt": 1522523415,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "12518768"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -3834,14 +4175,15 @@
               "isUpset": false,
               "startedAt": 1522523514,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "12518800"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
               "event": "Montevideo Melee Monthly 2018 #2 · Melee Singles",
               "phase": "Bracket",
               "round": "Losers Round 3",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -3866,7 +4208,8 @@
               "isUpset": false,
               "startedAt": 1522528286,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "12518804"
             }
           ],
           "characterCounts": {},
@@ -3904,14 +4247,15 @@
               "isUpset": false,
               "startedAt": 1519494996,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "12096627"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-1/event/melee-singles",
               "event": "Montevideo Melee Monthly 2018 #1 · Melee Singles",
               "phase": "Round robin",
               "round": "Round 1",
-              "opponent": "Son Rolo",
+              "opponent": "Pladson",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -3936,14 +4280,23 @@
               "isUpset": false,
               "startedAt": 1519499910,
               "phaseOrder": 3,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "12099631",
+              "vods": [
+                {
+                  "videoId": "Mk6FmIpmgFE",
+                  "url": "https://www.youtube.com/watch?v=Mk6FmIpmgFE",
+                  "title": "MMM #1 - 2018 | Winners Quarters - Sol!d vs. S1R",
+                  "thumbnail": "https://i.ytimg.com/vi/Mk6FmIpmgFE/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-1/event/melee-singles",
               "event": "Montevideo Melee Monthly 2018 #1 · Melee Singles",
               "phase": "Brackets",
               "round": "Losers Round 2",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–1",
               "outcome": "win",
               "opponentExcluded": false,
@@ -3968,7 +4321,8 @@
               "isUpset": false,
               "startedAt": 1519502158,
               "phaseOrder": 3,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "12099666"
             }
           ],
           "characterCounts": {},
@@ -4006,7 +4360,8 @@
               "isUpset": false,
               "startedAt": 1503769121,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "9978196"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
@@ -4022,7 +4377,8 @@
               "isUpset": true,
               "startedAt": 1503770578,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "setId": "9978226"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
@@ -4038,7 +4394,8 @@
               "isUpset": true,
               "startedAt": 1503771737,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "9978230"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
@@ -4054,7 +4411,8 @@
               "isUpset": false,
               "startedAt": 1503781207,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "9978232"
             }
           ],
           "characterCounts": {},
@@ -4083,7 +4441,7 @@
               "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
               "phase": "Bracket",
               "round": "Winners Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -4108,14 +4466,15 @@
               "isUpset": false,
               "startedAt": 1490470611,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "7865280"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
               "event": "Montevideo Melee Monthly 2017 #3 · Melee Singles",
               "phase": "Bracket",
               "round": "Losers Round 2",
-              "opponent": "Son Rolo",
+              "opponent": "Pladson",
               "score": "3–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -4140,7 +4499,8 @@
               "isUpset": false,
               "startedAt": 1490474569,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "7865346"
             }
           ],
           "characterCounts": {},
@@ -4219,12 +4579,12 @@
           "wins": 1
         },
         {
-          "opponent": "Walachia",
+          "opponent": "Pritah",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "PorritoCody",
+          "opponent": "Cody",
           "sets": 1,
           "wins": 1
         },
@@ -4265,7 +4625,7 @@
           "opponent": "Iguana",
           "seed": 1,
           "ownSeed": 10,
-          "upsetFactor": 10,
+          "upsetFactor": 10.0,
           "score": "3–0",
           "phase": "Bracket",
           "round": "Grand Final",
@@ -4277,7 +4637,7 @@
           "opponent": "Mingudai",
           "seed": 2,
           "ownSeed": 10,
-          "upsetFactor": 5,
+          "upsetFactor": 5.0,
           "score": "3–1",
           "phase": "Bracket",
           "round": "Winners Quarter-Final",
@@ -4333,7 +4693,8 @@
               "isUpset": false,
               "startedAt": 1754778311,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "92503860"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/project",
@@ -4349,7 +4710,16 @@
               "isUpset": false,
               "startedAt": 1754784767,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "92503862",
+              "vods": [
+                {
+                  "videoId": "YKgcb5lp_mk",
+                  "url": "https://www.youtube.com/watch?v=YKgcb5lp_mk",
+                  "title": "MMM #7 - 2025 | Winners Semis - DTK (Bowser) vs. S1R (R.O.B, Mr. Game & Watch) | Project +",
+                  "thumbnail": "https://i.ytimg.com/vi/YKgcb5lp_mk/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/project",
@@ -4365,7 +4735,16 @@
               "isUpset": false,
               "startedAt": 1754785487,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "92503876",
+              "vods": [
+                {
+                  "videoId": "jAhlNgcKYlE",
+                  "url": "https://www.youtube.com/watch?v=jAhlNgcKYlE",
+                  "title": "MMM #7 - 2025 | Losers Quarters - S1R (R.O.B, Roy, C. Falcon) vs. Sol!d (Mewtwo, Sheik) | Project +",
+                  "thumbnail": "https://i.ytimg.com/vi/jAhlNgcKYlE/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -4417,7 +4796,8 @@
               "isUpset": true,
               "startedAt": 1751733208,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "91055637"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/project",
@@ -4433,7 +4813,8 @@
               "isUpset": true,
               "startedAt": 1751736066,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "91055642"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/project",
@@ -4449,7 +4830,8 @@
               "isUpset": true,
               "startedAt": 1751741068,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "91055645"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/project",
@@ -4465,7 +4847,8 @@
               "isUpset": false,
               "startedAt": 1751741618,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "setId": "91055646"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/project",
@@ -4481,7 +4864,8 @@
               "isUpset": false,
               "startedAt": 1751743303,
               "phaseOrder": 1,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "91055678"
             }
           ],
           "characterCounts": {
@@ -4525,14 +4909,15 @@
               "isUpset": true,
               "startedAt": 1553986494,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "19471448"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-3-1/event/pm-singles",
               "event": "Montevideo Melee Monthly 2019 #3 · PM Singles",
               "phase": "Bracket",
               "round": "Winners Quarter-Final",
-              "opponent": "PorritoCody",
+              "opponent": "Cody",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -4557,7 +4942,8 @@
               "isUpset": false,
               "startedAt": 1553989754,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "setId": "19471454"
             }
           ],
           "characterCounts": {
@@ -4590,7 +4976,7 @@
               "event": "Montevideo Melee Monthly 2018 #8 · PM Singles",
               "phase": "Bracket",
               "round": "Winners Round 1",
-              "opponent": "Walachia",
+              "opponent": "Pritah",
               "score": "2–0",
               "outcome": "win",
               "opponentExcluded": false,
@@ -4615,7 +5001,8 @@
               "isUpset": false,
               "startedAt": 1538259187,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "16793589"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/pm-singles",
@@ -4631,7 +5018,8 @@
               "isUpset": false,
               "startedAt": 1538260279,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "16793620"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/pm-singles",
@@ -4647,7 +5035,8 @@
               "isUpset": true,
               "startedAt": 1538262195,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "16793622"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/pm-singles",
@@ -4663,7 +5052,8 @@
               "isUpset": false,
               "startedAt": 1538264585,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "16793624"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/pm-singles",
@@ -4679,7 +5069,8 @@
               "isUpset": true,
               "startedAt": 1538265271,
               "phaseOrder": 1,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "setId": "16793625"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/pm-singles",
@@ -4695,7 +5086,8 @@
               "isUpset": true,
               "startedAt": 1538871436,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "setId": "16793594"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/pm-singles",
@@ -4711,7 +5103,8 @@
               "isUpset": false,
               "startedAt": 1538871446,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "setId": "16793595"
             }
           ],
           "characterCounts": {},
@@ -4749,7 +5142,8 @@
               "isUpset": false,
               "startedAt": 1522533711,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "12529058"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/pm-singles",
@@ -4765,7 +5159,8 @@
               "isUpset": true,
               "startedAt": 1522534492,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "12529062"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/pm-singles",
@@ -4781,7 +5176,8 @@
               "isUpset": false,
               "startedAt": 1522536238,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "12529064"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/pm-singles",
@@ -4797,7 +5193,8 @@
               "isUpset": true,
               "startedAt": 1522536843,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "12529095"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/pm-singles",
@@ -4813,7 +5210,8 @@
               "isUpset": false,
               "startedAt": 1522537759,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "12529096"
             }
           ],
           "characterCounts": {},
@@ -4999,7 +5397,8 @@
               "isUpset": false,
               "startedAt": 1569698544,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "23503272"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
@@ -5015,7 +5414,16 @@
               "isUpset": false,
               "startedAt": 1569698557,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "23503270",
+              "vods": [
+                {
+                  "videoId": "vRGvItG02CM",
+                  "url": "https://www.youtube.com/watch?v=vRGvItG02CM",
+                  "title": "MMM #9 | Pools - S1R (Pikachu) vs. Gomo (Falco)",
+                  "thumbnail": "https://i.ytimg.com/vi/vRGvItG02CM/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
@@ -5031,7 +5439,8 @@
               "isUpset": false,
               "startedAt": 1569703045,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "23506246"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
@@ -5047,7 +5456,8 @@
               "isUpset": false,
               "startedAt": 1569706226,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "23506266"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
@@ -5063,7 +5473,8 @@
               "isUpset": false,
               "startedAt": 1569707149,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "setId": "23506372"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
@@ -5079,7 +5490,8 @@
               "isUpset": false,
               "startedAt": 1569708664,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "23506386"
             }
           ],
           "characterCounts": {},
@@ -5117,7 +5529,8 @@
               "isUpset": false,
               "startedAt": 1567277131,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "22832435"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5133,7 +5546,8 @@
               "isUpset": true,
               "startedAt": 1567278030,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "22832433"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5149,7 +5563,8 @@
               "isUpset": false,
               "startedAt": 1567279159,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "setId": "22832437"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5165,7 +5580,8 @@
               "isUpset": false,
               "startedAt": 1567280081,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "22832430"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5181,7 +5597,8 @@
               "isUpset": false,
               "startedAt": 1567284954,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "22841147"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5197,7 +5614,8 @@
               "isUpset": false,
               "startedAt": 1567285278,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "setId": "22841267"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5213,7 +5631,8 @@
               "isUpset": false,
               "startedAt": 1567288249,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "22841275"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5229,7 +5648,8 @@
               "isUpset": false,
               "startedAt": 1567289454,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "22841282"
             }
           ],
           "characterCounts": {
@@ -5271,7 +5691,8 @@
               "isUpset": true,
               "startedAt": 1558815458,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "20701336"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -5287,7 +5708,8 @@
               "isUpset": false,
               "startedAt": 1558819591,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "20701341"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -5303,7 +5725,8 @@
               "isUpset": true,
               "startedAt": 1558822532,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "20701401"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -5319,7 +5742,8 @@
               "isUpset": false,
               "startedAt": 1558825723,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "20701404"
             }
           ],
           "characterCounts": {
@@ -5361,7 +5785,8 @@
               "isUpset": false,
               "startedAt": 1547327631,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "setId": "17952698"
             },
             {
               "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
@@ -5377,7 +5802,8 @@
               "isUpset": false,
               "startedAt": 1547333088,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "17952727"
             },
             {
               "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
@@ -5393,7 +5819,8 @@
               "isUpset": true,
               "startedAt": 1547334433,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "setId": "17952847"
             },
             {
               "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
@@ -5409,7 +5836,8 @@
               "isUpset": false,
               "startedAt": 1547336458,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "setId": "17952852"
             }
           ],
           "characterCounts": {},

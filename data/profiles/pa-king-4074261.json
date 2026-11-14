@@ -35,6 +35,11 @@
           "wins": 0
         },
         {
+          "opponent": "Pato",
+          "sets": 2,
+          "wins": 0
+        },
+        {
           "opponent": "Gerix",
           "sets": 1,
           "wins": 1
@@ -50,11 +55,6 @@
           "wins": 0
         },
         {
-          "opponent": "Pato",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "FvckFalcon",
           "sets": 1,
           "wins": 0
@@ -63,6 +63,26 @@
           "opponent": "Matemole",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Dieguix2004",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "RoLo",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "taiguer guds",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "josiulus",
+          "sets": 1,
+          "wins": 1
         },
         {
           "opponent": "merume",
@@ -110,30 +130,30 @@
           "wins": 1
         }
       ],
-      "events": 6,
-      "wins": 2,
-      "losses": 20,
+      "events": 7,
+      "wins": 5,
+      "losses": 22,
       "upsets": 0,
-      "bestPlace": 25,
-      "bestEvent": "2 times",
-      "avgPlace": 30.3,
-      "avgSeed": 37,
+      "bestPlace": 19,
+      "bestEvent": "Ultimate Smashdown #24 · Categoria B",
+      "avgPlace": 28.7,
+      "avgSeed": 32,
       "characters": [
         {
-          "name": "Pokemon Trainer",
-          "usage": 38.0
+          "name": "Ridley",
+          "usage": 47.5
         },
         {
-          "name": "Ridley",
-          "usage": 36.0
+          "name": "Pokemon Trainer",
+          "usage": 31.1
         },
         {
           "name": "Wolf",
-          "usage": 10.0
+          "usage": 8.2
         },
         {
           "name": "Other",
-          "usage": 16.0
+          "usage": 13.1
         }
       ],
       "notableWins": [],
@@ -318,7 +338,15 @@
               "isUpset": false,
               "startedAt": 1742065741,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "vods": [
+                {
+                  "videoId": "BpQUMyuB_Jg",
+                  "url": "https://www.youtube.com/watch?v=BpQUMyuB_Jg",
+                  "title": "Ultimate Smashdown #27 | Cat B | Winners Round 1 - Pa.King (Kirby, Ridley) vs ALFA (King Dedede)",
+                  "thumbnail": "https://i.ytimg.com/vi/BpQUMyuB_Jg/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "86620213",
@@ -418,6 +446,130 @@
               "entrants": 50,
               "characterCounts": {
                 "Ridley": 4
+              }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #24 · Categoria B",
+          "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+          "date": "2024-08-24",
+          "seed": 5,
+          "place": 19,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "78776506",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "josiulus",
+              "opponentPlayerId": "4268112",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724527470,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "vods": [
+                {
+                  "videoId": "sjC0VS4kXpU",
+                  "url": "https://www.youtube.com/watch?v=sjC0VS4kXpU",
+                  "title": "Ultimate Smashdown #24 | Cat B | Winners Round 1 - josiulus (PT, Ike) vs Pa.King (Ridley)",
+                  "thumbnail": "https://i.ytimg.com/vi/sjC0VS4kXpU/sddefault.jpg"
+                }
+              ]
+            },
+            {
+              "setId": "78776512",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "RoLo",
+              "opponentPlayerId": "4145805",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724528224,
+              "phaseOrder": 1,
+              "roundOrder": 2
+            },
+            {
+              "setId": "78776542",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "taiguer guds",
+              "opponentPlayerId": "4269774",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724529941,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            },
+            {
+              "setId": "78776545",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "Dieguix2004",
+              "opponentPlayerId": "3863680",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724530417,
+              "phaseOrder": 1,
+              "roundOrder": -5
+            },
+            {
+              "setId": "78776547",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "Pato",
+              "opponentPlayerId": "575693",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724531916,
+              "phaseOrder": 1,
+              "roundOrder": -6
+            }
+          ],
+          "characterCounts": {
+            "Ridley": 11
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "date": "2024-08-24",
+              "seed": 5,
+              "place": 19,
+              "entrants": 14,
+              "characterCounts": {
+                "Ridley": 11
               }
             }
           ]
@@ -682,7 +834,15 @@
               "isUpset": false,
               "startedAt": 1716061933,
               "phaseOrder": 4,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "vods": [
+                {
+                  "videoId": "vb_I7Ps00eM",
+                  "url": "https://www.youtube.com/watch?v=vb_I7Ps00eM",
+                  "title": "Ultimate Smashdown #22 | Cat B | Losers Semis - Pa.King (Pokemon Trainer) vs TowasPato (Dr. Mario)",
+                  "thumbnail": "https://i.ytimg.com/vi/vb_I7Ps00eM/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {

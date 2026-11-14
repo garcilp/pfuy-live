@@ -14,7 +14,7 @@
   "subEvents": [
     {
       "id": "1192112",
-      "title": "Ultimate",
+      "title": "Main event",
       "game": "Ultimate",
       "gameSlug": "ultimate",
       "entrants": 50,
@@ -94,6 +94,697 @@
           }
         }
       ]
+    },
+    {
+      "id": "1201432",
+      "title": "Categoria B",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "entrants": 14,
+      "isAmateur": true,
+      "hasAmateur": false,
+      "standings": [
+        {
+          "placement": 1,
+          "tag": "Pato",
+          "playerId": "575693",
+          "character": {
+            "name": "Pit",
+            "stockIcon": "assets/renders/ultimate/stocks/pit.webp"
+          }
+        },
+        {
+          "placement": 2,
+          "tag": "Vodokex",
+          "playerId": "2684562",
+          "character": {
+            "name": "Donkey Kong",
+            "stockIcon": "assets/renders/ultimate/stocks/donkey-kong.webp"
+          }
+        },
+        {
+          "placement": 3,
+          "tag": "elcusquerman",
+          "playerId": "3124833",
+          "character": {
+            "name": "Zelda",
+            "stockIcon": "assets/renders/ultimate/stocks/zelda.webp"
+          }
+        },
+        {
+          "placement": 4,
+          "tag": "Joserus",
+          "playerId": "3202445",
+          "character": {
+            "name": "Zero Suit Samus",
+            "stockIcon": "assets/renders/ultimate/stocks/zero-suit-samus.webp"
+          }
+        },
+        {
+          "placement": 5,
+          "tag": "RoLo",
+          "playerId": "4145805",
+          "character": {
+            "name": "Ganondorf",
+            "stockIcon": "assets/renders/ultimate/stocks/ganondorf.webp"
+          }
+        },
+        {
+          "placement": 5,
+          "tag": "Pa.King",
+          "playerId": "4074261",
+          "character": {
+            "name": "Ridley",
+            "stockIcon": "assets/renders/ultimate/stocks/ridley.webp"
+          }
+        },
+        {
+          "placement": 7,
+          "tag": "TowasPato",
+          "playerId": "3332659",
+          "character": {
+            "name": "Dr. Mario",
+            "stockIcon": "assets/renders/ultimate/stocks/dr-mario.webp"
+          }
+        },
+        {
+          "placement": 7,
+          "tag": "Dieguix2004",
+          "playerId": "3863680",
+          "character": {
+            "name": "Pyra & Mythra",
+            "stockIcon": "assets/renders/ultimate/stocks/pyra-mythra.webp"
+          }
+        }
+      ]
+    }
+  ],
+  "vods": [
+    {
+      "matchId": "78790724",
+      "videoId": "to6nd-5iiKs",
+      "url": "https://www.youtube.com/watch?v=to6nd-5iiKs",
+      "title": "Ultimate Smashdown #24 | Grand Final - Lazerth (Villager, Mega Man) vs Mitsu (Sephiroth)",
+      "thumbnail": "https://i.ytimg.com/vi/to6nd-5iiKs/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Top 8",
+      "phaseName": "Top 8",
+      "round": "Grand Final",
+      "isAmateur": false,
+      "displayScore": "Lazerth 0 - BCP | Mitsu 3",
+      "player1": {
+        "tag": "Lazerth",
+        "playerId": "1010061",
+        "sponsor": "W&L | BCP",
+        "characters": [
+          "Villager"
+        ]
+      },
+      "player2": {
+        "tag": "Mitsu",
+        "playerId": "557903",
+        "sponsor": "BCP",
+        "characters": [
+          "Sephiroth"
+        ]
+      }
+    },
+    {
+      "matchId": "78790739",
+      "videoId": "--fFxma-a3Y",
+      "url": "https://www.youtube.com/watch?v=--fFxma-a3Y",
+      "title": "Ultimate Smashdown #24 | Losers Finals - Bati (ROB) vs Mitsu (Sephiroth, Roy)",
+      "thumbnail": "https://i.ytimg.com/vi/--fFxma-a3Y/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Top 8",
+      "phaseName": "Top 8",
+      "round": "Losers Final",
+      "isAmateur": false,
+      "displayScore": "Bati 1 - BCP | Mitsu 3",
+      "player1": {
+        "tag": "Casipeta",
+        "playerId": "1244662",
+        "sponsor": "Roxy | SMB",
+        "characters": [
+          "R.O.B."
+        ]
+      },
+      "player2": {
+        "tag": "Mitsu",
+        "playerId": "557903",
+        "sponsor": "BCP",
+        "characters": [
+          "Sephiroth",
+          "Roy"
+        ]
+      }
+    },
+    {
+      "matchId": "78790738",
+      "videoId": "4I6Enm89yG0",
+      "url": "https://www.youtube.com/watch?v=4I6Enm89yG0",
+      "title": "Ultimate Smashdown #24 | Losers Semis - ENEMA (Diddy Kong) vs Mitsu (Sephiroth)",
+      "thumbnail": "https://i.ytimg.com/vi/4I6Enm89yG0/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Top 8",
+      "phaseName": "Top 8",
+      "round": "Losers Semi-Final",
+      "isAmateur": false,
+      "displayScore": "BCP | Mitsu 3 - ENEMA 0",
+      "player1": {
+        "tag": "Mitsu",
+        "playerId": "557903",
+        "sponsor": "BCP",
+        "characters": [
+          "Sephiroth"
+        ]
+      },
+      "player2": {
+        "tag": "ENEMA",
+        "playerId": "1244528",
+        "sponsor": "DBD",
+        "characters": [
+          "Diddy Kong"
+        ]
+      }
+    },
+    {
+      "matchId": "78790723",
+      "videoId": "Be9YNh-KcPk",
+      "url": "https://www.youtube.com/watch?v=Be9YNh-KcPk",
+      "title": "Ultimate Smashdown #24 | Winners Final - Lazerth (Villager) vs Bati (Lucas)",
+      "thumbnail": "https://i.ytimg.com/vi/Be9YNh-KcPk/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Top 8",
+      "phaseName": "Top 8",
+      "round": "Winners Final",
+      "isAmateur": false,
+      "displayScore": "Lazerth 3 - Bati 2",
+      "player1": {
+        "tag": "Lazerth",
+        "playerId": "1010061",
+        "sponsor": "W&L | BCP",
+        "characters": [
+          "Villager"
+        ]
+      },
+      "player2": {
+        "tag": "Casipeta",
+        "playerId": "1244662",
+        "sponsor": "Roxy | SMB",
+        "characters": [
+          "R.O.B.",
+          "Lucas"
+        ]
+      }
+    },
+    {
+      "matchId": "78790737",
+      "videoId": "pcGMYrKg3xE",
+      "url": "https://www.youtube.com/watch?v=pcGMYrKg3xE",
+      "title": "Ultimate Smashdown #24 | Losers Quarters - BRYANT MYERS (Pac-Man) vs ENEMA (Diddy Kong)",
+      "thumbnail": "https://i.ytimg.com/vi/pcGMYrKg3xE/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Top 8",
+      "phaseName": "Top 8",
+      "round": "Losers Quarter-Final",
+      "isAmateur": false,
+      "displayScore": "ENEMA 3 - BRYANT MYERS 1",
+      "player1": {
+        "tag": "ENEMA",
+        "playerId": "1244528",
+        "sponsor": "DBD",
+        "characters": [
+          "Diddy Kong"
+        ]
+      },
+      "player2": {
+        "tag": "Alberti",
+        "playerId": "1013310",
+        "sponsor": "BCP",
+        "characters": [
+          "Pac-Man"
+        ]
+      }
+    },
+    {
+      "matchId": "78790722",
+      "videoId": "FtkdeETKPRA",
+      "url": "https://www.youtube.com/watch?v=FtkdeETKPRA",
+      "title": "Ultimate Smashdown #24 | Winners Semis - Bati (ROB) vs RIGONARDO (Pokemon Trainer)",
+      "thumbnail": "https://i.ytimg.com/vi/FtkdeETKPRA/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Top 8",
+      "phaseName": "Top 8",
+      "round": "Winners Semi-Final",
+      "isAmateur": false,
+      "displayScore": "Bati 3 - RIGONARDO 2",
+      "player1": {
+        "tag": "Casipeta",
+        "playerId": "1244662",
+        "sponsor": "Roxy | SMB",
+        "characters": [
+          "R.O.B."
+        ]
+      },
+      "player2": {
+        "tag": "RIGONARDO",
+        "playerId": "1244573",
+        "sponsor": "DBD",
+        "characters": [
+          "Pokemon Trainer"
+        ]
+      }
+    },
+    {
+      "matchId": "78790721",
+      "videoId": "2_gsRz8HJHs",
+      "url": "https://www.youtube.com/watch?v=2_gsRz8HJHs",
+      "title": "Ultimate Smashdown #24 | Winners Semis - Lazerth (Villager) vs ENEMA (Diddy Kong)",
+      "thumbnail": "https://i.ytimg.com/vi/2_gsRz8HJHs/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Top 8",
+      "phaseName": "Top 8",
+      "round": "Winners Semi-Final",
+      "isAmateur": false,
+      "displayScore": "ENEMA 1 - Lazerth 3",
+      "player1": {
+        "tag": "ENEMA",
+        "playerId": "1244528",
+        "sponsor": "DBD",
+        "characters": [
+          "Diddy Kong"
+        ]
+      },
+      "player2": {
+        "tag": "Lazerth",
+        "playerId": "1010061",
+        "sponsor": "W&L | BCP",
+        "characters": [
+          "Villager"
+        ]
+      }
+    },
+    {
+      "matchId": "78775535",
+      "videoId": "6DkvrJzmyDQ",
+      "url": "https://www.youtube.com/watch?v=6DkvrJzmyDQ",
+      "title": "Ultimate Smashdown #24 | Winners Quarters - RIGONARDO (Ganondorf) vs Faaq (Terry)",
+      "thumbnail": "https://i.ytimg.com/vi/6DkvrJzmyDQ/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Bracket A",
+      "phaseName": "Bracket A",
+      "round": "Winners Quarter-Final",
+      "isAmateur": false,
+      "displayScore": "RIGONARDO 2 - NSG | Faaq 1",
+      "player1": {
+        "tag": "RIGONARDO",
+        "playerId": "1244573",
+        "sponsor": "DBD",
+        "characters": [
+          "Ganondorf"
+        ]
+      },
+      "player2": {
+        "tag": "FaaQ",
+        "playerId": "3403070",
+        "sponsor": "NSG",
+        "characters": [
+          "Terry"
+        ]
+      }
+    },
+    {
+      "matchId": "78775534",
+      "videoId": "E4f7R6-Y8Xk",
+      "url": "https://www.youtube.com/watch?v=E4f7R6-Y8Xk",
+      "title": "Ultimate Smashdown #24 | Winners Quarters - Bati (ROB, Lucas) vs BRYANT MYERS (Game & Watch, PacMan)",
+      "thumbnail": "https://i.ytimg.com/vi/E4f7R6-Y8Xk/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Bracket A",
+      "phaseName": "Bracket A",
+      "round": "Winners Quarter-Final",
+      "isAmateur": false,
+      "displayScore": "Bati 2 - BRYANT MYERS 1",
+      "player1": {
+        "tag": "Casipeta",
+        "playerId": "1244662",
+        "sponsor": "Roxy | SMB",
+        "characters": [
+          "R.O.B.",
+          "Lucas"
+        ]
+      },
+      "player2": {
+        "tag": "Alberti",
+        "playerId": "1013310",
+        "sponsor": "BCP",
+        "characters": [
+          "Pac-Man",
+          "Mr. Game & Watch"
+        ]
+      }
+    },
+    {
+      "matchId": "78775587",
+      "videoId": "Q3LhhKEkO5M",
+      "url": "https://www.youtube.com/watch?v=Q3LhhKEkO5M",
+      "title": "Ultimate Smashdown #24 | Losers Round 2 - BenjiGG (Bowser) vs Pos3idóN (Samus)",
+      "thumbnail": "https://i.ytimg.com/vi/Q3LhhKEkO5M/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Bracket A",
+      "phaseName": "Bracket A",
+      "round": "Losers Round 2",
+      "isAmateur": false,
+      "displayScore": "Pos3idóN 2 - BenjiGG 0",
+      "player1": {
+        "tag": "Pos3idóN",
+        "playerId": "1360085",
+        "sponsor": "SMB",
+        "characters": [
+          "Samus"
+        ]
+      },
+      "player2": {
+        "tag": "BenjiGG",
+        "playerId": "1857142",
+        "sponsor": "",
+        "characters": [
+          "Bowser"
+        ]
+      }
+    },
+    {
+      "matchId": "78775527",
+      "videoId": "t8KbpilrwfM",
+      "url": "https://www.youtube.com/watch?v=t8KbpilrwfM",
+      "title": "Ultimate Smashdown #24 | Winners Round 2 - ZAPO (Yoshi) vs Belipe (Toon Link)",
+      "thumbnail": "https://i.ytimg.com/vi/t8KbpilrwfM/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Bracket A",
+      "phaseName": "Bracket A",
+      "round": "Winners Round 2",
+      "isAmateur": false,
+      "displayScore": "ZAPO 2 - UWA | Belipe 1",
+      "player1": {
+        "tag": "ZAPO",
+        "playerId": "1260018",
+        "sponsor": "DBD",
+        "characters": [
+          "Yoshi"
+        ]
+      },
+      "player2": {
+        "tag": "Belipe",
+        "playerId": "1398327",
+        "sponsor": "UWA",
+        "characters": [
+          "Toon Link"
+        ]
+      }
+    },
+    {
+      "matchId": "78775514",
+      "videoId": "HPBZWRrYyYg",
+      "url": "https://www.youtube.com/watch?v=HPBZWRrYyYg",
+      "title": "Ultimate Smashdown #24 | Winners Round 1 - ZAPO (Yoshi) vs Freakazoiid (Pikachu)",
+      "thumbnail": "https://i.ytimg.com/vi/HPBZWRrYyYg/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Bracket A",
+      "phaseName": "Bracket A",
+      "round": "Winners Round 1",
+      "isAmateur": false,
+      "displayScore": "ZAPO 2 - CG | Freakazoiid 0",
+      "player1": {
+        "tag": "ZAPO",
+        "playerId": "1260018",
+        "sponsor": "DBD",
+        "characters": [
+          "Yoshi"
+        ]
+      },
+      "player2": {
+        "tag": "Freakazoiid",
+        "playerId": "3008029",
+        "sponsor": "CG",
+        "characters": [
+          "Pikachu"
+        ]
+      }
+    },
+    {
+      "matchId": "78775517",
+      "videoId": "hNIE5jN9TUQ",
+      "url": "https://www.youtube.com/watch?v=hNIE5jN9TUQ",
+      "title": "Ultimate Smashdown #24 | Winners Round 1 - Aminas (Link) vs Salieri (Palutena)",
+      "thumbnail": "https://i.ytimg.com/vi/hNIE5jN9TUQ/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Bracket A",
+      "phaseName": "Bracket A",
+      "round": "Winners Round 1",
+      "isAmateur": false,
+      "displayScore": "CG | Salieri 2 - Aminas 1",
+      "player1": {
+        "tag": "Salieri",
+        "playerId": "1670804",
+        "sponsor": "CG",
+        "characters": [
+          "Palutena"
+        ]
+      },
+      "player2": {
+        "tag": "Aminas",
+        "playerId": "1000031",
+        "sponsor": "W&L",
+        "characters": [
+          "Link"
+        ]
+      }
+    },
+    {
+      "matchId": "78775509",
+      "videoId": "cIYpHpNHZzs",
+      "url": "https://www.youtube.com/watch?v=cIYpHpNHZzs",
+      "title": "Ultimate Smashdown #24 | Winners Round 1 - J (Little Mac) vs Zorete (Mewtwo)",
+      "thumbnail": "https://i.ytimg.com/vi/cIYpHpNHZzs/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Bracket A",
+      "phaseName": "Bracket A",
+      "round": "Winners Round 1",
+      "isAmateur": false,
+      "displayScore": "J 2 - SMB | Zorete 1",
+      "player1": {
+        "tag": "J",
+        "playerId": "3483673",
+        "sponsor": "NSG",
+        "characters": [
+          "Little Mac"
+        ]
+      },
+      "player2": {
+        "tag": "Zoro",
+        "playerId": "1448875",
+        "sponsor": "SMB",
+        "characters": [
+          "Mewtwo"
+        ]
+      }
+    },
+    {
+      "matchId": "78762979",
+      "videoId": "MNHFZqVkNaY",
+      "url": "https://www.youtube.com/watch?v=MNHFZqVkNaY",
+      "title": "Ultimate Smashdown #24 | Pools - Jamón con dulce de leche (Joker) vs elpipo2018 (Bowser)",
+      "thumbnail": "https://i.ytimg.com/vi/MNHFZqVkNaY/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Pools",
+      "phaseName": "Pools",
+      "round": "Losers Round 2",
+      "isAmateur": false,
+      "displayScore": "Jamón con dulce de leche 2 - Elpipo2018 0",
+      "player1": {
+        "tag": "Jamón con dulce de leche",
+        "playerId": "3945021",
+        "sponsor": "NSG",
+        "characters": [
+          "Joker"
+        ]
+      },
+      "player2": {
+        "tag": "Elpipo2018",
+        "playerId": "3945951",
+        "sponsor": "",
+        "characters": [
+          "Bowser"
+        ]
+      }
+    },
+    {
+      "matchId": "78762999",
+      "videoId": "RARGeiPRxe8",
+      "url": "https://www.youtube.com/watch?v=RARGeiPRxe8",
+      "title": "Ultimate Smashdown #24 | Pools - Freakazoiid (Pikachu) vs ENEMA (Diddy Kong)",
+      "thumbnail": "https://i.ytimg.com/vi/RARGeiPRxe8/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Pools",
+      "phaseName": "Pools",
+      "round": "Winners Quarter-Final",
+      "isAmateur": false,
+      "displayScore": "ENEMA 2 - CG | Freakazoiid 0",
+      "player1": {
+        "tag": "ENEMA",
+        "playerId": "1244528",
+        "sponsor": "DBD",
+        "characters": [
+          "Diddy Kong"
+        ]
+      },
+      "player2": {
+        "tag": "Freakazoiid",
+        "playerId": "3008029",
+        "sponsor": "CG",
+        "characters": [
+          "Pikachu"
+        ]
+      }
+    },
+    {
+      "matchId": "78763000",
+      "videoId": "XLNcD8w1MiQ",
+      "url": "https://www.youtube.com/watch?v=XLNcD8w1MiQ",
+      "title": "Ultimate Smashdown #24 | Pools - Belipe (Toon Link) vs Pos3idóN (Samus)",
+      "thumbnail": "https://i.ytimg.com/vi/XLNcD8w1MiQ/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Pools",
+      "phaseName": "Pools",
+      "round": "Winners Quarter-Final",
+      "isAmateur": false,
+      "displayScore": "UWA | Belipe 0 - Pos3idóN 2",
+      "player1": {
+        "tag": "Belipe",
+        "playerId": "1398327",
+        "sponsor": "UWA",
+        "characters": [
+          "Toon Link"
+        ]
+      },
+      "player2": {
+        "tag": "Pos3idóN",
+        "playerId": "1360085",
+        "sponsor": "SMB",
+        "characters": [
+          "Samus"
+        ]
+      }
+    },
+    {
+      "matchId": "78762942",
+      "videoId": "xackK2pZoPE",
+      "url": "https://www.youtube.com/watch?v=xackK2pZoPE",
+      "title": "Ultimate Smashdown #24 | Pools - oscarcheDDar (Ken, Lucina) vs Krav (Ken)",
+      "thumbnail": "https://i.ytimg.com/vi/xackK2pZoPE/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "Pools",
+      "phaseName": "Pools",
+      "round": "Winners Round 1",
+      "isAmateur": false,
+      "displayScore": "oscarcheDDar 1 - Krav 2",
+      "player1": {
+        "tag": "oscarcheDDar",
+        "playerId": "2662712",
+        "sponsor": "",
+        "characters": [
+          "Ken",
+          "Lucina"
+        ]
+      },
+      "player2": {
+        "tag": "Krav",
+        "playerId": "3101855",
+        "sponsor": "",
+        "characters": [
+          "Ken"
+        ]
+      }
+    },
+    {
+      "matchId": "78776518",
+      "videoId": "r0UjAFr2kMw",
+      "url": "https://www.youtube.com/watch?v=r0UjAFr2kMw",
+      "title": "Ultimate Smashdown #24 | Cat B | Grand Final - Pato (Pit) vs Vodokex (Piranha Plant, Donkey Kong)",
+      "thumbnail": "https://i.ytimg.com/vi/r0UjAFr2kMw/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "[Cat. B] Grand Final",
+      "phaseName": "Bracket",
+      "round": "Grand Final",
+      "isAmateur": true,
+      "displayScore": "W&L|GAMER | Vodokex 0 - W&L | Pato 2",
+      "player1": {
+        "tag": "Vodokex",
+        "playerId": "2684562",
+        "sponsor": "GAMER | CG",
+        "characters": [
+          "Donkey Kong"
+        ]
+      },
+      "player2": {
+        "tag": "Pato",
+        "playerId": "575693",
+        "sponsor": "W&L",
+        "characters": [
+          "Pit"
+        ]
+      }
+    },
+    {
+      "matchId": "78776506",
+      "videoId": "sjC0VS4kXpU",
+      "url": "https://www.youtube.com/watch?v=sjC0VS4kXpU",
+      "title": "Ultimate Smashdown #24 | Cat B | Winners Round 1 - josiulus (PT, Ike) vs Pa.King (Ridley)",
+      "thumbnail": "https://i.ytimg.com/vi/sjC0VS4kXpU/sddefault.jpg",
+      "game": "Ultimate",
+      "gameSlug": "ultimate",
+      "phase": "[Cat. B] Winners Round 1",
+      "phaseName": "Bracket",
+      "round": "Winners Round 1",
+      "isAmateur": true,
+      "displayScore": "Pa.King 2 - josiulus 0",
+      "player1": {
+        "tag": "Pa.King",
+        "playerId": "4074261",
+        "sponsor": "",
+        "characters": [
+          "Ridley"
+        ]
+      },
+      "player2": {
+        "tag": "josiulus",
+        "playerId": "4268112",
+        "sponsor": "",
+        "characters": [
+          "Pokemon Trainer",
+          "Ike"
+        ]
+      }
     }
   ]
 }

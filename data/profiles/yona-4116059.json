@@ -146,7 +146,15 @@
               "isUpset": false,
               "startedAt": 1772917402,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "vods": [
+                {
+                  "videoId": "Nkbzx-2le20",
+                  "url": "https://www.youtube.com/watch?v=Nkbzx-2le20",
+                  "title": "MMM #2 - 2026 | Winners Round 1 - Yona (Sheik) vs. EpicDVD (Marth)",
+                  "thumbnail": "https://i.ytimg.com/vi/Nkbzx-2le20/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "100169880",
@@ -276,7 +284,15 @@
               "isUpset": false,
               "startedAt": 1775346519,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "vods": [
+                {
+                  "videoId": "0W6ygfTZLMo",
+                  "url": "https://www.youtube.com/watch?v=0W6ygfTZLMo",
+                  "title": "MMM #3 - 2026 | Losers Round 2 - Pencil (Ike) vs. Yona (Ivysaur)",
+                  "thumbnail": "https://i.ytimg.com/vi/0W6ygfTZLMo/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -459,7 +475,15 @@
               "isUpset": false,
               "startedAt": 1743965398,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "vods": [
+                {
+                  "videoId": "5YAOZg_iwqE",
+                  "url": "https://www.youtube.com/watch?v=5YAOZg_iwqE",
+                  "title": "Rivalito Charrúa #11 | RoA2 | Losers Round 1 - Yona (Olympia) vs Apa (Kragg)",
+                  "thumbnail": "https://i.ytimg.com/vi/5YAOZg_iwqE/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "87532417",
@@ -745,7 +769,15 @@
               "isUpset": false,
               "startedAt": 1732395876,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "vods": [
+                {
+                  "videoId": "ke_TtMrRy9s",
+                  "url": "https://www.youtube.com/watch?v=ke_TtMrRy9s",
+                  "title": "Rivalote de Primavera '24 | Rivals 1 | WR1 - Link (Clairen) vs Yona (Ori, Olympia)",
+                  "thumbnail": "https://i.ytimg.com/vi/ke_TtMrRy9s/sddefault.jpg"
+                }
+              ]
             },
             {
               "setId": "82673068",
@@ -808,6 +840,11 @@
           "wins": 0
         },
         {
+          "opponent": "Gerix",
+          "sets": 2,
+          "wins": 1
+        },
+        {
           "opponent": "Joserus",
           "sets": 2,
           "wins": 0
@@ -819,6 +856,16 @@
         },
         {
           "opponent": "Ketcha",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Dieguix2004",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Pato",
           "sets": 1,
           "wins": 0
         },
@@ -868,11 +915,6 @@
           "wins": 1
         },
         {
-          "opponent": "Gerix",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "Jamón con dulce de leche",
           "sets": 1,
           "wins": 0
@@ -908,30 +950,30 @@
           "wins": 1
         }
       ],
-      "events": 11,
-      "wins": 3,
-      "losses": 27,
+      "events": 12,
+      "wins": 4,
+      "losses": 29,
       "upsets": 0,
-      "bestPlace": 25,
-      "bestEvent": "Ultimate Smashdown #29 · Ultimate Singles",
-      "avgPlace": 36.0,
-      "avgSeed": 42,
+      "bestPlace": 23,
+      "bestEvent": "Ultimate Smashdown #24 · Categoria B",
+      "avgPlace": 34.6,
+      "avgSeed": 38,
       "characters": [
         {
           "name": "Piranha Plant",
-          "usage": 32.2
-        },
-        {
-          "name": "Pikachu",
-          "usage": 22.0
+          "usage": 28.8
         },
         {
           "name": "Mii Brawler",
-          "usage": 18.6
+          "usage": 24.2
+        },
+        {
+          "name": "Pikachu",
+          "usage": 19.7
         },
         {
           "name": "Other",
-          "usage": 27.1
+          "usage": 27.3
         }
       ],
       "notableWins": [],
@@ -1654,6 +1696,88 @@
               "characterCounts": {
                 "Little Mac": 2,
                 "Mii Brawler": 2
+              }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #24 · Categoria B",
+          "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+          "date": "2024-08-24",
+          "seed": 6,
+          "place": 23,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "78776510",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Pato",
+              "opponentPlayerId": "575693",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724526402,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            },
+            {
+              "setId": "78776539",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 1",
+              "opponent": "Gerix",
+              "opponentPlayerId": "1033952",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724529776,
+              "phaseOrder": 1,
+              "roundOrder": -3
+            },
+            {
+              "setId": "78776543",
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "Dieguix2004",
+              "opponentPlayerId": "3863680",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1724529809,
+              "phaseOrder": 1,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {
+            "Little Mac": 2,
+            "Mii Brawler": 5
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-24/event/categoria-b",
+              "event": "Ultimate Smashdown #24 · Categoria B",
+              "date": "2024-08-24",
+              "seed": 6,
+              "place": 23,
+              "entrants": 14,
+              "characterCounts": {
+                "Little Mac": 2,
+                "Mii Brawler": 5
               }
             }
           ]
