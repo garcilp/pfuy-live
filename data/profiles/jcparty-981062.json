@@ -93,7 +93,10 @@
               "startedAt": 1548526755,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "18207345"
+              "setId": "18207345",
+              "opponentPlayerId": "958669",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
@@ -110,7 +113,10 @@
               "startedAt": 1548528014,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "18207353"
+              "setId": "18207353",
+              "opponentPlayerId": "561054",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
@@ -127,7 +133,10 @@
               "startedAt": 1548532973,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "18207348"
+              "setId": "18207348",
+              "opponentPlayerId": "264244",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
@@ -161,6 +170,8 @@
               "phaseOrder": 2,
               "roundOrder": -3,
               "setId": "18218775",
+              "opponentPlayerId": "895125",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -180,8 +191,7 @@
                   "opponentCharacter": "Samus",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -272,6 +282,8 @@
               "phaseOrder": 1,
               "roundOrder": 2,
               "setId": "18207060",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -285,8 +297,7 @@
                   "opponentCharacter": "Captain Falcon",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",
@@ -304,6 +315,8 @@
               "phaseOrder": 1,
               "roundOrder": -4,
               "setId": "18207114",
+              "opponentPlayerId": "1018559",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -317,8 +330,7 @@
                   "opponentCharacter": "Young Link",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -363,7 +375,10 @@
               "startedAt": 1547329360,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "17952718"
+              "setId": "17952718",
+              "opponentPlayerId": "355816",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

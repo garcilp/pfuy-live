@@ -100,6 +100,8 @@
               "phaseOrder": 1,
               "roundOrder": 2,
               "setId": "81522228",
+              "opponentPlayerId": "3326405",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -113,8 +115,7 @@
                   "opponentCharacter": "Etalus",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",
@@ -148,6 +149,8 @@
               "phaseOrder": 1,
               "roundOrder": -6,
               "setId": "81522291",
+              "opponentPlayerId": "3654948",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -167,8 +170,7 @@
                   "opponentCharacter": "Ori",
                   "outcome": "win"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",
@@ -186,6 +188,8 @@
               "phaseOrder": 1,
               "roundOrder": -7,
               "setId": "81522295",
+              "opponentPlayerId": "1244573",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -205,8 +209,7 @@
                   "opponentCharacter": "Kragg",
                   "outcome": "win"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",
@@ -224,14 +227,8 @@
               "phaseOrder": 1,
               "roundOrder": -8,
               "setId": "81522297",
-              "vods": [
-                {
-                  "videoId": "vyx94ZvnLH8",
-                  "url": "https://www.youtube.com/watch?v=vyx94ZvnLH8",
-                  "title": "CrossUp '24 | Singles | Losers Quarters - FrancoKiwi (Clairen) vs Cide (Maypul)",
-                  "thumbnail": "https://i.ytimg.com/vi/vyx94ZvnLH8/sddefault.jpg"
-                }
-              ],
+              "opponentPlayerId": "1154899",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -252,7 +249,14 @@
                   "outcome": "loss"
                 }
               ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              "vods": [
+                {
+                  "videoId": "vyx94ZvnLH8",
+                  "url": "https://www.youtube.com/watch?v=vyx94ZvnLH8",
+                  "title": "CrossUp '24 | Singles | Losers Quarters - FrancoKiwi (Clairen) vs Cide (Maypul)",
+                  "thumbnail": "https://i.ytimg.com/vi/vyx94ZvnLH8/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {

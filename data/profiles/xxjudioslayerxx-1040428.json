@@ -75,7 +75,10 @@
               "startedAt": 1548526786,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "18207891"
+              "setId": "18207891",
+              "opponentPlayerId": "895125",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
@@ -92,7 +95,10 @@
               "startedAt": 1548529063,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "18207893"
+              "setId": "18207893",
+              "opponentPlayerId": "330635",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
@@ -109,7 +115,10 @@
               "startedAt": 1548530464,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "18207896"
+              "setId": "18207896",
+              "opponentPlayerId": "228886",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
@@ -203,6 +212,8 @@
               "phaseOrder": 1,
               "roundOrder": 1,
               "setId": "18207052",
+              "opponentPlayerId": "1010061",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -216,8 +227,7 @@
                   "opponentCharacter": "Villager",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",
@@ -235,6 +245,8 @@
               "phaseOrder": 1,
               "roundOrder": -5,
               "setId": "18207123",
+              "opponentPlayerId": "561054",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -248,8 +260,7 @@
                   "opponentCharacter": "Bowser",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {

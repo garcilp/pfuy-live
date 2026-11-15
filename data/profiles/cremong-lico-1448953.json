@@ -266,6 +266,8 @@
               "phaseOrder": 1,
               "roundOrder": 1,
               "setId": "60614977",
+              "opponentPlayerId": "3190012",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -279,8 +281,7 @@
                   "opponentCharacter": "Mewtwo",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/koopa-series-2/event/singles",
@@ -298,6 +299,8 @@
               "phaseOrder": 1,
               "roundOrder": -4,
               "setId": "60615109",
+              "opponentPlayerId": "1861531",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -317,8 +320,7 @@
                   "opponentCharacter": "Dark Samus",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/koopa-series-2/event/singles",
@@ -336,6 +338,8 @@
               "phaseOrder": 3,
               "roundOrder": 1,
               "setId": "60619684",
+              "opponentPlayerId": "3332083",
+              "bracketType": "SINGLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -349,8 +353,7 @@
                   "opponentCharacter": "Incineroar",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "SINGLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -396,6 +399,8 @@
               "phaseOrder": 1,
               "roundOrder": 2,
               "setId": "50922347",
+              "opponentPlayerId": "311090",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -409,8 +414,7 @@
                   "opponentCharacter": "King Dedede",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -444,6 +448,8 @@
               "phaseOrder": 1,
               "roundOrder": 4,
               "setId": "50922354",
+              "opponentPlayerId": "2390380",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -457,8 +463,7 @@
                   "opponentCharacter": "Chrom",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -476,6 +481,8 @@
               "phaseOrder": 1,
               "roundOrder": 1,
               "setId": "50922343",
+              "opponentPlayerId": "1683067",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -489,8 +496,7 @@
                   "opponentCharacter": "Ganondorf",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -508,6 +514,8 @@
               "phaseOrder": 1,
               "roundOrder": 3,
               "setId": "50922351",
+              "opponentPlayerId": "1499711",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -521,8 +529,7 @@
                   "opponentCharacter": "Ganondorf",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
@@ -540,14 +547,8 @@
               "phaseOrder": 1,
               "roundOrder": 1,
               "setId": "50938876",
-              "vods": [
-                {
-                  "videoId": "vd5IoAFGDnU",
-                  "url": "https://www.youtube.com/watch?v=vd5IoAFGDnU",
-                  "title": "Ultimate Smashdown #9 | Winners Round 1 Cat B - Cremongolico (Ganondorf) vs Thithi (Richter)",
-                  "thumbnail": "https://i.ytimg.com/vi/vd5IoAFGDnU/sddefault.jpg"
-                }
-              ],
+              "opponentPlayerId": "894496",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -562,7 +563,14 @@
                   "outcome": "loss"
                 }
               ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              "vods": [
+                {
+                  "videoId": "vd5IoAFGDnU",
+                  "url": "https://www.youtube.com/watch?v=vd5IoAFGDnU",
+                  "title": "Ultimate Smashdown #9 | Winners Round 1 Cat B - Cremongolico (Ganondorf) vs Thithi (Richter)",
+                  "thumbnail": "https://i.ytimg.com/vi/vd5IoAFGDnU/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
@@ -580,6 +588,8 @@
               "phaseOrder": 1,
               "roundOrder": -3,
               "setId": "50938908",
+              "opponentPlayerId": "2915041",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -593,8 +603,7 @@
                   "opponentCharacter": "Wolf",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -650,7 +659,10 @@
               "startedAt": 1653156731,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "47570509"
+              "setId": "47570509",
+              "opponentPlayerId": "1446472",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -668,6 +680,8 @@
               "phaseOrder": 1,
               "roundOrder": 1,
               "setId": "47570496",
+              "opponentPlayerId": "557903",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -681,8 +695,7 @@
                   "opponentCharacter": "Random Character",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -700,6 +713,8 @@
               "phaseOrder": 1,
               "roundOrder": 3,
               "setId": "47570504",
+              "opponentPlayerId": "1000031",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -719,8 +734,7 @@
                   "opponentCharacter": "Link",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -738,6 +752,8 @@
               "phaseOrder": 1,
               "roundOrder": 2,
               "setId": "47570500",
+              "opponentPlayerId": "2684562",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -751,8 +767,7 @@
                   "opponentCharacter": "Kazuya",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -770,6 +785,8 @@
               "phaseOrder": 1,
               "roundOrder": 4,
               "setId": "47570507",
+              "opponentPlayerId": "894493",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -783,8 +800,7 @@
                   "opponentCharacter": "Little Mac",
                   "outcome": "win"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
@@ -802,6 +818,8 @@
               "phaseOrder": 1,
               "roundOrder": 1,
               "setId": "47578901",
+              "opponentPlayerId": "2915041",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -815,8 +833,7 @@
                   "opponentCharacter": "Wolf",
                   "outcome": "win"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
@@ -834,6 +851,8 @@
               "phaseOrder": 1,
               "roundOrder": 2,
               "setId": "47578909",
+              "opponentPlayerId": "2666900",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -847,8 +866,7 @@
                   "opponentCharacter": "Joker",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
@@ -866,6 +884,8 @@
               "phaseOrder": 1,
               "roundOrder": -4,
               "setId": "47578941",
+              "opponentPlayerId": "1551385",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -879,8 +899,7 @@
                   "opponentCharacter": "Hero",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -956,6 +975,9 @@
               "phaseOrder": 1,
               "roundOrder": 3,
               "setId": "45306392",
+              "opponentPlayerId": "2682726",
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "X5lT_AZLoqE",
@@ -981,6 +1003,8 @@
               "phaseOrder": 5,
               "roundOrder": 1,
               "setId": "45314488",
+              "opponentPlayerId": "328352",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -994,8 +1018,7 @@
                   "opponentCharacter": "Random Character",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
@@ -1013,6 +1036,8 @@
               "phaseOrder": 5,
               "roundOrder": -4,
               "setId": "45314621",
+              "opponentPlayerId": "2666880",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -1026,8 +1051,7 @@
                   "opponentCharacter": "Terry",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -1074,7 +1098,10 @@
               "startedAt": 1632074325,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "40655716"
+              "setId": "40655716",
+              "opponentPlayerId": "1683067",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/torneo-rz-super-smash-bros-ultimate-local/event/torneo-local-rzesports-ssbu-1",
@@ -1107,7 +1134,10 @@
               "startedAt": 1632074462,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "40655729"
+              "setId": "40655729",
+              "opponentPlayerId": "355816",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/torneo-rz-super-smash-bros-ultimate-local/event/torneo-local-rzesports-ssbu-1",
@@ -1124,7 +1154,10 @@
               "startedAt": 1632074475,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "40655727"
+              "setId": "40655727",
+              "opponentPlayerId": "1819251",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
@@ -1141,7 +1174,10 @@
               "startedAt": 1632082164,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "40661790"
+              "setId": "40661790",
+              "opponentPlayerId": "1365936",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
@@ -1158,7 +1194,10 @@
               "startedAt": 1632083436,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "40661801"
+              "setId": "40661801",
+              "opponentPlayerId": "1013310",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/torneo-cat-b-rzesports-septiembre/event/torneo-local-cat-b-rzesports",
@@ -1175,7 +1214,10 @@
               "startedAt": 1632085256,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "40661863"
+              "setId": "40661863",
+              "opponentPlayerId": "1687573",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1224,6 +1266,9 @@
               "phaseOrder": 1,
               "roundOrder": 5,
               "setId": "24984641",
+              "opponentPlayerId": "1507260",
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "MWiXwMY4Obc",
@@ -1248,7 +1293,10 @@
               "startedAt": 1575142047,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "24984636"
+              "setId": "24984636",
+              "opponentPlayerId": "1000031",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
@@ -1265,7 +1313,10 @@
               "startedAt": 1575142672,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "24984639"
+              "setId": "24984639",
+              "opponentPlayerId": "1001559",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
@@ -1282,7 +1333,10 @@
               "startedAt": 1575142694,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "24984633"
+              "setId": "24984633",
+              "opponentPlayerId": "809744",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
@@ -1299,7 +1353,10 @@
               "startedAt": 1575145101,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "24992098"
+              "setId": "24992098",
+              "opponentPlayerId": "663033",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
@@ -1316,7 +1373,10 @@
               "startedAt": 1575148014,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "24992230"
+              "setId": "24992230",
+              "opponentPlayerId": "404931",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1371,7 +1431,10 @@
               "startedAt": 1567275378,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "22832453"
+              "setId": "22832453",
+              "opponentPlayerId": "958669",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -1405,6 +1468,8 @@
               "phaseOrder": 2,
               "roundOrder": 2,
               "setId": "22841144",
+              "opponentPlayerId": "557903",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -1418,8 +1483,7 @@
                   "opponentCharacter": "Palutena",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -1437,6 +1501,8 @@
               "phaseOrder": 2,
               "roundOrder": -5,
               "setId": "22841268",
+              "opponentPlayerId": "1219130",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -1450,8 +1516,7 @@
                   "opponentCharacter": "Pokemon Trainer",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -1498,7 +1563,10 @@
               "startedAt": 1565549105,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "22413920"
+              "setId": "22413920",
+              "opponentPlayerId": "1219130",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
@@ -1515,7 +1583,10 @@
               "startedAt": 1565553452,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "22413924"
+              "setId": "22413924",
+              "opponentPlayerId": "1363036",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
@@ -1533,6 +1604,8 @@
               "phaseOrder": 1,
               "roundOrder": 1,
               "setId": "22413915",
+              "opponentPlayerId": "1000031",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -1552,8 +1625,7 @@
                   "opponentCharacter": "Link",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
@@ -1587,6 +1659,8 @@
               "phaseOrder": 2,
               "roundOrder": 1,
               "setId": "22416299",
+              "opponentPlayerId": "1361635",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -1600,8 +1674,7 @@
                   "opponentCharacter": "Simon Belmont",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
@@ -1619,6 +1692,8 @@
               "phaseOrder": 2,
               "roundOrder": -4,
               "setId": "22416431",
+              "opponentPlayerId": "807366",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -1632,8 +1707,7 @@
                   "opponentCharacter": "Samus",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {

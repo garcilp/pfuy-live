@@ -91,14 +91,8 @@
               "phaseOrder": 1,
               "roundOrder": 5,
               "setId": "54340480",
-              "vods": [
-                {
-                  "videoId": "y1lqJR-ckrc",
-                  "url": "https://www.youtube.com/watch?v=y1lqJR-ckrc",
-                  "title": "Ultimate Smashdown #12 | Pools - GSB (Link) vs. Gerix (Incineroar)",
-                  "thumbnail": "https://i.ytimg.com/vi/y1lqJR-ckrc/sddefault.jpg"
-                }
-              ],
+              "opponentPlayerId": "1033952",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -113,7 +107,14 @@
                   "outcome": "win"
                 }
               ],
-              "bracketType": "ROUND_ROBIN"
+              "vods": [
+                {
+                  "videoId": "y1lqJR-ckrc",
+                  "url": "https://www.youtube.com/watch?v=y1lqJR-ckrc",
+                  "title": "Ultimate Smashdown #12 | Pools - GSB (Link) vs. Gerix (Incineroar)",
+                  "thumbnail": "https://i.ytimg.com/vi/y1lqJR-ckrc/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -131,6 +132,8 @@
               "phaseOrder": 1,
               "roundOrder": 3,
               "setId": "54340476",
+              "opponentPlayerId": "894496",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -144,8 +147,7 @@
                   "opponentCharacter": "Ryu",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -163,6 +165,8 @@
               "phaseOrder": 1,
               "roundOrder": 2,
               "setId": "54340473",
+              "opponentPlayerId": "1010061",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -176,8 +180,7 @@
                   "opponentCharacter": "Villager",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -195,6 +198,8 @@
               "phaseOrder": 1,
               "roundOrder": 1,
               "setId": "54340471",
+              "opponentPlayerId": "599412",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -208,8 +213,7 @@
                   "opponentCharacter": "Pyra & Mythra",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -227,6 +231,8 @@
               "phaseOrder": 2,
               "roundOrder": 1,
               "setId": "54350594",
+              "opponentPlayerId": "1446472",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -240,8 +246,7 @@
                   "opponentCharacter": "Kazuya",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -259,6 +264,8 @@
               "phaseOrder": 2,
               "roundOrder": -3,
               "setId": "54350710",
+              "opponentPlayerId": "2915041",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -272,8 +279,7 @@
                   "opponentCharacter": "Wolf",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {

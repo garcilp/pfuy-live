@@ -80,7 +80,10 @@
               "startedAt": 1582998668,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "27023691"
+              "setId": "27023691",
+              "opponentPlayerId": "328352",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
@@ -97,7 +100,10 @@
               "startedAt": 1582998692,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "27023694"
+              "setId": "27023694",
+              "opponentPlayerId": "355816",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
@@ -114,7 +120,10 @@
               "startedAt": 1582998702,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "27023696"
+              "setId": "27023696",
+              "opponentPlayerId": "1398344",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
@@ -131,7 +140,10 @@
               "startedAt": 1583004665,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "27035078"
+              "setId": "27035078",
+              "opponentPlayerId": "1260018",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
@@ -149,6 +161,8 @@
               "phaseOrder": 2,
               "roundOrder": -3,
               "setId": "27035197",
+              "opponentPlayerId": "1244528",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -162,8 +176,7 @@
                   "opponentCharacter": "Pit",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {},

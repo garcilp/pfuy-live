@@ -194,7 +194,7 @@
           "opponent": "DIO",
           "seed": 1,
           "ownSeed": 4,
-          "upsetFactor": 4,
+          "upsetFactor": 4.0,
           "score": "3–0",
           "phase": "Bracket",
           "round": "Winners Semi-Final",
@@ -267,7 +267,10 @@
               "startedAt": 1747016757,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "88951391"
+              "setId": "88951391",
+              "opponentPlayerId": "4749453",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
@@ -300,7 +303,10 @@
               "startedAt": 1747016807,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "88951395"
+              "setId": "88951395",
+              "opponentPlayerId": "228886",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/colisionsmash-melee/event/melee-singles",
@@ -317,7 +323,10 @@
               "startedAt": 1747016880,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "88951396"
+              "setId": "88951396",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -372,7 +381,10 @@
               "startedAt": 1722118417,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "77675360"
+              "setId": "77675360",
+              "opponentPlayerId": "330659",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
@@ -389,7 +401,10 @@
               "startedAt": 1722118465,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "77675365"
+              "setId": "77675365",
+              "opponentPlayerId": "4211506",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
@@ -406,7 +421,10 @@
               "startedAt": 1722118486,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "77675363"
+              "setId": "77675363",
+              "opponentPlayerId": "312992",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
@@ -423,7 +441,10 @@
               "startedAt": 1722120192,
               "phaseOrder": 1,
               "roundOrder": 6,
-              "setId": "77675366"
+              "setId": "77675366",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-1/event/melee-singles",
@@ -440,7 +461,10 @@
               "startedAt": 1722120208,
               "phaseOrder": 1,
               "roundOrder": 6,
-              "setId": "77675367"
+              "setId": "77675367",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -479,7 +503,10 @@
               "startedAt": 1567274060,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "22832531"
+              "setId": "22832531",
+              "opponentPlayerId": "328352",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -496,7 +523,10 @@
               "startedAt": 1567276619,
               "phaseOrder": 1,
               "roundOrder": 6,
-              "setId": "22832537"
+              "setId": "22832537",
+              "opponentPlayerId": "958669",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -513,7 +543,10 @@
               "startedAt": 1567278235,
               "phaseOrder": 1,
               "roundOrder": 7,
-              "setId": "22832539"
+              "setId": "22832539",
+              "opponentPlayerId": "263974",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -530,7 +563,10 @@
               "startedAt": 1567278938,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "22832520"
+              "setId": "22832520",
+              "opponentPlayerId": "312992",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -548,6 +584,8 @@
               "phaseOrder": 1,
               "roundOrder": 2,
               "setId": "22832523",
+              "opponentPlayerId": "152484",
+              "bracketType": "ROUND_ROBIN",
               "games": [
                 {
                   "game": 1,
@@ -561,8 +599,7 @@
                   "opponentCharacter": "Jigglypuff",
                   "outcome": "win"
                 }
-              ],
-              "bracketType": "ROUND_ROBIN"
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -596,14 +633,8 @@
               "phaseOrder": 2,
               "roundOrder": 1,
               "setId": "22847560",
-              "vods": [
-                {
-                  "videoId": "LcobBXQAPok",
-                  "url": "https://www.youtube.com/watch?v=LcobBXQAPok",
-                  "title": "MMM #8 - 2019 | Winners Round 1 - Sfan vs. Cubax",
-                  "thumbnail": "https://i.ytimg.com/vi/LcobBXQAPok/sddefault.jpg"
-                }
-              ],
+              "opponentPlayerId": "1385949",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -618,7 +649,14 @@
                   "outcome": "win"
                 }
               ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              "vods": [
+                {
+                  "videoId": "LcobBXQAPok",
+                  "url": "https://www.youtube.com/watch?v=LcobBXQAPok",
+                  "title": "MMM #8 - 2019 | Winners Round 1 - Sfan vs. Cubax",
+                  "thumbnail": "https://i.ytimg.com/vi/LcobBXQAPok/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -661,7 +699,10 @@
               "startedAt": 1556389859,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "20052711"
+              "setId": "20052711",
+              "opponentPlayerId": "263974",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -678,7 +719,10 @@
               "startedAt": 1556391514,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "20052709"
+              "setId": "20052709",
+              "opponentPlayerId": "264244",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -695,7 +739,10 @@
               "startedAt": 1556391969,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "20052706"
+              "setId": "20052706",
+              "opponentPlayerId": "152484",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -713,6 +760,8 @@
               "phaseOrder": 2,
               "roundOrder": 1,
               "setId": "20058733",
+              "opponentPlayerId": "228886",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -732,8 +781,7 @@
                   "opponentCharacter": "Pikachu",
                   "outcome": "win"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -750,7 +798,10 @@
               "startedAt": 1556395826,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "20058739"
+              "setId": "20058739",
+              "opponentPlayerId": "312977",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -784,6 +835,8 @@
               "phaseOrder": 2,
               "roundOrder": 4,
               "setId": "20058744",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -815,8 +868,7 @@
                   "opponentCharacter": "Captain Falcon",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -834,6 +886,8 @@
               "phaseOrder": 2,
               "roundOrder": -8,
               "setId": "20058776",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -859,8 +913,7 @@
                   "opponentCharacter": "Peach",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -919,7 +972,10 @@
               "startedAt": 1550953344,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "18739951"
+              "setId": "18739951",
+              "opponentPlayerId": "895125",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/melee-singles",
@@ -953,6 +1009,8 @@
               "phaseOrder": 2,
               "roundOrder": 2,
               "setId": "18749136",
+              "opponentPlayerId": "312992",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -972,8 +1030,7 @@
                   "opponentCharacter": "Fox",
                   "outcome": "win"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/melee-singles",
@@ -991,6 +1048,8 @@
               "phaseOrder": 2,
               "roundOrder": 3,
               "setId": "18749139",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -1022,8 +1081,7 @@
                   "opponentCharacter": "Peach",
                   "outcome": "win"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/melee-singles",
@@ -1040,7 +1098,10 @@
               "startedAt": 1550962439,
               "phaseOrder": 2,
               "roundOrder": 4,
-              "setId": "18749141"
+              "setId": "18749141",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/melee-singles",
@@ -1058,6 +1119,8 @@
               "phaseOrder": 2,
               "roundOrder": -8,
               "setId": "18749173",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -1083,8 +1146,7 @@
                   "opponentCharacter": "Peach",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {
@@ -1127,7 +1189,10 @@
               "startedAt": 1524940057,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "13337689"
+              "setId": "13337689",
+              "opponentPlayerId": "663033",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -1160,7 +1225,10 @@
               "startedAt": 1524942140,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "13337693"
+              "setId": "13337693",
+              "opponentPlayerId": "330371",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -1177,7 +1245,10 @@
               "startedAt": 1524943864,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "13340535"
+              "setId": "13340535",
+              "opponentPlayerId": "152484",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -1210,7 +1281,10 @@
               "startedAt": 1524946523,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "13340547"
+              "setId": "13340547",
+              "opponentPlayerId": "330635",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -1227,7 +1301,10 @@
               "startedAt": 1524951209,
               "phaseOrder": 2,
               "roundOrder": 4,
-              "setId": "13340549"
+              "setId": "13340549",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-3/event/melee-singles",
@@ -1244,7 +1321,10 @@
               "startedAt": 1525009333,
               "phaseOrder": 2,
               "roundOrder": -8,
-              "setId": "13340581"
+              "setId": "13340581",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1283,7 +1363,10 @@
               "startedAt": 1522518631,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "12515697"
+              "setId": "12515697",
+              "opponentPlayerId": "557921",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -1300,7 +1383,10 @@
               "startedAt": 1522519438,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "12515699"
+              "setId": "12515699",
+              "opponentPlayerId": "228886",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -1317,7 +1403,10 @@
               "startedAt": 1522520464,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "12515701"
+              "setId": "12515701",
+              "opponentPlayerId": "330371",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -1350,7 +1439,10 @@
               "startedAt": 1522524740,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "12518772"
+              "setId": "12518772",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -1367,7 +1459,10 @@
               "startedAt": 1522526022,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "12518803"
+              "setId": "12518803",
+              "opponentPlayerId": "330371",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -1384,7 +1479,10 @@
               "startedAt": 1522529603,
               "phaseOrder": 2,
               "roundOrder": -7,
-              "setId": "12518805"
+              "setId": "12518805",
+              "opponentPlayerId": "312977",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -1401,7 +1499,10 @@
               "startedAt": 1522529668,
               "phaseOrder": 2,
               "roundOrder": -8,
-              "setId": "12518806"
+              "setId": "12518806",
+              "opponentPlayerId": "312992",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -1418,7 +1519,10 @@
               "startedAt": 1522530185,
               "phaseOrder": 2,
               "roundOrder": 5,
-              "setId": "12518775"
+              "setId": "12518775",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/melee-singles",
@@ -1435,7 +1539,10 @@
               "startedAt": 1522531457,
               "phaseOrder": 2,
               "roundOrder": 5,
-              "setId": "12518776"
+              "setId": "12518776",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1474,7 +1581,10 @@
               "startedAt": 1519492957,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "12095802"
+              "setId": "12095802",
+              "opponentPlayerId": "312980",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-1/event/melee-singles",
@@ -1507,7 +1617,10 @@
               "startedAt": 1519494917,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "12095806"
+              "setId": "12095806",
+              "opponentPlayerId": "312992",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-1/event/melee-singles",
@@ -1541,6 +1654,9 @@
               "phaseOrder": 3,
               "roundOrder": 3,
               "setId": "12099634",
+              "opponentPlayerId": "330371",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "cec1xczpbBA",
@@ -1566,6 +1682,9 @@
               "phaseOrder": 3,
               "roundOrder": 4,
               "setId": "12099636",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "jG9vScAWiQo",
@@ -1591,6 +1710,9 @@
               "phaseOrder": 3,
               "roundOrder": 5,
               "setId": "12099637",
+              "opponentPlayerId": "312977",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "RM8txL9IQrQ",
@@ -1653,7 +1775,10 @@
               "startedAt": 1511637772,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "11284403"
+              "setId": "11284403",
+              "opponentPlayerId": "3654948",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
@@ -1686,7 +1811,10 @@
               "startedAt": 1511641242,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "11286522"
+              "setId": "11286522",
+              "opponentPlayerId": "330371",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
@@ -1703,7 +1831,10 @@
               "startedAt": 1511643106,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "11286529"
+              "setId": "11286529",
+              "opponentPlayerId": "312992",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
@@ -1720,7 +1851,10 @@
               "startedAt": 1511644970,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "11286532"
+              "setId": "11286532",
+              "opponentPlayerId": "330635",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
@@ -1737,7 +1871,10 @@
               "startedAt": 1511647058,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "11286534"
+              "setId": "11286534",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
@@ -1754,7 +1891,10 @@
               "startedAt": 1511651064,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "11286535"
+              "setId": "11286535",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1809,7 +1949,10 @@
               "startedAt": 1506798295,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "10363840"
+              "setId": "10363840",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-9/event/melee-singles",
@@ -1826,7 +1969,10 @@
               "startedAt": 1506798827,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "10363841"
+              "setId": "10363841",
+              "opponentPlayerId": "329838",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-9/event/melee-singles",
@@ -1843,7 +1989,10 @@
               "startedAt": 1506800883,
               "phaseOrder": 1,
               "roundOrder": -8,
-              "setId": "10363873"
+              "setId": "10363873",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-9/event/melee-singles",
@@ -1860,7 +2009,10 @@
               "startedAt": 1506802247,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "10363842"
+              "setId": "10363842",
+              "opponentPlayerId": "329838",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1899,7 +2051,10 @@
               "startedAt": 1503768618,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "9978194"
+              "setId": "9978194",
+              "opponentPlayerId": "478734",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
@@ -1916,7 +2071,10 @@
               "startedAt": 1503769913,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "9978200"
+              "setId": "9978200",
+              "opponentPlayerId": "312992",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
@@ -1933,7 +2091,10 @@
               "startedAt": 1503781172,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "9978203"
+              "setId": "9978203",
+              "opponentPlayerId": "329838",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
@@ -1950,7 +2111,10 @@
               "startedAt": 1503783834,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "9978204"
+              "setId": "9978204",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
@@ -1967,7 +2131,10 @@
               "startedAt": 1503784695,
               "phaseOrder": 1,
               "roundOrder": -8,
-              "setId": "9978236"
+              "setId": "9978236",
+              "opponentPlayerId": "329838",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
@@ -1984,7 +2151,10 @@
               "startedAt": 1503785902,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "9978205"
+              "setId": "9978205",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -2023,7 +2193,10 @@
               "startedAt": 1501350012,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "9134433"
+              "setId": "9134433",
+              "opponentPlayerId": "328352",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-7/event/melee-singles",
@@ -2040,7 +2213,10 @@
               "startedAt": 1501351093,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "9134437"
+              "setId": "9134437",
+              "opponentPlayerId": "329838",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-7/event/melee-singles",
@@ -2057,7 +2233,10 @@
               "startedAt": 1501353232,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "9134468"
+              "setId": "9134468",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-7/event/melee-singles",
@@ -2074,7 +2253,10 @@
               "startedAt": 1501358033,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "9134470"
+              "setId": "9134470",
+              "opponentPlayerId": "312977",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-7/event/melee-singles",
@@ -2091,7 +2273,10 @@
               "startedAt": 1501358043,
               "phaseOrder": 1,
               "roundOrder": -8,
-              "setId": "9134471"
+              "setId": "9134471",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -2130,7 +2315,10 @@
               "startedAt": 1495908338,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "8481790"
+              "setId": "8481790",
+              "opponentPlayerId": "2328857",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
@@ -2147,7 +2335,10 @@
               "startedAt": 1495911363,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "8481798"
+              "setId": "8481798",
+              "opponentPlayerId": "312992",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
@@ -2164,7 +2355,10 @@
               "startedAt": 1495912935,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "8481802"
+              "setId": "8481802",
+              "opponentPlayerId": "329838",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
@@ -2181,7 +2375,10 @@
               "startedAt": 1495914248,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "8481833"
+              "setId": "8481833",
+              "opponentPlayerId": "330659",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
@@ -2198,7 +2395,10 @@
               "startedAt": 1495915783,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "8481835"
+              "setId": "8481835",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -2237,7 +2437,10 @@
               "startedAt": 1493487000,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "8161920"
+              "setId": "8161920",
+              "opponentPlayerId": "355884",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-4/event/melee-singles",
@@ -2254,7 +2457,10 @@
               "startedAt": 1493487852,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "8161928"
+              "setId": "8161928",
+              "opponentPlayerId": "312980",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-4/event/melee-singles",
@@ -2288,6 +2494,9 @@
               "phaseOrder": 1,
               "roundOrder": 5,
               "setId": "8161934",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "IJCvQM0Lvko",
@@ -2313,6 +2522,9 @@
               "phaseOrder": 1,
               "roundOrder": 6,
               "setId": "8161935",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "6JhiYjExRtM",
@@ -2359,7 +2571,10 @@
               "startedAt": 1490471050,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "7865276"
+              "setId": "7865276",
+              "opponentPlayerId": "4409479",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
@@ -2376,7 +2591,10 @@
               "startedAt": 1490472962,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "7865284"
+              "setId": "7865284",
+              "opponentPlayerId": "330635",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
@@ -2409,7 +2627,10 @@
               "startedAt": 1490475456,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "7865349"
+              "setId": "7865349",
+              "opponentPlayerId": "312992",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
@@ -2426,7 +2647,10 @@
               "startedAt": 1490476303,
               "phaseOrder": 1,
               "roundOrder": -8,
-              "setId": "7865351"
+              "setId": "7865351",
+              "opponentPlayerId": "329838",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-3/event/melee-singles",
@@ -2443,7 +2667,10 @@
               "startedAt": 1490478912,
               "phaseOrder": 1,
               "roundOrder": -9,
-              "setId": "7865353"
+              "setId": "7865353",
+              "opponentPlayerId": "330635",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -2559,7 +2786,10 @@
               "startedAt": 1522534379,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "12529061"
+              "setId": "12529061",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/pm-singles",
@@ -2592,7 +2822,10 @@
               "startedAt": 1522536017,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "12529092"
+              "setId": "12529092",
+              "opponentPlayerId": "312977",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -2631,7 +2864,10 @@
               "startedAt": 1495922225,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "8491535"
+              "setId": "8491535",
+              "opponentPlayerId": "362971",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
@@ -2648,7 +2884,10 @@
               "startedAt": 1495923292,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "8491541"
+              "setId": "8491541",
+              "opponentPlayerId": "330659",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
@@ -2665,7 +2904,10 @@
               "startedAt": 1495924538,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "8491544"
+              "setId": "8491544",
+              "opponentPlayerId": "330635",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
@@ -2682,7 +2924,10 @@
               "startedAt": 1495925464,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "8491545"
+              "setId": "8491545",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
@@ -2699,7 +2944,10 @@
               "startedAt": 1495927181,
               "phaseOrder": 1,
               "roundOrder": -8,
-              "setId": "8491577"
+              "setId": "8491577",
+              "opponentPlayerId": "330635",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/pm-singles",
@@ -2716,7 +2964,10 @@
               "startedAt": 1495928388,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "8491546"
+              "setId": "8491546",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -2755,7 +3006,10 @@
               "startedAt": 1493498252,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "8170683"
+              "setId": "8170683",
+              "opponentPlayerId": "328352",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-4/event/pm-singles",
@@ -2772,7 +3026,10 @@
               "startedAt": 1493498955,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "8170690"
+              "setId": "8170690",
+              "opponentPlayerId": "355884",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-4/event/pm-singles",
@@ -2789,7 +3046,10 @@
               "startedAt": 1493501305,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "8170693"
+              "setId": "8170693",
+              "opponentPlayerId": "312977",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-4/event/pm-singles",
@@ -2806,7 +3066,10 @@
               "startedAt": 1493510606,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "8170695"
+              "setId": "8170695",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-4/event/pm-singles",
@@ -2823,7 +3086,10 @@
               "startedAt": 1493515193,
               "phaseOrder": 1,
               "roundOrder": -10,
-              "setId": "8170759"
+              "setId": "8170759",
+              "opponentPlayerId": "263974",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-4/event/pm-singles",
@@ -2840,7 +3106,10 @@
               "startedAt": 1493515209,
               "phaseOrder": 1,
               "roundOrder": 6,
-              "setId": "8170696"
+              "setId": "8170696",
+              "opponentPlayerId": "264244",
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

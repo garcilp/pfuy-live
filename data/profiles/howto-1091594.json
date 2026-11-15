@@ -75,7 +75,10 @@
               "startedAt": 1550948654,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "18739320"
+              "setId": "18739320",
+              "opponentPlayerId": "263974",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/melee-singles",
@@ -92,7 +95,10 @@
               "startedAt": 1550949620,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "18739318"
+              "setId": "18739318",
+              "opponentPlayerId": "958669",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/melee-singles",
@@ -110,6 +116,8 @@
               "phaseOrder": 2,
               "roundOrder": 1,
               "setId": "18749134",
+              "opponentPlayerId": "895125",
+              "bracketType": "DOUBLE_ELIMINATION",
               "games": [
                 {
                   "game": 1,
@@ -129,8 +137,7 @@
                   "opponentCharacter": "Samus",
                   "outcome": "loss"
                 }
-              ],
-              "bracketType": "DOUBLE_ELIMINATION"
+              ]
             }
           ],
           "characterCounts": {

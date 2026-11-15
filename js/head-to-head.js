@@ -62,39 +62,26 @@
 
   async function load() {
     try {
-      const [indexResponse, mergesResponse] = await Promise.all([
+      const [indexResponse, mergesResponse, opponentsResponse] = await Promise.all([
         fetch('data/profiles/index.json', { cache: 'no-store' }),
-        fetch('data/profiles/merges.json', { cache: 'no-store' })
+        fetch('data/profiles/merges.json', { cache: 'no-store' }),
+        fetch('data/profiles/head-to-head-index.json', { cache: 'no-store' })
       ]);
       if (!indexResponse.ok) throw new Error('Player profiles are not available.');
+      if (!opponentsResponse.ok) throw new Error('The opponent list is not available. Please republish the site data.');
       directory = await indexResponse.json();
       if (mergesResponse.ok) merges = await mergesResponse.json();
+      const opponentIndex = await opponentsResponse.json();
       originId = canonical(params.get('p1') || '');
-      const originProfile = await fetchProfile(originId);
-      const originSets = (originProfile?.games || []).flatMap(game =>
-        (game.results || []).flatMap(result => result.sets || []));
-      const opponentIds = new Set(originSets.map(set => canonical(set.opponentPlayerId)).filter(Boolean));
-      const opponentNames = new Set(originSets.map(set => normalize(set.opponent)).filter(Boolean));
-      const candidates = directory.filter(entry => canonical(entry.playerId) !== originId && (
-        opponentIds.has(canonical(entry.playerId))
-        || [entry.tag, ...(entry.aliases || [])].some(name => opponentNames.has(normalize(name)))
-      ));
-      const mutualEntries = [];
-      let nextCandidate = 0;
-      await Promise.all(Array.from({ length: Math.min(12, candidates.length) }, async () => {
-        while (nextCandidate < candidates.length) {
-          const entry = candidates[nextCandidate++];
-          let profile = null;
-          try { profile = await fetchProfile(entry.playerId); } catch (error) { console.warn(`Could not validate opponent profile ${entry.playerId}`, error); }
-          if (originProfile && profile && sharesTrackedSet(originProfile, profile)) mutualEntries.push(entry);
-        }
-      }));
-      mutualEntries.sort((a, b) => a.tag.localeCompare(b.tag));
-      const options = mutualEntries
+      const verifiedOpponentIds = new Set((opponentIndex[originId] || []).map(canonical));
+      const opponents = directory
+        .filter(entry => canonical(entry.playerId) !== originId && verifiedOpponentIds.has(canonical(entry.playerId)))
+        .sort((a, b) => a.tag.localeCompare(b.tag));
+      const options = opponents
         .map(entry => `<option value="${esc(entry.playerId)}">${esc(entry.tag)}</option>`).join('');
       two.insertAdjacentHTML('beforeend', options);
       const requestedOpponent = canonical(params.get('p2') || '');
-      two.value = mutualEntries.some(entry => canonical(entry.playerId) === requestedOpponent) ? requestedOpponent : '';
+      two.value = opponents.some(entry => canonical(entry.playerId) === requestedOpponent) ? requestedOpponent : '';
       if (params.get('phase')) phaseSelect.value = params.get('phase');
       await update();
     } catch (error) {
@@ -173,10 +160,6 @@
     const p2ById = new Map(p2Sets.filter(set => set.setId).map(set => [String(set.setId), set]));
     return allGameSets(p1, gameId).filter(set => set.setId && p2ById.has(String(set.setId)))
       .map(set => ({ ...set, mirror: p2ById.get(String(set.setId)) }));
-  }
-
-  function sharesTrackedSet(p1, p2) {
-    return (p1.games || []).some(game => intersectSets(p1, p2, game.id || game.slug).length > 0);
   }
 
   function phaseClass(set) {
