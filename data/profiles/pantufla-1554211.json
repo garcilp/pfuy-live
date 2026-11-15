@@ -274,7 +274,22 @@
               "startedAt": 1635116077,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "41705464"
+              "setId": "41705464",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {

@@ -89,7 +89,7 @@
           "opponent": "kalarse",
           "seed": 2,
           "ownSeed": 8,
-          "upsetFactor": 4.0,
+          "upsetFactor": 4,
           "score": "2–1",
           "phase": "Melee Round Robin",
           "round": "Round 4",
@@ -130,7 +130,34 @@
                   "title": "MMM #10 - 2025 | Winners Round 1 - EpicDVD (Marth, C. Falcon) vs. Emesse (Jigglypuff)",
                   "thumbnail": "https://i.ytimg.com/vi/3OB2ZaidQfM/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/super-smash-bros-melee",
@@ -147,7 +174,28 @@
               "startedAt": 1762635914,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "96036693"
+              "setId": "96036693",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Samus",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/super-smash-bros-melee",
@@ -164,7 +212,28 @@
               "startedAt": 1762639150,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "96036761"
+              "setId": "96036761",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Luigi",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Luigi",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -374,7 +443,28 @@
               "startedAt": 1762645765,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "96054796"
+              "setId": "96054796",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/project",
@@ -391,7 +481,28 @@
               "startedAt": 1762648668,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "96054811"
+              "setId": "96054811",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/project",
@@ -503,7 +614,28 @@
               "startedAt": 1762641133,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "96047295"
+              "setId": "96047295",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kragg",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kragg",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Kragg",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/rivals-singles",
@@ -520,7 +652,22 @@
               "startedAt": 1762642094,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "96047300"
+              "setId": "96047300",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kragg",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kragg",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/rivals-singles",
@@ -537,7 +684,22 @@
               "startedAt": 1762647079,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "96047362"
+              "setId": "96047362",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Etalus",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Etalus",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/rivals-singles",
@@ -554,7 +716,34 @@
               "startedAt": 1762648019,
               "phaseOrder": 2,
               "roundOrder": -7,
-              "setId": "96047364"
+              "setId": "96047364",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kragg",
+                  "opponentCharacter": "Ori",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Kragg",
+                  "opponentCharacter": "Ori",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Kragg",
+                  "opponentCharacter": "Ori",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Kragg",
+                  "opponentCharacter": "Ori",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/rivals-singles",
@@ -981,7 +1170,22 @@
               "startedAt": 1610763006,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "23498186"
+              "setId": "23498186",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {},
@@ -1069,7 +1273,28 @@
               "startedAt": 1567281651,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "22841111"
+              "setId": "22841111",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -1086,7 +1311,22 @@
               "startedAt": 1567284262,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "22841252"
+              "setId": "22841252",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -1103,7 +1343,22 @@
               "startedAt": 1567286739,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "22841266"
+              "setId": "22841266",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -1120,7 +1375,22 @@
               "startedAt": 1567287710,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "22841274"
+              "setId": "22841274",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1163,7 +1433,22 @@
               "startedAt": 1548525954,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "18207044"
+              "setId": "18207044",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Snake",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Snake",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",
@@ -1180,7 +1465,22 @@
               "startedAt": 1548528387,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "18207057"
+              "setId": "18207057",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Snake",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Snake",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",
@@ -1197,7 +1497,28 @@
               "startedAt": 1548530921,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "18207117"
+              "setId": "18207117",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Ness",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

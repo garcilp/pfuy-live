@@ -53,7 +53,7 @@
       "upsets": 0,
       "bestPlace": 13,
       "bestEvent": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
-      "avgPlace": 13.0,
+      "avgPlace": 13,
       "avgSeed": 10,
       "characters": [],
       "notableWins": [],
@@ -219,7 +219,7 @@
       "upsets": 0,
       "bestPlace": 33,
       "bestEvent": "Ultimate Smashdown #25 · Ultimate Singles",
-      "avgPlace": 33.0,
+      "avgPlace": 33,
       "avgSeed": 43,
       "characters": [
         {
@@ -261,7 +261,22 @@
               "isUpset": false,
               "startedAt": 1726941116,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "setId": "80016493",
@@ -279,7 +294,22 @@
               "isUpset": false,
               "startedAt": 1726942388,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "setId": "80027309",
@@ -305,7 +335,22 @@
                   "title": "Ultimate Smashdown #25 | Cat B | Winners Round 1 - Soy mudo (King K. Rool) vs Josiulus (PT, Bowser)",
                   "thumbnail": "https://i.ytimg.com/vi/iwRrYa9mP48/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "setId": "80027320",
@@ -323,7 +368,22 @@
               "isUpset": false,
               "startedAt": 1726948118,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Isabelle",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Isabelle",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "setId": "80027326",
@@ -341,7 +401,22 @@
               "isUpset": false,
               "startedAt": 1726949144,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "setId": "80027329",
@@ -367,7 +442,22 @@
                   "title": "Ultimate Smashdown #25 | Cat B | Winners Semis - Soy mudo (K. Rool, Byleth) vs Matemole (K. Rool)",
                   "thumbnail": "https://i.ytimg.com/vi/fN9fW_6RIkA/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Byleth",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "setId": "80027391",
@@ -385,7 +475,22 @@
               "isUpset": false,
               "startedAt": 1726952671,
               "phaseOrder": 4,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kazuya",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

@@ -98,7 +98,22 @@
               "startedAt": 1729978459,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "81522228"
+              "setId": "81522228",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",
@@ -131,7 +146,28 @@
               "startedAt": 1729983019,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "81522291"
+              "setId": "81522291",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ori",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ori",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",
@@ -148,7 +184,28 @@
               "startedAt": 1729983837,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "81522295"
+              "setId": "81522295",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Maypul",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",
@@ -173,7 +230,28 @@
                   "title": "CrossUp '24 | Singles | Losers Quarters - FrancoKiwi (Clairen) vs Cide (Maypul)",
                   "thumbnail": "https://i.ytimg.com/vi/vyx94ZvnLH8/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Maypul",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

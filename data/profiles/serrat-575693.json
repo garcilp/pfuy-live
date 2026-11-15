@@ -119,7 +119,28 @@
               "startedAt": 1564245937,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "22020866"
+              "setId": "22020866",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Roy",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Kirby",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-7/event/melee-singles-event",
@@ -136,7 +157,28 @@
               "startedAt": 1564249801,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "22020900"
+              "setId": "22020900",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Kirby",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -181,7 +223,28 @@
               "startedAt": 1561835463,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "21421953"
+              "setId": "21421953",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Roy",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Kirby",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-6/event/melee-singles",
@@ -198,7 +261,28 @@
               "startedAt": 1561839182,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "21421984"
+              "setId": "21421984",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Kirby",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -259,7 +343,28 @@
               "startedAt": 1558816719,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "20700276"
+              "setId": "20700276",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Roy",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Kirby",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -337,7 +442,28 @@
               "startedAt": 1556394070,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "20058735"
+              "setId": "20058735",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ganondorf",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Roy",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dr. Mario",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -354,7 +480,40 @@
               "startedAt": 1556395233,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "20058765"
+              "setId": "20058765",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ganondorf",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dr. Mario",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Roy",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Roy",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -447,7 +606,22 @@
                   "title": "Rivalote de Otoño '25 | RoA2 | Winners Round 1 - Pato (Fleet, Loxodont) vs Mint (Olympia)",
                   "thumbnail": "https://i.ytimg.com/vi/3w-eWKEG7nc/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Fleet",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Loxodont",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/rivalote-de-oto-o-25/event/rivals-2-singles",
@@ -1104,7 +1278,7 @@
           "opponent": "Pritah",
           "seed": 1,
           "ownSeed": 7,
-          "upsetFactor": 7.0,
+          "upsetFactor": 7,
           "score": "2–1",
           "phase": "Bracket",
           "round": "Losers Round 4",
@@ -1128,7 +1302,7 @@
           "opponent": "Trim",
           "seed": 8,
           "ownSeed": 16,
-          "upsetFactor": 2.0,
+          "upsetFactor": 2,
           "score": "2–0",
           "phase": "Bracket A",
           "round": "Losers Round 3",
@@ -1173,7 +1347,22 @@
               "startedAt": 1788027122,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "107070304"
+              "setId": "107070304",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-6/event/smash-ultimate-singles",
@@ -1190,7 +1379,22 @@
               "startedAt": 1788029245,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "107070307"
+              "setId": "107070307",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-6/event/smash-ultimate-singles",
@@ -1207,7 +1411,22 @@
               "startedAt": 1788033694,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "107086308"
+              "setId": "107086308",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-6/event/smash-ultimate-singles",
@@ -1224,7 +1443,28 @@
               "startedAt": 1788038873,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "107086380"
+              "setId": "107086380",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-6/event/smash-ultimate-singles",
@@ -1241,7 +1481,22 @@
               "startedAt": 1788040529,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "107086388"
+              "setId": "107086388",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1284,7 +1539,22 @@
               "startedAt": 1775930516,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "101492699"
+              "setId": "101492699",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",
@@ -1301,7 +1571,22 @@
               "startedAt": 1775932369,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "101492704"
+              "setId": "101492704",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",
@@ -1318,7 +1603,22 @@
               "startedAt": 1775938056,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "101502129"
+              "setId": "101502129",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",
@@ -1335,7 +1635,22 @@
               "startedAt": 1775940050,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "101502141"
+              "setId": "101502141",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Random Character",
+                  "opponentCharacter": "Random Character",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",
@@ -1352,7 +1667,22 @@
               "startedAt": 1775943656,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "101502147"
+              "setId": "101502147",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",
@@ -1369,7 +1699,22 @@
               "startedAt": 1775945099,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "101502207"
+              "setId": "101502207",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1418,7 +1763,28 @@
               "startedAt": 1774118133,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "100672792"
+              "setId": "100672792",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",
@@ -1435,7 +1801,22 @@
               "startedAt": 1774120675,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "100672794"
+              "setId": "100672794",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",
@@ -1452,7 +1833,22 @@
               "startedAt": 1774125784,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "100687842"
+              "setId": "100687842",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",
@@ -1469,7 +1865,22 @@
               "startedAt": 1774128013,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "100687852"
+              "setId": "100687852",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",
@@ -1486,7 +1897,22 @@
               "startedAt": 1774129416,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "100687857"
+              "setId": "100687857",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",
@@ -1511,7 +1937,28 @@
                   "title": "Mashito GO #2 | Losers Round 3 - Pato (Dark Pit) vs Freakazoiid (Pikachu)",
                   "thumbnail": "https://i.ytimg.com/vi/f3ljDpifsDk/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",
@@ -1528,7 +1975,34 @@
               "startedAt": 1774134100,
               "phaseOrder": 3,
               "roundOrder": -3,
-              "setId": "100700592"
+              "setId": "100700592",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sora",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1591,7 +2065,22 @@
               "startedAt": 1763231664,
               "phaseOrder": 1,
               "roundOrder": -3,
-              "setId": "96321103"
+              "setId": "96321103",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -1608,7 +2097,28 @@
               "startedAt": 1763231690,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "96321107"
+              "setId": "96321107",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -1625,7 +2135,28 @@
               "startedAt": 1763237818,
               "phaseOrder": 6,
               "roundOrder": 1,
-              "setId": "96329369"
+              "setId": "96329369",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -1642,7 +2173,22 @@
               "startedAt": 1763238085,
               "phaseOrder": 6,
               "roundOrder": -3,
-              "setId": "96329433"
+              "setId": "96329433",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -1659,7 +2205,28 @@
               "startedAt": 1763239925,
               "phaseOrder": 6,
               "roundOrder": -4,
-              "setId": "96329441"
+              "setId": "96329441",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -1676,7 +2243,22 @@
               "startedAt": 1763241546,
               "phaseOrder": 6,
               "roundOrder": -5,
-              "setId": "96329448"
+              "setId": "96329448",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -1693,7 +2275,22 @@
               "startedAt": 1763242445,
               "phaseOrder": 6,
               "roundOrder": -6,
-              "setId": "96329452"
+              "setId": "96329452",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1740,7 +2337,22 @@
               "startedAt": 1760810053,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "95172472"
+              "setId": "95172472",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1757,7 +2369,22 @@
               "startedAt": 1760811685,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "95172485"
+              "setId": "95172485",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1774,7 +2401,22 @@
               "startedAt": 1760813432,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "95172605"
+              "setId": "95172605",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1791,7 +2433,28 @@
               "startedAt": 1760813948,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "95172612"
+              "setId": "95172612",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1838,7 +2501,28 @@
               "startedAt": 1758996869,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "94386564"
+              "setId": "94386564",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-33/event/ultimate-singles",
@@ -1871,7 +2555,22 @@
               "startedAt": 1758998577,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "94386643"
+              "setId": "94386643",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-33/event/ultimate-singles",
@@ -1888,7 +2587,22 @@
               "startedAt": 1759000723,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "94386647"
+              "setId": "94386647",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-33/event/ultimate-singles",
@@ -1905,7 +2619,22 @@
               "startedAt": 1759002524,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "94386651"
+              "setId": "94386651",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-33/event/ultimate-singles",
@@ -1922,7 +2651,34 @@
               "startedAt": 1759008670,
               "phaseOrder": 5,
               "roundOrder": -3,
-              "setId": "94411120"
+              "setId": "94411120",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1967,7 +2723,28 @@
               "startedAt": 1752946163,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "91586242"
+              "setId": "91586242",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -1984,7 +2761,22 @@
               "startedAt": 1752948191,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "91586275"
+              "setId": "91586275",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Lucario",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -2009,7 +2801,28 @@
                   "title": "Ultimate Smashdown #31 | Winners Round 1 - Pato (Pit) vs Aminas (Link)",
                   "thumbnail": "https://i.ytimg.com/vi/fJK07Jw4la8/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -2026,7 +2839,22 @@
               "startedAt": 1752952364,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "91592220"
+              "setId": "91592220",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2073,7 +2901,22 @@
               "startedAt": 1750526653,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "90513208"
+              "setId": "90513208",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -2106,7 +2949,22 @@
               "startedAt": 1750531317,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "90519551"
+              "setId": "90519551",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -2123,7 +2981,28 @@
               "startedAt": 1750532217,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "90519564"
+              "setId": "90519564",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -2140,7 +3019,22 @@
               "startedAt": 1750535129,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "90519624"
+              "setId": "90519624",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -2157,7 +3051,22 @@
               "startedAt": 1750535659,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "90519629"
+              "setId": "90519629",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2202,7 +3111,22 @@
               "startedAt": 1748106841,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "89438976"
+              "setId": "89438976",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -2219,7 +3143,28 @@
               "startedAt": 1748107144,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "89438982"
+              "setId": "89438982",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -2244,7 +3189,22 @@
                   "title": "Ultimate Smashdown #29 | Pools - warwick (Pac-Man) vs Pato (Pit, Sora)",
                   "thumbnail": "https://i.ytimg.com/vi/xe9aeU7XdnM/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -2261,7 +3221,22 @@
               "startedAt": 1748110172,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "89439015"
+              "setId": "89439015",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -2278,7 +3253,22 @@
               "startedAt": 1748112860,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "89448369"
+              "setId": "89448369",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -2295,7 +3285,28 @@
               "startedAt": 1748113574,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "89448381"
+              "setId": "89448381",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -2312,7 +3323,22 @@
               "startedAt": 1748114782,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "89448439"
+              "setId": "89448439",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2357,7 +3383,22 @@
               "startedAt": 1742058428,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "86610551"
+              "setId": "86610551",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2374,7 +3415,22 @@
               "startedAt": 1742059328,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "86610557"
+              "setId": "86610557",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2391,7 +3447,22 @@
               "startedAt": 1742060720,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "86610587"
+              "setId": "86610587",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2408,7 +3479,22 @@
               "startedAt": 1742062806,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "86610590"
+              "setId": "86610590",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2425,7 +3511,28 @@
               "startedAt": 1742065309,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "86620018"
+              "setId": "86620018",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2442,7 +3549,28 @@
               "startedAt": 1742067244,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "86620085"
+              "setId": "86620085",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2489,7 +3617,28 @@
               "startedAt": 1732986963,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "82886876"
+              "setId": "82886876",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-26-1/event/ultimate-singles",
@@ -2506,7 +3655,22 @@
               "startedAt": 1732990128,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "82890573"
+              "setId": "82890573",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-26-1/event/ultimate-singles",
@@ -2523,7 +3687,22 @@
               "startedAt": 1732990838,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "82890585"
+              "setId": "82890585",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-26-1/event/ultimate-singles",
@@ -2540,7 +3719,22 @@
               "startedAt": 1732991594,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "82890643"
+              "setId": "82890643",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-26-1/event/ultimate-singles",
@@ -2557,7 +3751,22 @@
               "startedAt": 1732992596,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "82890649"
+              "setId": "82890649",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-26-1/event/ultimate-singles",
@@ -2574,7 +3783,22 @@
               "startedAt": 1732994945,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "82890653"
+              "setId": "82890653",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2619,7 +3843,22 @@
               "startedAt": 1729360462,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "81178987"
+              "setId": "81178987",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Min Min",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Min Min",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
@@ -2636,7 +3875,22 @@
               "startedAt": 1729361537,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "81179013"
+              "setId": "81179013",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
@@ -2653,7 +3907,28 @@
               "startedAt": 1729362002,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "81179017"
+              "setId": "81179017",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
@@ -2670,7 +3945,28 @@
               "startedAt": 1729366077,
               "phaseOrder": 3,
               "roundOrder": 1,
-              "setId": "81188294"
+              "setId": "81188294",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
@@ -2687,7 +3983,22 @@
               "startedAt": 1729368800,
               "phaseOrder": 3,
               "roundOrder": -4,
-              "setId": "81188359"
+              "setId": "81188359",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2734,7 +4045,28 @@
               "startedAt": 1728160031,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "80638753"
+              "setId": "80638753",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/koopa-series-1/event/ultimate-singles",
@@ -2751,7 +4083,22 @@
               "startedAt": 1728161132,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "80638882"
+              "setId": "80638882",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/koopa-series-1/event/ultimate-singles",
@@ -2768,7 +4115,28 @@
               "startedAt": 1728164984,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "80638890"
+              "setId": "80638890",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2815,7 +4183,28 @@
               "startedAt": 1726940037,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "80015578"
+              "setId": "80015578",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2832,7 +4221,22 @@
               "startedAt": 1726941379,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "80015608"
+              "setId": "80015608",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2849,7 +4253,22 @@
               "startedAt": 1726943386,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "80015611"
+              "setId": "80015611",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2866,7 +4285,28 @@
               "startedAt": 1726946168,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "80025410"
+              "setId": "80025410",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2883,7 +4323,28 @@
               "startedAt": 1726947518,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "80025475"
+              "setId": "80025475",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2900,7 +4361,28 @@
               "startedAt": 1726948684,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "80025479"
+              "setId": "80025479",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2945,7 +4427,22 @@
               "startedAt": 1724518724,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "78762324"
+              "setId": "78762324",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
@@ -2962,7 +4459,22 @@
               "startedAt": 1724520742,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "78762328"
+              "setId": "78762328",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
@@ -2979,7 +4491,28 @@
               "startedAt": 1724522312,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "78762354"
+              "setId": "78762354",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3028,7 +4561,22 @@
               "startedAt": 1720887515,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "77011858"
+              "setId": "77011858",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -3045,7 +4593,22 @@
               "startedAt": 1720889576,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "77011888"
+              "setId": "77011888",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -3062,7 +4625,22 @@
               "startedAt": 1720890295,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "77011891"
+              "setId": "77011891",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -3079,7 +4657,28 @@
               "startedAt": 1720897225,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "77025362"
+              "setId": "77025362",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -3096,7 +4695,22 @@
               "startedAt": 1720899605,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "77025431"
+              "setId": "77025431",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3141,7 +4755,28 @@
               "startedAt": 1719075389,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "76217148"
+              "setId": "76217148",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -3158,7 +4793,22 @@
               "startedAt": 1719077551,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "76217151"
+              "setId": "76217151",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -3175,7 +4825,28 @@
               "startedAt": 1719083649,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "76228778"
+              "setId": "76228778",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -3192,7 +4863,22 @@
               "startedAt": 1719084316,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "76228787"
+              "setId": "76228787",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -3209,7 +4895,22 @@
               "startedAt": 1719085716,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "76228839"
+              "setId": "76228839",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3287,7 +4988,22 @@
               "startedAt": 1716057474,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "74829694"
+              "setId": "74829694",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-22/event/ultimate-singles",
@@ -3304,7 +5020,22 @@
               "startedAt": 1716058988,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "74829707"
+              "setId": "74829707",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-22/event/ultimate-singles",
@@ -3321,7 +5052,28 @@
               "startedAt": 1716060714,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "74829767"
+              "setId": "74829767",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-22/event/ultimate-singles",
@@ -3338,7 +5090,22 @@
               "startedAt": 1716062127,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "74829772"
+              "setId": "74829772",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3383,7 +5150,22 @@
               "startedAt": 1714237275,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "73962424"
+              "setId": "73962424",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -3400,7 +5182,22 @@
               "startedAt": 1714239861,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "73962428"
+              "setId": "73962428",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -3417,7 +5214,22 @@
               "startedAt": 1714244116,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "73977554"
+              "setId": "73977554",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -3434,7 +5246,28 @@
               "startedAt": 1714246899,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "73977617"
+              "setId": "73977617",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -3451,7 +5284,22 @@
               "startedAt": 1714247688,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "73977625"
+              "setId": "73977625",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Snake",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Snake",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -3468,7 +5316,22 @@
               "startedAt": 1714249661,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "73977632"
+              "setId": "73977632",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3525,7 +5388,22 @@
                   "title": "Ultimate Smashdown #20 | Winners Quarters - Matemole (Random) vs Pato (Random)",
                   "thumbnail": "https://i.ytimg.com/vi/ykknrNFkv84/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Random Character",
+                  "opponentCharacter": "Random Character",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Random Character",
+                  "opponentCharacter": "Random Character",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
@@ -3558,7 +5436,22 @@
               "startedAt": 1710613349,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "72128280"
+              "setId": "72128280",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
@@ -3575,7 +5468,28 @@
               "startedAt": 1710617161,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "72128350"
+              "setId": "72128350",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3624,7 +5538,22 @@
               "startedAt": 1695489487,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "65491387"
+              "setId": "65491387",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3641,7 +5570,22 @@
               "startedAt": 1695489513,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "65491390"
+              "setId": "65491390",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3658,7 +5602,28 @@
               "startedAt": 1695490865,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "65491386"
+              "setId": "65491386",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3675,7 +5640,22 @@
               "startedAt": 1695495874,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "65507001"
+              "setId": "65507001",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3692,7 +5672,22 @@
               "startedAt": 1695497139,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "65507070"
+              "setId": "65507070",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Sora",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3709,7 +5704,22 @@
               "startedAt": 1695500790,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "65507076"
+              "setId": "65507076",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3760,7 +5770,22 @@
               "startedAt": 1690049114,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "62966688"
+              "setId": "62966688",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3777,7 +5802,22 @@
               "startedAt": 1690050667,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "62966718"
+              "setId": "62966718",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Olimar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Olimar",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3794,7 +5834,22 @@
               "startedAt": 1690054446,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "62974308"
+              "setId": "62974308",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3811,7 +5866,22 @@
               "startedAt": 1690058241,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "62974437"
+              "setId": "62974437",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3854,7 +5924,22 @@
               "startedAt": 1682184354,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "59612034"
+              "setId": "59612034",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Sora",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -3871,7 +5956,28 @@
               "startedAt": 1682185300,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "59612039"
+              "setId": "59612039",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -3888,7 +5994,22 @@
               "startedAt": 1682185970,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "59612045"
+              "setId": "59612045",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -3921,7 +6042,28 @@
               "startedAt": 1682188688,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "59612037"
+              "setId": "59612037",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -3938,7 +6080,22 @@
               "startedAt": 1682194920,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "59629132"
+              "setId": "59629132",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -3955,7 +6112,22 @@
               "startedAt": 1682196667,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "59629192"
+              "setId": "59629192",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -3972,7 +6144,22 @@
               "startedAt": 1682197856,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "59629200"
+              "setId": "59629200",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4019,7 +6206,22 @@
               "startedAt": 1679777589,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "58527966"
+              "setId": "58527966",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/koopa-series/event/singles",
@@ -4036,7 +6238,22 @@
               "startedAt": 1679779996,
               "phaseOrder": 3,
               "roundOrder": 1,
-              "setId": "58532962"
+              "setId": "58532962",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/koopa-series/event/singles",
@@ -4053,7 +6270,28 @@
               "startedAt": 1679781523,
               "phaseOrder": 3,
               "roundOrder": 2,
-              "setId": "58532967"
+              "setId": "58532967",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/koopa-series/event/singles",
@@ -4070,7 +6308,28 @@
               "startedAt": 1679783881,
               "phaseOrder": 3,
               "roundOrder": -6,
-              "setId": "58533027"
+              "setId": "58533027",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4230,7 +6489,22 @@
               "startedAt": 1668878656,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "54339641"
+              "setId": "54339641",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -4247,7 +6521,22 @@
               "startedAt": 1668881853,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "54339634"
+              "setId": "54339634",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -4264,7 +6553,22 @@
               "startedAt": 1668882599,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "54339637"
+              "setId": "54339637",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -4313,7 +6617,28 @@
               "startedAt": 1668887384,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "54350602"
+              "setId": "54350602",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -4330,7 +6655,22 @@
               "startedAt": 1668890039,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "54350726"
+              "setId": "54350726",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -4347,7 +6687,28 @@
               "startedAt": 1668892349,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "54350735"
+              "setId": "54350735",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -4364,7 +6725,28 @@
               "startedAt": 1668895020,
               "phaseOrder": 2,
               "roundOrder": -7,
-              "setId": "54350748"
+              "setId": "54350748",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -4381,7 +6763,22 @@
               "startedAt": 1668895990,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "54350743"
+              "setId": "54350743",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4428,7 +6825,22 @@
               "startedAt": 1663433444,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "51974309"
+              "setId": "51974309",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-10/event/ultimate-smashdown-10-singles",
@@ -4461,7 +6873,22 @@
               "startedAt": 1663437478,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "51974307"
+              "setId": "51974307",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-10/event/ultimate-smashdown-10-singles",
@@ -4486,7 +6913,22 @@
                   "title": "Ultimate Smashdown #10 | Pools - Emilioloco28 (DK, R.O.B.) vs. Pato (Dark Pit, Sora)",
                   "thumbnail": "https://i.ytimg.com/vi/azvuVURfFCQ/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-10/event/ultimate-smashdown-10-singles",
@@ -4503,7 +6945,28 @@
               "startedAt": 1663442034,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "51982739"
+              "setId": "51982739",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-10/event/ultimate-smashdown-10-singles",
@@ -4520,7 +6983,28 @@
               "startedAt": 1663444680,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "51982808"
+              "setId": "51982808",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4567,7 +7051,28 @@
               "startedAt": 1661018170,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "50922001"
+              "setId": "50922001",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -4584,7 +7089,22 @@
               "startedAt": 1661021225,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "50921990"
+              "setId": "50921990",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -4601,7 +7121,22 @@
               "startedAt": 1661022595,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "50921997"
+              "setId": "50921997",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -4626,7 +7161,28 @@
                   "title": "Ultimate Smashdown #9 | Pools - Salieri (Palutena) vs Pato (Pit, King Dedede)",
                   "thumbnail": "https://i.ytimg.com/vi/gxzLHzF8hYg/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -4643,7 +7199,22 @@
               "startedAt": 1661024477,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "50921993"
+              "setId": "50921993",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {
@@ -4802,7 +7373,22 @@
               "startedAt": 1658594045,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "49869134"
+              "setId": "49869134",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -4819,7 +7405,28 @@
               "startedAt": 1658594876,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "49869127"
+              "setId": "49869127",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -4836,7 +7443,22 @@
               "startedAt": 1658596593,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "49869123"
+              "setId": "49869123",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -4853,7 +7475,22 @@
               "startedAt": 1658597237,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "49869132"
+              "setId": "49869132",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -4870,7 +7507,28 @@
               "startedAt": 1658599389,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "49869130"
+              "setId": "49869130",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -4887,7 +7545,28 @@
               "startedAt": 1658605953,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "49883435"
+              "setId": "49883435",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Mega Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Mega Man",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -4912,7 +7591,22 @@
                   "title": "Ultimate Smashdown #8 | Losers Round 1 - Vodokex (Kazuya, Meta Kinght) vs Pato (Dark Pit, Sora)",
                   "thumbnail": "https://i.ytimg.com/vi/gVotsoaYd9c/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4977,7 +7671,28 @@
               "startedAt": 1655574512,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "48557137"
+              "setId": "48557137",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
@@ -4994,7 +7709,22 @@
               "startedAt": 1655576729,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "48557135"
+              "setId": "48557135",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
@@ -5011,7 +7741,22 @@
               "startedAt": 1655576762,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "48557139"
+              "setId": "48557139",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
@@ -5028,7 +7773,22 @@
               "startedAt": 1655582053,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "48569613"
+              "setId": "48569613",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
@@ -5045,7 +7805,22 @@
               "startedAt": 1655584169,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "48569670"
+              "setId": "48569670",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
@@ -5062,7 +7837,28 @@
               "startedAt": 1655584796,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "48569678"
+              "setId": "48569678",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
@@ -5087,7 +7883,22 @@
                   "title": "Ultimate Smashdown #7 | L.Round 3 - BugSmasher (King K. Rool, Donkey Kong) vs. Pato (Dark Pit, Sora)",
                   "thumbnail": "https://i.ytimg.com/vi/gkB-lyKP4vc/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -5134,7 +7945,28 @@
               "startedAt": 1653153596,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "47566965"
+              "setId": "47566965",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -5151,7 +7983,22 @@
               "startedAt": 1653157284,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "47566970"
+              "setId": "47566970",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -5168,7 +8015,22 @@
               "startedAt": 1653157518,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "47566972"
+              "setId": "47566972",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -5185,7 +8047,28 @@
               "startedAt": 1653157577,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "47566968"
+              "setId": "47566968",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -5202,7 +8085,22 @@
               "startedAt": 1653162639,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "47579553"
+              "setId": "47579553",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -5227,7 +8125,22 @@
                   "title": "Ultimate Smashdown #6 | Cat. A LR 1 - Gab (Robin, Samus) vs. Pato (Pit, Dark Pit)",
                   "thumbnail": "https://i.ytimg.com/vi/i6QO8u3RarM/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Robin",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/singles",
@@ -5244,7 +8157,22 @@
               "startedAt": 1653168286,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "47579621"
+              "setId": "47579621",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -5291,7 +8219,22 @@
               "startedAt": 1650734353,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "46624133"
+              "setId": "46624133",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-5/event/singles",
@@ -5308,7 +8251,22 @@
               "startedAt": 1650734986,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "46624138"
+              "setId": "46624138",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-5/event/singles",
@@ -5325,7 +8283,28 @@
               "startedAt": 1650736848,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "46624140"
+              "setId": "46624140",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-5/event/singles",
@@ -5342,7 +8321,22 @@
               "startedAt": 1650737393,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "46624136"
+              "setId": "46624136",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-5/event/singles",
@@ -5359,7 +8353,22 @@
               "startedAt": 1650737812,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "46624129"
+              "setId": "46624129",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Corrin",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-5/event/singles",
@@ -5376,7 +8385,22 @@
               "startedAt": 1650742634,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "46636899"
+              "setId": "46636899",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-5/event/singles",
@@ -5409,7 +8433,28 @@
               "startedAt": 1650745401,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "46636978"
+              "setId": "46636978",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-5/event/singles",
@@ -5426,7 +8471,22 @@
               "startedAt": 1650746962,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "46636982"
+              "setId": "46636982",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -5475,7 +8535,28 @@
               "startedAt": 1647103183,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "45308005"
+              "setId": "45308005",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
@@ -5492,7 +8573,22 @@
               "startedAt": 1647108421,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "45308010"
+              "setId": "45308010",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
@@ -5509,7 +8605,22 @@
               "startedAt": 1647109290,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "45308002"
+              "setId": "45308002",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
@@ -5526,7 +8637,22 @@
               "startedAt": 1647109923,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "45308009"
+              "setId": "45308009",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
@@ -5543,7 +8669,28 @@
               "startedAt": 1647114526,
               "phaseOrder": 5,
               "roundOrder": 1,
-              "setId": "45314496"
+              "setId": "45314496",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
@@ -5576,7 +8723,22 @@
               "startedAt": 1647118611,
               "phaseOrder": 5,
               "roundOrder": -4,
-              "setId": "45314610"
+              "setId": "45314610",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
@@ -5593,7 +8755,22 @@
               "startedAt": 1647119556,
               "phaseOrder": 5,
               "roundOrder": -5,
-              "setId": "45314626"
+              "setId": "45314626",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -5659,7 +8836,22 @@
               "startedAt": 1645984988,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "44955721"
+              "setId": "44955721",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-cup-2/event/mashito-cup",
@@ -5754,7 +8946,28 @@
               "startedAt": 1639339448,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "43119733"
+              "setId": "43119733",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-cup/event/mashito-cup",
@@ -5771,7 +8984,22 @@
               "startedAt": 1639339482,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "43119743"
+              "setId": "43119743",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-cup/event/mashito-cup",
@@ -5788,7 +9016,28 @@
               "startedAt": 1639339520,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "43119865"
+              "setId": "43119865",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-cup/event/mashito-cup",
@@ -5919,7 +9168,28 @@
               "startedAt": 1635105451,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "41714667"
+              "setId": "41714667",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Ryu",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
@@ -5936,7 +9206,22 @@
               "startedAt": 1635109692,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "41714733"
+              "setId": "41714733",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -6096,7 +9381,22 @@
                   "title": "Ultimate Smashdown #3 | Pools - Pato (Pit) vs. OmegaX (Villager)",
                   "thumbnail": "https://i.ytimg.com/vi/bhsEuDAkSbs/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -6121,7 +9421,22 @@
                   "title": "Ultimate Smashdown #3 | Pools - Pato (Pit) vs. Lazerth (Villager, Jigglypuff)",
                   "thumbnail": "https://i.ytimg.com/vi/T11SbVcIaP0/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -6138,7 +9453,22 @@
               "startedAt": 1606594514,
               "phaseOrder": 1,
               "roundOrder": 6,
-              "setId": "33703253"
+              "setId": "33703253",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -6155,7 +9485,28 @@
               "startedAt": 1606594558,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "33703234"
+              "setId": "33703234",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -6172,7 +9523,22 @@
               "startedAt": 1606595461,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "33703240"
+              "setId": "33703240",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -6197,7 +9563,22 @@
                   "title": "Ultimate Smashdown #3 | Pools - Link (Link) vs. Pato (Pit)",
                   "thumbnail": "https://i.ytimg.com/vi/pya2PovtWZY/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -6214,7 +9595,22 @@
               "startedAt": 1606596518,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "33703228"
+              "setId": "33703228",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Lucina",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -6239,7 +9635,28 @@
                   "title": "Ultimate Smashdown #3 | Pools - Pato/Dark Pato (Pit, Dark Pit) vs Hora (Wolf)",
                   "thumbnail": "https://i.ytimg.com/vi/Wiq8Q80Vu-4/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -6445,7 +9862,28 @@
                   "title": "Ultimate Smashdown #2 | Top 16 WR1 - Pato (Pit, Dark Pit) vs. Mitsu (Roy, Cloud)",
                   "thumbnail": "https://i.ytimg.com/vi/kRJiomQgemE/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-2-1/event/singles",
@@ -6788,7 +10226,22 @@
               "startedAt": 1578787289,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "25721906"
+              "setId": "25721906",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsu-evochacra/event/nsu-evochacra-super-smash-bros-ultimate-singles",
@@ -7140,7 +10593,28 @@
               "startedAt": 1607902365,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "24221272"
+              "setId": "24221272",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {
@@ -7424,7 +10898,22 @@
               "startedAt": 1567282156,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "22841141"
+              "setId": "22841141",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Roy",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -7441,7 +10930,28 @@
               "startedAt": 1567285258,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "22841259"
+              "setId": "22841259",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Wii Fit Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Wii Fit Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Duck Hunt",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -7458,7 +10968,22 @@
               "startedAt": 1567286444,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "22841270"
+              "setId": "22841270",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -7491,7 +11016,22 @@
               "startedAt": 1607901624,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "22832820"
+              "setId": "22832820",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {
@@ -7607,7 +11147,28 @@
               "startedAt": 1565556094,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "22416317"
+              "setId": "22416317",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Wii Fit Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
@@ -7640,7 +11201,28 @@
               "startedAt": 1565560028,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "22416449"
+              "setId": "22416449",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
@@ -7717,7 +11299,28 @@
               "startedAt": 1561838152,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "21421735"
+              "setId": "21421735",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-6/event/ultimate-singles",
@@ -7734,7 +11337,22 @@
               "startedAt": 1561841224,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "21421789"
+              "setId": "21421789",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-6/event/ultimate-singles",
@@ -7751,7 +11369,22 @@
               "startedAt": 1561841974,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "21421796"
+              "setId": "21421796",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -7796,7 +11429,28 @@
               "startedAt": 1558815458,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "20701336"
+              "setId": "20701336",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pit",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -7813,7 +11467,22 @@
               "startedAt": 1558820876,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "20701395"
+              "setId": "20701395",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -7830,7 +11499,28 @@
               "startedAt": 1558821888,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "20701399"
+              "setId": "20701399",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -7847,7 +11537,28 @@
               "startedAt": 1558822647,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "20701403"
+              "setId": "20701403",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -7894,7 +11605,22 @@
               "startedAt": 1548528785,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "18207059"
+              "setId": "18207059",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ganondorf",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",

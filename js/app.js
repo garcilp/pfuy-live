@@ -193,6 +193,7 @@ function render() {
   const profileLocation = hasStructuredLocation
     ? [player.city, player.country || 'Uruguay'].filter(value => typeof value === 'string' && value.trim()).join(', ')
     : player.location || '';
+  const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
   $('#profile').innerHTML =
     `<span class="ini">${esc(player.tag?.[0] || '?')}</span>
      <div class="art"><img src="${esc(playerPhoto)}" alt="${esc(player.tag)}" onerror="this.closest('.profile').querySelector('.ini').classList.add('show'); this.closest('.art').remove()"></div>
@@ -206,7 +207,6 @@ function render() {
     document.title = `${player.tag} · Platfighters.uy`;
   }
 
-  const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
   const overviewLabel = isEs ? 'Resumen' : 'Overview';
   $('#tabs').innerHTML = [{ id: 'overview', label: overviewLabel, count: '' },
     ...mostRecentlyPlayedFirst.map(g => ({ id: g.id, label: g.name, count: isEs ? `${g.events} torneo${g.events === 1 ? '' : 's'}` : `${g.events} event${g.events === 1 ? '' : 's'}` }))]

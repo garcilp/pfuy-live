@@ -194,7 +194,7 @@
           "opponent": "DIO",
           "seed": 1,
           "ownSeed": 4,
-          "upsetFactor": 4.0,
+          "upsetFactor": 4,
           "score": "3–0",
           "phase": "Bracket",
           "round": "Winners Semi-Final",
@@ -547,7 +547,22 @@
               "startedAt": 1567279591,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "22832523"
+              "setId": "22832523",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -588,7 +603,22 @@
                   "title": "MMM #8 - 2019 | Winners Round 1 - Sfan vs. Cubax",
                   "thumbnail": "https://i.ytimg.com/vi/LcobBXQAPok/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -682,7 +712,28 @@
               "startedAt": 1556395156,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "20058733"
+              "setId": "20058733",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -732,7 +783,40 @@
               "startedAt": 1556406885,
               "phaseOrder": 2,
               "roundOrder": 4,
-              "setId": "20058744"
+              "setId": "20058744",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Falco",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Falco",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-4/event/melee-singles",
@@ -749,7 +833,34 @@
               "startedAt": 1556406922,
               "phaseOrder": 2,
               "roundOrder": -8,
-              "setId": "20058776"
+              "setId": "20058776",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -841,7 +952,28 @@
               "startedAt": 1550958350,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "18749136"
+              "setId": "18749136",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/melee-singles",
@@ -858,7 +990,40 @@
               "startedAt": 1550960791,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "18749139"
+              "setId": "18749139",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/melee-singles",
@@ -892,7 +1057,34 @@
               "startedAt": 1550965691,
               "phaseOrder": 2,
               "roundOrder": -8,
-              "setId": "18749173"
+              "setId": "18749173",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Falco",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

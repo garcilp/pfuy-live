@@ -238,7 +238,22 @@
               "startedAt": 1647115945,
               "phaseOrder": 5,
               "roundOrder": 1,
-              "setId": "45314490"
+              "setId": "45314490",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
@@ -255,7 +270,22 @@
               "startedAt": 1647116989,
               "phaseOrder": 5,
               "roundOrder": -4,
-              "setId": "45314622"
+              "setId": "45314622",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

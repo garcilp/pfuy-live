@@ -291,7 +291,22 @@
               "startedAt": 1607902390,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "24221270"
+              "setId": "24221270",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {},
@@ -397,7 +412,22 @@
               "startedAt": 1565554428,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "22416291"
+              "setId": "22416291",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Roy",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",

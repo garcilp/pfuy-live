@@ -202,7 +202,22 @@
               "startedAt": 1548527435,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "18207052"
+              "setId": "18207052",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",
@@ -219,7 +234,22 @@
               "startedAt": 1548534385,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "18207123"
+              "setId": "18207123",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

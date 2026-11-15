@@ -160,7 +160,28 @@
               "startedAt": 1548538035,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "18218775"
+              "setId": "18218775",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Luigi",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -250,7 +271,22 @@
               "startedAt": 1548529329,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "18207060"
+              "setId": "18207060",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ken",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",
@@ -267,7 +303,22 @@
               "startedAt": 1548531063,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "18207114"
+              "setId": "18207114",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ken",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ken",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

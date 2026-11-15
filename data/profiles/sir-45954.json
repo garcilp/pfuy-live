@@ -252,7 +252,7 @@
           "opponent": "Sol!d",
           "seed": 1,
           "ownSeed": 8,
-          "upsetFactor": 8.0,
+          "upsetFactor": 8,
           "score": "3–1",
           "phase": "Bracket",
           "round": "Winners Quarter-Final",
@@ -264,7 +264,7 @@
           "opponent": "SrPaz",
           "seed": 2,
           "ownSeed": 8,
-          "upsetFactor": 4.0,
+          "upsetFactor": 4,
           "score": "3–0",
           "phase": "Bracket",
           "round": "Losers Semi-Final",
@@ -276,7 +276,7 @@
           "opponent": "Mingudai",
           "seed": 4,
           "ownSeed": 8,
-          "upsetFactor": 2.0,
+          "upsetFactor": 2,
           "score": "3–0",
           "phase": "Bracket",
           "round": "Losers Final",
@@ -321,7 +321,28 @@
               "startedAt": 1788638961,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "107392834"
+              "setId": "107392834",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2026-9/event/super-smash-bros-melee",
@@ -386,7 +407,34 @@
               "startedAt": 1760216691,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "94938654"
+              "setId": "94938654",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-9/event/super-smash-bros-melee",
@@ -403,7 +451,34 @@
               "startedAt": 1760219220,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "94938684"
+              "setId": "94938684",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-9/event/super-smash-bros-melee",
@@ -420,7 +495,40 @@
               "startedAt": 1760223137,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "94938687"
+              "setId": "94938687",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Marth",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -467,7 +575,28 @@
               "startedAt": 1754773421,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "92500143"
+              "setId": "92500143",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/super-smash-bros-melee",
@@ -484,7 +613,34 @@
               "startedAt": 1754775082,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "92500145"
+              "setId": "92500145",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/super-smash-bros-melee",
@@ -501,7 +657,28 @@
               "startedAt": 1754776963,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "92500176"
+              "setId": "92500176",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/super-smash-bros-melee",
@@ -526,7 +703,34 @@
                   "title": "MMM #7 - 2025 | Losers Semis - S1R (Sheik) vs. kalarse (Peach)",
                   "thumbnail": "https://i.ytimg.com/vi/-CUK_kWizSs/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/super-smash-bros-melee",
@@ -551,7 +755,28 @@
                   "title": "MMM #7 - 2025 | Losers Final - S1R (Sheik) vs. Transformación (Fox)",
                   "thumbnail": "https://i.ytimg.com/vi/Fidg4w1eTV8/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -594,7 +819,34 @@
               "startedAt": 1751730430,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "91055581"
+              "setId": "91055581",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -611,7 +863,34 @@
               "startedAt": 1751731139,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "91055588"
+              "setId": "91055588",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -628,7 +907,28 @@
               "startedAt": 1751732854,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "91055592"
+              "setId": "91055592",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -645,7 +945,34 @@
               "startedAt": 1751737464,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "91055623"
+              "setId": "91055623",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -662,7 +989,28 @@
               "startedAt": 1751738053,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "91055625"
+              "setId": "91055625",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -679,7 +1027,28 @@
               "startedAt": 1751738938,
               "phaseOrder": 1,
               "roundOrder": -8,
-              "setId": "91055626"
+              "setId": "91055626",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/super-smash-bros-melee",
@@ -696,7 +1065,28 @@
               "startedAt": 1751739984,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "91055595"
+              "setId": "91055595",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -739,7 +1129,40 @@
               "startedAt": 1749325108,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "90018474"
+              "setId": "90018474",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-5/event/super-smash-bros-melee",
@@ -756,7 +1179,34 @@
               "startedAt": 1749325319,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "90018479"
+              "setId": "90018479",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-5/event/super-smash-bros-melee",
@@ -773,7 +1223,28 @@
               "startedAt": 1749327794,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "90018481"
+              "setId": "90018481",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-5/event/super-smash-bros-melee",
@@ -798,7 +1269,28 @@
                   "title": "MMM #5 - 2025 | Losers Quarters - Mingudai (Young Link) vs. SIR (Jigglypuff)",
                   "thumbnail": "https://i.ytimg.com/vi/VwjcK5cvuCY/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -929,7 +1421,28 @@
               "startedAt": 1746423095,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "88679127"
+              "setId": "88679127",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-4/event/super-smash-bros-melee",
@@ -954,7 +1467,28 @@
                   "title": "MMM #4 - 2025 | Losers Round 3 - S1R (Jigglypuff) vs. DTK (Sheik)",
                   "thumbnail": "https://i.ytimg.com/vi/kN0ax2bYkds/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-4/event/super-smash-bros-melee",
@@ -1013,7 +1547,40 @@
               "startedAt": 1743879672,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "87479257"
+              "setId": "87479257",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -1030,7 +1597,28 @@
               "startedAt": 1743881240,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "87479287"
+              "setId": "87479287",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -1047,7 +1635,28 @@
               "startedAt": 1743885808,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "87479290"
+              "setId": "87479290",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -1064,7 +1673,34 @@
               "startedAt": 1743886911,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "87479292"
+              "setId": "87479292",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -1089,7 +1725,28 @@
                   "title": "MMM #3 - 2025 | Losers Semis - S1R (Sheik) vs. SrPaz (Fox)",
                   "thumbnail": "https://i.ytimg.com/vi/mZ8543-fo68/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-3/event/melee-singles",
@@ -1114,7 +1771,34 @@
                   "title": "MMM #3 - 2025 | Losers Finals - S1R (Sheik) vs. FrancoKiwi (Zelda)",
                   "thumbnail": "https://i.ytimg.com/vi/IfnUQjrc2D8/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1159,7 +1843,28 @@
               "startedAt": 1738435722,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "84906834"
+              "setId": "84906834",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-1/event/melee-singles",
@@ -1184,7 +1889,34 @@
                   "title": "MMM #1 - 2025 | Winners Quarters - Sagat (Ganondorf) vs. S1R (Sheik)",
                   "thumbnail": "https://i.ytimg.com/vi/fQFbPBRTv8c/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-1/event/melee-singles",
@@ -1201,7 +1933,28 @@
               "startedAt": 1738440117,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "84906873"
+              "setId": "84906873",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-1/event/melee-singles",
@@ -1218,7 +1971,28 @@
               "startedAt": 1738441474,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "84906875"
+              "setId": "84906875",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Marth",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1279,7 +2053,28 @@
               "startedAt": 1731183949,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "82054987"
+              "setId": "82054987",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-10/event/melee-singles",
@@ -1296,7 +2091,40 @@
               "startedAt": 1731184845,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "82055049"
+              "setId": "82055049",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-10/event/melee-singles",
@@ -1313,7 +2141,40 @@
               "startedAt": 1731187633,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "82055052"
+              "setId": "82055052",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-10/event/melee-singles",
@@ -1338,7 +2199,28 @@
                   "title": "MMM #10 - 2024 | Losers Quarters - Iguana (Peach) vs. S1R (Sheik)",
                   "thumbnail": "https://i.ytimg.com/vi/85YitUrku9k/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1381,7 +2263,28 @@
               "startedAt": 1725734319,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "79413395"
+              "setId": "79413395",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Captain Falcon",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
@@ -1398,7 +2301,34 @@
               "startedAt": 1725735975,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "79413400"
+              "setId": "79413400",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
@@ -1415,7 +2345,28 @@
               "startedAt": 1725736889,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "79413428"
+              "setId": "79413428",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
@@ -1432,7 +2383,40 @@
               "startedAt": 1725738142,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "79413431"
+              "setId": "79413431",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1496,7 +2480,34 @@
               "startedAt": 1722711954,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "77925293"
+              "setId": "77925293",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-7/event/melee-singles",
@@ -1513,7 +2524,28 @@
               "startedAt": 1722712895,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "77925325"
+              "setId": "77925325",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-7/event/melee-singles",
@@ -1530,7 +2562,40 @@
               "startedAt": 1722713643,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "77925327"
+              "setId": "77925327",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-7/event/melee-singles",
@@ -1555,7 +2620,40 @@
                   "title": "MMM #7 - 2024 | Losers Quarters - Sol!d (C.Falcon) vs. S1R (Sheik)",
                   "thumbnail": "https://i.ytimg.com/vi/kChqtK0J_dM/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1606,7 +2704,34 @@
                   "title": "MMM #6 - 2024 | Winners Round 1 - Mingudai vs. S1R",
                   "thumbnail": "https://i.ytimg.com/vi/JiBdVV-82ik/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-6/event/melee-singles",
@@ -1631,7 +2756,34 @@
                   "title": "MMM #6 - 2024 | Losers Round 1 - S1R vs. Kapito22",
                   "thumbnail": "https://i.ytimg.com/vi/qym4QB2rivY/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1674,7 +2826,40 @@
               "startedAt": 1709411419,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "71546983"
+              "setId": "71546983",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2024-2/event/melee-singles",
@@ -1691,7 +2876,34 @@
               "startedAt": 1709413153,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "71547013"
+              "setId": "71547013",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1734,7 +2946,28 @@
               "startedAt": 1691261302,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "63564728"
+              "setId": "63564728",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1751,7 +2984,28 @@
               "startedAt": 1691267892,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "63564724"
+              "setId": "63564724",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1768,7 +3022,28 @@
               "startedAt": 1691268073,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "63564714"
+              "setId": "63564714",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1785,7 +3060,40 @@
               "startedAt": 1691268566,
               "phaseOrder": 1,
               "roundOrder": 7,
-              "setId": "63564734"
+              "setId": "63564734",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1802,7 +3110,28 @@
               "startedAt": 1691268602,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "63564719"
+              "setId": "63564719",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1819,7 +3148,40 @@
               "startedAt": 1691268689,
               "phaseOrder": 1,
               "roundOrder": 6,
-              "setId": "63564731"
+              "setId": "63564731",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-7/event/melee-singles",
@@ -1836,7 +3198,34 @@
               "startedAt": 1691270749,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "63564709"
+              "setId": "63564709",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {
@@ -1887,7 +3276,34 @@
                   "title": "MMM Revival #6 - 2023 | Winners Quarters - SrPaz (Falco) vs. S1R (Sheik)",
                   "thumbnail": "https://i.ytimg.com/vi/YFtNNKhoICo/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-6/event/melee-singles",
@@ -1904,7 +3320,28 @@
               "startedAt": 1688242720,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "62190427"
+              "setId": "62190427",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-6/event/melee-singles",
@@ -1921,7 +3358,40 @@
               "startedAt": 1688243741,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "62190431"
+              "setId": "62190431",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-6/event/melee-singles",
@@ -1946,7 +3416,40 @@
                   "title": "MMM Revival #6 - 2023 | Losers Quarters - S1R (Sheik) vs. FrancoKiwi (Zelda)",
                   "thumbnail": "https://i.ytimg.com/vi/Reu5Mw7mlbk/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-6/event/melee-singles",
@@ -1971,7 +3474,40 @@
                   "title": "MMM Revival #6 - 2023 | Losers Semis - S1R (Sheik) vs. Iguana (Peach)",
                   "thumbnail": "https://i.ytimg.com/vi/i35yxfJUDEE/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2014,7 +3550,28 @@
               "startedAt": 1686425467,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "61374578"
+              "setId": "61374578",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-5-1/event/melee-singles",
@@ -2031,7 +3588,28 @@
               "startedAt": 1686428606,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "61374583"
+              "setId": "61374583",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-5-1/event/melee-singles",
@@ -2048,7 +3626,34 @@
               "startedAt": 1686428874,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "61374609"
+              "setId": "61374609",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-5-1/event/melee-singles",
@@ -2065,7 +3670,34 @@
               "startedAt": 1686430376,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "61374613"
+              "setId": "61374613",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-5-1/event/melee-singles",
@@ -2082,7 +3714,28 @@
               "startedAt": 1686431283,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "61374615"
+              "setId": "61374615",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2133,7 +3786,40 @@
                   "title": "MMM Revival #4 - 2023 | Winners Quarter - S1R vs. Transformación",
                   "thumbnail": "https://i.ytimg.com/vi/YdSG_Rl4QZ0/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-4/event/melee-singles",
@@ -2150,7 +3836,28 @@
               "startedAt": 1683401202,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "60138366"
+              "setId": "60138366",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-4/event/melee-singles",
@@ -2167,7 +3874,34 @@
               "startedAt": 1683403080,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "60138368"
+              "setId": "60138368",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2210,7 +3944,34 @@
               "startedAt": 1678041393,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "57790630"
+              "setId": "57790630",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-2/event/melee-singles",
@@ -2227,7 +3988,40 @@
               "startedAt": 1678042855,
               "phaseOrder": 1,
               "roundOrder": -3,
-              "setId": "57790646"
+              "setId": "57790646",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2270,7 +4064,28 @@
               "startedAt": 1677859297,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "56661366"
+              "setId": "56661366",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-3-23/event/melee-singles",
@@ -2287,7 +4102,28 @@
               "startedAt": 1677859454,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "56661399"
+              "setId": "56661399",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-revival-3-23/event/melee-singles",
@@ -2304,7 +4140,28 @@
               "startedAt": 1678127619,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "56661396"
+              "setId": "56661396",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2612,7 +4469,40 @@
               "startedAt": 1579978708,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "26102870"
+              "setId": "26102870",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -2629,7 +4519,28 @@
               "startedAt": 1579982600,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "26102873"
+              "setId": "26102873",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -2646,7 +4557,28 @@
               "startedAt": 1579984311,
               "phaseOrder": 2,
               "roundOrder": -8,
-              "setId": "26102935"
+              "setId": "26102935",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -2663,7 +4595,40 @@
               "startedAt": 1579988124,
               "phaseOrder": 2,
               "roundOrder": -9,
-              "setId": "26102937"
+              "setId": "26102937",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2905,7 +4870,22 @@
                   "title": "MMM #9 - 2019 | Winners Quarters - S1R vs. SrPaz (Resubido)",
                   "thumbnail": "https://i.ytimg.com/vi/38QuolkvgYQ/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2930,7 +4910,34 @@
                   "title": "MMM #9 - 2019 | Winners Semis - S1R vs. Ordo (Resubido)",
                   "thumbnail": "https://i.ytimg.com/vi/yIepd2XhL2s/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2955,7 +4962,34 @@
                   "title": "MMM #9 - 2019 | Winners Finals - S1R vs. Aalz (Resubido)",
                   "thumbnail": "https://i.ytimg.com/vi/wmSVlraiNe0/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2980,7 +5014,34 @@
                   "title": "MMM #9 - 2019 | Grand Finals -  Sol!d vs. S1R (Resubido)",
                   "thumbnail": "https://i.ytimg.com/vi/Q-tEtvuvx0A/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -2997,7 +5058,28 @@
               "startedAt": 1569713983,
               "phaseOrder": 2,
               "roundOrder": 6,
-              "setId": "23507810"
+              "setId": "23507810",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -3014,7 +5096,22 @@
               "startedAt": 1740003396,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "23507798"
+              "setId": "23507798",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3158,7 +5255,22 @@
                   "title": "MMM #8 - 2019 | Losers Round 4 - FrancoKiwi vs. S1R",
                   "thumbnail": "https://i.ytimg.com/vi/yUSLR8yPfgs/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -3183,7 +5295,22 @@
                   "title": "MMM #8 - 2019 | Losers Round 5 - S1R vs. Sr.Mango",
                   "thumbnail": "https://i.ytimg.com/vi/Ep9E0oiWOSI/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
@@ -3251,7 +5378,28 @@
               "startedAt": 1558812608,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "20700227"
+              "setId": "20700227",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/melee-singles",
@@ -3268,7 +5416,40 @@
               "startedAt": 1558813408,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "20700233"
+              "setId": "20700233",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/melee-singles",
@@ -3285,7 +5466,28 @@
               "startedAt": 1558814740,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "20700236"
+              "setId": "20700236",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/melee-singles",
@@ -3318,7 +5520,28 @@
               "startedAt": 1558824885,
               "phaseOrder": 2,
               "roundOrder": -7,
-              "setId": "20700285"
+              "setId": "20700285",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3411,7 +5634,28 @@
               "startedAt": 1553977947,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "19462456"
+              "setId": "19462456",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Fox",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-3-1/event/melee-singles",
@@ -3428,7 +5672,28 @@
               "startedAt": 1553981480,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "19462487"
+              "setId": "19462487",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-3-1/event/melee-singles",
@@ -3445,7 +5710,34 @@
               "startedAt": 1553982471,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "19462491"
+              "setId": "19462491",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4625,7 +6917,7 @@
           "opponent": "Iguana",
           "seed": 1,
           "ownSeed": 10,
-          "upsetFactor": 10.0,
+          "upsetFactor": 10,
           "score": "3–0",
           "phase": "Bracket",
           "round": "Grand Final",
@@ -4637,7 +6929,7 @@
           "opponent": "Mingudai",
           "seed": 2,
           "ownSeed": 10,
-          "upsetFactor": 5.0,
+          "upsetFactor": 5,
           "score": "3–1",
           "phase": "Bracket",
           "round": "Winners Quarter-Final",
@@ -4694,7 +6986,28 @@
               "startedAt": 1754778311,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "92503860"
+              "setId": "92503860",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "ROB",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Roy",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/project",
@@ -4719,7 +7032,34 @@
                   "title": "MMM #7 - 2025 | Winners Semis - DTK (Bowser) vs. S1R (R.O.B, Mr. Game & Watch) | Project +",
                   "thumbnail": "https://i.ytimg.com/vi/YKgcb5lp_mk/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "ROB",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "ROB",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Mr. Game & Watch",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-7/event/project",
@@ -4744,7 +7084,28 @@
                   "title": "MMM #7 - 2025 | Losers Quarters - S1R (R.O.B, Roy, C. Falcon) vs. Sol!d (Mewtwo, Sheik) | Project +",
                   "thumbnail": "https://i.ytimg.com/vi/jAhlNgcKYlE/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "ROB",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "ROB",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Captain Falcon",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4797,7 +7158,34 @@
               "startedAt": 1751733208,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "91055637"
+              "setId": "91055637",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Charizard",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Charizard",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Charizard",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Charizard",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/project",
@@ -4814,7 +7202,34 @@
               "startedAt": 1751736066,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "91055642"
+              "setId": "91055642",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/project",
@@ -4831,7 +7246,28 @@
               "startedAt": 1751741068,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "91055645"
+              "setId": "91055645",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/project",
@@ -4848,7 +7284,28 @@
               "startedAt": 1751741618,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "91055646"
+              "setId": "91055646",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2025-6/event/project",
@@ -4865,7 +7322,28 @@
               "startedAt": 1751743303,
               "phaseOrder": 1,
               "roundOrder": -8,
-              "setId": "91055678"
+              "setId": "91055678",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4910,7 +7388,28 @@
               "startedAt": 1553986494,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "19471448"
+              "setId": "19471448",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-3-1/event/pm-singles",
@@ -4943,7 +7442,28 @@
               "startedAt": 1553989754,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "19471454"
+              "setId": "19471454",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Snake",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Snake",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Snake",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -5598,7 +8118,28 @@
               "startedAt": 1567284954,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "22841147"
+              "setId": "22841147",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5615,7 +8156,22 @@
               "startedAt": 1567285278,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "22841267"
+              "setId": "22841267",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5632,7 +8188,28 @@
               "startedAt": 1567288249,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "22841275"
+              "setId": "22841275",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
@@ -5649,7 +8226,22 @@
               "startedAt": 1567289454,
               "phaseOrder": 2,
               "roundOrder": -7,
-              "setId": "22841282"
+              "setId": "22841282",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -5692,7 +8284,28 @@
               "startedAt": 1558815458,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "20701336"
+              "setId": "20701336",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wolf",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wolf",
+                  "opponentCharacter": "Dark Pit",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Wolf",
+                  "opponentCharacter": "Pit",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -5709,7 +8322,22 @@
               "startedAt": 1558819591,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "20701341"
+              "setId": "20701341",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wolf",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wolf",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -5726,7 +8354,22 @@
               "startedAt": 1558822532,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "20701401"
+              "setId": "20701401",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wolf",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Wolf",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-5/event/ultimate-singles",
@@ -5743,7 +8386,28 @@
               "startedAt": 1558825723,
               "phaseOrder": 1,
               "roundOrder": -7,
-              "setId": "20701404"
+              "setId": "20701404",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wolf",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Wolf",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Wolf",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

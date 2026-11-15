@@ -153,7 +153,28 @@
               "startedAt": 1697905128,
               "phaseOrder": 4,
               "roundOrder": 1,
-              "setId": "66674135"
+              "setId": "66674135",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

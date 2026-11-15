@@ -88,7 +88,28 @@
                   "title": "Lury´s Birthday Invitacional | Winners Round 1 - LeManija (Mario) vs. El Pastoso (Samus)",
                   "thumbnail": "https://i.ytimg.com/vi/BGocUiWTQZg/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Mario",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/lury-s-birthday-invitacional/event/project",
@@ -113,7 +134,22 @@
                   "title": "Lury´s Birthday Invitacional | Losers Round 1 - LeManija (Mario) vs. Abridura (Marth)",
                   "thumbnail": "https://i.ytimg.com/vi/_79qChZu16o/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/lury-s-birthday-invitacional/event/project",
@@ -138,7 +174,22 @@
                   "title": "Lury´s Birthday Invitacional - Losers Round 2 - LeManija (Mario) vs. Bella (Peach)",
                   "thumbnail": "https://i.ytimg.com/vi/X823gLY2qZE/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/lury-s-birthday-invitacional/event/project",
@@ -155,7 +206,22 @@
               "startedAt": 1774768893,
               "phaseOrder": 1,
               "roundOrder": -6,
-              "setId": "101010586"
+              "setId": "101010586",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

@@ -276,7 +276,9 @@
   function getPlayerRankings(playerTag, playerId) {
     if (!rankingsCache || (!playerTag && !playerId)) return [];
     const id = String(playerId || '').trim();
-    if (id && rankingsCache.playerRankingsById?.has(id)) return rankingsCache.playerRankingsById.get(id);
+    // An explicit profile ID is authoritative. Falling back to a tag when it
+    // has no ranking would reintroduce collisions for duplicate/case-only tags.
+    if (id) return rankingsCache.playerRankingsById?.get(id) || [];
     const value = String(playerTag || '').trim();
     if (rankingsCache.playerRankingsById?.has(value)) return rankingsCache.playerRankingsById.get(value);
     const norm = value.toLowerCase();

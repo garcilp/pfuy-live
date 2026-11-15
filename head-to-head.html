@@ -25,18 +25,18 @@
   <div class="lang glass pill"><button type="button" class="lang-btn on" data-lang="en">EN</button><button type="button" class="lang-btn" data-lang="es">ES</button></div>
 </header>
 <main class="h2h-page page-single">
-  <div class="h2h-heading"><div><div class="eyebrow mono" data-i18n="h2h.eyebrow">PLAYER DATA / HEAD-TO-HEAD</div><h1 data-i18n="h2h.title">Compare players</h1></div><a class="pill-btn glass" href="players.html" data-i18n="h2h.back">Players</a></div>
+  <div class="h2h-heading"><div><div class="eyebrow mono" data-i18n="h2h.eyebrow">PLAYER DATA / HEAD-TO-HEAD</div><h1 id="h2h-title">Compare players</h1></div></div>
   <section class="h2h-controls glass" aria-label="Comparison controls">
-    <label><span data-i18n="h2h.player1">Player 1</span><select id="player-one" class="game-filter glass"><option value="" data-i18n="h2h.choosePlayer">Choose player</option></select></label>
-    <label><span data-i18n="h2h.player2">Player 2</span><select id="player-two" class="game-filter glass"><option value="" data-i18n="h2h.choosePlayer">Choose player</option></select></label>
-    <label><span data-i18n="h2h.game">Game</span><select id="h2h-game" class="game-filter glass" aria-label="Game" disabled><option value="">Choose players first</option></select></label>
-    <label><span data-i18n="h2h.period">Period</span><select id="h2h-period" class="game-filter glass" aria-label="Period" disabled><option value="all">All history</option></select></label>
-    <label><span data-i18n="h2h.phase">Phase</span><select id="h2h-phase" class="game-filter glass" aria-label="Phase"><option value="all" data-i18n="h2h.filter.allPhases">All phases</option><option value="pools" data-i18n="h2h.filter.pools">Pools</option><option value="bracket" data-i18n="h2h.filter.bracket">Bracket</option><option value="top8" data-i18n="h2h.filter.top8">Top 8</option><option value="top3" data-i18n="h2h.filter.top3">Top 3</option></select></label>
+    <label><span data-i18n="h2h.player2">Opponent</span><select id="player-two" class="game-filter glass" aria-label="Opponent"><option value="" data-i18n="h2h.choosePlayer">Choose opponent</option></select></label>
+    <label><span data-i18n="h2h.game">Game</span><select id="h2h-game" class="game-filter glass" aria-label="Game" title="Game" disabled><option value="">Choose opponent first</option></select></label>
+    <label><span data-i18n="h2h.period">Period</span><select id="h2h-period" class="game-filter glass" aria-label="Period" title="Period" disabled><option value="all">All history</option></select></label>
+    <label><span data-i18n="h2h.phase">Phase</span><select id="h2h-phase" class="game-filter glass" aria-label="Phase" title="Phase"><option value="all" data-i18n="h2h.filter.allPhases">All phases</option><option value="pools" data-i18n="h2h.filter.pools">Pools</option><option value="bracket" data-i18n="h2h.filter.bracket">Bracket</option><option value="top8" data-i18n="h2h.filter.top8">Top 8</option><option value="top3" data-i18n="h2h.filter.top3">Top 3</option></select></label>
   </section>
   <div id="h2h-status" class="h2h-status mono muted" role="status" aria-live="polite"></div>
   <div id="h2h-content" hidden></div>
 </main>
 <footer class="foot mono muted"><span data-i18n="footer.source">Source: start.gg API · Served from local cache · Last synced</span> <span id="synced"></span></footer>
+<script src="js/pr-badges.js"></script>
 <script src="js/head-to-head.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/mobile-nav.js"></script>

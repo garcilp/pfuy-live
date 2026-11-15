@@ -82,7 +82,28 @@
               "startedAt": 1729979431,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "81522207"
+              "setId": "81522207",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ranno",
+                  "opponentCharacter": "Zetterburn",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ranno",
+                  "opponentCharacter": "Ori",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Ori",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",
@@ -99,7 +120,22 @@
               "startedAt": 1729981289,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "81522279"
+              "setId": "81522279",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Shovel Knight",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Shovel Knight",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",
@@ -124,7 +160,28 @@
                   "title": "CrossUp '24 | Singles | Winners Round 1 - Muro (Ranno, Wrastor) vs Solid (Zetterburn, Ori)",
                   "thumbnail": "https://i.ytimg.com/vi/8pzwE32y4Tw/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Ranno",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -262,7 +319,22 @@
               "startedAt": 1668882430,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "54345805"
+              "setId": "54345805",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -279,7 +351,22 @@
               "startedAt": 1668882504,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "54345808"
+              "setId": "54345808",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -296,7 +383,22 @@
               "startedAt": 1668882554,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "54345802"
+              "setId": "54345802",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -321,7 +423,22 @@
                   "title": "Ultimate Smashdown #12 | Winners Top 64 - Kabedon (Pikachu) vs. Zoro (Fox, Mewtwo)",
                   "thumbnail": "https://i.ytimg.com/vi/a2UGs2Zr7mc/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -338,7 +455,22 @@
               "startedAt": 1668887600,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "54350614"
+              "setId": "54350614",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -355,7 +487,28 @@
               "startedAt": 1668889567,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "54350714"
+              "setId": "54350714",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucina",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

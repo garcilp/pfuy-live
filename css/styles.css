@@ -159,7 +159,7 @@ h1,h2,p{margin:0}.mono{font-family:'JetBrains Mono',monospace}.muted{color:var(-
 .result-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .expand-hint{font:11px 'JetBrains Mono',monospace}
 .load-more-results{display:block;margin:14px auto 0}
-.set-details{min-width:520px;margin:4px 4px 6px;padding:10px 12px 4px;border:1px solid var(--line);border-radius:0;background:var(--faint)}
+.set-details{min-width:520px;margin:4px 4px 6px;padding:10px 12px 4px;border:0;border-radius:0;background:transparent}
 .set-details.best-finish-sets-expanded{margin:0;border:0}
 .set-head,.set-row{display:grid;grid-template-columns:minmax(120px,1.2fr) minmax(140px,2fr) minmax(70px,.7fr) minmax(90px,.8fr) minmax(44px,.4fr);gap:12px;align-items:center}
 .set-head{padding:0 8px 8px;font:11px 'JetBrains Mono',monospace;color:var(--muted)}

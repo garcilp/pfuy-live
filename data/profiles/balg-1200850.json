@@ -51,12 +51,12 @@
       "upsets": 0,
       "bestPlace": 9,
       "bestEvent": "Montevideo Melee Monthly 2019 #4 · Melee Singles",
-      "avgPlace": 9.0,
+      "avgPlace": 9,
       "avgSeed": 12,
       "characters": [
         {
           "name": "Falco",
-          "usage": 100.0
+          "usage": 100
         }
       ],
       "notableWins": [],
@@ -121,7 +121,28 @@
               "isUpset": false,
               "startedAt": 1556393924,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "setId": "20058763",
@@ -139,7 +160,34 @@
               "isUpset": false,
               "startedAt": 1556394653,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Falco",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "setId": "20058767",
@@ -157,7 +205,28 @@
               "isUpset": false,
               "startedAt": 1556397350,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Falco",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

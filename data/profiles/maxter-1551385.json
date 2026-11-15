@@ -293,7 +293,22 @@
               "startedAt": 1653163873,
               "phaseOrder": 1,
               "roundOrder": -3,
-              "setId": "47578937"
+              "setId": "47578937",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kazuya",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Kazuya",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-6/event/ultimate-smashdown-6-categoria-b",
@@ -326,7 +341,28 @@
               "startedAt": 1653166811,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "47578943"
+              "setId": "47578943",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Kazuya",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

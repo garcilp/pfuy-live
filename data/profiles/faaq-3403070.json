@@ -439,7 +439,22 @@
               "startedAt": 1784399707,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "105443850"
+              "setId": "105443850",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Dark Pit",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Corrin",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
@@ -456,7 +471,22 @@
               "startedAt": 1784400533,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "105443862"
+              "setId": "105443862",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
@@ -481,7 +511,22 @@
                   "title": "Mashito GO #5 | Winners Quarters - Faaq (Greninja) vs Freakazoiid (Pikachu)",
                   "thumbnail": "https://i.ytimg.com/vi/aS6uigO6TZ0/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
@@ -506,7 +551,28 @@
                   "title": "Mashito GO #5 | Winners Semis - faaq (Greninja, Terry) vs RIGONARDO (Pokemon Trainer)",
                   "thumbnail": "https://i.ytimg.com/vi/7xsnJhCihm8/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
@@ -523,7 +589,40 @@
               "startedAt": 1784410258,
               "phaseOrder": 3,
               "roundOrder": -4,
-              "setId": "105461465"
+              "setId": "105461465",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Greninja",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Greninja",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Terry",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
@@ -540,7 +639,40 @@
               "startedAt": 1784412738,
               "phaseOrder": 3,
               "roundOrder": -5,
-              "setId": "105461467"
+              "setId": "105461467",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Greninja",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
@@ -565,7 +697,34 @@
                   "title": "Mashito GO #5 | Losers Finals - Faaq (Terry, Captain Falcon) vs RIGONARDO (Pokemon Trainer, Cloud)",
                   "thumbnail": "https://i.ytimg.com/vi/vVfIngDjgT4/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Captain Falcon",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
@@ -590,7 +749,28 @@
                   "title": "Mashito GO #5 | Grand Final - Rockletz (Steve) vs Faaq (Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/onZx6eLVV4c/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -637,7 +817,22 @@
               "startedAt": 1778955889,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "102944429"
+              "setId": "102944429",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Captain Falcon",
+                  "opponentCharacter": "Corrin",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
@@ -654,7 +849,22 @@
               "startedAt": 1778960822,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "102954230"
+              "setId": "102954230",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Rosalina",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
@@ -671,7 +881,22 @@
               "startedAt": 1778964061,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "102954242"
+              "setId": "102954242",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Piranha Plant",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
@@ -688,7 +913,28 @@
               "startedAt": 1778967944,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "102954248"
+              "setId": "102954248",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
@@ -713,7 +959,40 @@
                   "title": "Mashito GO #4 | Winners Semis - Faaq (Terry, Pit, Incineroar) vs Batipeta (Lucas, ROB)",
                   "thumbnail": "https://i.ytimg.com/vi/HFf4xwiKELo/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
@@ -738,7 +1017,28 @@
                   "title": "Mashito GO #4 | Winners Final - Faaq (Terry, Min Min) vs Rockletz (Steve)",
                   "thumbnail": "https://i.ytimg.com/vi/Ytu22Met5Bo/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
@@ -763,7 +1063,40 @@
                   "title": "Mashito GO #4 | Losers Finals - faaq (Terry, Min Min) vs Batipeta (ROB, Lucas)",
                   "thumbnail": "https://i.ytimg.com/vi/5NsS7EUrWIs/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Terry",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
@@ -788,7 +1121,34 @@
                   "title": "Mashito GO #4 | Grand Final - Rockletz (Steve) vs faaq (Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/43e8OH5H2-4/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -849,7 +1209,22 @@
               "startedAt": 1763229084,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "96321075"
+              "setId": "96321075",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Captain Falcon",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Wario",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -866,7 +1241,22 @@
               "startedAt": 1763235208,
               "phaseOrder": 6,
               "roundOrder": 1,
-              "setId": "96329375"
+              "setId": "96329375",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucina",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucina",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -883,7 +1273,22 @@
               "startedAt": 1763237182,
               "phaseOrder": 6,
               "roundOrder": 2,
-              "setId": "96329387"
+              "setId": "96329387",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -917,7 +1322,34 @@
               "startedAt": 1763244048,
               "phaseOrder": 5,
               "roundOrder": 1,
-              "setId": "96347381"
+              "setId": "96347381",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -934,7 +1366,28 @@
               "startedAt": 1763245830,
               "phaseOrder": 5,
               "roundOrder": 2,
-              "setId": "96347382"
+              "setId": "96347382",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -951,7 +1404,28 @@
               "startedAt": 1763249264,
               "phaseOrder": 5,
               "roundOrder": -6,
-              "setId": "96347398"
+              "setId": "96347398",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Random Character",
+                  "opponentCharacter": "Random Character",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Random Character",
+                  "opponentCharacter": "Random Character",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Random Character",
+                  "opponentCharacter": "Random Character",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -968,7 +1442,28 @@
               "startedAt": 1763250270,
               "phaseOrder": 5,
               "roundOrder": 3,
-              "setId": "96347383"
+              "setId": "96347383",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1019,7 +1514,22 @@
               "startedAt": 1760809803,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "95172475"
+              "setId": "95172475",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Captain Falcon",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Captain Falcon",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1036,7 +1546,22 @@
               "startedAt": 1760812914,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "95172487"
+              "setId": "95172487",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1053,7 +1578,22 @@
               "startedAt": 1760814678,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "95172493"
+              "setId": "95172493",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1070,7 +1610,34 @@
               "startedAt": 1760821983,
               "phaseOrder": 5,
               "roundOrder": 1,
-              "setId": "95194089"
+              "setId": "95194089",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1087,7 +1654,28 @@
               "startedAt": 1760824249,
               "phaseOrder": 5,
               "roundOrder": 2,
-              "setId": "95194090"
+              "setId": "95194090",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1104,7 +1692,34 @@
               "startedAt": 1760826748,
               "phaseOrder": 5,
               "roundOrder": -6,
-              "setId": "95194106"
+              "setId": "95194106",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
@@ -1121,7 +1736,28 @@
               "startedAt": 1760827966,
               "phaseOrder": 5,
               "roundOrder": 3,
-              "setId": "95194091"
+              "setId": "95194091",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1166,7 +1802,22 @@
               "startedAt": 1755973226,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "92988498"
+              "setId": "92988498",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
@@ -1183,7 +1834,22 @@
               "startedAt": 1755974938,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "92988502"
+              "setId": "92988502",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
@@ -1200,7 +1866,22 @@
               "startedAt": 1755979656,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "92999006"
+              "setId": "92999006",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
@@ -1217,7 +1898,28 @@
               "startedAt": 1755982774,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "92999012"
+              "setId": "92999012",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
@@ -1234,7 +1936,34 @@
               "startedAt": 1755985624,
               "phaseOrder": 5,
               "roundOrder": 1,
-              "setId": "93009811"
+              "setId": "93009811",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
@@ -1251,7 +1980,34 @@
               "startedAt": 1755989109,
               "phaseOrder": 5,
               "roundOrder": 2,
-              "setId": "93009812"
+              "setId": "93009812",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
@@ -1268,7 +2024,34 @@
               "startedAt": 1755991041,
               "phaseOrder": 5,
               "roundOrder": -6,
-              "setId": "93009828"
+              "setId": "93009828",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
@@ -1285,7 +2068,28 @@
               "startedAt": 1755992038,
               "phaseOrder": 5,
               "roundOrder": 3,
-              "setId": "93009813"
+              "setId": "93009813",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1330,7 +2134,22 @@
               "startedAt": 1752947800,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "91587206"
+              "setId": "91587206",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -1347,7 +2166,22 @@
               "startedAt": 1752948601,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "91587210"
+              "setId": "91587210",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -1364,7 +2198,22 @@
               "startedAt": 1752951886,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "91592162"
+              "setId": "91592162",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -1381,7 +2230,28 @@
               "startedAt": 1752955303,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "91592168"
+              "setId": "91592168",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -1406,7 +2276,34 @@
                   "title": "Ultimate Smashdown #31 | Winners Semis - Faaq (Terry) vs ZAPO (Yoshi)",
                   "thumbnail": "https://i.ytimg.com/vi/YosNNwHEVKY/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -1431,7 +2328,28 @@
                   "title": "Ultimate Smashdown #31 | Winners Final - Faaq (Terry) vs Rockletz (Steve)",
                   "thumbnail": "https://i.ytimg.com/vi/FrmUWd_S_z0/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
@@ -1456,7 +2374,34 @@
                   "title": "Ultimate Smashdown #31 | Losers Finals - RIGONARDO (Pokemon Trainer) vs Faaq (Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/jQw2It4pfGI/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1501,7 +2446,22 @@
               "startedAt": 1750527984,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "90513256"
+              "setId": "90513256",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1518,7 +2478,22 @@
               "startedAt": 1750528117,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "90513259"
+              "setId": "90513259",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Wario",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1535,7 +2510,22 @@
               "startedAt": 1750533455,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "90519565"
+              "setId": "90519565",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1552,7 +2542,28 @@
               "startedAt": 1750535719,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "90519571"
+              "setId": "90519571",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1569,7 +2580,22 @@
               "startedAt": 1750537714,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "90519631"
+              "setId": "90519631",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1586,7 +2612,28 @@
               "startedAt": 1750539485,
               "phaseOrder": 5,
               "roundOrder": -3,
-              "setId": "90535198"
+              "setId": "90535198",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1603,7 +2650,28 @@
               "startedAt": 1750541517,
               "phaseOrder": 5,
               "roundOrder": -4,
-              "setId": "90535200"
+              "setId": "90535200",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1620,7 +2688,28 @@
               "startedAt": 1750543952,
               "phaseOrder": 5,
               "roundOrder": -5,
-              "setId": "90535202"
+              "setId": "90535202",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1637,7 +2726,34 @@
               "startedAt": 1750545092,
               "phaseOrder": 5,
               "roundOrder": -6,
-              "setId": "90535203"
+              "setId": "90535203",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
@@ -1654,7 +2770,28 @@
               "startedAt": 1750545924,
               "phaseOrder": 5,
               "roundOrder": 3,
-              "setId": "90535188"
+              "setId": "90535188",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1707,7 +2844,22 @@
               "startedAt": 1748107228,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "89438075"
+              "setId": "89438075",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -1724,7 +2876,22 @@
               "startedAt": 1748108995,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "89438078"
+              "setId": "89438078",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -1749,7 +2916,22 @@
                   "title": "Ultimate Smashdown #29 | Winners Round 2 - Faaq (Terry) vs Mergest Kingdom (Pac-Man)",
                   "thumbnail": "https://i.ytimg.com/vi/dldETeNvvB8/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -1766,7 +2948,28 @@
               "startedAt": 1748118031,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "89448389"
+              "setId": "89448389",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -1791,7 +2994,28 @@
                   "title": "Ultimate Smashdown #29 | Winners Semis - Faaq (Pichu) vs J (Little Mac)",
                   "thumbnail": "https://i.ytimg.com/vi/SOuZjDiONig/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -1841,7 +3065,28 @@
                   "title": "Ultimate Smashdown #29 | Grand Final - Kapito22 (Mr. Game & Watch) vs Faaq (Terry, Pichu)",
                   "thumbnail": "https://i.ytimg.com/vi/Tnk8mKlmDy4/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pichu",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
@@ -1866,7 +3111,34 @@
                   "title": "Ultimate Smashdown #29 | Losers Finals - J (Little Mac) vs Faaq (Pichu)",
                   "thumbnail": "https://i.ytimg.com/vi/0LE8I3KVSdw/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Pichu",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1911,7 +3183,22 @@
               "startedAt": 1744478796,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "87730732"
+              "setId": "87730732",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-28/event/ultimate-singles",
@@ -1961,7 +3248,22 @@
                   "title": "Ultimate Smashdown #28 | Winners Round 2 - ENEMA (Diddy Kong) vs Faaq (Pichu)",
                   "thumbnail": "https://i.ytimg.com/vi/ALJDtr8ignU/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-28/event/ultimate-singles",
@@ -1978,7 +3280,22 @@
               "startedAt": 1744484962,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "87737452"
+              "setId": "87737452",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-28/event/ultimate-singles",
@@ -1995,7 +3312,22 @@
               "startedAt": 1744486067,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "87737459"
+              "setId": "87737459",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-28/event/ultimate-singles",
@@ -2012,7 +3344,28 @@
               "startedAt": 1744487190,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "87737463"
+              "setId": "87737463",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pichu",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-28/event/ultimate-singles",
@@ -2029,7 +3382,28 @@
               "startedAt": 1744489977,
               "phaseOrder": 5,
               "roundOrder": -3,
-              "setId": "87750405"
+              "setId": "87750405",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2084,7 +3458,22 @@
                   "title": "Ultimate Smashdown #27 | Pools - Faaq (Pichu) vs Sigma (Link)",
                   "thumbnail": "https://i.ytimg.com/vi/Pe-4Pz7EIZs/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2101,7 +3490,28 @@
               "startedAt": 1742061960,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "86609214"
+              "setId": "86609214",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pichu",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2118,7 +3528,22 @@
               "startedAt": 1742066954,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "86620024"
+              "setId": "86620024",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2135,7 +3560,22 @@
               "startedAt": 1742068725,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "86620031"
+              "setId": "86620031",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2160,7 +3600,40 @@
                   "title": "Ultimate Smashdown #27 | Winners Semis - RIGONARDO (Pokemon Trainer) vs Faaq (Pichu)",
                   "thumbnail": "https://i.ytimg.com/vi/OnbyAvEX0Yc/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pichu",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Pichu",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Pichu",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
@@ -2177,7 +3650,28 @@
               "startedAt": 1742075004,
               "phaseOrder": 5,
               "roundOrder": -4,
-              "setId": "86634578"
+              "setId": "86634578",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pichu",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pichu",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2220,7 +3714,22 @@
               "startedAt": 1729360493,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "81179721"
+              "setId": "81179721",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Daisy",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Daisy",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
@@ -2237,7 +3746,22 @@
               "startedAt": 1729364062,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "81179724"
+              "setId": "81179724",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
@@ -2254,7 +3778,22 @@
               "startedAt": 1729365043,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "81188701"
+              "setId": "81188701",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
@@ -2271,7 +3810,22 @@
               "startedAt": 1729366801,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "81188726"
+              "setId": "81188726",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
@@ -2288,7 +3842,22 @@
               "startedAt": 1729367587,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "81188842"
+              "setId": "81188842",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2333,7 +3902,28 @@
               "startedAt": 1726939475,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "80013861"
+              "setId": "80013861",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2358,7 +3948,28 @@
                   "title": "Ultimate Smashdown #25 | Pools - Faaq (Terry) vs Pulga (King DeDeDe)",
                   "thumbnail": "https://i.ytimg.com/vi/CgxpdfAfeGo/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2375,7 +3986,28 @@
               "startedAt": 1726947081,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "80025418"
+              "setId": "80025418",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2400,7 +4032,22 @@
                   "title": "Ultimate Smashdown #25 | Winners Quarters - Faaq (Terry) vs Lazerth (Villager)",
                   "thumbnail": "https://i.ytimg.com/vi/8XqmS-wVfxA/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
@@ -2459,7 +4106,22 @@
               "startedAt": 1724520828,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "78762952"
+              "setId": "78762952",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
@@ -2476,7 +4138,22 @@
               "startedAt": 1724526457,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "78775523"
+              "setId": "78775523",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
@@ -2493,7 +4170,22 @@
               "startedAt": 1724528686,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "78775531"
+              "setId": "78775531",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
@@ -2518,7 +4210,28 @@
                   "title": "Ultimate Smashdown #24 | Winners Quarters - RIGONARDO (Ganondorf) vs Faaq (Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/6DkvrJzmyDQ/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
@@ -2535,7 +4248,28 @@
               "startedAt": 1724537543,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "78775595"
+              "setId": "78775595",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2595,7 +4329,22 @@
               "startedAt": 1720891985,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "77012023"
+              "setId": "77012023",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -2612,7 +4361,22 @@
               "startedAt": 1720892449,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "77012027"
+              "setId": "77012027",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -2629,7 +4393,28 @@
               "startedAt": 1720897531,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "77025364"
+              "setId": "77025364",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -2646,7 +4431,22 @@
               "startedAt": 1720898784,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "77025375"
+              "setId": "77025375",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -2663,7 +4463,22 @@
               "startedAt": 1720899605,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "77025431"
+              "setId": "77025431",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Dark Pit",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Dark Pit",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -2680,7 +4495,22 @@
               "startedAt": 1720901186,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "77025437"
+              "setId": "77025437",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/nsgdown/event/ultimate-singles",
@@ -2697,7 +4527,22 @@
               "startedAt": 1720901683,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "77025441"
+              "setId": "77025441",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2742,7 +4587,22 @@
               "startedAt": 1719076422,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "76217340"
+              "setId": "76217340",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -2767,7 +4627,28 @@
                   "title": "Ultimate Smashdown #23 | Pools - ENEMA (Diddy Kong) vs Faaq (Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/t1SswB8h9qk/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -2784,7 +4665,22 @@
               "startedAt": 1719083871,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "76228788"
+              "setId": "76228788",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -2809,7 +4705,22 @@
                   "title": "Ultimate Smashdown #23 | Losers Round 1 - Catwo (Donkey Kong) vs Faaq (Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/aMZPjnduUY4/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -2826,7 +4737,22 @@
               "startedAt": 1719086244,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "76228846"
+              "setId": "76228846",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
@@ -2843,7 +4769,22 @@
               "startedAt": 1719087589,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "76228850"
+              "setId": "76228850",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -2886,7 +4827,22 @@
               "startedAt": 1714236664,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "73966148"
+              "setId": "73966148",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -2903,7 +4859,22 @@
               "startedAt": 1714237858,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "73966155"
+              "setId": "73966155",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -2920,7 +4891,22 @@
               "startedAt": 1714243574,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "73977564"
+              "setId": "73977564",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Snake",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Snake",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -2937,7 +4923,28 @@
               "startedAt": 1714245993,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "73977622"
+              "setId": "73977622",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -2954,7 +4961,22 @@
               "startedAt": 1714248044,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "73977630"
+              "setId": "73977630",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
@@ -2971,7 +4993,22 @@
               "startedAt": 1714248848,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "73977635"
+              "setId": "73977635",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3018,7 +5055,22 @@
               "startedAt": 1710607175,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "72117477"
+              "setId": "72117477",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
@@ -3035,7 +5087,22 @@
               "startedAt": 1710610276,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "72117479"
+              "setId": "72117479",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
@@ -3052,7 +5119,22 @@
               "startedAt": 1710614396,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "72128278"
+              "setId": "72128278",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Ryu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
@@ -3077,7 +5159,28 @@
                   "title": "Ultimate Smashdown #20 | Winners Round 2 - ENEMA (Diddy Kong) vs Faaq (Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/g5RmWo1QOgM/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
@@ -3094,7 +5197,22 @@
               "startedAt": 1710617333,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "72128354"
+              "setId": "72128354",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
@@ -3111,7 +5229,22 @@
               "startedAt": 1710618526,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "72128359"
+              "setId": "72128359",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
@@ -3128,7 +5261,28 @@
               "startedAt": 1710619939,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "72128363"
+              "setId": "72128363",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3177,7 +5331,22 @@
               "startedAt": 1702139463,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "68537797"
+              "setId": "68537797",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-19/event/ultimate-singles",
@@ -3194,7 +5363,22 @@
               "startedAt": 1702143003,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "68537800"
+              "setId": "68537800",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-19/event/ultimate-singles",
@@ -3211,7 +5395,22 @@
               "startedAt": 1702147865,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "68543833"
+              "setId": "68543833",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-19/event/ultimate-singles",
@@ -3228,7 +5427,22 @@
               "startedAt": 1702149597,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "68543844"
+              "setId": "68543844",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-19/event/ultimate-singles",
@@ -3245,7 +5459,22 @@
               "startedAt": 1702149949,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "68543900"
+              "setId": "68543900",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-19/event/ultimate-singles",
@@ -3262,7 +5491,28 @@
               "startedAt": 1702151178,
               "phaseOrder": 2,
               "roundOrder": -5,
-              "setId": "68543906"
+              "setId": "68543906",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3311,7 +5561,22 @@
               "startedAt": 1697897225,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "66669980"
+              "setId": "66669980",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
@@ -3328,7 +5593,22 @@
               "startedAt": 1697897520,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "66669977"
+              "setId": "66669977",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
@@ -3353,7 +5633,22 @@
                   "title": "Ultimate Smashdown #17 | Pools - Faaq (Samus) vs Thithi (Incineroar, King K. Rool)",
                   "thumbnail": "https://i.ytimg.com/vi/5McYhhAjb9s/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
@@ -3370,7 +5665,22 @@
               "startedAt": 1697900794,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "66669979"
+              "setId": "66669979",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Corrin",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
@@ -3387,7 +5697,22 @@
               "startedAt": 1697904319,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "66675212"
+              "setId": "66675212",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
@@ -3404,7 +5729,22 @@
               "startedAt": 1697906481,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "66675226"
+              "setId": "66675226",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
@@ -3421,7 +5761,22 @@
               "startedAt": 1697908198,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "66675233"
+              "setId": "66675233",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
@@ -3438,7 +5793,28 @@
               "startedAt": 1697909741,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "66675295"
+              "setId": "66675295",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
@@ -3455,7 +5831,40 @@
               "startedAt": 1697912619,
               "phaseOrder": 3,
               "roundOrder": -3,
-              "setId": "66685095"
+              "setId": "66685095",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3512,7 +5921,28 @@
                   "title": "Ultimate Smashdown #16 | Pools - Faaq (Terry) vs Sigma (Sephiroth)",
                   "thumbnail": "https://i.ytimg.com/vi/8mjAXjyuFQE/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3529,7 +5959,22 @@
               "startedAt": 1695490605,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "65491412"
+              "setId": "65491412",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3546,7 +5991,22 @@
               "startedAt": 1695491262,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "65491409"
+              "setId": "65491409",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3563,7 +6023,28 @@
               "startedAt": 1695496131,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "65507003"
+              "setId": "65507003",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Samus",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3580,7 +6061,22 @@
               "startedAt": 1695496766,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "65507014"
+              "setId": "65507014",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
@@ -3597,7 +6093,22 @@
               "startedAt": 1695497139,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "65507070"
+              "setId": "65507070",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Dark Pit",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3646,7 +6157,22 @@
               "startedAt": 1692468606,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "64074985"
+              "setId": "64074985",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
@@ -3663,7 +6189,22 @@
               "startedAt": 1692468654,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "64074974"
+              "setId": "64074974",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
@@ -3680,7 +6221,22 @@
               "startedAt": 1692468716,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "64074981"
+              "setId": "64074981",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
@@ -3697,7 +6253,22 @@
               "startedAt": 1692471127,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "64074978"
+              "setId": "64074978",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
@@ -3731,7 +6302,28 @@
               "startedAt": 1692478563,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "64084463"
+              "setId": "64084463",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
@@ -3748,7 +6340,22 @@
               "startedAt": 1692480024,
               "phaseOrder": 2,
               "roundOrder": 3,
-              "setId": "64084478"
+              "setId": "64084478",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
@@ -3765,7 +6372,22 @@
               "startedAt": 1692482530,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "64084602"
+              "setId": "64084602",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
@@ -3782,7 +6404,28 @@
               "startedAt": 1692483838,
               "phaseOrder": 2,
               "roundOrder": -7,
-              "setId": "64084608"
+              "setId": "64084608",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3846,7 +6489,22 @@
               "startedAt": 1690047564,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "62967277"
+              "setId": "62967277",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3863,7 +6521,22 @@
               "startedAt": 1690049209,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "62967308"
+              "setId": "62967308",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3880,7 +6553,22 @@
               "startedAt": 1690053116,
               "phaseOrder": 3,
               "roundOrder": 2,
-              "setId": "62973381"
+              "setId": "62973381",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Random Character",
+                  "opponentCharacter": "Random Character",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "SINGLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3897,7 +6585,28 @@
               "startedAt": 1690055603,
               "phaseOrder": 3,
               "roundOrder": 3,
-              "setId": "62973390"
+              "setId": "62973390",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "SINGLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3914,7 +6623,28 @@
               "startedAt": 1690057257,
               "phaseOrder": 3,
               "roundOrder": 4,
-              "setId": "62973395"
+              "setId": "62973395",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "SINGLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3931,7 +6661,22 @@
               "startedAt": 1690058496,
               "phaseOrder": 3,
               "roundOrder": 5,
-              "setId": "62973397"
+              "setId": "62973397",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "SINGLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -3948,7 +6693,22 @@
               "startedAt": 1690059612,
               "phaseOrder": 3,
               "roundOrder": 7,
-              "setId": "62973399"
+              "setId": "62973399",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "SINGLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -3999,7 +6759,22 @@
               "startedAt": 1687624216,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "61909495"
+              "setId": "61909495",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-14/event/ultimate-singles",
@@ -4016,7 +6791,22 @@
               "startedAt": 1687627809,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "61909491"
+              "setId": "61909491",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-14/event/ultimate-singles",
@@ -4041,7 +6831,22 @@
                   "title": "Ultimate Smashdown #14 | Pools - Pivot (Byleth) vs Faaq (Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/Q3q8m6VdP5Y/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-14/event/ultimate-singles",
@@ -4058,7 +6863,22 @@
               "startedAt": 1687628353,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "61909499"
+              "setId": "61909499",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-14/event/ultimate-singles",
@@ -4091,7 +6911,22 @@
               "startedAt": 1687630823,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "61916380"
+              "setId": "61916380",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-14/event/ultimate-singles",
@@ -4108,7 +6943,22 @@
               "startedAt": 1687634489,
               "phaseOrder": 2,
               "roundOrder": -4,
-              "setId": "61916388"
+              "setId": "61916388",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -4155,7 +7005,22 @@
               "startedAt": 1682185014,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "59613013"
+              "setId": "59613013",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4172,7 +7037,22 @@
               "startedAt": 1682185049,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "59613005"
+              "setId": "59613005",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4189,7 +7069,22 @@
               "startedAt": 1682186479,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "59613018"
+              "setId": "59613018",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4231,7 +7126,28 @@
               "startedAt": 1682190561,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "59613009"
+              "setId": "59613009",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Snake",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4248,7 +7164,28 @@
               "startedAt": 1682194505,
               "phaseOrder": 4,
               "roundOrder": 1,
-              "setId": "59627497"
+              "setId": "59627497",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4265,7 +7202,22 @@
               "startedAt": 1682196863,
               "phaseOrder": 4,
               "roundOrder": -3,
-              "setId": "59627529"
+              "setId": "59627529",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4282,7 +7234,22 @@
               "startedAt": 1682197663,
               "phaseOrder": 4,
               "roundOrder": -4,
-              "setId": "59627533"
+              "setId": "59627533",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4315,7 +7282,22 @@
               "startedAt": 1682199540,
               "phaseOrder": 4,
               "roundOrder": -6,
-              "setId": "59627539"
+              "setId": "59627539",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4332,7 +7314,22 @@
               "startedAt": 1682200769,
               "phaseOrder": 4,
               "roundOrder": -7,
-              "setId": "59627541"
+              "setId": "59627541",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4349,7 +7346,28 @@
               "startedAt": 1682201699,
               "phaseOrder": 4,
               "roundOrder": -8,
-              "setId": "59627542"
+              "setId": "59627542",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sora",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sora",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-13/event/singles",
@@ -4374,7 +7392,34 @@
                   "title": "Ultimate Smashdown #13 | Cat B Grand Final - Link (Little Mac) vs. Faaq (Sora, Terry)",
                   "thumbnail": "https://i.ytimg.com/vi/7S0z5IIFrhY/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sora",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Terry",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {

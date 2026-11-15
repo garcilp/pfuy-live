@@ -162,7 +162,22 @@
               "startedAt": 1690047117,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "62967836"
+              "setId": "62967836",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -179,7 +194,22 @@
               "startedAt": 1690050034,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "62967872"
+              "setId": "62967872",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
@@ -196,7 +226,22 @@
               "startedAt": 1690052863,
               "phaseOrder": 3,
               "roundOrder": 2,
-              "setId": "62973376"
+              "setId": "62973376",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "SINGLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -241,7 +286,22 @@
               "startedAt": 1668877610,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "54339636"
+              "setId": "54339636",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -258,7 +318,28 @@
               "startedAt": 1668879778,
               "phaseOrder": 1,
               "roundOrder": 5,
-              "setId": "54339643"
+              "setId": "54339643",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Samus",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -275,7 +356,22 @@
               "startedAt": 1668881352,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "54339639"
+              "setId": "54339639",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -292,7 +388,22 @@
               "startedAt": 1668881853,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "54339634"
+              "setId": "54339634",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Dark Pit",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -309,7 +420,22 @@
               "startedAt": 1668886549,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "54350582"
+              "setId": "54350582",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
@@ -326,7 +452,28 @@
               "startedAt": 1668889018,
               "phaseOrder": 2,
               "roundOrder": -3,
-              "setId": "54350704"
+              "setId": "54350704",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -516,7 +663,22 @@
               "startedAt": 1606597650,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "33703330"
+              "setId": "33703330",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Young Link",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Young Link",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",

@@ -167,7 +167,34 @@
               "startedAt": 1579978197,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "26102861"
+              "setId": "26102861",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Samus",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Samus",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2020-1-1/event/melee-singles",
@@ -184,7 +211,28 @@
               "startedAt": 1579982606,
               "phaseOrder": 2,
               "roundOrder": -6,
-              "setId": "26102932"
+              "setId": "26102932",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Young Link",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -354,7 +402,22 @@
                   "title": "MMM #9 - 2019 | Pools - Blazam vs. Ordo (Resubido)",
                   "thumbnail": "https://i.ytimg.com/vi/koPh3zqK79Q/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -371,7 +434,28 @@
               "startedAt": 1569700802,
               "phaseOrder": 2,
               "roundOrder": 1,
-              "setId": "23507783"
+              "setId": "23507783",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Mario",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -388,7 +472,22 @@
               "startedAt": 1569701930,
               "phaseOrder": 2,
               "roundOrder": 2,
-              "setId": "23507796"
+              "setId": "23507796",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
@@ -405,7 +504,22 @@
               "startedAt": 1569707141,
               "phaseOrder": 2,
               "roundOrder": -7,
-              "setId": "23507923"
+              "setId": "23507923",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -734,7 +848,22 @@
               "startedAt": 1684614341,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "60614965"
+              "setId": "60614965",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucario",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/koopa-series-2/event/singles",
@@ -751,7 +880,22 @@
               "startedAt": 1684615773,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "60615103"
+              "setId": "60615103",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucario",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "R.O.B.",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -796,7 +940,22 @@
               "startedAt": 1661019578,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "50925741"
+              "setId": "50925741",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ridley",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -813,7 +972,22 @@
               "startedAt": 1661024028,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "50925743"
+              "setId": "50925743",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -830,7 +1004,22 @@
               "startedAt": 1661024154,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "50925747"
+              "setId": "50925747",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -855,7 +1044,28 @@
                   "title": "Ultimate Smashdown #9 | Pools - Fanca (Bowser) vs Blazam (Mii Gunner, Ridley, Banjo & Kazooie)",
                   "thumbnail": "https://i.ytimg.com/vi/5T00bPj_QlI/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Ridley",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
@@ -872,7 +1082,28 @@
               "startedAt": 1661024343,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "50925751"
+              "setId": "50925751",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Ridley",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
@@ -889,7 +1120,28 @@
               "startedAt": 1661028532,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "50938880"
+              "setId": "50938880",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
@@ -906,7 +1158,22 @@
               "startedAt": 1661029283,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "50938885"
+              "setId": "50938885",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Min Min",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Min Min",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
@@ -923,7 +1190,22 @@
               "startedAt": 1661030006,
               "phaseOrder": 1,
               "roundOrder": -4,
-              "setId": "50938911"
+              "setId": "50938911",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-categoria-b",
@@ -940,7 +1222,28 @@
               "startedAt": 1661033068,
               "phaseOrder": 1,
               "roundOrder": -5,
-              "setId": "50938915"
+              "setId": "50938915",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sonic",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             }
           ],
           "characterCounts": {
@@ -1007,7 +1310,22 @@
               "startedAt": 1658594195,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "49869197"
+              "setId": "49869197",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -1024,7 +1342,22 @@
               "startedAt": 1658598676,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "49869200"
+              "setId": "49869200",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -1049,7 +1382,22 @@
                   "title": "Ultimate Smashdown #8 | Pools - Blazam (Mii Gunner, Ridley) vs Frog-CT (Inkling)",
                   "thumbnail": "https://i.ytimg.com/vi/lKFG1wq1URU/sddefault.jpg"
                 }
-              ]
+              ],
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
@@ -1066,7 +1414,22 @@
               "startedAt": 1658599141,
               "phaseOrder": 1,
               "roundOrder": 1,
-              "setId": "49869195"
+              "setId": "49869195",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-categoria-b",
@@ -1083,7 +1446,28 @@
               "startedAt": 1658607927,
               "phaseOrder": 1,
               "roundOrder": 2,
-              "setId": "49884197"
+              "setId": "49884197",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-categoria-b",
@@ -1100,7 +1484,22 @@
               "startedAt": 1658608269,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "49884204"
+              "setId": "49884204",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-categoria-b",
@@ -1117,7 +1516,22 @@
               "startedAt": 1658612100,
               "phaseOrder": 1,
               "roundOrder": 4,
-              "setId": "49884207"
+              "setId": "49884207",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "DOUBLE_ELIMINATION"
             },
             {
               "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-categoria-b",
@@ -1346,7 +1760,28 @@
               "startedAt": 1607903821,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "27024973"
+              "setId": "27024973",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": null,
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {},
@@ -1676,7 +2111,22 @@
               "startedAt": 1607902001,
               "phaseOrder": 1,
               "roundOrder": 3,
-              "setId": "23503936"
+              "setId": "23503936",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Banjo-Kazooie",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ],
+              "bracketType": "ROUND_ROBIN"
             }
           ],
           "characterCounts": {
