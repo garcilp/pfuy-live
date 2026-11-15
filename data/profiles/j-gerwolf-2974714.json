@@ -105,7 +105,22 @@
               "isUpset": false,
               "startedAt": 1661021510,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "50928120",
@@ -123,7 +138,22 @@
               "isUpset": false,
               "startedAt": 1661023394,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Link",
+                  "opponentCharacter": "Olimar",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Olimar",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "50928129",
@@ -141,7 +171,22 @@
               "isUpset": false,
               "startedAt": 1661025083,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "50928127",
@@ -160,6 +205,21 @@
               "startedAt": 1661025211,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "B2GRY4-qLik",
@@ -185,7 +245,22 @@
               "isUpset": false,
               "startedAt": 1661025360,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "50938881",
@@ -204,6 +279,21 @@
               "startedAt": 1661027828,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Link",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "vAUUmUCwG1Q",
@@ -229,7 +319,22 @@
               "isUpset": false,
               "startedAt": 1661030053,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

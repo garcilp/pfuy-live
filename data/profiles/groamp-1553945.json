@@ -86,7 +86,9 @@
               "isUpset": false,
               "startedAt": 1575140311,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24984100",
@@ -104,7 +106,22 @@
               "isUpset": false,
               "startedAt": 1575140896,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "24984109",
@@ -122,7 +139,9 @@
               "isUpset": false,
               "startedAt": 1575142369,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24984105",
@@ -140,7 +159,9 @@
               "isUpset": false,
               "startedAt": 1575144664,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             }
           ],
           "characterCounts": {
@@ -232,6 +253,8 @@
               "startedAt": 1575138623,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "tjwij9EqFwI",
@@ -257,7 +280,9 @@
               "isUpset": false,
               "startedAt": 1575139753,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24984227",
@@ -275,7 +300,9 @@
               "isUpset": false,
               "startedAt": 1575139762,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24992102",
@@ -293,7 +320,9 @@
               "isUpset": false,
               "startedAt": 1575146778,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24992216",
@@ -311,7 +340,9 @@
               "isUpset": false,
               "startedAt": 1575147472,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

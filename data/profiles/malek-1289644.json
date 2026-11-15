@@ -194,7 +194,9 @@
               "isUpset": false,
               "startedAt": 1635094734,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705451",
@@ -212,7 +214,9 @@
               "isUpset": false,
               "startedAt": 1635101594,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705459",
@@ -230,7 +234,9 @@
               "isUpset": false,
               "startedAt": 1635101619,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705462",
@@ -248,7 +254,9 @@
               "isUpset": false,
               "startedAt": 1635101741,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705455",
@@ -266,7 +274,9 @@
               "isUpset": false,
               "startedAt": 1635102316,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41714356",
@@ -284,7 +294,9 @@
               "isUpset": false,
               "startedAt": 1635105409,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714368",
@@ -302,7 +314,9 @@
               "isUpset": false,
               "startedAt": 1635105596,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714432",
@@ -320,7 +334,9 @@
               "isUpset": false,
               "startedAt": 1635107755,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714436",
@@ -338,7 +354,9 @@
               "isUpset": false,
               "startedAt": 1635110983,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -388,7 +406,9 @@
               "isUpset": false,
               "startedAt": 1565547144,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22412530",
@@ -406,7 +426,22 @@
               "isUpset": false,
               "startedAt": 1565549253,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pichu",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22412527",
@@ -424,7 +459,9 @@
               "isUpset": true,
               "startedAt": 1565552074,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22416320",
@@ -442,7 +479,22 @@
               "isUpset": false,
               "startedAt": 1565557439,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22416435",
@@ -460,7 +512,28 @@
               "isUpset": true,
               "startedAt": 1565559561,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Ryu",
+                  "opponentCharacter": "Dark Pit",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "22416443",
@@ -478,7 +551,28 @@
               "isUpset": true,
               "startedAt": 1565560279,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "22416451",
@@ -496,7 +590,28 @@
               "isUpset": false,
               "startedAt": 1565561460,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22412535",
@@ -514,7 +629,28 @@
               "isUpset": false,
               "startedAt": 1607901386,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": null,
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -567,7 +703,28 @@
               "isUpset": false,
               "startedAt": 1561834322,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Lucina",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Lucina",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "21421734",
@@ -585,7 +742,22 @@
               "isUpset": false,
               "startedAt": 1561836221,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "21421790",
@@ -603,7 +775,22 @@
               "isUpset": false,
               "startedAt": 1561837503,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "21421796",
@@ -621,7 +808,22 @@
               "isUpset": true,
               "startedAt": 1561841974,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Pit",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Pit",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "21421800",
@@ -639,7 +841,28 @@
               "isUpset": true,
               "startedAt": 1561842850,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "21421803",
@@ -657,7 +880,28 @@
               "isUpset": false,
               "startedAt": 1561844365,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -706,7 +950,9 @@
               "isUpset": false,
               "startedAt": 1555768550,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "19889045",
@@ -724,7 +970,9 @@
               "isUpset": true,
               "startedAt": 1555771595,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "19889061",
@@ -742,7 +990,9 @@
               "isUpset": true,
               "startedAt": 1555774735,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "19889069",
@@ -760,7 +1010,9 @@
               "isUpset": false,
               "startedAt": 1555775488,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

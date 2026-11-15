@@ -77,7 +77,28 @@
               "isUpset": true,
               "startedAt": 1760809194,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Lucario",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "95172471",
@@ -95,7 +116,22 @@
               "isUpset": false,
               "startedAt": 1760810908,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "95172601",
@@ -113,7 +149,22 @@
               "isUpset": false,
               "startedAt": 1760811548,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

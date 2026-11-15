@@ -87,7 +87,9 @@
               "isUpset": false,
               "startedAt": 1578771238,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "25713438",
@@ -106,6 +108,8 @@
               "startedAt": 1578773448,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "Zt8lro4N5Lk",
@@ -132,6 +136,8 @@
               "startedAt": 1578778942,
               "phaseOrder": 2,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "p8dLul3-Ghs",
@@ -157,7 +163,9 @@
               "isUpset": false,
               "startedAt": 1578781439,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "25721891",
@@ -175,7 +183,9 @@
               "isUpset": false,
               "startedAt": 1578782462,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "25713443",
@@ -193,7 +203,22 @@
               "isUpset": false,
               "startedAt": 1607903266,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {},

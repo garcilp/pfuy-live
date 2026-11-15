@@ -87,6 +87,21 @@
               "startedAt": 1690048683,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucina",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucina",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "XxX4BU6jcc8",
@@ -112,7 +127,22 @@
               "isUpset": false,
               "startedAt": 1690051390,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucina",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucina",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "62974278",
@@ -131,6 +161,27 @@
               "startedAt": 1690054092,
               "phaseOrder": 2,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucina",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Palutena",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Palutena",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "8wT2sZvt_bc",
@@ -156,7 +207,22 @@
               "isUpset": false,
               "startedAt": 1690057678,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucina",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucina",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

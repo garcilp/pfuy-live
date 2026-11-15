@@ -89,7 +89,9 @@
               "isUpset": false,
               "startedAt": 1490469714,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "7865333",
@@ -107,7 +109,9 @@
               "isUpset": false,
               "startedAt": 1490471244,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -148,7 +152,9 @@
               "isUpset": false,
               "startedAt": 1722118285,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "77675351",
@@ -166,7 +172,9 @@
               "isUpset": false,
               "startedAt": 1722118317,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "77675419",
@@ -184,7 +192,9 @@
               "isUpset": true,
               "startedAt": 1722118557,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "77675423",
@@ -202,7 +212,9 @@
               "isUpset": false,
               "startedAt": 1722118590,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -360,7 +372,22 @@
               "isUpset": true,
               "startedAt": 1772303088,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "99881242",
@@ -378,7 +405,22 @@
               "isUpset": false,
               "startedAt": 1772306021,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "99889112",
@@ -396,7 +438,22 @@
               "isUpset": false,
               "startedAt": 1772308872,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "99889178",
@@ -414,7 +471,22 @@
               "isUpset": false,
               "startedAt": 1772311245,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -461,7 +533,22 @@
               "isUpset": false,
               "startedAt": 1744477407,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "87730764",
@@ -479,7 +566,22 @@
               "isUpset": false,
               "startedAt": 1744479844,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "87738615",
@@ -497,7 +599,22 @@
               "isUpset": false,
               "startedAt": 1744481725,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "87738619",
@@ -515,7 +632,22 @@
               "isUpset": false,
               "startedAt": 1744486894,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "87738621",
@@ -533,7 +665,28 @@
               "isUpset": false,
               "startedAt": 1744487295,
               "phaseOrder": 4,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "87738622",
@@ -552,6 +705,27 @@
               "startedAt": 1744492261,
               "phaseOrder": 4,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "ezWvrdHHZGo",
@@ -577,7 +751,28 @@
               "isUpset": false,
               "startedAt": 1744492299,
               "phaseOrder": 4,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -622,7 +817,22 @@
               "isUpset": false,
               "startedAt": 1742058774,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "86609241",
@@ -640,7 +850,22 @@
               "isUpset": false,
               "startedAt": 1742059978,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pit",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "86620147",
@@ -659,6 +884,21 @@
               "startedAt": 1742065741,
               "phaseOrder": 4,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "BpQUMyuB_Jg",
@@ -684,7 +924,22 @@
               "isUpset": false,
               "startedAt": 1742068135,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "86620161",
@@ -703,6 +958,21 @@
               "startedAt": 1742070134,
               "phaseOrder": 4,
               "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "d6WXBPYhwgk",
@@ -728,7 +998,22 @@
               "isUpset": false,
               "startedAt": 1742070999,
               "phaseOrder": 4,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "86620224",
@@ -746,7 +1031,22 @@
               "isUpset": false,
               "startedAt": 1742072578,
               "phaseOrder": 4,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "86620226",
@@ -764,7 +1064,28 @@
               "isUpset": false,
               "startedAt": 1742073546,
               "phaseOrder": 4,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "86620227",
@@ -782,7 +1103,28 @@
               "isUpset": false,
               "startedAt": 1742075149,
               "phaseOrder": 4,
-              "roundOrder": -9
+              "roundOrder": -9,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

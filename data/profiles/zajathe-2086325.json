@@ -137,7 +137,9 @@
               "isUpset": false,
               "startedAt": 1650734493,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46624323",
@@ -156,6 +158,8 @@
               "startedAt": 1650735470,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "awKE4qHsl3c",
@@ -181,7 +185,9 @@
               "isUpset": true,
               "startedAt": 1650737610,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46624319",
@@ -199,7 +205,9 @@
               "isUpset": false,
               "startedAt": 1650738607,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46636901",
@@ -217,7 +225,22 @@
               "isUpset": false,
               "startedAt": 1650743311,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucario",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucario",
+                  "opponentCharacter": "Falco",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "46636964",
@@ -235,7 +258,22 @@
               "isUpset": false,
               "startedAt": 1650744499,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucario",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucario",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "46636972",
@@ -253,7 +291,28 @@
               "isUpset": true,
               "startedAt": 1650746368,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucario",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucario",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Lucario",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "46636979",
@@ -271,7 +330,22 @@
               "isUpset": false,
               "startedAt": 1650747441,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucario",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucario",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -317,6 +391,8 @@
               "startedAt": 1606588496,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "YxDhiqLshbA",
@@ -342,7 +418,9 @@
               "isUpset": false,
               "startedAt": 1606589230,
               "phaseOrder": 1,
-              "roundOrder": 9
+              "roundOrder": 9,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703098",
@@ -361,6 +439,8 @@
               "startedAt": 1606592492,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "8f_Av4uo8D8",
@@ -386,7 +466,9 @@
               "isUpset": false,
               "startedAt": 1606594590,
               "phaseOrder": 1,
-              "roundOrder": 10
+              "roundOrder": 10,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703104",
@@ -405,6 +487,8 @@
               "startedAt": 1606596191,
               "phaseOrder": 1,
               "roundOrder": 6,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "iCo2gH_rMks",
@@ -430,7 +514,9 @@
               "isUpset": false,
               "startedAt": 1606598480,
               "phaseOrder": 1,
-              "roundOrder": 8
+              "roundOrder": 8,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703128",
@@ -448,7 +534,9 @@
               "isUpset": false,
               "startedAt": 1606599244,
               "phaseOrder": 1,
-              "roundOrder": 11
+              "roundOrder": 11,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703110",
@@ -466,7 +554,22 @@
               "isUpset": false,
               "startedAt": 1607904594,
               "phaseOrder": 1,
-              "roundOrder": 7
+              "roundOrder": 7,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {},

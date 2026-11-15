@@ -161,7 +161,9 @@
               "isUpset": false,
               "startedAt": 1565547724,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22412864",
@@ -179,7 +181,28 @@
               "isUpset": false,
               "startedAt": 1565549537,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22412861",
@@ -197,7 +220,9 @@
               "isUpset": true,
               "startedAt": 1565552723,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22412863",
@@ -215,7 +240,9 @@
               "isUpset": false,
               "startedAt": 1565552935,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22416321",
@@ -233,7 +260,9 @@
               "isUpset": false,
               "startedAt": 1565557901,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "22416329",
@@ -251,7 +280,22 @@
               "isUpset": false,
               "startedAt": 1565559091,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22416447",
@@ -269,7 +313,22 @@
               "isUpset": false,
               "startedAt": 1565559734,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Snake",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "22416453",
@@ -287,7 +346,28 @@
               "isUpset": false,
               "startedAt": 1565560685,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -334,7 +414,9 @@
               "isUpset": false,
               "startedAt": 1561211688,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "21249252",
@@ -352,7 +434,9 @@
               "isUpset": false,
               "startedAt": 1561213190,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "21249255",
@@ -370,7 +454,9 @@
               "isUpset": false,
               "startedAt": 1561214158,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "21249244",
@@ -388,7 +474,9 @@
               "isUpset": true,
               "startedAt": 1561215177,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "21249242",
@@ -406,7 +494,9 @@
               "isUpset": true,
               "startedAt": 1561216220,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "21252248",
@@ -424,7 +514,9 @@
               "isUpset": false,
               "startedAt": 1561218933,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "21252257",
@@ -442,7 +534,9 @@
               "isUpset": false,
               "startedAt": 1561220060,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "21252307",
@@ -460,7 +554,9 @@
               "isUpset": false,
               "startedAt": 1561221216,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "21252315",
@@ -478,7 +574,9 @@
               "isUpset": false,
               "startedAt": 1561224831,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "21252319",
@@ -496,7 +594,9 @@
               "isUpset": false,
               "startedAt": 1561226839,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

@@ -59,21 +59,16 @@
           "opponent": "Dieguix2004",
           "sets": 1,
           "wins": 0
-        },
-        {
-          "opponent": "BANANACHO",
-          "sets": 1,
-          "wins": 0
         }
       ],
-      "events": 3,
+      "events": 2,
       "wins": 1,
       "losses": 8,
       "upsets": 0,
       "bestPlace": 25,
       "bestEvent": "Mashito? GO! #7 · Ultimate Singles",
       "avgPlace": 29.0,
-      "avgSeed": 27,
+      "avgSeed": 36,
       "characters": [
         {
           "name": "Mega Man",
@@ -86,47 +81,6 @@
       ],
       "notableWins": [],
       "results": [
-        {
-          "event": "Cacatua Weekly #26 · Ultimate Singles",
-          "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
-          "displaySeparately": false,
-          "date": "2026-11-15",
-          "seed": 9,
-          "place": null,
-          "entrants": 14,
-          "sets": [
-            {
-              "setId": "preview_3503457_1_1",
-              "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
-              "event": "Cacatua Weekly #26 · Ultimate Singles",
-              "phase": "Bracket",
-              "round": "Winners Round 1",
-              "opponent": "BANANACHO",
-              "opponentPlayerId": "5564425",
-              "score": "",
-              "outcome": "unknown",
-              "opponentExcluded": false,
-              "ownSeed": 9,
-              "opponentSeed": 8,
-              "isUpset": false,
-              "startedAt": null,
-              "phaseOrder": 1,
-              "roundOrder": 1
-            }
-          ],
-          "characterCounts": {},
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
-              "event": "Cacatua Weekly #26 · Ultimate Singles",
-              "date": "2026-11-15",
-              "seed": 9,
-              "place": null,
-              "entrants": 14,
-              "characterCounts": {}
-            }
-          ]
-        },
         {
           "event": "Mashito? GO! #7 · Ultimate Singles",
           "eventKey": "tournament/mashito-go-7/event/ultimate-singles",
@@ -152,7 +106,22 @@
               "isUpset": false,
               "startedAt": 1789836950,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "107921191",
@@ -170,7 +139,28 @@
               "isUpset": false,
               "startedAt": 1789838177,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "107926677",
@@ -188,7 +178,22 @@
               "isUpset": false,
               "startedAt": 1789841563,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "107926692",
@@ -206,7 +211,22 @@
               "isUpset": false,
               "startedAt": 1789843151,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "107926694",
@@ -224,7 +244,22 @@
               "isUpset": false,
               "startedAt": 1789843692,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mega Man",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -280,7 +315,22 @@
               "isUpset": false,
               "startedAt": 1714237474,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Byleth",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "73966257",
@@ -298,7 +348,22 @@
               "isUpset": false,
               "startedAt": 1714240288,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "73977955",
@@ -316,7 +381,28 @@
               "isUpset": false,
               "startedAt": 1714246245,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mega Man",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Byleth",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "73978021",
@@ -334,7 +420,22 @@
               "isUpset": false,
               "startedAt": 1714249021,
               "phaseOrder": 4,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Byleth",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Byleth",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

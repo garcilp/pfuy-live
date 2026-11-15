@@ -91,7 +91,22 @@
               "isUpset": false,
               "startedAt": 1692473759,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64081904",
@@ -109,7 +124,22 @@
               "isUpset": false,
               "startedAt": 1692473904,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64081896",
@@ -127,7 +157,22 @@
               "isUpset": false,
               "startedAt": 1692474052,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64081909",
@@ -145,7 +190,28 @@
               "isUpset": false,
               "startedAt": 1692474091,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Duck Hunt",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64081907",
@@ -163,7 +229,9 @@
               "isUpset": false,
               "startedAt": 1692474376,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             }
           ],
           "characterCounts": {

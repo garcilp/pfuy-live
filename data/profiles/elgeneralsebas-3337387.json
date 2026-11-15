@@ -77,7 +77,22 @@
               "isUpset": false,
               "startedAt": 1679776237,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "58528051",
@@ -95,7 +110,22 @@
               "isUpset": false,
               "startedAt": 1679776293,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "58537135",
@@ -113,7 +143,22 @@
               "isUpset": false,
               "startedAt": 1679780029,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "SINGLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

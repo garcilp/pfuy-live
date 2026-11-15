@@ -112,7 +112,22 @@
               "isUpset": false,
               "startedAt": 1655573352,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48559059",
@@ -130,7 +145,22 @@
               "isUpset": false,
               "startedAt": 1655574787,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48559055",
@@ -148,7 +178,22 @@
               "isUpset": false,
               "startedAt": 1655577849,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48559052",
@@ -166,7 +211,22 @@
               "isUpset": false,
               "startedAt": 1655578017,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48569833",
@@ -184,7 +244,22 @@
               "isUpset": false,
               "startedAt": 1655581798,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48569865",
@@ -202,7 +277,22 @@
               "isUpset": false,
               "startedAt": 1655582958,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -258,7 +348,9 @@
               "isUpset": false,
               "startedAt": 1650737680,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46625400",
@@ -276,7 +368,9 @@
               "isUpset": false,
               "startedAt": 1650737692,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46625405",
@@ -294,7 +388,9 @@
               "isUpset": false,
               "startedAt": 1650737698,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46636681",
@@ -312,7 +408,22 @@
               "isUpset": false,
               "startedAt": 1650743759,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "46636714",
@@ -330,7 +441,22 @@
               "isUpset": false,
               "startedAt": 1650744045,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

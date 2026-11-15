@@ -182,7 +182,9 @@
               "isUpset": false,
               "startedAt": 1673719081,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "55858436",
@@ -200,7 +202,9 @@
               "isUpset": false,
               "startedAt": 1673723786,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -241,7 +245,22 @@
               "isUpset": false,
               "startedAt": 1668877295,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "54338999",
@@ -259,7 +278,22 @@
               "isUpset": false,
               "startedAt": 1668880084,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "54339005",
@@ -277,7 +311,22 @@
               "isUpset": false,
               "startedAt": 1668880532,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "54339001",
@@ -295,7 +344,22 @@
               "isUpset": false,
               "startedAt": 1668882464,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "54351418",
@@ -313,7 +377,28 @@
               "isUpset": false,
               "startedAt": 1668887039,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Steve",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "54351454",
@@ -331,7 +416,28 @@
               "isUpset": false,
               "startedAt": 1668890404,
               "phaseOrder": 4,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Steve",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -377,6 +483,21 @@
               "startedAt": 1665854484,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "E-jAPtlYgK4",
@@ -402,7 +523,22 @@
               "isUpset": false,
               "startedAt": 1665855039,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53029365",
@@ -420,7 +556,22 @@
               "isUpset": false,
               "startedAt": 1665855556,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53029358",
@@ -438,7 +589,22 @@
               "isUpset": false,
               "startedAt": 1665857747,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53029354",
@@ -456,7 +622,22 @@
               "isUpset": false,
               "startedAt": 1665857824,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53045546",
@@ -474,7 +655,22 @@
               "isUpset": false,
               "startedAt": 1665862746,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53045576",
@@ -492,7 +688,22 @@
               "isUpset": false,
               "startedAt": 1665864308,
               "phaseOrder": 4,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -538,6 +749,21 @@
               "startedAt": 1658598138,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "X6yS5etn0R0",
@@ -564,6 +790,21 @@
               "startedAt": 1658598257,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Dark Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Dark Samus",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "Xs_XOi56LoE",
@@ -589,7 +830,22 @@
               "isUpset": false,
               "startedAt": 1658598279,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49872757",
@@ -608,6 +864,21 @@
               "startedAt": 1658600803,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "dfkvEZJJzLk",
@@ -633,7 +904,22 @@
               "isUpset": false,
               "startedAt": 1658608083,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49884254",
@@ -651,7 +937,22 @@
               "isUpset": false,
               "startedAt": 1658609521,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -707,7 +1008,9 @@
               "isUpset": false,
               "startedAt": 1653159154,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47575065",
@@ -725,7 +1028,9 @@
               "isUpset": false,
               "startedAt": 1653159186,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47575070",
@@ -743,7 +1048,9 @@
               "isUpset": false,
               "startedAt": 1653159211,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47575068",
@@ -761,7 +1068,9 @@
               "isUpset": false,
               "startedAt": 1653159230,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47575061",
@@ -779,7 +1088,9 @@
               "isUpset": false,
               "startedAt": 1653159239,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47578903",
@@ -798,6 +1109,8 @@
               "startedAt": 1653163630,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "ygy3IEB0OXs",
@@ -823,7 +1136,22 @@
               "isUpset": false,
               "startedAt": 1653165230,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Steve",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

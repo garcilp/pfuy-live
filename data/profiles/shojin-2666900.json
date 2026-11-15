@@ -156,7 +156,22 @@
               "isUpset": false,
               "startedAt": 1653159829,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47576022",
@@ -174,7 +189,22 @@
               "isUpset": false,
               "startedAt": 1653159912,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47576030",
@@ -192,7 +222,22 @@
               "isUpset": false,
               "startedAt": 1653160259,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Lucina",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47576026",
@@ -210,7 +255,22 @@
               "isUpset": false,
               "startedAt": 1653160301,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47576033",
@@ -229,6 +289,21 @@
               "startedAt": 1653160587,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "fvmIr6jfvQE",
@@ -254,7 +329,22 @@
               "isUpset": false,
               "startedAt": 1653162557,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "47578909",
@@ -272,7 +362,22 @@
               "isUpset": false,
               "startedAt": 1653165223,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "47578913",
@@ -290,7 +395,22 @@
               "isUpset": false,
               "startedAt": 1653166009,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47578944",
@@ -308,7 +428,28 @@
               "isUpset": false,
               "startedAt": 1653167785,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Joker",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -366,7 +507,9 @@
               "isUpset": false,
               "startedAt": 1647106518,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45310124",
@@ -385,6 +528,8 @@
               "startedAt": 1647107458,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "cwyKAzPA3-c",
@@ -410,7 +555,9 @@
               "isUpset": false,
               "startedAt": 1647108528,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45310128",
@@ -429,6 +576,8 @@
               "startedAt": 1647109741,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "AFZqlQGDy_Y",
@@ -454,7 +603,9 @@
               "isUpset": false,
               "startedAt": 1647114346,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "45316037",
@@ -472,7 +623,9 @@
               "isUpset": false,
               "startedAt": 1647114935,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "45317269",
@@ -490,7 +643,22 @@
               "isUpset": false,
               "startedAt": 1647117502,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "45317271",
@@ -508,7 +676,28 @@
               "isUpset": false,
               "startedAt": 1647118526,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Joker",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "45317273",
@@ -526,7 +715,28 @@
               "isUpset": false,
               "startedAt": 1647122776,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Joker",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -580,7 +790,9 @@
               "isUpset": false,
               "startedAt": 1645981248,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "44955724",
@@ -598,7 +810,9 @@
               "isUpset": false,
               "startedAt": 1645985680,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

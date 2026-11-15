@@ -89,7 +89,22 @@
               "isUpset": false,
               "startedAt": 1755971669,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ken",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "92988575",
@@ -107,7 +122,22 @@
               "isUpset": false,
               "startedAt": 1755973564,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "92998650",
@@ -125,7 +155,22 @@
               "isUpset": false,
               "startedAt": 1755978108,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser Jr.",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bayonetta",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

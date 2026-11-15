@@ -199,7 +199,9 @@
               "isUpset": true,
               "startedAt": 1682184530,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "59612434",
@@ -217,7 +219,9 @@
               "isUpset": false,
               "startedAt": 1682189025,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "59612444",
@@ -236,6 +240,8 @@
               "startedAt": 1682189152,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "P38oBwJLAOs",
@@ -262,6 +268,21 @@
               "startedAt": 1682191345,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "6LNkA5Ly2Ec",
@@ -287,7 +308,22 @@
               "isUpset": false,
               "startedAt": 1682191463,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "59629136",
@@ -305,7 +341,22 @@
               "isUpset": false,
               "startedAt": 1682194075,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "59629194",
@@ -323,7 +374,22 @@
               "isUpset": false,
               "startedAt": 1682195321,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "59629202",
@@ -341,7 +407,28 @@
               "isUpset": false,
               "startedAt": 1682199264,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -390,7 +477,9 @@
               "isUpset": false,
               "startedAt": 1658597450,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "49869186",
@@ -408,7 +497,9 @@
               "isUpset": false,
               "startedAt": 1658597477,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "49869189",
@@ -426,7 +517,9 @@
               "isUpset": false,
               "startedAt": 1658600213,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "49869194",
@@ -445,6 +538,8 @@
               "startedAt": 1658600220,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "m4vEm6kI1D4",
@@ -470,7 +565,28 @@
               "isUpset": false,
               "startedAt": 1658607420,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "49884201",
@@ -488,7 +604,22 @@
               "isUpset": false,
               "startedAt": 1658607497,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49884260",
@@ -506,7 +637,28 @@
               "isUpset": false,
               "startedAt": 1658609577,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "49884264",
@@ -524,7 +676,22 @@
               "isUpset": false,
               "startedAt": 1658610688,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -582,7 +749,22 @@
               "isUpset": false,
               "startedAt": 1650736408,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "46618982",
@@ -601,6 +783,21 @@
               "startedAt": 1650736585,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "c_BfckMGIbs",
@@ -626,7 +823,9 @@
               "isUpset": false,
               "startedAt": 1650736599,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46636908",
@@ -644,7 +843,22 @@
               "isUpset": false,
               "startedAt": 1650743334,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "46636968",
@@ -662,7 +876,22 @@
               "isUpset": false,
               "startedAt": 1650744011,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -709,7 +938,9 @@
               "isUpset": false,
               "startedAt": 1647106573,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45310124",
@@ -728,6 +959,8 @@
               "startedAt": 1647107458,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "cwyKAzPA3-c",
@@ -753,7 +986,9 @@
               "isUpset": false,
               "startedAt": 1647107910,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45310127",
@@ -771,7 +1006,9 @@
               "isUpset": false,
               "startedAt": 1647108914,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45314480",
@@ -789,7 +1026,28 @@
               "isUpset": true,
               "startedAt": 1647114000,
               "phaseOrder": 5,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "45314504",
@@ -807,7 +1065,22 @@
               "isUpset": false,
               "startedAt": 1647115614,
               "phaseOrder": 5,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "45314618",
@@ -825,7 +1098,28 @@
               "isUpset": true,
               "startedAt": 1647117128,
               "phaseOrder": 5,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sheik",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "45314630",
@@ -843,7 +1137,9 @@
               "isUpset": false,
               "startedAt": 1647117696,
               "phaseOrder": 5,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {

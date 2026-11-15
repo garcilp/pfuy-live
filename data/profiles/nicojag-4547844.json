@@ -94,7 +94,22 @@
               "isUpset": false,
               "startedAt": 1742058259,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "86607588",
@@ -112,7 +127,22 @@
               "isUpset": false,
               "startedAt": 1742061635,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mr. Game & Watch",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "86620145",
@@ -130,7 +160,22 @@
               "isUpset": false,
               "startedAt": 1742065512,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "86620212",
@@ -148,7 +193,22 @@
               "isUpset": false,
               "startedAt": 1742069014,
               "phaseOrder": 4,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Richter",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

@@ -224,32 +224,42 @@
           }
         });
 
-        // Build player index: Map(playerTagLower -> list of rankings with player's entry)
+        // Build identity indexes. Tags are not unique (and can differ in case),
+        // while playerId is the stable identity shared with profile records.
         const playerRankingsMap = new Map();
+        const playerRankingsById = new Map();
         fullRankings.forEach(r => {
           (r.players || []).forEach(p => {
             const tag = String(p.tag || '').trim();
-            if (!tag) return;
-            const norm = tag.toLowerCase();
-            if (!playerRankingsMap.has(norm)) playerRankingsMap.set(norm, []);
-            playerRankingsMap.get(norm).push({
+            const entry = {
               ranking: r,
               playerEntry: p,
               placement: p.placement,
               points: p.points,
               date: r.period?.end || r.end || r.period?.start || r.start || ''
-            });
+            };
+            const playerId = String(p.playerId || p.id || '').trim();
+            if (playerId) {
+              if (!playerRankingsById.has(playerId)) playerRankingsById.set(playerId, []);
+              playerRankingsById.get(playerId).push(entry);
+            }
+            if (tag) {
+              const norm = tag.toLowerCase();
+              if (!playerRankingsMap.has(norm)) playerRankingsMap.set(norm, []);
+              playerRankingsMap.get(norm).push(entry);
+            }
           });
         });
 
         // Sort each player's rankings by date descending (latest first)
-        playerRankingsMap.forEach(list => {
+        [playerRankingsMap, playerRankingsById].forEach(index => index.forEach(list => {
           list.sort((a, b) => b.date.localeCompare(a.date));
-        });
+        }));
 
         rankingsCache = {
           rankings: fullRankings,
           playerRankings: playerRankingsMap,
+          playerRankingsById,
           latestRankingByGame: latestRankingByGame,
           games: data.games || []
         };
@@ -263,9 +273,13 @@
     return rankingsCachePromise;
   }
 
-  function getPlayerRankings(playerTag) {
-    if (!rankingsCache || !playerTag) return [];
-    const norm = String(playerTag).trim().toLowerCase();
+  function getPlayerRankings(playerTag, playerId) {
+    if (!rankingsCache || (!playerTag && !playerId)) return [];
+    const id = String(playerId || '').trim();
+    if (id && rankingsCache.playerRankingsById?.has(id)) return rankingsCache.playerRankingsById.get(id);
+    const value = String(playerTag || '').trim();
+    if (rankingsCache.playerRankingsById?.has(value)) return rankingsCache.playerRankingsById.get(value);
+    const norm = value.toLowerCase();
     return rankingsCache.playerRankings.get(norm) || [];
   }
 

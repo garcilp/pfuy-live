@@ -96,7 +96,22 @@
               "isUpset": false,
               "startedAt": 1692471747,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64077629",
@@ -114,7 +129,22 @@
               "isUpset": true,
               "startedAt": 1692471913,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "64077642",
@@ -132,7 +162,22 @@
               "isUpset": false,
               "startedAt": 1692471956,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64077637",
@@ -150,7 +195,22 @@
               "isUpset": false,
               "startedAt": 1692472209,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bayonetta",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64084435",
@@ -168,7 +228,22 @@
               "isUpset": false,
               "startedAt": 1692476633,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64084577",
@@ -186,7 +261,22 @@
               "isUpset": false,
               "startedAt": 1692479423,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bayonetta",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bayonetta",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

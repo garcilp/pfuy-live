@@ -114,7 +114,9 @@
               "isUpset": false,
               "startedAt": 1567273473,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832003",
@@ -132,7 +134,9 @@
               "isUpset": false,
               "startedAt": 1567274536,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832011",
@@ -150,7 +154,9 @@
               "isUpset": false,
               "startedAt": 1567279955,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22831999",
@@ -168,7 +174,9 @@
               "isUpset": false,
               "startedAt": 1567281430,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832001",
@@ -186,7 +194,9 @@
               "isUpset": false,
               "startedAt": 1567282401,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22841107",
@@ -204,7 +214,22 @@
               "isUpset": false,
               "startedAt": 1567283246,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucas",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22841250",
@@ -222,7 +247,28 @@
               "isUpset": true,
               "startedAt": 1567284712,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Joker",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "22841265",
@@ -240,7 +286,22 @@
               "isUpset": false,
               "startedAt": 1567286001,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

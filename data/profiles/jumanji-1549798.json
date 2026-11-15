@@ -162,7 +162,22 @@
               "isUpset": false,
               "startedAt": 1665856364,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53035361",
@@ -180,7 +195,22 @@
               "isUpset": false,
               "startedAt": 1665856679,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Mii Brawler",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53035363",
@@ -198,7 +228,22 @@
               "isUpset": false,
               "startedAt": 1665859879,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53035367",
@@ -216,7 +261,22 @@
               "isUpset": false,
               "startedAt": 1665860062,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53035371",
@@ -235,6 +295,21 @@
               "startedAt": 1665860210,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "q4AhbUFkfsc",
@@ -260,7 +335,22 @@
               "isUpset": false,
               "startedAt": 1665863837,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53045574",
@@ -278,7 +368,28 @@
               "isUpset": false,
               "startedAt": 1665863980,
               "phaseOrder": 4,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "53045578",
@@ -296,7 +407,22 @@
               "isUpset": false,
               "startedAt": 1665866681,
               "phaseOrder": 4,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Robin",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Robin",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "53045581",
@@ -314,7 +440,22 @@
               "isUpset": false,
               "startedAt": 1665867767,
               "phaseOrder": 4,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -361,7 +502,9 @@
               "isUpset": false,
               "startedAt": 1639330026,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "43119854",
@@ -379,7 +522,9 @@
               "isUpset": false,
               "startedAt": 1639332381,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -420,7 +565,9 @@
               "isUpset": false,
               "startedAt": 1582998804,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "27022384",
@@ -438,7 +585,9 @@
               "isUpset": false,
               "startedAt": 1582999750,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "27022388",
@@ -457,6 +606,8 @@
               "startedAt": 1583000727,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "82qx_neeFK4",
@@ -482,7 +633,9 @@
               "isUpset": false,
               "startedAt": 1583004633,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "27035200",
@@ -500,7 +653,9 @@
               "isUpset": false,
               "startedAt": 1583006320,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -541,7 +696,9 @@
               "isUpset": false,
               "startedAt": 1575142764,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24991823",
@@ -559,7 +716,9 @@
               "isUpset": false,
               "startedAt": 1575142801,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24991828",
@@ -578,6 +737,8 @@
               "startedAt": 1575142825,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "8UNxcHg1igM",
@@ -603,7 +764,9 @@
               "isUpset": false,
               "startedAt": 1575142838,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24992095",
@@ -621,7 +784,9 @@
               "isUpset": false,
               "startedAt": 1575144706,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24992213",
@@ -639,7 +804,9 @@
               "isUpset": false,
               "startedAt": 1575146443,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

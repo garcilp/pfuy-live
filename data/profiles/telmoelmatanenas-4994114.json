@@ -72,7 +72,22 @@
               "isUpset": false,
               "startedAt": 1758996857,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wario",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wario",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "94386633",
@@ -90,7 +105,22 @@
               "isUpset": false,
               "startedAt": 1758997794,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wario",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wario",
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

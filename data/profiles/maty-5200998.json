@@ -153,7 +153,22 @@
               "isUpset": true,
               "startedAt": 1781978721,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Corrin",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "104431846",
@@ -171,7 +186,22 @@
               "isUpset": false,
               "startedAt": 1781979906,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "104435976",
@@ -189,7 +219,22 @@
               "isUpset": false,
               "startedAt": 1781983362,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "104436039",
@@ -207,7 +252,28 @@
               "isUpset": true,
               "startedAt": 1781985013,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Samus",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "104436047",
@@ -225,7 +291,22 @@
               "isUpset": false,
               "startedAt": 1781987601,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -272,7 +353,22 @@
               "isUpset": true,
               "startedAt": 1778954759,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "102944267",
@@ -291,6 +387,27 @@
               "startedAt": 1778955213,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Dark Pit",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Joker",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "G37BVMyvtnY",
@@ -316,7 +433,22 @@
               "isUpset": false,
               "startedAt": 1778961024,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "102954290",
@@ -334,7 +466,28 @@
               "isUpset": false,
               "startedAt": 1778961713,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Samus",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -382,6 +535,21 @@
               "startedAt": 1774117797,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "Huyz9re6ocQ",
@@ -407,7 +575,22 @@
               "isUpset": false,
               "startedAt": 1774120475,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "100687505",
@@ -425,7 +608,28 @@
               "isUpset": false,
               "startedAt": 1774127132,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Joker",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "100687535",
@@ -444,6 +648,27 @@
               "startedAt": 1774129325,
               "phaseOrder": 1,
               "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Joker",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "Huyz9re6ocQ",
@@ -511,7 +736,22 @@
               "isUpset": false,
               "startedAt": 1772302704,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Byleth",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "99880979",
@@ -529,7 +769,22 @@
               "isUpset": false,
               "startedAt": 1772303506,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Byleth",
+                  "opponentCharacter": "Roy",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "99887415",
@@ -547,7 +802,22 @@
               "isUpset": false,
               "startedAt": 1772307741,
               "phaseOrder": 3,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "99887448",
@@ -565,7 +835,28 @@
               "isUpset": false,
               "startedAt": 1772312216,
               "phaseOrder": 3,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Dark Samus",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Byleth",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

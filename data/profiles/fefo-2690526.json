@@ -121,7 +121,22 @@
               "isUpset": false,
               "startedAt": 1692465777,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Marth",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Marth",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64071334",
@@ -139,7 +154,22 @@
               "isUpset": false,
               "startedAt": 1692466308,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Marth",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Marth",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64071328",
@@ -157,7 +187,22 @@
               "isUpset": false,
               "startedAt": 1692469061,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Marth",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Marth",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64071341",
@@ -175,7 +220,22 @@
               "isUpset": false,
               "startedAt": 1692469758,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Marth",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Marth",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64086174",
@@ -193,7 +253,9 @@
               "isUpset": false,
               "startedAt": 1692477301,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "64086236",
@@ -211,7 +273,9 @@
               "isUpset": false,
               "startedAt": 1692478922,
               "phaseOrder": 4,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {
@@ -256,7 +320,9 @@
               "isUpset": false,
               "startedAt": 1647103933,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45308250",
@@ -274,7 +340,9 @@
               "isUpset": false,
               "startedAt": 1647108095,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45308247",
@@ -292,7 +360,9 @@
               "isUpset": false,
               "startedAt": 1647108291,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45316005",
@@ -310,7 +380,22 @@
               "isUpset": false,
               "startedAt": 1647114105,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ike",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ike",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "45316037",
@@ -328,7 +413,9 @@
               "isUpset": false,
               "startedAt": 1647114935,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {

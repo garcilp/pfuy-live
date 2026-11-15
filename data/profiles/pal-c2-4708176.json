@@ -82,7 +82,28 @@
               "isUpset": false,
               "startedAt": 1748107232,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "89438589",
@@ -100,7 +121,22 @@
               "isUpset": false,
               "startedAt": 1748110139,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "89448103",
@@ -118,7 +154,28 @@
               "isUpset": false,
               "startedAt": 1748112438,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "89448168",
@@ -137,6 +194,8 @@
               "startedAt": 1748116803,
               "phaseOrder": 4,
               "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "mj05hb3sALA",

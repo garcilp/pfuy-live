@@ -91,7 +91,9 @@
               "isUpset": false,
               "startedAt": 1647103896,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45308215",
@@ -109,7 +111,9 @@
               "isUpset": false,
               "startedAt": 1647107941,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45308220",
@@ -127,7 +131,9 @@
               "isUpset": false,
               "startedAt": 1647108838,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45315998",
@@ -145,7 +151,22 @@
               "isUpset": false,
               "startedAt": 1647113376,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Palutena",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Peach",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "45316034",
@@ -164,6 +185,21 @@
               "startedAt": 1647117190,
               "phaseOrder": 1,
               "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Peach",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "h0f8sJKgMMI",

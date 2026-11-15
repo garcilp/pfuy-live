@@ -163,7 +163,22 @@
               "isUpset": false,
               "startedAt": 1690047684,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wolf",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "62966567",
@@ -181,7 +196,22 @@
               "isUpset": false,
               "startedAt": 1690051570,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "62973371",
@@ -199,7 +229,22 @@
               "isUpset": false,
               "startedAt": 1690054341,
               "phaseOrder": 3,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "SINGLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -246,7 +291,9 @@
               "isUpset": false,
               "startedAt": 1635101553,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705459",
@@ -264,7 +311,9 @@
               "isUpset": true,
               "startedAt": 1635101619,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705452",
@@ -282,7 +331,9 @@
               "isUpset": false,
               "startedAt": 1635101752,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705448",
@@ -300,7 +351,9 @@
               "isUpset": false,
               "startedAt": 1635101956,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705461",
@@ -318,7 +371,9 @@
               "isUpset": false,
               "startedAt": 1635103749,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41714369",
@@ -336,7 +391,9 @@
               "isUpset": false,
               "startedAt": 1635106690,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714425",
@@ -354,7 +411,9 @@
               "isUpset": false,
               "startedAt": 1635106804,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714431",
@@ -372,7 +431,9 @@
               "isUpset": false,
               "startedAt": 1635108712,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -422,7 +483,9 @@
               "isUpset": false,
               "startedAt": 1557582958,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "20344996",
@@ -440,7 +503,9 @@
               "isUpset": false,
               "startedAt": 1557583834,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "20344994",
@@ -458,7 +523,9 @@
               "isUpset": false,
               "startedAt": 1557583844,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "20348447",
@@ -476,7 +543,9 @@
               "isUpset": false,
               "startedAt": 1557587489,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "20348574",
@@ -494,7 +563,9 @@
               "isUpset": true,
               "startedAt": 1557588210,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "20348582",
@@ -512,7 +583,9 @@
               "isUpset": false,
               "startedAt": 1557593825,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -553,7 +626,9 @@
               "isUpset": false,
               "startedAt": 1555768874,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "19889064",
@@ -571,7 +646,9 @@
               "isUpset": false,
               "startedAt": 1555771971,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -612,7 +689,9 @@
               "isUpset": false,
               "startedAt": 1553349899,
               "phaseOrder": null,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": null,
+              "games": []
             },
             {
               "setId": "challonge:ne0nkst3:match:154197236",
@@ -630,7 +709,9 @@
               "isUpset": false,
               "startedAt": 1553353270,
               "phaseOrder": null,
-              "roundOrder": -2
+              "roundOrder": -2,
+              "bracketType": null,
+              "games": []
             }
           ],
           "characterCounts": {},

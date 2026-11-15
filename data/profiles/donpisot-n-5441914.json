@@ -87,7 +87,22 @@
               "isUpset": false,
               "startedAt": 1781977375,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "104431325",
@@ -105,7 +120,22 @@
               "isUpset": true,
               "startedAt": 1781979941,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "104435980",
@@ -123,7 +153,22 @@
               "isUpset": false,
               "startedAt": 1781984741,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "104436041",
@@ -141,7 +186,22 @@
               "isUpset": true,
               "startedAt": 1781986470,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "104436049",
@@ -159,7 +219,22 @@
               "isUpset": false,
               "startedAt": 1781987094,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

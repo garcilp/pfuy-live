@@ -75,6 +75,7 @@ h1,h2,p{margin:0}.mono{font-family:'JetBrains Mono',monospace}.muted{color:var(-
 .profile h1{width:100%;min-width:0;font-size:clamp(28px,8vw,40px);line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:clip}
 .profile-detail{display:flex;align-items:baseline;gap:8px;font-size:13px;color:var(--muted);overflow-wrap:anywhere}
 .profile-startgg{color:var(--sky);font-size:13px}
+.profile-compare-links{display:flex;align-items:baseline;gap:4px;color:var(--muted);font-size:13px}
 .profile-startgg.unavailable{color:var(--muted)}
 .tabs{padding:12px;display:flex;flex-direction:column;gap:4px}
 .tab{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:48px;padding:0 16px;border:1px solid transparent;border-radius:18px;color:var(--text);font-weight:500}
@@ -2301,6 +2302,7 @@ button .pr-badge--compact {
 
 .tiermaker-entry-row {
   display: flex;
+  gap: 8px;
   justify-content: flex-end;
   width: 100%;
 }

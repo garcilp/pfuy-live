@@ -88,6 +88,27 @@
               "startedAt": 1690048200,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Palutena",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Palutena",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Palutena",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "11JKW8Nh6qE",
@@ -113,7 +134,22 @@
               "isUpset": false,
               "startedAt": 1690049109,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Palutena",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Palutena",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62967730",
@@ -131,7 +167,28 @@
               "isUpset": false,
               "startedAt": 1690050472,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Palutena",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Palutena",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Palutena",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62974298",
@@ -149,7 +206,22 @@
               "isUpset": false,
               "startedAt": 1690053381,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Palutena",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Palutena",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "62974432",
@@ -167,7 +239,22 @@
               "isUpset": false,
               "startedAt": 1690056556,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Palutena",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Palutena",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

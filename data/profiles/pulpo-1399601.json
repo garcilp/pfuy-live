@@ -97,7 +97,9 @@
               "isUpset": false,
               "startedAt": 1567274521,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832516",
@@ -115,7 +117,9 @@
               "isUpset": true,
               "startedAt": 1567275412,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832509",
@@ -133,7 +137,9 @@
               "isUpset": false,
               "startedAt": 1567276756,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832513",
@@ -151,7 +157,9 @@
               "isUpset": false,
               "startedAt": 1567278611,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832505",
@@ -169,7 +177,9 @@
               "isUpset": false,
               "startedAt": 1567279145,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22841105",
@@ -187,7 +197,22 @@
               "isUpset": false,
               "startedAt": 1567281700,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22841249",
@@ -205,7 +230,28 @@
               "isUpset": false,
               "startedAt": 1567285804,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Joker",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Joker",
+                  "opponentCharacter": "Joker",
+                  "outcome": "unknown"
+                }
+              ]
             }
           ],
           "characterCounts": {

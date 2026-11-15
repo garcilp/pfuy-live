@@ -86,7 +86,9 @@
               "isUpset": false,
               "startedAt": 1673718730,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "55858290",
@@ -105,6 +107,21 @@
               "startedAt": 1673722890,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Link",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Link",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "Zm_cNj4RgYU",
@@ -131,6 +148,8 @@
               "startedAt": 1673729812,
               "phaseOrder": 2,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "7mP3v4n5WWM",
@@ -156,7 +175,22 @@
               "isUpset": false,
               "startedAt": 1673731083,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Link",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

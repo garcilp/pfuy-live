@@ -92,7 +92,22 @@
               "isUpset": false,
               "startedAt": 1699710733,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "67515930",
@@ -110,7 +125,28 @@
               "isUpset": false,
               "startedAt": 1699713248,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "67519036",
@@ -129,6 +165,27 @@
               "startedAt": 1699716993,
               "phaseOrder": 4,
               "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "IE1hUJHRttw",
@@ -154,7 +211,22 @@
               "isUpset": false,
               "startedAt": 1699719522,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "67519105",
@@ -172,7 +244,22 @@
               "isUpset": false,
               "startedAt": 1699720126,
               "phaseOrder": 4,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "67519108",
@@ -190,7 +277,22 @@
               "isUpset": false,
               "startedAt": 1699722032,
               "phaseOrder": 4,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sephiroth",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

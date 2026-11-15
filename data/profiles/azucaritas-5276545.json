@@ -77,6 +77,21 @@
               "startedAt": 1774116854,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Ness",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "Q4IzGOI_QUs",
@@ -102,7 +117,22 @@
               "isUpset": false,
               "startedAt": 1774119603,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

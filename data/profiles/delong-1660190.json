@@ -147,7 +147,22 @@
               "isUpset": false,
               "startedAt": 1690049305,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "62966567",
@@ -165,7 +180,22 @@
               "isUpset": false,
               "startedAt": 1690051570,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62966570",
@@ -183,7 +213,22 @@
               "isUpset": false,
               "startedAt": 1690052040,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62974282",
@@ -202,6 +247,27 @@
               "startedAt": 1690054262,
               "phaseOrder": 2,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "ggUXjd0A4fI",
@@ -227,7 +293,22 @@
               "isUpset": false,
               "startedAt": 1690055633,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "62974435",
@@ -245,7 +326,28 @@
               "isUpset": false,
               "startedAt": 1690057857,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62974444",
@@ -264,6 +366,27 @@
               "startedAt": 1690058368,
               "phaseOrder": 2,
               "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "4WGSsICjaUE",
@@ -289,7 +412,22 @@
               "isUpset": false,
               "startedAt": 1690061009,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -334,7 +472,9 @@
               "isUpset": false,
               "startedAt": 1668882681,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "54345872",
@@ -352,7 +492,9 @@
               "isUpset": false,
               "startedAt": 1668882698,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "54345876",
@@ -370,7 +512,9 @@
               "isUpset": false,
               "startedAt": 1668882711,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "54345877",
@@ -389,6 +533,21 @@
               "startedAt": 1668883058,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "xMoQej2_iK4",
@@ -414,7 +573,28 @@
               "isUpset": false,
               "startedAt": 1668886975,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "54350605",
@@ -432,7 +612,22 @@
               "isUpset": false,
               "startedAt": 1668889073,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Snake",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Snake",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "54350618",
@@ -451,6 +646,21 @@
               "startedAt": 1668892219,
               "phaseOrder": 2,
               "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "HMx03q4trtI",
@@ -476,7 +686,22 @@
               "isUpset": false,
               "startedAt": 1668894310,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "54350745",
@@ -494,7 +719,28 @@
               "isUpset": false,
               "startedAt": 1668896551,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Jigglypuff",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

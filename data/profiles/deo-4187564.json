@@ -76,7 +76,28 @@
               "isUpset": false,
               "startedAt": 1728155757,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ganondorf",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ganondorf",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Ganondorf",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "80630465",
@@ -94,7 +115,28 @@
               "isUpset": false,
               "startedAt": 1728158232,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Dr. Mario",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Dr. Mario",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Dr. Mario",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -225,7 +267,28 @@
               "isUpset": false,
               "startedAt": 1756058306,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Forsburn",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Fleet",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": null,
+                  "opponentCharacter": null,
+                  "outcome": "unknown"
+                }
+              ]
             },
             {
               "setId": "93049178",
@@ -244,6 +307,21 @@
               "startedAt": 1756059693,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "BtN2fSqHBas",
@@ -269,7 +347,22 @@
               "isUpset": false,
               "startedAt": 1756060868,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "93049193",
@@ -288,6 +381,21 @@
               "startedAt": 1756062132,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Absa",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "balnO_ZLBxo",
@@ -313,7 +421,22 @@
               "isUpset": false,
               "startedAt": 1756065607,
               "phaseOrder": 1,
-              "roundOrder": 9
+              "roundOrder": 9,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Fleet",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Fleet",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "93049204",
@@ -331,7 +454,28 @@
               "isUpset": true,
               "startedAt": 1756065710,
               "phaseOrder": 1,
-              "roundOrder": 8
+              "roundOrder": 8,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "93049201",
@@ -350,6 +494,21 @@
               "startedAt": 1756066788,
               "phaseOrder": 1,
               "roundOrder": 7,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Absa",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Absa",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "CU6Cy06GXew",
@@ -402,7 +561,22 @@
               "isUpset": false,
               "startedAt": 1753639741,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Forsburn",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Forsburn",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "91957140",
@@ -420,7 +594,22 @@
               "isUpset": false,
               "startedAt": 1753640496,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "91957142",
@@ -438,7 +627,28 @@
               "isUpset": false,
               "startedAt": 1753641686,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "91960077",
@@ -456,7 +666,40 @@
               "isUpset": true,
               "startedAt": 1753643570,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "91960082",
@@ -475,6 +718,27 @@
               "startedAt": 1753643662,
               "phaseOrder": 2,
               "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "RoBj3tqU9FE",
@@ -500,7 +764,28 @@
               "isUpset": false,
               "startedAt": 1753645360,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "91960113",
@@ -518,7 +803,28 @@
               "isUpset": false,
               "startedAt": 1753645457,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Fleet",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Fleet",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Fleet",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -563,7 +869,22 @@
               "isUpset": false,
               "startedAt": 1732385623,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "82657778",
@@ -581,7 +902,22 @@
               "isUpset": false,
               "startedAt": 1732386456,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Zetterburn",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Zetterburn",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "82657784",
@@ -599,7 +935,22 @@
               "isUpset": false,
               "startedAt": 1732388834,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Fleet",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Fleet",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -731,7 +1082,22 @@
               "isUpset": false,
               "startedAt": 1756071053,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "93061780",
@@ -749,7 +1115,22 @@
               "isUpset": false,
               "startedAt": 1756073691,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "93061782",
@@ -768,6 +1149,21 @@
               "startedAt": 1756074147,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "5OfifrNV0iU",
@@ -793,7 +1189,22 @@
               "isUpset": false,
               "startedAt": 1756075906,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Sylvanos",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "93064961",
@@ -811,7 +1222,28 @@
               "isUpset": false,
               "startedAt": 1756077213,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Absa",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Absa",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Absa",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -857,6 +1289,27 @@
               "startedAt": 1751220348,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Ori",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Ori",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Ori",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "V_HSO9AuDNs",
@@ -882,7 +1335,28 @@
               "isUpset": false,
               "startedAt": 1751222950,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "90868164",
@@ -900,7 +1374,28 @@
               "isUpset": false,
               "startedAt": 1751222980,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "90871152",
@@ -919,6 +1414,27 @@
               "startedAt": 1751224504,
               "phaseOrder": 2,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Etalus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "V2cQ5UI3A8o",
@@ -944,7 +1460,28 @@
               "isUpset": false,
               "startedAt": 1751226481,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -990,6 +1527,21 @@
               "startedAt": 1742157850,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Absa",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Absa",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "H_-p6pzF0kA",
@@ -1015,7 +1567,22 @@
               "isUpset": false,
               "startedAt": 1742160266,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1060,7 +1627,22 @@
               "isUpset": false,
               "startedAt": 1732395382,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Olympia",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "82673005",
@@ -1078,7 +1660,22 @@
               "isUpset": false,
               "startedAt": 1732395972,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "82673073",
@@ -1097,6 +1694,21 @@
               "startedAt": 1732397653,
               "phaseOrder": 1,
               "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Forsburn",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "itHU5M0U_kQ",
@@ -1149,7 +1761,22 @@
               "isUpset": false,
               "startedAt": 1726343306,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "79711796",
@@ -1167,7 +1794,28 @@
               "isUpset": false,
               "startedAt": 1726346330,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mollo",
+                  "opponentCharacter": "Mollo",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mollo",
+                  "opponentCharacter": "Mollo",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Mollo",
+                  "opponentCharacter": "Mollo",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1214,7 +1862,22 @@
               "isUpset": false,
               "startedAt": 1723926150,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Orcane",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "78487466",
@@ -1232,7 +1895,22 @@
               "isUpset": false,
               "startedAt": 1723926695,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Zetterburn",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Zetterburn",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1278,6 +1956,21 @@
               "startedAt": 1722112353,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "Xxs6g42inNw",
@@ -1303,7 +1996,22 @@
               "isUpset": false,
               "startedAt": 1722113783,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Absa",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wrastor",
+                  "opponentCharacter": "Kragg",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1420,7 +2128,22 @@
               "isUpset": false,
               "startedAt": 1732985984,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Meta Knight",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Meta Knight",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "82886082",
@@ -1438,7 +2161,28 @@
               "isUpset": true,
               "startedAt": 1732986821,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Samus",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "82890571",
@@ -1456,7 +2200,22 @@
               "isUpset": false,
               "startedAt": 1732988898,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "82890641",
@@ -1474,7 +2233,22 @@
               "isUpset": false,
               "startedAt": 1732992220,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1521,7 +2295,22 @@
               "isUpset": false,
               "startedAt": 1728159620,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sheik",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Sheik",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "80638873",
@@ -1539,7 +2328,9 @@
               "isUpset": false,
               "startedAt": 1728161017,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "80646215",
@@ -1557,7 +2348,22 @@
               "isUpset": false,
               "startedAt": 1728166364,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "SINGLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Duck Hunt",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "80646218",
@@ -1575,7 +2381,22 @@
               "isUpset": false,
               "startedAt": 1728166579,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "SINGLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "80646221",
@@ -1593,7 +2414,28 @@
               "isUpset": false,
               "startedAt": 1728167608,
               "phaseOrder": 4,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "SINGLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Samus",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Samus",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Samus",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

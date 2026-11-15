@@ -111,7 +111,22 @@
               "isUpset": false,
               "startedAt": 1690047999,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62967848",
@@ -129,7 +144,28 @@
               "isUpset": false,
               "startedAt": 1690051093,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62974312",
@@ -147,7 +183,28 @@
               "isUpset": false,
               "startedAt": 1690056432,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62974326",
@@ -166,6 +223,21 @@
               "startedAt": 1690057241,
               "phaseOrder": 2,
               "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Joker",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "CE7-BhHsy3g",
@@ -191,7 +263,22 @@
               "isUpset": true,
               "startedAt": 1690060235,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Mewtwo",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62974455",
@@ -209,7 +296,22 @@
               "isUpset": false,
               "startedAt": 1690061023,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62974459",
@@ -228,6 +330,21 @@
               "startedAt": 1690064222,
               "phaseOrder": 2,
               "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "Ln15e86COlM",
@@ -254,6 +371,39 @@
               "startedAt": 1690066585,
               "phaseOrder": 4,
               "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Joker",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "ip-gzcFE2UI",
@@ -280,6 +430,33 @@
               "startedAt": 1690069675,
               "phaseOrder": 4,
               "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Steve",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Mii Brawler",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "ygDYcn6iekA",

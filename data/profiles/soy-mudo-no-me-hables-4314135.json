@@ -83,7 +83,9 @@
               "isUpset": false,
               "startedAt": 1511636376,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "11284302",
@@ -101,7 +103,9 @@
               "isUpset": false,
               "startedAt": 1511636696,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "11284301",
@@ -119,7 +123,9 @@
               "isUpset": false,
               "startedAt": 1511637970,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "11286525",
@@ -137,7 +143,9 @@
               "isUpset": false,
               "startedAt": 1511641277,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "11286555",
@@ -155,7 +163,9 @@
               "isUpset": false,
               "startedAt": 1511642306,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -263,7 +273,22 @@
               "isUpset": false,
               "startedAt": 1726941116,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Toon Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "80016493",
@@ -281,7 +306,22 @@
               "isUpset": false,
               "startedAt": 1726942388,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "80027309",
@@ -300,6 +340,21 @@
               "startedAt": 1726946429,
               "phaseOrder": 4,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "iwRrYa9mP48",
@@ -325,7 +380,22 @@
               "isUpset": false,
               "startedAt": 1726948118,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Isabelle",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Isabelle",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "80027326",
@@ -343,7 +413,22 @@
               "isUpset": false,
               "startedAt": 1726949144,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "80027329",
@@ -362,6 +447,21 @@
               "startedAt": 1726950227,
               "phaseOrder": 4,
               "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Byleth",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "fN9fW_6RIkA",
@@ -387,7 +487,22 @@
               "isUpset": false,
               "startedAt": 1726952671,
               "phaseOrder": 4,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kazuya",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

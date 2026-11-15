@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#050B1F">
+<title>Compare Players · Platfighters.uy</title>
+<meta name="description" content="Compare tournament history, matchups, and set results for players across Platfighters.uy.">
+<link rel="icon" href="assets/logo.jpg">
+<script>
+(function(){var t=null;try{t=localStorage.getItem('pfuy-theme')}catch(e){}if(!t){if(window.matchMedia&&window.matchMedia('(prefers-contrast: more)').matches)t='high-contrast';else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)t='daylight';else t='default'}document.documentElement.dataset.theme=t})();
+</script>
+<script src="js/i18n.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/head-to-head.css">
+</head>
+<body>
+<header class="topbar glass pill">
+  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt=""><span>Platfighters<span class="tld">.uy</span></span></a>
+  <span class="spacer"></span>
+  <nav><a href="players.html" data-i18n="nav.players">Players</a><a href="events.html" data-i18n="nav.events">Events</a><a href="rankings.html" data-i18n="nav.rankings">Rankings</a></nav>
+  <div class="lang glass pill"><button type="button" class="lang-btn on" data-lang="en">EN</button><button type="button" class="lang-btn" data-lang="es">ES</button></div>
+</header>
+<main class="h2h-page page-single">
+  <div class="h2h-heading"><div><div class="eyebrow mono" data-i18n="h2h.eyebrow">PLAYER DATA / HEAD-TO-HEAD</div><h1 data-i18n="h2h.title">Compare players</h1></div><a class="pill-btn glass" href="players.html" data-i18n="h2h.back">Players</a></div>
+  <section class="h2h-controls glass" aria-label="Comparison controls">
+    <label><span data-i18n="h2h.player1">Player 1</span><select id="player-one" class="game-filter glass"><option value="" data-i18n="h2h.choosePlayer">Choose player</option></select></label>
+    <label><span data-i18n="h2h.player2">Player 2</span><select id="player-two" class="game-filter glass"><option value="" data-i18n="h2h.choosePlayer">Choose player</option></select></label>
+    <label><span data-i18n="h2h.game">Game</span><select id="h2h-game" class="game-filter glass" aria-label="Game" disabled><option value="">Choose players first</option></select></label>
+    <label><span data-i18n="h2h.period">Period</span><select id="h2h-period" class="game-filter glass" aria-label="Period" disabled><option value="all">All history</option></select></label>
+    <label><span data-i18n="h2h.phase">Phase</span><select id="h2h-phase" class="game-filter glass" aria-label="Phase"><option value="all" data-i18n="h2h.filter.allPhases">All phases</option><option value="pools" data-i18n="h2h.filter.pools">Pools</option><option value="bracket" data-i18n="h2h.filter.bracket">Bracket</option><option value="top8" data-i18n="h2h.filter.top8">Top 8</option><option value="top3" data-i18n="h2h.filter.top3">Top 3</option></select></label>
+  </section>
+  <div id="h2h-status" class="h2h-status mono muted" role="status" aria-live="polite"></div>
+  <div id="h2h-content" hidden></div>
+</main>
+<footer class="foot mono muted"><span data-i18n="footer.source">Source: start.gg API · Served from local cache · Last synced</span> <span id="synced"></span></footer>
+<script src="js/head-to-head.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/mobile-nav.js"></script>
+</body>
+</html>

@@ -96,7 +96,22 @@
               "isUpset": false,
               "startedAt": 1726937527,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ridley",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "80013890",
@@ -114,7 +129,28 @@
               "isUpset": false,
               "startedAt": 1726940349,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ridley",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Dark Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Ridley",
+                  "opponentCharacter": "Dark Samus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "80027307",
@@ -133,6 +169,21 @@
               "startedAt": 1726946057,
               "phaseOrder": 4,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ridley",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "clUwjpxV4Qg",
@@ -158,7 +209,22 @@
               "isUpset": false,
               "startedAt": 1726947458,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ridley",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "80027377",
@@ -176,7 +242,22 @@
               "isUpset": false,
               "startedAt": 1726948564,
               "phaseOrder": 4,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ridley",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "80027383",
@@ -194,7 +275,22 @@
               "isUpset": false,
               "startedAt": 1726949735,
               "phaseOrder": 4,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ridley",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ridley",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

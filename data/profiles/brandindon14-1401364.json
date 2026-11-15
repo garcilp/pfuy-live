@@ -109,7 +109,9 @@
               "isUpset": true,
               "startedAt": 1567273587,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832431",
@@ -127,7 +129,9 @@
               "isUpset": false,
               "startedAt": 1567275258,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832435",
@@ -145,7 +149,9 @@
               "isUpset": false,
               "startedAt": 1567277131,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22832429",
@@ -163,7 +169,9 @@
               "isUpset": false,
               "startedAt": 1567278783,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22841133",
@@ -181,7 +189,9 @@
               "isUpset": false,
               "startedAt": 1567282784,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "22841150",
@@ -199,7 +209,28 @@
               "isUpset": false,
               "startedAt": 1567283523,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Young Link",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Young Link",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "unknown"
+                }
+              ]
             },
             {
               "setId": "22841250",
@@ -217,7 +248,28 @@
               "isUpset": false,
               "startedAt": 1567284712,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Lucas",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pikachu",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

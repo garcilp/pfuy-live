@@ -73,6 +73,8 @@
               "startedAt": 1717273537,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "VycE10Az20k",
@@ -99,6 +101,27 @@
               "startedAt": 1717278205,
               "phaseOrder": 1,
               "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mario",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mario",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Mario",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "2pG64GtO4S8",
@@ -260,7 +283,22 @@
               "isUpset": false,
               "startedAt": 1719074838,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Dr. Mario",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "76217434",
@@ -278,7 +316,22 @@
               "isUpset": false,
               "startedAt": 1719077030,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "R.O.B.",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "76217466",
@@ -296,7 +349,22 @@
               "isUpset": false,
               "startedAt": 1719079212,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "76217468",
@@ -314,7 +382,28 @@
               "isUpset": false,
               "startedAt": 1719079338,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "76227976",
@@ -332,7 +421,28 @@
               "isUpset": false,
               "startedAt": 1719083950,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "76227981",
@@ -350,7 +460,22 @@
               "isUpset": false,
               "startedAt": 1719087014,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "76228041",
@@ -368,7 +493,28 @@
               "isUpset": false,
               "startedAt": 1719087283,
               "phaseOrder": 4,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Yoshi",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -414,6 +560,21 @@
               "startedAt": 1714237589,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "-YsKaqejBiU",
@@ -439,7 +600,22 @@
               "isUpset": false,
               "startedAt": 1714241223,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "73977961",
@@ -457,7 +633,28 @@
               "isUpset": false,
               "startedAt": 1714245319,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "73978025",
@@ -475,7 +672,22 @@
               "isUpset": false,
               "startedAt": 1714247888,
               "phaseOrder": 4,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "73978029",
@@ -493,7 +705,22 @@
               "isUpset": false,
               "startedAt": 1714249822,
               "phaseOrder": 4,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "73978032",
@@ -511,7 +738,28 @@
               "isUpset": false,
               "startedAt": 1714252088,
               "phaseOrder": 4,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -556,7 +804,22 @@
               "isUpset": false,
               "startedAt": 1710606633,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "72117940",
@@ -574,7 +837,22 @@
               "isUpset": false,
               "startedAt": 1710609677,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "72129422",
@@ -593,6 +871,21 @@
               "startedAt": 1710613926,
               "phaseOrder": 4,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "pDAlVj12mu0",
@@ -618,7 +911,22 @@
               "isUpset": false,
               "startedAt": 1710614905,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Duck Hunt",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "72129439",
@@ -636,7 +944,22 @@
               "isUpset": false,
               "startedAt": 1710616303,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "72129442",
@@ -654,7 +977,22 @@
               "isUpset": false,
               "startedAt": 1710618857,
               "phaseOrder": 4,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "72129504",
@@ -672,7 +1010,22 @@
               "isUpset": false,
               "startedAt": 1710620421,
               "phaseOrder": 4,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "72129506",
@@ -690,7 +1043,22 @@
               "isUpset": false,
               "startedAt": 1710621636,
               "phaseOrder": 4,
-              "roundOrder": -9
+              "roundOrder": -9,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

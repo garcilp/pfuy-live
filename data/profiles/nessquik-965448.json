@@ -132,7 +132,22 @@
               "isUpset": false,
               "startedAt": 1729361167,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81179724",
@@ -150,7 +165,22 @@
               "isUpset": false,
               "startedAt": 1729364062,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Sora",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81188730",
@@ -168,7 +198,22 @@
               "isUpset": false,
               "startedAt": 1729368267,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81188741",
@@ -186,7 +231,22 @@
               "isUpset": false,
               "startedAt": 1729371911,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81188746",
@@ -204,7 +264,22 @@
               "isUpset": false,
               "startedAt": 1729373751,
               "phaseOrder": 2,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "81188869",
@@ -222,7 +297,22 @@
               "isUpset": false,
               "startedAt": 1729375472,
               "phaseOrder": 2,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81214626",
@@ -240,7 +330,28 @@
               "isUpset": true,
               "startedAt": 1729380444,
               "phaseOrder": 4,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Min Min",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Min Min",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Ness",
+                  "opponentCharacter": "Min Min",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81214628",
@@ -258,7 +369,34 @@
               "isUpset": false,
               "startedAt": 1729381647,
               "phaseOrder": 4,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Ness",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Ness",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -303,7 +441,22 @@
               "isUpset": false,
               "startedAt": 1690050025,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62967397",
@@ -322,6 +475,21 @@
               "startedAt": 1690051063,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "YsG0MEsvWjs",
@@ -348,6 +516,27 @@
               "startedAt": 1690054998,
               "phaseOrder": 2,
               "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Ness",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "DplljY_a1jg",
@@ -373,7 +562,28 @@
               "isUpset": false,
               "startedAt": 1690057807,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Ness",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "62974446",
@@ -391,7 +601,22 @@
               "isUpset": false,
               "startedAt": 1690060177,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "62974454",
@@ -409,7 +634,22 @@
               "isUpset": false,
               "startedAt": 1690061172,
               "phaseOrder": 2,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ness",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

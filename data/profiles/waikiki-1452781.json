@@ -117,7 +117,9 @@
               "isUpset": false,
               "startedAt": 1575141370,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24988505",
@@ -135,7 +137,9 @@
               "isUpset": false,
               "startedAt": 1575141385,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24988513",
@@ -153,7 +157,9 @@
               "isUpset": false,
               "startedAt": 1575141409,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24992099",
@@ -171,7 +177,9 @@
               "isUpset": false,
               "startedAt": 1575143675,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24992215",
@@ -189,7 +197,9 @@
               "isUpset": false,
               "startedAt": 1575146844,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24988508",
@@ -207,7 +217,28 @@
               "isUpset": false,
               "startedAt": 1607902896,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Bowser",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -252,7 +283,9 @@
               "isUpset": false,
               "startedAt": 1569695393,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "23496418",
@@ -270,7 +303,9 @@
               "isUpset": false,
               "startedAt": 1569696628,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "23496422",
@@ -288,7 +323,9 @@
               "isUpset": false,
               "startedAt": 1569698094,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "23506235",
@@ -306,7 +343,9 @@
               "isUpset": false,
               "startedAt": 1569703420,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "23506358",
@@ -324,7 +363,9 @@
               "isUpset": false,
               "startedAt": 1569704604,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

@@ -87,7 +87,9 @@
               "isUpset": false,
               "startedAt": 1575141222,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24988513",
@@ -105,7 +107,9 @@
               "isUpset": true,
               "startedAt": 1575141409,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24988504",
@@ -123,7 +127,9 @@
               "isUpset": false,
               "startedAt": 1575141426,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24992080",
@@ -141,7 +147,9 @@
               "isUpset": false,
               "startedAt": 1575145342,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24992205",
@@ -159,7 +167,9 @@
               "isUpset": false,
               "startedAt": 1575146554,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24988506",
@@ -177,7 +187,28 @@
               "isUpset": false,
               "startedAt": 1607902923,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Bowser Jr.",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": null,
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {},

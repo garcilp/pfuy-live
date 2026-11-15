@@ -110,7 +110,22 @@
               "isUpset": false,
               "startedAt": 1729362020,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81179925",
@@ -128,7 +143,22 @@
               "isUpset": false,
               "startedAt": 1729364050,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81188735",
@@ -146,7 +176,22 @@
               "isUpset": false,
               "startedAt": 1729369160,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Wario",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Wario",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81188743",
@@ -164,7 +209,22 @@
               "isUpset": true,
               "startedAt": 1729370832,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81188747",
@@ -182,7 +242,22 @@
               "isUpset": false,
               "startedAt": 1729375759,
               "phaseOrder": 2,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Ken",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "81214613",
@@ -200,7 +275,40 @@
               "isUpset": false,
               "startedAt": 1729377615,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Steve",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Steve",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 5,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "81214627",
@@ -218,7 +326,28 @@
               "isUpset": false,
               "startedAt": 1729381641,
               "phaseOrder": 4,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Pac-Man",
+                  "opponentCharacter": "Mario",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

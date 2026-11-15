@@ -96,7 +96,22 @@
               "isUpset": false,
               "startedAt": 1763230421,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "96321103",
@@ -114,7 +129,22 @@
               "isUpset": false,
               "startedAt": 1763231664,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "96329694",
@@ -132,7 +162,22 @@
               "isUpset": false,
               "startedAt": 1763235232,
               "phaseOrder": 7,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Samus",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "96329703",
@@ -150,7 +195,22 @@
               "isUpset": false,
               "startedAt": 1763235982,
               "phaseOrder": 7,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Terry",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "96329708",
@@ -168,7 +228,28 @@
               "isUpset": false,
               "startedAt": 1763239365,
               "phaseOrder": 7,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "96329768",
@@ -186,7 +267,22 @@
               "isUpset": false,
               "startedAt": 1763240677,
               "phaseOrder": 7,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Piranha Plant",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "96329771",
@@ -204,7 +300,22 @@
               "isUpset": false,
               "startedAt": 1763241684,
               "phaseOrder": 7,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Incineroar",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

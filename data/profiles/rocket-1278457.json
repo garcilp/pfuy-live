@@ -111,7 +111,28 @@
               "isUpset": false,
               "startedAt": 1777750020,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Young Link",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Young Link",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Young Link",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "102418592",
@@ -129,7 +150,28 @@
               "isUpset": false,
               "startedAt": 1777751919,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Young Link",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Young Link",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Young Link",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "102418596",
@@ -148,6 +190,27 @@
               "startedAt": 1777754333,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Young Link",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Young Link",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Young Link",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "7DBMZUtbmck",
@@ -174,6 +237,27 @@
               "startedAt": 1777761149,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Young Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Young Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Young Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "lfVGnlTplcA",
@@ -200,6 +284,39 @@
               "startedAt": 1777851391,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Young Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Young Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Young Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Young Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 5,
+                  "character": "Fox",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "k_MjFKUDWC0",
@@ -254,7 +371,9 @@
               "isUpset": true,
               "startedAt": 1593298099,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "30203008",
@@ -272,7 +391,9 @@
               "isUpset": true,
               "startedAt": 1593298107,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "30203002",
@@ -290,7 +411,9 @@
               "isUpset": true,
               "startedAt": 1593299830,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "30203012",
@@ -308,7 +431,9 @@
               "isUpset": false,
               "startedAt": 1593299839,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "30261444",
@@ -326,7 +451,9 @@
               "isUpset": false,
               "startedAt": 1593577120,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "30261447",
@@ -344,7 +471,9 @@
               "isUpset": false,
               "startedAt": 1593654198,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "30261448",
@@ -362,7 +491,9 @@
               "isUpset": false,
               "startedAt": 1593655769,
               "phaseOrder": 2,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "30261449",
@@ -380,7 +511,9 @@
               "isUpset": false,
               "startedAt": 1593896542,
               "phaseOrder": 2,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -465,7 +598,28 @@
               "isUpset": false,
               "startedAt": 1777767048,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "102444953",
@@ -483,7 +637,34 @@
               "isUpset": false,
               "startedAt": 1777767737,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Peach",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "102444955",
@@ -502,6 +683,33 @@
               "startedAt": 1777771695,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Squirtle",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Squirtle",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Squirtle",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Squirtle",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "QxRtuSmuGbk",
@@ -528,6 +736,27 @@
               "startedAt": 1777776801,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Snake",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Toon Link",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "h_5dUmutcwM",

@@ -122,7 +122,9 @@
               "isUpset": true,
               "startedAt": 1606588440,
               "phaseOrder": 1,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703120",
@@ -140,7 +142,9 @@
               "isUpset": false,
               "startedAt": 1606589230,
               "phaseOrder": 1,
-              "roundOrder": 9
+              "roundOrder": 9,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703097",
@@ -158,7 +162,9 @@
               "isUpset": true,
               "startedAt": 1606590138,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703109",
@@ -176,7 +182,9 @@
               "isUpset": false,
               "startedAt": 1606590878,
               "phaseOrder": 1,
-              "roundOrder": 7
+              "roundOrder": 7,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703078",
@@ -194,7 +202,9 @@
               "isUpset": false,
               "startedAt": 1606592928,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703129",
@@ -212,7 +222,9 @@
               "isUpset": false,
               "startedAt": 1606593796,
               "phaseOrder": 1,
-              "roundOrder": 11
+              "roundOrder": 11,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703087",
@@ -231,6 +243,8 @@
               "startedAt": 1606594324,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "_qD1oMDmmaM",
@@ -256,7 +270,22 @@
               "isUpset": true,
               "startedAt": 1607904578,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Pit",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Greninja",
+                  "outcome": "win"
+                }
+              ]
             }
           ],
           "characterCounts": {},
@@ -297,7 +326,9 @@
               "isUpset": false,
               "startedAt": 1602958530,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32788761",
@@ -315,7 +346,9 @@
               "isUpset": false,
               "startedAt": 1602960670,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32788765",
@@ -333,7 +366,9 @@
               "isUpset": false,
               "startedAt": 1602961951,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32788772",
@@ -351,7 +386,9 @@
               "isUpset": true,
               "startedAt": 1602966540,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32788769",
@@ -370,6 +407,8 @@
               "startedAt": 1602971071,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "fuUWn2sI8eo",

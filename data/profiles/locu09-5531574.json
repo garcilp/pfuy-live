@@ -86,7 +86,22 @@
               "isUpset": false,
               "startedAt": 1788025983,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Rosalina",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Little Mac",
+                  "opponentCharacter": "Rosalina",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "107070335",
@@ -104,7 +119,22 @@
               "isUpset": false,
               "startedAt": 1788029235,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "107084169",
@@ -123,6 +153,21 @@
               "startedAt": 1788035425,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Little Mac",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "LbfZ1QjZtO0",
@@ -148,7 +193,22 @@
               "isUpset": false,
               "startedAt": 1788038968,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Little Mac",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Duck Hunt",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

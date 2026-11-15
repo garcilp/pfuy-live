@@ -129,7 +129,9 @@
               "isUpset": false,
               "startedAt": 1578770756,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "25712729",
@@ -147,7 +149,9 @@
               "isUpset": false,
               "startedAt": 1578775697,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "25712735",
@@ -165,7 +169,9 @@
               "isUpset": false,
               "startedAt": 1578776568,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "25721767",
@@ -183,7 +189,9 @@
               "isUpset": false,
               "startedAt": 1578779335,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "25721880",
@@ -201,7 +209,9 @@
               "isUpset": false,
               "startedAt": 1578782270,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -242,7 +252,22 @@
               "isUpset": false,
               "startedAt": 1565549493,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ness",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22413924",
@@ -260,7 +285,9 @@
               "isUpset": false,
               "startedAt": 1565553452,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22413919",
@@ -278,7 +305,9 @@
               "isUpset": false,
               "startedAt": 1565553944,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22413916",
@@ -296,7 +325,9 @@
               "isUpset": false,
               "startedAt": 1565554944,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22416321",
@@ -314,7 +345,9 @@
               "isUpset": false,
               "startedAt": 1565557901,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "22416419",
@@ -332,7 +365,28 @@
               "isUpset": false,
               "startedAt": 1565558569,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Corrin",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Ken",
+                  "opponentCharacter": "Corrin",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Ridley",
+                  "opponentCharacter": "Corrin",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "22416435",
@@ -350,7 +404,28 @@
               "isUpset": false,
               "startedAt": 1565559561,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Hero",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Donkey Kong",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Dark Pit",
+                  "opponentCharacter": "Ryu",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

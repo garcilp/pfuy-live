@@ -97,7 +97,9 @@
               "isUpset": false,
               "startedAt": 1606592305,
               "phaseOrder": 1,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703093",
@@ -116,6 +118,8 @@
               "startedAt": 1606593881,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "zn0gabKILw8",
@@ -142,6 +146,8 @@
               "startedAt": 1606594324,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "_qD1oMDmmaM",
@@ -168,6 +174,8 @@
               "startedAt": 1606594986,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "RYjvaUu2Gmg",
@@ -193,7 +201,9 @@
               "isUpset": false,
               "startedAt": 1606597093,
               "phaseOrder": 1,
-              "roundOrder": 10
+              "roundOrder": 10,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703115",
@@ -211,7 +221,9 @@
               "isUpset": false,
               "startedAt": 1606598480,
               "phaseOrder": 1,
-              "roundOrder": 8
+              "roundOrder": 8,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703127",
@@ -230,6 +242,8 @@
               "startedAt": 1606599699,
               "phaseOrder": 1,
               "roundOrder": 11,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "Ytn-gWrOyYo",
@@ -255,7 +269,22 @@
               "isUpset": false,
               "startedAt": 1607904614,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {},

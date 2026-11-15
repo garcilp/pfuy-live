@@ -73,6 +73,21 @@
               "startedAt": 1673720757,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bayonetta",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bayonetta",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "Qm70oC8dnRA",
@@ -98,7 +113,9 @@
               "isUpset": false,
               "startedAt": 1673722536,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {

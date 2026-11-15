@@ -114,7 +114,9 @@
               "isUpset": false,
               "startedAt": 1647106095,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45308035",
@@ -132,7 +134,9 @@
               "isUpset": false,
               "startedAt": 1647106114,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45308027",
@@ -150,7 +154,9 @@
               "isUpset": false,
               "startedAt": 1647107191,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "45314492",
@@ -169,6 +175,21 @@
               "startedAt": 1647116000,
               "phaseOrder": 5,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "mVkdzMnjpm0",
@@ -194,7 +215,9 @@
               "isUpset": false,
               "startedAt": 1647117114,
               "phaseOrder": 5,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "45314612",
@@ -212,7 +235,22 @@
               "isUpset": true,
               "startedAt": 1647118010,
               "phaseOrder": 5,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "45314627",
@@ -230,7 +268,22 @@
               "isUpset": false,
               "startedAt": 1647118607,
               "phaseOrder": 5,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Yoshi",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

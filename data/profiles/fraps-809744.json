@@ -268,7 +268,22 @@
               "isUpset": false,
               "startedAt": 1658598507,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Luigi",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49873127",
@@ -286,7 +301,28 @@
               "isUpset": false,
               "startedAt": 1658598785,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Luigi",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49873120",
@@ -304,7 +340,22 @@
               "isUpset": false,
               "startedAt": 1658600375,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Luigi",
+                  "opponentCharacter": "Richter",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Richter",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "49873125",
@@ -322,7 +373,22 @@
               "isUpset": false,
               "startedAt": 1658600433,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Roy",
+                  "opponentCharacter": "Ness",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "49883424",
@@ -340,7 +406,22 @@
               "isUpset": false,
               "startedAt": 1658606150,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49883488",
@@ -358,7 +439,22 @@
               "isUpset": false,
               "startedAt": 1658607532,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser Jr.",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -409,7 +505,9 @@
               "isUpset": false,
               "startedAt": 1655577504,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "48565124",
@@ -427,7 +525,9 @@
               "isUpset": false,
               "startedAt": 1655577564,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "48565118",
@@ -446,6 +546,8 @@
               "startedAt": 1655577584,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "49mOMhWnUco",
@@ -471,7 +573,9 @@
               "isUpset": false,
               "startedAt": 1655577608,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "48569834",
@@ -489,7 +593,22 @@
               "isUpset": false,
               "startedAt": 1655580567,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Roy",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "48569841",
@@ -507,7 +626,28 @@
               "isUpset": false,
               "startedAt": 1655582844,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Luigi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "48569844",
@@ -525,7 +665,28 @@
               "isUpset": false,
               "startedAt": 1655584408,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Luigi",
+                  "opponentCharacter": "Zero Suit Samus",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "48569846",
@@ -544,6 +705,27 @@
               "startedAt": 1655585619,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Luigi",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "A5ojjJT5DjE",
@@ -570,6 +752,33 @@
               "startedAt": 1655589340,
               "phaseOrder": 1,
               "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Luigi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Luigi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Luigi",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "m7NKfW-ElOk",
@@ -596,6 +805,33 @@
               "startedAt": 1655589988,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Roy",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Incineroar",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Luigi",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "tQkmk6s6xHE",
@@ -661,7 +897,9 @@
               "isUpset": false,
               "startedAt": 1632073774,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "40654788",
@@ -679,7 +917,9 @@
               "isUpset": false,
               "startedAt": 1632073796,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "40654800",
@@ -697,7 +937,9 @@
               "isUpset": false,
               "startedAt": 1632073808,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "40661798",
@@ -715,7 +957,9 @@
               "isUpset": false,
               "startedAt": 1632083204,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "40661805",
@@ -733,7 +977,9 @@
               "isUpset": false,
               "startedAt": 1632084920,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "40661867",
@@ -751,7 +997,9 @@
               "isUpset": false,
               "startedAt": 1632085924,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "40661870",
@@ -770,6 +1018,8 @@
               "startedAt": 1632086864,
               "phaseOrder": 1,
               "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "66sbKaFZZfY",
@@ -795,7 +1045,9 @@
               "isUpset": false,
               "startedAt": 1632088833,
               "phaseOrder": 1,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "40661874",
@@ -813,7 +1065,9 @@
               "isUpset": false,
               "startedAt": 1632089992,
               "phaseOrder": 1,
-              "roundOrder": -9
+              "roundOrder": -9,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "40654792",
@@ -831,7 +1085,22 @@
               "isUpset": false,
               "startedAt": 1634243065,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -887,7 +1156,22 @@
               "isUpset": false,
               "startedAt": 1582996336,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Luigi",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "27021207",
@@ -905,7 +1189,9 @@
               "isUpset": false,
               "startedAt": 1582997485,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "27035075",
@@ -923,7 +1209,9 @@
               "isUpset": false,
               "startedAt": 1583006198,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "27035195",
@@ -941,7 +1229,9 @@
               "isUpset": false,
               "startedAt": 1583006816,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "27035211",
@@ -959,7 +1249,9 @@
               "isUpset": false,
               "startedAt": 1583007669,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {
@@ -1004,7 +1296,9 @@
               "isUpset": false,
               "startedAt": 1575139208,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24984637",
@@ -1023,6 +1317,8 @@
               "startedAt": 1575141648,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "KUS8kN4xrtU",
@@ -1049,6 +1345,8 @@
               "startedAt": 1575142659,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "tRouV8p94HU",
@@ -1074,7 +1372,9 @@
               "isUpset": false,
               "startedAt": 1575142694,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24992083",
@@ -1092,7 +1392,9 @@
               "isUpset": false,
               "startedAt": 1575144133,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24992110",
@@ -1110,7 +1412,9 @@
               "isUpset": false,
               "startedAt": 1575144980,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24992228",
@@ -1128,7 +1432,9 @@
               "isUpset": true,
               "startedAt": 1575148806,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24992239",
@@ -1147,6 +1453,8 @@
               "startedAt": 1575149937,
               "phaseOrder": 2,
               "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "IrAbp9ijAEw",
@@ -1172,7 +1480,9 @@
               "isUpset": false,
               "startedAt": 1575152808,
               "phaseOrder": 2,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1213,7 +1523,9 @@
               "isUpset": false,
               "startedAt": 1565548680,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22412920",
@@ -1231,7 +1543,22 @@
               "isUpset": false,
               "startedAt": 1565550502,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Luigi",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Falco",
+                  "opponentCharacter": "Shulk",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22412918",
@@ -1249,7 +1576,9 @@
               "isUpset": false,
               "startedAt": 1565551012,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22412921",
@@ -1267,7 +1596,9 @@
               "isUpset": false,
               "startedAt": 1565552093,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "22416310",
@@ -1285,7 +1616,22 @@
               "isUpset": false,
               "startedAt": 1565555085,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Falco",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Ganondorf",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "22416440",
@@ -1303,7 +1649,22 @@
               "isUpset": false,
               "startedAt": 1565556823,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Wario",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

@@ -369,7 +369,22 @@
               "isUpset": false,
               "startedAt": 1665856305,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53035374",
@@ -387,7 +402,22 @@
               "isUpset": false,
               "startedAt": 1665856364,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Mii Gunner",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Mii Gunner",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "53035370",
@@ -405,7 +435,22 @@
               "isUpset": false,
               "startedAt": 1665856632,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Kazuya",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53035362",
@@ -423,7 +468,22 @@
               "isUpset": false,
               "startedAt": 1665856716,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Cloud",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "53035364",
@@ -441,7 +501,22 @@
               "isUpset": false,
               "startedAt": 1665856763,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "53045345",
@@ -460,6 +535,21 @@
               "startedAt": 1665863899,
               "phaseOrder": 2,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "oHJoFnbmq_o",
@@ -485,7 +575,22 @@
               "isUpset": false,
               "startedAt": 1665864585,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -538,7 +643,22 @@
               "isUpset": false,
               "startedAt": 1655572539,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Dark Samus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48559055",
@@ -556,7 +676,22 @@
               "isUpset": false,
               "startedAt": 1655577849,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "48559056",
@@ -574,7 +709,22 @@
               "isUpset": false,
               "startedAt": 1655577949,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48559051",
@@ -593,6 +743,21 @@
               "startedAt": 1655578055,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "kLu7g9Z5MvQ",
@@ -618,7 +783,22 @@
               "isUpset": false,
               "startedAt": 1655581798,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Cloud",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Steve",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "48569840",
@@ -636,7 +816,28 @@
               "isUpset": false,
               "startedAt": 1655582726,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "48569844",
@@ -654,7 +855,28 @@
               "isUpset": false,
               "startedAt": 1655584408,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Luigi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48569875",
@@ -672,7 +894,22 @@
               "isUpset": false,
               "startedAt": 1655586687,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "48569877",
@@ -690,7 +927,22 @@
               "isUpset": false,
               "startedAt": 1655589332,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -756,7 +1008,22 @@
               "isUpset": false,
               "startedAt": 1653155933,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47570518",
@@ -774,7 +1041,22 @@
               "isUpset": false,
               "startedAt": 1653157816,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47570516",
@@ -792,7 +1074,22 @@
               "isUpset": false,
               "startedAt": 1653158144,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Roy",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "47570526",
@@ -811,6 +1108,21 @@
               "startedAt": 1653158237,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "TvRzzhUHGfg",
@@ -836,7 +1148,22 @@
               "isUpset": false,
               "startedAt": 1653158307,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Greninja",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47578902",
@@ -854,7 +1181,22 @@
               "isUpset": false,
               "startedAt": 1653162557,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47578934",
@@ -872,7 +1214,22 @@
               "isUpset": false,
               "startedAt": 1653165067,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "47578938",
@@ -890,7 +1247,28 @@
               "isUpset": false,
               "startedAt": 1653165957,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "47578942",
@@ -908,7 +1286,22 @@
               "isUpset": false,
               "startedAt": 1653167276,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "47578944",
@@ -926,7 +1319,28 @@
               "isUpset": false,
               "startedAt": 1653167785,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "47578946",
@@ -944,7 +1358,28 @@
               "isUpset": false,
               "startedAt": 1653168460,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "47578947",
@@ -963,6 +1398,33 @@
               "startedAt": 1653169993,
               "phaseOrder": 1,
               "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Chrom",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Zelda",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "gR9_2syrjm8",
@@ -989,6 +1451,33 @@
               "startedAt": 1653172349,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King Dedede",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Sora",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Sonic",
+                  "outcome": "win"
+                },
+                {
+                  "game": 4,
+                  "character": "Zelda",
+                  "opponentCharacter": "Sora",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "dDTU3dJmuII",
@@ -1014,7 +1503,34 @@
               "isUpset": false,
               "startedAt": 1653172490,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zelda",
+                  "opponentCharacter": "Sora",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Zelda",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1079,6 +1595,8 @@
               "startedAt": 1650735143,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "O5k930Z-FSc",
@@ -1104,7 +1622,9 @@
               "isUpset": false,
               "startedAt": 1650735221,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46625465",
@@ -1122,7 +1642,9 @@
               "isUpset": false,
               "startedAt": 1650736651,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46636900",
@@ -1140,7 +1662,22 @@
               "isUpset": false,
               "startedAt": 1650742636,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "46636964",
@@ -1158,7 +1695,22 @@
               "isUpset": false,
               "startedAt": 1650744499,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Zero Suit Samus",
+                  "opponentCharacter": "Lucario",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Lucario",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1205,7 +1757,9 @@
               "isUpset": false,
               "startedAt": 1639328179,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "43119736",
@@ -1224,6 +1778,8 @@
               "startedAt": 1639330809,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "k8twgMDl2uk",
@@ -1249,7 +1805,9 @@
               "isUpset": false,
               "startedAt": 1639333370,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1290,7 +1848,9 @@
               "isUpset": false,
               "startedAt": 1635101713,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705414",
@@ -1308,7 +1868,9 @@
               "isUpset": false,
               "startedAt": 1635103971,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705418",
@@ -1326,7 +1888,9 @@
               "isUpset": false,
               "startedAt": 1635103993,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705422",
@@ -1344,7 +1908,9 @@
               "isUpset": false,
               "startedAt": 1635104003,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41705426",
@@ -1362,7 +1928,9 @@
               "isUpset": false,
               "startedAt": 1635104057,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "41714365",
@@ -1380,7 +1948,9 @@
               "isUpset": false,
               "startedAt": 1635106865,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714373",
@@ -1398,7 +1968,9 @@
               "isUpset": false,
               "startedAt": 1635108461,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714377",
@@ -1416,7 +1988,9 @@
               "isUpset": false,
               "startedAt": 1635110026,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714441",
@@ -1434,7 +2008,9 @@
               "isUpset": false,
               "startedAt": 1635113030,
               "phaseOrder": 1,
-              "roundOrder": -8
+              "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "41714442",
@@ -1452,7 +2028,9 @@
               "isUpset": false,
               "startedAt": 1635113755,
               "phaseOrder": 1,
-              "roundOrder": -9
+              "roundOrder": -9,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1503,6 +2081,8 @@
               "startedAt": 1606588078,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "u2kO_rcJvZw",
@@ -1529,6 +2109,8 @@
               "startedAt": 1606591269,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "jMsq-ygctBw",
@@ -1554,7 +2136,9 @@
               "isUpset": false,
               "startedAt": 1606592892,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33702876",
@@ -1572,7 +2156,9 @@
               "isUpset": false,
               "startedAt": 1606594072,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33702880",
@@ -1590,7 +2176,9 @@
               "isUpset": false,
               "startedAt": 1606594741,
               "phaseOrder": 1,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33702892",
@@ -1608,7 +2196,9 @@
               "isUpset": false,
               "startedAt": 1606596918,
               "phaseOrder": 1,
-              "roundOrder": 8
+              "roundOrder": 8,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33702886",
@@ -1626,7 +2216,9 @@
               "isUpset": false,
               "startedAt": 1606598699,
               "phaseOrder": 1,
-              "roundOrder": 7
+              "roundOrder": 7,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33702909",
@@ -1644,7 +2236,9 @@
               "isUpset": false,
               "startedAt": 1606600819,
               "phaseOrder": 1,
-              "roundOrder": 11
+              "roundOrder": 11,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33702903",
@@ -1662,7 +2256,9 @@
               "isUpset": false,
               "startedAt": 1606600969,
               "phaseOrder": 1,
-              "roundOrder": 10
+              "roundOrder": 10,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33702863",
@@ -1681,6 +2277,21 @@
               "startedAt": 1607283045,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Terry",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Terry",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "oJVxT3Btq_8",
@@ -1734,6 +2345,8 @@
               "startedAt": 1602960260,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "NyJho1rOq2M",
@@ -1759,7 +2372,9 @@
               "isUpset": false,
               "startedAt": 1602960884,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32787523",
@@ -1777,7 +2392,9 @@
               "isUpset": false,
               "startedAt": 1602963187,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32787524",
@@ -1795,7 +2412,9 @@
               "isUpset": false,
               "startedAt": 1602966772,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1836,7 +2455,9 @@
               "isUpset": false,
               "startedAt": 1583000966,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "27030096",
@@ -1854,7 +2475,9 @@
               "isUpset": true,
               "startedAt": 1583000983,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "27030100",
@@ -1872,7 +2495,9 @@
               "isUpset": false,
               "startedAt": 1583001035,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "27035065",
@@ -1890,7 +2515,9 @@
               "isUpset": false,
               "startedAt": 1583004211,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "27035206",
@@ -1908,7 +2535,9 @@
               "isUpset": false,
               "startedAt": 1583007038,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1949,7 +2578,9 @@
               "isUpset": false,
               "startedAt": 1572111896,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24215864",
@@ -1967,7 +2598,22 @@
               "isUpset": false,
               "startedAt": 1572112128,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "24215867",
@@ -1985,7 +2631,9 @@
               "isUpset": false,
               "startedAt": 1572113572,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24215869",
@@ -2003,7 +2651,9 @@
               "isUpset": false,
               "startedAt": 1572113627,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "24213665",
@@ -2021,7 +2671,9 @@
               "isUpset": false,
               "startedAt": 1572116989,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "24213805",
@@ -2039,7 +2691,9 @@
               "isUpset": false,
               "startedAt": 1572120311,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -2080,7 +2734,9 @@
               "isUpset": false,
               "startedAt": 1569698650,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "23503937",
@@ -2098,7 +2754,9 @@
               "isUpset": true,
               "startedAt": 1569698658,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "23506236",
@@ -2116,7 +2774,9 @@
               "isUpset": false,
               "startedAt": 1569703690,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "23506358",
@@ -2134,7 +2794,9 @@
               "isUpset": false,
               "startedAt": 1569704604,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "23506374",
@@ -2152,7 +2814,9 @@
               "isUpset": false,
               "startedAt": 1569705979,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "23503932",
@@ -2170,7 +2834,22 @@
               "isUpset": false,
               "startedAt": 1607902035,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": null,
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": null,
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {},

@@ -122,7 +122,22 @@
               "isUpset": false,
               "startedAt": 1606588783,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "33703242",
@@ -140,7 +155,28 @@
               "isUpset": false,
               "startedAt": 1606591858,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "33703264",
@@ -158,7 +194,22 @@
               "isUpset": false,
               "startedAt": 1606591909,
               "phaseOrder": 1,
-              "roundOrder": 8
+              "roundOrder": 8,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "33703246",
@@ -176,7 +227,9 @@
               "isUpset": false,
               "startedAt": 1606593364,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703234",
@@ -194,7 +247,28 @@
               "isUpset": false,
               "startedAt": 1606594558,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "33703230",
@@ -212,7 +286,9 @@
               "isUpset": false,
               "startedAt": 1606594607,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703252",
@@ -230,7 +306,9 @@
               "isUpset": true,
               "startedAt": 1606595142,
               "phaseOrder": 1,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703270",
@@ -248,7 +326,9 @@
               "isUpset": false,
               "startedAt": 1606595150,
               "phaseOrder": 1,
-              "roundOrder": 9
+              "roundOrder": 9,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             }
           ],
           "characterCounts": {
@@ -293,7 +373,9 @@
               "isUpset": false,
               "startedAt": 1602959979,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32788762",
@@ -312,6 +394,8 @@
               "startedAt": 1602960624,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "7RHO4kRee2w",
@@ -337,7 +421,9 @@
               "isUpset": false,
               "startedAt": 1602964030,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32788771",
@@ -355,7 +441,9 @@
               "isUpset": false,
               "startedAt": 1602966556,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32788769",
@@ -374,6 +462,8 @@
               "startedAt": 1602971071,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "fuUWn2sI8eo",

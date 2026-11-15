@@ -169,7 +169,22 @@
               "isUpset": false,
               "startedAt": 1653156047,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Isabelle",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47570515",
@@ -187,7 +202,22 @@
               "isUpset": false,
               "startedAt": 1653157890,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Peach",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47570523",
@@ -205,7 +235,9 @@
               "isUpset": false,
               "startedAt": 1653158182,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47570526",
@@ -224,6 +256,21 @@
               "startedAt": 1653158237,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Peach",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "TvRzzhUHGfg",
@@ -249,7 +296,22 @@
               "isUpset": false,
               "startedAt": 1653158340,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47579558",
@@ -267,7 +329,22 @@
               "isUpset": false,
               "startedAt": 1653164778,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Peach",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47579616",
@@ -285,7 +362,28 @@
               "isUpset": false,
               "startedAt": 1653165411,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Peach",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -334,7 +432,28 @@
               "isUpset": false,
               "startedAt": 1606590549,
               "phaseOrder": 1,
-              "roundOrder": 8
+              "roundOrder": 8,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "33703247",
@@ -352,7 +471,22 @@
               "isUpset": false,
               "startedAt": 1606590594,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Zelda",
+                  "opponentCharacter": "Samus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "33703259",
@@ -371,6 +505,21 @@
               "startedAt": 1606590724,
               "phaseOrder": 1,
               "roundOrder": 7,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Fox",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Daisy",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "H1e6fdLs45M",
@@ -397,6 +546,27 @@
               "startedAt": 1606591381,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Daisy",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Zelda",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "pTVeiExWfIs",
@@ -423,6 +593,27 @@
               "startedAt": 1606592168,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Daisy",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Peach",
+                  "opponentCharacter": "Villager",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "mBiib09XrLM",
@@ -448,7 +639,22 @@
               "isUpset": true,
               "startedAt": 1606594514,
               "phaseOrder": 1,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Peach",
+                  "opponentCharacter": "Pit",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Peach",
+                  "opponentCharacter": "Pit",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "33703270",
@@ -466,7 +672,9 @@
               "isUpset": false,
               "startedAt": 1606595150,
               "phaseOrder": 1,
-              "roundOrder": 9
+              "roundOrder": 9,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "33703241",
@@ -485,6 +693,8 @@
               "startedAt": 1606596139,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "09Gvsln8L7I",
@@ -510,7 +720,9 @@
               "isUpset": false,
               "startedAt": 1607195538,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "33806241",
@@ -528,7 +740,9 @@
               "isUpset": false,
               "startedAt": 1607197561,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {
@@ -577,7 +791,9 @@
               "isUpset": false,
               "startedAt": 1602961432,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32835457",
@@ -595,7 +811,9 @@
               "isUpset": true,
               "startedAt": 1602962721,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32835461",
@@ -613,7 +831,9 @@
               "isUpset": false,
               "startedAt": 1602963391,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "32835466",
@@ -631,7 +851,9 @@
               "isUpset": false,
               "startedAt": 1602964769,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             }
           ],
           "characterCounts": {},

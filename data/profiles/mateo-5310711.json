@@ -82,7 +82,22 @@
               "isUpset": false,
               "startedAt": 1775929985,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Lucario",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "101492824",
@@ -100,7 +115,22 @@
               "isUpset": false,
               "startedAt": 1775931534,
               "phaseOrder": 1,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "101506375",
@@ -118,7 +148,28 @@
               "isUpset": false,
               "startedAt": 1775937925,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Greninja",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "101506433",
@@ -136,7 +187,22 @@
               "isUpset": false,
               "startedAt": 1775938876,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Greninja",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Greninja",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

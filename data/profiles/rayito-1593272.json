@@ -120,7 +120,9 @@
               "isUpset": false,
               "startedAt": 1578770527,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "25712531",
@@ -139,6 +141,8 @@
               "startedAt": 1578771862,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "hsEZL-qmZdE",
@@ -164,7 +168,9 @@
               "isUpset": false,
               "startedAt": 1578773970,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "25721767",
@@ -182,7 +188,9 @@
               "isUpset": false,
               "startedAt": 1578779335,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "25721783",
@@ -201,6 +209,8 @@
               "startedAt": 1578781265,
               "phaseOrder": 2,
               "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "EazABq3UheY",
@@ -227,6 +237,8 @@
               "startedAt": 1578783817,
               "phaseOrder": 2,
               "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "O7y4w43sEnQ",
@@ -253,6 +265,8 @@
               "startedAt": 1578787224,
               "phaseOrder": 2,
               "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "K7FRmllPPRs",
@@ -279,6 +293,8 @@
               "startedAt": 1578790001,
               "phaseOrder": 2,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "vm1F79UYI3M",
@@ -305,6 +321,27 @@
               "startedAt": 1578794423,
               "phaseOrder": 2,
               "roundOrder": -10,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Mii Gunner",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "OfaCW5ddPiE",

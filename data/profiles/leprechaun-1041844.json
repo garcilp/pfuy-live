@@ -77,7 +77,9 @@
               "isUpset": false,
               "startedAt": 1548526858,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "18207959",
@@ -95,7 +97,9 @@
               "isUpset": false,
               "startedAt": 1548527392,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "18207964",
@@ -113,7 +117,9 @@
               "isUpset": false,
               "startedAt": 1548529148,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "18207968",
@@ -131,7 +137,9 @@
               "isUpset": true,
               "startedAt": 1548530090,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -219,7 +227,28 @@
               "isUpset": true,
               "startedAt": 1548525948,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mr. Game & Watch",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "unknown"
+                },
+                {
+                  "game": 2,
+                  "character": "Mr. Game & Watch",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Mr. Game & Watch",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "18207056",
@@ -237,7 +266,28 @@
               "isUpset": false,
               "startedAt": 1548528335,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Mr. Game & Watch",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "unknown"
+                },
+                {
+                  "game": 2,
+                  "character": "Mr. Game & Watch",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Mr. Game & Watch",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

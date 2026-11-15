@@ -101,6 +101,21 @@
               "startedAt": 1663435094,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "QLMfmFqoa8o",
@@ -127,6 +142,21 @@
               "startedAt": 1663439004,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "lNDh6wCSTyI",
@@ -153,6 +183,21 @@
               "startedAt": 1663439094,
               "phaseOrder": 1,
               "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bayonetta",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Meta Knight",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "bEPVyJ8AUfI",
@@ -179,6 +224,21 @@
               "startedAt": 1663439764,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Kirby",
+                  "opponentCharacter": "Chrom",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "o_s8fxsv8Sw",
@@ -204,7 +264,22 @@
               "isUpset": false,
               "startedAt": 1663442043,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Marth",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "51983294",
@@ -222,7 +297,22 @@
               "isUpset": false,
               "startedAt": 1663443179,
               "phaseOrder": 4,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Kirby",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Marth",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

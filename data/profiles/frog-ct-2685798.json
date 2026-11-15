@@ -299,7 +299,22 @@
               "isUpset": false,
               "startedAt": 1692466308,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ike",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Marth",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "64071332",
@@ -317,7 +332,22 @@
               "isUpset": false,
               "startedAt": 1692467118,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64071336",
@@ -335,7 +365,22 @@
               "isUpset": false,
               "startedAt": 1692468216,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64071329",
@@ -353,7 +398,22 @@
               "isUpset": false,
               "startedAt": 1692469604,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Pyra & Mythra",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "64084459",
@@ -371,7 +431,9 @@
               "isUpset": false,
               "startedAt": 1692477493,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "64084476",
@@ -389,7 +451,22 @@
               "isUpset": false,
               "startedAt": 1692479335,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "64084576",
@@ -407,7 +484,9 @@
               "isUpset": false,
               "startedAt": 1692480849,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "64084591",
@@ -426,6 +505,8 @@
               "startedAt": 1692481566,
               "phaseOrder": 2,
               "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "vaHRqhxgtvA",
@@ -484,7 +565,22 @@
               "isUpset": false,
               "startedAt": 1668878591,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "54339000",
@@ -502,7 +598,22 @@
               "isUpset": false,
               "startedAt": 1668879491,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "54339005",
@@ -520,7 +631,22 @@
               "isUpset": false,
               "startedAt": 1668880532,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Steve",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Steve",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "54339003",
@@ -538,7 +664,22 @@
               "isUpset": true,
               "startedAt": 1668882225,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "54350589",
@@ -556,7 +697,28 @@
               "isUpset": false,
               "startedAt": 1668887174,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Inkling",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "54350723",
@@ -574,7 +736,28 @@
               "isUpset": false,
               "startedAt": 1668890676,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -621,7 +804,28 @@
               "isUpset": false,
               "startedAt": 1663433860,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Ike",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "51974417",
@@ -639,7 +843,22 @@
               "isUpset": false,
               "startedAt": 1663437360,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Diddy Kong",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "51974419",
@@ -657,7 +876,22 @@
               "isUpset": false,
               "startedAt": 1663437394,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "51974415",
@@ -676,6 +910,21 @@
               "startedAt": 1663439886,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "vrTGcDs1daQ",
@@ -701,7 +950,22 @@
               "isUpset": false,
               "startedAt": 1663443221,
               "phaseOrder": 4,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Donkey Kong",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "51983269",
@@ -719,7 +983,22 @@
               "isUpset": false,
               "startedAt": 1663443492,
               "phaseOrder": 4,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Ice Climbers",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "51983272",
@@ -737,7 +1016,22 @@
               "isUpset": false,
               "startedAt": 1663445642,
               "phaseOrder": 4,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Pichu",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Pichu",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "51983274",
@@ -756,6 +1050,21 @@
               "startedAt": 1663445735,
               "phaseOrder": 4,
               "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "5cVW5wuIjw8",
@@ -782,6 +1091,27 @@
               "startedAt": 1663469017,
               "phaseOrder": 4,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Jigglypuff",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "F7w4I0XcjdA",
@@ -836,7 +1166,22 @@
               "isUpset": false,
               "startedAt": 1661019750,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Mega Man",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "50926555",
@@ -854,7 +1199,22 @@
               "isUpset": false,
               "startedAt": 1661019790,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Wolf",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "50926565",
@@ -873,6 +1233,27 @@
               "startedAt": 1661022247,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Steve",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "sZHHHCIDBwg",
@@ -898,7 +1279,22 @@
               "isUpset": false,
               "startedAt": 1661024483,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "50926557",
@@ -916,7 +1312,22 @@
               "isUpset": false,
               "startedAt": 1661025511,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Pac-Man",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "50938881",
@@ -935,6 +1346,21 @@
               "startedAt": 1661027828,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Link",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "vAUUmUCwG1Q",
@@ -960,7 +1386,22 @@
               "isUpset": false,
               "startedAt": 1661029283,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Mii Gunner",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "50938887",
@@ -978,7 +1419,22 @@
               "isUpset": false,
               "startedAt": 1661031214,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "50938888",
@@ -997,6 +1453,33 @@
               "startedAt": 1661034211,
               "phaseOrder": 1,
               "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Pit",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 4,
+                  "character": "Min Min",
+                  "opponentCharacter": "Pit",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "gvGpPUGuaAc",
@@ -1023,6 +1506,27 @@
               "startedAt": 1661050465,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "f2qLMgYJjzI",
@@ -1049,6 +1553,27 @@
               "startedAt": 1661177123,
               "phaseOrder": 1,
               "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Lucina",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Inkling",
+                  "opponentCharacter": "Ike",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "osWmdFIDAe0",
@@ -1115,7 +1640,28 @@
               "isUpset": false,
               "startedAt": 1658595054,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Joker",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49869199",
@@ -1133,7 +1679,22 @@
               "isUpset": false,
               "startedAt": 1658597044,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49869204",
@@ -1152,6 +1713,21 @@
               "startedAt": 1658598734,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Mii Gunner",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Ridley",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "lKFG1wq1URU",
@@ -1177,7 +1753,28 @@
               "isUpset": false,
               "startedAt": 1658600058,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Byleth",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "49884201",
@@ -1195,7 +1792,22 @@
               "isUpset": false,
               "startedAt": 1658607497,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Joker",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "49884206",
@@ -1213,7 +1825,22 @@
               "isUpset": false,
               "startedAt": 1658608753,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Sheik",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "49884208",
@@ -1231,7 +1858,28 @@
               "isUpset": false,
               "startedAt": 1658611607,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Richter",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Richter",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Richter",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "49884209",
@@ -1250,6 +1898,8 @@
               "startedAt": 1658621903,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "m7IQTT36dtU",
@@ -1275,7 +1925,9 @@
               "isUpset": false,
               "startedAt": 1658621923,
               "phaseOrder": 1,
-              "roundOrder": -10
+              "roundOrder": -10,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "49884210",
@@ -1294,6 +1946,8 @@
               "startedAt": 1658621939,
               "phaseOrder": 1,
               "roundOrder": 6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [],
               "vods": [
                 {
                   "videoId": "de3MUPvfwfU",
@@ -1319,7 +1973,9 @@
               "isUpset": false,
               "startedAt": 1658621991,
               "phaseOrder": 1,
-              "roundOrder": 6
+              "roundOrder": 6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {
@@ -1378,7 +2034,28 @@
               "isUpset": false,
               "startedAt": 1655572918,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Ryu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Inkling",
+                  "opponentCharacter": "Dark Samus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48559059",
@@ -1396,7 +2073,22 @@
               "isUpset": false,
               "startedAt": 1655574787,
               "phaseOrder": 1,
-              "roundOrder": 5
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Falco",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "48559054",
@@ -1414,7 +2106,22 @@
               "isUpset": false,
               "startedAt": 1655577980,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Yoshi",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48559051",
@@ -1433,6 +2140,21 @@
               "startedAt": 1655578055,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "King Dedede",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "kLu7g9Z5MvQ",
@@ -1458,7 +2180,28 @@
               "isUpset": false,
               "startedAt": 1655580438,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Inkling",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "48569664",
@@ -1476,7 +2219,22 @@
               "isUpset": false,
               "startedAt": 1655583242,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1523,7 +2281,9 @@
               "isUpset": false,
               "startedAt": 1653159143,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47575067",
@@ -1541,7 +2301,9 @@
               "isUpset": false,
               "startedAt": 1653159173,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47575059",
@@ -1559,7 +2321,9 @@
               "isUpset": false,
               "startedAt": 1653159194,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47575071",
@@ -1578,6 +2342,8 @@
               "startedAt": 1653159221,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "trHgtRFt9sA",
@@ -1603,7 +2369,9 @@
               "isUpset": false,
               "startedAt": 1653159239,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "47579546",
@@ -1621,7 +2389,22 @@
               "isUpset": false,
               "startedAt": 1653162656,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Villager",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "47579610",
@@ -1639,7 +2422,28 @@
               "isUpset": false,
               "startedAt": 1653164903,
               "phaseOrder": 2,
-              "roundOrder": -3
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1686,7 +2490,9 @@
               "isUpset": false,
               "startedAt": 1650733688,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46624323",
@@ -1705,6 +2511,8 @@
               "startedAt": 1650735470,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "awKE4qHsl3c",
@@ -1730,7 +2538,9 @@
               "isUpset": false,
               "startedAt": 1650736498,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46624321",
@@ -1748,7 +2558,9 @@
               "isUpset": false,
               "startedAt": 1650737053,
               "phaseOrder": 1,
-              "roundOrder": 4
+              "roundOrder": 4,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "46636688",
@@ -1766,7 +2578,22 @@
               "isUpset": false,
               "startedAt": 1650742305,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "46636692",
@@ -1784,7 +2611,28 @@
               "isUpset": false,
               "startedAt": 1650744061,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Sephiroth",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Min Min",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "46636718",
@@ -1802,7 +2650,22 @@
               "isUpset": false,
               "startedAt": 1650744914,
               "phaseOrder": 1,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "46636722",
@@ -1820,7 +2683,22 @@
               "isUpset": false,
               "startedAt": 1650746222,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "46636724",
@@ -1838,7 +2716,22 @@
               "isUpset": false,
               "startedAt": 1650746795,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Banjo-Kazooie",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "46636726",
@@ -1856,7 +2749,22 @@
               "isUpset": false,
               "startedAt": 1650747486,
               "phaseOrder": 1,
-              "roundOrder": -7
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Min Min",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Link",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1912,7 +2820,22 @@
               "isUpset": true,
               "startedAt": 1647103858,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Hero",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "45308011",
@@ -1931,6 +2854,21 @@
               "startedAt": 1647108464,
               "phaseOrder": 1,
               "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Little Mac",
+                  "outcome": "win"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "KNjo6GXSJKw",
@@ -1956,7 +2894,22 @@
               "isUpset": false,
               "startedAt": 1647109290,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Sora",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "45308004",
@@ -1974,7 +2927,22 @@
               "isUpset": false,
               "startedAt": 1647109898,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Fox",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "45314472",
@@ -1992,7 +2960,22 @@
               "isUpset": false,
               "startedAt": 1647113181,
               "phaseOrder": 5,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Min Min",
+                  "opponentCharacter": "Ken",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "45314613",
@@ -2010,7 +2993,9 @@
               "isUpset": false,
               "startedAt": 1647117652,
               "phaseOrder": 5,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {

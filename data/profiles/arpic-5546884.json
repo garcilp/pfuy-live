@@ -91,7 +91,28 @@
               "isUpset": false,
               "startedAt": 1788026213,
               "phaseOrder": 1,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "Duck Hunt",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Sonic",
+                  "opponentCharacter": "Duck Hunt",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "107070047",
@@ -110,6 +131,21 @@
               "startedAt": 1788029911,
               "phaseOrder": 1,
               "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Cloud",
+                  "outcome": "loss"
+                }
+              ],
               "vods": [
                 {
                   "videoId": "inyER_8Nhao",
@@ -135,7 +171,22 @@
               "isUpset": false,
               "startedAt": 1788037819,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "King K. Rool",
+                  "opponentCharacter": "Terry",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "setId": "107084224",
@@ -153,7 +204,22 @@
               "isUpset": false,
               "startedAt": 1788040061,
               "phaseOrder": 1,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Sonic",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Sonic",
+                  "opponentCharacter": "King K. Rool",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "setId": "107084228",
@@ -171,7 +237,9 @@
               "isUpset": false,
               "startedAt": 1788042999,
               "phaseOrder": 1,
-              "roundOrder": -6
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {

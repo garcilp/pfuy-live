@@ -92,7 +92,9 @@
               "isUpset": true,
               "startedAt": 1582999492,
               "phaseOrder": 1,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "setId": "27028289",
@@ -111,6 +113,8 @@
               "startedAt": 1582999502,
               "phaseOrder": 1,
               "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "yuDkPcHOldo",
@@ -137,6 +141,8 @@
               "startedAt": 1583002035,
               "phaseOrder": 1,
               "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
               "vods": [
                 {
                   "videoId": "o7gwXo3J-rU",
@@ -162,7 +168,9 @@
               "isUpset": true,
               "startedAt": 1583004211,
               "phaseOrder": 2,
-              "roundOrder": 1
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "27035093",
@@ -180,7 +188,9 @@
               "isUpset": false,
               "startedAt": 1583006656,
               "phaseOrder": 2,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "27035215",
@@ -198,7 +208,9 @@
               "isUpset": false,
               "startedAt": 1583008509,
               "phaseOrder": 2,
-              "roundOrder": -4
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "setId": "27035225",
@@ -216,7 +228,9 @@
               "isUpset": false,
               "startedAt": 1583009308,
               "phaseOrder": 2,
-              "roundOrder": -5
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

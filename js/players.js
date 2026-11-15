@@ -219,7 +219,10 @@ function render() {
     const playerTag = p.tag || entry.tag;
     let miniBadgesHtml = '';
     if (window.PRBadges && playerTag) {
-      const rList = window.PRBadges.getPlayerRankings(playerTag);
+      // Use the profile ID so players with the same tag (including case-only
+      // differences) never inherit each other's rankings. IDs also resolve
+      // ranking tags that differ from the profile's display tag.
+      const rList = window.PRBadges.getPlayerRankings(playerTag, entry.playerId);
       // Only display a medal for a game if the player is ranked in the most recent PR for that game,
       // and in that case, only display that corresponding medal.
       const qualifyingEntries = [];

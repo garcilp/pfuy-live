@@ -199,7 +199,7 @@ function render() {
      ${player.sponsor ? `<div class="profile-detail">${esc(player.sponsor)}</div>` : ''}
      <h1>${esc(player.tag)}</h1>
      ${profileLocation ? `<div class="profile-detail">${esc(profileLocation)}</div>` : ''}
-     ${player.startgg ? `<a class="profile-startgg" href="${esc(player.startgg)}" target="_blank" rel="noopener">View on start.gg</a>` : ''}`;
+     ${(player.playerId || player.startggPlayerId || profileId) ? `<div class="profile-compare-links"><a class="profile-startgg" href="head-to-head.html?p1=${encodeURIComponent(player.playerId || player.startggPlayerId || profileId)}">${isEs ? 'Comparar' : 'Compare'}</a>${player.startgg ? `<span aria-hidden="true"> · </span><a class="profile-startgg" href="${esc(player.startgg)}" target="_blank" rel="noopener">${isEs ? 'Ver en start.gg' : 'View on start.gg'}</a>` : ''}</div>` : (player.startgg ? `<a class="profile-startgg" href="${esc(player.startgg)}" target="_blank" rel="noopener">View on start.gg</a>` : '')}`;
   fitPlayerName();
 
   if (player && player.tag) {
