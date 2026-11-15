@@ -1,15 +1,17 @@
 {
   "player": {
+    "playerId": "1260018",
     "tag": "ZAPO",
     "photo": "assets/players/1260018.png",
     "sponsor": "DBD",
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": "2019-05-11",
+    "activeSince": "2019-03-23",
     "startgg": "https://www.start.gg/user/3f234347",
     "startggPlayerId": "1260018",
     "aliases": [
+      "Agustín García",
       "ZAPO",
       "Zapo"
     ]
@@ -124,6 +126,7 @@
         {
           "event": "Montevideo Melee Monthly 2024 #9 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2024-9/event/melee-singles",
+          "displaySeparately": false,
           "date": "2024-10-05",
           "seed": 13,
           "place": 13,
@@ -188,6 +191,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #11 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/melee-singles",
+          "displaySeparately": false,
           "date": "2019-11-30",
           "seed": 17,
           "place": 13,
@@ -354,6 +358,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
+          "displaySeparately": false,
           "date": "2019-10-26",
           "seed": 15,
           "place": 13,
@@ -466,6 +471,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #8 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/melee-singles",
+          "displaySeparately": false,
           "date": "2019-08-31",
           "seed": 11,
           "place": 17,
@@ -614,7 +620,7 @@
       "headToHead": [
         {
           "opponent": "RIGONARDO",
-          "sets": 27,
+          "sets": 28,
           "wins": 8
         },
         {
@@ -629,12 +635,12 @@
         },
         {
           "opponent": "Rockletz",
-          "sets": 16,
+          "sets": 17,
           "wins": 5
         },
         {
           "opponent": "Trim",
-          "sets": 14,
+          "sets": 15,
           "wins": 8
         },
         {
@@ -649,8 +655,8 @@
         },
         {
           "opponent": "Aminas",
-          "sets": 10,
-          "wins": 8
+          "sets": 11,
+          "wins": 9
         },
         {
           "opponent": "BugSmasher",
@@ -703,14 +709,14 @@
           "wins": 7
         },
         {
+          "opponent": "Marroll",
+          "sets": 7,
+          "wins": 1
+        },
+        {
           "opponent": "Catwo",
           "sets": 7,
           "wins": 5
-        },
-        {
-          "opponent": "Marroll",
-          "sets": 6,
-          "wins": 1
         },
         {
           "opponent": "J",
@@ -788,6 +794,11 @@
           "wins": 4
         },
         {
+          "opponent": "Iguana",
+          "sets": 4,
+          "wins": 2
+        },
+        {
           "opponent": "Pritah",
           "sets": 4,
           "wins": 3
@@ -811,11 +822,6 @@
           "opponent": "Zoro",
           "sets": 3,
           "wins": 2
-        },
-        {
-          "opponent": "Iguana",
-          "sets": 3,
-          "wins": 1
         },
         {
           "opponent": "Damito",
@@ -1216,15 +1222,30 @@
           "opponent": "matical0609",
           "sets": 1,
           "wins": 1
+        },
+        {
+          "opponent": "elchinolp",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Batoru",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Rubendorf",
+          "sets": 1,
+          "wins": 1
         }
       ],
-      "events": 56,
-      "wins": 302,
-      "losses": 125,
+      "events": 58,
+      "wins": 307,
+      "losses": 129,
       "upsets": 50,
       "bestPlace": 1,
       "bestEvent": "3 times",
-      "avgPlace": 7.1,
+      "avgPlace": 7.2,
       "avgSeed": 7,
       "characters": [
         {
@@ -1286,6 +1307,7 @@
         {
           "event": "Mashito? GO! #8 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-8/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-10-17",
           "seed": 4,
           "place": 7,
@@ -1410,6 +1432,7 @@
         {
           "event": "Mashito? GO! #7 · Ultimate Singles",
           "eventKey": "tournament/mashito-go-7/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-09-19",
           "seed": 3,
           "place": 1,
@@ -1594,6 +1617,7 @@
         {
           "event": "Mashito GO! #5 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-07-18",
           "seed": 4,
           "place": 4,
@@ -1718,6 +1742,7 @@
         {
           "event": "Ultimo Smashdown · Smash Ultimate singles",
           "eventKey": "tournament/ultimo-smashdown/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-06-20",
           "seed": 5,
           "place": 9,
@@ -1834,6 +1859,7 @@
         {
           "event": "Mashito GO! #4 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-05-16",
           "seed": 6,
           "place": 9,
@@ -1950,6 +1976,7 @@
         {
           "event": "Mashito GO! #2 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-03-21",
           "seed": 4,
           "place": 4,
@@ -2134,6 +2161,7 @@
         {
           "event": "Mashito? GO · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-02-28",
           "seed": 4,
           "place": 7,
@@ -2268,6 +2296,7 @@
         {
           "event": "Ultimate Smashdown #35 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-11-15",
           "seed": 7,
           "place": 7,
@@ -2438,6 +2467,7 @@
         {
           "event": "Ultimate Smashdown #34 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-10-18",
           "seed": 8,
           "place": 5,
@@ -2572,6 +2602,7 @@
         {
           "event": "Ultimate Smashdown #33 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-33/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-09-27",
           "seed": 4,
           "place": 4,
@@ -2688,6 +2719,7 @@
         {
           "event": "Ultimate Smashdown #32 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-08-23",
           "seed": 5,
           "place": 7,
@@ -2840,6 +2872,7 @@
         {
           "event": "Ultimate Smashdown #31 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-31/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-07-19",
           "seed": 3,
           "place": 4,
@@ -3016,6 +3049,7 @@
         {
           "event": "Ultimate Smashdown #30 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-06-21",
           "seed": 5,
           "place": 3,
@@ -3168,6 +3202,7 @@
         {
           "event": "Ultimate Smashdown #29 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-05-24",
           "seed": 3,
           "place": 9,
@@ -3292,6 +3327,7 @@
         {
           "event": "Ultimate Smashdown #27 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-03-15",
           "seed": 8,
           "place": 2,
@@ -3494,6 +3530,7 @@
         {
           "event": "Ultimate Smashdown #26 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-26-1/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-11-30",
           "seed": 4,
           "place": 4,
@@ -3628,6 +3665,7 @@
         {
           "event": "Copa del Rey 2 · Ultimate Singles",
           "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-10-19",
           "seed": 15,
           "place": 25,
@@ -3762,6 +3800,7 @@
         {
           "event": "Koopa Series · Ultimate Singles",
           "eventKey": "tournament/koopa-series-1/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-10-05",
           "seed": 5,
           "place": 5,
@@ -3896,6 +3935,7 @@
         {
           "event": "Ultimate Smashdown #25 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-09-21",
           "seed": 7,
           "place": 9,
@@ -4056,6 +4096,7 @@
         {
           "event": "Ultimate Smashdown #24 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-08-24",
           "seed": 5,
           "place": 7,
@@ -4206,6 +4247,7 @@
         {
           "event": "NSGdown · Ultimate singles",
           "eventKey": "tournament/nsgdown/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-07-13",
           "seed": 3,
           "place": 4,
@@ -4376,6 +4418,7 @@
         {
           "event": "Ultimate Smashdown #23 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-06-22",
           "seed": 7,
           "place": 5,
@@ -4554,6 +4597,7 @@
         {
           "event": "Ultimate Smashdown #22 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-22/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-05-18",
           "seed": 8,
           "place": 7,
@@ -4696,6 +4740,7 @@
         {
           "event": "Ultimate Smashdown #21 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-04-27",
           "seed": 8,
           "place": 7,
@@ -4846,6 +4891,7 @@
         {
           "event": "Ultimate Smashdown #20 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-03-16",
           "seed": 6,
           "place": 5,
@@ -5014,6 +5060,7 @@
         {
           "event": "Ultimate Smashdown #18 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-18/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-11-11",
           "seed": 6,
           "place": 5,
@@ -5156,6 +5203,7 @@
         {
           "event": "Ultimate Smashdown #17 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-10-21",
           "seed": 8,
           "place": 9,
@@ -5290,6 +5338,7 @@
         {
           "event": "Ultimate Smashdown #16 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-09-23",
           "seed": 6,
           "place": 5,
@@ -5460,6 +5509,7 @@
         {
           "event": "Ultimate Smashdown #15 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-08-19",
           "seed": 6,
           "place": 9,
@@ -5666,6 +5716,7 @@
         {
           "event": "Copa del Rey · Ultimate Singles",
           "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-07-22",
           "seed": 23,
           "place": 13,
@@ -5818,6 +5869,7 @@
         {
           "event": "Ultimate Smashdown #14 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-14/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-06-24",
           "seed": 8,
           "place": 5,
@@ -6084,6 +6136,7 @@
         {
           "event": "Ultimate Smashdown #13 · Singles",
           "eventKey": "tournament/ultimate-smashdown-13/event/singles",
+          "displaySeparately": false,
           "date": "2023-04-22",
           "seed": 7,
           "place": 13,
@@ -6288,6 +6341,7 @@
         {
           "event": "Evo-Chacra 2023 · Ultimate Singles",
           "eventKey": "tournament/evo-chacra-2023/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-01-14",
           "seed": 7,
           "place": 13,
@@ -6422,6 +6476,7 @@
         {
           "event": "Ultimate Smashdown #12 · Ultimate Smashdown #12 - Singles",
           "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
+          "displaySeparately": false,
           "date": "2022-11-19",
           "seed": 6,
           "place": 17,
@@ -6582,6 +6637,7 @@
         {
           "event": "Ultimate Smashdown #11 · Ultimate Smashdown #11 - Singles",
           "eventKey": "tournament/ultimate-smashdown-11/event/ultimate-smashdown-11-singles",
+          "displaySeparately": false,
           "date": "2022-10-15",
           "seed": 5,
           "place": 4,
@@ -6828,6 +6884,7 @@
         {
           "event": "Ultimate Smashdown #10 · Ultimate Smashdown #10 - Singles",
           "eventKey": "tournament/ultimate-smashdown-10/event/ultimate-smashdown-10-singles",
+          "displaySeparately": false,
           "date": "2022-09-17",
           "seed": 7,
           "place": 1,
@@ -7040,6 +7097,7 @@
         {
           "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Singles",
           "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
+          "displaySeparately": false,
           "date": "2022-08-20",
           "seed": 5,
           "place": 17,
@@ -7226,6 +7284,7 @@
         {
           "event": "Ultimate Smashdown #8 · Ultimate Smashdown #8 - Singles",
           "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
+          "displaySeparately": false,
           "date": "2022-07-23",
           "seed": 5,
           "place": 17,
@@ -7378,6 +7437,7 @@
         {
           "event": "Ultimate Smashdown #7 · Ultimate Smashdown #7 - Singles",
           "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
+          "displaySeparately": false,
           "date": "2022-06-18",
           "seed": 5,
           "place": 4,
@@ -7600,6 +7660,7 @@
         {
           "event": "Ultimate Smashdown #6 · Singles",
           "eventKey": "tournament/ultimate-smashdown-6/event/singles",
+          "displaySeparately": false,
           "date": "2022-05-21",
           "seed": 8,
           "place": 3,
@@ -7864,6 +7925,7 @@
         {
           "event": "Ultimate Smashdown #5 · Singles",
           "eventKey": "tournament/ultimate-smashdown-5/event/singles",
+          "displaySeparately": false,
           "date": "2022-04-23",
           "seed": 7,
           "place": 5,
@@ -8088,6 +8150,7 @@
         {
           "event": "Mashito Cup",
           "eventKey": "tournament/mashito-cup/event/mashito-cup",
+          "displaySeparately": false,
           "date": "2021-12-12",
           "seed": 4,
           "place": 5,
@@ -8228,6 +8291,7 @@
         {
           "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
           "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
+          "displaySeparately": false,
           "date": "2021-10-24",
           "seed": 8,
           "place": 4,
@@ -8468,6 +8532,7 @@
         {
           "event": "TORNEO RZ SUPER SMASH BROS ULTIMATE ( LOCAL ) · Torneo LOCAL RZeSports SSBU - #1",
           "eventKey": "tournament/torneo-rz-super-smash-bros-ultimate-local/event/torneo-local-rzesports-ssbu-1",
+          "displaySeparately": false,
           "date": "2021-09-19",
           "seed": 7,
           "place": 9,
@@ -8642,6 +8707,7 @@
         {
           "event": "Ultimate Smashdown #2 · Singles",
           "eventKey": "tournament/ultimate-smashdown-2-1/event/singles",
+          "displaySeparately": false,
           "date": "2020-10-17",
           "seed": 8,
           "place": 7,
@@ -8844,6 +8910,7 @@
         {
           "event": "Ultimate Smashdown #1 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2020-02-29",
           "seed": 7,
           "place": 13,
@@ -9032,6 +9099,7 @@
         {
           "event": "NSU - EVOCHACRA · NSU / EVOCHACRA SSBU - SINGLES",
           "eventKey": "tournament/nsu-evochacra/event/nsu-evochacra-super-smash-bros-ultimate-singles",
+          "displaySeparately": false,
           "date": "2020-01-11",
           "seed": 7,
           "place": 13,
@@ -9198,6 +9266,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-11-30",
           "seed": 8,
           "place": 5,
@@ -9438,6 +9507,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #10 · Ultimate Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-10-26",
           "seed": 10,
           "place": 4,
@@ -9692,6 +9762,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-08-31",
           "seed": 8,
           "place": 9,
@@ -9898,6 +9969,7 @@
         {
           "event": "Pato's Invitational · Ultimate Singles",
           "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-08-11",
           "seed": 5,
           "place": 7,
@@ -10086,6 +10158,7 @@
         {
           "event": "NSU Ultimate Julio 20",
           "eventKey": "tournament/nsu-ultimate-julio-20/event/nsu-julio-20th",
+          "displaySeparately": false,
           "date": "2019-07-20",
           "seed": 9,
           "place": 3,
@@ -10256,6 +10329,7 @@
         {
           "event": "NSU Ultimate Julio 13 · Ultimate Singles",
           "eventKey": "tournament/nsu-ultimate-julio-13/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-07-13",
           "seed": 20,
           "place": 4,
@@ -10478,8 +10552,9 @@
           ]
         },
         {
-          "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+          "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
           "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
+          "displaySeparately": true,
           "date": "2019-06-22",
           "seed": 21,
           "place": 1,
@@ -10488,7 +10563,7 @@
             {
               "setId": "21249207",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "Bracket",
               "round": "Round 4",
               "opponent": "Pritah",
@@ -10506,7 +10581,7 @@
             {
               "setId": "21249210",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "Bracket",
               "round": "Round 5",
               "opponent": "Yuyin",
@@ -10524,7 +10599,7 @@
             {
               "setId": "21249199",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "Bracket",
               "round": "Round 2",
               "opponent": "Mitsu",
@@ -10542,7 +10617,7 @@
             {
               "setId": "21249197",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "Bracket",
               "round": "Round 1",
               "opponent": "Casipeta",
@@ -10560,7 +10635,7 @@
             {
               "setId": "21249203",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "Bracket",
               "round": "Round 3",
               "opponent": "RIGONARDO",
@@ -10578,7 +10653,7 @@
             {
               "setId": "21252249",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "braket final julio",
               "round": "Winners Round 1",
               "opponent": "wyseba",
@@ -10596,7 +10671,7 @@
             {
               "setId": "21252257",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "braket final julio",
               "round": "Winners Round 2",
               "opponent": "VRN",
@@ -10614,7 +10689,7 @@
             {
               "setId": "21252261",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "braket final julio",
               "round": "Winners Quarter-Final",
               "opponent": "BugSmasher",
@@ -10632,7 +10707,7 @@
             {
               "setId": "21252263",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "braket final julio",
               "round": "Winners Semi-Final",
               "opponent": "Iguana",
@@ -10650,7 +10725,7 @@
             {
               "setId": "21252264",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "braket final julio",
               "round": "Winners Final",
               "opponent": "ENEMA",
@@ -10668,7 +10743,7 @@
             {
               "setId": "21252265",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "phase": "braket final julio",
               "round": "Grand Final",
               "opponent": "Lazerth",
@@ -10688,7 +10763,7 @@
           "sourceEvents": [
             {
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/torneo-super-smash-bros-singles-julio",
-              "event": "NSU - Super Smash Bros Ultimate · Torneo Super Smash Bros Singles Julio",
+              "event": "NSU - Super Smash Bros Ultimate Junio · Torneo Super Smash Bros Singles Julio",
               "date": "2019-06-22",
               "seed": 21,
               "place": 1,
@@ -10698,8 +10773,140 @@
           ]
         },
         {
+          "event": "Smash Bros. Ultimate / Torneos Pro-III",
+          "eventKey": "event:challonge:xvk4i4mg",
+          "displaySeparately": false,
+          "date": "2019-05-18",
+          "seed": null,
+          "place": 5,
+          "entrants": 26,
+          "sets": [
+            {
+              "setId": "challonge:xvk4i4mg:match:161075998",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 1",
+              "opponent": "elchinolp",
+              "opponentPlayerId": "pfuy-1d614e9067e511551d88",
+              "score": "0-2–0-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558213139,
+              "phaseOrder": null,
+              "roundOrder": 1
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076007",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 2",
+              "opponent": "Batoru",
+              "opponentPlayerId": "pfuy-99aad7d61db59b0d0d4d",
+              "score": "0-2–0-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558215918,
+              "phaseOrder": null,
+              "roundOrder": 2
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076014",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 3",
+              "opponent": "Rockletz",
+              "opponentPlayerId": "958669",
+              "score": "2-1–2-1",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558220945,
+              "phaseOrder": null,
+              "roundOrder": 3
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076036",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 4",
+              "opponent": "Aminas",
+              "opponentPlayerId": "1000031",
+              "score": "2-0–2-0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558222801,
+              "phaseOrder": null,
+              "roundOrder": -4
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076039",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 5",
+              "opponent": "Rubendorf",
+              "opponentPlayerId": "pfuy-7687f883d398585e25dc",
+              "score": "0-2–0-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558223452,
+              "phaseOrder": null,
+              "roundOrder": -5
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076041",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 6",
+              "opponent": "RIGONARDO",
+              "opponentPlayerId": "1244573",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558225019,
+              "phaseOrder": null,
+              "roundOrder": -6
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "date": "2019-05-18",
+              "seed": null,
+              "place": 5,
+              "entrants": 26,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
           "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-05-11",
           "seed": 17,
           "place": 7,
@@ -10895,6 +11102,83 @@
               "seed": 17,
               "place": 7,
               "entrants": 36,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "torneo super smash nintendo switch uruguay",
+          "eventKey": "event:challonge:ne0nkst3",
+          "displaySeparately": false,
+          "date": "2019-03-23",
+          "seed": null,
+          "place": 17,
+          "entrants": 34,
+          "sets": [
+            {
+              "setId": "challonge:ne0nkst3:match:154197207",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Round 2",
+              "opponent": "Iguana",
+              "opponentPlayerId": "264244",
+              "score": "2-1–2-1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553351562,
+              "phaseOrder": null,
+              "roundOrder": 2
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197219",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Round 3",
+              "opponent": "Marroll",
+              "opponentPlayerId": "795083",
+              "score": "0-2–0-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553354256,
+              "phaseOrder": null,
+              "roundOrder": 3
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197247",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 3",
+              "opponent": "Trim",
+              "opponentPlayerId": "599412",
+              "score": "1-2–1-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553356644,
+              "phaseOrder": null,
+              "roundOrder": -3
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "date": "2019-03-23",
+              "seed": null,
+              "place": 17,
+              "entrants": 34,
               "characterCounts": {}
             }
           ]

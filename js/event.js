@@ -3,6 +3,7 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;
 const fmt = dateStr => dateStr ? new Date(`${dateStr}T00:00:00`).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }) : '';
 const ord = n => { const x = Number(n); return x + ((x % 100 >= 11 && x % 100 <= 13) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[x % 10] || 'th')); };
 const slug = new URLSearchParams(location.search).get('tournament');
+const selectedEventKey = new URLSearchParams(location.search).get('event');
 const main = $('#main');
 let playerDirectoryMap = new Map();
 let currentEvent;
@@ -21,9 +22,31 @@ async function loadPlayerDirectory() {
 async function loadEvent() {
   if (!slug) { main.innerHTML = '<div class="panel glass empty-state"><h2>No tournament selected</h2><p class="muted"><a href="events.html">Return to event directory</a></p></div>'; return; }
   try {
-    const [res] = await Promise.all([fetch(`data/events/${encodeURIComponent(slug)}.json`, { cache: 'no-store' }), loadPlayerDirectory()]);
+    await loadPlayerDirectory();
+    let indexedEvent = null;
+    if (selectedEventKey) {
+      const indexResponse = await fetch('data/events-index.json', { cache: 'no-store' });
+      if (!indexResponse.ok) throw new Error('Event index not found.');
+      indexedEvent = (await indexResponse.json()).find(event => {
+        try { return new URL(event.url).pathname.replace(/^\/+|\/+$/g, '').toLowerCase() === selectedEventKey.toLowerCase(); }
+        catch (_) { return false; }
+      });
+      if (!indexedEvent) throw new Error('Event not found.');
+    }
+    const detailSlug = indexedEvent?.displaySeparately ? `${slug}--${indexedEvent.id}` : slug;
+    const res = await fetch(`data/events/${encodeURIComponent(detailSlug)}.json`, { cache: 'no-store' });
     if (!res.ok) throw new Error('Tournament details not found.');
     currentEvent = await res.json();
+    if (indexedEvent) {
+      currentEvent = {
+        ...currentEvent,
+        tournament: indexedEvent.tournament || currentEvent.tournament,
+        date: indexedEvent.date || currentEvent.date,
+        startggUrl: indexedEvent.url || currentEvent.startggUrl,
+        subEvents: (currentEvent.subEvents || []).filter(sub => sub.eventKey === selectedEventKey),
+        vods: (currentEvent.vods || []).filter(vod => vod.eventKey === selectedEventKey),
+      };
+    }
     renderEvent(currentEvent);
   } catch (error) {
     main.innerHTML = `<div class="panel glass empty-state"><h2>Event unavailable</h2><p class="muted">${esc(error.message)}</p><p style="margin-top:12px"><a href="events.html" class="action-button">Return to Event Directory</a></p></div>`;
@@ -33,6 +56,14 @@ async function loadEvent() {
 const norm = name => String(name || '').trim().toLocaleLowerCase();
 const gameKey = game => norm(game);
 const lang = () => window.i18n?.getLang?.() === 'es';
+const externalEventLabel = url => {
+  try {
+    if (['challonge.com', 'www.challonge.com'].includes((new URL(url)).hostname.toLowerCase())) {
+      return lang() ? 'Abrir en Challonge' : 'Open on Challonge';
+    }
+  } catch (_) { /* fall back to the established start.gg label */ }
+  return lang() ? 'Abrir en start.gg' : 'Open on start.gg';
+};
 const charIcon = character => {
   if (!character?.stockIcon) return '<span class="event-character event-character-empty" aria-hidden="true">?</span>';
   const src = esc(character.stockIcon.replace(/\.png$/, '.webp'));
@@ -214,7 +245,7 @@ function renderEvent(event) {
   const filterOptions = `<option value="all">${lang() ? 'Todos los juegos' : 'All games'}</option>${vodGames.map(([key, name]) => `<option value="${esc(key)}">${esc(name)}</option>${vods.some(v => gameKey(v.game) === key && isAmateurVod(v)) ? `<option value="${esc(key)}::amateur">${esc(name)} · Amateur Bracket</option>` : ''}`).join('')}`;
   main.classList.toggle('event-compact-podium', (event.subEvents || []).length >= 3);
   main.innerHTML = `
-    <section class="panel glass event-header-panel"><div class="event-header-top">${logo}<div class="event-header-info">${event.date ? `<p class="eyebrow mono">${esc(fmt(event.date))}</p>` : ''}<h1>${esc(event.tournament)}</h1><div class="event-games">${gamePills}</div></div><div class="event-header-actions">${event.startggUrl ? `<a class="action-button" href="${esc(event.startggUrl)}" target="_blank" rel="noopener noreferrer">${lang() ? 'Abrir en start.gg' : 'Open on start.gg'} ↗</a>` : ''}</div></div></section>
+    <section class="panel glass event-header-panel"><div class="event-header-top">${logo}<div class="event-header-info">${event.date ? `<p class="eyebrow mono">${esc(fmt(event.date))}</p>` : ''}<h1>${esc(event.tournament)}</h1><div class="event-games">${gamePills}</div></div><div class="event-header-actions">${event.startggUrl ? `<a class="action-button" href="${esc(event.startggUrl)}" target="_blank" rel="noopener noreferrer">${externalEventLabel(event.startggUrl)} ↗</a>` : ''}</div></div></section>
     <section class="event-section"><div class="event-section-head"><div><p class="eyebrow mono">${lang() ? 'RESULTADOS' : 'RESULTS'}</p><h2>${lang() ? 'Posiciones finales' : 'Final standings'}</h2></div></div><div class="brackets-grid">${brackets || '<div class="panel glass empty-state"><p class="muted">No bracket standings available for this tournament.</p></div>'}</div></section>
     ${vods.length ? `<section class="event-section event-vods-section"><div class="event-section-head"><div><p class="eyebrow mono">${lang() ? 'PARTIDAS GRABADAS' : 'RECORDED SETS'}</p><h2>${lang() ? 'VODs del torneo' : 'Tournament VODs'}</h2></div></div><div class="event-vod-controls"><label class="search glass"><span aria-hidden="true">⌕</span><input id="event-vod-search" type="search" placeholder="${lang() ? 'Buscar jugador' : 'Search players'}" aria-label="${lang() ? 'Buscar partidas' : 'Search matches'}"></label><label class="event-vod-game-label"><span class="sr-only">${lang() ? 'Filtrar por juego' : 'Filter by game'}</span><select id="event-vod-game" class="game-filter">${filterOptions}</select></label><button type="button" class="quiet-button event-play-all" id="event-play-all">${lang() ? 'Reproducir todo' : 'Play all'}</button></div><div id="event-vod-now-playing" class="event-vod-now-playing mono" aria-live="polite"></div><div id="event-vod-player" class="event-vod-player"></div><div id="event-vod-playing-match" class="event-vod-playing-match" aria-live="polite"></div><div id="event-vod-list" class="event-vod-list"></div></section>` : ''}`;
   renderVods();

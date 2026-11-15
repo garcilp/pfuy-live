@@ -1,5 +1,6 @@
 {
   "player": {
+    "playerId": "5564425",
     "tag": "BANANACHO",
     "photo": "assets/players/5564425.png",
     "sponsor": "PRLX",
@@ -94,16 +95,21 @@
           "opponent": "#Washu",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "YATTA",
+          "sets": 1,
+          "wins": 0
         }
       ],
-      "events": 3,
+      "events": 4,
       "wins": 9,
       "losses": 10,
       "upsets": 3,
       "bestPlace": 9,
       "bestEvent": "Mashito? GO! #7 · Ultimate Singles",
       "avgPlace": 18.3,
-      "avgSeed": 27,
+      "avgSeed": 22,
       "characters": [
         {
           "name": "Terry",
@@ -113,8 +119,50 @@
       "notableWins": [],
       "results": [
         {
+          "event": "Cacatua Weekly #26 · Ultimate Singles",
+          "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-15",
+          "seed": 8,
+          "place": null,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "preview_3503457_1_1",
+              "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+              "event": "Cacatua Weekly #26 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "YATTA",
+              "opponentPlayerId": "3927015",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 8,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+              "event": "Cacatua Weekly #26 · Ultimate Singles",
+              "date": "2026-11-15",
+              "seed": 8,
+              "place": null,
+              "entrants": 14,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Mashito? GO! #8 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-8/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-10-17",
           "seed": 17,
           "place": 13,
@@ -239,6 +287,7 @@
         {
           "event": "Mashito? GO! #7 · Ultimate Singles",
           "eventKey": "tournament/mashito-go-7/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-09-19",
           "seed": 20,
           "place": 9,
@@ -389,6 +438,7 @@
         {
           "event": "Mashito GO! #6 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-6/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-08-29",
           "seed": 44,
           "place": 33,

@@ -1,5 +1,6 @@
 {
   "player": {
+    "playerId": "2328857",
     "tag": "Dm",
     "photo": "assets/players/2328857.png",
     "sponsor": "",
@@ -44,6 +45,7 @@
         {
           "event": "Montevideo Melee Monthly 2017 #5 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2017-5/event/melee-singles",
+          "displaySeparately": false,
           "date": "2017-05-27",
           "seed": null,
           "place": 13,
@@ -95,6 +97,140 @@
               "seed": null,
               "place": 13,
               "entrants": 16,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [
+        {
+          "opponent": "Rubendorf",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "CaptainG",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Sol!d",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Trim",
+          "sets": 1,
+          "wins": 0
+        }
+      ],
+      "events": 1,
+      "wins": 2,
+      "losses": 2,
+      "upsets": 0,
+      "bestPlace": 9,
+      "bestEvent": "Smash Bros. Ultimate / Torneos Pro-III",
+      "avgPlace": 9.0,
+      "avgSeed": null,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Smash Bros. Ultimate / Torneos Pro-III",
+          "eventKey": "event:challonge:xvk4i4mg",
+          "displaySeparately": false,
+          "date": "2019-05-18",
+          "seed": null,
+          "place": 9,
+          "entrants": 26,
+          "sets": [
+            {
+              "setId": "challonge:xvk4i4mg:match:161076008",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 2",
+              "opponent": "Rubendorf",
+              "opponentPlayerId": "pfuy-7687f883d398585e25dc",
+              "score": "0-2–0-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558216084,
+              "phaseOrder": null,
+              "roundOrder": 2
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076028",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 2",
+              "opponent": "CaptainG",
+              "opponentPlayerId": "pfuy-dbaf09003ec95bd9ddc3",
+              "score": "2-0–2-0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558220777,
+              "phaseOrder": null,
+              "roundOrder": -2
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076033",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 3",
+              "opponent": "Sol!d",
+              "opponentPlayerId": "330371",
+              "score": "1-2–1-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558221925,
+              "phaseOrder": null,
+              "roundOrder": -3
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076037",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 4",
+              "opponent": "Trim",
+              "opponentPlayerId": "599412",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558223040,
+              "phaseOrder": null,
+              "roundOrder": -4
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "date": "2019-05-18",
+              "seed": null,
+              "place": 9,
+              "entrants": 26,
               "characterCounts": {}
             }
           ]

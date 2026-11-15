@@ -24,11 +24,14 @@ function isValidStartggUrl(url) {
 function groupTournaments(entries) {
   const grouped = new Map();
   entries.forEach(event => {
-    const key = event.tournamentSlug || event.tournament.toLocaleLowerCase();
+    const key = event.displaySeparately ? `event:${event.id || event.url}` : (event.tournamentSlug || event.tournament.toLocaleLowerCase());
     if (!grouped.has(key)) {
       grouped.set(key, {
         tournament: event.tournament,
         tournamentSlug: event.tournamentSlug,
+        displaySeparately: !!event.displaySeparately,
+        eventUrl: event.url || '',
+        eventKey: (event.url || '').replace(/^https?:\/\/(?:www\.)?start\.gg\//i, '').replace(/^\/+|\/+$/g, '').toLowerCase(),
         image: event.image || '',
         date: event.date,
         isTemporary: !!event.isTemporary,
@@ -108,6 +111,11 @@ function renderCard(event, isUpcoming = false, selectedGame = '') {
   const gameDate = [event.games.map(game => game.name).join(' · '), event.date].filter(Boolean).join(' · ');
   const body = `<span class="event-card-copy"><b>${esc(event.tournament)}</b><span>${esc(gameDate)}</span></span>${avatar}`;
 
+  const detailUrl = event.displaySeparately && event.tournamentSlug && event.eventKey
+    ? `event.html?tournament=${encodeURIComponent(event.tournamentSlug)}&event=${encodeURIComponent(event.eventKey)}`
+    : '';
+  if (detailUrl) return `<a class="event-card glass" href="${esc(detailUrl)}">${body}</a>`;
+
   if (isUpcoming) {
     // Upcoming event navigation:
     // - When listing is filtered to a specific game, open that specific event's Start.gg page.
@@ -147,7 +155,9 @@ function renderCard(event, isUpcoming = false, selectedGame = '') {
   }
 
   // Past events: always link to internal tournament detail page
-  const internalUrl = event.tournamentSlug
+  const internalUrl = event.displaySeparately && event.eventUrl
+    ? event.eventUrl
+    : event.tournamentSlug
     ? `event.html?tournament=${encodeURIComponent(event.tournamentSlug)}`
     : (event.url || '');
   return internalUrl

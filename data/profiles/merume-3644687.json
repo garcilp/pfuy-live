@@ -1,5 +1,6 @@
 {
   "player": {
+    "playerId": "3644687",
     "tag": "merume",
     "photo": "assets/players/3644687.png",
     "sponsor": "NSG",
@@ -55,6 +56,7 @@
         {
           "event": "Montevideo Melee Monthly 2026 #3 · Project +",
           "eventKey": "tournament/montevideo-melee-monthly-2026-3/event/project",
+          "displaySeparately": false,
           "date": "2026-04-04",
           "seed": 26,
           "place": 25,
@@ -169,6 +171,7 @@
         {
           "event": "Rivalito Charrua #6 · Singles",
           "eventKey": "tournament/rivalito-charrua-6/event/singles",
+          "displaySeparately": false,
           "date": "2024-05-11",
           "seed": 9,
           "place": 7,
@@ -256,6 +259,11 @@
       "name": "Ultimate",
       "headToHead": [
         {
+          "opponent": "RoLo",
+          "sets": 5,
+          "wins": 2
+        },
+        {
           "opponent": "Tintokill",
           "sets": 4,
           "wins": 4
@@ -272,11 +280,6 @@
         },
         {
           "opponent": "Joserus",
-          "sets": 4,
-          "wins": 2
-        },
-        {
-          "opponent": "RoLo",
           "sets": 4,
           "wins": 2
         },
@@ -591,14 +594,14 @@
           "wins": 0
         }
       ],
-      "events": 18,
+      "events": 19,
       "wins": 42,
       "losses": 66,
       "upsets": 3,
       "bestPlace": 17,
       "bestEvent": "7 times",
       "avgPlace": 24.6,
-      "avgSeed": 27,
+      "avgSeed": 26,
       "characters": [
         {
           "name": "Samus",
@@ -620,8 +623,50 @@
       "notableWins": [],
       "results": [
         {
+          "event": "Cacatua Weekly #26 · Ultimate Singles",
+          "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-15",
+          "seed": 5,
+          "place": null,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "preview_3503457_1_3",
+              "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+              "event": "Cacatua Weekly #26 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "RoLo",
+              "opponentPlayerId": "4145805",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 5,
+              "opponentSeed": 12,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+              "event": "Cacatua Weekly #26 · Ultimate Singles",
+              "date": "2026-11-15",
+              "seed": 5,
+              "place": null,
+              "entrants": 14,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Mashito? GO! #8 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-8/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-10-17",
           "seed": 15,
           "place": 17,
@@ -712,6 +757,7 @@
         {
           "event": "Mashito GO! #6 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-6/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-08-29",
           "seed": 22,
           "place": 17,
@@ -854,6 +900,7 @@
         {
           "event": "Mashito GO! #5 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-5/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-07-18",
           "seed": 20,
           "place": 17,
@@ -1081,6 +1128,7 @@
         {
           "event": "Mashito GO! #4 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-05-16",
           "seed": 22,
           "place": 25,
@@ -1217,6 +1265,7 @@
         {
           "event": "Mashito GO! #3 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",
+          "displaySeparately": false,
           "date": "2026-04-11",
           "seed": 25,
           "place": 17,
@@ -1361,6 +1410,7 @@
         {
           "event": "Ultimate Smashdown #32 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-08-23",
           "seed": 26,
           "place": 17,
@@ -1481,6 +1531,7 @@
         {
           "event": "Ultimate Smashdown #30 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-30/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-06-21",
           "seed": 22,
           "place": 17,
@@ -1563,6 +1614,7 @@
         {
           "event": "Ultimate Smashdown #29 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-29/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-05-24",
           "seed": 26,
           "place": 25,
@@ -1809,6 +1861,7 @@
         {
           "event": "Ultimate Smashdown #28 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-28/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-04-12",
           "seed": 26,
           "place": 25,
@@ -1973,6 +2026,7 @@
         {
           "event": "Ultimate Smashdown #27 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2025-03-15",
           "seed": 32,
           "place": 33,
@@ -2113,6 +2167,7 @@
         {
           "event": "Ultimate Smashdown #26 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-26-1/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-11-30",
           "seed": 24,
           "place": 17,
@@ -2215,6 +2270,7 @@
         {
           "event": "NSGdown · Ultimate singles",
           "eventKey": "tournament/nsgdown/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-07-13",
           "seed": 28,
           "place": 33,
@@ -2273,6 +2329,7 @@
         {
           "event": "Ultimate Smashdown #23 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-06-22",
           "seed": 28,
           "place": 25,
@@ -2413,6 +2470,7 @@
         {
           "event": "Ultimate Smashdown #21 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-04-27",
           "seed": 40,
           "place": 33,
@@ -2571,6 +2629,7 @@
         {
           "event": "Ultimate Smashdown #20 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-03-16",
           "seed": 29,
           "place": 25,
@@ -2767,6 +2826,7 @@
         {
           "event": "Ultimate Smashdown #18 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-18/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-11-11",
           "seed": 33,
           "place": 33,
@@ -2867,6 +2927,7 @@
         {
           "event": "Ultimate Smashdown #17 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-10-21",
           "seed": 34,
           "place": 33,
@@ -3071,6 +3132,7 @@
         {
           "event": "Ultimate Smashdown #16 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-16/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-09-23",
           "seed": 33,
           "place": 33,

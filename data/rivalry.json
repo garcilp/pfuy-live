@@ -1,63 +1,53 @@
 {
-  "weekOf": "2026-11-08",
+  "weekOf": "2026-11-15",
   "players": [
     {
-      "playerId": "2915041",
-      "tag": "Azrad",
-      "slug": "azrad-2915041",
-      "photo": "assets/renders/ultimate/portraits/mii-brawler.webp"
+      "playerId": "263974",
+      "tag": "Sagat",
+      "slug": "sagat-263974",
+      "photo": "assets/renders/melee/portraits/captain-falcon.webp"
     },
     {
-      "playerId": "3326405",
-      "tag": "Catwo",
-      "slug": "catwo-3326405",
-      "photo": "assets/renders/ultimate/portraits/donkey-kong.webp"
+      "playerId": "330371",
+      "tag": "Sol!d",
+      "slug": "sol-d-330371",
+      "photo": "assets/players/330371.png"
     }
   ],
   "overall": {
     "score": [
-      2,
-      8
+      29,
+      5
     ],
-    "totalSets": 10,
-    "distinctGames": 4,
-    "lastEncounterDate": "2026-10-17"
+    "totalSets": 34,
+    "distinctGames": 3,
+    "lastEncounterDate": "2025-11-09"
   },
   "games": [
     {
-      "gameId": "ult",
-      "gameName": "Ultimate",
-      "gameSlug": "ultimate",
+      "gameId": "melee",
+      "gameName": "Melee",
+      "gameSlug": "melee",
       "score": [
-        1,
-        3
+        28,
+        4
       ],
-      "sets": 4
-    },
-    {
-      "gameId": "roa",
-      "gameName": "Rivals of Aether",
-      "gameSlug": "rivals-of-aether",
-      "score": [
-        0,
-        3
-      ],
-      "sets": 3
-    },
-    {
-      "gameId": "r2",
-      "gameName": "Rivals 2",
-      "gameSlug": "rivals-2",
-      "score": [
-        0,
-        2
-      ],
-      "sets": 2
+      "sets": 32
     },
     {
       "gameId": "pplus",
       "gameName": "Project+",
       "gameSlug": "project-plus",
+      "score": [
+        0,
+        1
+      ],
+      "sets": 1
+    },
+    {
+      "gameId": "ult",
+      "gameName": "Ultimate",
+      "gameSlug": "ultimate",
       "score": [
         1,
         0
@@ -65,5 +55,5 @@
       "sets": 1
     }
   ],
-  "seed": 5181727
+  "seed": 2684862734
 }

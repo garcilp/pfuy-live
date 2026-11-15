@@ -165,6 +165,17 @@ function render() {
     const opponent = String(set.opponent || '').trim();
     return opponent && !/^unknown$/i.test(opponent) && ['win', 'loss'].includes(set.outcome);
   });
+  const recentSetScore = set => {
+    const rawScore = String(set.score || '').trim();
+    const scores = rawScore.match(/^\s*(\d+)\s*[-–—:]\s*(\d+)\s*[-–—:]\s*(\d+)\s*[-–—:]\s*(\d+)\s*$/);
+    if (String(set.setId || '').startsWith('challonge:') && scores) {
+      const values = scores.slice(1).map(Number);
+      const high = Math.max(...values);
+      const low = Math.min(...values);
+      return set.outcome === 'win' ? `${high}–${low}` : `${low}–${high}`;
+    }
+    return rawScore || '—';
+  };
   const mostRecentlyPlayedFirst = [...games].sort((a, b) => {
     const latestDate = game => (game.results || []).reduce((latest, result) =>
       typeof result.date === 'string' && result.date > latest ? result.date : latest, '');
@@ -177,7 +188,7 @@ function render() {
   });
   const mg = sel || [...games].sort((a, b) => b.events - a.events)[0];
   const firstCharacter = mg?.characters?.[0]?.name;
-  const playerPhoto = player.photo || `assets/players/${player.startggPlayerId || profileId || slug(player.tag)}.png`;
+  const playerPhoto = player.photo || `assets/players/${player.playerId || player.startggPlayerId || profileId || slug(player.tag)}.png`;
   const hasStructuredLocation = Object.hasOwn(player, 'city') || Object.hasOwn(player, 'country');
   const profileLocation = hasStructuredLocation
     ? [player.city, player.country || 'Uruguay'].filter(value => typeof value === 'string' && value.trim()).join(', ')
@@ -539,7 +550,9 @@ function render() {
       const itemsHtml = tournaments.map((result, idx) => {
         const eventTitle = (result.event || '').split(' · ')[0];
         const tSlug = getTournamentSlug(result);
-        const eventUrl = `event.html?tournament=${encodeURIComponent(tSlug)}`;
+        const eventUrl = result.displaySeparately && result.eventKey
+          ? `event.html?tournament=${encodeURIComponent(tSlug)}&event=${encodeURIComponent(result.eventKey)}`
+          : `event.html?tournament=${encodeURIComponent(tSlug)}`;
         const finishKey = result.eventKey || `${result.event}-${result.date}-${idx}`;
         const isExpanded = selectedBestFinishKey === finishKey;
 
@@ -605,6 +618,7 @@ function render() {
       const sets = recentSetsForDisplay(r.sets);
       const setRows = sets.length ? sets.map(set => {
         const outcome = ['win', 'loss'].includes(set.outcome) ? set.outcome : 'unknown';
+        const phase = set.phase && set.phase !== 'Phase not recorded' ? set.phase : 'Bracket';
         const isPools = set.phase && /\bpools\b/i.test(set.phase);
         const roundHtml = (!isPools && set.round) ? `<small>${esc(set.round)}</small>` : '';
 
@@ -633,9 +647,9 @@ function render() {
         }
 
         return `<div class="set-row">
-          <span class="set-phase"><b>${esc(set.phase || 'Phase not recorded')}</b>${roundHtml}</span>
+          <span class="set-phase"><b>${esc(phase)}</b>${roundHtml}</span>
           <span class="set-opponent">${linkifyOpponent(set.opponent || 'Unknown', set.opponentPlayerId)}</span>
-          <span class="set-score">${esc(set.score || '—')}</span>
+          <span class="set-score">${esc(recentSetScore(set))}</span>
           <span class="set-result ${outcome}">${outcome === 'unknown' ? 'RESULT UNKNOWN' : outcome.toUpperCase()}</span>
           ${vodHtml}
         </div>`;

@@ -128,7 +128,7 @@ function renderUpcomingEvents() {
   // Group tournaments like events.js
   const grouped = new Map();
   eventsIndex.forEach(event => {
-    const key = event.tournamentSlug || (event.tournament || '').toLowerCase();
+    const key = event.displaySeparately ? `event:${event.id || event.url}` : (event.tournamentSlug || (event.tournament || '').toLowerCase());
     if (!grouped.has(key)) {
       grouped.set(key, {
         tournament: event.tournament,
@@ -236,7 +236,7 @@ async function renderRecentResults() {
   // Group completed events by (tournament, game) so tournaments with multiple games show multiple rows
   const grouped = new Map();
   eventsIndex.forEach(event => {
-    const tourneyKey = event.tournamentSlug || (event.tournament || '').toLowerCase();
+    const tourneyKey = event.displaySeparately ? `event:${event.id || event.url}` : (event.tournamentSlug || (event.tournament || '').toLowerCase());
     const gameKey = (event.gameSlug || event.game || 'default').toLowerCase();
     const compositeKey = `${tourneyKey}::${gameKey}`;
 

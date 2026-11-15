@@ -1,5 +1,6 @@
 {
   "player": {
+    "playerId": "3072750",
     "tag": "Butifarra",
     "photo": "assets/players/3072750.png",
     "sponsor": "CG",
@@ -101,6 +102,11 @@
         },
         {
           "opponent": "Lucho",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "warwick",
           "sets": 1,
           "wins": 0
         },
@@ -210,14 +216,14 @@
           "wins": 0
         }
       ],
-      "events": 7,
+      "events": 8,
       "wins": 17,
       "losses": 29,
       "upsets": 1,
       "bestPlace": 25,
       "bestEvent": "3 times",
       "avgPlace": 36.4,
-      "avgSeed": 41,
+      "avgSeed": 37,
       "characters": [
         {
           "name": "Ryu",
@@ -231,8 +237,50 @@
       "notableWins": [],
       "results": [
         {
+          "event": "Cacatua Weekly #26 · Ultimate Singles",
+          "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-15",
+          "seed": 11,
+          "place": null,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "preview_3503457_1_7",
+              "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+              "event": "Cacatua Weekly #26 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "warwick",
+              "opponentPlayerId": "4727436",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 11,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/cacatua-weekly-26/event/ultimate-singles",
+              "event": "Cacatua Weekly #26 · Ultimate Singles",
+              "date": "2026-11-15",
+              "seed": 11,
+              "place": null,
+              "entrants": 14,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Ultimate Smashdown #21 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2024-04-27",
           "seed": 39,
           "place": 33,
@@ -349,6 +397,7 @@
         {
           "event": "Ultimate Smashdown #19 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-19/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-12-09",
           "seed": 26,
           "place": 25,
@@ -501,6 +550,7 @@
         {
           "event": "Ultimate Smashdown #15 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-08-19",
           "seed": 44,
           "place": 49,
@@ -753,6 +803,7 @@
         {
           "event": "Ultimate Smashdown #14 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-14/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-06-24",
           "seed": 34,
           "place": 25,
@@ -907,6 +958,7 @@
         {
           "event": "Koopa Series #2 · Singles",
           "eventKey": "tournament/koopa-series-2/event/singles",
+          "displaySeparately": false,
           "date": "2023-05-20",
           "seed": 40,
           "place": 25,
@@ -997,6 +1049,7 @@
         {
           "event": "Evo-Chacra 2023 · Ultimate Singles",
           "eventKey": "tournament/evo-chacra-2023/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-01-14",
           "seed": 39,
           "place": 41,
@@ -1055,6 +1108,7 @@
         {
           "event": "Ultimate Smashdown #12 · Ultimate Smashdown #12 - Singles",
           "eventKey": "tournament/ultimate-smashdown-12/event/ultimate-smashdown-12-singles",
+          "displaySeparately": false,
           "date": "2022-11-19",
           "seed": 65,
           "place": 57,

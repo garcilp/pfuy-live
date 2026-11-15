@@ -1,17 +1,19 @@
 {
   "player": {
+    "playerId": "1330159",
     "tag": "Calvo",
     "photo": "assets/players/1330159.png",
     "sponsor": "_/\\/\\_",
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": "2019-04-20",
+    "activeSince": "2019-03-23",
     "startgg": "",
     "startggPlayerId": "1330159",
     "aliases": [
       "Calvo",
-      "Deleted user"
+      "Deleted user",
+      "Gustavo Ruetalo"
     ]
   },
   "games": [
@@ -22,6 +24,11 @@
       "headToHead": [
         {
           "opponent": "GAB",
+          "sets": 2,
+          "wins": 1
+        },
+        {
+          "opponent": "Fronk",
           "sets": 2,
           "wins": 1
         },
@@ -51,14 +58,14 @@
           "wins": 2
         },
         {
+          "opponent": "Pato",
+          "sets": 2,
+          "wins": 2
+        },
+        {
           "opponent": "Iguana",
           "sets": 1,
           "wins": 0
-        },
-        {
-          "opponent": "Fronk",
-          "sets": 1,
-          "wins": 1
         },
         {
           "opponent": "FacuDSC",
@@ -126,11 +133,6 @@
           "wins": 1
         },
         {
-          "opponent": "Pato",
-          "sets": 1,
-          "wins": 1
-        },
-        {
           "opponent": "Rockletz",
           "sets": 1,
           "wins": 0
@@ -154,15 +156,35 @@
           "opponent": "TATO",
           "sets": 1,
           "wins": 1
+        },
+        {
+          "opponent": "RIGONARDO",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Adriano Ribeiro",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Poppy",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Federico Grandal",
+          "sets": 1,
+          "wins": 1
         }
       ],
-      "events": 6,
-      "wins": 23,
-      "losses": 10,
+      "events": 7,
+      "wins": 27,
+      "losses": 12,
       "upsets": 8,
       "bestPlace": 3,
       "bestEvent": "Montevideo Melee Monthly 2019 #10 · Ultimate Singles",
-      "avgPlace": 11.0,
+      "avgPlace": 10.6,
       "avgSeed": 11,
       "characters": [],
       "notableWins": [
@@ -207,6 +229,7 @@
         {
           "event": "NSU - EVOCHACRA · NSU / EVOCHACRA SSBU - SINGLES",
           "eventKey": "tournament/nsu-evochacra/event/nsu-evochacra-super-smash-bros-ultimate-singles",
+          "displaySeparately": false,
           "date": "2020-01-11",
           "seed": 5,
           "place": 25,
@@ -363,6 +386,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #10 · Ultimate Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-10-26",
           "seed": 1,
           "place": 3,
@@ -617,6 +641,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #9 · Ultimate Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-09-28",
           "seed": 27,
           "place": 7,
@@ -841,8 +866,9 @@
           ]
         },
         {
-          "event": "NSU - Super Smash Bros Ultimate",
+          "event": "NSU - Super Smash Bros Ultimate Abril",
           "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
+          "displaySeparately": false,
           "date": "2019-04-20",
           "seed": 10,
           "place": 9,
@@ -851,7 +877,7 @@
             {
               "setId": "19888943",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
-              "event": "NSU - Super Smash Bros Ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
               "phase": "Bracket",
               "round": "Winners Round 2",
               "opponent": "FacuDSC",
@@ -869,7 +895,7 @@
             {
               "setId": "19888953",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
-              "event": "NSU - Super Smash Bros Ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
               "phase": "Bracket",
               "round": "Winners Round 3",
               "opponent": "Fronk",
@@ -887,7 +913,7 @@
             {
               "setId": "19888958",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
-              "event": "NSU - Super Smash Bros Ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
               "phase": "Bracket",
               "round": "Winners Quarter-Final",
               "opponent": "Iguana",
@@ -905,7 +931,7 @@
             {
               "setId": "19889081",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
-              "event": "NSU - Super Smash Bros Ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
               "phase": "Bracket",
               "round": "Losers Round 5",
               "opponent": "GAB",
@@ -925,11 +951,142 @@
           "sourceEvents": [
             {
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
-              "event": "NSU - Super Smash Bros Ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
               "date": "2019-04-20",
               "seed": 10,
               "place": 9,
               "entrants": 33,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "torneo super smash nintendo switch uruguay",
+          "eventKey": "event:challonge:ne0nkst3",
+          "displaySeparately": false,
+          "date": "2019-03-23",
+          "seed": null,
+          "place": 9,
+          "entrants": 34,
+          "sets": [
+            {
+              "setId": "challonge:ne0nkst3:match:154197214",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Round 2",
+              "opponent": "RIGONARDO",
+              "opponentPlayerId": "1244573",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553350056,
+              "phaseOrder": null,
+              "roundOrder": 2
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197230",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 1",
+              "opponent": "Adriano Ribeiro",
+              "opponentPlayerId": "pfuy-6f9de49fc36d89bbd92d",
+              "score": "2-0–2-0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553352148,
+              "phaseOrder": null,
+              "roundOrder": -1
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197232",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 2",
+              "opponent": "Poppy",
+              "opponentPlayerId": "pfuy-e85253847450104be9a5",
+              "score": "0-2–0-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553353312,
+              "phaseOrder": null,
+              "roundOrder": -2
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197240",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 3",
+              "opponent": "Federico Grandal",
+              "opponentPlayerId": "pfuy-a4b3310185383cc50def",
+              "score": "0-2–0-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553356028,
+              "phaseOrder": null,
+              "roundOrder": -3
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197248",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 4",
+              "opponent": "Pato",
+              "opponentPlayerId": "575693",
+              "score": "2-1–2-1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553356875,
+              "phaseOrder": null,
+              "roundOrder": -4
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197252",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 5",
+              "opponent": "Fronk",
+              "opponentPlayerId": "1033918",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553357591,
+              "phaseOrder": null,
+              "roundOrder": -5
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "date": "2019-03-23",
+              "seed": null,
+              "place": 9,
+              "entrants": 34,
               "characterCounts": {}
             }
           ]

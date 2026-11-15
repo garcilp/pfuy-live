@@ -1,12 +1,13 @@
 {
   "player": {
+    "playerId": "1435657",
     "tag": "Shysce",
     "photo": "assets/players/1435657.png",
     "sponsor": "",
     "city": "Montevideo",
     "country": "Uruguay",
     "location": "Montevideo, Uruguay",
-    "activeSince": "2019-09-28",
+    "activeSince": "2019-05-18",
     "startgg": "https://www.start.gg/user/49853066",
     "startggPlayerId": "1435657",
     "aliases": [
@@ -89,15 +90,30 @@
           "opponent": "Pulga",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Batoru",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "elchinolp",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pato",
+          "sets": 1,
+          "wins": 0
         }
       ],
-      "events": 3,
-      "wins": 2,
-      "losses": 13,
+      "events": 4,
+      "wins": 3,
+      "losses": 15,
       "upsets": 1,
-      "bestPlace": 33,
-      "bestEvent": "3 times",
-      "avgPlace": 33.0,
+      "bestPlace": 17,
+      "bestEvent": "Smash Bros. Ultimate / Torneos Pro-III",
+      "avgPlace": 29.0,
       "avgSeed": 46,
       "characters": [],
       "notableWins": [],
@@ -105,6 +121,7 @@
         {
           "event": "Ultimate Smashdown #1 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2020-02-29",
           "seed": 41,
           "place": 33,
@@ -225,6 +242,7 @@
         {
           "event": "NSU - EVOCHACRA · NSU / EVOCHACRA SSBU - SINGLES",
           "eventKey": "tournament/nsu-evochacra/event/nsu-evochacra-super-smash-bros-ultimate-singles",
+          "displaySeparately": false,
           "date": "2020-01-11",
           "seed": 42,
           "place": 33,
@@ -337,6 +355,7 @@
         {
           "event": "Montevideo Melee Monthly 2019 #9 · Ultimate Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-09-28",
           "seed": 54,
           "place": 33,
@@ -442,6 +461,83 @@
               "seed": 54,
               "place": 33,
               "entrants": 64,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Smash Bros. Ultimate / Torneos Pro-III",
+          "eventKey": "event:challonge:xvk4i4mg",
+          "displaySeparately": false,
+          "date": "2019-05-18",
+          "seed": null,
+          "place": 17,
+          "entrants": 26,
+          "sets": [
+            {
+              "setId": "challonge:xvk4i4mg:match:161075997",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 1",
+              "opponent": "Batoru",
+              "opponentPlayerId": "pfuy-99aad7d61db59b0d0d4d",
+              "score": "1-2–1-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558213827,
+              "phaseOrder": null,
+              "roundOrder": 1
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076021",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 1",
+              "opponent": "elchinolp",
+              "opponentPlayerId": "pfuy-1d614e9067e511551d88",
+              "score": "2-0–2-0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558215260,
+              "phaseOrder": null,
+              "roundOrder": -1
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076024",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 2",
+              "opponent": "Pato",
+              "opponentPlayerId": "575693",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558219270,
+              "phaseOrder": null,
+              "roundOrder": -2
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "date": "2019-05-18",
+              "seed": null,
+              "place": 17,
+              "entrants": 26,
               "characterCounts": {}
             }
           ]

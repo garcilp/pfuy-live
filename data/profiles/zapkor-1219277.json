@@ -1,16 +1,18 @@
 {
   "player": {
+    "playerId": "1219277",
     "tag": "Zapkor",
     "photo": "assets/players/1219277.png",
     "sponsor": "Dolby",
     "city": "",
     "country": "China",
     "location": "China",
-    "activeSince": "2019-04-20",
+    "activeSince": "2019-03-23",
     "startgg": "https://www.start.gg/user/8bcec7d9",
     "startggPlayerId": "1219277",
     "aliases": [
       "Federico Perez",
+      "Federico Pérez",
       "Zapkor"
     ]
   },
@@ -20,6 +22,11 @@
       "slug": "ultimate",
       "name": "Ultimate",
       "headToHead": [
+        {
+          "opponent": "RandomX",
+          "sets": 2,
+          "wins": 0
+        },
         {
           "opponent": "Trim",
           "sets": 2,
@@ -49,11 +56,6 @@
           "opponent": "Roboflecto",
           "sets": 1,
           "wins": 1
-        },
-        {
-          "opponent": "RandomX",
-          "sets": 1,
-          "wins": 0
         },
         {
           "opponent": "BLAZAM",
@@ -109,15 +111,20 @@
           "opponent": "Freakazoiid",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Federico Grandal",
+          "sets": 1,
+          "wins": 0
         }
       ],
-      "events": 6,
+      "events": 7,
       "wins": 3,
-      "losses": 16,
+      "losses": 18,
       "upsets": 2,
       "bestPlace": 17,
       "bestEvent": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
-      "avgPlace": 35.0,
+      "avgPlace": 33.0,
       "avgSeed": 45,
       "characters": [
         {
@@ -134,6 +141,7 @@
         {
           "event": "Copa del Rey · Ultimate Singles",
           "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2023-07-22",
           "seed": 80,
           "place": 65,
@@ -216,6 +224,7 @@
         {
           "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
           "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
+          "displaySeparately": false,
           "date": "2021-10-24",
           "seed": 42,
           "place": 33,
@@ -391,6 +400,7 @@
         {
           "event": "NSU - Super Smash Bros Ultimate - Mayo · Ultimate Singles",
           "eventKey": "tournament/nsu-super-smash-bros-ultimate-mayo/event/ultimate-singles",
+          "displaySeparately": false,
           "date": "2019-05-11",
           "seed": 26,
           "place": 17,
@@ -519,8 +529,9 @@
           ]
         },
         {
-          "event": "NSU - Super Smash Bros Ultimate",
+          "event": "NSU - Super Smash Bros Ultimate Abril",
           "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
+          "displaySeparately": false,
           "date": "2019-04-20",
           "seed": 31,
           "place": 25,
@@ -529,7 +540,7 @@
             {
               "setId": "19888940",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
-              "event": "NSU - Super Smash Bros Ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
               "phase": "Bracket",
               "round": "Winners Round 2",
               "opponent": "Iguana",
@@ -547,7 +558,7 @@
             {
               "setId": "19889064",
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
-              "event": "NSU - Super Smash Bros Ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
               "phase": "Bracket",
               "round": "Losers Round 2",
               "opponent": "Dingo",
@@ -567,11 +578,70 @@
           "sourceEvents": [
             {
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
-              "event": "NSU - Super Smash Bros Ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
               "date": "2019-04-20",
               "seed": 31,
               "place": 25,
               "entrants": 33,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "torneo super smash nintendo switch uruguay",
+          "eventKey": "event:challonge:ne0nkst3",
+          "displaySeparately": false,
+          "date": "2019-03-23",
+          "seed": null,
+          "place": 25,
+          "entrants": 34,
+          "sets": [
+            {
+              "setId": "challonge:ne0nkst3:match:154197205",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Round 2",
+              "opponent": "Federico Grandal",
+              "opponentPlayerId": "pfuy-a4b3310185383cc50def",
+              "score": "0-2–0-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553349899,
+              "phaseOrder": null,
+              "roundOrder": 2
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197236",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 2",
+              "opponent": "RandomX",
+              "opponentPlayerId": "1219130",
+              "score": "0-2–0-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553353270,
+              "phaseOrder": null,
+              "roundOrder": -2
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "date": "2019-03-23",
+              "seed": null,
+              "place": 25,
+              "entrants": 34,
               "characterCounts": {}
             }
           ]
