@@ -86,7 +86,9 @@ async function loadEvents() {
   } catch (error) {
     status.textContent = error.message;
     if (upcomingSection) upcomingSection.style.display = 'none';
-    list.innerHTML = '<div class="panel glass empty-state"><h2>No events available</h2><p class="muted">Import tournament data and generate the event directory to populate this page.</p></div>';
+    list.innerHTML = window.i18n?.getLang() === 'es'
+      ? '<div class="panel glass empty-state"><h2>Aún no hay torneos disponibles</h2><p class="muted">Importa los datos de torneos y genera el directorio para completar esta página.</p></div>'
+      : '<div class="panel glass empty-state"><h2>No events available</h2><p class="muted">Import tournament data and generate the event directory to populate this page.</p></div>';
   }
 }
 

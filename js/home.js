@@ -4,7 +4,7 @@
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const slug = x => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const fmt = d => d ? new Date(`${d}T00:00:00`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
+const fmt = d => d ? new Date(`${d}T00:00:00`).toLocaleDateString(window.i18n?.getLang() === 'es' ? 'es-UY' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
 const collator = new Intl.Collator(undefined, { sensitivity: 'base', numeric: true });
 
 function isValidStartggUrl(url) {
@@ -75,7 +75,7 @@ async function initHome() {
     // Set synced timestamp
     const syncedEl = $('#synced');
     if (syncedEl) {
-      syncedEl.textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      syncedEl.textContent = new Date().toLocaleDateString(window.i18n?.getLang() === 'es' ? 'es-UY' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     }
   } catch (err) {
     console.error('Error loading homepage data:', err);
@@ -170,15 +170,16 @@ function renderUpcomingEvents() {
   }).sort((a, b) => (a.date || '').localeCompare(b.date || '') || collator.compare(a.tournament, b.tournament));
 
   if (!upcoming.length) {
-    container.innerHTML = '<p class="empty-notice">No upcoming tournaments currently scheduled. Check back soon or view past events!</p>';
+    container.innerHTML = `<p class="empty-notice">${esc(window.i18n?.t('home.empty.upcoming') || 'No upcoming tournaments currently scheduled. Check back soon or view past events!')}</p>`;
     return;
   }
 
   container.innerHTML = upcoming.map((e, i) => {
     const dt = e.date ? new Date(`${e.date}T00:00:00`) : new Date();
     const day = dt.getDate();
-    const weekday = dt.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
-    const month = dt.toLocaleDateString('en-US', { month: 'short' }).toUpperCase();
+    const locale = window.i18n?.getLang() === 'es' ? 'es-UY' : 'en-US';
+    const weekday = dt.toLocaleDateString(locale, { weekday: 'short' }).toUpperCase();
+    const month = dt.toLocaleDateString(locale, { month: 'short' }).toUpperCase();
     const gameNames = [...e.games.values()].map(g => g.name).join(' · ');
 
     // Direct Start.gg navigation for upcoming tournaments:
@@ -216,7 +217,7 @@ function renderUpcomingEvents() {
           <div class="mono muted">${month}</div>
         </div>
         <div class="info">
-          ${i === 0 ? '<span class="next">NEXT</span>' : ''}
+          ${i === 0 ? `<span class="next">${esc(window.i18n?.t('home.event.next') || 'NEXT')}</span>` : ''}
           <b>${esc(e.tournament)}</b>
           <span class="muted">${esc(gameNames || 'Platform Fighter')}</span>
         </div>
@@ -267,7 +268,7 @@ async function renderRecentResults() {
     .slice(0, 6);
 
   if (!completed.length) {
-    container.innerHTML = '<p class="empty-notice">No recent results found.</p>';
+    container.innerHTML = `<p class="empty-notice">${esc(window.i18n?.t('home.empty.results') || 'No recent results found.')}</p>`;
     return;
   }
 
@@ -349,7 +350,8 @@ async function renderOnThisWeek() {
   startOfWeek.setDate(now.getDate() - 3);
   const endOfWeek = new Date(now);
   endOfWeek.setDate(now.getDate() + 3);
-  const weekRange = `${startOfWeek.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} – ${endOfWeek.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+  const locale = window.i18n?.getLang() === 'es' ? 'es-UY' : 'en-US';
+  const weekRange = `${startOfWeek.toLocaleDateString(locale, { month: 'short', day: 'numeric' })} – ${endOfWeek.toLocaleDateString(locale, { month: 'short', day: 'numeric' })}`;
   const updateSubtitle = () => {
     if (subtitle) subtitle.textContent = window.i18n ? window.i18n.t('home.history.sub', { today: weekRange }) : `Tournaments played this week (${weekRange}) in past years`;
   };
@@ -378,7 +380,7 @@ async function renderOnThisWeek() {
   });
 
   if (!matchingEvents.length) {
-    container.innerHTML = '<p class="empty-notice">No tournaments were played during this week in past years.</p>';
+    container.innerHTML = `<p class="empty-notice">${esc(window.i18n?.t('home.empty.history') || 'No tournaments were played during this week in past years.')}</p>`;
     return;
   }
 
@@ -605,7 +607,7 @@ async function renderTopPlayers() {
   }
 
   if (!topPlayers.length) {
-    container.innerHTML = '<p class="empty-notice">Rankings are currently being calculated.</p>';
+    container.innerHTML = `<p class="empty-notice">${esc(window.i18n?.t('home.empty.rankings') || 'Rankings are currently being calculated.')}</p>`;
     return;
   }
 
@@ -884,7 +886,7 @@ function setupSearch() {
     }).slice(0, 4);
 
     if (!matchingPlayers.length && !matchingEvents.length) {
-      resultsBox.innerHTML = '<div style="padding:12px;color:var(--muted);font-size:13px;">No matching players or events found.</div>';
+      resultsBox.innerHTML = `<div style="padding:12px;color:var(--muted);font-size:13px;">${esc(window.i18n?.t('home.search.noResults') || 'No matching players or events found.')}</div>`;
       resultsBox.hidden = false;
       return;
     }

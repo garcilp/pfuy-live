@@ -1366,12 +1366,12 @@
 
     calculateCustom(prePeriodSets, periodSets, periodPlacements, mode, startDate, endDate, targetPlayerId, weights = null, fixedNormalizationRanges = null) {
       if (weights === null || weights === undefined) {
-        weights = { glicko2: 50, quality_wins: 25, sof: 15, loss_quality: 10 };
+        weights = { glicko2: 60, quality_wins: 15, sof: 15, loss_quality: 10 };
       } else if (typeof weights === 'string') {
         try {
           weights = JSON.parse(weights);
         } catch (e) {
-          weights = { glicko2: 50, quality_wins: 25, sof: 15, loss_quality: 10 };
+          weights = { glicko2: 60, quality_wins: 15, sof: 15, loss_quality: 10 };
         }
       }
 

@@ -503,6 +503,7 @@ async function renderRankingCanvas(rankingData, options = {}) {
     const realNameLineH = hasRealName ? (realNameFontSize * 1.25) : 0;
 
     const totalTextHeight = sponsorLineH + tagLineH + realNameLineH;
+    // Treat the available lines as one vertically centered block, matching the portrait tile.
     let textCursorY = currentY + (rowH - totalTextHeight) / 2;
 
     // 1. Sponsor (mono, muted)
@@ -511,9 +512,9 @@ async function renderRankingCanvas(rankingData, options = {}) {
       ctx.font = `500 ${sponsorFontSize}px "JetBrains Mono", monospace`;
       ctx.fillStyle = EXPORT_THEME.muted;
       ctx.textAlign = 'left';
-      ctx.textBaseline = 'top';
+      ctx.textBaseline = 'middle';
       const fittedSponsor = fitText(ctx, String(p.sponsor).trim().toUpperCase(), maxTagWidth);
-      ctx.fillText(fittedSponsor, textStartX, textCursorY);
+      ctx.fillText(fittedSponsor, textStartX, textCursorY + sponsorLineH / 2);
       ctx.restore();
       textCursorY += sponsorLineH;
     }
@@ -523,9 +524,9 @@ async function renderRankingCanvas(rankingData, options = {}) {
     ctx.font = `700 ${tagFontSize}px "Space Grotesk", sans-serif`;
     ctx.fillStyle = EXPORT_THEME.text;
     ctx.textAlign = 'left';
-    ctx.textBaseline = 'top';
+    ctx.textBaseline = 'middle';
     const fittedTag = fitText(ctx, String(p.tag || '').trim(), maxTagWidth);
-    ctx.fillText(fittedTag, textStartX, textCursorY);
+    ctx.fillText(fittedTag, textStartX, textCursorY + tagLineH / 2);
     ctx.restore();
     textCursorY += tagLineH;
 
@@ -535,9 +536,9 @@ async function renderRankingCanvas(rankingData, options = {}) {
       ctx.font = `400 ${realNameFontSize}px "Space Grotesk", sans-serif`;
       ctx.fillStyle = EXPORT_THEME.muted;
       ctx.textAlign = 'left';
-      ctx.textBaseline = 'top';
+      ctx.textBaseline = 'middle';
       const fittedRealName = fitText(ctx, String(p.realName).trim(), maxTagWidth);
-      ctx.fillText(fittedRealName, textStartX, textCursorY);
+      ctx.fillText(fittedRealName, textStartX, textCursorY + realNameLineH / 2);
       ctx.restore();
     }
 

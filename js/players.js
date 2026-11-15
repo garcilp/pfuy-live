@@ -115,8 +115,11 @@ async function loadPlayers() {
     populateGameFilter();
     render();
   } catch (error) {
+    const isEs = window.i18n?.getLang() === 'es';
     status.textContent = error.message;
-    list.innerHTML = '<div class="panel glass empty-state"><h2>No player profiles yet</h2><p class="muted">Import tournament data and generate player profiles to populate this directory.</p></div>';
+    list.innerHTML = isEs
+      ? '<div class="panel glass empty-state"><h2>Aún no hay perfiles de jugadores</h2><p class="muted">Importa los datos de torneos y genera los perfiles para completar este directorio.</p></div>'
+      : '<div class="panel glass empty-state"><h2>No player profiles yet</h2><p class="muted">Import tournament data and generate player profiles to populate this directory.</p></div>';
   }
 }
 

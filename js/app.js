@@ -8,8 +8,9 @@ const ord = n => {
 };
 const slug = x => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const fmt = d => d ? new Date(`${d}T00:00:00`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
-const fmtMonthYear = d => d ? new Date(d.includes('T') ? d : `${d}T00:00:00`).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) : '';
+const locale = () => window.i18n?.getLang() === 'es' ? 'es-UY' : 'en-US';
+const fmt = d => d ? new Date(`${d}T00:00:00`).toLocaleDateString(locale(), { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
+const fmtMonthYear = d => d ? new Date(d.includes('T') ? d : `${d}T00:00:00`).toLocaleDateString(locale(), { month: 'long', year: 'numeric' }) : '';
 const profileId = new URLSearchParams(location.search).get('player');
 let data;
 let playerDirectory = [];
@@ -143,7 +144,7 @@ Promise.all([
   data = d;
   const syncedEl = $('#synced');
   if (syncedEl) {
-    syncedEl.textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    syncedEl.textContent = new Date().toLocaleDateString(locale(), { month: 'short', day: 'numeric', year: 'numeric' });
   }
   render();
   addEventListener('hashchange', () => { resultPage = 1; selectedBestPlacement = null; selectedBestFinishKey = null; render(); });
@@ -256,7 +257,7 @@ function render() {
       : activeDurationYears < 1
         ? `${activeDurationMonths} month${activeDurationMonths === 1 ? '' : 's'}`
         : `${activeDurationYears.toFixed(1).replace(/\.0$/, '')} years`;
-    const formatActivityDate = date => date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    const formatActivityDate = date => date.toLocaleDateString(locale(), { month: 'short', year: 'numeric' });
     const activityPeriod = singleEventResult
       ? (singleEventResult.event || '').split(' · ')[0]
       : since

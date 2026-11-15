@@ -101,11 +101,19 @@ function getSystemNames() {
   return {
     overview: isEs ? 'Resumen' : 'Overview',
     glicko2: 'Glicko-2',
-    sof: isEs ? 'Fuerza de Campo' : 'Strength of Field',
-    quality_wins: isEs ? 'Victorias de Calidad' : 'Quality Wins',
+    sof: isEs ? tr('rankings.subtab.sof') : 'Strength of Field',
+    quality_wins: isEs ? tr('rankings.subtab.qualityWins') : 'Quality Wins',
     loss_quality: isEs ? 'Consistencia' : 'Consistency',
     custom: isEs ? 'Fórmula Personalizada' : 'Custom Formula'
   };
+}
+
+function tr(key, params) {
+  return window.i18n?.t ? window.i18n.t(key, params) : key;
+}
+
+function diagCopy(english, spanish) {
+  return window.i18n?.getLang() === 'es' ? spanish : english;
 }
 
 function renderSystemTabsNav() {
@@ -180,9 +188,30 @@ if (window.i18n && window.i18n.onChange) {
     if (activeSection === 'historical') {
       renderHistoricalRankings();
     } else {
+      updateRankingStatusForLanguage();
       render();
     }
   });
+}
+
+function updateRankingStatusForLanguage() {
+  if (!rankingStatus || activeSection !== 'systems') return;
+  const system = getActiveSystem();
+  const game = getGameName(gameFilter?.value || 'ultimate');
+  if (system === 'custom') {
+    rankingStatus.textContent = tr('rankings.status.pr', { game });
+  } else if (system === 'overview' || system === 'comparison') {
+    rankingStatus.textContent = tr('rankings.status.overview', { game });
+  } else if (currentData?.rankings) {
+    rankingStatus.textContent = tr('rankings.status.playerCount', {
+      n: currentData.totalPlayers,
+      system: window.i18n?.getLang() === 'es'
+        ? getSystemNames()[system] || currentData.algorithm?.name || system
+        : currentData.algorithm?.name || getSystemNames()[system] || system
+    });
+  } else {
+    rankingStatus.textContent = tr('rankings.status.loading');
+  }
 }
 
 window.navigateToSection = function(section, subsection = null) {
@@ -619,7 +648,7 @@ async function loadData() {
     return;
   }
 
-  rankingStatus.textContent = 'Calculating rankings…';
+  rankingStatus.textContent = tr('rankings.status.loading');
 
   try {
     if (system === 'custom') {
@@ -640,7 +669,7 @@ async function loadData() {
       }
       if (requestId !== currentRequestId || signal.aborted) return;
       comparisonData = newCompData;
-      rankingStatus.textContent = `Displaying Power Rankings for ${getGameName(game)}`;
+      rankingStatus.textContent = tr('rankings.status.pr', { game: getGameName(game) });
       render();
       return;
     }
@@ -660,7 +689,7 @@ async function loadData() {
       }
       if (requestId !== currentRequestId || signal.aborted) return;
       comparisonData = newCompData;
-      rankingStatus.textContent = `Displaying rankings overview for ${getGameName(game)}`;
+      rankingStatus.textContent = tr('rankings.status.overview', { game: getGameName(game) });
       render();
       return;
     }
@@ -677,9 +706,14 @@ async function loadData() {
 
     currentData = data;
     if (currentData && currentData.rankings) {
-      rankingStatus.textContent = `${currentData.totalPlayers} player${currentData.totalPlayers === 1 ? '' : 's'} ranked in ${currentData.algorithm ? currentData.algorithm.name : system}`;
+      rankingStatus.textContent = tr('rankings.status.playerCount', {
+        n: currentData.totalPlayers,
+        system: window.i18n?.getLang() === 'es'
+          ? getSystemNames()[system] || currentData.algorithm?.name || system
+          : currentData.algorithm ? currentData.algorithm.name : getSystemNames()[system] || system
+      });
     } else {
-      rankingStatus.textContent = 'No ranking data available.';
+      rankingStatus.textContent = tr('rankings.status.empty');
     }
     render();
   } catch (err) {
@@ -759,9 +793,19 @@ const PR_COMPONENTS = {
   loss_quality: { name: 'Consistency', color: '#A78BFA' }
 };
 
+function getPRComponentName(sysKey) {
+  const nameKey = {
+    glicko2: 'rankings.subtab.glicko2',
+    quality_wins: 'rankings.subtab.qualityWins',
+    sof: 'rankings.subtab.sof',
+    loss_quality: 'rankings.subtab.lossQuality'
+  }[sysKey];
+  return nameKey ? tr(nameKey) : (PR_COMPONENTS[sysKey]?.name || sysKey);
+}
+
 const DEFAULT_PR_WEIGHTS = {
-  glicko2: 55.0,
-  quality_wins: 20.0,
+  glicko2: 60.0,
+  quality_wins: 15.0,
   sof: 15.0,
   loss_quality: 10.0
 };
@@ -1058,7 +1102,7 @@ window.onPRWeightInput = function(sysKey, value) {
 
     const legendText = $(`.pr-legend-text[data-sys="${k}"]`);
     if (legendText) {
-      legendText.textContent = isActive ? `${dispW}%` : 'Disabled';
+      legendText.textContent = isActive ? `${dispW}%` : tr('rankings.pr.disabled');
     }
   });
 };
@@ -1112,7 +1156,7 @@ window.createPRFromCurrentRankings = function() {
     players: leaderboard.map((p, idx) => ({
       placement: idx + 1,
       tag: p.playerTag,
-      points: Math.round(p.score),
+      points: p.score,
       photo: `assets/players/${p.playerId}.png`,
       playerId: p.playerId
     }))
@@ -1138,7 +1182,7 @@ function renderFormulaBudgetBox() {
   const stackedSegmentsHtml = Object.keys(PR_COMPONENTS).map(sysKey => {
     const w = displayWeights[sysKey] || 0;
     const color = PR_COMPONENTS[sysKey].color;
-    return `<div class="pr-stacked-segment" data-sys="${sysKey}" style="width: ${prActiveComponents[sysKey] ? w : 0}%; background-color: ${color};" title="${PR_COMPONENTS[sysKey].name}: ${w}%"></div>`;
+    return `<div class="pr-stacked-segment" data-sys="${sysKey}" style="width: ${prActiveComponents[sysKey] ? w : 0}%; background-color: ${color};" title="${getPRComponentName(sysKey)}: ${w}%"></div>`;
   }).join('');
 
   const legendHtml = Object.keys(PR_COMPONENTS).map(sysKey => {
@@ -1148,13 +1192,14 @@ function renderFormulaBudgetBox() {
     return `
       <div class="pr-legend-item ${isActive ? '' : 'muted'}">
         <span class="pr-legend-swatch" style="background-color: ${isActive ? color : '#666'};"></span>
-        <span><b>${PR_COMPONENTS[sysKey].name}</b>: <span class="pr-legend-text" data-sys="${sysKey}">${isActive ? w + '%' : 'Disabled'}</span></span>
+        <span><b>${getPRComponentName(sysKey)}</b>: <span class="pr-legend-text" data-sys="${sysKey}">${isActive ? w + '%' : tr('rankings.pr.disabled')}</span></span>
       </div>
     `;
   }).join('');
 
   const controlsGridHtml = Object.keys(PR_COMPONENTS).map(sysKey => {
     const meta = PR_COMPONENTS[sysKey];
+    const name = getPRComponentName(sysKey);
     const isActive = prActiveComponents[sysKey];
     const dispWeight = displayWeights[sysKey] || 0;
 
@@ -1163,13 +1208,13 @@ function renderFormulaBudgetBox() {
         <div class="pr-card-head">
           <label class="pr-card-title check-label">
             <input type="checkbox" ${isActive ? 'checked' : ''} onchange="onPRToggleComponent('${sysKey}', this.checked)">
-            <span>${meta.name}</span>
+            <span>${name}</span>
           </label>
           <span class="pr-card-badge mono" data-sys="${sysKey}" style="color: ${isActive ? meta.color : 'var(--muted)'};">${dispWeight}%</span>
         </div>
         <div class="pr-inputs-row">
-          <input type="range" class="pr-slider" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${meta.name} Weight Slider">
-          <span class="pr-number-wrap"><input type="number" class="pr-number-input mono" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${meta.name} Weight Input"><span aria-hidden="true">%</span></span>
+          <input type="range" class="pr-slider" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${esc(tr('rankings.pr.weightSlider', { name }))}">
+          <span class="pr-number-wrap"><input type="number" class="pr-number-input mono" data-sys="${sysKey}" min="0" max="100" value="${dispWeight}" ${isActive ? '' : 'disabled'} oninput="onPRWeightInput('${sysKey}', this.value)" onchange="onPRWeightCommit('${sysKey}', this.value)" aria-label="${esc(tr('rankings.pr.weightInput', { name }))}"><span aria-hidden="true">%</span></span>
         </div>
         <div class="pr-contrib-bar-wrap">
           <div class="pr-contrib-bar-fill pr-card-contrib-fill" data-sys="${sysKey}" style="width: ${dispWeight}%; background-color: ${isActive ? meta.color : '#555'};"></div>
@@ -1182,27 +1227,21 @@ function renderFormulaBudgetBox() {
     <div class="panel glass pr-setup-panel">
       <div class="pr-header">
         <div>
-          <div class="eyebrow mono">CUSTOM POWER RANKINGS CREATOR</div>
-          <h2 style="margin:4px 0 0; font-size:26px;">Linked Weights &amp; Formula Budget</h2>
+          <div class="eyebrow mono">${tr('rankings.pr.eyebrow')}</div>
+          <h2 style="margin:4px 0 0; font-size:26px;">${tr('rankings.pr.header')}</h2>
         </div>
         <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-          <button class="quiet-button mono" style="font-size:12px; padding:6px 12px; border:1px solid rgba(255,255,255,0.2); border-radius:6px; cursor:pointer;" onclick="resetToDefaultPRWeights()">${(window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es') ? 'Restablecer Valores (55/20/15/10)' : 'Reset to Defaults (55/20/15/10)'}</button>
+        <button class="quiet-button mono" style="font-size:12px; padding:6px 12px; border:1px solid rgba(255,255,255,0.2); border-radius:6px; cursor:pointer;" onclick="resetToDefaultPRWeights()">${tr('rankings.btn.resetDefaults')}</button>
           <div class="pr-total-badge mono" id="pr-total-badge">
-            ${(window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es') ? 'PESO TOTAL:' : 'TOTAL WEIGHT:'} <b>100%</b>
+            ${tr('rankings.pr.totalWeight')} <b>100%</b>
           </div>
         </div>
       </div>
 
-      <p class="muted" style="margin-bottom:8px; font-size:14px;">
-        Adjust percentage shares to balance component systems. Increasing one component automatically scales down others proportionally to maintain an exact 100% total.
-      </p>
-
-      <p class="mono muted" style="margin-bottom:16px; font-size:12px; color:var(--sky);">
-        💡 Recommended Starting Formula: <b>55% Glicko-2</b> · <b>20% Quality Wins</b> · <b>15% Strength of Field</b> · <b>10% Consistency</b>
-      </p>
+      <p class="muted" style="margin-bottom:8px; font-size:14px;">${tr('rankings.pr.desc')}</p>
 
       <div class="pr-stacked-container">
-        <div class="pr-stacked-bar" aria-label="Stacked weight configuration visualization">
+        <div class="pr-stacked-bar" aria-label="${esc(tr('rankings.pr.stackedAria'))}">
           ${stackedSegmentsHtml}
         </div>
         <div class="pr-legend">
@@ -1215,12 +1254,8 @@ function renderFormulaBudgetBox() {
       </div>
 
       <details class="pr-guide-box">
-        <summary>💡 Formula Distinction: Weight vs. Normalized Score vs. Weighted Contribution</summary>
-        <p>
-          • <b>Weight (%):</b> How important a ranking system is in the custom formula configuration budget.<br>
-          • <b>Normalized Score (0–100):</b> How a particular player performs on that system relative to the eligible player population (scaled from 0 = lowest to 100 = highest in active scope).<br>
-          • <b>Weighted Contribution (pts):</b> <code>(Normalized Score × Weight) / 100</code>. How much that component contributes to the player's final custom score.
-        </p>
+        <summary>${tr('rankings.pr.formulaGuide')}</summary>
+        <p>${tr('rankings.pr.formulaGuideText')}</p>
       </details>
     </div>
   `;
@@ -1420,8 +1455,8 @@ function renderCustomPowerRankings() {
           <span class="sortable" onclick="changeSort('playerTag')">${isEs ? 'JUGADOR' : 'PLAYER'} ${sortCol === 'playerTag' ? (sortAsc ? '▲' : '▼') : ''}</span>
           <span class="sortable" onclick="changeSort('score')">${isEs ? 'PUNTAJE' : 'SCORE'} ${sortCol === 'score' ? (sortAsc ? '▲' : '▼') : ''}</span>
           <span>GLICKO-2</span>
-          <span>${isEs ? 'VICTORIAS CALIDAD' : 'QUALITY WINS'}</span>
-          <span>SOF</span>
+          <span>${isEs ? 'BUENAS WINS' : 'QUALITY WINS'}</span>
+          <span>${isEs ? 'FDC' : 'SOF'}</span>
           <span>${isEs ? 'CONSISTENCIA' : 'CONSISTENCY'}</span>
           <span>${isEs ? 'ACCIONES' : 'ACTIONS'}</span>
         </div>
@@ -1529,8 +1564,8 @@ function renderIndividualSystem(systemKey) {
 
   let html = `
     <div class="panel glass system-banner">
-      <h2>${esc(sysInfo.name || systemKey)} Rankings</h2>
-      <p class="muted">${esc(sysInfo.description || getSystemDescription(systemKey))}</p>
+      <h2>${esc(isEs ? getSystemNames()[systemKey] || sysInfo.name || systemKey : sysInfo.name || systemKey)} Rankings</h2>
+      <p class="muted">${esc(getSystemDescription(systemKey))}</p>
     </div>
 
     ${renderSystemTabsNav()}
@@ -1580,18 +1615,13 @@ function renderIndividualSystem(systemKey) {
 }
 
 function getSystemDescription(systemKey) {
-  switch (systemKey) {
-    case 'glicko2':
-      return 'Glicko-2 models rating r, rating deviation RD, and volatility σ. Conservative rating = r - 2RD.';
-    case 'sof':
-      return 'Strength of Field evaluates tournament performance against pre-event field strengths and entrant scaling.';
-    case 'quality_wins':
-      return 'Quality Wins ranks players by average victory quality adjusted for sample confidence, rewarding wins against strong opponents without volume inflation.';
-    case 'loss_quality':
-      return 'Consistency reflects how reliably a player achieves strong results. It rewards wins, gives extra credit for defeating stronger opponents, and accounts for the number of matches played.';
-    default:
-      return '';
-  }
+  const key = {
+    glicko2: 'rankings.type.glicko2',
+    sof: 'rankings.type.sof',
+    quality_wins: 'rankings.type.qualityWins',
+    loss_quality: 'rankings.type.consistency'
+  }[systemKey];
+  return key ? tr(key) : '';
 }
 
 function formatAlgorithmParams(params) {
@@ -1664,8 +1694,8 @@ function renderComparison() {
 
   let html = `
     <div class="panel glass system-banner">
-      <h2>Rankings Overview</h2>
-      <p class="muted">Side-by-side player ranks and scores across all 4 distinct systems. Each metric measures a different competitive dimension and raw values are presented on their native scales.</p>
+      <h2>${tr('rankings.overview.title')}</h2>
+      <p class="muted">${tr('rankings.overview.desc')}</p>
     </div>
 
     ${renderSystemTabsNav()}
@@ -1673,12 +1703,12 @@ function renderComparison() {
     <div class="panel glass ranking-table-panel">
       <div class="table">
         <div class="tr head comparison-head">
-          <span>PLAYER</span>
+          <span>${tr('rankings.overview.player')}</span>
           <span>GLICKO-2</span>
-          <span>STRENGTH OF FIELD</span>
-          <span>QUALITY WINS</span>
-          <span>CONSISTENCY</span>
-          <span>ACTIONS</span>
+          <span>${getPRComponentName('sof')}</span>
+          <span>${getPRComponentName('quality_wins')}</span>
+          <span>${getPRComponentName('loss_quality')}</span>
+          <span>${tr('rankings.overview.actions')}</span>
         </div>
         ${visibleList.length ? visibleList.map(p => `
           <div class="tr ranking-row comparison-row">
@@ -1687,20 +1717,20 @@ function renderComparison() {
                 <b>${esc(p.playerTag)}</b>
               </a>
             </div>
-            <span class="mono">${p.glicko2 ? (p.glicko2.rank ? `${p.glicko2.score} (#${p.glicko2.rank})` : `${p.glicko2.score} (-)`) : '-'}</span>
-            <span class="mono">${p.sof ? (p.sof.rank ? `#${p.sof.rank} (${p.sof.score})` : `- (${p.sof.score})`) : '-'}</span>
-            <span class="mono">${p.quality_wins ? (p.quality_wins.rank ? `#${p.quality_wins.rank} (${p.quality_wins.score})` : `Unranked (${p.quality_wins.score})`) : '-'}</span>
-            <span class="mono">${p.loss_quality ? (p.loss_quality.rank ? `#${p.loss_quality.rank} (${p.loss_quality.score})` : `- (${p.loss_quality.score})`) : '-'}</span>
+            <span class="mono">${p.glicko2 ? (p.glicko2.rank ? `<b class="${p.glicko2.rank <= 3 ? 'p' + p.glicko2.rank : ''}">#${p.glicko2.rank}</b> (${p.glicko2.score})` : `- (${p.glicko2.score})`) : '-'}</span>
+            <span class="mono">${p.sof ? (p.sof.rank ? `<b class="${p.sof.rank <= 3 ? 'p' + p.sof.rank : ''}">#${p.sof.rank}</b> (${p.sof.score})` : `- (${p.sof.score})`) : '-'}</span>
+            <span class="mono">${p.quality_wins ? (p.quality_wins.rank ? `<b class="${p.quality_wins.rank <= 3 ? 'p' + p.quality_wins.rank : ''}">#${p.quality_wins.rank}</b> (${p.quality_wins.score})` : `- (${p.quality_wins.score})`) : '-'}</span>
+            <span class="mono">${p.loss_quality ? (p.loss_quality.rank ? `<b class="${p.loss_quality.rank <= 3 ? 'p' + p.loss_quality.rank : ''}">#${p.loss_quality.rank}</b> (${p.loss_quality.score})` : `- (${p.loss_quality.score})`) : '-'}</span>
             <div>
               <button class="quiet-button diagnostic-btn" onclick="openDiagnosticModal('${esc(p.playerId)}')">${(window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es') ? 'Diagnóstico' : 'Diagnostic'}</button>
             </div>
           </div>
-        `).join('') : '<div class="empty-state"><p class="muted">No players match the filter.</p></div>'}
+        `).join('') : `<div class="empty-state"><p class="muted">${tr('rankings.overview.empty')}</p></div>`}
       </div>
 
       ${totalFiltered > 0 ? `
         <div id="scroll-sentinel" class="infinite-scroll-sentinel mono muted">
-          ${visibleCount < totalFiltered ? `Showing ${visibleList.length} of ${totalFiltered} players (scroll down to load more…)` : `Showing all ${totalFiltered} players`}
+          ${visibleCount < totalFiltered ? tr('rankings.overview.showing', { count: visibleList.length, total: totalFiltered }) : tr('rankings.overview.showingAll', { total: totalFiltered })}
         </div>
       ` : ''}
     </div>
@@ -1740,15 +1770,17 @@ function formatDiagDateRange(start, end) {
   const sDate = parse(start);
   const eDate = parse(end);
   if (!sDate && !eDate) return '';
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const months = window.i18n?.getLang() === 'es'
+    ? ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
+    : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   if (sDate && eDate) {
     if (sDate.getFullYear() === eDate.getFullYear()) {
       return `${months[sDate.getMonth()]} ${sDate.getDate()} – ${months[eDate.getMonth()]} ${eDate.getDate()}, ${sDate.getFullYear()}`;
     }
     return `${months[sDate.getMonth()]} ${sDate.getDate()}, ${sDate.getFullYear()} – ${months[eDate.getMonth()]} ${eDate.getDate()}, ${eDate.getFullYear()}`;
   }
-  if (sDate) return `Since ${months[sDate.getMonth()]} ${sDate.getDate()}, ${sDate.getFullYear()}`;
-  return `Until ${months[eDate.getMonth()]} ${eDate.getDate()}, ${eDate.getFullYear()}`;
+  if (sDate) return `${diagCopy('Since', 'Desde')} ${months[sDate.getMonth()]} ${sDate.getDate()}, ${sDate.getFullYear()}`;
+  return `${diagCopy('Until', 'Hasta')} ${months[eDate.getMonth()]} ${eDate.getDate()}, ${eDate.getFullYear()}`;
 }
 
 function getDiagHexagonSvg(rank) {
@@ -1957,6 +1989,9 @@ function generateAllTimeCareerNarrative(playerTag, playerRank, sets, events) {
 function generateDecidedSentence(playerTag, playerRank, sets, events = []) {
   if ((!sets || sets.length === 0) && !(diagState.mode === 'historical' && events.length > 0)) return '';
   sets = sets || [];
+  if (window.i18n?.getLang() === 'es' && isCustomDiagnostic()) {
+    return `${esc(playerTag)} terminó en el puesto ${playerRank ? `#${playerRank}` : 'sin puesto'}. El resultado combina las puntuaciones ponderadas de los cuatro sistemas.`;
+  }
   if (diagState.mode === 'historical') {
     return generateAllTimeCareerNarrative(playerTag, playerRank, sets, events);
   }
@@ -2068,8 +2103,8 @@ function updateDiagnosticImpactProgress(completed, total) {
   if (!diagBody) return;
   diagBody.innerHTML = `
     <div class="diag-empty-card">
-      <p>Calculating set impacts…</p>
-      <p class="mono muted">${completed} of ${total} sets</p>
+      <p>${diagCopy('Calculating set impacts…', 'Calculando el impacto de las partidas…')}</p>
+      <p class="mono muted">${completed} ${diagCopy('of', 'de')} ${total} ${diagCopy('sets', 'partidas')}</p>
     </div>
   `;
 }
@@ -2192,17 +2227,27 @@ window.openDiagnosticModal = async function(playerId) {
 
   const diagHeader = $('#diag-header');
   const diagBody = $('#diag-body');
+  const modalCloseButton = $('#modal-close-btn');
+  if (modalCloseButton) modalCloseButton.setAttribute('aria-label', diagCopy('Close', 'Cerrar'));
+  const summaryTab = $('#diag-tab-summary');
+  const setsTab = $('#diag-tab-sets');
+  const methodTab = $('#diag-tab-method');
+  const diagTabs = $('#diag-tabs');
+  if (diagTabs) diagTabs.setAttribute('aria-label', diagCopy('Diagnostic views', 'Vistas de diagnóstico'));
+  if (summaryTab) summaryTab.textContent = diagCopy('Summary', 'Resumen');
+  if (setsTab) setsTab.textContent = diagCopy('Sets', 'Partidas');
+  if (methodTab) methodTab.textContent = diagCopy('Method', 'Método');
 
   if (diagHeader) {
     diagHeader.innerHTML = `
       <div class="diag-player-head">
         <div class="diag-player-avatar">${playerId.charAt(0).toUpperCase()}</div>
         <div class="diag-player-meta">
-          <h2 id="diag-player-tag">Loading…</h2>
+          <h2 id="diag-player-tag">${diagCopy('Loading…', 'Cargando…')}</h2>
           <span class="player-id mono muted">ID ${esc(playerId)}</span>
         </div>
       </div>
-      <p class="muted">Loading calculation diagnostic data…</p>
+      <p class="muted">${diagCopy('Loading calculation diagnostic data…', 'Cargando los datos del diagnóstico de cálculo…')}</p>
     `;
   }
   if (diagBody) {
@@ -2400,7 +2445,7 @@ window.openDiagnosticModal = async function(playerId) {
 
   } catch (err) {
     if (diagHeader) {
-      diagHeader.innerHTML = `<h2>Diagnostic Error</h2>`;
+      diagHeader.innerHTML = `<h2>${diagCopy('Diagnostic Error', 'Error de diagnóstico')}</h2>`;
     }
     if (diagBody) {
       diagBody.innerHTML = `<div class="diag-empty-card"><p>${esc(err.message)}</p></div>`;
@@ -2425,7 +2470,7 @@ function renderDiagnosticHeader() {
   const neighbors = getPlayerNeighbors(pId, diagState.allRankings);
 
   // Date range formatted chip
-  const dateRangeStr = formatDiagDateRange(diagState.startDate, diagState.endDate) || (diagState.mode === 'historical' ? 'All-time' : 'Full history');
+  const dateRangeStr = formatDiagDateRange(diagState.startDate, diagState.endDate) || (diagState.mode === 'historical' ? diagCopy('All-time', 'Todo el historial') : diagCopy('Full history', 'Historial completo'));
   const systemName = (diagState.system === 'custom' || diagState.system === 'power_rankings') ? 'Power Rankings' : (getSystemNames()[diagState.system] || diagState.system);
 
   const initial = tag.charAt(0).toUpperCase();
@@ -2442,6 +2487,13 @@ function renderDiagnosticHeader() {
     quality_wins: 'Ranks players by the strength of the opponents they defeat. Beating stronger players earns more credit, and the score becomes more reliable with more wins.',
     loss_quality: 'Ranks players by how reliably they perform against their opponents. Wins add credit, while losses are softened based on the opponent’s strength.'
   })[diagState.system] || '';
+  const systemExplanationEs = ({
+    glicko2: 'Ordena a los jugadores según su nivel general, a partir de los resultados y la fuerza de sus rivales, y también considera la confiabilidad de la puntuación.',
+    sof: 'Ordena a los jugadores según el nivel de la competencia que enfrentan. Avanzar en torneos grandes contra rivales fuertes suma más puntos.',
+    quality_wins: 'Ordena a los jugadores según el nivel de los rivales que vencen. Ganarles a jugadores más fuertes suma más puntos, y más victorias hacen que la puntuación sea más confiable.',
+    loss_quality: 'Ordena a los jugadores según la regularidad de su rendimiento frente a sus rivales. Las victorias suman puntos y las derrotas pesan menos según la fuerza del rival.'
+  })[diagState.system] || '';
+  const localizedSystemExplanation = diagCopy(systemExplanation, systemExplanationEs);
 
   diagHeader.innerHTML = `
     <div class="diag-player-head">
@@ -2458,20 +2510,20 @@ function renderDiagnosticHeader() {
       <span class="diag-chip">${esc(diagState.gameName)}</span>
       <span class="diag-chip">${esc(systemName)}</span>
       <span class="diag-chip">${esc(dateRangeStr)}</span>
-      ${diagState.mode === 'period_only' ? '<span class="diag-chip muted">Counts this period only</span>' : ''}
+      ${diagState.mode === 'period_only' ? `<span class="diag-chip muted">${diagCopy('Counts this period only', 'Solo cuenta este período')}</span>` : ''}
     </div>
 
     <div class="diag-stats-summary-row">
       <div class="diag-badge-card diag-rank-block">
         ${getDiagHexagonSvg(rank)}
         <div class="diag-rank-num-group">
-          <span class="rank-label">Rank</span>
+          <span class="rank-label">${diagCopy('Rank', 'Puesto')}</span>
           <span class="rank-val ${rankCls}">#${rank ? rank : '-'}</span>
         </div>
       </div>
 
       <div class="diag-badge-card score-card">
-        <div class="diag-score-title">Final Score</div>
+        <div class="diag-score-title">${diagCopy('Final Score', 'Puntuación final')}</div>
         <div class="diag-score-value-row">
           <span class="score-num font-bold">${score}</span>
           <span class="score-max">/ ${maxScore}</span>
@@ -2482,10 +2534,10 @@ function renderDiagnosticHeader() {
       </div>
     </div>
 
-    ${(systemExplanation || decidedSentence) ? `
+    ${(localizedSystemExplanation || decidedSentence) ? `
       <div class="diag-decided-wrap">
-        <div class="diag-decided-label">${systemExplanation ? `How does ${esc(systemName)} work` : 'What decided this rank'}</div>
-        <div class="diag-decided-text">${systemExplanation ? esc(systemExplanation) : decidedSentence}</div>
+        <div class="diag-decided-label">${localizedSystemExplanation ? diagCopy(`How does ${esc(systemName)} work`, `¿Cómo funciona ${esc(systemName)}?`) : diagCopy('What decided this rank', 'Qué definió este puesto')}</div>
+        <div class="diag-decided-text">${localizedSystemExplanation ? esc(localizedSystemExplanation) : decidedSentence}</div>
       </div>
     ` : ''}
   `;
@@ -2493,7 +2545,7 @@ function renderDiagnosticHeader() {
   // Update tab labels (e.g. Sets (24))
   const setsTab = $('#diag-tab-sets');
   if (setsTab) {
-    setsTab.textContent = `Sets (${diagState.allSets.length})`;
+    setsTab.textContent = `${diagCopy('Sets', 'Partidas')} (${diagState.allSets.length})`;
   }
 }
 
@@ -2590,7 +2642,7 @@ function renderCustomScoreBreakdown() {
   const weights = player?.weights || {};
   const rows = Object.entries(PR_COMPONENTS).filter(([key]) => Number(weights[key]) > 0);
 
-  if (!rows.length) return '<div class="diag-empty-card">No component score details are available.</div>';
+  if (!rows.length) return `<div class="diag-empty-card">${diagCopy('No component score details are available.', 'No hay detalles de puntuación por componente.')}</div>`;
 
   return `
     <div class="diag-custom-contrib-list">
@@ -2600,13 +2652,13 @@ function renderCustomScoreBreakdown() {
         const pct = weight > 0 ? Math.max(0, Math.min(100, (contribution / weight) * 100)) : 0;
         return `
           <div class="diag-custom-contrib-row">
-            <span class="diag-custom-contrib-name">${esc(component.name)}</span>
+        <span class="diag-custom-contrib-name">${esc(getPRComponentName(key))}</span>
             <div class="diag-custom-contrib-track"><div style="width:${pct}%;background:${component.color};"></div></div>
             <span class="diag-custom-contrib-value mono">${contribution.toFixed(1)} pts</span>
           </div>
         `;
       }).join('')}
-      <p class="diag-custom-contrib-total">Contributions add up to the final score of ${Number(player?.score ?? diagState.finalScore).toFixed(1)}.</p>
+      <p class="diag-custom-contrib-total">${diagCopy(`Contributions add up to the final score of ${Number(player?.score ?? diagState.finalScore).toFixed(1)}.`, `Las contribuciones suman ${Number(player?.score ?? diagState.finalScore).toFixed(1)} puntos en total.`)}</p>
     </div>
   `;
 }
@@ -2635,7 +2687,7 @@ function renderSystemScoreFactors() {
   }
 
   const availableRows = rows.filter(([, value]) => value !== undefined && value !== null);
-  if (!availableRows.length) return '<div class="diag-empty-card">No score details are available for this selection.</div>';
+  if (!availableRows.length) return `<div class="diag-empty-card">${diagCopy('No score details are available for this selection.', 'No hay detalles de puntuación para esta selección.')}</div>`;
   return `
     <div class="diag-system-factor-list">
       ${availableRows.map(([label, value]) => `
@@ -2648,13 +2700,20 @@ function renderSystemScoreFactors() {
 function explainNeighborScoreDifference(player, neighbor) {
   const scoreDifference = Math.abs((Number(player?.score) || 0) - (Number(neighbor?.score) || 0));
   const currentIsAhead = (Number(player?.score) || 0) >= (Number(neighbor?.score) || 0);
-  const margin = `${scoreDifference.toFixed(1)} points ${currentIsAhead ? 'ahead' : 'behind'}`;
+  const margin = window.i18n?.getLang() === 'es'
+    ? `${scoreDifference.toFixed(1)} puntos ${currentIsAhead ? 'por encima' : 'por debajo'}`
+    : `${scoreDifference.toFixed(1)} points ${currentIsAhead ? 'ahead' : 'behind'}`;
 
   if (isCustomDiagnostic()) {
     const currentContribs = player?.weightedContributions || {};
     const neighborContribs = neighbor?.weightedContributions || {};
     const differences = Object.entries(PR_COMPONENTS).map(([key, component]) => ({
-      name: ({
+      name: window.i18n?.getLang() === 'es' ? ({
+        glicko2: 'la puntuación general',
+        quality_wins: 'las victorias contra rivales más fuertes',
+        sof: 'el nivel de los rivales enfrentados',
+        loss_quality: 'la regularidad de resultados'
+      })[key] || getPRComponentName(key) : ({
         glicko2: 'overall rating strength',
         quality_wins: 'winning against stronger opponents',
         sof: 'facing stronger opponents',
@@ -2668,20 +2727,26 @@ function explainNeighborScoreDifference(player, neighbor) {
     const neighborNames = neighborEdges.map(item => item.name);
 
     if (currentIsAhead && currentNames.length && neighborNames.length) {
+      if (window.i18n?.getLang() === 'es') return `${esc(diagState.playerTag)} supera a ${esc(neighbor.playerTag)} por ${margin}: sus ventajas en ${esc(currentNames.join(' y '))} compensan la ventaja rival en ${esc(neighborNames.join(' y '))}.`;
       return `${esc(diagState.playerTag)}'s advantages in ${esc(currentNames.join(' and '))} outweigh ${esc(neighbor.playerTag)}'s edge in ${esc(neighborNames.join(' and '))}, putting ${esc(diagState.playerTag)} ${margin}.`;
     }
     if (!currentIsAhead && currentNames.length && neighborNames.length) {
+      if (window.i18n?.getLang() === 'es') return `Aunque ${esc(diagState.playerTag)} tiene ventaja en ${esc(currentNames.join(' y '))}, ${esc(neighbor.playerTag)} la supera por ${margin} gracias a ${esc(neighborNames.join(' y '))}.`;
       return `Although ${esc(diagState.playerTag)} has an edge in ${esc(currentNames.join(' and '))}, ${esc(neighbor.playerTag)}'s advantage in ${esc(neighborNames.join(' and '))} leaves ${esc(diagState.playerTag)} ${margin}.`;
     }
     if (currentNames.length) {
+      if (window.i18n?.getLang() === 'es') return `La ventaja de ${esc(diagState.playerTag)} en ${esc(currentNames.join(' y '))} lo deja a ${margin} de ${esc(neighbor.playerTag)}.`;
       return `${esc(diagState.playerTag)}'s advantages in ${esc(currentNames.join(' and '))} leave them ${margin} of ${esc(neighbor.playerTag)}.`;
     }
     if (neighborNames.length) {
+      if (window.i18n?.getLang() === 'es') return `La mayor contribución de ${esc(neighbor.playerTag)} en ${esc(neighborNames.join(' y '))} deja a ${esc(diagState.playerTag)} ${margin}.`;
       return `${esc(neighbor.playerTag)}'s stronger ${esc(neighborNames.join(' and '))} contributions leave ${esc(diagState.playerTag)} ${margin}.`;
     }
   }
 
-  return `${esc(diagState.playerTag)} is ${margin} of ${esc(neighbor.playerTag)} in this ranking.`;
+  return window.i18n?.getLang() === 'es'
+    ? `${esc(diagState.playerTag)} está ${margin} de ${esc(neighbor.playerTag)} en este ranking.`
+    : `${esc(diagState.playerTag)} is ${margin} of ${esc(neighbor.playerTag)} in this ranking.`;
 }
 
 function renderDiagSummaryTab() {
@@ -2720,7 +2785,7 @@ function renderDiagSummaryTab() {
     const bestPlacementCount = placements.filter(event => Number(event.placement) === Number(bestP.placement)).length;
     bestPlacingStr = ord;
     bestEventSub = bestPlacementCount > 1
-      ? `${bestPlacementCount} times`
+      ? `${bestPlacementCount} ${diagCopy('times', 'veces')}`
       : `${bestP.name}${bestP.entrants ? ` · ${bestP.entrants}` : ''}`;
   }
 
@@ -2761,14 +2826,14 @@ function renderDiagSummaryTab() {
       const vsSets = sets.filter(s => s.opponentId === String(nb.playerId));
       const w = vsSets.filter(s => s.won).length;
       const l = vsSets.filter(s => !s.won).length;
-      let desc = 'No sets recorded';
+      let desc = diagCopy('No sets recorded', 'No hay partidas registradas');
       if (vsSets.length > 0) {
         const sortedVs = [...vsSets].sort((a, b) => (b.eventDate || '').localeCompare(a.eventDate || ''));
         const latest = sortedVs[0];
         if (latest.score && latest.score !== 'Won' && latest.score !== 'Lost') {
-          desc = `${latest.won ? 'Won' : 'Lost'} ${latest.score} at ${latest.eventName}`;
+          desc = `${latest.won ? diagCopy('Won', 'Ganó') : diagCopy('Lost', 'Perdió')} ${latest.score} ${diagCopy('at', 'en')} ${latest.eventName}`;
         } else {
-          desc = `${latest.won ? 'Won' : 'Lost'} at ${latest.eventName}`;
+          desc = `${latest.won ? diagCopy('Won', 'Ganó') : diagCopy('Lost', 'Perdió')} ${diagCopy('at', 'en')} ${latest.eventName}`;
         }
       }
       return `
@@ -2792,7 +2857,7 @@ function renderDiagSummaryTab() {
       const w = vsSets.filter(s => s.won).length;
       const l = vsSets.filter(s => !s.won).length;
       const current = getDiagnosticPlayerRankEntry(pId) || { playerTag: pTag, score: diagState.finalScore };
-      whySentences.push(`<strong>Compared with ${esc(nb.playerTag)}:</strong> ${explainNeighborScoreDifference(current, nb)} Head-to-head: ${w}–${l}.`);
+      whySentences.push(`<strong>${diagCopy('Compared with', 'En comparación con')} ${esc(nb.playerTag)}:</strong> ${explainNeighborScoreDifference(current, nb)} ${diagCopy('Head-to-head', 'Cara a cara')}: ${w}–${l}.`);
     }
     if (neighbors.below) {
       const nb = neighbors.below;
@@ -2800,21 +2865,21 @@ function renderDiagSummaryTab() {
       const w = vsSets.filter(s => s.won).length;
       const l = vsSets.filter(s => !s.won).length;
       const current = getDiagnosticPlayerRankEntry(pId) || { playerTag: pTag, score: diagState.finalScore };
-      whySentences.push(`<strong>Compared with ${esc(nb.playerTag)}:</strong> ${explainNeighborScoreDifference(current, nb)} Head-to-head: ${w}–${l}.`);
+      whySentences.push(`<strong>${diagCopy('Compared with', 'En comparación con')} ${esc(nb.playerTag)}:</strong> ${explainNeighborScoreDifference(current, nb)} ${diagCopy('Head-to-head', 'Cara a cara')}: ${w}–${l}.`);
     }
 
     whereSitsHtml = `
       <div class="diag-card">
-        <h3 class="diag-card-title">Where #${rank || '-'} sits</h3>
-        <p class="diag-card-subtitle">The players on either side of ${esc(pTag)}, and how ${esc(pTag)} did against them.</p>
+        <h3 class="diag-card-title">${diagCopy(`Where #${rank || '-'} sits`, `Puesto #${rank || '-'} en el ranking`)}</h3>
+        <p class="diag-card-subtitle">${diagCopy(`The players on either side of ${esc(pTag)}, and how ${esc(pTag)} did against them.`, `Los jugadores que están cerca de ${esc(pTag)} en el ranking y sus resultados frente a ellos.`)}</p>
 
         <div class="diag-where-grid">
           <div>
-            <div class="diag-section-label">Final scores</div>
+            <div class="diag-section-label">${diagCopy('Final scores', 'Puntuaciones finales')}</div>
             <div class="diag-score-rows">${scoreRowsHtml}</div>
           </div>
           <div>
-            <div class="diag-section-label">Head-to-head</div>
+            <div class="diag-section-label">${diagCopy('Head-to-head', 'Cara a cara')}</div>
             <div class="diag-h2h-rows">${h2hRowsHtml}</div>
           </div>
         </div>
@@ -2833,20 +2898,20 @@ function renderDiagSummaryTab() {
   if (setsPlayedCount === 0) {
     momentsHtml = `
       <div class="diag-card">
-        <h3 class="diag-card-title">Moments that shaped it</h3>
-        <p class="diag-card-subtitle">The sets that moved the score the most.</p>
+        <h3 class="diag-card-title">${diagCopy('Moments that shaped it', 'Momentos clave')}</h3>
+        <p class="diag-card-subtitle">${diagCopy('The sets that moved the score the most.', 'Las partidas que más influyeron en la puntuación.')}</p>
         <div class="diag-empty-card">
-          No sets are recorded for this player between ${esc(diagState.startDate || 'start')} and ${esc(diagState.endDate || 'end')}, so no significant win or loss moments could be identified.
+          ${diagCopy(`No sets are recorded for this player between ${esc(diagState.startDate || 'start')} and ${esc(diagState.endDate || 'end')}, so no significant win or loss moments could be identified.`, `No hay partidas registradas para este jugador entre ${esc(diagState.startDate || 'inicio')} y ${esc(diagState.endDate || 'fin')}, así que no se pudieron identificar victorias o derrotas decisivas.`)}
         </div>
       </div>
     `;
   } else {
     const momentCandidates = getDiagnosticMomentCandidates(sets);
     const momentSubtitle = momentCandidates.excludedTournamentCount
-      ? 'The first two tournaments are omitted to reduce the effect of early rating volatility.'
-      : 'The sets that moved the score the most.';
-    const noWinsText = momentCandidates.excludedTournamentCount ? 'No wins recorded after the first two tournaments' : 'No recorded wins';
-    const noLossesText = momentCandidates.excludedTournamentCount ? 'No losses recorded after the first two tournaments' : 'No recorded losses';
+      ? diagCopy('The first two tournaments are omitted to reduce the effect of early rating volatility.', 'Se omiten los dos primeros torneos para reducir el efecto de la volatilidad inicial de la puntuación.')
+      : diagCopy('The sets that moved the score the most.', 'Las partidas que más influyeron en la puntuación.');
+    const noWinsText = momentCandidates.excludedTournamentCount ? diagCopy('No wins recorded after the first two tournaments', 'No hay victorias registradas después de los dos primeros torneos') : diagCopy('No recorded wins', 'No hay victorias registradas');
+    const noLossesText = momentCandidates.excludedTournamentCount ? diagCopy('No losses recorded after the first two tournaments', 'No hay derrotas registradas después de los dos primeros torneos') : diagCopy('No recorded losses', 'No hay derrotas registradas');
     const wins = getDiagnosticImpactGroups(momentCandidates.sets, true).sort((a, b) => b.impact - a.impact).slice(0, 3);
     const losses = getDiagnosticImpactGroups(momentCandidates.sets, false).sort((a, b) => a.impact - b.impact).slice(0, 3);
 
@@ -2869,17 +2934,17 @@ function renderDiagSummaryTab() {
 
     momentsHtml = `
       <div class="diag-card">
-        <h3 class="diag-card-title">Moments that shaped it</h3>
+        <h3 class="diag-card-title">${diagCopy('Moments that shaped it', 'Momentos clave')}</h3>
         <p class="diag-card-subtitle">${momentSubtitle}</p>
         <div class="diag-moments-grid">
           <div>
-            <div class="diag-section-label">Best wins</div>
+            <div class="diag-section-label">${diagCopy('Best wins', 'Mejores victorias')}</div>
             <div class="diag-moment-list">
               ${wins.length > 0 ? wins.map(renderMomentItem).join('') : `<div class="muted font-13">${noWinsText}</div>`}
             </div>
           </div>
           <div>
-            <div class="diag-section-label">Costliest losses</div>
+            <div class="diag-section-label">${diagCopy('Costliest losses', 'Derrotas más costosas')}</div>
             <div class="diag-moment-list">
               ${losses.length > 0 ? losses.map(renderMomentItem).join('') : `<div class="muted font-13">${noLossesText}</div>`}
             </div>
@@ -2892,15 +2957,15 @@ function renderDiagSummaryTab() {
   // 4. Show the real Glicko rating timeline or event impacts for other systems.
   let chartHtml = '';
   const isTimeline = diagnosticUsesGlicko();
-  const chartTitle = isTimeline ? 'Score over time' : 'Event impact over time';
-  const chartSubtitle = isTimeline ? 'The rating after each event, shown on a true time scale.' : 'Combined set impacts at each event; wins are positive and losses are negative.';
+  const chartTitle = isTimeline ? diagCopy('Score over time', 'Puntuación a lo largo del tiempo') : diagCopy('Event impact over time', 'Impacto por torneo a lo largo del tiempo');
+  const chartSubtitle = isTimeline ? diagCopy('The rating after each event, shown on a true time scale.', 'La puntuación después de cada torneo, en una escala de tiempo real.') : diagCopy('Combined set impacts at each event; wins are positive and losses are negative.', 'Impacto acumulado de las partidas en cada torneo; las victorias suman y las derrotas restan.');
   if (setsPlayedCount === 0) {
     chartHtml = `
       <div class="diag-card">
         <h3 class="diag-card-title">${chartTitle}</h3>
         <p class="diag-card-subtitle">${chartSubtitle}</p>
         <div class="diag-empty-card">
-          No sets are recorded for this player between ${esc(diagState.startDate || 'start')} and ${esc(diagState.endDate || 'end')}, so this chart is unavailable.
+          ${diagCopy(`No sets are recorded for this player between ${esc(diagState.startDate || 'start')} and ${esc(diagState.endDate || 'end')}, so this chart is unavailable.`, `No hay partidas registradas para este jugador entre ${esc(diagState.startDate || 'inicio')} y ${esc(diagState.endDate || 'fin')}, así que este gráfico no está disponible.`)}
         </div>
       </div>
     `;
@@ -2918,31 +2983,31 @@ function renderDiagSummaryTab() {
   // 5. Footnote
   const footnoteHtml = `
     <div class="diag-footnote">
-      Based on ${setsPlayedCount} sets across ${eventsCount} events
+      ${diagCopy(`Based on ${setsPlayedCount} sets across ${eventsCount} events`, `Basado en ${setsPlayedCount} partidas de ${eventsCount} torneos`)}
     </div>
   `;
 
   return `
     <div class="diag-glance-grid">
       <div class="diag-glance-tile">
-        <span class="tile-label">Sets played</span>
+        <span class="tile-label">${diagCopy('Sets played', 'Partidas jugadas')}</span>
         <span class="tile-value">${setsPlayedCount}</span>
-        <span class="tile-sub">${setsPlayedCount > 0 ? `${winsCount}W – ${lossesCount}L · ${winRate}% win rate` : '—'}</span>
+        <span class="tile-sub">${setsPlayedCount > 0 ? `${winsCount}${diagCopy('W', 'G')} – ${lossesCount}${diagCopy('L', 'P')} · ${winRate}% ${diagCopy('win rate', 'de victorias')}` : '—'}</span>
       </div>
       <div class="diag-glance-tile">
-        <span class="tile-label">Events</span>
+        <span class="tile-label">${diagCopy('Events', 'Torneos')}</span>
         <span class="tile-value">${eventsCount}</span>
         <span class="tile-sub">${esc(eventDatesStr)}</span>
       </div>
       <div class="diag-glance-tile">
-        <span class="tile-label">Best result</span>
+        <span class="tile-label">${diagCopy('Best result', 'Mejor resultado')}</span>
         <span class="tile-value">${bestPlacingStr}</span>
         <span class="tile-sub">${esc(bestEventSub)}</span>
       </div>
       <div class="diag-glance-tile">
-        <span class="tile-label">vs Top 10</span>
+        <span class="tile-label">${diagCopy('vs Top 10', 'vs. Top 10')}</span>
         <span class="tile-value">${top10Sets.length > 0 ? `${top10Wins}–${top10Losses}` : '0–0'}</span>
-        <span class="tile-sub">${top10Sets.length > 0 ? `${top10Rate}% win rate` : '—'}</span>
+        <span class="tile-sub">${top10Sets.length > 0 ? `${top10Rate}% ${diagCopy('win rate', 'de victorias')}` : '—'}</span>
       </div>
     </div>
 
@@ -2964,7 +3029,7 @@ function renderEventImpactChartSvg(sets) {
   });
   const points = Array.from(byEvent.values()).filter(point => point.date && Number.isFinite(Date.parse(`${point.date}T00:00:00`)))
     .sort((a, b) => a.date.localeCompare(b.date));
-  if (!points.length) return '<div class="diag-empty-card">Event impact history is unavailable.</div>';
+  if (!points.length) return `<div class="diag-empty-card">${diagCopy('Event impact history is unavailable.', 'No hay datos del impacto por torneo.')}</div>`;
 
   const w = 800, h = 260, padLeft = 48, padRight = 36, padTop = 28, padBottom = 40;
   const chartW = w - padLeft - padRight, chartH = h - padTop - padBottom;
@@ -2989,7 +3054,7 @@ function renderEventImpactChartSvg(sets) {
   } else {
     const cursor = new Date(Date.UTC(first.getUTCFullYear(), first.getUTCMonth(), 1));
     while (cursor <= last) {
-      ticks.push({ date: cursor.toISOString().slice(0, 10), label: cursor.toLocaleString('en', { month: 'short', timeZone: 'UTC' }) });
+      ticks.push({ date: cursor.toISOString().slice(0, 10), label: cursor.toLocaleString(window.i18n?.getLang() === 'es' ? 'es-UY' : 'en', { month: 'short', timeZone: 'UTC' }) });
       cursor.setUTCMonth(cursor.getUTCMonth() + 1);
     }
   }
@@ -3000,7 +3065,7 @@ function renderEventImpactChartSvg(sets) {
     return `<text x="${px}" y="${h - 10}" fill="#94a3b8" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">${tick.label}</text>`;
   }).join('');
   const valueLabels = [-maxAbs, 0, maxAbs].map(value => `<text x="${padLeft - 8}" y="${y(value) + 4}" fill="#94a3b8" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="end">${value > 0 ? '+' : ''}${value.toFixed(1)}</text>`).join('');
-  return `<svg class="diag-chart-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Combined set impact by event over time"><line x1="${padLeft}" y1="${zeroY}" x2="${w - padRight}" y2="${zeroY}" stroke="rgba(255,255,255,0.2)"/>${valueLabels}${stems}${axisLabels}</svg>`;
+  return `<svg class="diag-chart-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="${diagCopy('Combined set impact by event over time', 'Impacto acumulado de las partidas por torneo a lo largo del tiempo')}"><line x1="${padLeft}" y1="${zeroY}" x2="${w - padRight}" y2="${zeroY}" stroke="rgba(255,255,255,0.2)"/>${valueLabels}${stems}${axisLabels}</svg>`;
 }
 
 // Generate the responsive SVG score chart
@@ -3101,7 +3166,7 @@ function renderScoreChartSvg(sets, events) {
   } else {
     const cursor = new Date(Date.UTC(firstDate.getUTCFullYear(), firstDate.getUTCMonth(), 1));
     while (cursor <= lastDate) {
-      axisTicks.push({ date: cursor.toISOString().slice(0, 10), label: cursor.toLocaleString('en', { month: 'short', timeZone: 'UTC' }) });
+      axisTicks.push({ date: cursor.toISOString().slice(0, 10), label: cursor.toLocaleString(window.i18n?.getLang() === 'es' ? 'es-UY' : 'en', { month: 'short', timeZone: 'UTC' }) });
       cursor.setUTCMonth(cursor.getUTCMonth() + 1);
     }
   }
@@ -3127,11 +3192,11 @@ function renderScoreChartSvg(sets, events) {
   const lastCoord = coords[coords.length - 1];
   const finalSvg = `
     <circle cx="${lastCoord.x}" cy="${lastCoord.y}" r="4" fill="var(--accent, #9fd6ff)"/>
-    <text x="${lastCoord.x}" y="${lastCoord.y - 12}" fill="#fff" font-size="12" font-family="'Space Grotesk', sans-serif" font-weight="700" text-anchor="middle">Finished at ${lastCoord.score}</text>
+    <text x="${lastCoord.x}" y="${lastCoord.y - 12}" fill="#fff" font-size="12" font-family="'Space Grotesk', sans-serif" font-weight="700" text-anchor="middle">${diagCopy('Finished at', 'Finalizó en')} ${lastCoord.score}</text>
   `;
 
   return `
-    <svg class="diag-chart-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Score progression chart from ${minScore} to ${maxScore}, finishing at ${diagState.finalScore || scores[scores.length - 1]}">
+    <svg class="diag-chart-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="${diagCopy(`Score progression chart from ${minScore} to ${maxScore}, finishing at ${diagState.finalScore || scores[scores.length - 1]}`, `Gráfico de evolución de puntuación de ${minScore} a ${maxScore}, con resultado final ${diagState.finalScore || scores[scores.length - 1]}`)}">
       <defs>
         <linearGradient id="diagChartGrad" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="var(--accent, #9fd6ff)" stop-opacity="0.25"/>
@@ -3156,12 +3221,12 @@ function renderDiagSetsTab() {
   if (allSets.length === 0) {
     return `
       <div class="diag-card">
-        <h3 class="diag-card-title">Sets (${allSets.length})</h3>
+        <h3 class="diag-card-title">${diagCopy(`Sets (${allSets.length})`, `Partidas (${allSets.length})`)}</h3>
         <div class="diag-empty-card">
-          No sets are recorded for this player between ${esc(diagState.startDate || 'start')} and ${esc(diagState.endDate || 'end')}.
+          ${diagCopy(`No sets are recorded for this player between ${esc(diagState.startDate || 'start')} and ${esc(diagState.endDate || 'end')}.`, `No hay partidas registradas para este jugador entre ${esc(diagState.startDate || 'inicio')} y ${esc(diagState.endDate || 'fin')}.`)}
         </div>
       </div>
-      <div class="diag-footnote">0 sets across 0 events</div>
+      <div class="diag-footnote">${diagCopy('0 sets across 0 events', '0 partidas en 0 torneos')}</div>
     `;
   }
 
@@ -3205,8 +3270,8 @@ function renderDiagSetsTab() {
   const winsCount = allSets.filter(s => s.won).length;
   const lossesCount = allSets.filter(s => !s.won).length;
   const setsExplanation = diagnosticUsesGlicko()
-    ? 'Event net impact shows the score change for the whole event. Set Impact estimates this result’s contribution to the final score; wins are positive and losses negative. Repeated results against the same player in one event are combined in the Summary.'
-    : 'Win chance indicates estimated probability before the set; Impact estimates this result’s contribution to the final score. Wins are positive and losses negative. Repeated results against the same player in one event are combined in the Summary.';
+    ? diagCopy('Event net impact shows the score change for the whole event. Set Impact estimates this result’s contribution to the final score; wins are positive and losses negative. Repeated results against the same player in one event are combined in the Summary.', 'El impacto neto muestra cuánto cambió la puntuación durante el torneo. El impacto de la partida estima cuánto aportó este resultado a la puntuación final: las victorias suman y las derrotas restan. Los resultados repetidos contra un mismo jugador en un torneo se agrupan en el resumen.')
+    : diagCopy('Win chance indicates estimated probability before the set; Impact estimates this result’s contribution to the final score. Wins are positive and losses are negative. Repeated results against the same player in one event are combined in the Summary.', 'La probabilidad de victoria es la estimación previa a la partida. El impacto estima cuánto aportó este resultado a la puntuación final: las victorias suman y las derrotas restan. Los resultados repetidos contra un mismo jugador en un torneo se agrupan en el resumen.');
 
   const eventCardsHtml = visibleGroups.map(grp => {
     const ev = grp.meta;
@@ -3216,12 +3281,12 @@ function renderDiagSetsTab() {
     const netSign = netImpact > 0 ? `+${netImpact}` : `${netImpact}`;
     const netCls = netImpact >= 0 ? 'pos' : 'neg';
 
-    const placeStr = ev.placement ? `${(window.PRBadges && window.PRBadges.getOrdinal) ? window.PRBadges.getOrdinal(ev.placement) : '#' + ev.placement}${ev.entrants ? ' of ' + ev.entrants : ''}` : '';
+    const placeStr = ev.placement ? `${(window.PRBadges && window.PRBadges.getOrdinal) ? window.PRBadges.getOrdinal(ev.placement) : '#' + ev.placement}${ev.entrants ? ` ${diagCopy('of', 'de')} ${ev.entrants}` : ''}` : '';
     const datePlaceStr = [ev.date, placeStr].filter(Boolean).join(' · ');
 
     const rowsHtml = grp.sets.map(s => {
       const resCls = s.won ? 'pos' : 'neg';
-      const resText = s.won ? `W ${s.score}` : `L ${s.score}`;
+      const resText = `${s.won ? diagCopy('W', 'G') : diagCopy('L', 'P')} ${s.score}`;
       const hasImpact = s.impact !== null && s.impact !== undefined && Number.isFinite(Number(s.impact));
       const impSign = hasImpact ? formatDiagnosticImpact(s.impact) : '—';
       const impCls = !hasImpact ? 'muted' : (s.impact >= 0 ? 'pos' : 'neg');
@@ -3255,7 +3320,7 @@ function renderDiagSetsTab() {
             <span class="score-res ${resCls}">${esc(resText)}</span>
           </div>
           <div class="line-3">
-            <span class="chance-label">WIN CHANCE</span>
+          <span class="chance-label">${diagCopy('WIN CHANCE', 'PROB. DE VICTORIA')}</span>
             <div class="chance-bar"><div class="chance-bar-fill" style="width:${pct}%;"></div></div>
             <span class="chance-num">${pct}%</span>
           </div>
@@ -3273,7 +3338,7 @@ function renderDiagSetsTab() {
             <span class="diag-event-sub">${esc(datePlaceStr)}</span>
           </div>
           <div class="diag-event-impact">
-            <span class="net-label">Net impact</span>
+            <span class="net-label">${diagCopy('Net impact', 'Impacto neto')}</span>
             <span class="net-val ${netCls}">${netSign}</span>
           </div>
         </div>
@@ -3284,25 +3349,25 @@ function renderDiagSetsTab() {
 
   const showMoreBtnHtml = (!diagState.showAllEvents && eventGroups.length > 3) ? `
     <button class="diag-show-more-btn" id="diag-btn-show-all-events">
-      Show all ${eventGroups.length} events
+      ${diagCopy(`Show all ${eventGroups.length} events`, `Ver los ${eventGroups.length} torneos`)}
     </button>
   ` : '';
 
   return `
     <div class="diag-sets-toolbar">
       <div class="diag-filter-chips">
-        <button class="diag-filter-btn ${diagState.setsFilter === 'all' ? 'active' : ''}" data-filter="all">All ${allSets.length}</button>
-        <button class="diag-filter-btn ${diagState.setsFilter === 'wins' ? 'active' : ''}" data-filter="wins">Wins ${winsCount}</button>
-        <button class="diag-filter-btn ${diagState.setsFilter === 'losses' ? 'active' : ''}" data-filter="losses">Losses ${lossesCount}</button>
-        <button class="diag-filter-btn ${diagState.setsFilter === 'impact' ? 'active' : ''}" data-filter="impact">Biggest impact</button>
+        <button class="diag-filter-btn ${diagState.setsFilter === 'all' ? 'active' : ''}" data-filter="all">${diagCopy('All', 'Todas')} ${allSets.length}</button>
+        <button class="diag-filter-btn ${diagState.setsFilter === 'wins' ? 'active' : ''}" data-filter="wins">${diagCopy('Wins', 'Victorias')} ${winsCount}</button>
+        <button class="diag-filter-btn ${diagState.setsFilter === 'losses' ? 'active' : ''}" data-filter="losses">${diagCopy('Losses', 'Derrotas')} ${lossesCount}</button>
+        <button class="diag-filter-btn ${diagState.setsFilter === 'impact' ? 'active' : ''}" data-filter="impact">${diagCopy('Biggest impact', 'Mayor impacto')}</button>
       </div>
 
       <div class="diag-sort-wrap">
-        <label for="diag-sort-select" class="mono muted font-12">Sort by:</label>
+        <label for="diag-sort-select" class="mono muted font-12">${diagCopy('Sort by:', 'Ordenar por:')}</label>
         <select id="diag-sort-select" class="diag-sort-select">
-          <option value="newest" ${diagState.setsSort === 'newest' ? 'selected' : ''}>Newest first</option>
-          <option value="oldest" ${diagState.setsSort === 'oldest' ? 'selected' : ''}>Oldest first</option>
-          <option value="impact" ${diagState.setsSort === 'impact' ? 'selected' : ''}>Biggest impact</option>
+          <option value="newest" ${diagState.setsSort === 'newest' ? 'selected' : ''}>${diagCopy('Newest first', 'Más recientes primero')}</option>
+          <option value="oldest" ${diagState.setsSort === 'oldest' ? 'selected' : ''}>${diagCopy('Oldest first', 'Más antiguos primero')}</option>
+          <option value="impact" ${diagState.setsSort === 'impact' ? 'selected' : ''}>${diagCopy('Biggest impact', 'Mayor impacto')}</option>
         </select>
       </div>
     </div>
@@ -3312,11 +3377,11 @@ function renderDiagSetsTab() {
     </div>
 
     <div class="diag-table-head-row">
-      <span>ROUND</span>
-      <span>OPPONENT</span>
-      <span>RESULT</span>
-      <span>WIN CHANCE BEFORE SET</span>
-      <span style="text-align:right;">IMPACT</span>
+      <span>${diagCopy('ROUND', 'RONDA')}</span>
+      <span>${diagCopy('OPPONENT', 'RIVAL')}</span>
+      <span>${diagCopy('RESULT', 'RESULTADO')}</span>
+      <span>${diagCopy('WIN CHANCE BEFORE SET', 'PROB. DE VICTORIA')}</span>
+      <span style="text-align:right;">${diagCopy('IMPACT', 'IMPACTO')}</span>
     </div>
 
     <div class="diag-event-cards">
@@ -3326,7 +3391,7 @@ function renderDiagSetsTab() {
     ${showMoreBtnHtml}
 
     <div class="diag-footnote">
-      Based on ${allSets.length} sets across ${diagState.allEvents.length} events
+      ${diagCopy(`Based on ${allSets.length} sets across ${diagState.allEvents.length} events`, `Basado en ${allSets.length} partidas de ${diagState.allEvents.length} torneos`)}
     </div>
   `;
 }
@@ -3361,15 +3426,17 @@ function bindDiagSetsControls() {
 function renderDiagMethodTab() {
   const algo = diagState.diagData?.algorithm || {};
   const sysKey = diagState.system;
-  const sysName = (sysKey === 'custom' || sysKey === 'power_rankings') ? 'Power Rankings' : (algo.name || sysKey);
+  const sysName = (sysKey === 'custom' || sysKey === 'power_rankings')
+    ? 'Power Rankings'
+    : (window.i18n?.getLang() === 'es' ? getSystemNames()[sysKey] || algo.name || sysKey : algo.name || sysKey);
 
-  const dateRangeStr = formatDiagDateRange(diagState.startDate, diagState.endDate) || (diagState.mode === 'historical' ? 'All-time (no date restrictions)' : 'Full period');
+  const dateRangeStr = formatDiagDateRange(diagState.startDate, diagState.endDate) || (diagState.mode === 'historical' ? diagCopy('All-time (no date restrictions)', 'Todo el historial') : diagCopy('Full period', 'Período completo'));
 
-  let modeDescription = 'Historical: uses all recorded sets across tournament history.';
+  let modeDescription = diagCopy('Historical: uses all recorded sets across tournament history.', 'Histórico: usa todas las partidas registradas en el historial de torneos.');
   if (diagState.mode === 'period_only') {
-    modeDescription = 'Period only: only sets played inside this date range count.';
+    modeDescription = diagCopy('Period only: only sets played inside this date range count.', 'Solo período: cuenta únicamente las partidas jugadas dentro de este rango de fechas.');
   } else if (diagState.mode === 'period_performance') {
-    modeDescription = 'Period performance: pre-period history establishes starting baseline ratings; performance is evaluated over the date range.';
+    modeDescription = diagCopy('Period performance: pre-period history establishes starting baseline ratings; performance is evaluated over the date range.', 'Rendimiento del período: el historial anterior establece la puntuación inicial; el rendimiento se evalúa dentro del rango de fechas.');
   }
 
   const rawConfig = {
@@ -3387,55 +3454,55 @@ function renderDiagMethodTab() {
 
   return `
     <div class="diag-card">
-      <h3 class="diag-card-title">Rules for this ranking</h3>
+      <h3 class="diag-card-title">${diagCopy('Rules for this ranking', 'Criterios de este ranking')}</h3>
       <dl class="diag-method-defs">
         <div class="diag-def-item">
-          <dt>SYSTEM</dt>
+          <dt>${diagCopy('SYSTEM', 'SISTEMA')}</dt>
           <dd>${esc(sysName)}</dd>
         </div>
         <div class="diag-def-item">
-          <dt>GAME</dt>
+          <dt>${diagCopy('GAME', 'JUEGO')}</dt>
           <dd>${esc(diagState.gameName)}</dd>
         </div>
         <div class="diag-def-item">
-          <dt>DATE RANGE</dt>
+          <dt>${diagCopy('DATE RANGE', 'RANGO DE FECHAS')}</dt>
           <dd>${esc(dateRangeStr)}</dd>
         </div>
         <div class="diag-def-item">
-          <dt>MODE</dt>
+          <dt>${diagCopy('MODE', 'MODO')}</dt>
           <dd>${esc(modeDescription)}</dd>
         </div>
       </dl>
     </div>
 
     <div class="diag-card">
-      <h3 class="diag-card-title">How to read the Sets tab</h3>
+      <h3 class="diag-card-title">${diagCopy('How to read the Sets tab', 'Cómo leer la pestaña de partidas')}</h3>
       <dl class="diag-method-defs">
         <div class="diag-def-item">
-          <dt>Round</dt>
-          <dd>The tournament round or bracket phase in which the match was played.</dd>
+          <dt>${diagCopy('Round', 'Ronda')}</dt>
+          <dd>${diagCopy('The tournament round or bracket phase in which the match was played.', 'La ronda del torneo o fase del bracket en que se jugó la partida.')}</dd>
         </div>
         <div class="diag-def-item">
-          <dt>Opponent</dt>
-          <dd>The player faced in this set.</dd>
+          <dt>${diagCopy('Opponent', 'Rival')}</dt>
+          <dd>${diagCopy('The player faced in this set.', 'El jugador contra quien se disputó esta partida.')}</dd>
         </div>
         <div class="diag-def-item">
-          <dt>Result</dt>
-          <dd>Whether the set was won (W) or lost (L) along with the final game count.</dd>
+          <dt>${diagCopy('Result', 'Resultado')}</dt>
+          <dd>${diagCopy('Whether the set was won (W) or lost (L) along with the final game count.', 'Indica si se ganó (G) o perdió (P) la partida y el marcador final.')}</dd>
         </div>
         <div class="diag-def-item">
-          <dt>Win chance</dt>
-          <dd>The pre-match predicted probability of victory based on relative ratings.</dd>
+          <dt>${diagCopy('Win chance', 'Probabilidad de victoria')}</dt>
+          <dd>${diagCopy('The pre-match predicted probability of victory based on relative ratings.', 'La probabilidad de victoria estimada antes de la partida según las puntuaciones relativas.')}</dd>
         </div>
         <div class="diag-def-item">
-          <dt>Impact</dt>
-          <dd>An estimate of this result’s contribution to the final score. Wins are positive and losses are negative.</dd>
+          <dt>${diagCopy('Impact', 'Impacto')}</dt>
+          <dd>${diagCopy('An estimate of this result’s contribution to the final score. Wins are positive and losses are negative.', 'Estimación de cuánto contribuyó este resultado a la puntuación final. Las victorias suman y las derrotas restan.')}</dd>
         </div>
       </dl>
     </div>
 
     <div class="diag-card">
-      <h3 class="diag-card-title">Raw configuration</h3>
+      <h3 class="diag-card-title">${diagCopy('Raw configuration', 'Configuración técnica')}</h3>
       <pre class="diag-code-block" tabindex="0">${esc(JSON.stringify(rawConfig, null, 2))}</pre>
     </div>
 
