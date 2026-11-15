@@ -1,0 +1,130 @@
+{
+  "player": {
+    "playerId": "pfuy-99aad7d61db59b0d0d4d",
+    "tag": "Batoru",
+    "photo": "assets/players/pfuy-99aad7d61db59b0d0d4d.png",
+    "sponsor": "",
+    "city": "",
+    "country": "Uruguay",
+    "location": "Uruguay",
+    "activeSince": "2019-05-18",
+    "startgg": "",
+    "startggPlayerId": null,
+    "aliases": [
+      "Batoru"
+    ]
+  },
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [
+        {
+          "opponent": "Shysce",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "ZAPO",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Cerdo",
+          "sets": 1,
+          "wins": 0
+        }
+      ],
+      "events": 1,
+      "wins": 1,
+      "losses": 2,
+      "upsets": 0,
+      "bestPlace": 17,
+      "bestEvent": "Smash Bros. Ultimate / Torneos Pro-III",
+      "avgPlace": 17.0,
+      "avgSeed": null,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Smash Bros. Ultimate / Torneos Pro-III",
+          "eventKey": "event:challonge:xvk4i4mg",
+          "displaySeparately": false,
+          "date": "2019-05-18",
+          "seed": null,
+          "place": 17,
+          "entrants": 26,
+          "sets": [
+            {
+              "setId": "challonge:xvk4i4mg:match:161075997",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 1",
+              "opponent": "Shysce",
+              "opponentPlayerId": "1435657",
+              "score": "1-2–1-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558213827,
+              "phaseOrder": null,
+              "roundOrder": 1
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076007",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 2",
+              "opponent": "ZAPO",
+              "opponentPlayerId": "1260018",
+              "score": "0-2–0-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558215918,
+              "phaseOrder": null,
+              "roundOrder": 2
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076029",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 2",
+              "opponent": "Cerdo",
+              "opponentPlayerId": "561054",
+              "score": "0-2–0-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558219537,
+              "phaseOrder": null,
+              "roundOrder": -2
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "date": "2019-05-18",
+              "seed": null,
+              "place": 17,
+              "entrants": 26,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

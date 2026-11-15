@@ -1,0 +1,107 @@
+{
+  "player": {
+    "playerId": "pfuy-6f9de49fc36d89bbd92d",
+    "tag": "Adriano Ribeiro",
+    "photo": "assets/players/pfuy-6f9de49fc36d89bbd92d.png",
+    "sponsor": "",
+    "city": "",
+    "country": "Uruguay",
+    "location": "Uruguay",
+    "activeSince": "2019-03-23",
+    "startgg": "",
+    "startggPlayerId": null,
+    "aliases": [
+      "Adriano Ribeiro"
+    ]
+  },
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [
+        {
+          "opponent": "DIO",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Calvo",
+          "sets": 1,
+          "wins": 0
+        }
+      ],
+      "events": 1,
+      "wins": 0,
+      "losses": 2,
+      "upsets": 0,
+      "bestPlace": 33,
+      "bestEvent": "torneo super smash nintendo switch uruguay",
+      "avgPlace": 33.0,
+      "avgSeed": null,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "torneo super smash nintendo switch uruguay",
+          "eventKey": "event:challonge:ne0nkst3",
+          "displaySeparately": false,
+          "date": "2019-03-23",
+          "seed": null,
+          "place": 33,
+          "entrants": 34,
+          "sets": [
+            {
+              "setId": "challonge:ne0nkst3:match:154197197",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Round 1",
+              "opponent": "DIO",
+              "opponentPlayerId": "330635",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553349841,
+              "phaseOrder": null,
+              "roundOrder": 1
+            },
+            {
+              "setId": "challonge:ne0nkst3:match:154197230",
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 1",
+              "opponent": "Calvo",
+              "opponentPlayerId": "1330159",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1553352148,
+              "phaseOrder": null,
+              "roundOrder": -1
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:ne0nkst3",
+              "event": "torneo super smash nintendo switch uruguay",
+              "date": "2019-03-23",
+              "seed": null,
+              "place": 33,
+              "entrants": 34,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

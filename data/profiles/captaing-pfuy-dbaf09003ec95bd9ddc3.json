@@ -1,0 +1,130 @@
+{
+  "player": {
+    "playerId": "pfuy-dbaf09003ec95bd9ddc3",
+    "tag": "CaptainG",
+    "photo": "assets/players/pfuy-dbaf09003ec95bd9ddc3.png",
+    "sponsor": "",
+    "city": "",
+    "country": "Uruguay",
+    "location": "Uruguay",
+    "activeSince": "2019-05-18",
+    "startgg": "",
+    "startggPlayerId": null,
+    "aliases": [
+      "CaptainG"
+    ]
+  },
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [
+        {
+          "opponent": "Aminas",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "XGodZillaX42",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Dm",
+          "sets": 1,
+          "wins": 0
+        }
+      ],
+      "events": 1,
+      "wins": 1,
+      "losses": 2,
+      "upsets": 0,
+      "bestPlace": 17,
+      "bestEvent": "Smash Bros. Ultimate / Torneos Pro-III",
+      "avgPlace": 17.0,
+      "avgSeed": null,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Smash Bros. Ultimate / Torneos Pro-III",
+          "eventKey": "event:challonge:xvk4i4mg",
+          "displaySeparately": false,
+          "date": "2019-05-18",
+          "seed": null,
+          "place": 17,
+          "entrants": 26,
+          "sets": [
+            {
+              "setId": "challonge:xvk4i4mg:match:161076003",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 1",
+              "opponent": "Aminas",
+              "opponentPlayerId": "1000031",
+              "score": "0-2–0-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558214884,
+              "phaseOrder": null,
+              "roundOrder": 1
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076022",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 1",
+              "opponent": "XGodZillaX42",
+              "opponentPlayerId": "pfuy-0837e20a68d1ba024a58",
+              "score": "0-2–0-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558216460,
+              "phaseOrder": null,
+              "roundOrder": -1
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076028",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 2",
+              "opponent": "Dm",
+              "opponentPlayerId": "2328857",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558220777,
+              "phaseOrder": null,
+              "roundOrder": -2
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "date": "2019-05-18",
+              "seed": null,
+              "place": 17,
+              "entrants": 26,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
