@@ -267,25 +267,30 @@ async function init() {
   $$('.preset-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const preset = btn.dataset.preset;
-      const today = new Date().toISOString().split('T')[0];
+      const todayDate = new Date();
+      const toDateInputValue = date => {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+      };
+      const today = toDateInputValue(todayDate);
       if (preset === 'all') {
         modeFilter.value = 'historical';
         startDateInput.value = '';
         endDateInput.value = '';
       } else {
-        if (modeFilter.value === 'historical') {
-          modeFilter.value = 'period_only';
-        }
-        if (preset === '2025') {
-          startDateInput.value = '2025-01-01';
-          endDateInput.value = '2025-12-31';
-        } else if (preset === '2024') {
-          startDateInput.value = '2024-01-01';
-          endDateInput.value = '2024-12-31';
+        modeFilter.value = 'period_performance';
+        if (/^20\d{2}$/.test(preset)) {
+          startDateInput.value = `${preset}-01-01`;
+          endDateInput.value = `${preset}-12-31`;
         } else if (preset === '6m') {
-          const d = new Date();
+          const d = new Date(todayDate);
           d.setMonth(d.getMonth() - 6);
-          startDateInput.value = d.toISOString().split('T')[0];
+          startDateInput.value = toDateInputValue(d);
+          endDateInput.value = today;
+        } else if (preset === 'year') {
+          startDateInput.value = `${todayDate.getFullYear()}-01-01`;
           endDateInput.value = today;
         }
       }
@@ -2431,6 +2436,12 @@ function renderDiagnosticHeader() {
   else if (rank === 3) rankCls = 'place-bronze';
 
   const decidedSentence = generateDecidedSentence(tag, rank, diagState.allSets, diagState.allEvents);
+  const systemExplanation = ({
+    glicko2: 'Ranks players by their overall skill, based on match results and opponent strength, with rating reliability also taken into account.',
+    sof: 'Ranks players by the quality of the competition they face. Deeper runs in larger tournaments with stronger competitors earn more credit.',
+    quality_wins: 'Ranks players by the strength of the opponents they defeat. Beating stronger players earns more credit, and the score becomes more reliable with more wins.',
+    loss_quality: 'Ranks players by how reliably they perform against their opponents. Wins add credit, while losses are softened based on the opponent’s strength.'
+  })[diagState.system] || '';
 
   diagHeader.innerHTML = `
     <div class="diag-player-head">
@@ -2471,10 +2482,10 @@ function renderDiagnosticHeader() {
       </div>
     </div>
 
-    ${decidedSentence ? `
+    ${(systemExplanation || decidedSentence) ? `
       <div class="diag-decided-wrap">
-        <div class="diag-decided-label">What decided this rank</div>
-        <div class="diag-decided-text">${decidedSentence}</div>
+        <div class="diag-decided-label">${systemExplanation ? `How does ${esc(systemName)} work` : 'What decided this rank'}</div>
+        <div class="diag-decided-text">${systemExplanation ? esc(systemExplanation) : decidedSentence}</div>
       </div>
     ` : ''}
   `;

@@ -212,7 +212,7 @@ function render() {
       : null;
     const stockIcon = (selectedGameData || mostPlayedGame)?.mostPlayedCharacterIcon || '';
     const picture = p.photo || `assets/players/${entry.playerId}.png`;
-    const avatarImage = selectedGame ? stockIcon : (picture || stockIcon);
+    const avatarImage = p.photo || (selectedGame ? stockIcon : (stockIcon || picture));
     const playerTag = p.tag || entry.tag;
     let miniBadgesHtml = '';
     if (window.PRBadges && playerTag) {
