@@ -120,7 +120,8 @@
     if (!common.length) return null;
     const bestMatch = [...common].sort((a, b) => b.sets.length - a.sets.length || a.game.name.localeCompare(b.game.name))[0];
     const validPrevious = previous === 'all' || common.some(item => item.id === previous);
-    gameSelect.value = validPrevious ? previous : bestMatch.id;
+    const defaultGame = common.length === 1 ? common[0].id : 'all';
+    gameSelect.value = validPrevious ? previous : defaultGame;
     if (gameSelect.value === 'all') return { id: 'all', name: text('All games', 'Todos los juegos'), primaryGameId: bestMatch.id, games: common };
     const selected = common.find(item => item.id === gameSelect.value);
     return { ...selected.game, id: selected.id, primaryGameId: selected.id, sharedSets: selected.sets };
@@ -273,13 +274,32 @@
     const rows = new Map();
     sets.forEach(set => gameResults(set).forEach(game => {
       if (!game.p1Character || !game.p2Character || game.p1Won === null) return;
-      const key = `${game.p1Character}\u0000${game.p2Character}`;
-      const row = rows.get(key) || { p1: game.p1Character, p2: game.p2Character, p1Wins: 0, p2Wins: 0, games: 0 };
+      const gameId = String(set.gameId || '');
+      const key = `${gameId}\u0000${game.p1Character}\u0000${game.p2Character}`;
+      const row = rows.get(key) || { gameId, p1: game.p1Character, p2: game.p2Character, p1Wins: 0, p2Wins: 0, games: 0 };
       row.games++;
       if (game.p1Won) row.p1Wins++; else row.p2Wins++;
       rows.set(key, row);
     }));
-    return [...rows.values()].sort((a, b) => b.games - a.games || a.p1.localeCompare(b.p1)).slice(0, 3);
+    const ranked = [...rows.values()].sort((a, b) => b.games - a.games || a.gameId.localeCompare(b.gameId) || a.p1.localeCompare(b.p1));
+    // In All games mode, reserve one slot for the strongest matchup from each game
+    // before filling any remaining slots by overall frequency.
+    const selected = [];
+    const seenGames = new Set();
+    for (const row of ranked) {
+      if (seenGames.has(row.gameId)) continue;
+      seenGames.add(row.gameId);
+      selected.push(row);
+      if (selected.length === 3) break;
+    }
+    if (selected.length < 3) {
+      for (const row of ranked) {
+        if (selected.includes(row)) continue;
+        selected.push(row);
+        if (selected.length === 3) break;
+      }
+    }
+    return selected;
   }
 
   function matchupHtml(rows, gameId) {
@@ -287,7 +307,7 @@
     return `<div class="h2h-matchups">${rows.map(row => {
       const p1Pct = Math.round(100 * row.p1Wins / row.games);
       const p2Pct = 100 - p1Pct;
-      return `<div class="h2h-matchup-row"><div class="h2h-matchup-icons"><img src="${esc(stockPath(gameId, row.p1))}" alt="${esc(row.p1)}" loading="lazy"><span class="h2h-matchup-count">${row.games} ${text('GAMES', 'JUEGOS')}</span><img src="${esc(stockPath(gameId, row.p2))}" alt="${esc(row.p2)}" loading="lazy"></div><div class="h2h-matchup-bar"><span class="p1" style="width:${p1Pct}%">${p1Pct}%</span><span class="p2" style="width:${p2Pct}%">${p2Pct}%</span></div></div>`;
+      return `<div class="h2h-matchup-row"><div class="h2h-matchup-icons"><img src="${esc(stockPath(row.gameId || gameId, row.p1))}" alt="${esc(row.p1)}" loading="lazy"><span class="h2h-matchup-count">${row.games} ${text('GAMES', 'JUEGOS')}</span><img src="${esc(stockPath(row.gameId || gameId, row.p2))}" alt="${esc(row.p2)}" loading="lazy"></div><div class="h2h-matchup-bar"><span class="p1" style="width:${p1Pct}%">${p1Pct}%</span><span class="p2" style="width:${p2Pct}%">${p2Pct}%</span></div></div>`;
     }).join('')}</div>`;
   }
 
@@ -451,7 +471,7 @@
     const events = placements(p1, p2, gameId, sets);
     current = { gameId, p1, p2 };
     content.hidden = false;
-    const pairs = matchupRows(sets.filter(set => String(set.gameId || gameId) === String(primaryGameId)));
+    const pairs = matchupRows(sets);
     const rankingPanel = rankingHistoryHtml(rankings, p1, p2, false);
     content.innerHTML = `<div style="--p1-color:#9fd6ff;--p2-color:#f5c542">${heroHtml(p1, p2, stats, primaryGameId)}<div class="h2h-section-title"><h2>${text('Rivalry at a glance', 'La rivalidad en resumen')}</h2><small>${sets.length} ${text('tracked tournament sets · merged player profiles', 'series registradas · perfiles combinados')}</small></div><div class="h2h-panels"><section class="h2h-panel h2h-stats-panel glass${pairs.length ? '' : ' h2h-stats-wide'}"><h3>${text('Matchup stats', 'Estadísticas del enfrentamiento')}</h3><div class="h2h-sub">${text('Only sets played against each other', 'Solo series disputadas entre ambos')} · ${sets.length} ${text('sets', 'series')}</div>${statTable(stats, p1, p2)}</section>${pairs.length ? `<section class="h2h-panel h2h-character-panel glass"><h3>${text('Character matchups', 'Enfrentamientos de personajes')}</h3><div class="h2h-sub">${text('Win rates by individual game', 'Porcentaje de victorias por juego')}</div>${matchupHtml(pairs, primaryGameId)}</section>` : ''}<section class="h2h-panel h2h-chart-panel glass${rankingPanel ? '' : ' h2h-chart-wide'}"><div class="h2h-section-title" style="margin:0"><h3>${text('Shared tournament placements', 'Posiciones en torneos compartidos')}</h3></div><div class="h2h-sub">${text('Compare their final placements at tournaments they both entered.', 'Compara sus posiciones finales en los torneos a los que ambos asistieron.')}</div>${placementsHtml(events, p1, p2)}</section>${rankingPanel}</div><div class="h2h-section-title h2h-history-heading"><h2>${text('Set history', 'Historial de series')}</h2><small>${sets.length} ${text('meetings', 'enfrentamientos')}</small></div><section class="h2h-panel h2h-history-panel glass">${meetingsHtml(sets, p1)}</section></div>`;
     setStatus('');
