@@ -36,6 +36,7 @@ function groupTournaments(entries) {
         date: event.date,
         isTemporary: !!event.isTemporary,
         hasTakenPlace: event.hasTakenPlace,
+        online: !!event.online,
         games: new Map(),
       });
     }
@@ -55,6 +56,7 @@ function groupTournaments(entries) {
       }
     }
     if (!tournament.image && event.image) tournament.image = event.image;
+    if (event.online) tournament.online = true;
     if (!tournament.date || (event.date && event.date < tournament.date)) tournament.date = event.date;
   });
   return [...grouped.values()].map(tournament => {
@@ -109,7 +111,8 @@ function populateGameFilter() {
 function renderCard(event, isUpcoming = false, selectedGame = '') {
   const avatar = `<span class="event-avatar" aria-hidden="true">${esc((event.tournament || '?').slice(0, 1))}${event.image ? `<img src="${esc(event.image)}" alt="" loading="lazy">` : ''}</span>`;
   const gameDate = [event.games.map(game => game.name).join(' · '), event.date].filter(Boolean).join(' · ');
-  const body = `<span class="event-card-copy"><b>${esc(event.tournament)}</b><span>${esc(gameDate)}</span></span>${avatar}`;
+  const onlineBadge = isUpcoming && event.online ? '<span class="online-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 8.8a17 17 0 0 1 22 0M4.5 12.4a12 12 0 0 1 15 0M8.5 16a6.5 6.5 0 0 1 7 0M12 19h.01"/></svg><span>Online</span></span>' : '';
+  const body = `<span class="event-card-copy"><b>${esc(event.tournament)}</b><span>${esc(gameDate)}</span></span>${onlineBadge}${avatar}`;
 
   const detailUrl = event.displaySeparately && event.tournamentSlug && event.eventKey
     ? `event.html?tournament=${encodeURIComponent(event.tournamentSlug)}&event=${encodeURIComponent(event.eventKey)}`

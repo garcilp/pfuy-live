@@ -137,12 +137,14 @@ function renderUpcomingEvents() {
         date: event.date,
         isTemporary: !!event.isTemporary,
         hasTakenPlace: event.hasTakenPlace,
+        online: !!event.online,
         startggUrl: event.tournamentSlug ? `https://www.start.gg/tournament/${encodeURIComponent(event.tournamentSlug)}` : '',
         games: new Map(),
         entrants: event.entrants || 0
       });
     }
     const t = grouped.get(key);
+    if (event.online) t.online = true;
     if (event.isTemporary) t.isTemporary = true;
     if (event.hasTakenPlace !== undefined) {
       if (t.hasTakenPlace === undefined || event.hasTakenPlace === false) {
@@ -221,6 +223,7 @@ function renderUpcomingEvents() {
           <b>${esc(e.tournament)}</b>
           <span class="muted">${esc(gameNames || 'Platform Fighter')}</span>
         </div>
+        ${e.online ? '<span class="online-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 8.8a17 17 0 0 1 22 0M4.5 12.4a12 12 0 0 1 15 0M8.5 16a6.5 6.5 0 0 1 7 0M12 19h.01"/></svg><span>Online</span></span>' : ''}
       </a>
     `;
   }).join('');

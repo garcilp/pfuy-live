@@ -91,11 +91,13 @@ function linkifyOpponent(nameStr, opponentPlayerId) {
 async function loadProfile() {
   let profileUrl = 'data/mint.json';
   if (profileId) {
-    if (!/^\d+$/.test(profileId)) throw new Error('Use a numeric start.gg player ID in the player URL.');
     const indexResponse = await fetch('data/profiles/index.json', { cache: 'no-store' });
     if (!indexResponse.ok) throw new Error('Could not load the player index.');
     const entries = await indexResponse.json();
-    let canonicalId = profileId;
+    // Challonge-created profiles have stable `pfuy-…` IDs rather than start.gg IDs.
+    // Admin links may also use the profile slug when a profile has no player ID.
+    const slugEntry = entries.find(item => String(item.slug) === profileId);
+    let canonicalId = String(slugEntry?.playerId || profileId);
     const mergeResponse = await fetch('data/profiles/merges.json', { cache: 'no-store' });
     if (mergeResponse.ok) {
       const merges = await mergeResponse.json();

@@ -9,6 +9,7 @@
   const status = $('#h2h-status');
   const content = $('#h2h-content');
   const heading = $('#h2h-title');
+  const exportButton = $('#h2h-export');
   const params = new URLSearchParams(location.search);
   let directory = [];
   let profiles = new Map();
@@ -304,7 +305,7 @@
   }
 
   function matchupHtml(rows, gameId) {
-    if (!rows.length) return `<div class="h2h-empty-chart">${text('No game-by-game character data for these meetings.', 'No hay datos de personajes juego a juego para estos enfrentamientos.')}</div>`;
+    if (!rows.length) return `<div class="h2h-empty-chart">${text('No game-by-game character data for these meetings.', 'No hay datos de personajes game a game para estos enfrentamientos.')}</div>`;
     return `<div class="h2h-matchups">${rows.map(row => {
       const p1Pct = Math.round(100 * row.p1Wins / row.games);
       const p2Pct = 100 - p1Pct;
@@ -316,11 +317,11 @@
 
   function statTable(stats, p1, p2) {
     const rows = [
-      [text('Longest game win streak', 'Racha más larga de victorias en juegos'), stats.longest[0], stats.longest[1], text('Longest known run of consecutive individual game wins. Missing game results break the streak.', 'Mayor racha conocida de victorias consecutivas en juegos individuales. Los resultados faltantes interrumpen la racha.')],
+      [text('Longest game win streak', 'Racha más larga de victorias en games'), stats.longest[0], stats.longest[1], text('Longest known run of consecutive individual game wins. Missing game results break the streak.', 'Mayor racha conocida de victorias consecutivas en games individuales. Los resultados faltantes interrumpen la racha.')],
       [text('Elimination matches won', 'Series de eliminación ganadas'), stats.elimination[0], stats.elimination[1], text('Sets won that eliminated the opponent from the tournament.', 'Series ganadas que eliminaron al rival del torneo.')],
-      [text('Comebacks (sweeps)', 'Remontadas (épicas)'), `${stats.comebacks[0]} (${stats.epic[0]})`, `${stats.comebacks[1]} (${stats.epic[1]})`, text('Verified from complete game-by-game results; sets without a full sequence are excluded. Epic comebacks are wins after going 0–2 down in a best-of-five.', 'Verificadas con resultados completos juego a juego; se excluyen los sets sin secuencia completa. Las remontadas épicas son victorias tras quedar 0–2 abajo en un set al mejor de cinco.')],
-      [text('Decider sets won', 'Series decisivas ganadas'), stats.deciders[0], stats.deciders[1], text('Sets won in the final possible game (game 3 in a best-of-three or game 5 in a best-of-five).', 'Series ganadas en el último juego posible (juego 3 al mejor de tres o juego 5 al mejor de cinco).')],
-      [text('Clean sweeps', 'Victorias perfectas'), stats.sweeps[0], stats.sweeps[1], text('Sets won without dropping a game.', 'Series ganadas sin perder ningún juego.')]
+      [text('Comebacks (sweeps)', 'Remontadas (épicas)'), `${stats.comebacks[0]} (${stats.epic[0]})`, `${stats.comebacks[1]} (${stats.epic[1]})`, text('Verified from complete game-by-game results; sets without a full sequence are excluded. Epic comebacks are wins after going 0–2 down in a best-of-five.', 'Verificadas con resultados completos game a game; se excluyen los sets sin secuencia completa. Las remontadas épicas son victorias tras quedar 0–2 abajo en un set al mejor de cinco.')],
+      [text('Decider sets won', 'Series decisivas ganadas'), stats.deciders[0], stats.deciders[1], text('Sets won in the final possible game (game 3 in a best-of-three or game 5 in a best-of-five).', 'Series ganadas en el último game posible (game 3 al mejor de tres o game 5 al mejor de cinco).')],
+      [text('Clean sweeps', 'Victorias perfectas'), stats.sweeps[0], stats.sweeps[1], text('Sets won without dropping a game.', 'Series ganadas sin perder ningún game.')]
     ];
     return `<table class="h2h-stats"><thead><tr><th>${text('STAT', 'DATO')}</th><th>${esc(p1.player.tag)}</th><th>${esc(p2.player.tag)}</th></tr></thead><tbody>${rows.map(row => `<tr><td>${help(row[0], row[3])}</td><td>${row[1]}</td><td>${row[2]}</td></tr>`).join('')}</tbody></table>`;
   }
@@ -405,7 +406,9 @@
       const round = normalize(set.round);
       const phase = normalize(set.phase);
       const roundLabel = phase.includes('pool') || round.includes('pool') ? 'Pools' : set.round || '—';
-      return `<tr class="${p1Won ? 'winner1' : 'winner2'}"><td><div class="mono muted">${esc(formatDate(set.date))}</div><strong>${esc((set.event || '').split(' · ')[0])}</strong></td><td class="h2h-round">${esc(roundLabel)}</td><td><div class="h2h-game-picks">${gameHtml}</div></td><td class="h2h-vod">${vod ? `<a href="${esc(vod)}" target="_blank" rel="noopener" aria-label="${text('Watch set VOD', 'Ver VOD de la serie')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>` : '—'}</td></tr>`;
+      const isAmateurBracket = /\b(amateur bracket|categoria b|bracket b|singles b)\b/.test(phase);
+      const bracketLabel = text('Amateur Bracket', 'Categoria B');
+      return `<tr class="${p1Won ? 'winner1' : 'winner2'}"><td><div class="mono muted">${esc(formatDate(set.date))}</div><strong>${esc((set.event || '').split(' · ')[0])}</strong></td><td class="h2h-round">${isAmateurBracket ? `<span class="h2h-bracket-label">${bracketLabel}</span>` : ''}${esc(roundLabel)}</td><td><div class="h2h-game-picks">${gameHtml}</div></td><td class="h2h-vod">${vod ? `<a href="${esc(vod)}" target="_blank" rel="noopener" aria-label="${text('Watch set VOD', 'Ver VOD de la serie')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>` : '—'}</td></tr>`;
     }).join('')}</tbody></table></div>`;
   }
 
@@ -418,20 +421,34 @@
     return game?.mostPlayedCharacterIcon || '';
   }
 
-  function heroHtml(p1, p2, stats, gameId) {
+  function leadLabel(p1, p2, stats) {
     const p1Lead = stats.p1Sets / Math.max(1, stats.p1Sets + stats.p2Sets);
     let lead = stats.p1Sets === stats.p2Sets
       ? text('Even record', 'Historial empatado')
       : stats.p1Sets > stats.p2Sets
-        ? text(`${p1.player.tag} leads ${p2.player.tag} by ${stats.p1Sets - stats.p2Sets} ${setWord(stats.p1Sets - stats.p2Sets)}`, `${p1.player.tag} le lleva ${stats.p1Sets - stats.p2Sets} ${setWord(stats.p1Sets - stats.p2Sets)} a ${p2.player.tag}`)
-        : text(`${p1.player.tag} is behind ${p2.player.tag} by ${stats.p2Sets - stats.p1Sets} ${setWord(stats.p2Sets - stats.p1Sets)}`, `${p1.player.tag} está detrás de ${p2.player.tag} por ${stats.p2Sets - stats.p1Sets} ${setWord(stats.p2Sets - stats.p1Sets)}`);
+        ? text(`${p1.player.tag} leads ${p2.player.tag} by ${stats.p1Sets - stats.p2Sets} ${setWord(stats.p1Sets - stats.p2Sets)}`, `${p1.player.tag} tiene ${stats.p1Sets - stats.p2Sets} ${setWord(stats.p1Sets - stats.p2Sets)} de ventaja sobre ${p2.player.tag}`)
+        : text(`${p1.player.tag} is behind ${p2.player.tag} by ${stats.p2Sets - stats.p1Sets} ${setWord(stats.p2Sets - stats.p1Sets)}`, `${p2.player.tag} tiene ${stats.p2Sets - stats.p1Sets} ${setWord(stats.p2Sets - stats.p1Sets)} de ventaja sobre ${p1.player.tag}`);
     if (stats.p1Sets + stats.p2Sets >= 5) {
       if (p1Lead < .10) lead = text(`${p1.player.tag} is ${p2.player.tag}'s grandchild`, `${p1.player.tag} es nieto de ${p2.player.tag}`);
       else if (p1Lead < .25) lead = text(`${p1.player.tag} is ${p2.player.tag}'s child`, `${p1.player.tag} es hijo de ${p2.player.tag}`);
       else if (p1Lead >= .90) lead = text(`${p1.player.tag} is ${p2.player.tag}'s grandparent`, `${p1.player.tag} es abuelo de ${p2.player.tag}`);
       else if (p1Lead >= .75) lead = text(`${p1.player.tag} is ${p2.player.tag}'s parent`, `${p1.player.tag} es padre de ${p2.player.tag}`);
     }
-    return `<section class="h2h-hero glass" style="--p1-color:#9fd6ff;--p2-color:#f5c542"><div class="h2h-player p1">${portrait(p1, gameId) ? `<img class="h2h-player-art" src="${esc(portrait(p1, gameId))}" alt="" onerror="this.remove()">` : ''}<div class="h2h-identity">${p1.player.sponsor ? `<span class="h2h-sponsor">${esc(p1.player.sponsor)}</span>` : ''}<h2 class="h2h-tag">${esc(p1.player.tag)}</h2></div></div><div class="h2h-record"><div class="h2h-record-kicker">${text('Set record', 'Historial de sets')}</div><div class="h2h-score"><span class="p1">${stats.p1Sets}</span><span class="dash">–</span><span class="p2">${stats.p2Sets}</span></div><div class="h2h-game-score">(<span class="p1">${stats.p1Games}</span> - <span class="p2">${stats.p2Games}</span>)</div><div class="h2h-record-caption">${text('Played', 'Jugaron')} ${stats.p1Games + stats.p2Games} ${text('games across', 'juegos en')} ${stats.p1Sets + stats.p2Sets} ${setWord(stats.p1Sets + stats.p2Sets)}</div><div class="h2h-recordbar"><i style="width:${stats.p1Sets + stats.p2Sets ? 100 * stats.p1Sets / (stats.p1Sets + stats.p2Sets) : 50}%"></i><b></b></div><div class="h2h-lead">${esc(lead)}</div></div><div class="h2h-player p2">${portrait(p2, gameId) ? `<img class="h2h-player-art" src="${esc(portrait(p2, gameId))}" alt="" onerror="this.remove()">` : ''}<div class="h2h-identity">${p2.player.sponsor ? `<span class="h2h-sponsor">${esc(p2.player.sponsor)}</span>` : ''}<h2 class="h2h-tag">${esc(p2.player.tag)}</h2></div></div></section>`;
+    return lead;
+  }
+
+  function exportLabel(stats) {
+    const total = stats.p1Sets + stats.p2Sets;
+    const p1Rate = stats.p1Sets / Math.max(1, total);
+    const paternityShown = total >= 5 && (p1Rate < .25 || p1Rate >= .75);
+    return paternityShown
+      ? text('Print birth certificate', 'Imprimir certificado de nacimiento')
+      : text('Export as PNG', 'Exportar como PNG');
+  }
+
+  function heroHtml(p1, p2, stats, gameId) {
+    const lead = leadLabel(p1, p2, stats);
+    return `<section class="h2h-hero glass" style="--p1-color:#9fd6ff;--p2-color:#f5c542"><div class="h2h-player p1">${portrait(p1, gameId) ? `<img class="h2h-player-art" src="${esc(portrait(p1, gameId))}" alt="" onerror="this.remove()">` : ''}<div class="h2h-identity">${p1.player.sponsor ? `<span class="h2h-sponsor">${esc(p1.player.sponsor)}</span>` : ''}<h2 class="h2h-tag">${esc(p1.player.tag)}</h2></div></div><div class="h2h-record"><div class="h2h-record-kicker">${text('Set record', 'Historial de sets')}</div><div class="h2h-score"><span class="p1">${stats.p1Sets}</span><span class="dash">–</span><span class="p2">${stats.p2Sets}</span></div><div class="h2h-game-score">(<span class="p1">${stats.p1Games}</span> - <span class="p2">${stats.p2Games}</span>)</div><div class="h2h-record-caption">${text('Played', 'Jugaron')} ${stats.p1Games + stats.p2Games} ${text('games across', 'games en')} ${stats.p1Sets + stats.p2Sets} ${setWord(stats.p1Sets + stats.p2Sets)}</div><div class="h2h-recordbar"><i style="width:${stats.p1Sets + stats.p2Sets ? 100 * stats.p1Sets / (stats.p1Sets + stats.p2Sets) : 50}%"></i><b></b></div><div class="h2h-lead">${esc(lead)}</div></div><div class="h2h-player p2">${portrait(p2, gameId) ? `<img class="h2h-player-art" src="${esc(portrait(p2, gameId))}" alt="" onerror="this.remove()">` : ''}<div class="h2h-identity">${p2.player.sponsor ? `<span class="h2h-sponsor">${esc(p2.player.sponsor)}</span>` : ''}<h2 class="h2h-tag">${esc(p2.player.tag)}</h2></div></div></section>`;
   }
 
   function attachChartEvents() {
@@ -461,7 +478,8 @@
     updatePhases(allSets);
     const sets = applyFilters(allSets);
     if (!sets.length) {
-      current = { gameId, p1, p2 };
+      current = { gameId, p1, p2, sets: [] };
+      if (exportButton) exportButton.disabled = true;
       content.hidden = false;
       content.innerHTML = `<div class="h2h-empty glass">${text('No data for this matchup and selection.', 'No hay datos para este enfrentamiento y selección.')}</div>`;
       setStatus('');
@@ -470,9 +488,20 @@
     }
     const stats = recordStats(sets);
     const events = placements(p1, p2, gameId, sets);
-    current = { gameId, p1, p2 };
     content.hidden = false;
     const pairs = matchupRows(sets);
+    const selectedGame = gameSelect.selectedOptions[0]?.textContent || text('All games', 'Todos los juegos');
+    const periodLabel = periodSelect.selectedOptions[0]?.textContent || text('All history', 'Todo el historial');
+    const phaseLabel = phaseSelect.selectedOptions[0]?.textContent || text('All phases', 'Todas las fases');
+    current = {
+      gameId, p1, p2, sets, stats, pairs, primaryGameId,
+      lead: leadLabel(p1, p2, stats), gameLabel: selectedGame,
+      periodLabel, phaseLabel, lang: isEs() ? 'es' : 'en'
+    };
+    if (exportButton) {
+      exportButton.textContent = exportLabel(stats);
+      exportButton.disabled = false;
+    }
     const rankingPanel = rankingHistoryHtml(rankings, p1, p2, false);
     const setCountLabel = sets.length === 1 ? 'set registrado · perfiles combinados' : 'sets registrados · perfiles combinados';
     content.innerHTML = `<div style="--p1-color:#9fd6ff;--p2-color:#f5c542">${heroHtml(p1, p2, stats, primaryGameId)}<div class="h2h-section-title"><h2>${text('Rivalry at a glance', 'La rivalidad en resumen')}</h2><small>${sets.length} ${text('tracked tournament sets · merged player profiles', setCountLabel)}</small></div><div class="h2h-panels"><section class="h2h-panel h2h-stats-panel glass${pairs.length ? '' : ' h2h-stats-wide'}"><h3>${text('Matchup stats', 'Estadísticas del enfrentamiento')}</h3><div class="h2h-sub">${text('Only sets played against each other', 'Solo sets disputados entre ambos')} · ${sets.length} ${setWord(sets.length)}</div>${statTable(stats, p1, p2)}</section>${pairs.length ? `<section class="h2h-panel h2h-character-panel glass"><h3>${text('Character matchups', 'Enfrentamientos de personajes')}</h3><div class="h2h-sub">${text('Win rates by individual game', 'Porcentaje de victorias por juego')}</div>${matchupHtml(pairs, primaryGameId)}</section>` : ''}<section class="h2h-panel h2h-chart-panel glass${rankingPanel ? '' : ' h2h-chart-wide'}"><div class="h2h-section-title" style="margin:0"><h3>${text('Shared tournament placements', 'Posiciones en torneos compartidos')}</h3></div><div class="h2h-sub">${text('Compare their final placements at tournaments they both entered.', 'Compara sus posiciones finales en los torneos a los que ambos asistieron.')}</div>${placementsHtml(events, p1, p2)}</section>${rankingPanel}</div><div class="h2h-section-title h2h-history-heading"><h2>${text('Set history', 'Historial de sets')}</h2><small>${sets.length} ${text('meetings', 'enfrentamientos')}</small></div><section class="h2h-panel h2h-history-panel glass">${meetingsHtml(sets, p1)}</section></div>`;
@@ -482,6 +511,7 @@
   }
 
   async function update() {
+    if (exportButton) exportButton.disabled = true;
     const id1 = canonical(originId), id2 = canonical(two.value);
     const origin = directory.find(entry => canonical(entry.playerId) === id1);
     heading.textContent = origin?.tag
@@ -528,6 +558,23 @@
     if (element === two) { periodSelect.value = 'all'; gameSelect.value = ''; params.delete('game'); }
     update();
   }));
+  if (exportButton) exportButton.addEventListener('click', async () => {
+    if (!current?.sets?.length || !window.H2HExport) return;
+    exportButton.disabled = true;
+    exportButton.classList.add('is-loading');
+    exportButton.textContent = text('Generating PNG…', 'Generando PNG…');
+    setStatus(text('Preparing your head-to-head image…', 'Preparando la imagen del enfrentamiento…'));
+    try {
+      await window.H2HExport.download(current);
+      setStatus('');
+    } catch (error) {
+      setStatus(error?.message || text('Could not export this matchup.', 'No se pudo exportar este enfrentamiento.'));
+    } finally {
+      exportButton.classList.remove('is-loading');
+      exportButton.textContent = current?.stats ? exportLabel(current.stats) : text('Export as PNG', 'Exportar como PNG');
+      exportButton.disabled = !current?.sets?.length;
+    }
+  });
   const timestamp = $('#synced');
   if (timestamp) timestamp.textContent = new Date().toLocaleDateString(isEs() ? 'es-UY' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   window.i18n?.onChange?.(() => update());

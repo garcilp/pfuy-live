@@ -25,7 +25,7 @@
   <div class="lang glass pill"><button type="button" class="lang-btn on" data-lang="en">EN</button><button type="button" class="lang-btn" data-lang="es">ES</button></div>
 </header>
 <main class="h2h-page page-single">
-  <div class="h2h-heading"><div><div class="eyebrow mono" data-i18n="h2h.eyebrow">PLAYER DATA / HEAD-TO-HEAD</div><h1 id="h2h-title">Compare players</h1></div></div>
+  <div class="h2h-heading"><div><div class="eyebrow mono" data-i18n="h2h.eyebrow">PLAYER DATA / HEAD-TO-HEAD</div><h1 id="h2h-title">Compare players</h1></div><button id="h2h-export" class="h2h-export-btn glass pill" type="button" data-i18n="h2h.export" disabled>Export as PNG</button></div>
   <section class="h2h-controls glass" aria-label="Comparison controls">
     <label><span data-i18n="h2h.player2">Opponent</span><select id="player-two" class="game-filter glass" aria-label="Opponent"><option value="" data-i18n="h2h.choosePlayer">Choose opponent</option></select></label>
     <label><span data-i18n="h2h.game">Game</span><select id="h2h-game" class="game-filter glass" aria-label="Game" title="Game" disabled><option value="">Choose opponent first</option></select></label>
@@ -37,6 +37,7 @@
 </main>
 <footer class="foot mono muted"><span data-i18n="footer.source">Source: start.gg API · Served from local cache · Last synced</span> <span id="synced"></span></footer>
 <script src="js/pr-badges.js"></script>
+<script src="js/head-to-head-export.js"></script>
 <script src="js/head-to-head.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/mobile-nav.js"></script>

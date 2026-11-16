@@ -294,6 +294,8 @@ a.event-card:hover{color:var(--text);background:var(--faint);border-color:var(--
   border-radius:999px;
   padding:2px 8px;
 }
+.online-badge{display:inline-flex;flex-direction:column;align-items:center;align-self:center;justify-content:center;gap:2px;flex:0 0 auto;color:var(--gold);font:700 12.5px 'JetBrains Mono',monospace;line-height:1.1;white-space:nowrap}
+.online-badge svg{width:40px;height:36px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .empty-state{grid-column:1/-1;min-height:140px;display:flex;flex-direction:column;justify-content:center;gap:8px}
 .admin-page{max-width:1680px}
 .admin-heading{margin:24px 4px 20px}

@@ -307,9 +307,14 @@
 
 .home .info {
   min-width: 0;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+
+.home .online-badge {
+  margin-left: auto;
 }
 
 .home .info b {
