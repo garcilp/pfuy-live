@@ -362,14 +362,14 @@
           "wins": 0
         }
       ],
-      "events": 20,
+      "events": 22,
       "wins": 53,
       "losses": 60,
       "upsets": 6,
       "bestPlace": 13,
       "bestEvent": "4 times",
-      "avgPlace": 23.0,
-      "avgSeed": 29,
+      "avgPlace": 23.2,
+      "avgSeed": 28,
       "characters": [
         {
           "name": "Ken",
@@ -743,6 +743,15 @@
               "characterCounts": {
                 "Ken": 8
               }
+            },
+            {
+              "eventKey": "tournament/mashito-go-5/event/categoria-bits",
+              "event": "Mashito GO! #5 · Categoria BITS",
+              "date": "2026-07-18",
+              "seed": 2,
+              "place": 43,
+              "entrants": 12,
+              "characterCounts": {}
             }
           ]
         },
@@ -2862,6 +2871,50 @@
               "characterCounts": {
                 "Ken": 12
               }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #28 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-28/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2025-04-12",
+          "seed": 21,
+          "place": 17,
+          "entrants": 39,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-28/event/ultimate-singles",
+              "event": "Ultimate Smashdown #28 · Ultimate Singles",
+              "date": "2025-04-12",
+              "seed": 21,
+              "place": 17,
+              "entrants": 39,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #27 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2025-03-15",
+          "seed": 22,
+          "place": 33,
+          "entrants": 47,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-27/event/ultimate-singles",
+              "event": "Ultimate Smashdown #27 · Ultimate Singles",
+              "date": "2025-03-15",
+              "seed": 22,
+              "place": 33,
+              "entrants": 47,
+              "characterCounts": {}
             }
           ]
         },

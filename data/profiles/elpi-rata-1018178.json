@@ -24,13 +24,18 @@
       "name": "Rivals of Aether",
       "headToHead": [
         {
+          "opponent": "Muro",
+          "sets": 2,
+          "wins": 0
+        },
+        {
           "opponent": "Vodokex",
           "sets": 2,
           "wins": 1
         },
         {
-          "opponent": "ojo de oro",
-          "sets": 1,
+          "opponent": "Pritah",
+          "sets": 2,
           "wins": 0
         },
         {
@@ -39,7 +44,7 @@
           "wins": 0
         },
         {
-          "opponent": "Muro",
+          "opponent": "ojo de oro",
           "sets": 1,
           "wins": 0
         },
@@ -47,25 +52,20 @@
           "opponent": "Mitsu",
           "sets": 1,
           "wins": 0
-        },
-        {
-          "opponent": "Pritah",
-          "sets": 1,
-          "wins": 0
         }
       ],
       "events": 4,
       "wins": 1,
-      "losses": 6,
+      "losses": 8,
       "upsets": 0,
       "bestPlace": 5,
       "bestEvent": "Rivalito Charrua #1 · Singles",
-      "avgPlace": 11.7,
+      "avgPlace": 11.0,
       "avgSeed": 9,
       "characters": [
         {
           "name": "Shovel Knight",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [],
@@ -126,6 +126,39 @@
               "startedAt": 1729981289,
               "phaseOrder": 1,
               "roundOrder": -4
+            },
+            {
+              "setId": "81522279",
+              "eventKey": "tournament/crossup-24/event/rivals-singles",
+              "event": "CrossUp '24 · Rivals Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 1",
+              "opponent": "Muro",
+              "opponentPlayerId": "2672148",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 11,
+              "opponentSeed": 16,
+              "isUpset": false,
+              "startedAt": 1729981289,
+              "phaseOrder": 1,
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Shovel Knight",
+                  "opponentCharacter": "Wrastor",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Shovel Knight",
+                  "opponentCharacter": "Wrastor",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -238,6 +271,28 @@
           ]
         },
         {
+          "event": "Rivalito Charrua #6 · Singles",
+          "eventKey": "tournament/rivalito-charrua-6/event/singles",
+          "displaySeparately": false,
+          "date": "2024-05-11",
+          "seed": 8,
+          "place": 9,
+          "entrants": 10,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/rivalito-charrua-6/event/singles",
+              "event": "Rivalito Charrua #6 · Singles",
+              "date": "2024-05-11",
+              "seed": 8,
+              "place": 9,
+              "entrants": 10,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Rivalito Charrua #1 · Singles",
           "eventKey": "tournament/rivalito-charrua-1/event/singles",
           "date": "2023-02-19",
@@ -260,6 +315,59 @@
               "startedAt": 1676846682,
               "phaseOrder": 1,
               "roundOrder": 1
+            },
+            {
+              "setId": "57167035",
+              "eventKey": "tournament/rivalito-charrua-1/event/singles",
+              "event": "Rivalito Charrua #1 · Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 4,
+              "opponentSeed": 5,
+              "isUpset": false,
+              "startedAt": 1676846682,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Shovel Knight",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Shovel Knight",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Shovel Knight",
+                  "opponentCharacter": "Clairen",
+                  "outcome": "loss"
+                }
+              ],
+              "vods": [
+                {
+                  "videoId": "bbdmsmVMkxI",
+                  "url": "https://www.youtube.com/watch?v=bbdmsmVMkxI",
+                  "title": "Rivalito Charrúa #1 | Winners Quarters - Elpi Rata (Shovel Knight) vs Walachia (Clairen)",
+                  "thumbnail": "https://i.ytimg.com/vi/bbdmsmVMkxI/sddefault.jpg"
+                },
+                {
+                  "videoId": "-kqXjwFgbFQ",
+                  "url": "https://www.youtube.com/watch?v=-kqXjwFgbFQ",
+                  "title": "Rivalito Charrúa #1 | Winners Quarters - Belipe (Ranno, Absa) vs Mint (Olympia, Zetterburn, SK)",
+                  "thumbnail": "https://i.ytimg.com/vi/-kqXjwFgbFQ/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/rivalito-charrua-1/event/singles",
@@ -387,9 +495,9 @@
       "name": "Ultimate",
       "headToHead": [
         {
-          "opponent": "Rockletz",
-          "sets": 5,
-          "wins": 0
+          "opponent": "El Denis",
+          "sets": 6,
+          "wins": 2
         },
         {
           "opponent": "Sypha",
@@ -397,7 +505,17 @@
           "wins": 0
         },
         {
+          "opponent": "Rockletz",
+          "sets": 5,
+          "wins": 0
+        },
+        {
           "opponent": "Pato",
+          "sets": 4,
+          "wins": 2
+        },
+        {
+          "opponent": "Garox",
           "sets": 4,
           "wins": 2
         },
@@ -412,9 +530,9 @@
           "wins": 1
         },
         {
-          "opponent": "Shuichi",
+          "opponent": "Freakazoiid",
           "sets": 3,
-          "wins": 1
+          "wins": 3
         },
         {
           "opponent": "Gerix",
@@ -422,12 +540,12 @@
           "wins": 3
         },
         {
-          "opponent": "El Denis",
+          "opponent": "ZAPO",
           "sets": 3,
-          "wins": 1
+          "wins": 0
         },
         {
-          "opponent": "ZAPO",
+          "opponent": "Trim",
           "sets": 3,
           "wins": 0
         },
@@ -437,17 +555,12 @@
           "wins": 2
         },
         {
-          "opponent": "Trim",
+          "opponent": "Shuichi",
           "sets": 3,
-          "wins": 0
+          "wins": 1
         },
         {
-          "opponent": "Freakazoiid",
-          "sets": 3,
-          "wins": 3
-        },
-        {
-          "opponent": "Garox",
+          "opponent": "kalarse",
           "sets": 2,
           "wins": 1
         },
@@ -462,42 +575,17 @@
           "wins": 2
         },
         {
-          "opponent": "kalarse",
+          "opponent": "Casipeta",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Tintokill",
           "sets": 2,
           "wins": 1
         },
         {
-          "opponent": "Mitsu",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "DD",
-          "sets": 2,
-          "wins": 2
-        },
-        {
-          "opponent": "Poseidón",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "Alberti",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "Zoro",
-          "sets": 2,
-          "wins": 0
-        },
-        {
           "opponent": "Psycho",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "Aminas",
           "sets": 2,
           "wins": 0
         },
@@ -507,17 +595,22 @@
           "wins": 0
         },
         {
+          "opponent": "Yaniobi",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "Aminas",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Sigma",
+          "sets": 2,
+          "wins": 0
+        },
+        {
           "opponent": "Belipe",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "Darkflame",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "Basija",
           "sets": 2,
           "wins": 0
         },
@@ -532,32 +625,77 @@
           "wins": 0
         },
         {
-          "opponent": "Casipeta",
+          "opponent": "Poseidón",
           "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "Sigma",
+          "opponent": "Pos3idóN",
           "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "Yaniobi",
+          "opponent": "Basija",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Darkflame",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "DD",
           "sets": 2,
           "wins": 2
         },
         {
-          "opponent": "Tintokill",
+          "opponent": "Alberti",
           "sets": 2,
-          "wins": 1
+          "wins": 0
         },
         {
-          "opponent": "Ketcha",
+          "opponent": "Mitsu",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Zoro",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "L'Ongels",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "emesse",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Pritah",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Catwo",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Juanma269",
+          "opponent": "Krav",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "maay",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "CatJason",
           "sets": 1,
           "wins": 1
         },
@@ -572,182 +710,67 @@
           "wins": 1
         },
         {
-          "opponent": "CatJason",
+          "opponent": "Ketcha",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Juanma269",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "maay",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Krav",
+          "opponent": "SmashPants",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Catwo",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "BugSmasher",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "JClack",
+          "opponent": "FvckFalcon",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Raidou",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Drum",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Pritah",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Dingo",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "CASTIGADOR",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Andres",
+          "opponent": "droiderami23",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Boira",
+          "opponent": "Delong",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "iShtAR",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Hora",
+          "opponent": "elcusquerman",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "GAB",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "DIO",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Codigoseptimo",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "emesse",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "SFAN",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "X",
+          "opponent": "robin",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "L'Ongels",
+          "opponent": "oscarcheDDar",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Marroll",
+          "opponent": "RandomX",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "S",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "OmegaX",
+          "opponent": "BITS",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Zapkor",
+          "opponent": "ElChev@",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Omelette",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Martins",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Frog-CT",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Pety",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Fefo",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Ro",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Zetru",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "kusanagi",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "ENEMA",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "UDru",
+          "opponent": "ojo de oro",
           "sets": 1,
           "wins": 1
         },
@@ -767,64 +790,154 @@
           "wins": 0
         },
         {
-          "opponent": "ojo de oro",
+          "opponent": "UDru",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "ElChev@",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "BITS",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "RandomX",
+          "opponent": "kusanagi",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "robin",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "oscarcheDDar",
+          "opponent": "ENEMA",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Delong",
+          "opponent": "Frog-CT",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "elcusquerman",
+          "opponent": "Pety",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "droiderami23",
+          "opponent": "Ro",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "FvckFalcon",
+          "opponent": "Fefo",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "SmashPants",
+          "opponent": "Zetru",
           "sets": 1,
           "wins": 1
+        },
+        {
+          "opponent": "Martins",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Marroll",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Omelette",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Zapkor",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "OmegaX",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "S",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "X",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "SFAN",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "DIO",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Codigoseptimo",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Boira",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "GAB",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Andres",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Hora",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "iShtAR",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Drum",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "CASTIGADOR",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Dingo",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Raidou",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "JClack",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "BugSmasher",
+          "sets": 1,
+          "wins": 0
         }
       ],
-      "events": 22,
-      "wins": 49,
-      "losses": 89,
+      "events": 21,
+      "wins": 51,
+      "losses": 97,
       "upsets": 4,
       "bestPlace": 17,
       "bestEvent": "3 times",
@@ -1311,6 +1424,45 @@
               "roundOrder": 3
             },
             {
+              "setId": "67519044",
+              "eventKey": "tournament/ultimate-smashdown-18/event/ultimate-singles",
+              "event": "Ultimate Smashdown #18 · Ultimate Singles",
+              "phase": "Bracket B",
+              "round": "Winners Quarter-Final",
+              "opponent": "Garox",
+              "opponentPlayerId": "1359106",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1699718765,
+              "phaseOrder": 4,
+              "roundOrder": 3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Hero",
+                  "opponentCharacter": "Inkling",
+                  "outcome": "win"
+                }
+              ]
+            },
+            {
               "eventKey": "tournament/ultimate-smashdown-18/event/ultimate-singles",
               "event": "Ultimate Smashdown #18 · Ultimate Singles",
               "phase": "Bracket B",
@@ -1391,6 +1543,45 @@
               "startedAt": 1699723534,
               "phaseOrder": 4,
               "roundOrder": -9
+            },
+            {
+              "setId": "67519112",
+              "eventKey": "tournament/ultimate-smashdown-18/event/ultimate-singles",
+              "event": "Ultimate Smashdown #18 · Ultimate Singles",
+              "phase": "Bracket B",
+              "round": "Losers Semi-Final",
+              "opponent": "Garox",
+              "opponentPlayerId": "1359106",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1699723534,
+              "phaseOrder": 4,
+              "roundOrder": -9,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Hero",
+                  "opponentCharacter": "Pyra & Mythra",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1926,6 +2117,45 @@
               "startedAt": 1690057058,
               "phaseOrder": 3,
               "roundOrder": 4
+            },
+            {
+              "setId": "62973392",
+              "eventKey": "tournament/copa-del-rey-1/event/ultimate-singles",
+              "event": "Copa del Rey · Ultimate Singles",
+              "phase": "Bracket B",
+              "round": "Quarter-Final",
+              "opponent": "El Denis",
+              "opponentPlayerId": "2384482",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1690057058,
+              "phaseOrder": 3,
+              "roundOrder": 4,
+              "bracketType": "SINGLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Hero",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -2911,6 +3141,53 @@
               "roundOrder": 1
             },
             {
+              "setId": "50930841",
+              "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
+              "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Singles",
+              "phase": "Pools",
+              "round": "Round 1",
+              "opponent": "Pos3idóN",
+              "opponentPlayerId": "1360085",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 25,
+              "opponentSeed": 24,
+              "isUpset": false,
+              "startedAt": 1661022570,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Hero",
+                  "opponentCharacter": "Kirby",
+                  "outcome": "loss"
+                }
+              ],
+              "vods": [
+                {
+                  "videoId": "uNYlsHcFXrs",
+                  "url": "https://www.youtube.com/watch?v=uNYlsHcFXrs",
+                  "title": "Ultimate Smashdown #9 | Pools - Pos3idon (Kirby) vs Elpi Rata (Hero)",
+                  "thumbnail": "https://i.ytimg.com/vi/uNYlsHcFXrs/sddefault.jpg"
+                }
+              ]
+            },
+            {
               "eventKey": "tournament/ultimate-smashdown-9/event/ultimate-smashdown-9-singles",
               "event": "Ultimate Smashdown #9 · Ultimate Smashdown #9 - Singles",
               "phase": "Pools",
@@ -3409,6 +3686,47 @@
               "startedAt": 1655574739,
               "phaseOrder": 1,
               "roundOrder": 1
+            },
+            {
+              "setId": "48559017",
+              "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
+              "event": "Ultimate Smashdown #7 · Ultimate Smashdown #7 - Singles",
+              "phase": "Pools",
+              "round": "Round 1",
+              "opponent": "El Denis",
+              "opponentPlayerId": "2384482",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 26,
+              "opponentSeed": 35,
+              "isUpset": false,
+              "startedAt": 1655574739,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Hero",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Hero",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ],
+              "vods": [
+                {
+                  "videoId": "XsGOH49n5gU",
+                  "url": "https://www.youtube.com/watch?v=XsGOH49n5gU",
+                  "title": "Ultimate Smashdown #7 | Pools - El Denis (Bowser) vs. Elpi Rata (Hero)",
+                  "thumbnail": "https://i.ytimg.com/vi/XsGOH49n5gU/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-7/event/ultimate-smashdown-7-singles",
@@ -4591,6 +4909,26 @@
               "roundOrder": 5
             },
             {
+              "setId": "41709980",
+              "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
+              "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
+              "phase": "Pools ( eliminatorios )",
+              "round": "Round 5",
+              "opponent": "L'Ongels",
+              "opponentPlayerId": "1504677",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 34,
+              "opponentSeed": 31,
+              "isUpset": false,
+              "startedAt": 1635099837,
+              "phaseOrder": 1,
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
               "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
               "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
               "phase": "Pools ( eliminatorios )",
@@ -4902,6 +5240,26 @@
               "roundOrder": 8
             },
             {
+              "setId": "33702893",
+              "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
+              "event": "Ultimate Smashdown #3 · Singles",
+              "phase": "Fase 1: Pools",
+              "round": "Round 8",
+              "opponent": "Pos3idóN",
+              "opponentPlayerId": "1360085",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 30,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": 1606596865,
+              "phaseOrder": 1,
+              "roundOrder": 8,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
               "event": "Ultimate Smashdown #3 · Singles",
               "phase": "Fase 1: Pools",
@@ -4916,6 +5274,26 @@
               "startedAt": 1606597476,
               "phaseOrder": 1,
               "roundOrder": 9
+            },
+            {
+              "setId": "33702898",
+              "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
+              "event": "Ultimate Smashdown #3 · Singles",
+              "phase": "Fase 1: Pools",
+              "round": "Round 9",
+              "opponent": "El Denis",
+              "opponentPlayerId": "2384482",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 30,
+              "opponentSeed": 43,
+              "isUpset": false,
+              "startedAt": 1606597476,
+              "phaseOrder": 1,
+              "roundOrder": 9,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
@@ -5099,6 +5477,26 @@
               "startedAt": 1583005099,
               "phaseOrder": 2,
               "roundOrder": 1
+            },
+            {
+              "setId": "27035089",
+              "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+              "event": "Ultimate Smashdown #1 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "emesse",
+              "opponentPlayerId": "355770",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 42,
+              "opponentSeed": 21,
+              "isUpset": false,
+              "startedAt": 1583005099,
+              "phaseOrder": 2,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
@@ -5352,6 +5750,26 @@
               "startedAt": 1572114780,
               "phaseOrder": 1,
               "roundOrder": 3
+            },
+            {
+              "setId": "24220284",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #10 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 3",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 28,
+              "opponentSeed": 5,
+              "isUpset": false,
+              "startedAt": 1572114780,
+              "phaseOrder": 1,
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/ultimate-singles",

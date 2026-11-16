@@ -24,66 +24,16 @@
       "headToHead": [
         {
           "opponent": "El Denis",
-          "sets": 2,
-          "wins": 1
-        },
-        {
-          "opponent": "Berry",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Fronk",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "BugSmasher",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "TityMc-10",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Sol!d",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Zoro",
-          "sets": 1,
-          "wins": 0
+          "sets": 4,
+          "wins": 2
         },
         {
           "opponent": "kalarse",
-          "sets": 1,
+          "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "Pantufla",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "ENEMA",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "ZAPO",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Riku",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "RandomX",
+          "opponent": "Freakazoiid",
           "sets": 1,
           "wins": 0
         },
@@ -93,28 +43,78 @@
           "wins": 0
         },
         {
+          "opponent": "RandomX",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Sypha",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Freakazoiid",
+          "opponent": "ZAPO",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Pantufla",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Riku",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "ENEMA",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Fronk",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Zoro",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Berry",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Sol!d",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "TityMc-10",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "BugSmasher",
           "sets": 1,
           "wins": 0
         }
       ],
-      "events": 5,
-      "wins": 4,
-      "losses": 13,
-      "upsets": 2,
+      "events": 4,
+      "wins": 5,
+      "losses": 15,
+      "upsets": 3,
       "bestPlace": 25,
       "bestEvent": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
-      "avgPlace": 35.7,
-      "avgSeed": 45,
+      "avgPlace": 35.0,
+      "avgSeed": 42,
       "characters": [
         {
           "name": "King K. Rool",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [],
@@ -284,6 +284,28 @@
           ]
         },
         {
+          "event": "Mashito Cup",
+          "eventKey": "tournament/mashito-cup/event/mashito-cup",
+          "displaySeparately": false,
+          "date": "2021-12-12",
+          "seed": 31,
+          "place": 33,
+          "entrants": 38,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-cup/event/mashito-cup",
+              "event": "Mashito Cup",
+              "date": "2021-12-12",
+              "seed": 31,
+              "place": 33,
+              "entrants": 38,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
           "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
           "date": "2021-10-24",
@@ -308,6 +330,26 @@
               "roundOrder": 5
             },
             {
+              "setId": "41705476",
+              "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
+              "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
+              "phase": "Pools ( eliminatorios )",
+              "round": "Round 5",
+              "opponent": "kalarse",
+              "opponentPlayerId": "152484",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 41,
+              "opponentSeed": 24,
+              "isUpset": false,
+              "startedAt": 1635096374,
+              "phaseOrder": 1,
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
               "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
               "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
               "phase": "Pools ( eliminatorios )",
@@ -322,6 +364,26 @@
               "startedAt": 1635100560,
               "phaseOrder": 1,
               "roundOrder": 2
+            },
+            {
+              "setId": "41705467",
+              "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
+              "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
+              "phase": "Pools ( eliminatorios )",
+              "round": "Round 2",
+              "opponent": "El Denis",
+              "opponentPlayerId": "2384482",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 41,
+              "opponentSeed": 25,
+              "isUpset": true,
+              "startedAt": 1635100560,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
@@ -398,6 +460,26 @@
               "startedAt": 1635107231,
               "phaseOrder": 1,
               "roundOrder": -5
+            },
+            {
+              "setId": "41714430",
+              "eventKey": "tournament/torneo-rzesports-super-smash-bros-ultimate-cat-b-2/event/torneo-rzesports-ssbu-cat-b-2",
+              "event": "TORNEO RZESPORTS SUPER SMASH BROS ULTIMATE CAT B #2 · Torneo RZeSports SSBU CAT B #2",
+              "phase": "Categoria B",
+              "round": "Losers Round 2",
+              "opponent": "El Denis",
+              "opponentPlayerId": "2384482",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1635107231,
+              "phaseOrder": 1,
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",

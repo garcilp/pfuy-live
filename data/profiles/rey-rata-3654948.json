@@ -7,7 +7,7 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": "2023-10-14",
+    "activeSince": "2017-11-25",
     "startgg": "https://www.start.gg/user/eaf73e42",
     "startggPlayerId": "3654948",
     "aliases": [
@@ -30,17 +30,7 @@
           "wins": 0
         },
         {
-          "opponent": "Mingudai",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "francokiwi",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Smeag",
+          "opponent": "Celi",
           "sets": 1,
           "wins": 0
         },
@@ -50,7 +40,22 @@
           "wins": 0
         },
         {
-          "opponent": "Celi",
+          "opponent": "Smeag",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "francokiwi",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Mingudai",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Pencil",
           "sets": 1,
           "wins": 0
         },
@@ -60,19 +65,39 @@
           "wins": 1
         },
         {
-          "opponent": "Pencil",
+          "opponent": "Pladson",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Pritah",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Cubax",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Cody",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "ElAbuelo",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 6,
       "wins": 1,
-      "losses": 8,
+      "losses": 13,
       "upsets": 0,
       "bestPlace": 9,
       "bestEvent": "4 times",
-      "avgPlace": 9,
-      "avgSeed": 11,
+      "avgPlace": 11.0,
+      "avgSeed": 12,
       "characters": [
         {
           "name": "Ganondorf",
@@ -322,6 +347,28 @@
           ]
         },
         {
+          "event": "Montevideo Melee Monthly 2024 #10 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2024-10/event/melee-singles",
+          "displaySeparately": false,
+          "date": "2024-11-09",
+          "seed": 16,
+          "place": 17,
+          "entrants": 17,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2024-10/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2024 #10 · Melee Singles",
+              "date": "2024-11-09",
+              "seed": 16,
+              "place": 17,
+              "entrants": 17,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Montevideo Melee Monthly 2024 #7 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2024-7/event/melee-singles",
           "date": "2024-08-03",
@@ -510,6 +557,129 @@
               "characterCounts": {}
             }
           ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
+          "displaySeparately": false,
+          "date": "2017-11-25",
+          "seed": 9,
+          "place": 13,
+          "entrants": 16,
+          "sets": [
+            {
+              "setId": "11284406",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
+              "phase": "Round robin",
+              "round": "Round 3",
+              "opponent": "Pladson",
+              "opponentPlayerId": "330339",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 5,
+              "opponentSeed": 4,
+              "isUpset": false,
+              "startedAt": 1511636330,
+              "phaseOrder": 2,
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
+              "setId": "11284405",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
+              "phase": "Round robin",
+              "round": "Round 2",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 5,
+              "opponentSeed": 13,
+              "isUpset": false,
+              "startedAt": 1511637095,
+              "phaseOrder": 2,
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
+              "setId": "11284403",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
+              "phase": "Round robin",
+              "round": "Round 1",
+              "opponent": "Cubax",
+              "opponentPlayerId": "264064",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 5,
+              "opponentSeed": 12,
+              "isUpset": false,
+              "startedAt": 1511637772,
+              "phaseOrder": 2,
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
+              "setId": "11286521",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Cody",
+              "opponentPlayerId": "4732812",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 7,
+              "isUpset": false,
+              "startedAt": 1511641224,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            },
+            {
+              "setId": "11286553",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 1",
+              "opponent": "ElAbuelo",
+              "opponentPlayerId": "359242",
+              "score": "2–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 15,
+              "isUpset": false,
+              "startedAt": 1511641955,
+              "phaseOrder": 1,
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
+              "date": "2017-11-25",
+              "seed": 9,
+              "place": 13,
+              "entrants": 16,
+              "characterCounts": {}
+            }
+          ]
         }
       ]
     },
@@ -519,7 +689,7 @@
       "name": "Project+",
       "headToHead": [
         {
-          "opponent": "Zeeka",
+          "opponent": "Catwo",
           "sets": 1,
           "wins": 0
         },
@@ -529,7 +699,7 @@
           "wins": 1
         },
         {
-          "opponent": "Catwo",
+          "opponent": "Zeeka",
           "sets": 1,
           "wins": 0
         }
@@ -540,7 +710,7 @@
       "upsets": 1,
       "bestPlace": 9,
       "bestEvent": "Montevideo Melee Monthly 2026 #3 · Project +",
-      "avgPlace": 9,
+      "avgPlace": 9.0,
       "avgSeed": 21,
       "characters": [
         {
@@ -727,6 +897,28 @@
               }
             }
           ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2017 #11 · PM Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/pm-singles",
+          "displaySeparately": false,
+          "date": null,
+          "seed": null,
+          "place": null,
+          "entrants": 16,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/pm-singles",
+              "event": "Montevideo Melee Monthly 2017 #11 · PM Singles",
+              "date": null,
+              "seed": null,
+              "place": null,
+              "entrants": 16,
+              "characterCounts": {}
+            }
+          ]
         }
       ]
     },
@@ -736,22 +928,17 @@
       "name": "Rivals 2",
       "headToHead": [
         {
-          "opponent": "Gerix",
-          "sets": 3,
-          "wins": 3
-        },
-        {
           "opponent": "Mitsu",
           "sets": 3,
           "wins": 0
         },
         {
-          "opponent": "Deo",
-          "sets": 2,
-          "wins": 1
+          "opponent": "Gerix",
+          "sets": 3,
+          "wins": 3
         },
         {
-          "opponent": "RandomX",
+          "opponent": "Catwo",
           "sets": 2,
           "wins": 0
         },
@@ -766,39 +953,29 @@
           "wins": 1
         },
         {
-          "opponent": "Catwo",
+          "opponent": "Deo",
+          "sets": 2,
+          "wins": 1
+        },
+        {
+          "opponent": "RandomX",
           "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "Casipeta",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Dieguix2004",
-          "sets": 1,
-          "wins": 1
-        },
-        {
           "opponent": "Pritah",
-          "sets": 1,
-          "wins": 1
+          "sets": 2,
+          "wins": 2
         },
         {
-          "opponent": "Vodokex",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "francokiwi",
-          "sets": 1,
+          "opponent": "Casipeta",
+          "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "ojo de oro",
+          "opponent": "Freakazoiid",
           "sets": 1,
-          "wins": 0
+          "wins": 1
         },
         {
           "opponent": "Nario",
@@ -806,19 +983,34 @@
           "wins": 1
         },
         {
-          "opponent": "Freakazoiid",
+          "opponent": "ojo de oro",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "francokiwi",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Vodokex",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Dieguix2004",
           "sets": 1,
           "wins": 1
         }
       ],
       "events": 6,
-      "wins": 10,
-      "losses": 14,
+      "wins": 11,
+      "losses": 15,
       "upsets": 0,
       "bestPlace": 4,
       "bestEvent": "Rivalito Charrua #10 · Rivals 2 - Singles",
-      "avgPlace": 6.8,
-      "avgSeed": 7,
+      "avgPlace": 7.2,
+      "avgSeed": 6,
       "characters": [
         {
           "name": "Fleet",
@@ -1133,6 +1325,28 @@
                 "Fleet": 9,
                 "Maypul": 8
               }
+            }
+          ]
+        },
+        {
+          "event": "Rivalito Charrua #13 · Singles (Pools + Bracket)",
+          "eventKey": "tournament/rivalito-charrua-13/event/singles-pools-bracket",
+          "displaySeparately": false,
+          "date": "2025-07-27",
+          "seed": 5,
+          "place": 9,
+          "entrants": 12,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/rivalito-charrua-13/event/singles-pools-bracket",
+              "event": "Rivalito Charrua #13 · Singles (Pools + Bracket)",
+              "date": "2025-07-27",
+              "seed": 5,
+              "place": 9,
+              "entrants": 12,
+              "characterCounts": {}
             }
           ]
         },
@@ -1601,6 +1815,53 @@
               "roundOrder": -6
             },
             {
+              "setId": "86678153",
+              "eventKey": "tournament/rivalito-charrua-10/event/rivals-2-singles",
+              "event": "Rivalito Charrua #10 · Rivals 2 - Singles",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 5,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": 1742152832,
+              "phaseOrder": 1,
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Fleet",
+                  "opponentCharacter": "Forsburn",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Fleet",
+                  "opponentCharacter": "Forsburn",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Fleet",
+                  "opponentCharacter": "Forsburn",
+                  "outcome": "win"
+                }
+              ],
+              "vods": [
+                {
+                  "videoId": "riiZHybxsqc",
+                  "url": "https://www.youtube.com/watch?v=riiZHybxsqc",
+                  "title": "Rivalito Charrúa #10 | RoA2 | Losers Quarters - Rey Rata (Fleet, Maypul) vs Pritah (Forsburn)",
+                  "thumbnail": "https://i.ytimg.com/vi/riiZHybxsqc/sddefault.jpg"
+                }
+              ]
+            },
+            {
               "eventKey": "tournament/rivalito-charrua-10/event/rivals-2-singles",
               "event": "Rivalito Charrua #10 · Rivals 2 - Singles",
               "phase": "Bracket",
@@ -1818,6 +2079,39 @@
               "startedAt": 1732390016,
               "phaseOrder": 1,
               "roundOrder": -6
+            },
+            {
+              "setId": "82657788",
+              "eventKey": "tournament/rivalote-primavera-24/event/rivals-2-singles",
+              "event": "Rivalote Primavera '24 · Rivals 2 - Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "Casipeta",
+              "opponentPlayerId": "1244662",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 10,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1732390016,
+              "phaseOrder": 1,
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Fleet",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Fleet",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1865,14 +2159,14 @@
           "wins": 3
         },
         {
+          "opponent": "Pritah",
+          "sets": 8,
+          "wins": 4
+        },
+        {
           "opponent": "Vodokex",
           "sets": 5,
           "wins": 5
-        },
-        {
-          "opponent": "Pritah",
-          "sets": 4,
-          "wins": 2
         },
         {
           "opponent": "Deo",
@@ -1885,24 +2179,14 @@
           "wins": 3
         },
         {
-          "opponent": "Marroll",
-          "sets": 3,
-          "wins": 0
-        },
-        {
           "opponent": "Gerix",
           "sets": 3,
           "wins": 3
         },
         {
-          "opponent": "Lucho",
-          "sets": 2,
-          "wins": 2
-        },
-        {
-          "opponent": "BITS",
-          "sets": 2,
-          "wins": 2
+          "opponent": "Marroll",
+          "sets": 3,
+          "wins": 0
         },
         {
           "opponent": "Azrad",
@@ -1910,14 +2194,24 @@
           "wins": 2
         },
         {
-          "opponent": "Mitsu",
-          "sets": 1,
-          "wins": 1
+          "opponent": "CiDE",
+          "sets": 2,
+          "wins": 0
         },
         {
-          "opponent": "CiDE",
+          "opponent": "BITS",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "Lucho",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "robin",
           "sets": 1,
-          "wins": 0
+          "wins": 1
         },
         {
           "opponent": "Nario",
@@ -1925,7 +2219,7 @@
           "wins": 1
         },
         {
-          "opponent": "robin",
+          "opponent": "Mitsu",
           "sets": 1,
           "wins": 1
         },
@@ -1936,8 +2230,8 @@
         }
       ],
       "events": 15,
-      "wins": 36,
-      "losses": 33,
+      "wins": 38,
+      "losses": 36,
       "upsets": 8,
       "bestPlace": 2,
       "bestEvent": "2 times",
@@ -1953,7 +2247,7 @@
           "usage": 10.7
         },
         {
-          "name": "Mollo",
+          "name": "Ranno",
           "usage": 10.2
         },
         {
@@ -2706,6 +3000,53 @@
               "startedAt": 1746395083,
               "phaseOrder": 1,
               "roundOrder": -6
+            },
+            {
+              "setId": "88663947",
+              "eventKey": "tournament/rivalote-de-oto-o-25/event/rivals-singles",
+              "event": "Rivalote de Otoño '25 · Rivals - Singles",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 4,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": 1746395083,
+              "phaseOrder": 1,
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Ranno",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                }
+              ],
+              "vods": [
+                {
+                  "videoId": "Eg4s7l4YeH8",
+                  "url": "https://www.youtube.com/watch?v=Eg4s7l4YeH8",
+                  "title": "Rivalote de Otoño '25 | RoA1 | Losers Quarters - Rey Rata (Ranno, Maypul) vs Pritah (Ranno)",
+                  "thumbnail": "https://i.ytimg.com/vi/Eg4s7l4YeH8/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -3303,6 +3644,45 @@
               "roundOrder": -7
             },
             {
+              "setId": "82673079",
+              "eventKey": "tournament/rivalote-primavera-24/event/rivals-singles",
+              "event": "Rivalote Primavera '24 · Rivals - Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 4",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 6,
+              "opponentSeed": 7,
+              "isUpset": false,
+              "startedAt": 1732400190,
+              "phaseOrder": 1,
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                }
+              ]
+            },
+            {
               "eventKey": "tournament/rivalote-primavera-24/event/rivals-singles",
               "event": "Rivalote Primavera '24 · Rivals - Singles",
               "phase": "Bracket",
@@ -3458,6 +3838,45 @@
               "startedAt": 1729983019,
               "phaseOrder": 1,
               "roundOrder": -6
+            },
+            {
+              "setId": "81522291",
+              "eventKey": "tournament/crossup-24/event/rivals-singles",
+              "event": "CrossUp '24 · Rivals Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "CiDE",
+              "opponentPlayerId": "2494514",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 5,
+              "opponentSeed": 14,
+              "isUpset": false,
+              "startedAt": 1729983019,
+              "phaseOrder": 1,
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Ori",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Ori",
+                  "opponentCharacter": "Maypul",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -3993,6 +4412,47 @@
               "startedAt": 1718485448,
               "phaseOrder": 1,
               "roundOrder": 2
+            },
+            {
+              "setId": "75992864",
+              "eventKey": "tournament/rivalito-charrua-7/event/singles",
+              "event": "Rivalito Charrua #7 · Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 3,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": 1718485448,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                }
+              ],
+              "vods": [
+                {
+                  "videoId": "NxogmOD9eVk",
+                  "url": "https://www.youtube.com/watch?v=NxogmOD9eVk",
+                  "title": "Rivalito Charrúa #7 | Singles | Winners Quarters - Rey Rata (Maypul) vs Pritah (Ranno)",
+                  "thumbnail": "https://i.ytimg.com/vi/NxogmOD9eVk/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/rivalito-charrua-7/event/singles",
@@ -5107,6 +5567,53 @@
               "startedAt": 1697326040,
               "phaseOrder": 1,
               "roundOrder": -8
+            },
+            {
+              "setId": "66411221",
+              "eventKey": "tournament/crossup-23/event/rivals-singles",
+              "event": "CrossUp '23 · Rivals Singles",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 20,
+              "opponentSeed": 3,
+              "isUpset": false,
+              "startedAt": 1697326040,
+              "phaseOrder": 1,
+              "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                },
+                {
+                  "game": 3,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "loss"
+                }
+              ],
+              "vods": [
+                {
+                  "videoId": "ylJncsXG-Fs",
+                  "url": "https://www.youtube.com/watch?v=ylJncsXG-Fs",
+                  "title": "CrossUp '23 | Singles | Losers Quarters - Walachia (Ranno) vs Rey Rata (Maypul)",
+                  "thumbnail": "https://i.ytimg.com/vi/ylJncsXG-Fs/sddefault.jpg"
+                }
+              ]
             }
           ],
           "characterCounts": {

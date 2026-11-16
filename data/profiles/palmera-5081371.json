@@ -28,11 +28,21 @@
         },
         {
           "opponent": "El Denis",
-          "sets": 1,
-          "wins": 1
+          "sets": 2,
+          "wins": 2
         },
         {
-          "opponent": "#Washu",
+          "opponent": "Lazerth",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Salieri",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "TowasPato",
           "sets": 1,
           "wins": 1
         },
@@ -42,37 +52,49 @@
           "wins": 1
         },
         {
-          "opponent": "TowasPato",
+          "opponent": "#Washu",
           "sets": 1,
           "wins": 1
-        },
-        {
-          "opponent": "Salieri",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Lazerth",
-          "sets": 1,
-          "wins": 0
         }
       ],
-      "events": 1,
-      "wins": 4,
+      "events": 2,
+      "wins": 5,
       "losses": 4,
       "upsets": 0,
-      "bestPlace": 33,
-      "bestEvent": "Ultimate Smashdown #35 · Ultimate Singles",
-      "avgPlace": 33,
-      "avgSeed": 57,
+      "bestPlace": 25,
+      "bestEvent": "Mashito? GO · Smash Ultimate singles",
+      "avgPlace": 29.0,
+      "avgSeed": 40,
       "characters": [
         {
           "name": "Inkling",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito? GO · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-02-28",
+          "seed": 22,
+          "place": 25,
+          "entrants": 36,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go/event/smash-ultimate-singles",
+              "event": "Mashito? GO · Smash Ultimate singles",
+              "date": "2026-02-28",
+              "seed": 22,
+              "place": 25,
+              "entrants": 36,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Ultimate Smashdown #35 · Ultimate Singles",
           "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
@@ -306,6 +328,45 @@
               "startedAt": 1763244287,
               "phaseOrder": 7,
               "roundOrder": -8
+            },
+            {
+              "setId": "96329772",
+              "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",
+              "event": "Ultimate Smashdown #35 · Ultimate Singles",
+              "phase": "Bracket B",
+              "round": "Losers Quarter-Final",
+              "opponent": "El Denis",
+              "opponentPlayerId": "2384482",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1763244287,
+              "phaseOrder": 7,
+              "roundOrder": -8,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Inkling",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Inkling",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Inkling",
+                  "opponentCharacter": "Bowser",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-35/event/ultimate-singles",

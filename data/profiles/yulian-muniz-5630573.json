@@ -7,12 +7,53 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": null,
+    "activeSince": "2026-10-17",
     "startgg": "",
     "startggPlayerId": "5630573",
     "aliases": [
       "Yulian Muniz"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 25,
+      "bestEvent": "Mashito? GO! #8 · Smash Ultimate singles",
+      "avgPlace": 25.0,
+      "avgSeed": 30,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Mashito? GO! #8 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-8/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-10-17",
+          "seed": 30,
+          "place": 25,
+          "entrants": 31,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-8/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #8 · Smash Ultimate singles",
+              "date": "2026-10-17",
+              "seed": 30,
+              "place": 25,
+              "entrants": 31,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

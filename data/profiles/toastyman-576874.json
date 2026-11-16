@@ -21,14 +21,9 @@
       "name": "Melee",
       "headToHead": [
         {
-          "opponent": "Mitsu",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "Casipeta",
-          "sets": 1,
-          "wins": 1
+          "sets": 2,
+          "wins": 2
         },
         {
           "opponent": "Transformación",
@@ -36,7 +31,7 @@
           "wins": 0
         },
         {
-          "opponent": "maay",
+          "opponent": "Mitsu",
           "sets": 1,
           "wins": 0
         },
@@ -44,15 +39,20 @@
           "opponent": "DIO",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "maay",
+          "sets": 1,
+          "wins": 0
         }
       ],
       "events": 1,
-      "wins": 1,
+      "wins": 2,
       "losses": 4,
-      "upsets": 1,
+      "upsets": 2,
       "bestPlace": 17,
       "bestEvent": "Montevideo Melee Monthly 2019 #11 · Melee Singles",
-      "avgPlace": 17,
+      "avgPlace": 17.0,
       "avgSeed": 22,
       "characters": [],
       "notableWins": [],
@@ -138,6 +138,26 @@
               "roundOrder": 3
             },
             {
+              "setId": "24984320",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Melee Singles",
+              "phase": "Melee Round Robin",
+              "round": "Round 3",
+              "opponent": "Casipeta",
+              "opponentPlayerId": "1244662",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 22,
+              "opponentSeed": 12,
+              "isUpset": true,
+              "startedAt": 1575150115,
+              "phaseOrder": 1,
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
               "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/melee-singles",
               "event": "Montevideo Melee Monthly 2019 #11 · Melee Singles",
               "phase": "Melee Singles Bracket",
@@ -183,19 +203,49 @@
           "wins": 1
         },
         {
+          "opponent": "Raidou",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "BLAZAM",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Pritah",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Pladson",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "RandomX",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "L'Ongels",
+          "sets": 1,
+          "wins": 1
+        },
+        {
           "opponent": "MAXTER",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Pritah",
+          "opponent": "Smeag",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Pladson",
+          "opponent": "francokiwi",
           "sets": 1,
-          "wins": 0
+          "wins": 1
         },
         {
           "opponent": "Dutra",
@@ -206,45 +256,15 @@
           "opponent": "Docabo",
           "sets": 1,
           "wins": 1
-        },
-        {
-          "opponent": "francokiwi",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Smeag",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "L'Ongels",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "RandomX",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "BLAZAM",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Raidou",
-          "sets": 1,
-          "wins": 0
         }
       ],
       "events": 2,
       "wins": 5,
-      "losses": 8,
+      "losses": 12,
       "upsets": 1,
       "bestPlace": 25,
       "bestEvent": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
-      "avgPlace": 29,
+      "avgPlace": 29.0,
       "avgSeed": 47,
       "characters": [],
       "notableWins": [],
@@ -330,6 +350,26 @@
               "roundOrder": 1
             },
             {
+              "setId": "27035077",
+              "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+              "event": "Ultimate Smashdown #1 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Raidou",
+              "opponentPlayerId": "1017989",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 17,
+              "opponentSeed": 46,
+              "isUpset": false,
+              "startedAt": 1583005254,
+              "phaseOrder": 2,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            },
+            {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
               "event": "Ultimate Smashdown #1 · Ultimate Singles",
               "phase": "Bracket",
@@ -343,6 +383,26 @@
               "startedAt": 1583008163,
               "phaseOrder": 2,
               "roundOrder": -4
+            },
+            {
+              "setId": "27035212",
+              "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+              "event": "Ultimate Smashdown #1 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "BLAZAM",
+              "opponentPlayerId": "1000149",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 17,
+              "opponentSeed": 27,
+              "isUpset": false,
+              "startedAt": 1583008163,
+              "phaseOrder": 2,
+              "roundOrder": -4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -380,6 +440,26 @@
               "startedAt": 1575136038,
               "phaseOrder": 1,
               "roundOrder": 3
+            },
+            {
+              "setId": "24980997",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 3",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 46,
+              "opponentSeed": 3,
+              "isUpset": false,
+              "startedAt": 1575136038,
+              "phaseOrder": 1,
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
@@ -525,6 +605,26 @@
               "startedAt": 1575152083,
               "phaseOrder": 2,
               "roundOrder": -5
+            },
+            {
+              "setId": "24992236",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "Pladson",
+              "opponentPlayerId": "330339",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 27,
+              "opponentSeed": 24,
+              "isUpset": false,
+              "startedAt": 1575152083,
+              "phaseOrder": 2,
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

@@ -26,36 +26,66 @@
           "wins": 0
         },
         {
+          "opponent": "HairybalD",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "francokiwi",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "kalarse",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Pladson",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "HairybalD",
+          "opponent": "BugSmasher",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Rockletz",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "SFAN",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "ENEMA",
           "sets": 1,
           "wins": 0
         }
       ],
-      "events": 4,
+      "events": 5,
       "wins": 0,
-      "losses": 4,
+      "losses": 10,
       "upsets": 0,
       "bestPlace": 9,
       "bestEvent": "2 times",
-      "avgPlace": 9,
-      "avgSeed": 10,
+      "avgPlace": 14.6,
+      "avgSeed": 17,
       "characters": [
         {
           "name": "Marth",
-          "usage": 66.7
+          "usage": 46.7
         },
         {
           "name": "Link",
-          "usage": 22.2
+          "usage": 46.7
         },
         {
           "name": "Young Link",
-          "usage": 11.1
+          "usage": 6.7
         }
       ],
       "notableWins": [],
@@ -165,6 +195,113 @@
           ]
         },
         {
+          "event": "Montevideo Melee Monthly 2024 #8 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
+          "displaySeparately": false,
+          "date": "2024-09-07",
+          "seed": 13,
+          "place": 13,
+          "entrants": 14,
+          "sets": [
+            {
+              "setId": "79413392",
+              "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2024 #8 · Melee Singles",
+              "phase": "Melee Singles",
+              "round": "Winners Round 1",
+              "opponent": "francokiwi",
+              "opponentPlayerId": "1154899",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 13,
+              "opponentSeed": 4,
+              "isUpset": false,
+              "startedAt": 1725733135,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Marth",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Link",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Link",
+                  "opponentCharacter": "Zelda",
+                  "outcome": "loss"
+                }
+              ]
+            },
+            {
+              "setId": "79413424",
+              "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2024 #8 · Melee Singles",
+              "phase": "Melee Singles",
+              "round": "Losers Round 1",
+              "opponent": "kalarse",
+              "opponentPlayerId": "152484",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 13,
+              "opponentSeed": 12,
+              "isUpset": false,
+              "startedAt": 1725736075,
+              "phaseOrder": 1,
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Link",
+                  "opponentCharacter": "Marth",
+                  "outcome": "loss"
+                }
+              ]
+            }
+          ],
+          "characterCounts": {
+            "Link": 5,
+            "Marth": 1
+          },
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2024-8/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2024 #8 · Melee Singles",
+              "date": "2024-09-07",
+              "seed": 13,
+              "place": 13,
+              "entrants": 14,
+              "characterCounts": {
+                "Link": 5,
+                "Marth": 1
+              }
+            }
+          ]
+        },
+        {
           "event": "Montevideo Melee Monthly 2024 #3 · Melee Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2024-3/event/melee-singles",
           "date": "2024-04-06",
@@ -250,6 +387,131 @@
               }
             }
           ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
+          "displaySeparately": false,
+          "date": "2019-10-26",
+          "seed": 24,
+          "place": 17,
+          "entrants": 24,
+          "sets": [
+            {
+              "setId": "24213112",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
+              "phase": "Melee Round Robin",
+              "round": "Round 2",
+              "opponent": "BugSmasher",
+              "opponentPlayerId": "328352",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 24,
+              "opponentSeed": 8,
+              "isUpset": false,
+              "startedAt": 1572107819,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
+              "setId": "24213111",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
+              "phase": "Melee Round Robin",
+              "round": "Round 1",
+              "opponent": "Rockletz",
+              "opponentPlayerId": "958669",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 24,
+              "opponentSeed": 16,
+              "isUpset": false,
+              "startedAt": 1572107835,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
+              "setId": "24224152",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
+              "phase": "Melee Singles Bracket",
+              "round": "Winners Round 1",
+              "opponent": "SFAN",
+              "opponentPlayerId": "1385949",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 24,
+              "opponentSeed": 11,
+              "isUpset": false,
+              "startedAt": 1572117103,
+              "phaseOrder": 2,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            },
+            {
+              "setId": "24224286",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
+              "phase": "Melee Singles Bracket",
+              "round": "Losers Round 1",
+              "opponent": "ENEMA",
+              "opponentPlayerId": "1244528",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 24,
+              "opponentSeed": 12,
+              "isUpset": false,
+              "startedAt": 1572120655,
+              "phaseOrder": 2,
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
+              "date": "2019-10-26",
+              "seed": 24,
+              "place": 17,
+              "entrants": 24,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2019 #9 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
+          "displaySeparately": false,
+          "date": "2019-09-28",
+          "seed": 27,
+          "place": 25,
+          "entrants": 32,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #9 · Melee Singles",
+              "date": "2019-09-28",
+              "seed": 27,
+              "place": 25,
+              "entrants": 32,
+              "characterCounts": {}
+            }
+          ]
         }
       ]
     },
@@ -259,7 +521,32 @@
       "name": "Project+",
       "headToHead": [
         {
-          "opponent": "kalarse",
+          "opponent": "byfriend",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "francokiwi",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Cody",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "EmilioLoco28",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pencil",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pladson",
           "sets": 1,
           "wins": 0
         },
@@ -269,32 +556,7 @@
           "wins": 0
         },
         {
-          "opponent": "Pladson",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Pencil",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "EmilioLoco28",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Cody",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "byfriend",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "francokiwi",
+          "opponent": "kalarse",
           "sets": 1,
           "wins": 0
         }
@@ -305,12 +567,12 @@
       "upsets": 2,
       "bestPlace": 9,
       "bestEvent": "3 times",
-      "avgPlace": 9,
-      "avgSeed": 14,
+      "avgPlace": 11.0,
+      "avgSeed": 12,
       "characters": [
         {
           "name": "Link",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [],
@@ -646,6 +908,28 @@
           ]
         },
         {
+          "event": "Montevideo Melee Monthly 2025 #10 · Project +",
+          "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/project",
+          "displaySeparately": false,
+          "date": "2025-11-08",
+          "seed": 9,
+          "place": 17,
+          "entrants": 20,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2025-10-1/event/project",
+              "event": "Montevideo Melee Monthly 2025 #10 · Project +",
+              "date": "2025-11-08",
+              "seed": 9,
+              "place": 17,
+              "entrants": 20,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "Montevideo Melee Monthly 2025 #5 · Project +",
           "eventKey": "tournament/montevideo-melee-monthly-2025-5/event/project",
           "date": "2025-06-07",
@@ -758,21 +1042,36 @@
       "headToHead": [
         {
           "opponent": "Aminas",
-          "sets": 1,
+          "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "kalarse",
+          "opponent": "Cremongólico",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Cerdo",
+          "opponent": "Fraps",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Hora",
+          "opponent": "Dingo",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "maay",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "SrPaz",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Pritah",
           "sets": 1,
           "wins": 0
         },
@@ -782,7 +1081,7 @@
           "wins": 0
         },
         {
-          "opponent": "SFAN",
+          "opponent": "Hora",
           "sets": 1,
           "wins": 0
         },
@@ -792,27 +1091,218 @@
           "wins": 0
         },
         {
-          "opponent": "Pritah",
+          "opponent": "SFAN",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Cerdo",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "kalarse",
+          "sets": 1,
+          "wins": 1
         }
       ],
-      "events": 3,
-      "wins": 1,
-      "losses": 7,
-      "upsets": 1,
+      "events": 4,
+      "wins": 2,
+      "losses": 12,
+      "upsets": 2,
       "bestPlace": 13,
       "bestEvent": "Montevideo Melee Monthly 2019 #6 · Ultimate Singles",
-      "avgPlace": 31,
-      "avgSeed": 41,
+      "avgPlace": 38.0,
+      "avgSeed": 46,
       "characters": [
         {
           "name": "Young Link",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Ultimate Smashdown #5 · Singles",
+          "eventKey": "tournament/ultimate-smashdown-5/event/singles",
+          "displaySeparately": false,
+          "date": "2022-04-23",
+          "seed": 45,
+          "place": 41,
+          "entrants": 53,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-5/event/singles",
+              "event": "Ultimate Smashdown #5 · Singles",
+              "date": "2022-04-23",
+              "seed": 45,
+              "place": 41,
+              "entrants": 53,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2019-11-30",
+          "seed": 59,
+          "place": 49,
+          "entrants": 60,
+          "sets": [
+            {
+              "setId": "24984641",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 5",
+              "opponent": "Cremongólico",
+              "opponentPlayerId": "1448953",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 59,
+              "opponentSeed": 38,
+              "isUpset": true,
+              "startedAt": 1575139235,
+              "phaseOrder": 1,
+              "roundOrder": 5,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
+              "vods": [
+                {
+                  "videoId": "MWiXwMY4Obc",
+                  "url": "https://www.youtube.com/watch?v=MWiXwMY4Obc",
+                  "title": "MMM #11 | Pools - Lucky78 (Chrom) vs. Cremongo (Ganondorf) | Ultimate Singles",
+                  "thumbnail": "https://i.ytimg.com/vi/MWiXwMY4Obc/sddefault.jpg"
+                }
+              ]
+            },
+            {
+              "setId": "24984634",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 2",
+              "opponent": "Aminas",
+              "opponentPlayerId": "1000031",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 59,
+              "opponentSeed": 11,
+              "isUpset": false,
+              "startedAt": 1575141631,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
+              "setId": "24984637",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 3",
+              "opponent": "Fraps",
+              "opponentPlayerId": "809744",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 59,
+              "opponentSeed": 35,
+              "isUpset": false,
+              "startedAt": 1575141648,
+              "phaseOrder": 1,
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
+              "vods": [
+                {
+                  "videoId": "KUS8kN4xrtU",
+                  "url": "https://www.youtube.com/watch?v=KUS8kN4xrtU",
+                  "title": "MMM #11 | Pools - Fraps (Luigi) vs Lucky78 (Chrom) | Ultimate Singles",
+                  "thumbnail": "https://i.ytimg.com/vi/KUS8kN4xrtU/sddefault.jpg"
+                }
+              ]
+            },
+            {
+              "setId": "24984632",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 1",
+              "opponent": "Dingo",
+              "opponentPlayerId": "1001559",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 59,
+              "opponentSeed": 14,
+              "isUpset": false,
+              "startedAt": 1575142684,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
+              "setId": "24992078",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "maay",
+              "opponentPlayerId": "1495478",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 38,
+              "opponentSeed": 28,
+              "isUpset": false,
+              "startedAt": 1575145660,
+              "phaseOrder": 2,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            },
+            {
+              "setId": "24992204",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 1",
+              "opponent": "SrPaz",
+              "opponentPlayerId": "895125",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 38,
+              "opponentSeed": 29,
+              "isUpset": false,
+              "startedAt": 1575147763,
+              "phaseOrder": 2,
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2019-11/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #11 · Ultimate Singles",
+              "date": "2019-11-30",
+              "seed": 59,
+              "place": 49,
+              "entrants": 60,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Montevideo Melee Monthly 2019 #9 · Ultimate Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",

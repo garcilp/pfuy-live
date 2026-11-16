@@ -3465,13 +3465,13 @@
           "wins": 1
         }
       ],
-      "events": 1,
+      "events": 3,
       "wins": 2,
       "losses": 2,
       "upsets": 0,
       "bestPlace": 7,
       "bestEvent": "Montevideo Melee Monthly 2019 #3 · PM Singles",
-      "avgPlace": 7.0,
+      "avgPlace": 8.0,
       "avgSeed": 8,
       "characters": [
         {
@@ -3649,6 +3649,50 @@
               "characterCounts": {
                 "Squirtle": 10
               }
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2018 #8 · PM Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/pm-singles",
+          "displaySeparately": false,
+          "date": "2018-09-29",
+          "seed": 9,
+          "place": 9,
+          "entrants": 12,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2018-8/event/pm-singles",
+              "event": "Montevideo Melee Monthly 2018 #8 · PM Singles",
+              "date": "2018-09-29",
+              "seed": 9,
+              "place": 9,
+              "entrants": 12,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2018 #2 · PM Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/pm-singles",
+          "displaySeparately": false,
+          "date": null,
+          "seed": null,
+          "place": null,
+          "entrants": 18,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2018-2/event/pm-singles",
+              "event": "Montevideo Melee Monthly 2018 #2 · PM Singles",
+              "date": null,
+              "seed": null,
+              "place": null,
+              "entrants": 18,
+              "characterCounts": {}
             }
           ]
         }

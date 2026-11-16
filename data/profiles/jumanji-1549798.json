@@ -117,14 +117,14 @@
           "wins": 0
         }
       ],
-      "events": 4,
+      "events": 5,
       "wins": 3,
       "losses": 19,
       "upsets": 0,
       "bestPlace": 25,
       "bestEvent": "Mashito Cup",
-      "avgPlace": 41.0,
-      "avgSeed": 42,
+      "avgPlace": 39.4,
+      "avgSeed": 40,
       "characters": [
         {
           "name": "Mii Gunner",
@@ -474,6 +474,28 @@
                 "Mii Brawler": 1,
                 "Mii Gunner": 18
               }
+            }
+          ]
+        },
+        {
+          "event": "Mashito Cup 2",
+          "eventKey": "tournament/mashito-cup-2/event/mashito-cup",
+          "displaySeparately": false,
+          "date": "2022-02-27",
+          "seed": 31,
+          "place": 33,
+          "entrants": 39,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-cup-2/event/mashito-cup",
+              "event": "Mashito Cup 2",
+              "date": "2022-02-27",
+              "seed": 31,
+              "place": 33,
+              "entrants": 39,
+              "characterCounts": {}
             }
           ]
         },

@@ -51,9 +51,9 @@
       "losses": 5,
       "upsets": 0,
       "bestPlace": 33,
-      "bestEvent": "2 times",
+      "bestEvent": "3 times",
       "avgPlace": 33.0,
-      "avgSeed": 40,
+      "avgSeed": 42,
       "characters": [
         {
           "name": "Pac-Man",
@@ -156,6 +156,46 @@
               "characterCounts": {
                 "Pac-Man": 4
               }
+            },
+            {
+              "eventKey": "tournament/mashito-go-6/event/categoria-b",
+              "event": "Mashito GO! #6 · Categoria B",
+              "date": "2026-08-29",
+              "seed": 11,
+              "place": 62,
+              "entrants": 18,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Mashito GO! #4 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-05-16",
+          "seed": 44,
+          "place": 33,
+          "entrants": 49,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
+              "event": "Mashito GO! #4 · Smash Ultimate singles",
+              "date": "2026-05-16",
+              "seed": 44,
+              "place": 33,
+              "entrants": 49,
+              "characterCounts": {}
+            },
+            {
+              "eventKey": "tournament/mashito-go-4/event/categoria-b",
+              "event": "Mashito GO! #4 · Categoria B",
+              "date": "2026-05-16",
+              "seed": 17,
+              "place": 66,
+              "entrants": 17,
+              "characterCounts": {}
             }
           ]
         },

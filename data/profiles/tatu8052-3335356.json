@@ -282,6 +282,68 @@
       ]
     },
     {
+      "id": "project-plus",
+      "slug": "project-plus",
+      "name": "Project+",
+      "headToHead": [],
+      "events": 2,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 17,
+      "bestEvent": "Montevideo Melee Monthly 2026 #2 · Project +",
+      "avgPlace": 21.0,
+      "avgSeed": 23,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Montevideo Melee Monthly 2026 #3 · Project +",
+          "eventKey": "tournament/montevideo-melee-monthly-2026-3/event/project",
+          "displaySeparately": false,
+          "date": "2026-04-04",
+          "seed": 25,
+          "place": 25,
+          "entrants": 27,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2026-3/event/project",
+              "event": "Montevideo Melee Monthly 2026 #3 · Project +",
+              "date": "2026-04-04",
+              "seed": 25,
+              "place": 25,
+              "entrants": 27,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2026 #2 · Project +",
+          "eventKey": "tournament/montevideo-melee-monthly-2026-2/event/project",
+          "displaySeparately": false,
+          "date": "2026-03-07",
+          "seed": 21,
+          "place": 17,
+          "entrants": 21,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2026-2/event/project",
+              "event": "Montevideo Melee Monthly 2026 #2 · Project +",
+              "date": "2026-03-07",
+              "seed": 21,
+              "place": 17,
+              "entrants": 21,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "rivals-2",
       "slug": "rivals-2",
       "name": "Rivals 2",
@@ -1187,13 +1249,13 @@
           "wins": 0
         }
       ],
-      "events": 17,
+      "events": 19,
       "wins": 3,
       "losses": 56,
       "upsets": 0,
       "bestPlace": 25,
       "bestEvent": "2 times",
-      "avgPlace": 36.8,
+      "avgPlace": 36.4,
       "avgSeed": 42,
       "characters": [
         {
@@ -1467,6 +1529,15 @@
               "characterCounts": {
                 "Kirby": 4
               }
+            },
+            {
+              "eventKey": "tournament/mashito-go-4/event/categoria-b",
+              "event": "Mashito GO! #4 · Categoria B",
+              "date": "2026-05-16",
+              "seed": 9,
+              "place": 62,
+              "entrants": 17,
+              "characterCounts": {}
             }
           ]
         },
@@ -1676,6 +1747,28 @@
               "characterCounts": {
                 "Kirby": 7
               }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #34 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2025-10-18",
+          "seed": 34,
+          "place": 33,
+          "entrants": 38,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-34/event/ultimate-singles",
+              "event": "Ultimate Smashdown #34 · Ultimate Singles",
+              "date": "2025-10-18",
+              "seed": 34,
+              "place": 33,
+              "entrants": 38,
+              "characterCounts": {}
             }
           ]
         },
@@ -2630,6 +2723,28 @@
               "characterCounts": {
                 "Link": 6
               }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #24 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2024-08-24",
+          "seed": 48,
+          "place": 33,
+          "entrants": 50,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-24/event/ultimate-singles",
+              "event": "Ultimate Smashdown #24 · Ultimate Singles",
+              "date": "2024-08-24",
+              "seed": 48,
+              "place": 33,
+              "entrants": 50,
+              "characterCounts": {}
             }
           ]
         },

@@ -21,6 +21,16 @@
       "name": "Melee",
       "headToHead": [
         {
+          "opponent": "Cody",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Rockletz",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Cerdo",
           "sets": 1,
           "wins": 1
@@ -34,30 +44,20 @@
           "opponent": "SrPaz",
           "sets": 1,
           "wins": 0
-        },
-        {
-          "opponent": "Cody",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Rockletz",
-          "sets": 1,
-          "wins": 0
         }
       ],
       "events": 1,
       "wins": 1,
-      "losses": 4,
+      "losses": 5,
       "upsets": 0,
       "bestPlace": 13,
       "bestEvent": "Montevideo Melee Monthly 2019 #1 · Melee Singles",
-      "avgPlace": 13,
+      "avgPlace": 13.0,
       "avgSeed": 16,
       "characters": [
         {
           "name": "Luigi",
-          "usage": 50
+          "usage": 50.0
         },
         {
           "name": "Kirby",
@@ -153,6 +153,45 @@
               "startedAt": 1548536147,
               "phaseOrder": 2,
               "roundOrder": 1
+            },
+            {
+              "setId": "18218744",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #1 · Melee Singles",
+              "phase": "Melee Singles Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Cody",
+              "opponentPlayerId": "4732812",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 6,
+              "isUpset": false,
+              "startedAt": 1548536147,
+              "phaseOrder": 2,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Luigi",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Luigi",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Kirby",
+                  "opponentCharacter": "Peach",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",

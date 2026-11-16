@@ -7,7 +7,7 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": "2023-10-21",
+    "activeSince": "2021-10-24",
     "startgg": "https://www.start.gg/user/b00f64ec",
     "startggPlayerId": "2464019",
     "aliases": [
@@ -21,7 +21,12 @@
       "name": "Ultimate",
       "headToHead": [
         {
-          "opponent": "Tintokill",
+          "opponent": "Rockletz",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Vodokex",
           "sets": 1,
           "wins": 0
         },
@@ -31,7 +36,7 @@
           "wins": 0
         },
         {
-          "opponent": "Rockletz",
+          "opponent": "Tintokill",
           "sets": 1,
           "wins": 0
         },
@@ -39,25 +44,20 @@
           "opponent": "Vikinga",
           "sets": 1,
           "wins": 0
-        },
-        {
-          "opponent": "Vodokex",
-          "sets": 1,
-          "wins": 0
         }
       ],
-      "events": 1,
+      "events": 2,
       "wins": 0,
       "losses": 5,
       "upsets": 0,
       "bestPlace": 33,
       "bestEvent": "Ultimate Smashdown #17 · Ultimate Singles",
-      "avgPlace": 33,
-      "avgSeed": 40,
+      "avgPlace": 37.0,
+      "avgSeed": 42,
       "characters": [
         {
           "name": "Sora",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [],
@@ -204,6 +204,28 @@
               "characterCounts": {
                 "Sora": 3
               }
+            }
+          ]
+        },
+        {
+          "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
+          "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
+          "displaySeparately": false,
+          "date": "2021-10-24",
+          "seed": 45,
+          "place": 41,
+          "entrants": 46,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/torneo-local-super-smash-bros-ultimate-rzesports-2/event/torneo-local-rz-ssbu-2",
+              "event": "Torneo local - SUPER SMASH BROS ULTIMATE - RZeSports # 2 · Torneo LOCAL RZ SSBU - #2",
+              "date": "2021-10-24",
+              "seed": 45,
+              "place": 41,
+              "entrants": 46,
+              "characterCounts": {}
             }
           ]
         }

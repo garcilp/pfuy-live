@@ -23,11 +23,11 @@
       "headToHead": [
         {
           "opponent": "Pritah",
-          "sets": 1,
+          "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "SFAN",
+          "opponent": "francokiwi",
           "sets": 1,
           "wins": 0
         },
@@ -37,18 +37,18 @@
           "wins": 0
         },
         {
-          "opponent": "francokiwi",
+          "opponent": "SFAN",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 1,
       "wins": 0,
-      "losses": 4,
+      "losses": 5,
       "upsets": 0,
       "bestPlace": 17,
       "bestEvent": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
-      "avgPlace": 17,
+      "avgPlace": 17.0,
       "avgSeed": 23,
       "characters": [],
       "notableWins": [],
@@ -76,6 +76,26 @@
               "startedAt": 1572107776,
               "phaseOrder": 1,
               "roundOrder": 2
+            },
+            {
+              "setId": "24213109",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #10 · Melee Singles",
+              "phase": "Melee Round Robin",
+              "round": "Round 2",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 23,
+              "opponentSeed": 7,
+              "isUpset": false,
+              "startedAt": 1572107776,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/melee-singles",
@@ -159,9 +179,9 @@
       "name": "Ultimate",
       "headToHead": [
         {
-          "opponent": "Link",
+          "opponent": "RIGONARDO",
           "sets": 1,
-          "wins": 1
+          "wins": 0
         },
         {
           "opponent": "Casipeta",
@@ -169,14 +189,19 @@
           "wins": 0
         },
         {
-          "opponent": "RIGONARDO",
+          "opponent": "Poseidón",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Alberti",
+          "opponent": "Pos3idóN",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Link",
+          "sets": 1,
+          "wins": 1
         },
         {
           "opponent": "KiGoRoMoUs",
@@ -184,22 +209,44 @@
           "wins": 0
         },
         {
-          "opponent": "Poseidón",
+          "opponent": "Alberti",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 2,
       "wins": 1,
-      "losses": 5,
+      "losses": 6,
       "upsets": 0,
       "bestPlace": 33,
       "bestEvent": "Montevideo Melee Monthly 2019 #10 · Ultimate Singles",
-      "avgPlace": 33,
-      "avgSeed": 30,
+      "avgPlace": 41.0,
+      "avgSeed": 43,
       "characters": [],
       "notableWins": [],
       "results": [
+        {
+          "event": "Ultimate Smashdown #1 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2020-02-29",
+          "seed": 56,
+          "place": 49,
+          "entrants": 65,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+              "event": "Ultimate Smashdown #1 · Ultimate Singles",
+              "date": "2020-02-29",
+              "seed": 56,
+              "place": 49,
+              "entrants": 65,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Montevideo Melee Monthly 2019 #10 · Ultimate Singles",
           "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/ultimate-singles",
@@ -263,6 +310,26 @@
               "startedAt": 1572115957,
               "phaseOrder": 1,
               "roundOrder": 1
+            },
+            {
+              "setId": "24221405",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #10 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 1",
+              "opponent": "Pos3idóN",
+              "opponentPlayerId": "1360085",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 29,
+              "opponentSeed": 20,
+              "isUpset": false,
+              "startedAt": 1572115957,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-10/event/ultimate-singles",

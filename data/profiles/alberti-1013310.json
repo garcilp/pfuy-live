@@ -792,14 +792,14 @@
           "wins": 1
         }
       ],
-      "events": 2,
+      "events": 3,
       "wins": 3,
       "losses": 4,
       "upsets": 1,
       "bestPlace": 5,
       "bestEvent": "2 times",
-      "avgPlace": 5.0,
-      "avgSeed": 6,
+      "avgPlace": 7.7,
+      "avgSeed": 8,
       "characters": [
         {
           "name": "Ori",
@@ -808,6 +808,28 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Rivalote Invierno '24 · Singles",
+          "eventKey": "tournament/rivalote-invierno-24/event/singles",
+          "displaySeparately": false,
+          "date": "2024-08-17",
+          "seed": 11,
+          "place": 13,
+          "entrants": 16,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/rivalote-invierno-24/event/singles",
+              "event": "Rivalote Invierno '24 · Singles",
+              "date": "2024-08-17",
+              "seed": 11,
+              "place": 13,
+              "entrants": 16,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Rivalito Charrua #4 · Singles",
           "eventKey": "tournament/rivalito-charrua-4/event/singles",
@@ -1667,13 +1689,13 @@
           "wins": 1
         }
       ],
-      "events": 35,
+      "events": 36,
       "wins": 167,
       "losses": 98,
       "upsets": 35,
       "bestPlace": 3,
       "bestEvent": "Mashito GO! #6 · Smash Ultimate singles",
-      "avgPlace": 12.3,
+      "avgPlace": 12.9,
       "avgSeed": 14,
       "characters": [
         {
@@ -4775,6 +4797,28 @@
                 "Mr. Game & Watch": 1,
                 "Pac-Man": 14
               }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #23 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2024-06-22",
+          "seed": 9,
+          "place": 33,
+          "entrants": 46,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-23/event/ultimate-singles",
+              "event": "Ultimate Smashdown #23 · Ultimate Singles",
+              "date": "2024-06-22",
+              "seed": 9,
+              "place": 33,
+              "entrants": 46,
+              "characterCounts": {}
             }
           ]
         },

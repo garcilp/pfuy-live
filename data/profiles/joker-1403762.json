@@ -26,6 +26,41 @@
           "wins": 0
         },
         {
+          "opponent": "S1R",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Pato",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Calvo",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Rockletz",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "GAB",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Hora",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Fronk",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Roboflecto",
           "sets": 1,
           "wins": 0
@@ -36,14 +71,9 @@
           "wins": 1
         },
         {
-          "opponent": "Fronk",
+          "opponent": "aalz",
           "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "S1R",
-          "sets": 1,
-          "wins": 0
+          "wins": 1
         },
         {
           "opponent": "Poseidón",
@@ -51,48 +81,23 @@
           "wins": 0
         },
         {
-          "opponent": "Hora",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "aalz",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Rockletz",
+          "opponent": "Pos3idóN",
           "sets": 1,
           "wins": 0
-        },
-        {
-          "opponent": "Calvo",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "GAB",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Pato",
-          "sets": 1,
-          "wins": 1
         }
       ],
       "events": 2,
       "wins": 4,
-      "losses": 9,
+      "losses": 11,
       "upsets": 3,
       "bestPlace": 25,
       "bestEvent": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
-      "avgPlace": 29,
+      "avgPlace": 29.0,
       "avgSeed": 49,
       "characters": [
         {
           "name": "Link",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [],
@@ -377,6 +382,45 @@
               "roundOrder": 2
             },
             {
+              "setId": "22841146",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 2",
+              "opponent": "Pos3idóN",
+              "opponentPlayerId": "1360085",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 28,
+              "opponentSeed": 7,
+              "isUpset": false,
+              "startedAt": 1567285190,
+              "phaseOrder": 2,
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Link",
+                  "opponentCharacter": "Mr. Game & Watch",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Link",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Link",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                }
+              ]
+            },
+            {
               "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
               "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
               "phase": "Bracket",
@@ -391,6 +435,39 @@
               "startedAt": 1567285278,
               "phaseOrder": 2,
               "roundOrder": -5
+            },
+            {
+              "setId": "22841267",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "S1R",
+              "opponentPlayerId": "45954",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 28,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1567285278,
+              "phaseOrder": 2,
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Link",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Link",
+                  "opponentCharacter": "Pikachu",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {

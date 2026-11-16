@@ -7,12 +7,53 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": null,
+    "activeSince": "2023-08-19",
     "startgg": "https://www.start.gg/user/e8361a8f",
     "startggPlayerId": "3575629",
     "aliases": [
       "Emerson"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 61,
+      "bestEvent": "Ultimate Smashdown #15 · Ultimate Singles",
+      "avgPlace": 61.0,
+      "avgSeed": 63,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Ultimate Smashdown #15 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2023-08-19",
+          "seed": 63,
+          "place": 61,
+          "entrants": 72,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-15/event/ultimate-singles",
+              "event": "Ultimate Smashdown #15 · Ultimate Singles",
+              "date": "2023-08-19",
+              "seed": 63,
+              "place": 61,
+              "entrants": 72,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

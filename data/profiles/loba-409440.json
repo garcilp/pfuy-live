@@ -7,12 +7,53 @@
     "city": "Valparaiso",
     "country": "Chile",
     "location": "Valparaiso, Chile",
-    "activeSince": null,
+    "activeSince": "2024-10-19",
     "startgg": "https://www.start.gg/user/8509eecc",
     "startggPlayerId": "409440",
     "aliases": [
       "Loba"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 49,
+      "bestEvent": "Copa del Rey 2 · Ultimate Singles",
+      "avgPlace": 49.0,
+      "avgSeed": 40,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Copa del Rey 2 · Ultimate Singles",
+          "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2024-10-19",
+          "seed": 40,
+          "place": 49,
+          "entrants": 72,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
+              "event": "Copa del Rey 2 · Ultimate Singles",
+              "date": "2024-10-19",
+              "seed": 40,
+              "place": 49,
+              "entrants": 72,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

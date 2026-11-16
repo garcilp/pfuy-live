@@ -21,7 +21,12 @@
       "name": "Ultimate",
       "headToHead": [
         {
-          "opponent": "RaBBiTTMax",
+          "opponent": "L'Ongels",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Sypha",
           "sets": 1,
           "wins": 0
         },
@@ -31,7 +36,22 @@
           "wins": 0
         },
         {
-          "opponent": "L'Ongels",
+          "opponent": "RaBBiTTMax",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "iShtAR",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Roboflecto",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Mitsu",
           "sets": 1,
           "wins": 0
         },
@@ -46,43 +66,23 @@
           "wins": 0
         },
         {
-          "opponent": "Roboflecto",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "kalarse",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Sypha",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Mitsu",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "iShtAR",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 1,
       "wins": 1,
-      "losses": 9,
+      "losses": 10,
       "upsets": 1,
       "bestPlace": 37,
       "bestEvent": "Ultimate Smashdown #3 · Singles",
-      "avgPlace": 37,
+      "avgPlace": 37.0,
       "avgSeed": 41,
       "characters": [
         {
           "name": "Young Link",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [],
@@ -186,6 +186,26 @@
               "startedAt": 1606592138,
               "phaseOrder": 1,
               "roundOrder": 9
+            },
+            {
+              "setId": "33703363",
+              "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",
+              "event": "Ultimate Smashdown #3 · Singles",
+              "phase": "Fase 1: Pools",
+              "round": "Round 9",
+              "opponent": "L'Ongels",
+              "opponentPlayerId": "1504677",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 41,
+              "opponentSeed": 32,
+              "isUpset": false,
+              "startedAt": 1606592138,
+              "phaseOrder": 1,
+              "roundOrder": 9,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-3-1/event/singles",

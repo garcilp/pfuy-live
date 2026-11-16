@@ -7,12 +7,53 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": null,
+    "activeSince": "2020-01-11",
     "startgg": "",
     "startggPlayerId": "1604987",
     "aliases": [
       "Phantom 1"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 49,
+      "bestEvent": "NSU - EVOCHACRA · NSU / EVOCHACRA SSBU - SINGLES",
+      "avgPlace": 49.0,
+      "avgSeed": 50,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "NSU - EVOCHACRA · NSU / EVOCHACRA SSBU - SINGLES",
+          "eventKey": "tournament/nsu-evochacra/event/nsu-evochacra-super-smash-bros-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2020-01-11",
+          "seed": 50,
+          "place": 49,
+          "entrants": 60,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/nsu-evochacra/event/nsu-evochacra-super-smash-bros-ultimate-singles",
+              "event": "NSU - EVOCHACRA · NSU / EVOCHACRA SSBU - SINGLES",
+              "date": "2020-01-11",
+              "seed": 50,
+              "place": 49,
+              "entrants": 60,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1091,14 +1091,14 @@
           "wins": 0
         }
       ],
-      "events": 1,
+      "events": 3,
       "wins": 0,
       "losses": 4,
       "upsets": 0,
       "bestPlace": 33,
-      "bestEvent": "Mashito GO! #2 · Smash Ultimate singles",
-      "avgPlace": 33.0,
-      "avgSeed": 37,
+      "bestEvent": "2 times",
+      "avgPlace": 38.3,
+      "avgSeed": 40,
       "characters": [
         {
           "name": "Terry",
@@ -1111,6 +1111,59 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito GO! #4 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-05-16",
+          "seed": 38,
+          "place": 33,
+          "entrants": 49,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-4/event/smash-ultimate-singles",
+              "event": "Mashito GO! #4 · Smash Ultimate singles",
+              "date": "2026-05-16",
+              "seed": 38,
+              "place": 33,
+              "entrants": 49,
+              "characterCounts": {}
+            },
+            {
+              "eventKey": "tournament/mashito-go-4/event/categoria-b",
+              "event": "Mashito GO! #4 · Categoria B",
+              "date": "2026-05-16",
+              "seed": 10,
+              "place": 62,
+              "entrants": 17,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Mashito GO! #3 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-04-11",
+          "seed": 44,
+          "place": 49,
+          "entrants": 54,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",
+              "event": "Mashito GO! #3 · Smash Ultimate singles",
+              "date": "2026-04-11",
+              "seed": 44,
+              "place": 49,
+              "entrants": 54,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito GO! #2 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",

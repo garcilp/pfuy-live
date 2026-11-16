@@ -21,13 +21,8 @@
       "name": "Melee",
       "headToHead": [
         {
-          "opponent": "JCparty",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "Rockletz",
-          "sets": 1,
+          "sets": 2,
           "wins": 0
         },
         {
@@ -36,7 +31,7 @@
           "wins": 0
         },
         {
-          "opponent": "Smeag",
+          "opponent": "JCparty",
           "sets": 1,
           "wins": 0
         },
@@ -44,15 +39,20 @@
           "opponent": "Sol!d",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Smeag",
+          "sets": 1,
+          "wins": 0
         }
       ],
       "events": 1,
       "wins": 0,
-      "losses": 5,
+      "losses": 6,
       "upsets": 0,
       "bestPlace": 13,
       "bestEvent": "Montevideo Melee Monthly 2019 #1 · Melee Singles",
-      "avgPlace": 13,
+      "avgPlace": 13.0,
       "avgSeed": 17,
       "characters": [
         {
@@ -134,6 +134,26 @@
               "startedAt": 1548532231,
               "phaseOrder": 1,
               "roundOrder": 3
+            },
+            {
+              "setId": "18207349",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #1 · Melee Singles",
+              "phase": "Melee Round Robin",
+              "round": "Round 3",
+              "opponent": "Rockletz",
+              "opponentPlayerId": "958669",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 17,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1548532231,
+              "phaseOrder": 1,
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/melee-singles",
@@ -245,44 +265,14 @@
       "name": "Ultimate",
       "headToHead": [
         {
-          "opponent": "Marroll",
-          "sets": 3,
-          "wins": 0
-        },
-        {
           "opponent": "BLAZAM",
-          "sets": 3,
-          "wins": 2
-        },
-        {
-          "opponent": "Lazerth",
-          "sets": 3,
-          "wins": 1
-        },
-        {
-          "opponent": "Mitsu",
-          "sets": 3,
-          "wins": 0
-        },
-        {
-          "opponent": "Trim",
-          "sets": 3,
-          "wins": 0
-        },
-        {
-          "opponent": "Sol!d",
-          "sets": 3,
-          "wins": 3
+          "sets": 6,
+          "wins": 4
         },
         {
           "opponent": "Pritah",
-          "sets": 3,
-          "wins": 2
-        },
-        {
-          "opponent": "ENEMA",
-          "sets": 3,
-          "wins": 2
+          "sets": 6,
+          "wins": 4
         },
         {
           "opponent": "Aminas",
@@ -290,22 +280,47 @@
           "wins": 3
         },
         {
-          "opponent": "Codigoseptimo",
-          "sets": 2,
+          "opponent": "Lazerth",
+          "sets": 3,
           "wins": 1
         },
         {
-          "opponent": "Iguana",
-          "sets": 2,
-          "wins": 1
+          "opponent": "Sol!d",
+          "sets": 3,
+          "wins": 3
         },
         {
-          "opponent": "Dingo",
-          "sets": 2,
+          "opponent": "Trim",
+          "sets": 3,
+          "wins": 0
+        },
+        {
+          "opponent": "ENEMA",
+          "sets": 3,
           "wins": 2
         },
         {
-          "opponent": "SrPaz",
+          "opponent": "RIGONARDO",
+          "sets": 3,
+          "wins": 0
+        },
+        {
+          "opponent": "Casipeta",
+          "sets": 3,
+          "wins": 0
+        },
+        {
+          "opponent": "Marroll",
+          "sets": 3,
+          "wins": 0
+        },
+        {
+          "opponent": "Mitsu",
+          "sets": 3,
+          "wins": 0
+        },
+        {
+          "opponent": "emesse",
           "sets": 2,
           "wins": 2
         },
@@ -315,152 +330,42 @@
           "wins": 2
         },
         {
-          "opponent": "RIGONARDO",
+          "opponent": "Dingo",
           "sets": 2,
-          "wins": 0
+          "wins": 2
         },
         {
-          "opponent": "GAB",
-          "sets": 1,
+          "opponent": "Lucky",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "Codigoseptimo",
+          "sets": 2,
           "wins": 1
         },
         {
-          "opponent": "kalarse",
-          "sets": 1,
-          "wins": 1
+          "opponent": "SrPaz",
+          "sets": 2,
+          "wins": 2
         },
         {
-          "opponent": "BugSmasher",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "DIO",
-          "sets": 1,
+          "opponent": "Iguana",
+          "sets": 2,
           "wins": 1
         },
         {
           "opponent": "Rockletz",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "GINTOKI",
           "sets": 1,
           "wins": 1
-        },
-        {
-          "opponent": "Sagat",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "XxJudioSlayerxX",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "RandomX",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Roboflecto",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Pato",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Transformación",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Lucky",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "S",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Casipeta",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Wom",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "S1R",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Deleted user",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Enigma",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Gomo",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "ZAPO",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Celltholt",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Pantufla",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "TityMc-10",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "maay",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "iShtAR",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "emesse",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Pulga",
-          "sets": 1,
-          "wins": 0
         },
         {
           "opponent": "Belipe",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Fraps",
           "sets": 1,
           "wins": 1
         },
@@ -470,26 +375,146 @@
           "wins": 1
         },
         {
-          "opponent": "GINTOKI",
+          "opponent": "Pulga",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Fraps",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "iShtAR",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Pantufla",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Celltholt",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "maay",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "TityMc-10",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "ZAPO",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Gomo",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "S1R",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Messi",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Enigma",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "S",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Wom",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Transformación",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pato",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Batoru",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Roboflecto",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "RandomX",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "XxJudioSlayerxX",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Sagat",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "DIO",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "BugSmasher",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "kalarse",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "GAB",
           "sets": 1,
           "wins": 1
         }
       ],
-      "events": 10,
-      "wins": 47,
-      "losses": 23,
-      "upsets": 14,
+      "events": 12,
+      "wins": 55,
+      "losses": 28,
+      "upsets": 15,
       "bestPlace": 2,
       "bestEvent": "Montevideo Smash Ultimate - Enero · Ultimate 1v1",
-      "avgPlace": 8.7,
-      "avgSeed": 13,
+      "avgPlace": 11.1,
+      "avgSeed": 14,
       "characters": [
         {
           "name": "Bowser",
           "usage": 89.2
         },
         {
-          "name": "Ken",
+          "name": "Ryu",
           "usage": 3.1
         },
         {
@@ -630,6 +655,34 @@
               "roundOrder": 3
             },
             {
+              "setId": "27028290",
+              "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+              "event": "Ultimate Smashdown #1 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 3",
+              "opponent": "emesse",
+              "opponentPlayerId": "355770",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 12,
+              "opponentSeed": 21,
+              "isUpset": false,
+              "startedAt": 1583002550,
+              "phaseOrder": 1,
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": [],
+              "vods": [
+                {
+                  "videoId": "DARn0PqWnXo",
+                  "url": "https://www.youtube.com/watch?v=DARn0PqWnXo",
+                  "title": "Ultimate Smashdown #1 | Pools - Cerdo (Ryu) vs. MS360 (Incineroar)",
+                  "thumbnail": "https://i.ytimg.com/vi/DARn0PqWnXo/sddefault.jpg"
+                }
+              ]
+            },
+            {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
               "event": "Ultimate Smashdown #1 · Ultimate Singles",
               "phase": "Bracket",
@@ -700,6 +753,26 @@
               "startedAt": 1583009377,
               "phaseOrder": 2,
               "roundOrder": -5
+            },
+            {
+              "setId": "27035223",
+              "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+              "event": "Ultimate Smashdown #1 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "BLAZAM",
+              "opponentPlayerId": "1000149",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 12,
+              "opponentSeed": 27,
+              "isUpset": false,
+              "startedAt": 1583009377,
+              "phaseOrder": 2,
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
@@ -1100,7 +1173,7 @@
               "event": "Montevideo Melee Monthly 2019 #9 · Ultimate Singles",
               "phase": "Pools",
               "round": "Round 2",
-              "opponent": "Deleted user",
+              "opponent": "Messi",
               "score": "2–0",
               "outcome": "win",
               "ownSeed": 24,
@@ -1108,7 +1181,11 @@
               "isUpset": false,
               "startedAt": 1569698571,
               "phaseOrder": 1,
-              "roundOrder": 2
+              "roundOrder": 2,
+              "setId": "23503271",
+              "opponentPlayerId": "3020024",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
@@ -1210,6 +1287,26 @@
               "startedAt": 1569710001,
               "phaseOrder": 2,
               "roundOrder": -6
+            },
+            {
+              "setId": "23506394",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #9 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 4",
+              "opponent": "BLAZAM",
+              "opponentPlayerId": "1000149",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 9,
+              "opponentSeed": 25,
+              "isUpset": false,
+              "startedAt": 1569710001,
+              "phaseOrder": 2,
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},
@@ -1221,6 +1318,28 @@
               "seed": 24,
               "place": 17,
               "entrants": 64,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2019-08-31",
+          "seed": 21,
+          "place": 33,
+          "entrants": 48,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
+              "date": "2019-08-31",
+              "seed": 21,
+              "place": 33,
+              "entrants": 48,
               "characterCounts": {}
             }
           ]
@@ -1431,6 +1550,39 @@
               "startedAt": 1565559290,
               "phaseOrder": 2,
               "roundOrder": -6
+            },
+            {
+              "setId": "22416444",
+              "eventKey": "tournament/pato-s-invitational/event/ultimate-singles",
+              "event": "Pato's Invitational · Ultimate Singles",
+              "phase": "Braacket",
+              "round": "Losers Round 3",
+              "opponent": "Casipeta",
+              "opponentPlayerId": "1244662",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 20,
+              "opponentSeed": 19,
+              "isUpset": false,
+              "startedAt": 1565559290,
+              "phaseOrder": 2,
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Wolf",
+                  "opponentCharacter": "Lucas",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1478,6 +1630,39 @@
               "startedAt": 1561834536,
               "phaseOrder": 1,
               "roundOrder": 1
+            },
+            {
+              "setId": "21421729",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-6/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #6 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Lucky",
+              "opponentPlayerId": "1555267",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 11,
+              "opponentSeed": 22,
+              "isUpset": false,
+              "startedAt": 1561834536,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-6/event/ultimate-singles",
@@ -1595,6 +1780,45 @@
               "startedAt": 1561841460,
               "phaseOrder": 1,
               "roundOrder": -6
+            },
+            {
+              "setId": "21421799",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-6/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #6 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 3",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 11,
+              "opponentSeed": 4,
+              "isUpset": false,
+              "startedAt": 1561841460,
+              "phaseOrder": 1,
+              "roundOrder": -6,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Ken",
+                  "opponentCharacter": "Palutena",
+                  "outcome": "loss"
+                }
+              ]
             }
           ],
           "characterCounts": {
@@ -1743,6 +1967,89 @@
           ]
         },
         {
+          "event": "Smash Bros. Ultimate / Torneos Pro-III",
+          "eventKey": "event:challonge:xvk4i4mg",
+          "displaySeparately": false,
+          "date": "2019-05-18",
+          "seed": null,
+          "place": 13,
+          "entrants": 26,
+          "sets": [
+            {
+              "setId": "challonge:xvk4i4mg:match:161076004",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Round 1",
+              "opponent": "RIGONARDO",
+              "opponentPlayerId": "1244573",
+              "score": "2-0–2-0",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558212275,
+              "phaseOrder": null,
+              "roundOrder": 1,
+              "bracketType": null,
+              "games": []
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076029",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 2",
+              "opponent": "Batoru",
+              "opponentPlayerId": "pfuy-99aad7d61db59b0d0d4d",
+              "score": "0-2–0-2",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558219537,
+              "phaseOrder": null,
+              "roundOrder": -2,
+              "bracketType": null,
+              "games": []
+            },
+            {
+              "setId": "challonge:xvk4i4mg:match:161076034",
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "phase": "Phase not recorded",
+              "round": "Losers Round 3",
+              "opponent": "Casipeta",
+              "opponentPlayerId": "1244662",
+              "score": "0-2–0-2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": null,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": 1558222456,
+              "phaseOrder": null,
+              "roundOrder": -3,
+              "bracketType": null,
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "event:challonge:xvk4i4mg",
+              "event": "Smash Bros. Ultimate / Torneos Pro-III",
+              "date": "2019-05-18",
+              "seed": null,
+              "place": 13,
+              "entrants": 26,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
           "event": "NSU - Super Smash Bros Ultimate",
           "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
           "date": "2019-04-20",
@@ -1842,6 +2149,26 @@
               "roundOrder": -9
             },
             {
+              "setId": "19889086",
+              "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
+              "event": "NSU - Super Smash Bros Ultimate Abril",
+              "phase": "Bracket",
+              "round": "Losers Round 6",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 8,
+              "opponentSeed": 13,
+              "isUpset": false,
+              "startedAt": 1555781881,
+              "phaseOrder": 1,
+              "roundOrder": -9,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            },
+            {
               "eventKey": "tournament/nsu-super-smash-bros-ultimate-1/event/nsu-super-smash-bros-ultimate",
               "event": "NSU - Super Smash Bros Ultimate",
               "phase": "Bracket",
@@ -1928,6 +2255,45 @@
               "startedAt": 1550947820,
               "phaseOrder": 1,
               "roundOrder": 2
+            },
+            {
+              "setId": "18736835",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #2 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 4,
+              "opponentSeed": 5,
+              "isUpset": false,
+              "startedAt": 1550947820,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Bowser",
+                  "opponentCharacter": "Pokemon Trainer",
+                  "outcome": "win"
+                }
+              ]
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2019-2/event/ultimate-singles",
@@ -2225,6 +2591,39 @@
               "roundOrder": -7
             },
             {
+              "setId": "18207129",
+              "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #1 · Ultimate Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 5",
+              "opponent": "Rockletz",
+              "opponentPlayerId": "958669",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 1,
+              "opponentSeed": 11,
+              "isUpset": false,
+              "startedAt": 1548537730,
+              "phaseOrder": 1,
+              "roundOrder": -7,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser",
+                  "opponentCharacter": "Captain Falcon",
+                  "outcome": "win"
+                }
+              ]
+            },
+            {
               "eventKey": "tournament/montevideo-melee-monthly-2019-1/event/ultimate-singles",
               "event": "Montevideo Melee Monthly 2019 #1 · Ultimate Singles",
               "phase": "Bracket",
@@ -2448,6 +2847,26 @@
               "startedAt": 1547339142,
               "phaseOrder": 1,
               "roundOrder": -10
+            },
+            {
+              "setId": "17952860",
+              "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
+              "event": "Montevideo Smash Ultimate - Enero · Ultimate 1v1",
+              "phase": "Bracket",
+              "round": "Losers Quarter-Final",
+              "opponent": "BLAZAM",
+              "opponentPlayerId": "1000149",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 21,
+              "opponentSeed": 9,
+              "isUpset": true,
+              "startedAt": 1547339142,
+              "phaseOrder": 1,
+              "roundOrder": -10,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",

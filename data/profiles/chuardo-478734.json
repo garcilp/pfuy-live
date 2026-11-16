@@ -22,7 +22,7 @@
       "headToHead": [
         {
           "opponent": "Pladson",
-          "sets": 1,
+          "sets": 2,
           "wins": 0
         },
         {
@@ -33,11 +33,11 @@
       ],
       "events": 1,
       "wins": 0,
-      "losses": 2,
+      "losses": 3,
       "upsets": 0,
       "bestPlace": 13,
       "bestEvent": "Montevideo Melee Monthly 2017 #8 · Melee Singles",
-      "avgPlace": 13,
+      "avgPlace": 13.0,
       "avgSeed": 15,
       "characters": [],
       "notableWins": [],
@@ -83,6 +83,26 @@
               "startedAt": 1503770109,
               "phaseOrder": 1,
               "roundOrder": -3
+            },
+            {
+              "setId": "9978225",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-8/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #8 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 1",
+              "opponent": "Pladson",
+              "opponentPlayerId": "330339",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 15,
+              "opponentSeed": 10,
+              "isUpset": false,
+              "startedAt": 1503770109,
+              "phaseOrder": 1,
+              "roundOrder": -3,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             }
           ],
           "characterCounts": {},

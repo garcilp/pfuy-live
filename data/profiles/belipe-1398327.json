@@ -172,14 +172,14 @@
           "wins": 0
         }
       ],
-      "events": 3,
+      "events": 5,
       "wins": 1,
       "losses": 6,
       "upsets": 0,
       "bestPlace": 5,
       "bestEvent": "Rivalito Charrua #1 · Singles",
-      "avgPlace": 7.7,
-      "avgSeed": 7,
+      "avgPlace": 9.0,
+      "avgSeed": 8,
       "characters": [
         {
           "name": "Ranno",
@@ -196,6 +196,28 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "CrossUp '24 · Rivals Singles",
+          "eventKey": "tournament/crossup-24/event/rivals-singles",
+          "displaySeparately": false,
+          "date": "2024-10-26",
+          "seed": 10,
+          "place": 9,
+          "entrants": 17,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/crossup-24/event/rivals-singles",
+              "event": "CrossUp '24 · Rivals Singles",
+              "date": "2024-10-26",
+              "seed": 10,
+              "place": 9,
+              "entrants": 17,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Rivalote Invierno '24 · Singles",
           "eventKey": "tournament/rivalote-invierno-24/event/singles",
@@ -286,6 +308,28 @@
               "characterCounts": {
                 "Orcane": 4
               }
+            }
+          ]
+        },
+        {
+          "event": "CrossUp '23 · Rivals Singles",
+          "eventKey": "tournament/crossup-23/event/rivals-singles",
+          "displaySeparately": false,
+          "date": "2023-10-14",
+          "seed": 8,
+          "place": 13,
+          "entrants": 22,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/crossup-23/event/rivals-singles",
+              "event": "CrossUp '23 · Rivals Singles",
+              "date": "2023-10-14",
+              "seed": 8,
+              "place": 13,
+              "entrants": 22,
+              "characterCounts": {}
             }
           ]
         },

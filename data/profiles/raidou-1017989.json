@@ -27,32 +27,52 @@
           "wins": 0
         },
         {
-          "opponent": "BLAZAM",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "DIO",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Kokiro",
-          "sets": 1,
-          "wins": 1
+          "opponent": "Elpi Rata",
+          "sets": 2,
+          "wins": 2
         },
         {
           "opponent": "Pritah",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "BLAZAM",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "iShtAR",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Darkflame",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Matt160",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Elpi Rata",
+          "opponent": "ToastyMan",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Sypha",
+          "opponent": "Casipeta",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Hora",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Rockletz",
           "sets": 1,
           "wins": 0
         },
@@ -67,17 +87,7 @@
           "wins": 0
         },
         {
-          "opponent": "GRPB",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "_rod",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "ZAPO",
+          "opponent": "Pos3idóN",
           "sets": 1,
           "wins": 0
         },
@@ -87,48 +97,43 @@
           "wins": 0
         },
         {
-          "opponent": "Matt160",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Rockletz",
+          "opponent": "ZAPO",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Casipeta",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "iShtAR",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Hora",
+          "opponent": "_rod",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "ToastyMan",
+          "opponent": "GRPB",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Sypha",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Kokiro",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Darkflame",
+          "opponent": "DIO",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 4,
-      "wins": 8,
-      "losses": 13,
-      "upsets": 6,
+      "wins": 10,
+      "losses": 15,
+      "upsets": 7,
       "bestPlace": 9,
       "bestEvent": "Montevideo Smash Ultimate - Enero · Ultimate 1v1",
-      "avgPlace": 21,
+      "avgPlace": 21.0,
       "avgSeed": 36,
       "characters": [],
       "notableWins": [
@@ -142,7 +147,7 @@
           "round": "Winners Round 2",
           "event": "Montevideo Smash Ultimate - Enero · Ultimate 1v1",
           "date": "2019-01-12",
-          "count": 1
+          "count": 2
         },
         {
           "opponent": "ToastyMan",
@@ -365,6 +370,26 @@
               "roundOrder": 3
             },
             {
+              "setId": "25713452",
+              "eventKey": "tournament/nsu-evochacra/event/nsu-evochacra-super-smash-bros-ultimate-singles",
+              "event": "NSU - EVOCHACRA · NSU / EVOCHACRA SSBU - SINGLES",
+              "phase": "Pools",
+              "round": "Round 3",
+              "opponent": "Pos3idóN",
+              "opponentPlayerId": "1360085",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 51,
+              "opponentSeed": 27,
+              "isUpset": false,
+              "startedAt": 1578773268,
+              "phaseOrder": 1,
+              "roundOrder": 3,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
+            },
+            {
               "eventKey": "tournament/nsu-evochacra/event/nsu-evochacra-super-smash-bros-ultimate-singles",
               "event": "NSU - EVOCHACRA · NSU / EVOCHACRA SSBU - SINGLES",
               "phase": "Pools",
@@ -565,6 +590,26 @@
               "roundOrder": 1
             },
             {
+              "setId": "17952674",
+              "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
+              "event": "Montevideo Smash Ultimate - Enero · Ultimate 1v1",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Elpi Rata",
+              "opponentPlayerId": "1018178",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 32,
+              "opponentSeed": 33,
+              "isUpset": false,
+              "startedAt": 1547326777,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            },
+            {
               "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
               "event": "Montevideo Smash Ultimate - Enero · Ultimate 1v1",
               "phase": "Bracket",
@@ -579,6 +624,26 @@
               "startedAt": 1547328564,
               "phaseOrder": 1,
               "roundOrder": 2
+            },
+            {
+              "setId": "17952705",
+              "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
+              "event": "Montevideo Smash Ultimate - Enero · Ultimate 1v1",
+              "phase": "Bracket",
+              "round": "Winners Round 2",
+              "opponent": "Pritah",
+              "opponentPlayerId": "330721",
+              "score": "2–0",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 32,
+              "opponentSeed": 1,
+              "isUpset": true,
+              "startedAt": 1547328564,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
@@ -615,6 +680,26 @@
               "startedAt": 1547335066,
               "phaseOrder": 1,
               "roundOrder": 4
+            },
+            {
+              "setId": "17952729",
+              "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",
+              "event": "Montevideo Smash Ultimate - Enero · Ultimate 1v1",
+              "phase": "Bracket",
+              "round": "Winners Quarter-Final",
+              "opponent": "BLAZAM",
+              "opponentPlayerId": "1000149",
+              "score": "1–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 32,
+              "opponentSeed": 9,
+              "isUpset": false,
+              "startedAt": 1547335066,
+              "phaseOrder": 1,
+              "roundOrder": 4,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-smash-ultimate-enero/event/ultimate-1v1",

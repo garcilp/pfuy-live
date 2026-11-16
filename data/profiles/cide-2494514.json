@@ -22,14 +22,14 @@
       "name": "Rivals of Aether",
       "headToHead": [
         {
-          "opponent": "francokiwi",
-          "sets": 1,
-          "wins": 0
+          "opponent": "Muro",
+          "sets": 2,
+          "wins": 2
         },
         {
-          "opponent": "RIGONARDO",
+          "opponent": "Catwo",
           "sets": 1,
-          "wins": 1
+          "wins": 0
         },
         {
           "opponent": "Rey Rata",
@@ -37,28 +37,28 @@
           "wins": 1
         },
         {
-          "opponent": "Muro",
+          "opponent": "RIGONARDO",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Catwo",
+          "opponent": "francokiwi",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 1,
-      "wins": 3,
+      "wins": 4,
       "losses": 2,
       "upsets": 2,
       "bestPlace": 5,
       "bestEvent": "CrossUp '24 · Rivals Singles",
-      "avgPlace": 5,
+      "avgPlace": 5.0,
       "avgSeed": 14,
       "characters": [
         {
           "name": "Maypul",
-          "usage": 100
+          "usage": 100.0
         }
       ],
       "notableWins": [
@@ -132,6 +132,53 @@
               "startedAt": 1729981824,
               "phaseOrder": 1,
               "roundOrder": -5
+            },
+            {
+              "setId": "81522287",
+              "eventKey": "tournament/crossup-24/event/rivals-singles",
+              "event": "CrossUp '24 · Rivals Singles",
+              "phase": "Bracket",
+              "round": "Losers Round 2",
+              "opponent": "Muro",
+              "opponentPlayerId": "2672148",
+              "score": "2–1",
+              "outcome": "win",
+              "opponentExcluded": false,
+              "ownSeed": 14,
+              "opponentSeed": 16,
+              "isUpset": false,
+              "startedAt": 1729981824,
+              "phaseOrder": 1,
+              "roundOrder": -5,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Maypul",
+                  "opponentCharacter": "Wrastor",
+                  "outcome": "win"
+                },
+                {
+                  "game": 2,
+                  "character": "Maypul",
+                  "opponentCharacter": "Wrastor",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 3,
+                  "character": "Maypul",
+                  "opponentCharacter": "Ranno",
+                  "outcome": "win"
+                }
+              ],
+              "vods": [
+                {
+                  "videoId": "8pzwE32y4Tw",
+                  "url": "https://www.youtube.com/watch?v=8pzwE32y4Tw",
+                  "title": "CrossUp '24 | Singles | Winners Round 1 - Muro (Ranno, Wrastor) vs Solid (Zetterburn, Ori)",
+                  "thumbnail": "https://i.ytimg.com/vi/8pzwE32y4Tw/sddefault.jpg"
+                }
+              ]
             },
             {
               "eventKey": "tournament/crossup-24/event/rivals-singles",

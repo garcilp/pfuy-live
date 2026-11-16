@@ -21,7 +21,12 @@
       "name": "Ultimate",
       "headToHead": [
         {
-          "opponent": "Gerix",
+          "opponent": "Poseidón",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Pos3idóN",
           "sets": 1,
           "wins": 0
         },
@@ -31,28 +36,28 @@
           "wins": 0
         },
         {
-          "opponent": "Poseidón",
+          "opponent": "#Washu",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "#Washu",
+          "opponent": "Gerix",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 1,
       "wins": 0,
-      "losses": 4,
+      "losses": 5,
       "upsets": 0,
       "bestPlace": 33,
       "bestEvent": "Ultimate Smashdown #32 · Ultimate Singles",
-      "avgPlace": 33,
+      "avgPlace": 33.0,
       "avgSeed": 48,
       "characters": [
         {
           "name": "Bowser Jr.",
-          "usage": 50
+          "usage": 50.0
         },
         {
           "name": "R.O.B.",
@@ -88,6 +93,39 @@
               "startedAt": 1755971580,
               "phaseOrder": 1,
               "roundOrder": 1
+            },
+            {
+              "setId": "92988446",
+              "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",
+              "event": "Ultimate Smashdown #32 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "Pos3idóN",
+              "opponentPlayerId": "1360085",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 48,
+              "opponentSeed": 17,
+              "isUpset": false,
+              "startedAt": 1755971580,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": [
+                {
+                  "game": 1,
+                  "character": "Bowser Jr.",
+                  "opponentCharacter": "Young Link",
+                  "outcome": "loss"
+                },
+                {
+                  "game": 2,
+                  "character": "Bowser Jr.",
+                  "opponentCharacter": "Dark Samus",
+                  "outcome": "loss"
+                }
+              ]
             },
             {
               "eventKey": "tournament/ultimate-smashdown-32/event/ultimate-singles",

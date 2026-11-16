@@ -21,7 +21,12 @@
       "name": "Melee",
       "headToHead": [
         {
-          "opponent": "Deleted user",
+          "opponent": "Pladson",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Cody",
           "sets": 1,
           "wins": 0
         },
@@ -31,28 +36,23 @@
           "wins": 0
         },
         {
-          "opponent": "BugSmasher",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Pladson",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "Sol!d",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "BugSmasher",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 1,
       "wins": 0,
-      "losses": 5,
+      "losses": 6,
       "upsets": 0,
       "bestPlace": 13,
       "bestEvent": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
-      "avgPlace": 13,
+      "avgPlace": 13.0,
       "avgSeed": 11,
       "characters": [],
       "notableWins": [],
@@ -70,7 +70,7 @@
               "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
               "phase": "Round robin",
               "round": "Round 3",
-              "opponent": "Deleted user",
+              "opponent": "Cody",
               "score": "0–2",
               "outcome": "loss",
               "ownSeed": 15,
@@ -78,7 +78,11 @@
               "isUpset": false,
               "startedAt": 1511636372,
               "phaseOrder": 2,
-              "roundOrder": 3
+              "roundOrder": 3,
+              "setId": "11284414",
+              "opponentPlayerId": "4732812",
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
@@ -132,6 +136,26 @@
               "startedAt": 1511641553,
               "phaseOrder": 1,
               "roundOrder": 1
+            },
+            {
+              "setId": "11286527",
+              "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2017 #11 · Melee Singles",
+              "phase": "Bracket",
+              "round": "Winners Round 1",
+              "opponent": "Pladson",
+              "opponentPlayerId": "330339",
+              "score": "0–3",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 11,
+              "opponentSeed": 5,
+              "isUpset": false,
+              "startedAt": 1511641553,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
             },
             {
               "eventKey": "tournament/montevideo-melee-monthly-2017-11/event/melee-singles",

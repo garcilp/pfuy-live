@@ -21,9 +21,9 @@
       "name": "Ultimate",
       "headToHead": [
         {
-          "opponent": "Gerix",
+          "opponent": "Trim",
           "sets": 1,
-          "wins": 1
+          "wins": 0
         },
         {
           "opponent": "Poseidón",
@@ -31,9 +31,14 @@
           "wins": 0
         },
         {
-          "opponent": "Mazino",
+          "opponent": "Pos3idóN",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Gerix",
+          "sets": 1,
+          "wins": 1
         },
         {
           "opponent": "Codigoseptimo",
@@ -41,18 +46,18 @@
           "wins": 0
         },
         {
-          "opponent": "Trim",
+          "opponent": "Mazino",
           "sets": 1,
           "wins": 0
         }
       ],
       "events": 1,
       "wins": 1,
-      "losses": 4,
+      "losses": 5,
       "upsets": 1,
       "bestPlace": 49,
       "bestEvent": "Ultimate Smashdown #1 · Ultimate Singles",
-      "avgPlace": 49,
+      "avgPlace": 49.0,
       "avgSeed": 61,
       "characters": [],
       "notableWins": [],
@@ -100,6 +105,26 @@
               "startedAt": 1582999783,
               "phaseOrder": 1,
               "roundOrder": 2
+            },
+            {
+              "setId": "27028438",
+              "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
+              "event": "Ultimate Smashdown #1 · Ultimate Singles",
+              "phase": "Pools",
+              "round": "Round 2",
+              "opponent": "Pos3idóN",
+              "opponentPlayerId": "1360085",
+              "score": "0–2",
+              "outcome": "loss",
+              "opponentExcluded": false,
+              "ownSeed": 61,
+              "opponentSeed": 29,
+              "isUpset": false,
+              "startedAt": 1582999783,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "ROUND_ROBIN",
+              "games": []
             },
             {
               "eventKey": "tournament/ultimate-smashdown-1-2/event/ultimate-singles",
