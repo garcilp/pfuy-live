@@ -210,7 +210,11 @@
       if (scores) { p1Games += scores[0]; p2Games += scores[1]; }
       const games = gameResults(set);
       if (games.some(game => game.p1Won !== null)) hasGameResults = true;
-      if (games.length) {
+      const hasIndividualGameData = Array.isArray(set.games) && set.games.length > 0;
+      const isDecisiveNoGameDataSet = !hasIndividualGameData && scores
+        && (scores[0] === 0 || scores[1] === 0)
+        && (set.outcome === 'win' || set.outcome === 'loss');
+      if (games.length && !isDecisiveNoGameDataSet) {
         games.forEach(game => {
           if (game.p1Won === null) {
             currentStreak = 0;
@@ -222,6 +226,12 @@
           currentSide = side;
           longest[side] = Math.max(longest[side], currentStreak);
         });
+      } else if (isDecisiveNoGameDataSet) {
+        const side = set.outcome === 'win' ? 0 : 1;
+        const consecutiveWins = Math.max(...scores);
+        currentStreak = side === currentSide ? currentStreak + consecutiveWins : consecutiveWins;
+        currentSide = side;
+        longest[side] = Math.max(longest[side], currentStreak);
       } else {
         currentStreak = 0;
         currentSide = -1;
@@ -317,7 +327,7 @@
 
   function statTable(stats, p1, p2) {
     const rows = [
-      [text('Longest game win streak', 'Racha más larga de victorias en games'), stats.longest[0], stats.longest[1], text('Longest known run of consecutive individual game wins. Missing game results break the streak.', 'Mayor racha conocida de victorias consecutivas en games individuales. Los resultados faltantes interrumpen la racha.')],
+      [text('Longest game win streak', 'Racha más larga de victorias en games'), stats.longest[0], stats.longest[1], text('Longest known run of consecutive individual game wins. Missing game results break the streak, except a decisive set score confirms a sweep.', 'Mayor racha conocida de victorias consecutivas en games individuales. Los resultados faltantes interrumpen la racha, salvo que un marcador decisivo confirme una barrida.')],
       [text('Elimination matches won', 'Series de eliminación ganadas'), stats.elimination[0], stats.elimination[1], text('Sets won that eliminated the opponent from the tournament.', 'Series ganadas que eliminaron al rival del torneo.')],
       [text('Comebacks (sweeps)', 'Remontadas (épicas)'), `${stats.comebacks[0]} (${stats.epic[0]})`, `${stats.comebacks[1]} (${stats.epic[1]})`, text('Verified from complete game-by-game results; sets without a full sequence are excluded. Epic comebacks are wins after going 0–2 down in a best-of-five.', 'Verificadas con resultados completos game a game; se excluyen los sets sin secuencia completa. Las remontadas épicas son victorias tras quedar 0–2 abajo en un set al mejor de cinco.')],
       [text('Decider sets won', 'Series decisivas ganadas'), stats.deciders[0], stats.deciders[1], text('Sets won in the final possible game (game 3 in a best-of-three or game 5 in a best-of-five).', 'Series ganadas en el último game posible (game 3 al mejor de tres o game 5 al mejor de cinco).')],
@@ -388,7 +398,7 @@
 
   function meetingsHtml(sets, p1) {
     if (!sets.length) return `<div class="h2h-empty">${text('No sets match these filters.', 'No hay sets que coincidan con estos filtros.')}</div>`;
-    const rows = [...sets].sort((a, b) => (Number(b.startedAt) || 0) - (Number(a.startedAt) || 0));
+    const rows = [...sets].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')) || (Number(b.startedAt) || 0) - (Number(a.startedAt) || 0));
     const grandFinalVods = new Map(sets.filter(set => normalize(set.round) === 'grand final')
       .map(set => [set.eventKey, set.vods?.find(item => item.url)?.url || set.mirror?.vods?.find(item => item.url)?.url])
       .filter(([, url]) => url));

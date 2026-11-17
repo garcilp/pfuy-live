@@ -98,6 +98,7 @@ h1,h2,p{margin:0}.mono{font-family:'JetBrains Mono',monospace}.muted{color:var(-
 .panel{padding:24px;border-radius:24px}
 .panel h2,.sec{font-size:20px;margin-bottom:12px}
 .opponent-history-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}.opponent-history-heading h2{margin:0}
+.opponent-history{box-sizing:border-box;width:100%;min-width:0;max-width:100%}.opponent-history-heading>div{min-width:0;max-width:100%}.rivalry-summary{max-width:100%}
 .rivalry-close{width:44px;height:44px;min-width:44px;padding:0;display:grid;place-items:center;border:0;border-radius:12px;background:#FFB38A;box-shadow:none;color:var(--bg);font:400 32px/1 'Space Grotesk',sans-serif}
 .most-played-list{display:flex;flex-direction:column;border-bottom:1px solid var(--line);margin-bottom:8px}
 .opponent-row-wrap{border-top:1px solid var(--line)}
@@ -154,7 +155,7 @@ h1,h2,p{margin:0}.mono{font-family:'JetBrains Mono',monospace}.muted{color:var(-
 .rivalry-compare{min-height:44px;padding:0 6px;display:flex;align-items:center;justify-content:flex-end;color:var(--accent);font-size:11px;text-decoration:none;white-space:nowrap}
 .rivalry-all{min-height:44px;margin-top:8px;border:0;background:none;color:var(--accent);font:500 13px 'Space Grotesk',sans-serif;cursor:pointer}
 .opponent-row-wrap[hidden]{display:none}
-@media(max-width:700px){.rivalry-table-head{display:none}.rivalry-controls{align-items:stretch}.rivalry-primary{margin-left:0}.opponent-row-wrap{grid-template-columns:minmax(100px,1.2fr) minmax(120px,1fr) 38px minmax(95px,1fr) 24px;gap:8px;padding:0 5px}.opponent-row-wrap .rivalry-games{display:none}.rivalry-bar{flex-basis:70px;width:70px}.rivalry-compare{font-size:0;padding:0;justify-content:center}.rivalry-compare:after{content:'→';font-size:15px}}
+@media(max-width:700px){.rivalry-table-head{display:none}.rivalry-controls{align-items:stretch}.rivalry-primary{margin-left:0}.opponent-row-wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) 32px minmax(0,.8fr) 20px;gap:6px;padding:0 2px;min-width:0}.opponent-row-button,.rivalry-opponent,.rivalry-record{min-width:0}.opponent-row-name{max-width:100%}.opponent-row-wrap .rivalry-games{display:none}.rivalry-bar{flex:1 1 0;width:auto;min-width:20px}.rivalry-last-met{font-size:11px}.rivalry-compare{font-size:0;padding:0;justify-content:center}.rivalry-compare:after{content:'→';font-size:15px}}
 .opponent-history-subheading{margin-top:12px;margin-bottom:8px}
 .opponent-history-subheading h3{margin:0;font-size:16px}
 .opponent-set-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:14px;min-height:54px;padding:10px 4px;border-top:1px solid var(--line)}
