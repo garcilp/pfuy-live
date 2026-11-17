@@ -723,7 +723,6 @@ function render() {
   });
   const rivalryList = $('#main .opponent-history .most-played-list');
   if (rivalryList) {
-    let showAllRivalries = false;
     const opponentProfileCache = new Map();
     const gameSelect = $('#main .rivalry-game-select');
     const gamePicker = $('#main .rivalry-game-picker');
@@ -745,7 +744,7 @@ function render() {
       const summaryCounts = { ahead: 0, even: 0, behind: 0 };
       rows.forEach(row => {
         const matchesGame = selectedGame === 'all' || row.dataset.gameIds.split(',').includes(selectedGame);
-        const show = matchesGame && (showAllRivalries || matchingCount < 5);
+        const show = matchesGame && matchingCount < 5;
         if (matchesGame) {
           matchingCount++;
           const stats = statsFor(row);
@@ -768,7 +767,7 @@ function render() {
       summary.querySelector('.even b').textContent = summaryCounts.even;
       summary.querySelector('.behind b').textContent = summaryCounts.behind;
       const allButton = $('#main .rivalry-all');
-      if (allButton) allButton.textContent = showAllRivalries ? 'Show top five ↑' : `All ${matchingCount} opponents →`;
+      if (allButton) allButton.textContent = `All ${matchingCount} opponents →`;
       rows.filter(row => !row.closest('.opponent-row-wrap')?.hidden).forEach(async row => {
         const opponentId = row.dataset.playerId;
         const selectedGameEntry = selectedGame === 'all' ? null : row.dataset.gameMap.split(',').map(pair => pair.split(':')).find(([id]) => id === selectedGame);
@@ -813,7 +812,10 @@ function render() {
       gamePicker.open = false;
       updateRivalries();
     });
-    $('#main .rivalry-all')?.addEventListener('click', () => { showAllRivalries = !showAllRivalries; updateRivalries(); });
+    $('#main .rivalry-all')?.addEventListener('click', () => {
+      const playerId = player.playerId || player.startggPlayerId || profileId || '';
+      window.location.href = `head-to-head.html?p1=${encodeURIComponent(playerId)}`;
+    });
     updateRivalries();
   }
   $('#main').querySelector('.best-placement-tile-button')?.addEventListener('click', () => {
