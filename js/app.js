@@ -15,9 +15,9 @@ const profileId = new URLSearchParams(location.search).get('player');
 let data;
 let playerDirectory = [];
 let playerTagToIdMap = new Map();
+let playerGameExclusions = {};
 let eventsIndexMap = new Map();
 let resultPage = 1;
-let selectedOpponent = null;
 let selectedBestPlacement = null;
 let selectedBestFinishKey = null;
 let isOpponentListOpen = false;
@@ -52,7 +52,10 @@ function getTournamentSlug(result) {
 
 async function loadPlayerDirectory() {
   try {
-    const res = await fetch('data/profiles/index.json', { cache: 'no-store' });
+    const [res, exclusionsRes] = await Promise.all([
+      fetch('data/profiles/index.json', { cache: 'no-store' }),
+      fetch('data/profiles/exclusions.json', { cache: 'no-store' })
+    ]);
     if (res.ok) {
       playerDirectory = await res.json();
       playerDirectory.forEach(item => {
@@ -63,6 +66,10 @@ async function loadPlayerDirectory() {
           }
         }
       });
+    }
+    if (exclusionsRes.ok) {
+      const exclusions = await exclusionsRes.json();
+      playerGameExclusions = exclusions.playerGames || {};
     }
   } catch (e) {
     console.error('Failed to load player directory index for opponent linking', e);
@@ -86,6 +93,21 @@ function linkifyOpponent(nameStr, opponentPlayerId) {
     }
     return esc(trimmed);
   }).join(' ');
+}
+
+function opponentExcludedInGame(game, opponentName) {
+  const normalize = value => String(value || '').trim().replace(/\s+/g, ' ').toLocaleLowerCase();
+  const name = normalize(opponentName);
+  const relevantSets = (game.results || []).flatMap(result => result.sets || [])
+    .filter(set => String(set.opponent || '').split(/\s*[,/]\s*/).some(tag => normalize(tag) === name));
+  const explicitIds = relevantSets.flatMap(set => String(set.opponentPlayerId || '').split(/\s*,\s*/).filter(Boolean));
+  const directoryIds = playerDirectory
+    .filter(entry => [entry.tag, ...(entry.aliases || [])].some(tag => normalize(tag) === name))
+    .map(entry => String(entry.playerId));
+  const candidateIds = directoryIds.length ? directoryIds : explicitIds;
+  const gameKeys = [game.id, game.slug].filter(Boolean).map(String);
+  if (candidateIds.some(id => (playerGameExclusions[id] || []).some(excludedGame => gameKeys.includes(String(excludedGame))))) return true;
+  return !candidateIds.length && relevantSets.some(set => set.opponentExcluded === true);
 }
 
 async function loadProfile() {
@@ -281,7 +303,7 @@ function render() {
     const tot = {};
     games.forEach(g => (g.headToHead || []).forEach(h => {
       const normKey = String(h.opponent || '').trim().replace(/\s+/g, ' ').toLowerCase();
-      if (!normKey) return;
+      if (!normKey || opponentExcludedInGame(g, h.opponent)) return;
       const t = tot[normKey] ||= { name: h.opponent, sets: 0, wins: 0, games: 0 };
       t.sets += h.sets; t.wins += h.wins; t.games++;
     }));
@@ -293,7 +315,7 @@ function render() {
     mostPlayedOpponent = oppName;
     const gameCountLabel = opp ? (opp.games > 1 ? ` · ${opp.games} games` : '') : '';
     stats.push(['ACTIVE FOR', singleEventResult ? '1 Event' : activeDuration, activityPeriod],
-      ['MOST-PLAYED OPPONENT', oppName || '—', opp ? `${opp.sets} sets · ${opp.wins}–${opp.sets - opp.wins}${gameCountLabel}` : 'No set data']);
+      ['MOST-PLAYED OPPONENT', oppName || '—', opp ? `${opp.sets} sets · Open H2H` : 'No set data']);
   }
   const notableWinsList = [];
   const seenOpponents = new Map();
@@ -485,55 +507,58 @@ function render() {
     </div>`;
   }
 
-  const topOpponents = !sel ? (() => {
-    const tot = {};
-    games.forEach(g => (g.headToHead || []).forEach(h => {
-      const normKey = String(h.opponent || '').trim().replace(/\s+/g, ' ').toLowerCase();
-      if (!normKey) return;
-      const t = tot[normKey] ||= { name: h.opponent, sets: 0, wins: 0, games: 0 };
-      t.sets += h.sets; t.wins += h.wins; t.games++;
-    }));
-    return Object.values(tot)
-      .sort((a, b) => b.sets - a.sets || b.wins - a.wins || a.name.localeCompare(b.name))
-      .slice(0, 5);
-  })() : [];
-
-  const opponentHistory = !sel && isOpponentListOpen
+  const opponentHistory = isOpponentListOpen
     ? (() => {
-      const topOpponentRows = topOpponents.map(o => {
-        const isSelected = selectedOpponent && selectedOpponent.toLowerCase() === o.name.toLowerCase();
-        let expandedSetsHtml = '';
-        if (isSelected) {
-          const normalize = value => String(value || '').trim().replace(/\s+/g, ' ').toLocaleLowerCase();
-          const sets = games.flatMap(game => (game.results || []).flatMap(result =>
-            (result.sets || []).filter(set => String(set.opponent || '').split(/\s*[,/]\s*/)
-              .some(name => normalize(name) === normalize(selectedOpponent)))
-              .map(set => ({ ...set, game: game.name, event: result.event, date: result.date }))))
-            .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-          const rows = sets.map(set => {
-            const dateFmt = fmtMonthYear(set.date);
-            const metaParts = [dateFmt, set.game, set.round].filter(Boolean).map(esc).join(' · ');
-            const tSlug = getTournamentSlug({ eventKey: set.eventKey, event: set.event });
-            const eventUrl = `event.html?tournament=${encodeURIComponent(tSlug)}`;
-            return `<div class="opponent-set-row"><span class="opponent-set-context"><b><a class="event-link opponent-link" href="${esc(eventUrl)}">${esc((set.event || '').split(' · ')[0])}</a></b><small>${metaParts}</small></span><span class="opponent-set-score">${esc(set.score || '—')}</span><span class="set-result ${['win', 'loss'].includes(set.outcome) ? set.outcome : 'unknown'}">${set.outcome === 'win' ? 'WIN' : set.outcome === 'loss' ? 'LOSS' : 'UNKNOWN'}</span></div>`;
-          }).join('');
-          expandedSetsHtml = `<div class="opponent-sets-expanded">${rows || '<p class="muted" style="padding:10px 4px;">No set details were recorded against this opponent.</p>'}</div>`;
-        }
+      const rivalryGames = G;
+      const allOpponentStats = Object.values(rivalryGames.reduce((tot, game) => {
+        (game.headToHead || []).forEach(h => {
+          const key = String(h.opponent || '').trim().replace(/\s+/g, ' ').toLowerCase();
+          if (!key || opponentExcludedInGame(game, h.opponent)) return;
+          const row = tot[key] ||= { name: h.opponent, sets: 0, wins: 0, games: [], opponentPlayerId: h.opponentPlayerId || '', gameSets: [] };
+          row.sets += Number(h.sets) || 0;
+          row.wins += Number(h.wins) || 0;
+          row.games.push(game);
+          row.gameSets.push({ game, sets: Number(h.sets) || 0, wins: Number(h.wins) || 0 });
+          row.opponentPlayerId ||= h.opponentPlayerId || '';
+        });
+        return tot;
+      }, {})).map(o => {
+        const sets = rivalryGames.flatMap(game => (game.results || []).flatMap(result => (result.sets || [])
+          .filter(set => String(set.opponent || '').split(/\s*[,/]\s*/).some(name => name.trim().toLowerCase() === o.name.toLowerCase()))
+          .map(set => ({ ...set, gameId: game.id || game.slug, date: result.date }))));
+        o.lastMet = sets.map(set => set.date || '').sort().at(-1) || '';
+        o.lastMetByGame = Object.fromEntries(o.gameSets.map(({ game }) => [game.id || game.slug, sets.filter(set => set.gameId === (game.id || game.slug)).map(set => set.date || '').sort().at(-1) || '']));
+        return o;
+      }).sort((a, b) => b.sets - a.sets || a.name.localeCompare(b.name));
+      const h2hSummary = allOpponentStats.reduce((counts, opponent) => {
+        if (opponent.wins > opponent.sets - opponent.wins) counts.ahead++;
+        else if (opponent.wins < opponent.sets - opponent.wins) counts.behind++;
+        else counts.even++;
+        return counts;
+      }, { ahead: 0, even: 0, behind: 0 });
+      const topOpponentRows = allOpponentStats.map(o => {
+        const directoryEntry = playerDirectory.find(entry => String(entry.playerId) === String(o.opponentPlayerId) || [entry.tag, ...(entry.aliases || [])].some(tag => String(tag || '').trim().replace(/\s+/g, ' ').toLowerCase() === o.name.toLowerCase()));
+        const opponentId = o.opponentPlayerId || directoryEntry?.playerId || '';
+        const sharedGame = [...o.gameSets].sort((a, b) => b.sets - a.sets)[0]?.game;
         return `<div class="opponent-row-wrap">
-          <button class="opponent-row-button${isSelected ? ' active' : ''}" type="button" data-opponent="${esc(o.name)}" aria-expanded="${isSelected}">
-            <span class="opponent-row-info">
-              <span class="opponent-row-name">${esc(o.name)}</span>
-              <span class="opponent-row-sets mono muted">${o.sets} set${o.sets === 1 ? '' : 's'}</span>
-            </span>
-            <span class="opponent-row-record mono">${o.wins}–${o.sets - o.wins}</span>
-          </button>
-          ${expandedSetsHtml}
+          <div class="rivalry-row" data-name="${esc(o.name.toLowerCase())}" data-sets="${o.sets}" data-wins="${o.wins}" data-last-met="${esc(o.lastMet)}" data-game-stats="${esc(JSON.stringify(Object.fromEntries(o.gameSets.map(({ game, sets, wins }) => [game.id || game.slug, { sets, wins, lastMet: o.lastMetByGame[game.id || game.slug] || '' }]))))}" data-game-ids="${esc(o.games.map(game => game.id || game.slug).join(','))}" data-game-map="${esc(o.gameSets.map(({ game }) => `${game.id || game.slug}:${game.slug}`).join(','))}" data-player-id="${esc(opponentId)}" data-game-slug="${esc(sharedGame?.slug || '')}">
+            <div class="opponent-row-button">
+              <span class="rivalry-opponent"><img class="rivalry-character" alt="" hidden><span class="rivalry-identity"><span class="rivalry-sponsor">${esc(directoryEntry?.sponsor || '')}</span><span class="opponent-row-name">${esc(o.name)}</span></span></span>
+              <span class="rivalry-record"><span class="opponent-row-record mono">${o.wins}–${o.sets - o.wins}</span><span class="rivalry-bar" aria-hidden="true"><i style="width:${o.sets ? 100 * o.wins / o.sets : 0}%"></i><b></b></span></span>
+              <span class="rivalry-games">${[...o.gameSets].sort((a, b) => b.sets - a.sets).map(({ game: g }) => `<span>${esc(({ 'rivals-2':'R2', 'rivals-of-aether':'Roa', ultimate:'Ulti', 'project-plus':'P+' }[g.slug] || g.name))}</span>`).join('')}</span>
+              <span class="mono rivalry-set-count">${o.sets}</span><span class="rivalry-last-met">${o.lastMet ? esc(fmt(o.lastMet)) : '—'}</span>
+            </div>
+            <a class="rivalry-compare" href="head-to-head.html?p1=${encodeURIComponent(player.playerId || player.startggPlayerId || profileId || '')}${opponentId ? `&p2=${encodeURIComponent(opponentId)}` : ''}">Compare →</a>
+          </div>
         </div>`;
       }).join('');
 
       return `<div class="panel glass opponent-history" id="opponent-history">
-        <div class="opponent-history-heading"><h2>Most Played Opponents</h2><button class="quiet-button close-opponent-history" type="button">Close</button></div>
+        <div class="opponent-history-heading"><div><h2>${sel ? `Opponents · ${esc(sel.name)}` : 'Rivalries'}</h2><div class="rivalry-summary"><span class="rivalry-summary-label">VS ${allOpponentStats.length} OPPONENTS</span><span class="rivalry-summary-count ahead"><i></i><b>${h2hSummary.ahead}</b> ahead</span><span class="rivalry-summary-count even"><i></i><b>${h2hSummary.even}</b> even</span><span class="rivalry-summary-count behind"><i></i><b>${h2hSummary.behind}</b> behind</span></div></div><button class="quiet-button rivalry-close close-opponent-history" type="button" aria-label="Close Rivalries" title="Close">×</button></div>
+        <div class="rivalry-controls"><div class="rivalry-sort"><button class="rivalry-sort-chip active" data-sort="sets" type="button">Most played</button><button class="rivalry-sort-chip" data-sort="best" type="button">Best record</button><button class="rivalry-sort-chip" data-sort="worst" type="button">Worst record</button></div><details class="rivalry-game-picker"><summary class="rivalry-game-trigger">All games</summary><div class="rivalry-game-menu" role="group" aria-label="Filter opponents by game"><button class="rivalry-game-option selected" type="button" data-game-value="all" aria-pressed="true">All games</button>${rivalryGames.map(game => `<button class="rivalry-game-option" type="button" data-game-value="${esc(game.id || game.slug)}" aria-pressed="false">${esc(game.name)}</button>`).join('')}</div></details><select class="rivalry-game-select" aria-label="Filter opponents by game" hidden><option value="all">All games</option>${rivalryGames.map(game => `<option value="${esc(game.id || game.slug)}">${esc(game.name)}</option>`).join('')}</select><a class="rivalry-primary" href="head-to-head.html?p1=${encodeURIComponent(player.playerId || player.startggPlayerId || profileId || '')}">See all</a></div>
+        <div class="rivalry-table-head"><span>OPPONENT</span><span>RECORD</span><span>GAMES</span><span>SETS</span><span>LAST MET</span><span></span></div>
         <div class="most-played-list">${topOpponentRows || '<p class="muted">No set data available.</p>'}</div>
+        <button class="rivalry-all" type="button">All ${allOpponentStats.length} opponents →</button>
       </div>`;
     })()
     : '';
@@ -689,29 +714,108 @@ function render() {
   }
   $('#main').querySelector('.opponent-tile-button')?.addEventListener('click', () => {
     isOpponentListOpen = !isOpponentListOpen;
-    if (!isOpponentListOpen) selectedOpponent = null;
     render();
     if (isOpponentListOpen) $('#opponent-history')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
   $('#main').querySelector('.close-opponent-history')?.addEventListener('click', () => {
     isOpponentListOpen = false;
-    selectedOpponent = null;
     render();
   });
-  $('#main').querySelectorAll('.opponent-row-button').forEach(btn => {
-    btn.addEventListener('click', e => {
-      if (e.target.closest('.opponent-link')) return;
-      const oppName = btn.dataset.opponent;
-      const normalize = value => String(value || '').trim().replace(/\s+/g, ' ').toLocaleLowerCase();
-      selectedOpponent = (selectedOpponent && normalize(selectedOpponent) === normalize(oppName)) ? null : oppName;
-      render();
+  const rivalryList = $('#main .opponent-history .most-played-list');
+  if (rivalryList) {
+    let showAllRivalries = false;
+    const opponentProfileCache = new Map();
+    const gameSelect = $('#main .rivalry-game-select');
+    const gamePicker = $('#main .rivalry-game-picker');
+    const gameTrigger = $('#main .rivalry-game-trigger');
+    const updateRivalries = () => {
+      const rows = [...rivalryList.querySelectorAll('.rivalry-row')];
+      const selectedGame = gameSelect.value;
+      const statsFor = row => selectedGame === 'all'
+        ? { sets: Number(row.dataset.sets), wins: Number(row.dataset.wins), lastMet: row.dataset.lastMet }
+        : JSON.parse(row.dataset.gameStats)[selectedGame];
+      rows.sort((a, b) => {
+        const mode = $('#main .rivalry-sort-chip.active')?.dataset.sort || 'sets';
+        const statsA = statsFor(a), statsB = statsFor(b);
+        const setsA = statsA?.sets || 0, setsB = statsB?.sets || 0;
+        const recA = setsA ? statsA.wins / setsA : 0, recB = setsB ? statsB.wins / setsB : 0;
+        return mode === 'best' ? recB - recA || setsB - setsA : mode === 'worst' ? recA - recB || setsB - setsA : setsB - setsA;
+      });
+      let matchingCount = 0;
+      const summaryCounts = { ahead: 0, even: 0, behind: 0 };
+      rows.forEach(row => {
+        const matchesGame = selectedGame === 'all' || row.dataset.gameIds.split(',').includes(selectedGame);
+        const show = matchesGame && (showAllRivalries || matchingCount < 5);
+        if (matchesGame) {
+          matchingCount++;
+          const stats = statsFor(row);
+          const losses = stats.sets - stats.wins;
+          if (stats.wins > losses) summaryCounts.ahead++;
+          else if (stats.wins < losses) summaryCounts.behind++;
+          else summaryCounts.even++;
+          row.querySelector('.opponent-row-record').textContent = `${stats.wins}–${losses}`;
+          row.querySelector('.rivalry-set-count').textContent = stats.sets;
+          row.querySelector('.rivalry-last-met').textContent = stats.lastMet ? fmt(stats.lastMet) : '—';
+          row.querySelector('.rivalry-bar i').style.width = `${stats.sets ? 100 * stats.wins / stats.sets : 0}%`;
+        }
+        const wrapper = row.closest('.opponent-row-wrap');
+        wrapper.hidden = !show;
+        rivalryList.appendChild(wrapper);
+      });
+      const summary = $('#main .rivalry-summary');
+      summary.querySelector('.rivalry-summary-label').textContent = `VS ${matchingCount} OPPONENTS`;
+      summary.querySelector('.ahead b').textContent = summaryCounts.ahead;
+      summary.querySelector('.even b').textContent = summaryCounts.even;
+      summary.querySelector('.behind b').textContent = summaryCounts.behind;
+      const allButton = $('#main .rivalry-all');
+      if (allButton) allButton.textContent = showAllRivalries ? 'Show top five ↑' : `All ${matchingCount} opponents →`;
+      rows.filter(row => !row.closest('.opponent-row-wrap')?.hidden).forEach(async row => {
+        const opponentId = row.dataset.playerId;
+        const selectedGameEntry = selectedGame === 'all' ? null : row.dataset.gameMap.split(',').map(pair => pair.split(':')).find(([id]) => id === selectedGame);
+        const gameSlug = selectedGameEntry?.[1] || row.dataset.gameSlug;
+        const image = row.querySelector('.rivalry-character');
+        if (!opponentId || !gameSlug || !image || image.dataset.loadedGame === gameSlug || image.dataset.requestedGame === gameSlug) return;
+        image.dataset.requestedGame = gameSlug;
+        image.hidden = true;
+        try {
+          const entry = playerDirectory.find(item => String(item.playerId) === String(opponentId));
+          if (!entry?.slug) return;
+          if (!opponentProfileCache.has(opponentId)) opponentProfileCache.set(opponentId, fetch(`data/profiles/${encodeURIComponent(entry.slug)}.json`, { cache: 'no-store' }).then(response => response.ok ? response.json() : null));
+          const opponentProfile = await opponentProfileCache.get(opponentId);
+          if (!opponentProfile || image.dataset.requestedGame !== gameSlug) return;
+          const opponentGame = (opponentProfile.games || []).find(game => String(game.id || game.slug) === String(selectedGame) || game.slug === gameSlug);
+          const mainCharacter = [...(opponentGame?.characters || [])].sort((a, b) => Number(b.usage) - Number(a.usage))[0];
+          if (!mainCharacter) return;
+          image.src = `assets/renders/${gameSlug}/stocks/${slug(mainCharacter.name)}.webp`;
+          image.alt = `${mainCharacter.name}`;
+          image.dataset.loadedGame = gameSlug;
+          image.hidden = false;
+          image.onerror = () => { image.hidden = true; };
+        } catch (error) { /* Character artwork is optional. */ }
+      });
+    };
+    $('#main').querySelectorAll('.rivalry-sort-chip').forEach(button => button.addEventListener('click', () => {
+      $('#main').querySelectorAll('.rivalry-sort-chip').forEach(chip => chip.classList.toggle('active', chip === button));
+      updateRivalries();
+    }));
+    gameSelect.addEventListener('change', updateRivalries);
+    gamePicker.addEventListener('click', event => {
+      const option = event.target.closest('.rivalry-game-option');
+      if (!option) return;
+      event.preventDefault();
+      gameSelect.value = option.dataset.gameValue;
+      gameTrigger.textContent = option.textContent;
+      $('#main').querySelectorAll('.rivalry-game-option').forEach(item => {
+        const selected = item === option;
+        item.classList.toggle('selected', selected);
+        item.setAttribute('aria-pressed', String(selected));
+      });
+      gamePicker.open = false;
+      updateRivalries();
     });
-  });
-  $('#main').querySelectorAll('.opponent-history .opponent-link').forEach(link => {
-    link.addEventListener('click', e => {
-      e.stopPropagation();
-    });
-  });
+    $('#main .rivalry-all')?.addEventListener('click', () => { showAllRivalries = !showAllRivalries; updateRivalries(); });
+    updateRivalries();
+  }
   $('#main').querySelector('.best-placement-tile-button')?.addEventListener('click', () => {
     selectedBestPlacement = selectedBestPlacement === sel.id ? null : sel.id;
     selectedBestFinishKey = null;
