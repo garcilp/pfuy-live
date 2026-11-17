@@ -218,6 +218,7 @@ function renderUpcomingEvents() {
           <div class="day">${day}</div>
           <div class="mono muted">${month}</div>
         </div>
+        ${e.image ? `<span class="home-event-avatar"><img src="${esc(e.image)}" alt="" loading="lazy"></span>` : ''}
         <div class="info">
           ${i === 0 ? `<span class="next">${esc(window.i18n?.t('home.event.next') || 'NEXT')}</span>` : ''}
           <b>${esc(e.tournament)}</b>

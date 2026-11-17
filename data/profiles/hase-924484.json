@@ -7,75 +7,12 @@
     "city": "Montevideo",
     "country": "Uruguay",
     "location": "Montevideo, Uruguay",
-    "activeSince": "2023-03-25",
+    "activeSince": null,
     "startgg": "https://www.start.gg/user/fd788a27",
     "startggPlayerId": "924484",
     "aliases": [
       "Hase"
     ]
   },
-  "games": [
-    {
-      "id": "ultimate",
-      "slug": "ultimate",
-      "name": "Ultimate",
-      "headToHead": [],
-      "events": 2,
-      "wins": 0,
-      "losses": 0,
-      "upsets": 0,
-      "bestPlace": 33,
-      "bestEvent": "Koopa Series · Singles",
-      "avgPlace": 49.0,
-      "avgSeed": 53,
-      "characters": [],
-      "notableWins": [],
-      "results": [
-        {
-          "event": "Copa del Rey 2 · Ultimate Singles",
-          "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
-          "displaySeparately": false,
-          "date": "2024-10-19",
-          "seed": 65,
-          "place": 65,
-          "entrants": 72,
-          "sets": [],
-          "characterCounts": {},
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/copa-del-rey-2/event/ultimate-singles",
-              "event": "Copa del Rey 2 · Ultimate Singles",
-              "date": "2024-10-19",
-              "seed": 65,
-              "place": 65,
-              "entrants": 72,
-              "characterCounts": {}
-            }
-          ]
-        },
-        {
-          "event": "Koopa Series · Singles",
-          "eventKey": "tournament/koopa-series/event/singles",
-          "displaySeparately": false,
-          "date": "2023-03-25",
-          "seed": 41,
-          "place": 33,
-          "entrants": 49,
-          "sets": [],
-          "characterCounts": {},
-          "sourceEvents": [
-            {
-              "eventKey": "tournament/koopa-series/event/singles",
-              "event": "Koopa Series · Singles",
-              "date": "2023-03-25",
-              "seed": 41,
-              "place": 33,
-              "entrants": 49,
-              "characterCounts": {}
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "games": []
 }
