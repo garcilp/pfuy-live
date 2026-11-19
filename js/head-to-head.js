@@ -3,6 +3,8 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
   const normalize = value => String(value ?? '').trim().replace(/\s+/g, ' ').toLocaleLowerCase();
   const two = $('#player-two');
+  const one = $('#player-one');
+  const oneWrap = $('#player-one-wrap');
   const gameSelect = $('#h2h-game');
   const periodSelect = $('#h2h-period');
   const phaseSelect = $('#h2h-phase');
@@ -16,6 +18,7 @@
   let merges = {};
   let current = null;
   let originId = '';
+  const selectableOrigin = new URLSearchParams(location.search).get('source') === 'players';
   let initialPeriod = params.get('period') || '';
   const isEs = () => window.i18n?.getLang?.() === 'es';
   const text = (en, es) => isEs() ? es : en;
@@ -33,6 +36,7 @@
   const compareUrl = () => {
     const next = new URLSearchParams();
     if (originId) next.set('p1', originId);
+    if (selectableOrigin) next.set('source', 'players');
     if (two.value) next.set('p2', two.value);
     if (gameSelect.value) next.set('game', gameSelect.value);
     if (periodSelect.value && periodSelect.value !== 'all') next.set('period', periodSelect.value);
@@ -75,13 +79,30 @@
       if (mergesResponse.ok) merges = await mergesResponse.json();
       const opponentIndex = await opponentsResponse.json();
       originId = canonical(params.get('p1') || '');
+      if (selectableOrigin) {
+        oneWrap.hidden = false;
+        one.insertAdjacentHTML('beforeend', directory.slice().sort((a, b) => a.tag.localeCompare(b.tag)).map(entry => `<option value="${esc(entry.playerId)}">${esc(entry.tag)}</option>`).join(''));
+        one.value = directory.some(entry => canonical(entry.playerId) === originId) ? originId : '';
+        one.addEventListener('change', () => {
+          originId = canonical(one.value);
+          const verified = new Set((opponentIndex[originId] || []).map(canonical));
+          const choices = directory.filter(entry => canonical(entry.playerId) !== originId && verified.has(canonical(entry.playerId))).sort((a, b) => a.tag.localeCompare(b.tag));
+          two.innerHTML = `<option value="">${text('Choose opponent', 'Elige oponente')}</option>${choices.map(entry => `<option value="${esc(entry.playerId)}">${esc(entry.tag)}</option>`).join('')}`;
+          two.disabled = !originId;
+          two.value = '';
+          gameSelect.value = '';
+          initialPeriod = '';
+          update();
+        });
+      }
       const verifiedOpponentIds = new Set((opponentIndex[originId] || []).map(canonical));
-      const opponents = directory
-        .filter(entry => canonical(entry.playerId) !== originId && verifiedOpponentIds.has(canonical(entry.playerId)))
-        .sort((a, b) => a.tag.localeCompare(b.tag));
+      const opponents = selectableOrigin
+        ? directory.filter(entry => canonical(entry.playerId) !== originId && verifiedOpponentIds.has(canonical(entry.playerId))).sort((a, b) => a.tag.localeCompare(b.tag))
+        : directory.filter(entry => canonical(entry.playerId) !== originId && verifiedOpponentIds.has(canonical(entry.playerId))).sort((a, b) => a.tag.localeCompare(b.tag));
       const options = opponents
         .map(entry => `<option value="${esc(entry.playerId)}">${esc(entry.tag)}</option>`).join('');
       two.insertAdjacentHTML('beforeend', options);
+      if (selectableOrigin && !originId) two.disabled = true;
       const requestedOpponent = canonical(params.get('p2') || '');
       two.value = opponents.some(entry => canonical(entry.playerId) === requestedOpponent) ? requestedOpponent : '';
       if (params.get('phase')) phaseSelect.value = params.get('phase');
@@ -529,7 +550,7 @@
       : text('Compare players', 'Comparar jugadores');
     if (!id1 || !id2) {
       content.hidden = true;
-      setStatus(!id1 ? text('Open Compare from a player profile to choose the origin player.', 'Abre Comparar desde el perfil de un jugador para elegir el jugador de origen.') : text('Choose an opponent.', 'Elige un oponente.'));
+      setStatus(!id1 ? (selectableOrigin ? text('Choose Player 1.', 'Elige el Jugador 1.') : text('Open Compare from a player profile to choose the origin player.', 'Abre Comparar desde el perfil de un jugador para elegir el jugador de origen.')) : text('Choose an opponent.', 'Elige un oponente.'));
       return;
     }
     if (id1 === id2) {

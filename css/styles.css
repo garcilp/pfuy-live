@@ -119,6 +119,10 @@ h1,h2,p{margin:0}.mono{font-family:'JetBrains Mono',monospace}.muted{color:var(-
 .rivalry-summary{display:flex;align-items:center;gap:14px;margin-top:5px;overflow-x:auto;white-space:nowrap}
 .rivalry-summary-label{color:var(--muted);font:11px 'JetBrains Mono',monospace;text-transform:uppercase}
 .rivalry-summary-count{display:inline-flex;align-items:center;gap:5px;color:var(--text);font:14px 'Space Grotesk',sans-serif}
+.rivalry-summary-count{appearance:none;padding:0;border:0;background:transparent;cursor:pointer}
+.rivalry-description{display:none}
+.rivalry-meta{display:contents}
+.rivalry-mobile-link{display:none}
 .rivalry-summary-count i{width:10px;height:10px;flex:0 0 10px;background:var(--accent)}
 .rivalry-summary-count.even i{background:var(--muted)}
 .rivalry-summary-count.behind i{background:#FFB38A}
