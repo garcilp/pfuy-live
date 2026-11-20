@@ -21,19 +21,14 @@
       "name": "Melee",
       "headToHead": [
         {
-          "opponent": "Iguana",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Ordo",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "ZAPO",
           "sets": 1,
           "wins": 1
+        },
+        {
+          "opponent": "aalz",
+          "sets": 1,
+          "wins": 0
         },
         {
           "opponent": "ENEMA",
@@ -41,12 +36,7 @@
           "wins": 1
         },
         {
-          "opponent": "BugSmasher",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "ToastyMan",
+          "opponent": "Berry",
           "sets": 1,
           "wins": 1
         },
@@ -61,24 +51,34 @@
           "wins": 1
         },
         {
-          "opponent": "Berry",
+          "opponent": "Ordo",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "ToastyMan",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "aalz",
+          "opponent": "BugSmasher",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Iguana",
           "sets": 1,
           "wins": 0
         }
       ],
-      "events": 2,
+      "events": 3,
       "wins": 5,
       "losses": 5,
       "upsets": 2,
       "bestPlace": 5,
       "bestEvent": "Montevideo Melee Monthly 2021  #4 · Melee Singles",
-      "avgPlace": 7.0,
-      "avgSeed": 14,
+      "avgPlace": 8.0,
+      "avgSeed": 13,
       "characters": [
         {
           "name": "Sheik",
@@ -355,6 +355,28 @@
               "characterCounts": {}
             }
           ]
+        },
+        {
+          "event": "Montevideo Melee Monthly 2021 #6 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2021-6/event/melee-singles",
+          "displaySeparately": false,
+          "date": null,
+          "seed": 9,
+          "place": 10,
+          "entrants": 12,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2021-6/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2021 #6 · Melee Singles",
+              "date": null,
+              "seed": 9,
+              "place": 10,
+              "entrants": 12,
+              "characterCounts": {}
+            }
+          ]
         }
       ]
     },
@@ -374,14 +396,14 @@
           "wins": 0
         },
         {
-          "opponent": "kalarse",
+          "opponent": "Salieri",
           "sets": 2,
           "wins": 2
         },
         {
-          "opponent": "Psycho",
+          "opponent": "kalarse",
           "sets": 2,
-          "wins": 0
+          "wins": 2
         },
         {
           "opponent": "elcusquerman",
@@ -394,12 +416,17 @@
           "wins": 2
         },
         {
-          "opponent": "Salieri",
+          "opponent": "Psycho",
           "sets": 2,
-          "wins": 2
+          "wins": 0
         },
         {
           "opponent": "ZAPO",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "BugSmasher",
           "sets": 2,
           "wins": 0
         },
@@ -409,17 +436,17 @@
           "wins": 2
         },
         {
-          "opponent": "BugSmasher",
-          "sets": 2,
-          "wins": 0
+          "opponent": "Elpi Rata",
+          "sets": 1,
+          "wins": 1
         },
         {
-          "opponent": "Conia",
+          "opponent": "Basija",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Basija",
+          "opponent": "Conia",
           "sets": 1,
           "wins": 0
         },
@@ -429,7 +456,7 @@
           "wins": 1
         },
         {
-          "opponent": "Elpi Rata",
+          "opponent": "Tintokill",
           "sets": 1,
           "wins": 1
         },
@@ -439,89 +466,9 @@
           "wins": 1
         },
         {
-          "opponent": "Tintokill",
+          "opponent": "Celltholt",
           "sets": 1,
           "wins": 1
-        },
-        {
-          "opponent": "UDru",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Sigma",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Pivot",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Pos3idóN",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Pulga",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Pritah",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "DD",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "SFAN",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Trim",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Fanca",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "kusanagi",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Konkreto",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Fredy Kima",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "RIGONARDO",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Andres",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Pato",
-          "sets": 1,
-          "wins": 0
         },
         {
           "opponent": "Pantufla",
@@ -534,12 +481,7 @@
           "wins": 0
         },
         {
-          "opponent": "Celltholt",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Cerdo",
+          "opponent": "Drumsetto",
           "sets": 1,
           "wins": 0
         },
@@ -549,19 +491,99 @@
           "wins": 1
         },
         {
-          "opponent": "Drumsetto",
+          "opponent": "Cerdo",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Fredy Kima",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pato",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "RIGONARDO",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Andres",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Konkreto",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "kusanagi",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Fanca",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pritah",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Trim",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "DD",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "SFAN",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pivot",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Sigma",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pulga",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Pos3idóN",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "UDru",
           "sets": 1,
           "wins": 0
         }
       ],
-      "events": 8,
+      "events": 10,
       "wins": 27,
       "losses": 26,
       "upsets": 8,
       "bestPlace": 13,
       "bestEvent": "Ultimate Smashdown #7 · Ultimate Smashdown #7 - Singles",
-      "avgPlace": 24.5,
-      "avgSeed": 35,
+      "avgPlace": 25.4,
+      "avgSeed": 33,
       "characters": [
         {
           "name": "Toon Link",
@@ -831,6 +853,28 @@
               "characterCounts": {
                 "Toon Link": 15
               }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #25 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2024-09-21",
+          "seed": 22,
+          "place": 33,
+          "entrants": 47,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-25/event/ultimate-singles",
+              "event": "Ultimate Smashdown #25 · Ultimate Singles",
+              "date": "2024-09-21",
+              "seed": 22,
+              "place": 33,
+              "entrants": 47,
+              "characterCounts": {}
             }
           ]
         },
@@ -1671,6 +1715,28 @@
               "characterCounts": {
                 "Toon Link": 15
               }
+            }
+          ]
+        },
+        {
+          "event": "Mashito Cup",
+          "eventKey": "tournament/mashito-cup/event/mashito-cup",
+          "displaySeparately": false,
+          "date": "2021-12-12",
+          "seed": 24,
+          "place": 25,
+          "entrants": 38,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-cup/event/mashito-cup",
+              "event": "Mashito Cup",
+              "date": "2021-12-12",
+              "seed": 24,
+              "place": 25,
+              "entrants": 38,
+              "characterCounts": {}
             }
           ]
         },

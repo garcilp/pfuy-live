@@ -7,12 +7,53 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": null,
+    "activeSince": "2019-08-31",
     "startgg": "https://www.start.gg/user/e30edc83",
     "startggPlayerId": "1399174",
     "aliases": [
       "Dabsinno"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 33,
+      "bestEvent": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
+      "avgPlace": 33.0,
+      "avgSeed": 26,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2019-08-31",
+          "seed": 26,
+          "place": 33,
+          "entrants": 48,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2019-8/event/ultimate-singles",
+              "event": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
+              "date": "2019-08-31",
+              "seed": 26,
+              "place": 33,
+              "entrants": 48,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

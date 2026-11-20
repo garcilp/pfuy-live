@@ -7,12 +7,53 @@
     "city": "Ottawa",
     "country": "Canada",
     "location": "Ottawa, Canada",
-    "activeSince": null,
+    "activeSince": "2021-04-05",
     "startgg": "https://www.start.gg/user/32a17f13",
     "startggPlayerId": "549976",
     "aliases": [
       "Shluigi"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "melee",
+      "slug": "melee",
+      "name": "Melee",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 6,
+      "bestEvent": "Montevideo Melee Monthly 2021  #3 · Melee Singles",
+      "avgPlace": 6.0,
+      "avgSeed": 5,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Montevideo Melee Monthly 2021  #3 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2021-3/event/melee-singles",
+          "displaySeparately": false,
+          "date": "2021-04-05",
+          "seed": 5,
+          "place": 6,
+          "entrants": 6,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2021-3/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2021  #3 · Melee Singles",
+              "date": "2021-04-05",
+              "seed": 5,
+              "place": 6,
+              "entrants": 6,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

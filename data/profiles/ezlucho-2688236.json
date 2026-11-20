@@ -7,12 +7,53 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": null,
+    "activeSince": "2022-03-12",
     "startgg": "https://www.start.gg/user/f8a46fe5",
     "startggPlayerId": "2688236",
     "aliases": [
       "EZLucho"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 65,
+      "bestEvent": "Ultimate Smashdown #4 · Singles",
+      "avgPlace": 65.0,
+      "avgSeed": 65,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Ultimate Smashdown #4 · Singles",
+          "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
+          "displaySeparately": false,
+          "date": "2022-03-12",
+          "seed": 65,
+          "place": 65,
+          "entrants": 68,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-4/event/singles-1",
+              "event": "Ultimate Smashdown #4 · Singles",
+              "date": "2022-03-12",
+              "seed": 65,
+              "place": 65,
+              "entrants": 68,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

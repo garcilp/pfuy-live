@@ -7,12 +7,53 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": null,
+    "activeSince": "2022-07-23",
     "startgg": "https://www.start.gg/user/013fc849",
     "startggPlayerId": "2907102",
     "aliases": [
       "Letrixx"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 51,
+      "bestEvent": "Ultimate Smashdown #8 · Ultimate Smashdown #8 - Singles",
+      "avgPlace": 51.0,
+      "avgSeed": 52,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Ultimate Smashdown #8 · Ultimate Smashdown #8 - Singles",
+          "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
+          "displaySeparately": false,
+          "date": "2022-07-23",
+          "seed": 52,
+          "place": 51,
+          "entrants": 53,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-8/event/ultimate-smashdown-8-singles",
+              "event": "Ultimate Smashdown #8 · Ultimate Smashdown #8 - Singles",
+              "date": "2022-07-23",
+              "seed": 52,
+              "place": 51,
+              "entrants": 53,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

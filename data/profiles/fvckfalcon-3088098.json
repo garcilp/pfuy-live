@@ -18,6 +18,46 @@
   },
   "games": [
     {
+      "id": "rivals-of-aether",
+      "slug": "rivals-of-aether",
+      "name": "Rivals of Aether",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 13,
+      "bestEvent": "Rivalito Charrua #4 · Singles",
+      "avgPlace": 13.0,
+      "avgSeed": 12,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Rivalito Charrua #4 · Singles",
+          "eventKey": "tournament/rivalito-charrua-4/event/singles",
+          "displaySeparately": false,
+          "date": "2023-08-12",
+          "seed": 12,
+          "place": 13,
+          "entrants": 14,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/rivalito-charrua-4/event/singles",
+              "event": "Rivalito Charrua #4 · Singles",
+              "date": "2023-08-12",
+              "seed": 12,
+              "place": 13,
+              "entrants": 14,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "ultimate",
       "slug": "ultimate",
       "name": "Ultimate",
@@ -26,11 +66,6 @@
           "opponent": "Matemole",
           "sets": 4,
           "wins": 1
-        },
-        {
-          "opponent": "BITS",
-          "sets": 3,
-          "wins": 2
         },
         {
           "opponent": "Mint",
@@ -43,8 +78,28 @@
           "wins": 0
         },
         {
+          "opponent": "BITS",
+          "sets": 3,
+          "wins": 2
+        },
+        {
           "opponent": "ZAPO",
           "sets": 3,
+          "wins": 0
+        },
+        {
+          "opponent": "Garox",
+          "sets": 2,
+          "wins": 1
+        },
+        {
+          "opponent": "Tintokill",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "Thithi",
+          "sets": 2,
           "wins": 0
         },
         {
@@ -53,42 +108,17 @@
           "wins": 0
         },
         {
-          "opponent": "Choyer",
-          "sets": 2,
-          "wins": 2
-        },
-        {
-          "opponent": "Vodokex",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "manone",
-          "sets": 2,
-          "wins": 1
-        },
-        {
           "opponent": "elcusquerman",
           "sets": 2,
           "wins": 1
         },
         {
-          "opponent": "Lazerth",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "Mitsu",
-          "sets": 2,
-          "wins": 0
-        },
-        {
-          "opponent": "Lucho",
+          "opponent": "Azrad",
           "sets": 2,
           "wins": 1
         },
         {
-          "opponent": "FaaQ",
+          "opponent": "Mitsu",
           "sets": 2,
           "wins": 0
         },
@@ -98,37 +128,32 @@
           "wins": 2
         },
         {
-          "opponent": "Tintokill",
-          "sets": 2,
-          "wins": 2
-        },
-        {
-          "opponent": "Azrad",
-          "sets": 2,
-          "wins": 1
-        },
-        {
-          "opponent": "Garox",
-          "sets": 2,
-          "wins": 1
-        },
-        {
-          "opponent": "Thithi",
+          "opponent": "FaaQ",
           "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "UDru",
+          "opponent": "Lucho",
+          "sets": 2,
+          "wins": 1
+        },
+        {
+          "opponent": "Lazerth",
           "sets": 2,
           "wins": 0
         },
         {
-          "opponent": "J",
+          "opponent": "Choyer",
           "sets": 2,
           "wins": 2
         },
         {
-          "opponent": "Catwo",
+          "opponent": "manone",
+          "sets": 2,
+          "wins": 1
+        },
+        {
+          "opponent": "Vodokex",
           "sets": 2,
           "wins": 0
         },
@@ -138,7 +163,7 @@
           "wins": 0
         },
         {
-          "opponent": "SirSunny",
+          "opponent": "UDru",
           "sets": 2,
           "wins": 0
         },
@@ -148,22 +173,37 @@
           "wins": 0
         },
         {
-          "opponent": "Elit",
+          "opponent": "SirSunny",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "Catwo",
+          "sets": 2,
+          "wins": 0
+        },
+        {
+          "opponent": "J",
+          "sets": 2,
+          "wins": 2
+        },
+        {
+          "opponent": "Pritah",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Butifarra",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Arpic",
+          "opponent": "Jamón con dulce de leche",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Joserus",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Zoro",
+          "opponent": "Ketcha",
           "sets": 1,
           "wins": 0
         },
@@ -178,29 +218,109 @@
           "wins": 0
         },
         {
-          "opponent": "Ketcha",
+          "opponent": "Joserus",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Zoro",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "Jamón con dulce de leche",
+          "opponent": "Elit",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Butifarra",
+          "opponent": "Arpic",
           "sets": 1,
           "wins": 1
         },
         {
-          "opponent": "Pritah",
+          "opponent": "JUMANJI",
           "sets": 1,
           "wins": 0
         },
         {
-          "opponent": "SmashPants",
+          "opponent": "Basija",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Marroll",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "S",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Belipe",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "El Hombre Playa",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "El Denis",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Elpi Rata",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Pos3idóN",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Gerix",
           "sets": 1,
           "wins": 1
+        },
+        {
+          "opponent": "Agualdemar",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "KKK RULEZ",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "Drpoup",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Vikinga",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Link",
+          "sets": 1,
+          "wins": 0
+        },
+        {
+          "opponent": "josiulus",
+          "sets": 1,
+          "wins": 1
+        },
+        {
+          "opponent": "Trim",
+          "sets": 1,
+          "wins": 0
         },
         {
           "opponent": "Hora",
@@ -213,99 +333,19 @@
           "wins": 0
         },
         {
-          "opponent": "Elpi Rata",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "El Denis",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Link",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Trim",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "josiulus",
+          "opponent": "SmashPants",
           "sets": 1,
           "wins": 1
-        },
-        {
-          "opponent": "Vikinga",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Drpoup",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "KKK RULEZ",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Pos3idóN",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Agualdemar",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "Gerix",
-          "sets": 1,
-          "wins": 1
-        },
-        {
-          "opponent": "El Hombre Playa",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Marroll",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Belipe",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "S",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "Basija",
-          "sets": 1,
-          "wins": 0
-        },
-        {
-          "opponent": "JUMANJI",
-          "sets": 1,
-          "wins": 0
         }
       ],
-      "events": 14,
+      "events": 17,
       "wins": 29,
       "losses": 57,
       "upsets": 5,
       "bestPlace": 13,
       "bestEvent": "Ultimate Smashdown #20 · Ultimate Singles",
-      "avgPlace": 31.6,
-      "avgSeed": 37,
+      "avgPlace": 31.4,
+      "avgSeed": 35,
       "characters": [
         {
           "name": "Ryu",
@@ -1049,6 +1089,50 @@
               "characterCounts": {
                 "Ryu": 10
               }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #22 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-22/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2024-05-18",
+          "seed": 23,
+          "place": 33,
+          "entrants": 36,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-22/event/ultimate-singles",
+              "event": "Ultimate Smashdown #22 · Ultimate Singles",
+              "date": "2024-05-18",
+              "seed": 23,
+              "place": 33,
+              "entrants": 36,
+              "characterCounts": {}
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #21 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2024-04-27",
+          "seed": 29,
+          "place": 33,
+          "entrants": 56,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-21/event/ultimate-singles",
+              "event": "Ultimate Smashdown #21 · Ultimate Singles",
+              "date": "2024-04-27",
+              "seed": 29,
+              "place": 33,
+              "entrants": 56,
+              "characterCounts": {}
             }
           ]
         },
@@ -1893,6 +1977,28 @@
                 "Ryu": 10,
                 "Terry": 5
               }
+            }
+          ]
+        },
+        {
+          "event": "Ultimate Smashdown #17 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2023-10-21",
+          "seed": 25,
+          "place": 25,
+          "entrants": 40,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-17/event/ultimate-singles",
+              "event": "Ultimate Smashdown #17 · Ultimate Singles",
+              "date": "2023-10-21",
+              "seed": 25,
+              "place": 25,
+              "entrants": 40,
+              "characterCounts": {}
             }
           ]
         },

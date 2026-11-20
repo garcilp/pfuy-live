@@ -219,14 +219,14 @@
           "wins": 0
         }
       ],
-      "events": 8,
+      "events": 9,
       "wins": 3,
       "losses": 50,
       "upsets": 1,
       "bestPlace": 25,
       "bestEvent": "Montevideo Melee Monthly 2019 #8 · Ultimate Singles",
       "avgPlace": 33.0,
-      "avgSeed": 39,
+      "avgSeed": 37,
       "characters": [
         {
           "name": "Ganondorf",
@@ -377,6 +377,28 @@
                 "Ganondorf": 6,
                 "King K. Rool": 1
               }
+            }
+          ]
+        },
+        {
+          "event": "Koopa Series · Singles",
+          "eventKey": "tournament/koopa-series/event/singles",
+          "displaySeparately": false,
+          "date": "2023-03-25",
+          "seed": 27,
+          "place": 33,
+          "entrants": 49,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/koopa-series/event/singles",
+              "event": "Koopa Series · Singles",
+              "date": "2023-03-25",
+              "seed": 27,
+              "place": 33,
+              "entrants": 49,
+              "characterCounts": {}
             }
           ]
         },

@@ -7,12 +7,53 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": null,
+    "activeSince": "2019-09-28",
     "startgg": "",
     "startggPlayerId": "1457450",
     "aliases": [
       "Fanrasma 3"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "melee",
+      "slug": "melee",
+      "name": "Melee",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 25,
+      "bestEvent": "Montevideo Melee Monthly 2019 #9 · Melee Singles",
+      "avgPlace": 25.0,
+      "avgSeed": 29,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Montevideo Melee Monthly 2019 #9 · Melee Singles",
+          "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
+          "displaySeparately": false,
+          "date": "2019-09-28",
+          "seed": 29,
+          "place": 25,
+          "entrants": 32,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/montevideo-melee-monthly-2019-9/event/melee-singles",
+              "event": "Montevideo Melee Monthly 2019 #9 · Melee Singles",
+              "date": "2019-09-28",
+              "seed": 29,
+              "place": 25,
+              "entrants": 32,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

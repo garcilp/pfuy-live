@@ -7,12 +7,53 @@
     "city": "",
     "country": "Uruguay",
     "location": "Uruguay",
-    "activeSince": null,
+    "activeSince": "2024-03-16",
     "startgg": "https://www.start.gg/user/786e40e7",
     "startggPlayerId": "3933152",
     "aliases": [
       "Walde Dark Diniz"
     ]
   },
-  "games": []
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": 33,
+      "bestEvent": "Ultimate Smashdown #20 · Ultimate Singles",
+      "avgPlace": 33.0,
+      "avgSeed": 35,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Ultimate Smashdown #20 · Ultimate Singles",
+          "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
+          "displaySeparately": false,
+          "date": "2024-03-16",
+          "seed": 35,
+          "place": 33,
+          "entrants": 42,
+          "sets": [],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/ultimate-smashdown-20/event/ultimate-singles",
+              "event": "Ultimate Smashdown #20 · Ultimate Singles",
+              "date": "2024-03-16",
+              "seed": 35,
+              "place": 33,
+              "entrants": 42,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
