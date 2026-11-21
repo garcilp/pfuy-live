@@ -761,3 +761,41 @@
   line-height: 1.5;
   color: var(--muted);
 }
+
+.archive-mobile-title, .archive-game { display: none; }
+.archive-head h2.display { font-size: 36px; margin: 8px 0; }
+
+@media (max-width: 640px) {
+  .directory:has(.archive-head) > .directory-head,
+  .archive-head .switch, .archive-desktop-title, .archive-head .eyebrow { display: none; }
+  .archive-mobile-title, .archive-game { display: block; }
+  .archive-head { padding: 18px; border-radius: 24px; gap: 12px; }
+  .archive-game { width: 100%; min-width: 0; }
+  .historical-head-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 12px;
+    align-items: start;
+  }
+  .historical-head-actions > div { display: contents; }
+  .archive-head h2.display { grid-column: 1; margin: 0; font-size: clamp(24px, 7.5vw, 32px); line-height: 1.1; }
+  .archive-head .lead { grid-column: 1 / -1; margin: 0; font-size: 14px; }
+  .archive-head .create-ranking-btn { grid-area: 1 / 2; padding-inline: 12px; }
+  .archive-head + .list-col { gap: 12px; }
+  .rk { display: block; }
+  .rk .yr { padding: 4px 0 8px; font-size: 12px; }
+  .rk .yr:empty { display: none; }
+  .rk .card { padding: 14px; grid-template-columns: 36px minmax(0, 1fr); gap: 8px 10px; }
+  .rk .hub-icon-col, .rk .hub-icon { width: 36px; min-width: 0; height: 36px; }
+  .rk .main { display: contents; }
+  .rk .name { font-size: 18px; overflow-wrap: anywhere; }
+  .rk .row-details, .rk .row-summary { grid-column: 1 / -1; }
+  .rk .row-summary { gap: 8px; }
+  .rk .dot-sep { display: none; }
+  .rk .top-three { width: 100%; gap: 4px 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  .rk .top-player-item { overflow-wrap: anywhere; max-width: 100%; }
+  .rk .view-link { font-size: 14px; }
+}
+@media (max-width: 360px) {
+  .rk .top-three { flex-direction: column; align-items: flex-start; }
+}

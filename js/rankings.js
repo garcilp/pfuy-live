@@ -473,6 +473,7 @@ async function renderHistoricalRankings() {
     return;
   }
 
+  const isEs = window.i18n?.getLang?.() === 'es';
   const games = historicalRankingsData.games;
   const rawHash = location.hash.replace(/^#/, '');
   const isAll = !rawHash || rawHash === 'all';
@@ -545,15 +546,14 @@ async function renderHistoricalRankings() {
                 ${top3Html}
               </div>
               <span class="dot-sep">·</span>
-              <span class="players-count mono muted">${r.players} players</span>
-              <span class="view-link mono">View Ranking →</span>
+              <span class="players-count mono muted">${r.players} ${isEs ? 'jugadores' : 'players'}</span>
+              <span class="view-link mono">${isEs ? 'Ver ranking' : 'Read ranking'} →</span>
             </div>
           </div>
         </a></div>`;
     }).join('');
   }
 
-  const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
   const allActive = isAll || !selectedGame;
   const gameSwitches = [
     `<a class="${allActive ? 'on' : ''}" href="#all">${isEs ? 'Todos los juegos' : 'All games'}</a>`,
@@ -567,18 +567,22 @@ async function renderHistoricalRankings() {
     : (isEs ? `Power rankings de ${esc(selectedGame.name)}` : `${esc(selectedGame.name)} power rankings`);
 
   rankingsContent.innerHTML = `
-    <section class="head-panel glass">
+    <section class="head-panel archive-head glass">
       <div class="historical-head-actions">
         <div>
           <div class="eyebrow mono">${isEs ? 'POWER RANKINGS HISTÓRICOS' : 'HISTORICAL POWER RANKINGS'}</div>
-          <h2 class="display" style="font-size:36px; margin: 8px 0;">${displayTitle}</h2>
+          <h2 class="display"><span class="archive-desktop-title">${displayTitle}</span><span class="archive-mobile-title">${isEs ? 'Power rankings históricos' : 'Historical power rankings'}</span></h2>
           <p class="muted lead">${isEs ? 'Los rankings son publicados por la comunidad de cada juego. Más recientes primero.' : 'Rankings are published by each game’s community. Newest first.'}</p>
         </div>
         <a href="ranking-creator.html" class="create-ranking-btn">
           <span style="font-size: 18px; line-height: 1;">+</span>
-          <span>${isEs ? 'Crear' : 'Create'}</span>
+          <span>${isEs ? 'Nuevo PR' : 'New PR'}</span>
         </a>
       </div>
+      <select class="archive-game game-filter glass" aria-label="${isEs ? 'Filtrar por juego' : 'Filter by game'}">
+        <option value="all">${isEs ? 'Todos los juegos' : 'All games'}</option>
+        ${games.map(game => `<option value="${esc(game.id)}"${selectedGame === game ? ' selected' : ''}>${esc(game.name)}</option>`).join('')}
+      </select>
       <nav id="switch" class="switch glass pill" aria-label="Game Switcher">
         ${gameSwitches}
       </nav>
@@ -587,6 +591,9 @@ async function renderHistoricalRankings() {
       ${listHtml}
     </div>
   `;
+  rankingsContent.querySelector('.archive-game').addEventListener('change', event => {
+    location.hash = event.target.value;
+  });
 }
 
 async function loadData() {

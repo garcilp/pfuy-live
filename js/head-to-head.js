@@ -285,7 +285,10 @@
           const finalTwoWon = sequence.slice(-2).length === 2 && sequence.slice(-2).every(value => value === ownResult);
           if (completeSequence && opponentAtOneAway && finalTwoWon) {
             comebacks[side]++;
-            if (bestOf === 5 && ownBeforeComeback === 0 && opponentBeforeComeback === 2) epic[side]++;
+            const reverseSweep = winScore === 3 && lossScore === 2
+              && sequence.slice(0, 2).every(value => value !== ownResult)
+              && sequence.slice(2).every(value => value === ownResult);
+            if (reverseSweep) epic[side]++;
           }
         }
       }
