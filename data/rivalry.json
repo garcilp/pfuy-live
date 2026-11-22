@@ -1,46 +1,56 @@
 {
-  "weekOf": "2026-11-15",
+  "weekOf": "2026-11-22",
   "players": [
     {
-      "playerId": "263974",
-      "tag": "Sagat",
-      "slug": "sagat-263974",
-      "photo": "assets/renders/melee/portraits/captain-falcon.webp"
+      "playerId": "2441157",
+      "tag": "Mint",
+      "slug": "mint-2441157",
+      "photo": "assets/players/2441157.png"
     },
     {
-      "playerId": "330371",
-      "tag": "Sol!d",
-      "slug": "sol-d-330371",
-      "photo": "assets/players/330371.png"
+      "playerId": "330721",
+      "tag": "Pritah",
+      "slug": "pritah-330721",
+      "photo": "assets/renders/rivals-of-aether/portraits/ranno.webp"
     }
   ],
   "overall": {
     "score": [
-      29,
-      5
+      9,
+      3
     ],
-    "totalSets": 34,
-    "distinctGames": 3,
+    "totalSets": 12,
+    "distinctGames": 4,
     "lastEncounterDate": "2025-11-09"
   },
   "games": [
+    {
+      "gameId": "roa",
+      "gameName": "Rivals of Aether",
+      "gameSlug": "rivals-of-aether",
+      "score": [
+        7,
+        2
+      ],
+      "sets": 9
+    },
     {
       "gameId": "melee",
       "gameName": "Melee",
       "gameSlug": "melee",
       "score": [
-        28,
-        4
+        0,
+        1
       ],
-      "sets": 32
+      "sets": 1
     },
     {
       "gameId": "pplus",
       "gameName": "Project+",
       "gameSlug": "project-plus",
       "score": [
-        0,
-        1
+        1,
+        0
       ],
       "sets": 1
     },
@@ -55,5 +65,5 @@
       "sets": 1
     }
   ],
-  "seed": 2684862734
+  "seed": 4019157683
 }

@@ -1,0 +1,46 @@
+.characters-page .workspace {display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,2fr);align-items:start;gap:24px}
+.characters-page .panel,.characters-page .tile {background:var(--glass-fill);border:1px solid var(--glass-border);box-shadow:inset 0 1px 0 var(--line);border-radius:24px;padding:20px}
+.characters-page .page-heading {display:grid;gap:4px;margin-bottom:20px}
+.characters-page .sidebar > h2 {margin:24px 0 12px}
+.characters-page .detail > .panel > p + p {margin-top:12px}
+.characters-page .detail p {line-height:1.5}
+.characters-page small,.characters-page label {font:12px 'JetBrains Mono',monospace;color:var(--muted)}
+.characters-page .controls,.characters-page .controls label,.characters-page .detail {display:grid;gap:12px}
+.characters-page .controls label {gap:6px}
+.characters-page input,.characters-page select {width:100%;min-width:0;color:var(--text);background:var(--glass-fill);border:1px solid var(--glass-border);border-radius:14px;padding:12px;font:inherit}
+.characters-page option {background:var(--bg)}
+.characters-page .grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-height:65vh;overflow:auto}
+.characters-page .tile {padding:8px 3px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;gap:3px;border-radius:14px;color:var(--text);font-size:13px;text-decoration:none}
+.characters-page .tile img {width:48px;height:48px;object-fit:contain}
+.characters-page [aria-current] {border-color:var(--sky)}
+.characters-page .detail {min-width:0;gap:20px}
+.characters-page .hero {position:relative;overflow:hidden;min-height:210px;display:flex;align-items:center;padding:24px 40% 24px 28px}
+.characters-page .hero h2 {font-size:clamp(32px,4vw,52px);line-height:1.05;margin:8px 0}
+.characters-page .hero img {position:absolute;bottom:0;right:0;width:39%;height:100%;object-fit:contain;object-position:center bottom}
+.characters-page .mirror {transform:scaleX(-1)}
+.characters-page .compare>div,.characters-page .boardhead {display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.characters-page .compare a {align-self:stretch;display:grid;flex:1 1 125px;gap:6px;padding:12px;border:1px solid var(--line);border-radius:14px;color:var(--sky);text-decoration:none}
+.characters-page .compare a[aria-current] {border-color:var(--sky)}
+.characters-page .compare span,.characters-page .board p {color:var(--muted);font-size:14px}
+.characters-page .boardhead {justify-content:space-between}
+.characters-page .rating-scroll {margin-top:16px;overflow:auto;max-height:530px}
+.characters-page table {width:100%;border-collapse:collapse}
+.characters-page td,.characters-page th {padding:10px 8px;text-align:left;border-bottom:1px solid var(--line)}
+.characters-page th {white-space:nowrap;position:sticky;top:0;background:var(--bg)}
+.characters-page summary {cursor:pointer;color:var(--sky)}
+.characters-page dl {display:grid;grid-template-columns:auto auto;gap:4px 10px;font-size:13px}
+.characters-page dd {margin:0}
+@media(max-width:800px){.characters-page .workspace{grid-template-columns:1fr}.characters-page .grid{max-height:180px;grid-template-columns:repeat(auto-fill,minmax(80px,1fr))}}
+.characters-page .character-highlights td {padding-top:8px;padding-bottom:14px;color:var(--muted);font-size:14px}
+.characters-page .character-highlights strong {color:var(--text)}
+.characters-page .character-highlights ul:not(:empty) {margin-top:6px}
+.characters-page .character-highlights ul {margin:0;padding-left:20px;line-height:1.55}
+.characters-page .character-highlights li + li {margin-top:4px}
+.characters-page .has-highlights {cursor:pointer}
+.characters-page .has-highlights:hover,.characters-page .has-highlights:focus-within {background:var(--glass-fill)}
+.characters-page .highlight-toggle {background:transparent;border:0;color:inherit;font:inherit;padding:0;cursor:pointer;white-space:nowrap}
+.characters-page .character-highlights[hidden] {display:none}
+.characters-page .character-rate {display:grid;gap:3px;font-variant-numeric:tabular-nums}
+.characters-page .rate-track {display:block;width:4.5rem;height:5px;background:var(--line);border-radius:4px;overflow:hidden}
+.characters-page .rate-track > span {display:block;height:100%;background:var(--accent)}
+.characters-page .highlight-profile {display:inline-block;margin-top:8px;color:var(--accent)}

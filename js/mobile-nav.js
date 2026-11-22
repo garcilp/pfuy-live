@@ -24,7 +24,7 @@
     setupTopBar(isHome);
 
     // 2. Setup Bottom Floating Bar
-    setupBottomBar(isHome, isPlayers, isEvents, isRankings);
+    setupBottomBar(isHome, isPlayers, isEvents, isRankings, pathname.endsWith('/characters.html'));
 
     // 3. Setup Sheet Menu Modal
     setupMenuSheet();
@@ -105,7 +105,7 @@
     }
   }
 
-  function setupBottomBar(isHome, isPlayers, isEvents, isRankings) {
+  function setupBottomBar(isHome, isPlayers, isEvents, isRankings, isCharacters) {
     const bottomBar = document.createElement('nav');
     bottomBar.id = 'mobile-bottom-nav';
     bottomBar.className = 'mobile-bottom-bar';
@@ -115,6 +115,7 @@
     const items = [
       { name: 'Home', i18nKey: 'nav.home', url: 'index.html', active: isHome },
       { name: 'Players', i18nKey: 'nav.players', url: 'players.html', active: isPlayers },
+      { name: 'Characters', i18nKey: 'nav.characters', url: 'characters.html', active: isCharacters },
       { name: 'Events', i18nKey: 'nav.events', url: 'events.html', active: isEvents },
       { name: 'Rankings', i18nKey: 'nav.rankings', url: 'rankings.html', active: isRankings },
     ];
@@ -210,6 +211,7 @@
         <div class="mobile-menu-title" data-i18n="menu.browse">${t('menu.browse', 'Browse')}</div>
         <a href="index.html" class="mobile-menu-row"><span data-i18n="nav.home">${t('nav.home', 'Home')}</span></a>
         <a href="players.html" class="mobile-menu-row"><span data-i18n="nav.players">${t('nav.players', 'Players')}</span></a>
+        <a href="characters.html" class="mobile-menu-row"><span data-i18n="nav.characters">${t('nav.characters', 'Characters')}</span></a>
         <a href="events.html" class="mobile-menu-row"><span data-i18n="nav.events">${t('nav.events', 'Events')}</span></a>
         <a href="rankings.html" class="mobile-menu-row"><span data-i18n="nav.rankings">${t('nav.rankings', 'Rankings')}</span></a>
       </div>

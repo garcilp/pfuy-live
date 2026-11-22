@@ -179,6 +179,11 @@
     return (game?.results || []).flatMap(result => (result.sets || []).map(set => ({ ...set, date: result.date, place: result.place, seed: result.seed, event: result.event, eventKey: result.eventKey })));
   }
 
+  function setGameName(set, profile) {
+    const gameId = String(set.gameId || current?.gameId || '');
+    return (profile.games || []).find(game => String(game.id || game.slug) === gameId)?.name || gameId || '—';
+  }
+
   function intersectSets(p1, p2, gameId, id1, id2) {
     const p2Sets = allGameSets(p2, gameId);
     const p2ById = new Map(p2Sets.filter(set => set.setId).map(set => [String(set.setId), set]));
@@ -426,7 +431,7 @@
     const grandFinalVods = new Map(sets.filter(set => normalize(set.round) === 'grand final')
       .map(set => [set.eventKey, set.vods?.find(item => item.url)?.url || set.mirror?.vods?.find(item => item.url)?.url])
       .filter(([, url]) => url));
-    return `<div class="h2h-table-wrap"><table class="h2h-meeting-table"><thead><tr><th>${text('EVENT', 'TORNEO')}</th><th>${text('ROUND', 'RONDA')}</th><th>${text('GAMES · P1 ABOVE / P2 BELOW', 'JUEGOS · P1 ARRIBA / P2 ABAJO')}</th><th>VOD</th></tr></thead><tbody>${rows.map(set => {
+    return `<div class="h2h-table-wrap"><table class="h2h-meeting-table"><thead><tr><th>${text('EVENT', 'TORNEO')}</th><th>${text('GAME', 'JUEGO')}</th><th>${text('ROUND', 'RONDA')}</th><th>${text('GAMES · P1 ABOVE / P2 BELOW', 'JUEGOS · P1 ARRIBA / P2 ABAJO')}</th><th>VOD</th></tr></thead><tbody>${rows.map(set => {
       const p1Won = set.outcome === 'win';
       const gameRows = gameResults(set);
       const gameHtml = gameRows.length ? gameRows.map(game => {
@@ -442,7 +447,7 @@
       const roundLabel = phase.includes('pool') || round.includes('pool') ? 'Pools' : set.round || '—';
       const isAmateurBracket = /\b(amateur bracket|categoria b|bracket b|singles b)\b/.test(phase);
       const bracketLabel = text('Amateur Bracket', 'Categoria B');
-      return `<tr class="${p1Won ? 'winner1' : 'winner2'}"><td><div class="mono muted">${esc(formatDate(set.date))}</div><strong>${esc((set.event || '').split(' · ')[0])}</strong></td><td class="h2h-round">${isAmateurBracket ? `<span class="h2h-bracket-label">${bracketLabel}</span>` : ''}${esc(roundLabel)}</td><td><div class="h2h-game-picks">${gameHtml}</div></td><td class="h2h-vod">${vod ? `<a href="${esc(vod)}" target="_blank" rel="noopener" aria-label="${text('Watch set VOD', 'Ver VOD de la serie')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>` : '—'}</td></tr>`;
+      return `<tr class="${p1Won ? 'winner1' : 'winner2'}"><td><div class="mono muted">${esc(formatDate(set.date))}</div><strong>${esc((set.event || '').split(' · ')[0])}</strong></td><td class="h2h-game-name">${esc(setGameName(set, p1))}</td><td class="h2h-round">${isAmateurBracket ? `<span class="h2h-bracket-label">${bracketLabel}</span>` : ''}${esc(roundLabel)}</td><td><div class="h2h-game-picks">${gameHtml}</div></td><td class="h2h-vod">${vod ? `<a href="${esc(vod)}" target="_blank" rel="noopener" aria-label="${text('Watch set VOD', 'Ver VOD de la serie')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>` : '—'}</td></tr>`;
     }).join('')}</tbody></table></div>`;
   }
 

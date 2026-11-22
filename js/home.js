@@ -400,8 +400,7 @@ async function renderOnThisWeek() {
         date: e.date,
         tournament: e.tournament,
         slug: e.tournamentSlug,
-        game: e.game,
-        events: [],
+        games: new Set(),
         entrants: e.entrants || 0
       });
     } else {
@@ -411,12 +410,7 @@ async function renderOnThisWeek() {
       }
     }
     const item = groupedTournaments.get(key);
-    if (e.event && !item.events.includes(e.event)) {
-      item.events.push(e.event);
-    }
-    if (e.game && !item.game) {
-      item.game = e.game;
-    }
+    if (e.game) item.games.add(e.game);
   });
 
   const items = [...groupedTournaments.values()];
@@ -438,9 +432,7 @@ async function renderOnThisWeek() {
 
   container.innerHTML = items.map(h => {
     const tourneyUrl = h.slug ? `event.html?tournament=${encodeURIComponent(h.slug)}` : 'events.html';
-    const subtitle = h.events.length > 1
-      ? h.events.join(' · ')
-      : (h.game || (h.events.length === 1 ? h.events[0] : 'Tournament'));
+    const subtitle = [...h.games].join(' · ') || 'Tournament';
 
     return `
       <div class="tr day">
