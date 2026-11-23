@@ -285,7 +285,7 @@ for(const [key,games] of Object.entries(allRoster)){
 }
 const collator=new Intl.Collator('en',{sensitivity:'base'});
 let previousScope='',query='',rosterFilter='all';
-let sortKey='score',sortDirection=-1,desktopOpenIndex=0;
+let sortKey='score',sortDirection=-1,desktopOpenIndex=-1,previousCharacterKey=null;
 const mobileQuery=window.matchMedia('(max-width: 720px)');
 let rosterPage=12, playerPage=12, mobileRosterScroll=0, mobileRosterScope='all';
 const mobileMode=()=>mobileQuery.matches;
@@ -365,6 +365,7 @@ function render(){
  const requested = requestedKey === 'sheik-zelda' ? 'sheik' : requestedKey === 'simon-belmont' ? 'simon' : requestedKey;
  const keys=Object.keys(scope==='all'?allRoster:rosters[scope]).sort((a,b)=>Number(b===ALL)-Number(a===ALL)||collator.compare(nameOf(a),nameOf(b)));
  const char = Object.hasOwn(allRoster,requested) ? requested : null;
+ if(char!==previousCharacterKey){desktopOpenIndex=-1;previousCharacterKey=char;}
  const game=char&&char!==ALL?(preferred==='all'?'all':allRoster[char].includes(preferred)?preferred:allRoster[char][0]):scope;
  // The roster is rebuilt below. Preserve its scroll position within the same game filter.
  const rosterOffset = scope === previousScope ? document.querySelector('#grid')?.scrollTop ?? 0 : 0;
