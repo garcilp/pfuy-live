@@ -120,27 +120,8 @@
   display: flex;
   flex-direction: column;
   padding: 8px;
-  scrollbar-width: thin;
-  scrollbar-color: color-mix(in srgb, var(--accent) 35%, transparent) transparent;
 }
 
-.home .search-results::-webkit-scrollbar {
-  width: 6px;
-}
-
-.home .search-results::-webkit-scrollbar-track {
-  background: transparent;
-  margin: 8px 0;
-}
-
-.home .search-results::-webkit-scrollbar-thumb {
-  background: color-mix(in srgb, var(--accent) 35%, transparent);
-  border-radius: 999px;
-}
-
-.home .search-results::-webkit-scrollbar-thumb:hover {
-  background: var(--sky);
-}
 
 .home .search-item {
   display: flex;

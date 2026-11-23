@@ -687,8 +687,7 @@ async function renderRivalry() {
         `;
       }).join('')}
       <div style="margin-top:14px;text-align:center;">
-        <a class="link" href="player.html?player=${encodeURIComponent(p1.playerId)}">${isEs ? `Ver perfil de ${esc(p1.tag)}` : `View ${esc(p1.tag)} profile`}</a> ·
-        <a class="link" href="player.html?player=${encodeURIComponent(p2.playerId)}">${isEs ? `Ver perfil de ${esc(p2.tag)}` : `View ${esc(p2.tag)} profile`}</a>
+        <a class="link" href="head-to-head.html?p1=${encodeURIComponent(p1.playerId)}&amp;p2=${encodeURIComponent(p2.playerId)}">${isEs ? 'Ver enfrentamiento completo' : 'See head-to-head'}</a>
       </div>
     `;
   } catch (err) {

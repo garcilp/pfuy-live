@@ -2,6 +2,12 @@
 
 :root,
 [data-theme='default'] {
+  --scrollbar-size: 12px;
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: color-mix(in srgb, var(--accent) 35%, transparent);
+  --scrollbar-thumb-hover: color-mix(in srgb, var(--accent) 65%, transparent);
+  --scrollbar-thumb-active: var(--accent);
+  color-scheme: dark;
   --bg: #050B1F;
   --glow-1: rgba(0, 56, 168, .70);
   --glow-2: rgba(245, 197, 66, .22);
@@ -31,6 +37,7 @@
 }
 
 [data-theme='daylight'] {
+  color-scheme: light;
   --bg: #EAF2FF;
   --glow-1: rgba(0, 56, 168, .22);
   --glow-2: rgba(245, 197, 66, .30);
@@ -53,6 +60,52 @@
   --ph-a: rgba(11, 22, 51, .14);
   --ph-b: rgba(11, 22, 51, .04);
   --faint: rgba(11, 22, 51, .07);
+}
+
+/* Shared Liquid Glass scrollbars; colors follow the active theme accent. */
+*::-webkit-scrollbar { width: var(--scrollbar-size); height: var(--scrollbar-size); }
+*::-webkit-scrollbar-track { background: var(--scrollbar-track); border-radius: 999px; margin: 10px 0; }
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border: 3px solid transparent;
+  background-clip: content-box;
+  border-radius: 999px;
+  min-height: 40px;
+}
+*::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover); background-clip: content-box; }
+*::-webkit-scrollbar-thumb:active { background: var(--scrollbar-thumb-active); background-clip: content-box; }
+*::-webkit-scrollbar-button, *::-webkit-scrollbar-corner { display: none; }
+
+@supports not selector(::-webkit-scrollbar) {
+  * { scrollbar-width: thin; scrollbar-color: var(--scrollbar-thumb) transparent; }
+}
+
+@media (forced-colors: active) {
+  * { scrollbar-color: auto; }
+  *::-webkit-scrollbar-thumb { background: revert; border-color: revert; }
+}
+
+@media (max-width: 720px) {
+  .characters-page .mobile-game-chips,
+  .rivalry-sort,
+  .h2h-game-picks,
+  .hs,
+  .profile-nav-tabs,
+  .game-tabs-strip,
+  .diag-chips-row,
+  .diag-filter-chips {
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 16px, #000 calc(100% - 16px), transparent);
+    mask-image: linear-gradient(to right, transparent, #000 16px, #000 calc(100% - 16px), transparent);
+  }
+  .characters-page .mobile-game-chips::-webkit-scrollbar,
+  .rivalry-sort::-webkit-scrollbar,
+  .h2h-game-picks::-webkit-scrollbar,
+  .hs::-webkit-scrollbar,
+  .profile-nav-tabs::-webkit-scrollbar,
+  .game-tabs-strip::-webkit-scrollbar,
+  .diag-chips-row::-webkit-scrollbar,
+  .diag-filter-chips::-webkit-scrollbar { display: none; }
 }
 
 [data-theme='high-contrast'] {
@@ -198,26 +251,6 @@
   backdrop-filter: var(--glass-filter, blur(16px));
   -webkit-backdrop-filter: var(--glass-filter, blur(16px));
   z-index: 100;
-  scrollbar-width: thin;
-  scrollbar-color: color-mix(in srgb, var(--accent) 35%, transparent) transparent;
-}
-
-.theme-dropdown::-webkit-scrollbar {
-  width: 6px;
-}
-
-.theme-dropdown::-webkit-scrollbar-track {
-  background: transparent;
-  margin: 8px 0;
-}
-
-.theme-dropdown::-webkit-scrollbar-thumb {
-  background: color-mix(in srgb, var(--accent) 35%, transparent);
-  border-radius: 999px;
-}
-
-.theme-dropdown::-webkit-scrollbar-thumb:hover {
-  background: var(--sky);
 }
 
 .theme-dropdown.open {

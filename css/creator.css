@@ -197,26 +197,6 @@ select.inp option{background:var(--bg);color:var(--text);padding:10px 14px}
   padding: 8px;
   display: flex;
   flex-direction: column;
-  scrollbar-width: thin;
-  scrollbar-color: color-mix(in srgb, var(--accent) 35%, transparent) transparent;
-}
-
-.mains-dropdown::-webkit-scrollbar {
-  width: 6px;
-}
-
-.mains-dropdown::-webkit-scrollbar-track {
-  background: transparent;
-  margin: 8px 0;
-}
-
-.mains-dropdown::-webkit-scrollbar-thumb {
-  background: color-mix(in srgb, var(--accent) 35%, transparent);
-  border-radius: 999px;
-}
-
-.mains-dropdown::-webkit-scrollbar-thumb:hover {
-  background: var(--sky);
 }
 
 .mains-dropdown[hidden] {

@@ -138,7 +138,7 @@ h1,h2,p{margin:0}.mono{font-family:'JetBrains Mono',monospace}.muted{color:var(-
 .rivalry-game-trigger::-webkit-details-marker{display:none}
 .rivalry-game-trigger:after{content:"";position:absolute;right:16px;width:8px;height:8px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:translateY(-2px) rotate(45deg)}
 .rivalry-game-picker[open] .rivalry-game-trigger{border-color:var(--accent)}
-.rivalry-game-menu{position:absolute;top:calc(100% + 8px);left:0;min-width:100%;max-height:380px;overflow-y:auto;overscroll-behavior:contain;display:flex;flex-direction:column;padding:8px;border:1px solid var(--glass-border);border-radius:20px;background:var(--bg);box-shadow:0 16px 40px var(--glass-shadow);backdrop-filter:var(--glass-filter,blur(16px));-webkit-backdrop-filter:var(--glass-filter,blur(16px));z-index:1001;pointer-events:auto;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 35%,transparent) transparent}
+.rivalry-game-menu{position:absolute;top:calc(100% + 8px);left:0;min-width:100%;max-height:380px;overflow-y:auto;overscroll-behavior:contain;display:flex;flex-direction:column;padding:8px;border:1px solid var(--glass-border);border-radius:20px;background:var(--bg);box-shadow:0 16px 40px var(--glass-shadow);backdrop-filter:var(--glass-filter,blur(16px));-webkit-backdrop-filter:var(--glass-filter,blur(16px));z-index:1001;pointer-events:auto}
 .rivalry-game-option{position:relative;z-index:1;min-height:44px;padding:10px 14px;border:0;border-radius:12px;background:transparent;color:var(--text);font:500 14px 'Space Grotesk',system-ui,sans-serif;text-align:left;white-space:nowrap;cursor:pointer;pointer-events:auto;transition:background 150ms ease}
 .rivalry-game-option:hover,.rivalry-game-option:focus-visible,.rivalry-game-option.selected{background:var(--faint);color:var(--text);outline:none}
 .rivalry-primary{width:104px;box-sizing:border-box;margin-left:auto;background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:700}
@@ -220,11 +220,7 @@ h1,h2,p{margin:0}.mono{font-family:'JetBrains Mono',monospace}.muted{color:var(-
 .set-vod-yt-link:hover{color:var(--text);background:rgba(255,255,255,.08);transform:scale(1.08)}
 .set-vod-yt-link svg{width:22px;height:22px;display:block}
 .set-vod-multi{position:relative;display:inline-block}
-.set-vod-multi .vod-multi-menu{display:none;position:absolute;right:0;top:100%;margin-top:8px;z-index:100;min-width:220px;max-height:280px;overflow-y:auto;overscroll-behavior:contain;padding:8px;border-radius:18px;background:var(--bg);border:1px solid var(--glass-border);box-shadow:0 16px 40px var(--glass-shadow);backdrop-filter:var(--glass-filter,blur(16px));-webkit-backdrop-filter:var(--glass-filter,blur(16px));list-style:none;flex-direction:column;gap:4px;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 35%,transparent) transparent}
-.set-vod-multi .vod-multi-menu::-webkit-scrollbar{width:6px}
-.set-vod-multi .vod-multi-menu::-webkit-scrollbar-track{background:transparent;margin:8px 0}
-.set-vod-multi .vod-multi-menu::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent) 35%,transparent);border-radius:999px}
-.set-vod-multi .vod-multi-menu::-webkit-scrollbar-thumb:hover{background:var(--sky)}
+.set-vod-multi .vod-multi-menu{display:none;position:absolute;right:0;top:100%;margin-top:8px;z-index:100;min-width:220px;max-height:280px;overflow-y:auto;overscroll-behavior:contain;padding:8px;border-radius:18px;background:var(--bg);border:1px solid var(--glass-border);box-shadow:0 16px 40px var(--glass-shadow);backdrop-filter:var(--glass-filter,blur(16px));-webkit-backdrop-filter:var(--glass-filter,blur(16px));list-style:none;flex-direction:column;gap:4px}
 .set-vod-multi .vod-multi-menu li a{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;color:var(--text);text-decoration:none;font:500 13px 'Space Grotesk',system-ui,sans-serif;transition:background 150ms ease}
 .set-vod-multi .vod-multi-menu li a:hover,.set-vod-multi .vod-multi-menu li a:focus-visible{background:var(--faint);color:var(--text)}
 .set-empty{padding:4px 8px 10px;font-size:14px}
@@ -930,20 +926,6 @@ a.event-card:hover{color:var(--text);background:var(--faint);border-color:var(--
 }
 .diag-body:focus-visible{
   outline:none;
-}
-
-.diag-body::-webkit-scrollbar{
-  width:6px;
-}
-.diag-body::-webkit-scrollbar-track{
-  background:transparent;
-}
-.diag-body::-webkit-scrollbar-thumb{
-  background:rgba(255,255,255,.15);
-  border-radius:999px;
-}
-.diag-body::-webkit-scrollbar-thumb:hover{
-  background:rgba(255,255,255,.3);
 }
 
 /* Cards & Section Containers inside Tabs */
