@@ -6,8 +6,10 @@ try {
   if (!response.ok) throw new Error(response.statusText);
   characterBoards = await response.json();
 } catch {
-  document.querySelector('#view').textContent = window.i18n?.getLang() === 'es'
+  const view = document.querySelector('#view');
+  if (view) view.textContent = window.i18n?.getLang() === 'es'
     ? 'No se pudieron cargar los rankings de personajes.' : 'Character rankings could not be loaded.';
+  window.dispatchEvent(new CustomEvent('characters-leaderboard-ready', {detail:{error:true}}));
   return;
 }
 const ALL = 'all-characters';
@@ -186,9 +188,36 @@ function highlightContent(player,id,character){
   const lines=group.wins.map(win=>`<li>${highlightNarrative(win,player,character)}</li>`).join('');
   return `<article class="notable-win">${placeLabel?`<span class="placement-badge ${placeClass}">${placeLabel}</span>`:''}<div><strong>${eventName}</strong>${group.date?`<small>${eventDate(group.date)}</small>`:''}<ul class="notable-win-lines">${lines}</ul></div></article>`;
  }).join('');
- const profile=player.profile?`<a class="highlight-profile secondary-button" href="player.html?player=${encodeURIComponent(player.profile)}">${tr('See player profile','Ver perfil del jugador')}</a>`:'';
+ const profile=player.profile?`<a class="highlight-profile secondary-button" href="player.html?player=${encodeURIComponent(player.profile)}#characters">${tr('See player profile','Ver perfil del jugador')}</a>`:'';
  return `<div class="highlight-panel"><h3>${tr('Character highlights','Destacados del personaje')}</h3>${tiles.length?`<div class="highlight-stats">${tiles.join('')}</div>`:''}${cards?`<h4>${tx('notableWins','Notable wins','Victorias destacadas')}</h4><div class="notable-wins">${cards}</div>`:''}${profile}</div>`;
 }
+
+function rankAt(sorted,index){
+ let rank=0;
+ for(let i=0;i<=index;i++)if(!i||(sortKey==='score'?sorted[i-1].score!==sorted[i].score:true))rank=i+1;
+ return rank;
+}
+function winRateValue(record){return record&&Number(record[1])>0?100*Number(record[0])/Number(record[1]):null;}
+function profileRows(profileSlug){
+ const result=[];
+ for(const [game,roster] of Object.entries(characterBoards))for(const [characterKey,board] of Object.entries(roster)){
+  const players=board.players.map(p=>({...p,game,character:board.name||characterKey}));
+  const sorted=sortPlayers(players),index=sorted.findIndex(p=>String(p.profile||'')===String(profileSlug));
+  if(index<0)continue;
+  const player=sorted[index];
+  result.push({...player,characterKey,stock:board.stock,rank:rankAt(sorted,index),rankedCount:sorted.length,winRate:winRateValue(player.gameRecord),lastPlayed:formatDate(player.date)});
+ }
+ return result;
+}
+window.CharactersLeaderboard={
+ profileRows,
+ renderHighlights(player,character){return highlightContent(player,`profile-${player.profile||'character'}`,character);},
+ formatDate,
+ winRateValue,
+ rankAt,
+ minGamesForWinRate:MIN_GAMES_FOR_WINRATE
+};
+window.dispatchEvent(new CustomEvent('characters-leaderboard-ready'));
 
 function formatDate(date) {
  if(!date)return '—';
@@ -209,16 +238,15 @@ function sortPlayers(players) {
 }
 function rows(players, character, combined, acrossGames, mobile=false, limit=Infinity){
  const sorted=sortPlayers(players).slice(0,limit);
- let rank = 0;
  return sorted.map((p,index)=>{
-  if (!index || (sortKey==='score'?sorted[index-1].score!==p.score:true)) rank = index + 1;
+  const rank=rankAt(sorted,index);
   const tag=safe(p.tag);
   const id = (mobile?'mobile-':'desktop-')+'character-highlights-' + index;
   const record = p.gameRecord;
   let rateCell = '—';
   if (record && Number(record[1])>0) {
    const [wins, total] = record;
-   const rate = total>0 ? 100 * wins / total : null;
+   const rate = winRateValue(record);
    const detail = tr(`${wins} wins in ${total} recorded games`, `${wins} victorias en ${total} partidas registradas`);
    const small=total<MIN_GAMES_FOR_WINRATE;
    rateCell = `<span class="character-rate${small?' is-small-sample':''}" ${small?`title="${tx('smallSample','Small sample','Muestra pequeña')}: ${detail}"`:''}><span class="rate-value">${Number(rate.toFixed(1))}%</span>${small?`<small class="small-sample-label">${tx('smallSample','Small sample','Muestra pequeña')}</small>`:''}<span class="rate-track" aria-hidden="true"><span style="width:${rate}%"></span></span></span>`;
@@ -409,6 +437,7 @@ function render(){
   window.scrollTo(0,top);
  };
 }
+if (!view) return;
 view.addEventListener('click', event => {
  const sortButton=event.target.closest('[data-sort]');
  if(sortButton){const next=sortButton.dataset.sort,head=sortButton.closest('th')?.dataset.sortHeader;if(sortKey===next)sortDirection*=-1;else{sortKey=next;sortDirection=next==='date'? -1:1;}const top=window.scrollY;render();view.querySelector(`[data-sort-header="${head}"] [data-sort]`)?.focus({preventScroll:true});window.scrollTo(0,top);return;}

@@ -161,11 +161,13 @@ async function loadProfile() {
 
 Promise.all([
   loadProfile(),
+  window.ProfileCharacters.load(),
   loadPlayerDirectory(),
   loadEventsIndex(),
   window.PRBadges ? window.PRBadges.loadAllRankings() : Promise.resolve(null)
-]).then(([d]) => {
+]).then(([d, characterData]) => {
   data = d;
+  window.ProfileCharacters.setData(characterData);
   const syncedEl = $('#synced');
   if (syncedEl) {
     syncedEl.textContent = new Date().toLocaleDateString(locale(), { month: 'short', day: 'numeric', year: 'numeric' });
@@ -232,10 +234,16 @@ function render() {
   }
 
   const overviewLabel = isEs ? 'Resumen' : 'Overview';
+  const characterRows = window.ProfileCharacters.rowsFor(player.playerId || player.startggPlayerId || profileId || '');
   $('#tabs').innerHTML = [{ id: 'overview', label: overviewLabel, count: '' },
+    ...(characterRows.length ? [{ id: 'characters', label: isEs ? 'Personajes' : 'Characters', count: '' }] : []),
     ...mostRecentlyPlayedFirst.map(g => ({ id: g.id, label: g.name, count: isEs ? `${g.events} torneo${g.events === 1 ? '' : 's'}` : `${g.events} event${g.events === 1 ? '' : 's'}` }))]
     .map(t => `<a class="tab${t.id === id ? ' on' : ''}" href="#${encodeURIComponent(t.id)}"><span class="lbl">${esc(t.label)}</span><span class="c">${esc(t.count)}</span></a>`).join('');
 
+  if (id === 'characters' && characterRows.length) {
+    window.ProfileCharacters.render($('#main'), player, characterRows);
+    return;
+  }
   const sum = f => G.reduce((a, g) => a + (Number(f(g)) || 0), 0);
   const ev = sum(g => g.events), w = sum(g => g.wins), l = sum(g => g.losses);
   const placedResults = G.flatMap(game => game.results || []).filter(result => Number.isFinite(Number(result.place)) && Number(result.place) > 0);
