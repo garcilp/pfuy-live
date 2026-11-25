@@ -10,12 +10,15 @@ const eventView = $('#event-view');
 const collator = new Intl.Collator(undefined, { sensitivity: 'base', numeric: true });
 let events = [];
 
-function isValidStartggUrl(url) {
+function externalProvider(url) {
   if (!url || typeof url !== 'string') return false;
   try {
     const parsed = new URL(url);
     const host = parsed.hostname.toLowerCase();
-    return (host === 'start.gg' || host.endsWith('.start.gg')) && parsed.pathname.length > 1;
+    if (host === 'parry.gg' || host === 'www.parry.gg') return 'parry';
+    if (host === 'challonge.com' || host === 'www.challonge.com') return 'challonge';
+    if (host === 'start.gg' || host.endsWith('.start.gg')) return 'startgg';
+    return false;
   } catch (e) {
     return false;
   }
@@ -31,6 +34,8 @@ function groupTournaments(entries) {
         tournamentSlug: event.tournamentSlug,
         displaySeparately: !!event.displaySeparately,
         eventUrl: event.url || '',
+        provider: event.provider || externalProvider(event.url) || 'internal',
+        tournamentUrl: event.tournamentUrl || '',
         eventKey: (event.url || '').replace(/^https?:\/\/(?:www\.)?start\.gg\//i, '').replace(/^\/+|\/+$/g, '').toLowerCase(),
         image: event.image || '',
         date: event.date,
@@ -50,7 +55,7 @@ function groupTournaments(entries) {
     if (event.game) {
       const gSlug = event.gameSlug || event.game;
       if (!tournament.games.has(gSlug)) {
-        tournament.games.set(gSlug, { slug: event.gameSlug, name: event.game, url: event.url || '' });
+        tournament.games.set(gSlug, { slug: event.gameSlug, name: event.game, url: event.url || '', provider: event.provider || externalProvider(event.url) });
       } else if (!tournament.games.get(gSlug).url && event.url) {
         tournament.games.get(gSlug).url = event.url;
       }
@@ -61,22 +66,30 @@ function groupTournaments(entries) {
   });
   return [...grouped.values()].map(tournament => {
     const games = [...tournament.games.values()].sort((a, b) => collator.compare(a.name, b.name));
-    let mainStartggUrl = '';
-    // Look for valid start.gg tournament URL
-    const anyEventUrl = games.find(g => g.url && isValidStartggUrl(g.url))?.url;
-    if (anyEventUrl) {
-      const tourneyMatch = anyEventUrl.match(/^(https?:\/\/(?:www\.)?start\.gg\/tournament\/[^/?#]+)/i);
-      if (tourneyMatch) mainStartggUrl = tourneyMatch[1];
+    let externalTournamentUrl = tournament.tournamentUrl;
+    const anyEventUrl = games.find(g => g.url && externalProvider(g.url))?.url;
+    if (!externalTournamentUrl && anyEventUrl) {
+      const provider = externalProvider(anyEventUrl);
+      if (provider === 'parry') {
+        const parsed = new URL(anyEventUrl);
+        const tournamentPath = parsed.pathname.split('/').filter(Boolean)[0];
+        if (tournamentPath) externalTournamentUrl = `https://parry.gg/${tournamentPath}`;
+      } else if (provider === 'startgg') {
+        const match = anyEventUrl.match(/^(https?:\/\/(?:www\.)?start\.gg\/tournament\/[^/?#]+)/i);
+        if (match) externalTournamentUrl = match[1];
+      } else if (provider === 'challonge') {
+        externalTournamentUrl = anyEventUrl;
+      }
     }
-    if (!mainStartggUrl && tournament.tournamentSlug) {
-      mainStartggUrl = `https://www.start.gg/tournament/${encodeURIComponent(tournament.tournamentSlug)}`;
+    if (!externalTournamentUrl && tournament.tournamentSlug && tournament.provider !== 'parry') {
+      externalTournamentUrl = `https://www.start.gg/tournament/${encodeURIComponent(tournament.tournamentSlug)}`;
     }
 
     return {
       ...tournament,
       games,
-      startggUrl: mainStartggUrl,
-      url: mainStartggUrl,
+      startggUrl: externalTournamentUrl,
+      url: externalTournamentUrl,
     };
   });
 }
@@ -129,17 +142,17 @@ function renderCard(event, isUpcoming = false, selectedGame = '') {
 
     if (selectedGame) {
       const matchedGame = event.games.find(g => g.slug === selectedGame);
-      if (matchedGame && matchedGame.url && isValidStartggUrl(matchedGame.url)) {
+      if (matchedGame && matchedGame.url && externalProvider(matchedGame.url)) {
         startggTargetUrl = matchedGame.url;
       }
     }
 
     if (!startggTargetUrl) {
-      if (event.games.length === 1 && event.games[0].url && isValidStartggUrl(event.games[0].url)) {
+      if (event.games.length === 1 && event.games[0].url && externalProvider(event.games[0].url)) {
         startggTargetUrl = event.games[0].url;
-      } else if (event.startggUrl && isValidStartggUrl(event.startggUrl)) {
+      } else if (event.startggUrl && externalProvider(event.startggUrl)) {
         startggTargetUrl = event.startggUrl;
-      } else if (event.url && isValidStartggUrl(event.url)) {
+      } else if (event.url && externalProvider(event.url)) {
         startggTargetUrl = event.url;
       }
     }

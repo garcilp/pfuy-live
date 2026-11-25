@@ -1,0 +1,42 @@
+{
+  "tournamentSlug": "parry-montevideo-melee-monthly-2026-12-01a20afc",
+  "tournament": "Montevideo Melee Monthly 2026 #12",
+  "image": "https://parrygg.b-cdn.net/01a1eb98-8a61-761b-8333-24c5bca10b15.png",
+  "startggUrl": "https://parry.gg/montevideo-melee-monthly-2026-12-01a20afc/project/main/bracket",
+  "date": "2026-12-06",
+  "totalEntrants": 10,
+  "games": [
+    {
+      "slug": "melee",
+      "name": "Melee"
+    },
+    {
+      "slug": "project-plus",
+      "name": "Project+"
+    }
+  ],
+  "subEvents": [
+    {
+      "id": "parry:montevideo-melee-monthly-2026-12-01a20afc:tournament/montevideo-melee-monthly-2026-12-01a20afc/event/project",
+      "eventKey": "tournament/montevideo-melee-monthly-2026-12-01a20afc/event/project",
+      "title": "Project+",
+      "game": "Project+",
+      "gameSlug": "project-plus",
+      "entrants": 5,
+      "isAmateur": false,
+      "hasAmateur": false,
+      "standings": []
+    },
+    {
+      "id": "parry:montevideo-melee-monthly-2026-12-01a20afc:tournament/montevideo-melee-monthly-2026-12-01a20afc/event/melee",
+      "eventKey": "tournament/montevideo-melee-monthly-2026-12-01a20afc/event/melee",
+      "title": "Melee",
+      "game": "Melee",
+      "gameSlug": "melee",
+      "entrants": 5,
+      "isAmateur": false,
+      "hasAmateur": false,
+      "standings": []
+    }
+  ]
+}

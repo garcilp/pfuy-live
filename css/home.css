@@ -303,6 +303,21 @@
   object-fit: contain;
 }
 
+.home .home-event-avatar-parry {
+  flex-basis: 68px;
+  width: 68px;
+  height: 58px;
+  border: 1px solid color-mix(in srgb, var(--gold) 24%, var(--glass-border));
+  border-radius: 14px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--gold) 14%, var(--glass-fill)), var(--glass-fill));
+  box-shadow: 0 4px 14px color-mix(in srgb, #000 22%, transparent);
+}
+
+.home .home-event-avatar-parry img {
+  object-fit: cover;
+  object-position: center;
+}
+
 .home .info {
   min-width: 0;
   flex: 1;

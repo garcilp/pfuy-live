@@ -58,7 +58,11 @@ const gameKey = game => norm(game);
 const lang = () => window.i18n?.getLang?.() === 'es';
 const externalEventLabel = url => {
   try {
-    if (['challonge.com', 'www.challonge.com'].includes((new URL(url)).hostname.toLowerCase())) {
+    const host = (new URL(url)).hostname.toLowerCase();
+    if (host === 'parry.gg' || host === 'www.parry.gg') {
+      return lang() ? 'Abrir en parry.gg' : 'Open on parry.gg';
+    }
+    if (host === 'challonge.com' || host === 'www.challonge.com') {
       return lang() ? 'Abrir en Challonge' : 'Open on Challonge';
     }
   } catch (_) { /* fall back to the established start.gg label */ }
