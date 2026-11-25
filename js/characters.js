@@ -221,8 +221,11 @@ window.dispatchEvent(new CustomEvent('characters-leaderboard-ready'));
 
 function formatDate(date) {
  if(!date)return '—';
- const value=new Date(`${date}T00:00:00`);
- return Number.isNaN(value.getTime())?'—':new Intl.DateTimeFormat(window.i18n?.getLang()==='es'?'es-UY':'en-US',{year:'numeric',month:'short',day:'numeric'}).format(value);
+ const match=String(date).match(/^(\d{4})-(\d{2})-(\d{2})/);
+ if(!match)return '—';
+ const [,year,month,day]=match;
+ const value=new Date(Date.UTC(Number(year),Number(month)-1,Number(day)));
+ return value.getUTCFullYear()===Number(year)&&value.getUTCMonth()===Number(month)-1&&value.getUTCDate()===Number(day)?`${year}-${month}-${day}`:'—';
 }
 function sortPlayers(players) {
  const key=sortKey;
@@ -249,7 +252,7 @@ function rows(players, character, combined, acrossGames, mobile=false, limit=Inf
    const rate = winRateValue(record);
    const detail = tr(`${wins} wins in ${total} recorded games`, `${wins} victorias en ${total} partidas registradas`);
    const small=total<MIN_GAMES_FOR_WINRATE;
-   rateCell = `<span class="character-rate${small?' is-small-sample':''}" ${small?`title="${tx('smallSample','Small sample','Muestra pequeña')}: ${detail}"`:''}><span class="rate-value">${Number(rate.toFixed(1))}%</span>${small?`<small class="small-sample-label">${tx('smallSample','Small sample','Muestra pequeña')}</small>`:''}<span class="rate-track" aria-hidden="true"><span style="width:${rate}%"></span></span></span>`;
+   rateCell = `<span class="character-rate${small?' is-small-sample':''}" ${small?`title="${tx('smallSample','Small sample','Muestra pequeña')}: ${detail}"`:''}><span class="rate-value">${rate.toFixed(1)}%</span>${small?`<small class="small-sample-label">${tx('smallSample','Small sample','Muestra pequeña')}</small>`:''}<span class="rate-track" aria-hidden="true"><span style="width:${rate}%"></span></span></span>`;
   }
   const hasHighlights=Boolean((p.highlights||[]).length||p.profile);
   if(hasHighlights)highlightStore.set(id,{player:p,character:combined?p.character:character});
@@ -259,10 +262,11 @@ function rows(players, character, combined, acrossGames, mobile=false, limit=Inf
   const sponsor=p.sponsor?`<small class="character-sponsor">${safe(p.sponsor)} · </small>`:'';
   const date=formatDate(p.date);
   const playerCell=mobile?`${sponsor}<strong>${tag}</strong>`:`<strong>${tag}</strong>${p.sponsor?`<small class="character-sponsor">${safe(p.sponsor)}</small>`:''}`;
+  const combinedCharacter=combined&&mobile?(()=>{const key=Object.keys(rosters[p.game]||{}).find(k=>k!==ALL&&nameOf(k)===p.character);const stock=key?rosters[p.game][key]:'';return `<span class="mobile-ranked-character">${stock?`<img src="${stock}" alt="">`:''}<small>${safe(p.character||'')}</small></span>`})():'';
   const summary=mobile?`<div class="mobile-player-metrics"><span class="mobile-player-rate">${rateCell}</span><span class="mobile-last-played">${date}</span></div>`:'';
   const mainRow=mobile
-   ? `<article class="mobile-player-card ${expanded?'is-open':''}" data-rank="${rank}"><button class="mobile-player-head" type="button" aria-expanded="${expanded}" ${hasHighlights?`aria-controls="${id}"`:''}><span class="mobile-rank rank-${rankClass}">#${rank}</span><span class="mobile-player-name">${playerCell}</span><span class="mobile-player-score"><strong>${p.score.toLocaleString('en-US',{maximumFractionDigits:1})}</strong><small>${p.games} ${tr('games','partidas')}</small></span>${hasHighlights?'<span class="row-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3 6 5 5 5-5"/></svg></span>':''}</button>${summary}${hasHighlights?`<div class="mobile-player-details" id="${id}" ${expanded?'':'hidden'}><div class="lazy-highlight-content"></div><button type="button" class="mobile-close">${tx('close','Close','Cerrar')}</button></div>`:''}</article>`
-   : `<tr class="${hasHighlights?'has-highlights ':''}${expanded?'is-open':''}"><td>${rankMarkup}</td><td class="character-player-cell">${playerCell}</td><td class="character-score-cell"><b>${p.score.toFixed(1)}</b><small class="compact-games">${p.games} ${tr('games','partidas')}</small></td><td>${p.games}</td><td>${rateCell}</td><td>${date}</td><td>${hasHighlights?`<button class="highlight-toggle" type="button" aria-expanded="${expanded}" aria-controls="${id}" aria-label="${tr('Highlights for','Destacados de')} ${tag}"><span class="row-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3 6 5 5 5-5"/></svg></span></button>`:''}</td></tr>${hasHighlights?`<tr class="character-highlights" id="${id}" ${expanded?'':'hidden'}><td colspan="7"><div class="lazy-highlight-content"></div></td></tr>`:''}`;
+   ? `<article class="mobile-player-card ${expanded?'is-open':''}" data-rank="${rank}"><button class="mobile-player-head" type="button" aria-expanded="${expanded}" ${hasHighlights?`aria-controls="${id}"`:''}><span class="mobile-rank rank-${rankClass}">#${rank}</span><span class="mobile-player-name">${playerCell}${combinedCharacter}</span><span class="mobile-player-score"><strong>${p.score.toLocaleString('en-US',{maximumFractionDigits:1})}</strong><small>${p.games} ${tr('games','partidas')}</small></span>${hasHighlights?'<span class="row-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3 6 5 5 5-5"/></svg></span>':''}</button>${summary}${hasHighlights?`<div class="mobile-player-details" id="${id}" ${expanded?'':'hidden'}><div class="lazy-highlight-content"></div><button type="button" class="mobile-close">${tx('close','Close','Cerrar')}</button></div>`:''}</article>`
+   : `<tr class="${hasHighlights?'has-highlights ':''}${expanded?'is-open':''}" ${hasHighlights?`tabindex="0" aria-expanded="${expanded}"`:''}><td>${rankMarkup}</td><td class="character-info-cell"><span>${safe(p.character||character)}</span>${acrossGames?`<small>${safe(names[p.game]||p.game||'')}</small>`:''}</td><td class="character-player-cell">${playerCell}</td><td class="character-score-cell"><b>${p.score.toFixed(1)}</b><small class="compact-games">${p.games} ${tr('games','partidas')}</small></td><td>${p.games}</td><td>${rateCell}</td><td>${date}</td><td>${hasHighlights?`<button class="highlight-toggle" type="button" aria-expanded="${expanded}" aria-controls="${id}" aria-label="${tr('Highlights for','Destacados de')} ${tag}"><span class="row-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3 6 5 5 5-5"/></svg></span></button>`:''}</td></tr>${hasHighlights?`<tr class="character-highlights" id="${id}" ${expanded?'':'hidden'}><td colspan="8"><div class="lazy-highlight-content"></div></td></tr>`:''}`;
   return mainRow;
  }).join('');
 }
@@ -294,11 +298,11 @@ function detailView(game,char){
  const headers=[['rank',tr('Rank','Puesto'),'score'],['player',tr('Player','Jugador'),'player'],['score',tr('Score','Puntaje'),'score'],['games',tr('Games','Partidas'),'games'],['rate',tr('Win rate','% de victorias'),'rate'],['date',tr('Last played','Última partida'),'date']];
  const th=headers.map(([key,label,sort])=>{
   const active=sortKey===sort&&key!=='rank';
-  return `<th scope="col" data-sort-header="${key}" aria-sort="${active?(sortDirection===-1?'descending':'ascending'):'none'}"><button type="button" class="sort-heading${active?' is-active':''}" data-sort="${sort}">${label}${active?` <span aria-hidden="true">${sortDirection===-1?'↓':'↑'}</span>`:''}</button>${key==='score'?`<button class="score-help" type="button" aria-label="How score works" title="${info}">i</button>`:''}</th>`;
+  return `<th scope="col" data-sort-header="${key}" aria-sort="${active?(sortDirection===-1?'descending':'ascending'):'none'}"><button type="button" class="sort-heading${active?' is-active':''}" data-sort="${sort}">${label}${active?` <span aria-hidden="true">${sortDirection===-1?'↓':'↑'}</span>`:''}</button>${key==='score'?`<button class="score-help" type="button" aria-label="How score works" title="${info}">i</button>`:''}</th>${key==='rank'?`<th scope="col">${tr('Character','Personaje')}</th>`:''}`;
  }).join('')+`<th class="character-expand-heading" aria-label="${tr('Expand player highlights','Expandir destacados del jugador')}"></th>`;
  const mobileSort=`<label class="mobile-sort-label">${tx('sortBy','Sort by','Ordenar por')}<select id="mobile-sort"><option value="score">${tr('Score','Puntaje')}</option><option value="games">${tr('Games','Partidas')}</option><option value="rate">${tr('Win rate','% de victorias')}</option><option value="date">${tr('Last played','Última partida')}</option></select></label>`;
  const boardIntro=tx('winRateHelp','Win rate counts only games with a recorded pick and winner.','El porcentaje de victorias cuenta solo partidas con personaje y ganador registrados.');
- return `<section class="panel hero"><div><small>${(acrossGames ? tr('All games','Todos los juegos') : names[game]).toUpperCase()} / ${tr('ALL TIME','HISTÓRICO')}</small><h2>${title}</h2><p>${count(players.length)}</p>${stats}</div><img class="${char!==ALL && (game==='rivals-2'||game==='rivals-of-aether')?'mirror':''}" src="${artSource||''}" alt=""></section>${gamesTabs}<section class="panel board leaderboard-card"><div class="boardhead"><h2>${tx('leaderboard','Leaderboard','Clasificación')}</h2>${mobileSort}</div><p class="board-intro">${boardIntro}</p><div class="rating-scroll"><table class="ratings"><thead><tr>${th}</tr></thead><tbody id="standings">${rows(players,title,char===ALL,acrossGames)}</tbody></table></div></section>`;
+ return `<section class="panel hero"><div><small>${(acrossGames ? tr('All games','Todos los juegos') : names[game]).toUpperCase()} / ${tr('ALL TIME','HISTÓRICO')}</small><h2>${title}</h2><p>${count(players.length)}</p>${stats}</div><img class="${char!==ALL && (game==='rivals-2'||game==='rivals-of-aether')?'mirror':''}" src="${artSource||''}" alt=""></section>${gamesTabs}<section class="panel board leaderboard-card"><div class="boardhead"><h2>${tx('leaderboard','Leaderboard','Clasificación')}</h2>${mobileSort}</div><p class="board-intro">${boardIntro}</p><div class="rating-scroll"><table class="ratings"><thead><tr>${th}</tr></thead><tbody id="standings">${rows(players,title,char===ALL,acrossGames,false,char===ALL?desktopAllRows:Infinity)}</tbody></table></div></section>`;
 }
 const gameOrder=['melee','project-plus','ultimate','rivals-of-aether','rivals-2'];
 const allRoster={};
@@ -313,7 +317,7 @@ for(const [key,games] of Object.entries(allRoster)){
 }
 const collator=new Intl.Collator('en',{sensitivity:'base'});
 let previousScope='',query='',rosterFilter='all';
-let sortKey='score',sortDirection=-1,desktopOpenIndex=-1,previousCharacterKey=null;
+let sortKey='score',sortDirection=-1,desktopOpenIndex=-1,desktopAllRows=50,previousCharacterKey=null;
 const mobileQuery=window.matchMedia('(max-width: 720px)');
 let rosterPage=12, playerPage=12, mobileRosterScroll=0, mobileRosterScope='all';
 const mobileMode=()=>mobileQuery.matches;
@@ -323,7 +327,7 @@ function mobileChipRow(items, active, on, label=tx('filterRosterGame','Filter ro
  return `<div class="mobile-game-chips" role="group" aria-label="${label}">${items.map(([key,name])=>`<button type="button" class="mobile-chip${key===active?' is-active':''}" data-game="${key}" aria-pressed="${key===active}">${name}</button>`).join('')}</div>`;
 }
 function mobileRosterTiles(scope, keys, game) {
- const filtered=keys.filter(k=>nameOf(k).toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()));
+ const filtered=keys.filter(k=>k!==ALL&&nameOf(k).toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()));
  return filtered.slice(0,rosterPage).map(k=>{
   const gs=scope==='all'?allRoster[k]:[game];
   const count=new Set(gs.flatMap(g=>boards[g][k].players.map(p=>p.profile||p.tag.toLowerCase()))).size;
@@ -335,7 +339,7 @@ function mobileRosterTiles(scope, keys, game) {
 function refreshMobileRoster(scope, keys, game) {
  const grid=view.querySelector('#mobile-grid');
  if(grid)grid.innerHTML=mobileRosterTiles(scope,keys,game);
- const count=keys.filter(k=>nameOf(k).toLocaleLowerCase().includes(query.trim().toLocaleLowerCase())).length;
+ const count=keys.filter(k=>k!==ALL&&nameOf(k).toLocaleLowerCase().includes(query.trim().toLocaleLowerCase())).length;
  let more=view.querySelector('#more-characters');
  if(count>rosterPage){
   if(!more){more=document.createElement('button');more.type='button';more.className='mobile-more';more.id='more-characters';more.textContent=tx('showMoreCharacters','Show more characters','Mostrar más personajes');grid?.after(more);}
@@ -343,7 +347,7 @@ function refreshMobileRoster(scope, keys, game) {
  }else more?.remove();
 }
 function mobileOverview(scope, keys, game) {
- const filtered=keys.filter(k=>nameOf(k).toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()));
+ const filtered=keys.filter(k=>k!==ALL&&nameOf(k).toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()));
  const games=[['all',tr('All games','Todos los juegos')],...gameOrder.map(g=>[g,names[g]])];
  const allCount=new Set((scope==='all'?allEntries:boards[game][ALL].players).map(p=>p.profile||p.tag.toLowerCase())).size;
  return `<div class="mobile-character-view">
@@ -359,7 +363,7 @@ function mobileOverview(scope, keys, game) {
 function mobileLeaderboard(game,char) {
  const games=gameOrder.filter(g=>boards[g][char]);
  const selected=game==='all'?games:games.includes(game)?[game]:games;
- const players=selected.flatMap(g=>boards[g][char].players.map(p=>({...p,game:g,character:nameOf(char)})));
+ const players=selected.flatMap(g=>boards[g][char].players.map(p=>({...p,game:g,character:char===ALL?p.character:nameOf(char)})));
  const distinctCount=new Set(games.flatMap(g=>boards[g][char].players.map(p=>p.profile||p.tag.toLowerCase()))).size;
  const imgGame=game==='all'?games[0]:game;
  const mobileSwitcher=games.length>1?mobileChipRow([['all',tr('All games','Todos los juegos')],...games.map(g=>[g,names[g]])],game,null,tx('filterLeaderboardGame','Filter leaderboard by game','Filtrar clasificación por juego')):'';
@@ -367,7 +371,7 @@ function mobileLeaderboard(game,char) {
  <section class="mobile-selected"><img class="mobile-selected-art${['rivals-2','rivals-of-aether'].includes(imgGame)?' mobile-rivals-asset':''}" src="${art[(imgGame||'ultimate')+'/'+char]||''}" alt=""><span class="mobile-stock">${rosters[imgGame]?.[char]?`<img class="${['rivals-2','rivals-of-aether'].includes(imgGame)?'mobile-rivals-asset':''}" src="${rosters[imgGame][char]}" alt="">`:safe(nameOf(char).slice(0,2))}</span><span><strong>${safe(nameOf(char))}</strong><small>${mobileCount(distinctCount).toUpperCase()}</small></span><button class="mobile-change" type="button">${tx('change','Change','Cambiar')}</button></section>
  ${mobileSwitcher}<small class="mobile-leaderboard-label">${tx('leaderboard','Leaderboard','Clasificación')}</small>
  <label class="mobile-sort-label">${tx('sortBy','Sort by','Ordenar por')}<select id="mobile-sort"><option value="score">${tr('Score','Puntaje')}</option><option value="games">${tr('Games','Partidas')}</option><option value="rate">${tr('Win rate','% de victorias')}</option><option value="date">${tr('Last played','Última partida')}</option></select></label>
- <div class="mobile-player-list">${rows(players,char,false,game==='all',true,playerPage)}</div>
+ <div class="mobile-player-list">${rows(players,char,char===ALL,game==='all',true,playerPage)}</div>
  ${players.length>playerPage?`<button type="button" class="mobile-more" id="more-players">${tx('showMorePlayers','Show more players','Mostrar más jugadores')}</button>`:''}</div>`;
 }
 function overview() {
@@ -393,22 +397,35 @@ function render(){
  const requested = requestedKey === 'sheik-zelda' ? 'sheik' : requestedKey === 'simon-belmont' ? 'simon' : requestedKey;
  const keys=Object.keys(scope==='all'?allRoster:rosters[scope]).sort((a,b)=>Number(b===ALL)-Number(a===ALL)||collator.compare(nameOf(a),nameOf(b)));
  const char = Object.hasOwn(allRoster,requested) ? requested : null;
- if(char!==previousCharacterKey){desktopOpenIndex=-1;previousCharacterKey=char;}
+ const characterChanged=char!==previousCharacterKey;
+ if(characterChanged){desktopOpenIndex=-1;desktopAllRows=50;previousCharacterKey=char;}
  const game=char&&char!==ALL?(preferred==='all'?'all':allRoster[char].includes(preferred)?preferred:allRoster[char][0]):scope;
  // The roster is rebuilt below. Preserve its scroll position within the same game filter.
  const rosterOffset = scope === previousScope ? document.querySelector('#grid')?.scrollTop ?? 0 : 0;
  if(scope!==previousScope){previousScope=scope;query=''}
  const hashFor=(key,g)=>key===ALL?'#all-characters':`#${key}/${g}`;
  const isMobile=mobileMode();
- view.innerHTML=isMobile ? (char&&char!==ALL?mobileLeaderboard(game,char):mobileOverview(scope,keys,game)) : `<div class="page-heading"><small>${char&&char!==ALL?`${tr('RANKINGS / CHARACTERS','RANKINGS / PERSONAJES')} / ${safe(nameOf(char)).toUpperCase()}`:tr('RANKINGS / CHARACTERS','RANKINGS / PERSONAJES')}</small><h1>${tr('Characters','Personajes')}</h1></div><div class="workspace"><aside class="panel sidebar"><div class="controls"><label>${tx('filterRosterGame','Filter roster by game','Filtrar lista por juego')}<select id="game">${Object.entries({all:tr('All games','Todos los juegos'),...names}).map(([k,n])=>`<option value="${k}" ${k===scope?'selected':''}>${n}</option>`).join('')}</select></label><label>${tr('CHARACTER','PERSONAJE')}<input type="search" id="search" placeholder="${tr('Search roster','Buscar personaje')}"></label></div><h2>${scope==='all'?tr('All characters','Todos los personajes'):tr(names[scope]+' roster','Personajes de '+names[scope])}</h2><div class="grid" id="grid"></div></aside><article class="detail">${char ? detailView(game,char) : overview()}</article></div>`;
+ view.innerHTML=isMobile ? (char?mobileLeaderboard(game,char):mobileOverview(scope,keys,game)) : `<div class="page-heading"><small>${char&&char!==ALL?`${tr('RANKINGS / CHARACTERS','RANKINGS / PERSONAJES')} / ${safe(nameOf(char)).toUpperCase()}`:tr('RANKINGS / CHARACTERS','RANKINGS / PERSONAJES')}</small><h1>${tr('Characters','Personajes')}</h1></div><div class="workspace"><aside class="panel sidebar"><div class="controls"><label>${tx('filterRosterGame','Filter roster by game','Filtrar lista por juego')}<select id="game">${Object.entries({all:tr('All games','Todos los juegos'),...names}).map(([k,n])=>`<option value="${k}" ${k===scope?'selected':''}>${n}</option>`).join('')}</select></label><label>${tr('CHARACTER','PERSONAJE')}<input type="search" id="search" placeholder="${tr('Search roster','Buscar personaje')}"></label></div><h2>${scope==='all'?tr('All characters','Todos los personajes'):tr(names[scope]+' roster','Personajes de '+names[scope])}</h2><div class="grid" id="grid"></div></aside><article class="detail">${char ? detailView(game,char) : overview()}</article></div>`;
  view.querySelectorAll('.character-highlights:not([hidden]),.mobile-player-details:not([hidden])').forEach(hydrateHighlights);
+ if(!isMobile&&char===ALL&&desktopAllRows<allEntries.length){
+  const ratingScroll=view.querySelector('.rating-scroll');
+  ratingScroll?.addEventListener('scroll',()=>{
+   if(ratingScroll.scrollHeight-ratingScroll.scrollTop-ratingScroll.clientHeight<120){
+    const scrollTop=ratingScroll.scrollTop;
+    desktopAllRows=Math.min(desktopAllRows+50,allEntries.length);
+    render();
+    const next=view.querySelector('.rating-scroll');if(next)next.scrollTop=scrollTop;
+   }
+  });
+ }
  if(isMobile && !char) {
   const search=document.querySelector('#search'); search.value=query;
   search.oninput=()=>{query=search.value;refreshMobileRoster(scope,keys,game);};
   const more=document.querySelector('#more-characters'); if(more)more.onclick=()=>{rosterPage+=12;refreshMobileRoster(scope,keys,game)};
   mobileRosterScroll&&window.scrollTo(0,mobileRosterScroll);
  }
- if(isMobile && char && char!==ALL) {
+ if(isMobile && char) {
+  if(characterChanged)window.scrollTo(0,0);
   view.querySelector('.mobile-change')?.addEventListener('click',()=>{history.replaceState({rosterFilter:mobileRosterScope},'','#'+mobileRosterScope);rosterFilter=mobileRosterScope;render();window.scrollTo(0,mobileRosterScroll)});
   const more=document.querySelector('#more-players'); if(more)more.onclick=()=>{playerPage+=12;render()};
  }
@@ -478,18 +495,22 @@ view.addEventListener('click', event => {
   window.scrollTo({top, left, behavior:'instant'});
   return;
  }
- const button=event.target.closest('.ratings .highlight-toggle');
- if(!button)return;
- const row=button.closest('tr.has-highlights');
+ const row=event.target.closest('.ratings tbody tr.has-highlights');
  if(!row)return;
+ const button=row.querySelector('.highlight-toggle');
  const details = document.getElementById(button.getAttribute('aria-controls'));
  const opening=details.hidden;
- if(opening)view.querySelectorAll('tr.character-highlights:not([hidden])').forEach(other=>{other.hidden=true;const otherButton=view.querySelector(`[aria-controls="${other.id}"]`);otherButton?.setAttribute('aria-expanded','false');otherButton?.closest('tr')?.classList.remove('is-open');});
+ if(opening)view.querySelectorAll('tr.character-highlights:not([hidden])').forEach(other=>{other.hidden=true;const otherButton=view.querySelector(`[aria-controls="${other.id}"]`);otherButton?.setAttribute('aria-expanded','false');const otherRow=otherButton?.closest('tr');otherRow?.setAttribute('aria-expanded','false');otherRow?.classList.remove('is-open');});
  details.hidden = !opening;
  button.setAttribute('aria-expanded', String(opening));
+ row.setAttribute('aria-expanded',String(opening));
  row.classList.toggle('is-open',opening);
  if(opening)hydrateHighlights(details);
- desktopOpenIndex=opening?Number(details.id.split('-').at(-1)):-1;
+ desktopOpenIndex=opening?Number(details.id.match(/-(\d+)$/)?.[1]):-1;
+});
+view.addEventListener('keydown',event=>{
+ const row=event.target.closest('.ratings tbody tr.has-highlights');
+ if(row&&event.target===row&&(event.key==='Enter'||event.key===' ')){event.preventDefault();row.click();}
 });
 window.addEventListener('hashchange',render);
 window.addEventListener('popstate',event=>{if(event.state?.rosterFilter)rosterFilter=event.state.rosterFilter;else if(!location.hash||location.hash==='#all')rosterFilter='all';render();});

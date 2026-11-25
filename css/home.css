@@ -757,7 +757,10 @@
   }
   .home .hero {
     padding: 24px;
+    position: relative;
+    overflow: hidden;
   }
+  .home .hero-bg-art { display: none; }
   .home .search {
     padding-left: 14px;
   }
