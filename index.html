@@ -89,9 +89,11 @@
         <div id="results" class="table"></div>
       </section>
 
-      <section class="panel glass">
-        <h2 data-i18n="home.history.title">On this week</h2>
-        <p class="muted sm" id="history-sub-text">Tournaments played this week in past years</p>
+      <section class="panel glass home-history-panel">
+        <div class="head home-history-head">
+          <h2 data-i18n="home.history.title">On this week</h2>
+          <small class="muted" id="history-sub-text">in past years</small>
+        </div>
         <div id="history"></div>
       </section>
     </div>
@@ -110,16 +112,17 @@
     </div>
   </div>
 
-  <section class="panel glass lg">
-    <h2 data-i18n="home.steps.title">New to the scene?</h2>
-    <p class="muted sm" data-i18n="home.steps.sub">Four steps from curious to competing.</p>
-    <div id="steps" class="steps"></div>
-  </section>
-
-  <section id="hubs">
-    <h2 class="sec" style="margin-bottom:4px" data-i18n="home.hubs.title">Community hubs</h2>
-    <p class="muted sm" data-i18n="home.hubs.sub">One scene, many communities. Discover where each game lives.</p>
-    <div id="hub-list" class="cards"></div>
+  <section id="communities" class="panel glass communities-panel">
+    <div class="community-column">
+      <span class="community-label" data-i18n="home.communities.label">Community hubs</span>
+      <h2 data-i18n="home.communities.title">One scene, many communities.</h2>
+      <div id="community-cards" class="community-cards"></div>
+    </div>
+    <div class="newcomer-column">
+      <span class="community-label" data-i18n="home.newcomer.label">New to the scene?</span>
+      <h2 data-i18n="home.newcomer.title">Your first tournament is closer than you think.</h2>
+      <div id="newcomer-accordion" class="newcomer-accordion"></div>
+    </div>
   </section>
 </main>
 

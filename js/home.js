@@ -7,6 +7,10 @@ const slug = x => String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').repl
 const fmt = d => d ? new Date(`${d}T00:00:00`).toLocaleDateString(window.i18n?.getLang() === 'es' ? 'es-UY' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
 const collator = new Intl.Collator(undefined, { sensitivity: 'base', numeric: true });
 
+function renderHomeGameLine(game, winnerHtml, entrantsHtml = '') {
+  return `<div class="home-result-game"><span class="home-result-game-main"><span class="game-chip">${esc(game)}</span>${winnerHtml}</span>${entrantsHtml}</div>`;
+}
+
 function externalProvider(url) {
   if (!url || typeof url !== 'string') return false;
   try {
@@ -42,12 +46,18 @@ function tournamentExternalUrl(event) {
 
 let eventsIndex = [];
 let playerDirectory = [];
+let communitySocials = {};
 let activeCommunities = [
   { slug: 'rivals-2', name: 'Rivals 2', abbr: 'R2' },
   { slug: 'ultimate', name: 'Ultimate', abbr: 'U' },
   { slug: 'project-plus', name: 'Project+', abbr: 'P+' },
   { slug: 'rivals-of-aether', name: 'Rivals of Aether', abbr: 'RoA' },
   { slug: 'melee', name: 'Melee', abbr: 'M' }
+];
+const communityCardGroups = [
+  { games: [{ slug: 'ultimate' }], accent: '--game-ultimate', art: 'assets/hubs/ultimate.webp' },
+  { games: [{ slug: 'melee' }, { slug: 'project-plus' }], accent: '--game-melee', art: 'assets/renders/melee/full/captain-falcon.webp' },
+  { games: [{ slug: 'rivals-of-aether' }, { slug: 'rivals-2' }], accent: '--game-rivals-of-aether', art: 'assets/hubs/rivals-2.webp' }
 ];
 
 // Cache for event details to prevent fetching the same tournament JSON multiple times across sections
@@ -72,9 +82,10 @@ async function getTournamentDetail(slug) {
 
 async function initHome() {
   try {
-    const [eventsRes, playersRes] = await Promise.all([
+    const [eventsRes, playersRes, socialsRes] = await Promise.all([
       fetch('data/events-index.json', { cache: 'no-store' }),
-      fetch('data/profiles/index.json', { cache: 'no-store' })
+      fetch('data/profiles/index.json', { cache: 'no-store' }),
+      fetch('data/community_socials.json', { cache: 'no-store' })
     ]);
 
     if (eventsRes.ok) {
@@ -83,15 +94,15 @@ async function initHome() {
     if (playersRes.ok) {
       playerDirectory = await playersRes.json();
     }
+    if (socialsRes.ok) communitySocials = await socialsRes.json();
 
     renderStats();
     renderUpcomingEvents();
+    renderCommunityPanel();
     await renderRecentResults();
     await renderOnThisWeek();
     await renderTopPlayers();
     await renderRivalry();
-    renderNewcomerSteps();
-    renderHubs();
     setupSearch();
 
     // Set synced timestamp
@@ -122,7 +133,7 @@ function renderStats() {
   const stats = [
     { label: isEs ? 'JUGADORES' : 'PLAYERS', value: totalPlayers.toLocaleString(), sub: isEs ? `en ${activeCommunities.length} comunidades` : `across ${activeCommunities.length} communities`, href: 'players.html' },
     { label: isEs ? 'TORNEOS' : 'TOURNAMENTS', value: totalTournaments.toLocaleString(), sub: isEs ? 'registrados en start.gg' : 'indexed from start.gg', href: 'events.html' },
-    { label: isEs ? 'JUEGOS' : 'GAMES', value: activeCommunities.length.toString(), sub: isEs ? 'platform fighters activos' : 'platform fighters active', href: '#hubs' },
+    { label: isEs ? 'JUEGOS' : 'GAMES', value: activeCommunities.length.toString(), sub: isEs ? 'platform fighters activos' : 'platform fighters active', href: '#communities' },
     { label: isEs ? 'JUGADORES CROSSOVER' : 'CROSSOVER PLAYERS', value: crossoverCount.toLocaleString(), sub: isEs ? 'compiten en 2+ juegos' : 'compete in 2+ games' }
   ];
 
@@ -194,7 +205,6 @@ function renderUpcomingEvents() {
       : (t.date ? t.date <= todayIso : true);
     return !takenPlace;
   }).sort((a, b) => (a.date || '').localeCompare(b.date || '') || collator.compare(a.tournament, b.tournament));
-
   if (!upcoming.length) {
     container.innerHTML = `<p class="empty-notice">${esc(window.i18n?.t('home.empty.upcoming') || 'No upcoming tournaments currently scheduled. Check back soon or view past events!')}</p>`;
     return;
@@ -242,117 +252,115 @@ function renderUpcomingEvents() {
   }).join('');
 }
 
-// 3. Recent results (showing distinct game events)
+// 3. Recent results (grouped by tournament)
 async function renderRecentResults() {
   const container = $('#results');
   if (!container) return;
 
+  const RECENT_TOURNAMENT_LIMIT = 5;
   const todayIso = new Date().toISOString().split('T')[0];
 
-  // Group completed events by (tournament, game) so tournaments with multiple games show multiple rows
+  // Group completed events into tournament rows while retaining each event as a game line.
   const grouped = new Map();
   eventsIndex.forEach(event => {
-    const tourneyKey = event.displaySeparately ? `event:${event.id || event.url}` : (event.tournamentSlug || (event.tournament || '').toLowerCase());
-    const gameKey = (event.gameSlug || event.game || 'default').toLowerCase();
-    const compositeKey = `${tourneyKey}::${gameKey}`;
+    const name = (event.tournament || '').trim();
+    const date = event.date || '';
+    const identity = event.tournamentSlug || `${name.toLowerCase()}::${date}`;
+    const tournamentKey = event.displaySeparately ? `event:${event.id || event.url || identity}` : identity;
 
     const takenPlace = event.hasTakenPlace !== undefined
       ? event.hasTakenPlace
       : (event.date ? event.date <= todayIso : true);
 
     if (takenPlace && !event.isTemporary) {
-      if (!grouped.has(compositeKey)) {
-        grouped.set(compositeKey, {
-          tournament: event.tournament,
+      if (!grouped.has(tournamentKey)) {
+        grouped.set(tournamentKey, {
+          key: tournamentKey,
+          tournament: name,
           tournamentSlug: event.tournamentSlug,
-          date: event.date,
-          game: event.game,
-          gameSlug: event.gameSlug,
-          entrants: event.entrants || 0
+          date,
+          games: []
         });
-      } else {
-        const item = grouped.get(compositeKey);
-        if (event.entrants && event.entrants > item.entrants) {
-          item.entrants = event.entrants;
-        }
+      }
+
+      const tournament = grouped.get(tournamentKey);
+      const gameKey = (event.gameSlug || event.game || 'default').toLowerCase();
+      const existingGame = tournament.games.find(game => game.key === gameKey);
+      if (!existingGame) {
+        tournament.games.push({
+          key: gameKey,
+          game: event.game || 'Platform Fighter',
+          gameSlug: event.gameSlug || '',
+          entrants: event.entrants || 0,
+          tournamentSlug: event.tournamentSlug,
+          sourceEventId: event.id || event.url || ''
+        });
+      } else if (event.entrants && event.entrants > existingGame.entrants) {
+        existingGame.entrants = event.entrants;
       }
     }
   });
 
   const completed = [...grouped.values()]
     .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
-    .slice(0, 6);
+    .slice(0, RECENT_TOURNAMENT_LIMIT);
 
   if (!completed.length) {
     container.innerHTML = `<p class="empty-notice">${esc(window.i18n?.t('home.empty.results') || 'No recent results found.')}</p>`;
     return;
   }
 
-  const resultsWithWinners = await Promise.all(completed.map(async tourney => {
-    let winner = '—';
-    let winnerId = null;
-    let entrantsCount = tourney.entrants;
-
-    if (tourney.tournamentSlug) {
+  const gameOrder = new Map(activeCommunities.map((community, index) => [community.slug, index]));
+  const resultsWithWinners = await Promise.all(completed.map(async tournament => {
+    let detail = null;
+    if (tournament.tournamentSlug) {
       try {
-        const detail = await getTournamentDetail(tourney.tournamentSlug);
-        if (detail) {
-          // Find the matching subEvent for this game
-          const sub = (detail.subEvents || []).find(s => {
-            const g = (s.game || '').toLowerCase();
-            const target = (tourney.game || '').toLowerCase();
-            return g.includes(target) || target.includes(g);
-          }) || (detail.subEvents || [])[0];
-
-          if (sub) {
-            if (sub.entrants) entrantsCount = sub.entrants;
-            const first = (sub.standings || []).find(s => Number(s.placement) === 1);
-            if (first) {
-              winner = first.tag || '—';
-              winnerId = first.playerId;
-            }
-          }
-        }
+        detail = await getTournamentDetail(tournament.tournamentSlug);
       } catch (e) {
-        // Fallback gracefully
+        // Keep the event-index information when tournament details are unavailable.
       }
     }
 
-    return {
-      ...tourney,
-      winner,
-      winnerId,
-      entrants: entrantsCount
-    };
+    const detailGames = detail?.subEvents || [];
+    const games = tournament.games.map(game => {
+      const sub = detailGames.find(item => {
+        const detailSlug = (item.gameSlug || item.game || '').toLowerCase();
+        return (game.gameSlug && detailSlug === game.gameSlug.toLowerCase()) ||
+          detailSlug === game.game.toLowerCase();
+      });
+      const first = (sub?.standings || []).find(standing => Number(standing.placement) === 1);
+      const winnerTag = first?.tag || '—';
+      const normalizedWinner = winnerTag.trim().replace(/\s+/g, ' ').toLowerCase();
+      const directoryWinner = first?.playerId ? null : playerDirectory.find(player =>
+        String(player.tag || '').trim().replace(/\s+/g, ' ').toLowerCase() === normalizedWinner
+      );
+      const winnerId = first?.playerId || directoryWinner?.playerId || null;
+      return {
+        ...game,
+        entrants: sub?.entrants || game.entrants,
+        winner: winnerId ? winnerTag : '—',
+        winnerId
+      };
+    });
+    games.sort((a, b) => (gameOrder.get(a.gameSlug) ?? Number.MAX_SAFE_INTEGER) -
+      (gameOrder.get(b.gameSlug) ?? Number.MAX_SAFE_INTEGER) || collator.compare(a.game, b.game));
+    return { ...tournament, games };
   }));
 
-  const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
-  container.innerHTML = `
-    <div class="tr c4 head">
-      <span>${isEs ? 'TORNEO' : 'EVENT'}</span>
-      <span>${isEs ? 'JUEGO' : 'GAME'}</span>
-      <span>${isEs ? 'GANADOR' : 'WINNER'}</span>
-      <span>${isEs ? 'PARTICIPANTES' : 'ENTRANTS'}</span>
-    </div>
-    ${resultsWithWinners.map(r => {
-      const tourneyUrl = r.tournamentSlug ? `event.html?tournament=${encodeURIComponent(r.tournamentSlug)}` : 'events.html';
-      const winnerHtml = r.winnerId
-        ? `<a class="opponent-link" href="player.html?player=${encodeURIComponent(r.winnerId)}">${esc(r.winner)}</a>`
-        : esc(r.winner);
-
-      return `
-        <div class="tr c4">
-          <span>
-            <a class="opponent-link" href="${esc(tourneyUrl)}"><b>${esc(r.tournament)}</b></a>
-            <small>${fmt(r.date)}</small>
-          </span>
-          <span>${esc(r.game || 'Platfighter')}</span>
-          <span>${winnerHtml}</span>
-          <span class="mono">${r.entrants || '—'}</span>
-        </div>
-      `;
-    }).join('')}
-  `;
+  const tournamentRows = resultsWithWinners.map(tournament => {
+    const tournamentUrl = tournament.tournamentSlug
+      ? `event.html?tournament=${encodeURIComponent(tournament.tournamentSlug)}`
+      : 'events.html';
+    const gameRows = tournament.games.map(game => {
+      const winnerHtml = game.winnerId
+        ? `<a class="home-result-winner" href="player.html?player=${encodeURIComponent(game.winnerId)}">${esc(game.winner)}</a>`
+        : `<span class="home-result-winner">—</span>`;
+      const entrants = game.entrants ? `${esc(game.entrants)} ${window.i18n?.getLang?.() === 'es' ? 'participantes' : 'entrants'}` : '—';
+      return renderHomeGameLine(game.game, winnerHtml, `<small>${entrants}</small>`);
+    }).join('');
+    return `<article class="home-result-row"><div class="home-result-tournament"><a class="home-result-title" href="${esc(tournamentUrl)}">${esc(tournament.tournament)}</a><small>${fmt(tournament.date)}</small></div><div class="home-result-games">${gameRows}</div></article>`;
+  }).join('');
+  container.innerHTML = `<div class="home-result-list">${tournamentRows}</div>`;
 }
 
 // 4. On this week
@@ -369,10 +377,11 @@ async function renderOnThisWeek() {
   const locale = window.i18n?.getLang() === 'es' ? 'es-UY' : 'en-US';
   const weekRange = `${startOfWeek.toLocaleDateString(locale, { month: 'short', day: 'numeric' })} – ${endOfWeek.toLocaleDateString(locale, { month: 'short', day: 'numeric' })}`;
   const updateSubtitle = () => {
-    if (subtitle) subtitle.textContent = window.i18n ? window.i18n.t('home.history.sub', { today: weekRange }) : `Tournaments played this week (${weekRange}) in past years`;
+    const isSpanish = window.i18n?.getLang() === 'es';
+    if (subtitle) subtitle.textContent = `${weekRange}, ${isSpanish ? 'en años anteriores' : 'in past years'}`;
   };
   updateSubtitle();
-  if (subtitle && window.i18n && window.i18n.onChange && !subtitle.dataset.langListener) {
+  if (subtitle && window.i18n?.onChange && !subtitle.dataset.langListener) {
     subtitle.dataset.langListener = '1';
     window.i18n.onChange(updateSubtitle);
   }
@@ -407,12 +416,11 @@ async function renderOnThisWeek() {
     if (!groupedTournaments.has(key)) {
       const year = parseInt(e.date.split('-')[0], 10);
       groupedTournaments.set(key, {
-        yearsAgo: currentYear - year,
         year,
         date: e.date,
         tournament: e.tournament,
         slug: e.tournamentSlug,
-        games: new Set(),
+        games: new Map(),
         entrants: e.entrants || 0
       });
     } else {
@@ -422,13 +430,20 @@ async function renderOnThisWeek() {
       }
     }
     const item = groupedTournaments.get(key);
-    if (e.game) item.games.add(e.game);
+    if (e.game) {
+      const gameKey = (e.gameSlug || e.game).toLowerCase();
+      if (!item.games.has(gameKey)) {
+        item.games.set(gameKey, { game: e.game, gameSlug: e.gameSlug || '', entrants: e.entrants || 0 });
+      } else if (e.entrants && e.entrants > item.games.get(gameKey).entrants) {
+        item.games.get(gameKey).entrants = e.entrants;
+      }
+    }
   });
 
   const items = [...groupedTournaments.values()];
   items.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
-  // Fetch actual tournament details to get canonical totalEntrants
+  // Fetch canonical totals and per-game entrant counts from tournament details.
   await Promise.all(items.map(async h => {
     if (h.slug) {
       try {
@@ -436,27 +451,63 @@ async function renderOnThisWeek() {
         if (detail && typeof detail.totalEntrants === 'number') {
           h.entrants = detail.totalEntrants;
         }
+        h.subEvents = detail?.subEvents || [];
       } catch (e) {
         // Fallback gracefully
       }
     }
+    h.subEvents ||= [];
   }));
 
-  container.innerHTML = items.map(h => {
+  const getSubEvent = (h, game) => h.subEvents.find(item => {
+    const detailSlug = (item.gameSlug || item.game || '').toLowerCase();
+    return (game.gameSlug && detailSlug === game.gameSlug.toLowerCase()) || detailSlug === game.game.toLowerCase();
+  });
+  const hasPerGameEntrants = items.some(h => [...h.games.values()].some(game =>
+    Number(getSubEvent(h, game)?.entrants || game.entrants) > 0
+  ));
+
+  const historyRows = items.map(h => {
     const tourneyUrl = h.slug ? `event.html?tournament=${encodeURIComponent(h.slug)}` : 'events.html';
-    const subtitle = [...h.games].join(' · ') || 'Tournament';
+    const games = [...h.games.values()];
+    const gameLines = games.map(game => {
+      const sub = getSubEvent(h, game);
+      const firstPlace = (sub?.standings || []).find(standing => Number(standing.placement) === 1);
+      const winnerTag = firstPlace?.tag || '';
+      const normalizedTag = winnerTag.trim().replace(/\s+/g, ' ').toLowerCase();
+      const directoryPlayer = firstPlace?.playerId ? null : playerDirectory.find(player =>
+        String(player.tag || '').trim().replace(/\s+/g, ' ').toLowerCase() === normalizedTag
+      );
+      const playerId = firstPlace?.playerId || directoryPlayer?.playerId;
+      const winner = winnerTag && playerId
+        ? `<a class="home-result-winner" href="player.html?player=${encodeURIComponent(playerId)}">${esc(winnerTag)}</a>`
+        : '<span class="home-result-winner">—</span>';
+      const entrants = Number(sub?.entrants || game.entrants) || 0;
+      const entrantsHtml = hasPerGameEntrants
+        ? `<small>${entrants ? `${entrants} ${window.i18n?.getLang?.() === 'es' ? 'participantes' : 'entrants'}` : '—'}</small>`
+        : '';
+      return renderHomeGameLine(game.game, winner, entrantsHtml);
+    }).join('');
+    const dateLabel = h.date
+      ? new Date(`${h.date}T00:00:00`).toLocaleDateString(locale, { month: 'short', day: 'numeric' })
+      : '';
+    const totalLabel = !hasPerGameEntrants && h.entrants
+      ? ` · ${h.entrants} ${window.i18n?.getLang?.() === 'es' ? 'participantes' : 'entrants'}`
+      : '';
 
     return `
-      <div class="tr day">
+      <div class="home-result-row home-history-row">
         <span class="mono muted">${h.year}</span>
-        <span>
-          <a class="opponent-link" href="${esc(tourneyUrl)}"><b>${esc(h.tournament)}</b></a>
-          <small>${esc(subtitle)}${h.entrants ? ` · ${h.entrants} entrants` : ''}</small>
+        <span class="home-result-tournament">
+          <a class="home-result-title" href="${esc(tourneyUrl)}">${esc(h.tournament)}</a>
+          <small>${esc(dateLabel)}${esc(totalLabel)}</small>
         </span>
-        <span class="mono muted sm0">${h.yearsAgo} yr${h.yearsAgo === 1 ? '' : 's'} ago</span>
+        <span class="home-history-mobile-meta mono muted">${h.year} · ${esc(dateLabel)}</span>
+        <div class="home-result-games home-history-games">${gameLines}</div>
       </div>
     `;
   }).join('');
+  container.innerHTML = `<div class="home-result-list home-history-list${hasPerGameEntrants ? ' has-game-entrants' : ''}">${historyRows}</div>`;
 }
 
 // Helper for rendering character stock icon
@@ -708,151 +759,65 @@ async function renderRivalry() {
   }
 }
 
-// 7. Newcomer Guide
-function renderNewcomerSteps() {
-  const container = $('#steps');
-  if (!container) return;
-
-  const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
-  const steps = isEs ? [
-    {
-      title: 'Elige un juego',
-      body: 'Cada platform fighter tiene una comunidad activa en Uruguay. Elige tu juego principal o explora varios títulos.',
-      link: 'Explorar comunidades',
-      href: '#hubs'
-    },
-    {
-      title: 'Únete a la escena',
-      body: 'Conéctate con jugadores locales, asiste a encuentros semanales y súmate a sesiones de práctica en Uruguay.',
-      link: 'Encontrar comunidades',
-      href: '#hubs'
-    },
-    {
-      title: 'Inscríbete en un torneo',
-      body: 'Pon a prueba tu nivel en semanales locales, regionales o torneos online registrados directamente en start.gg.',
-      link: 'Ver próximos eventos',
-      href: 'events.html'
-    },
-    {
-      title: 'Sigue tu carrera',
-      body: 'Tus resultados, historial de sets, registros frente a frente y rankings se construyen automáticamente en Platfighters.',
-      link: 'Explorar jugadores',
-      href: 'players.html'
-    }
-  ] : [
-    {
-      title: 'Pick a game',
-      body: 'Every platform fighter has an active community in Uruguay. Choose your main game or explore multiple titles.',
-      link: 'Browse communities',
-      href: '#hubs'
-    },
-    {
-      title: 'Join the scene',
-      body: 'Connect with local players, find weekly meetups, and join friendly practice sessions across Uruguay.',
-      link: 'Find community hubs',
-      href: '#hubs'
-    },
-    {
-      title: 'Enter a tournament',
-      body: 'Test your skills in local weeklies, regionals, or online brackets tracked directly on start.gg.',
-      link: 'See upcoming events',
-      href: 'events.html'
-    },
-    {
-      title: 'Track your career',
-      body: 'Your placements, set history, head-to-head records, and rankings build automatically on Platfighters.',
-      link: 'Explore players',
-      href: 'players.html'
-    }
-  ];
-
-  container.innerHTML = steps.map((s, i) => `
-    <div class="step glass">
-      <span class="n">${i + 1}</span>
-      <b>${esc(s.title)}</b>
-      <p>${esc(s.body)}</p>
-      <a class="link" href="${esc(s.href)}">${esc(s.link)} →</a>
-    </div>
-  `).join('');
-}
-
-// 8. Community Hubs
-async function renderHubs() {
-  const container = $('#hub-list');
-  if (!container) return;
-
-  let socialsConfig = {};
-  try {
-    const res = await fetch('data/community_socials.json', { cache: 'no-store' });
-    if (res.ok) {
-      socialsConfig = await res.json();
-    }
-  } catch (e) {
-    // Default fallback
-  }
-
-  // SVG Icons for WhatsApp, Discord, Instagram
+// 7. Combined community and newcomer panel
+function renderCommunityPanel() {
+  const container = $('#community-cards');
+  const accordion = $('#newcomer-accordion');
+  if (!container || !accordion) return;
+  const t = (key, params) => window.i18n?.t(key, params) || key;
   const icons = {
-    whatsapp: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.11-.23-.17-.48-.3z"/></svg>`,
+    whatsapp: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.15.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.11-.23-.17-.48-.3z"/></svg>`,
     discord: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>`,
-    instagram: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>`
+    instagram: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.011 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>`
   };
+  const socialNames = ['whatsapp', 'discord', 'instagram'];
+  const socialLabel = key => t(`home.communities.social.${key}`);
+  const getLink = (game, key) => {
+    const value = communitySocials[game.slug]?.[key];
+    if (typeof value === 'string') return value.trim();
+    return value?.enabled !== false && value?.url ? value.url.trim() : '';
+  };
+  const gameName = gameSlug => activeCommunities.find(game => game.slug === gameSlug)?.name || gameSlug;
+  const playerCount = gameSlug => playerDirectory.filter(player =>
+    (player.games || []).some(game => (game.slug || game.id) === gameSlug)
+  ).length;
 
-  // Calculate real player count, event count, and latest tournament date for each game
-  const hubs = activeCommunities.map(c => {
-    const playersInGame = playerDirectory.filter(p => (p.games || []).some(g => (g.slug || g.id) === c.slug)).length;
-    const gameEvents = eventsIndex.filter(e => (e.gameSlug || '').toLowerCase() === c.slug);
-
-    // Find most recent completed tournament date
-    const completedEvents = gameEvents.filter(e => !e.isTemporary && e.hasTakenPlace !== false);
-    completedEvents.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-    const latestDate = completedEvents.length > 0 ? (completedEvents[0].date || '') : '';
-
-    return {
-      ...c,
-      players: playersInGame,
-      events: gameEvents.length,
-      latestDate,
-      socials: socialsConfig[c.slug] || {}
-    };
-  });
-
-  // Order community hubs based on the most recent tournament hosted (descending)
-  hubs.sort((a, b) => b.latestDate.localeCompare(a.latestDate) || b.events - a.events);
-
-  container.innerHTML = hubs.map(h => {
-    const soc = h.socials || {};
-    const buttons = [];
-    const waUrl = (soc.whatsapp && typeof soc.whatsapp === 'object' ? soc.whatsapp.url : soc.whatsapp) || '';
-    const dcUrl = (soc.discord && typeof soc.discord === 'object' ? soc.discord.url : soc.discord) || '';
-    const igUrl = (soc.instagram && typeof soc.instagram === 'object' ? soc.instagram.url : soc.instagram) || (soc.twitter && typeof soc.twitter === 'object' ? soc.twitter.url : soc.twitter) || '';
-
-    if (waUrl && waUrl.trim()) {
-      buttons.push(`<a class="hub-social-btn" href="${esc(waUrl.trim())}" target="_blank" rel="noopener noreferrer" title="WhatsApp community" aria-label="WhatsApp">${icons.whatsapp}</a>`);
-    }
-    if (dcUrl && dcUrl.trim()) {
-      buttons.push(`<a class="hub-social-btn" href="${esc(dcUrl.trim())}" target="_blank" rel="noopener noreferrer" title="Discord community" aria-label="Discord">${icons.discord}</a>`);
-    }
-    if (igUrl && igUrl.trim()) {
-      buttons.push(`<a class="hub-social-btn" href="${esc(igUrl.trim())}" target="_blank" rel="noopener noreferrer" title="Instagram profile" aria-label="Instagram">${icons.instagram}</a>`);
-    }
-
-    return `
-      <div class="hub glass">
-        <span class="abbr" id="abbr-${h.slug}">${esc(h.abbr)}</span>
-        <img class="hub-art" src="assets/hubs/${esc(h.slug)}.webp" alt="" onerror="this.remove(); document.getElementById('abbr-${h.slug}') && (document.getElementById('abbr-${h.slug}').style.display='block');" onload="document.getElementById('abbr-${h.slug}') && (document.getElementById('abbr-${h.slug}').style.display='none');">
-        <b>${esc(h.name)}</b>
-        <div class="hub-stat-row">
-          <span class="big">${h.players}</span>
-          <span class="players-label">players</span>
-        </div>
-        <div class="events-sub">${h.events} events indexed</div>
-        <div class="hub-links">
-          ${buttons.length ? buttons.join('') : '<span class="muted sm0">Links available soon</span>'}
-        </div>
-      </div>
-    `;
+  container.innerHTML = communityCardGroups.map(group => {
+    const firstGame = group.games[0];
+    const names = group.games.map(game => gameName(game.slug));
+    const spokenTitle = names.join(` ${t('home.communities.and')} `);
+    const gameLinks = group.games.map((game, index) => `${index ? '<span class="community-title-join" aria-hidden="true">&</span>' : ''}<a class="community-game-link" href="rankings.html?game=${encodeURIComponent(game.slug)}">${esc(gameName(game.slug))}</a>`).join('');
+    const counts = group.games.length === 1
+      ? t('home.communities.playersSingle', { n: playerCount(firstGame.slug) })
+      : t('home.communities.playersGrouped', {
+        a: playerCount(group.games[0].slug), gameA: gameName(group.games[0].slug),
+        b: playerCount(group.games[1].slug), gameB: gameName(group.games[1].slug)
+      });
+    const buttons = socialNames.map(key => {
+      const url = getLink(firstGame, key);
+      if (!url) return '';
+      return `<a class="community-social-btn" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(spokenTitle)} ${esc(socialLabel(key))}" title="${esc(socialLabel(key))}">${icons[key]}</a>`;
+    }).join('');
+    return `<article class="community-card glass" style="--group-accent:var(${group.accent})">${group.art ? `<img class="community-card-art" src="${esc(group.art)}" alt="" loading="lazy">` : ''}
+      <div class="community-card-content"><div class="community-card-top"><div class="community-card-title"><div class="community-game-links">${gameLinks}</div><div class="community-player-counts">${esc(counts)}</div></div></div>
+      <div class="community-social-links">${buttons}</div></div>
+    </article>`;
   }).join('');
+
+  const questions = ['q1', 'q2', 'q3', 'q4'];
+  accordion.innerHTML = questions.map((key, index) => `<div class="newcomer-accordion-item">
+    <button class="newcomer-question" type="button" aria-expanded="${index === 0}" aria-controls="newcomer-answer-${index}" id="newcomer-question-${index}">
+      <span>${esc(t(`home.newcomer.${key}`))}</span><svg class="newcomer-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+    </button>
+    <div class="newcomer-answer" id="newcomer-answer-${index}" role="region" aria-labelledby="newcomer-question-${index}"${index === 0 ? '' : ' hidden'}>${esc(t(`home.newcomer.${key}Answer`))}</div>
+  </div>`).join('');
+  accordion.querySelectorAll('.newcomer-question').forEach(button => button.addEventListener('click', () => {
+    accordion.querySelectorAll('.newcomer-question').forEach(other => {
+      const open = other === button && other.getAttribute('aria-expanded') !== 'true';
+      other.setAttribute('aria-expanded', String(open));
+      accordion.querySelector(`#${other.getAttribute('aria-controls')}`).hidden = !open;
+    });
+  }));
 }
 
 // 9. Live Player & Event Search
@@ -961,12 +926,11 @@ if (window.i18n && window.i18n.onChange) {
   window.i18n.onChange(async () => {
     renderStats();
     renderUpcomingEvents();
+    renderCommunityPanel();
     await renderRecentResults();
     await renderOnThisWeek();
     await renderTopPlayers();
     await renderRivalry();
-    renderNewcomerSteps();
-    renderHubs();
   });
 }
 
