@@ -198,10 +198,30 @@ function rankAt(sorted,index){
  return rank;
 }
 function winRateValue(record){return record&&Number(record[1])>0?100*Number(record[0])/Number(record[1]):null;}
+function characterEntriesFor(characterKey,games=Object.keys(characterBoards)){
+ return games.filter(game=>characterBoards[game]?.[characterKey]).flatMap(game=>characterBoards[game][characterKey].players.map(player=>({...player,game,character:characterBoards[game][characterKey].name||characterKey})));
+}
+function characterGamesTotal(entries){return entries.reduce((sum,player)=>sum+Number(player.games||0),0);}
+function characterPlayerCount(entries){return new Set(entries.map(player=>String(player.profile||player.tag||'').toLocaleLowerCase())).size;}
+function characterMetric(characterKey,games=Object.keys(characterBoards)){
+ const players=characterEntriesFor(characterKey,games),rankedGames=[...new Set(players.map(player=>player.game))];
+ return {key:characterKey,name:nameOf(characterKey),games:rankedGames,players,total:characterGamesTotal(players),count:characterPlayerCount(players)};
+}
+function rankedCharacterPlayers(characterKey,game){return sortPlayers(characterEntriesFor(characterKey,[game]),'score',-1);}
+function topPlayersPerGame(characterKey,games=Object.keys(characterBoards),entrySource=characterEntriesFor){
+ return games.map(game=>{
+  const gameEntries=entrySource(characterKey,[game]),ranked=sortPlayers(gameEntries,'score',-1);if(!ranked.length)return null;
+  return {game,rank:1,player:ranked[0],games:Number(ranked[0].games||0),characterTotal:characterGamesTotal(gameEntries)};
+ }).filter(Boolean).sort((a,b)=>b.games-a.games||String(names[a.game]||a.game).localeCompare(String(names[b.game]||b.game)));
+}
+function rankCharactersByGames(items){return [...items].sort((a,b)=>b.total-a.total||collator.compare(a.name,b.name));}
+function profileGamesTotal(rows){return characterGamesTotal(rows);}
+function profileCharacterCount(rows){return new Set(rows.map(row=>`${row.game}:${row.characterKey}`)).size;}
 function profileRows(profileSlug){
  const result=[];
- for(const [game,roster] of Object.entries(characterBoards))for(const [characterKey,board] of Object.entries(roster)){
-  const players=board.players.map(p=>({...p,game,character:board.name||characterKey}));
+ for(const [game,roster] of Object.entries(characterBoards))for(const characterKey of Object.keys(roster)){
+  const board=roster[characterKey];
+  const players=characterEntriesFor(characterKey,[game]);
   const sorted=sortPlayers(players),index=sorted.findIndex(p=>String(p.profile||'')===String(profileSlug));
   if(index<0)continue;
   const player=sorted[index];
@@ -215,6 +235,15 @@ window.CharactersLeaderboard={
  formatDate,
  winRateValue,
  rankAt,
+ characterEntriesFor,
+ characterGamesTotal,
+ characterPlayerCount,
+ characterMetric,
+ rankedCharacterPlayers,
+ topPlayersPerGame,
+ profileGamesTotal,
+ profileCharacterCount,
+ rankCharactersByGames,
  minGamesForWinRate:MIN_GAMES_FOR_WINRATE
 };
 window.dispatchEvent(new CustomEvent('characters-leaderboard-ready'));
@@ -227,8 +256,7 @@ function formatDate(date) {
  const value=new Date(Date.UTC(Number(year),Number(month)-1,Number(day)));
  return value.getUTCFullYear()===Number(year)&&value.getUTCMonth()===Number(month)-1&&value.getUTCDate()===Number(day)?`${year}-${month}-${day}`:'—';
 }
-function sortPlayers(players) {
- const key=sortKey;
+function sortPlayers(players,key=sortKey,direction=sortDirection) {
  return [...players].sort((a,b)=>{
   let av,bv;
   if(key==='rate'){av=a.gameRecord&&a.gameRecord[1]>0?a.gameRecord[0]/a.gameRecord[1]:-1;bv=b.gameRecord&&b.gameRecord[1]>0?b.gameRecord[0]/b.gameRecord[1]:-1;}
@@ -236,7 +264,7 @@ function sortPlayers(players) {
   else if(key==='player'){av=a.tag||'';bv=b.tag||'';}
   else {av=Number(a[key]??-1);bv=Number(b[key]??-1);}
   const order=typeof av==='string'?av.localeCompare(bv):av-bv;
-  return sortDirection*order || entryOrder(a,b);
+  return direction*order || entryOrder(a,b);
  });
 }
 function rows(players, character, combined, acrossGames, mobile=false, limit=Infinity){
@@ -282,11 +310,11 @@ function detailView(game,char){
  const games=gameOrder.filter(g=>boards[g][char]);
  const acrossGames=game==='all';
  const selectedGames=acrossGames?games:[game];
- const players=char===ALL?(acrossGames?allEntries:boards[game][ALL].players):selectedGames.flatMap(g=>boards[g][char].players.map(p=>({...p,game:g,character:nameOf(char)})));
+ const players=char===ALL?(acrossGames?allEntries:boards[game][ALL].players):characterEntriesFor(char,selectedGames);
  const title=nameOf(char);
  const count=n=>char===ALL ? n+tr(' ranked entries',' entradas clasificadas') :n+' '+(n===1?tr('ranked player','jugador clasificado'):tr('ranked players','jugadores clasificados'));
- const summary=char===ALL?null:selectedGames.flatMap(g=>boards[g][char].players);
- const totalGames=summary?.reduce((n,p)=>n+Number(p.games||0),0);
+ const summary=char===ALL?null:characterEntriesFor(char,selectedGames);
+ const totalGames=summary?characterGamesTotal(summary):null;
  const lastPlayed=summary?.map(p=>p.date).filter(Boolean).sort().at(-1);
  const topScore=summary?.reduce((best,p)=>Math.max(best,p.score),-Infinity);
  const leaders=summary?.length?summary.filter(p=>p.score===topScore):[];
@@ -315,11 +343,25 @@ for(const [key,games] of Object.entries(allRoster)){
  const icons=games.map(game=>rosters[game][key]).filter(Boolean);
  mixedIcons[key]=games.length>1?icons[Math.floor(Math.random()*icons.length)]:rosters[games[0]][key];
 }
+let browseIconSeed=0x50465559;
+try{browseIconSeed=crypto.getRandomValues(new Uint32Array(1))[0]}catch{browseIconSeed=(Date.now()^Math.floor(Math.random()*0xffffffff))>>>0}
+function seededBrowseRandom(){browseIconSeed=(browseIconSeed+0x6D2B79F5)>>>0;let t=browseIconSeed;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296}
+const desktopBrowseIcons={};
+for(const [key,games] of Object.entries(allRoster)){
+ const icons=[...new Set(games.map(game=>rosters[game][key]).filter(Boolean))];
+ desktopBrowseIcons[key]=icons.length>1?icons[Math.floor(seededBrowseRandom()*icons.length)]:icons[0]||'';
+}
+const desktopBrowsePortraits={};
+for(const [key,games] of Object.entries(allRoster)){
+ const portraits=[...new Set(games.map(game=>boards[game][key]?.art?.replace('/full/','/portraits/')).filter(Boolean))];
+ desktopBrowsePortraits[key]=portraits.length>1?portraits[Math.floor(seededBrowseRandom()*portraits.length)]:portraits[0]||'';
+}
 const collator=new Intl.Collator('en',{sensitivity:'base'});
 let previousScope='',query='',rosterFilter='all';
 let sortKey='score',sortDirection=-1,desktopOpenIndex=-1,desktopAllRows=50,previousCharacterKey=null;
 const mobileQuery=window.matchMedia('(max-width: 720px)');
 let rosterPage=12, playerPage=12, mobileRosterScroll=0, mobileRosterScope='all';
+window.characterBrowseSort ||= 'played';window.characterBrowseExpanded=false;window.characterBrowseLimit ||= 12;
 const mobileMode=()=>mobileQuery.matches;
 const mobileCount=n=>`${n} ${n===1?tr('player','jugador'):tr('players','jugadores')}`;
 const isRivalsAsset=src=>/\/rivals-(?:2|of-aether)\//.test(src||'');
@@ -382,6 +424,151 @@ function overview() {
  const max=totals[0]?.total||1;
  return `<section class="panel overview-panel"><p>${tx('pickIntro','Pick a character to see who plays it in tournaments, with scores and games played.','Elegí un personaje para ver quién lo usa en torneos, con puntajes y partidas jugadas.')}</p><h2>${tx('mostPlayed','Most played characters','Personajes más jugados')}</h2><ol class="most-played-list">${totals.map(item=>`<li><a href="#${item.key}/${item.game}"><strong>${nameOf(item.key)}</strong><span class="most-played-track"><i style="width:${Math.max(3,100*item.total/max)}%"></i></span><small>${item.total.toLocaleString()} ${tr('games','partidas')}</small></a></li>`).join('')}</ol></section>`;
 }
+const number = n => Number(n||0).toLocaleString('en-US');
+const plural = (n,enOne,enMany,esOne,esMany) => `${number(n)} ${window.i18n?.getLang()==='es'?(n===1?esOne:esMany):(n===1?enOne:enMany)}`;
+const distinctPlayers = characterPlayerCount;
+function montevideoDayIndex(){
+ const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Montevideo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+ const part=Object.fromEntries(parts.map(p=>[p.type,p.value]));
+ return Math.floor((Date.UTC(+part.year,+part.month-1,+part.day)-Date.UTC(2026,0,1))/86400000);
+}
+function stableHash(value){let h=2166136261;for(const c of value){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
+function montevideoDate(){const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Montevideo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const p=Object.fromEntries(parts.map(x=>[x.type,x.value]));return `${p.year}-${p.month}-${p.day}`}
+const artDimensions=new Map();
+function inspectArt(src){
+ if(artDimensions.has(src))return artDimensions.get(src);
+ const result=new Promise(resolve=>{const img=new Image();img.onload=()=>resolve({src,width:img.naturalWidth,height:img.naturalHeight,area:img.naturalWidth*img.naturalHeight});img.onerror=()=>resolve(null);img.src=src;});
+ artDimensions.set(src,result);return result;
+}
+function enhanceBrowseArtwork(){
+ view.querySelectorAll('.browse-top-card img[data-art-candidates],.browse-spotlight img[data-render-candidates]').forEach(img=>{
+  if(img.dataset.artChecked)return;img.dataset.artChecked='true';
+  let candidates=[];try{candidates=JSON.parse(img.dataset.artCandidates||img.dataset.renderCandidates)}catch{}
+  Promise.all(candidates.map(inspectArt)).then(results=>{
+   if(!img.isConnected)return;
+   const available=results.filter(Boolean),card=img.closest('.browse-top-card,.browse-spotlight');
+   if(!card)return;
+   if(!available.length){if(img.classList.contains('browse-spotlight-render')){img.hidden=true;card.querySelector('.browse-spotlight-initial')?.removeAttribute('hidden');}return;}
+   const isSpotlight=img.classList.contains('browse-spotlight-render');
+   const enough=isSpotlight?available:available.filter(asset=>asset.width>=card.clientWidth*.7&&asset.height>=card.clientHeight+20);
+   const best=(enough.length?enough:available).sort((a,b)=>b.area-a.area||b.height-a.height)[0];
+   img.src=best.src;
+   if(enough.length)img.classList.add('is-hires-render');
+  });
+ });
+}
+function spotlightFactCopy(id,{name='',tag='',value=0,game=''}={},lang='en'){
+ const n=number(value),es=lang==='es';
+ const gameUnit=es?(Number(value)===1?'juego':'juegos'):(Number(value)===1?'game':'games');
+ const playedUnit=es?(Number(value)===1?'partida':'partidas'):(Number(value)===1?'game':'games');
+ switch(id){
+  case 'character-games':return es?{long:`${name} aparece en ${n} ${gameUnit}.`,short:`En ${n} ${gameUnit}.`}:{long:`${name} appears in ${n} ${gameUnit}.`,short:`In ${n} ${gameUnit}.`};
+  case 'character-players':{
+   const playerUnit=es?(Number(value)===1?'jugador':'jugadores'):(Number(value)===1?'player':'players');
+   return es?{long:`${n} ${playerUnit} ${Number(value)===1?'ha usado a':'han usado a'} ${name}.`,short:`${n} ${playerUnit}.`}:{long:`${n} ${playerUnit} ${Number(value)===1?'has':'have'} played ${name}.`,short:`${n} ${playerUnit}.`};
+  }
+  case 'character-total-games':return es?{long:`${n} ${playedUnit} ${Number(value)===1?'jugada':'jugadas'} con ${name}.`,short:`${n} ${playedUnit}.`}:{long:`${n} ${playedUnit} played with ${name}.`,short:`${n} ${playedUnit} played.`};
+  case 'character-rank':return es?{long:`Personaje #${n} más jugado${game?` en ${game}`:''}.`,short:`#${n} más jugado.`}:{long:`#${n} most played${game?` in ${game}`:' character'}.`,short:`#${n} most played.`};
+  case 'combined-top-player-games':return es?{long:`Mejores jugadores: ${n} ${playedUnit}.`,short:`${n} ${playedUnit}.`}:{long:`Top players: ${n} ${playedUnit} combined.`,short:`${n} ${playedUnit} combined.`};
+  case 'same-player-top-multiple-games':return es?{long:`${tag} leads ${name} in ${n} ${gameUnit}.`,short:`${tag} leads in ${n} ${gameUnit}.`}:{long:`${tag} leads ${name} in ${n} ${gameUnit}.`,short:`${tag} leads in ${n} ${gameUnit}.`};
+  case 'different-top-players':return es?{long:'Un #1 distinto en cada juego.',short:'#1 distinto por juego.'}:{long:'A different #1 in every game.',short:'Different #1 per game.'};
+  case 'single-game-top-player-games':return es?{long:`${tag} tiene ${n} ${playedUnit} con ${name}.`,short:`${tag}: ${n} ${playedUnit}.`}:{long:`${tag} has ${n} ${gameUnit} with ${name}.`,short:`${tag}: ${n} ${gameUnit}.`};
+  default:return {long:'',short:''};
+ }
+}
+function createSpotlightFact(id,value,values={}){
+ const en=spotlightFactCopy(id,{...values,value},'en'),es=spotlightFactCopy(id,{...values,value},'es');
+ return {id,value,en,es,text:tr(en.long,es.long)};
+}
+function chooseSpotlightFact(facts,characterKey,date=montevideoDate(),lang=window.i18n?.getLang()){
+ if(!facts.length)return '';
+ const language=lang==='es'?'es':'en',limit=language==='es'?70:60,start=stableHash(date+characterKey)%facts.length;
+ const host=typeof location!=='undefined'?String(location.hostname||''):'';
+ const isDev=/^(localhost|127(?:\.\d{1,3}){3}|\[::1\])$/.test(host);
+ for(let offset=0;offset<facts.length;offset++){
+  const fact=facts[(start+offset)%facts.length],copy=fact[language]||fact.en;
+  for(const [form,text] of [['long',copy.long],['short',copy.short]]){
+   if(text&&Array.from(text).length<=limit)return text;
+  }
+  if(isDev&&typeof console!=='undefined')console.warn(`[Characters] Dropped spotlight fact "${fact.id}"; neither form fits the ${limit}-character ${language.toUpperCase()} budget.`);
+ }
+ return '';
+}
+function spotlightFact(character,topPlayers,items,activeGame=''){
+ if(!character)return [];
+ const identity=p=>String(p.profile||p.tag||'').trim().toLocaleLowerCase();
+ const characterEntries=character.players||[];
+ const characterTotal=characterGamesTotal(characterEntries);
+ const playerCount=characterPlayerCount(characterEntries);
+ const ranked=rankCharactersByGames(items),rank=ranked.findIndex(x=>x.key===character.key)+1;
+ const facts=[];
+ const actualGames=[...new Set(characterEntries.map(player=>player.game))];
+ const topRowsValid=topPlayers.length===character.games.length&&new Set(topPlayers.map(row=>row.game)).size===topPlayers.length&&topPlayers.every(row=>{
+  const gameEntries=characterEntries.filter(player=>player.game===row.game);
+  return gameEntries.length>0&&row.rank===1&&row.characterTotal===characterGamesTotal(gameEntries)&&Number.isFinite(row.games)&&row.games===Number(row.player.games||0)&&row.games>=0&&row.games<=row.characterTotal;
+ });
+ const topGames=topPlayers.reduce((sum,row)=>sum+row.games,0);
+ const grouped=new Map();
+ for(const row of topPlayers){const id=identity(row.player);if(!grouped.has(id))grouped.set(id,{id,tag:row.player.tag,rows:[],games:0});const group=grouped.get(id);group.rows.push(row);group.games+=row.games;}
+ const groups=[...grouped.values()].sort((a,b)=>b.games-a.games||String(a.tag).localeCompare(String(b.tag)));
+ if(character.games.length===actualGames.length&&character.games.every(game=>actualGames.includes(game))&&actualGames.length>=2)facts.push(createSpotlightFact('character-games',actualGames.length,{name:character.name}));
+ if(character.count===playerCount&&playerCount>=5&&playerCount<=characterEntries.length)facts.push(createSpotlightFact('character-players',playerCount,{name:character.name}));
+ if(character.total===characterTotal&&characterTotal>=100&&Number.isFinite(characterTotal))facts.push(createSpotlightFact('character-total-games',characterTotal,{name:character.name}));
+ if(rank>0&&rank<=10&&ranked[rank-1]?.total===characterTotal)facts.push(createSpotlightFact('character-rank',rank,{name:character.name,game:activeGame?names[activeGame]||activeGame:''}));
+ if(topRowsValid&&topPlayers.length>=2&&topGames>=100)facts.push(createSpotlightFact('combined-top-player-games',topGames,{name:character.name}));
+ const repeated=groups.filter(group=>group.rows.length>=2).sort((a,b)=>b.rows.length-a.rows.length||String(a.tag).localeCompare(String(b.tag)))[0];
+ if(topRowsValid&&repeated)facts.push(createSpotlightFact('same-player-top-multiple-games',repeated.rows.length,{tag:repeated.tag,name:character.name}));
+ if(topRowsValid&&topPlayers.length>=3&&groups.length===topPlayers.length)facts.push(createSpotlightFact('different-top-players',groups.length,{name:character.name}));
+ if(topRowsValid&&topPlayers.length===1&&character.games.length===1&&topPlayers[0].games>=20)facts.push(createSpotlightFact('single-game-top-player-games',topPlayers[0].games,{tag:topPlayers[0].player.tag,name:character.name}));
+ return facts;
+}
+window.CharactersLeaderboard.spotlightFacts=spotlightFact;
+window.CharactersLeaderboard.spotlightFactCopy=spotlightFactCopy;
+window.CharactersLeaderboard.chooseSpotlightFact=chooseSpotlightFact;
+function spotlightFor(items){
+ const pool=items.filter(x=>x.players.length).sort((a,b)=>a.key.localeCompare(b.key));if(!pool.length)return null;
+ const day=montevideoDayIndex(),cycle=Math.floor(day/pool.length),position=((day%pool.length)+pool.length)%pool.length;
+ const order=c=>[...pool].sort((a,b)=>stableHash(a.key+c)-stableHash(b.key+c)||a.key.localeCompare(b.key));
+ const current=order(cycle), prior=order(cycle-1);
+ if(pool.length>1&&current[position].key===prior[pool.length-1].key){const next=(position+1)%pool.length;[current[position],current[next]]=[current[next],current[position]];}
+ return current[position];
+}
+function desktopBrowse(scope,keys){
+ const gameOptions=gameOrder.filter(g=>Object.keys(boards[g]).length>1);
+ const selectedGames=scope==='all'?gameOptions:[scope];
+ const items=keys.filter(k=>k!==ALL).map(key=>{
+  const gs=selectedGames.filter(g=>boards[g][key]);
+  const stats=characterMetric(key,gs);
+  const portraitPaths=gs.map(g=>boards[g][key].art?.replace('/full/','/portraits/')).filter(Boolean);
+  const portrait=scope==='all'?desktopBrowsePortraits[key]:portraitPaths[0];
+  return {...stats,stock:gs.map(g=>rosters[g][key]).find(Boolean),art:gs.map(g=>art[g+'/'+key]).find(Boolean),portrait,artCandidates:portrait?[portrait]:[]};
+ }).filter(x=>x.players.length);
+ const totalPlayers=distinctPlayers(items.flatMap(x=>x.players));
+ const gamesPlayed=items.reduce((n,x)=>n+x.total,0);
+ const rankedGames=selectedGames.length;
+ const top=rankCharactersByGames(items).slice(0,5);
+  const mostPlayers=[...items].sort((a,b)=>b.count-a.count||collator.compare(a.name,b.name)).slice(0,6);
+  const winrate=[...items].map(x=>{const records=x.players.filter(p=>p.gameRecord);const n=records.reduce((a,p)=>a+Number(p.gameRecord[1]),0),w=records.reduce((a,p)=>a+Number(p.gameRecord[0]),0);return {...x,rate:n?100*w/n:0,n}}).filter(x=>x.n>=50&&x.count>=3).sort((a,b)=>b.rate-a.rate||collator.compare(a.name,b.name)).slice(0,6);
+ const spotlight=spotlightFor(items),spotlightTopPlayers=spotlight?topPlayersPerGame(spotlight.key,spotlight.games):[],spotFacts=spotlightFact(spotlight,spotlightTopPlayers,items,scope==='all'?'':names[scope]||scope),spotFact=spotlight?chooseSpotlightFact(spotFacts,spotlight.key):'';
+ const spotlightRenderCandidates=spotlight?spotlight.games.map(g=>boards[g][spotlight.key]?.art).filter(Boolean):[];
+ const spotlightPlayerLink=row=>{const tag=String(row.player.tag||''),profile=row.player.profile||profileByTag.get(tag.trim().toLocaleLowerCase())||tag;return `<a class="browse-top-player-link" href="player.html?player=${encodeURIComponent(profile)}" title="${safe(tag)}" aria-label="${safe(tr(`View ${tag}'s player page`,`Ver la página del jugador ${tag}`))}">${safe(tag)}</a>`;};
+ const spotlightLeadersMarkup=spotlightTopPlayers.length>1
+  ? `<div class="browse-top-players"><small>${tr('Top players','Mejores jugadores')}</small><div>${spotlightTopPlayers.slice(0,3).map(row=>`<div class="browse-top-player-row"><span>${safe(names[row.game]||row.game)}</span>${spotlightPlayerLink(row)}</div>`).join('')}</div></div>`
+  : spotlightTopPlayers.length?`<p class="browse-top-player-single">${tr('Top player:','Mejor jugador:')} ${spotlightPlayerLink(spotlightTopPlayers[0])}</p>`:'';
+ const filtered=items.filter(x=>x.name.toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()));
+ const sort=window.characterBrowseSort||'played';
+ filtered.sort(sort==='az'?(a,b)=>collator.compare(a.name,b.name):sort==='players'?(a,b)=>b.count-a.count||collator.compare(a.name,b.name):(a,b)=>b.total-a.total||collator.compare(a.name,b.name));
+ const visible=query.trim()?filtered:filtered.slice(0,window.characterBrowseExpanded?filtered.length:window.characterBrowseLimit);
+ const gameLabel=scope==='all'?tr('All games','Todos los juegos'):names[scope];
+ const ranks=['gold','silver','bronze','other','other'];
+ const card=(x,i)=>`<button type="button" class="browse-top-card glass" data-character="${x.key}" aria-label="${safe(x.name)}, ${plural(x.total,'game','games','partida','partidas')}, ${plural(x.count,'player','players','jugador','jugadores')}"><span class="browse-rank rank-${ranks[i]}">#${i+1}</span>${x.portrait?`<img class="browse-watermark" src="${x.portrait}" data-art-candidates="${safe(JSON.stringify(x.artCandidates))}" alt="">`:`<span class="browse-watermark browse-initial">${safe(x.name.slice(0,1))}</span>`}<strong>${safe(x.name)}</strong><b class="browse-total rank-${ranks[i]}">${number(x.total)}</b><span class="browse-bar rank-${ranks[i]}"><i style="width:${top[0]?.total?100*x.total/top[0].total:0}%"></i></span><small>${plural(x.count,'player','players','jugador','jugadores')}</small></button>`;
+ const metric=(title,caption,data,format)=>`<section class="browse-panel glass"><header class="browse-metric-heading"><h3>${title}</h3><small>${caption}</small></header>${data.map(x=>`<button type="button" class="browse-metric-row" data-character="${x.key}" aria-label="${safe(x.name)}, ${format(x)}"><span>${safe(x.name)}</span><b>${format(x)}</b></button>`).join('')||`<p class="browse-empty">${tr('No character data available.','No hay datos de personajes disponibles.')}</p>`}</section>`;
+ return `<div class="characters-browse"><header class="browse-hero"><div><small>${safe(gameLabel)} · ${tr('All time','Histórico')}</small><h1>${tr('Characters','Personajes')}</h1></div><div class="browse-stats"><span>${plural(totalPlayers,'player','players','jugador','jugadores')}</span><span>${plural(items.length,'character','characters','personaje','personajes')}</span><span>${plural(rankedGames,'game','games','juego','juegos')}</span><span>${plural(gamesPlayed,'game played','games played','partida jugada','partidas jugadas')}</span></div></header>
+ <div class="browse-filters"><div class="browse-game-pills" role="group" aria-label="${tr('Filter by game','Filtrar por juego')}">${[['all',tr('All games','Todos los juegos')],...gameOptions.map(g=>[g,names[g]])].map(([g,label])=>`<button type="button" data-browse-game="${g}" class="browse-pill${scope===g?' is-active':''}" aria-pressed="${scope===g}">${label}</button>`).join('')}</div><input id="browse-search" type="search" value="${safe(query)}" placeholder="${tr('Search a character…','Buscar un personaje…')}" aria-label="${tr('Search a character','Buscar un personaje')}"></div>
+ ${!items.length?`<section class="browse-panel glass browse-no-data">${tr('No character data available for this game.','No hay datos de personajes para este juego.')}</section>`:`<section class="browse-section"><div class="browse-section-head"><h2>${tr('Most played','Más jugados')}</h2><small>${tr('Top 5 · by games played','Top 5 · por partidas jugadas')}</small></div><div class="browse-top-grid">${top.map(card).join('')}</div></section>
+ <div class="browse-angles">${metric(tr('Highest win rate','Mayor porcentaje de victorias'),tr('min. 50 games · 3+ players','mín. 50 partidas · 3+ jugadores'),winrate,x=>`${x.rate.toFixed(0)}%`)}${metric(tr('Most players','Más jugadores'),tr('Distinct players','Jugadores distintos'),mostPlayers,x=>number(x.count))}<section class="browse-panel glass browse-spotlight">${spotlight?`<div class="browse-spotlight-art">${spotlightRenderCandidates.length?`<img class="browse-watermark browse-spotlight-render" src="${spotlightRenderCandidates[0]}" data-render-candidates="${safe(JSON.stringify(spotlightRenderCandidates))}" alt=""><span class="browse-watermark browse-initial browse-spotlight-initial" hidden>${safe(spotlight.name.slice(0,1))}</span>`:`<span class="browse-watermark browse-initial browse-spotlight-initial">${safe(spotlight.name.slice(0,1))}</span>`}</div><div class="browse-spotlight-copy"><section class="browse-spotlight-panel browse-spotlight-panel-a"><small>${tr('Character spotlight','Personaje destacado')}</small><h3 class="browse-spotlight-name${spotlight.name.length>12?' is-long':''}"><a class="browse-spotlight-name-link" href="#${spotlight.key}/all" aria-label="${safe(tr(`${spotlight.name} leaderboard`,`Clasificación de ${spotlight.name}`))}">${safe(spotlight.name)}</a></h3>${spotlightLeadersMarkup}</section>${spotFact?`<section class="browse-spotlight-panel browse-spotlight-panel-b"><div class="browse-fun-fact"><span>${tr('Fun fact','Dato curioso')}</span><p>${safe(spotFact)}</p></div></section>`:''}</div>`:''}</section></div>
+ <section class="browse-section"><div class="browse-section-head"><h2>${tr('All characters','Todos los personajes')}</h2><div class="browse-sorts" role="group" aria-label="${tr('Sort characters','Ordenar personajes')}">${[['played',tr('Most played','Más jugados')],['players',tr('Most players','Más jugadores')],['az','A–Z']].map(([key,label])=>`<button type="button" class="browse-pill${sort===key?' is-active':''}" data-browse-sort="${key}" aria-pressed="${sort===key}">${label}</button>`).join('')}</div></div><div class="browse-roster-grid">${visible.map(x=>{const metric=sort==='played'?plural(x.total,'game','games','partida','partidas'):plural(x.count,'player','players','jugador','jugadores');const icon=scope==='all'?desktopBrowseIcons[x.key]:x.stock;return `<button type="button" class="browse-tile glass" data-character="${x.key}" aria-label="${safe(x.name)}, ${metric}">${icon?`<img src="${icon}" alt="">`:`<span class="browse-tile-initial">${safe(x.name.slice(0,2))}</span>`}<strong>${safe(x.name)}</strong><small>${metric}</small></button>`}).join('')}${!query.trim()&&filtered.length>window.characterBrowseLimit&&!window.characterBrowseExpanded?`<button type="button" class="browse-tile browse-show-all glass" data-show-all>${tr('Show all','Mostrar todos')} ${number(filtered.length)} →</button>`:''}</div></section>`}</div>`;
+}
 function render(){
  highlightStore.clear();
  let [raw,routeKey,preferred]=location.hash.slice(1).split('/');
@@ -405,7 +592,9 @@ function render(){
  if(scope!==previousScope){previousScope=scope;query=''}
  const hashFor=(key,g)=>key===ALL?'#all-characters':`#${key}/${g}`;
  const isMobile=mobileMode();
- view.innerHTML=isMobile ? (char?mobileLeaderboard(game,char):mobileOverview(scope,keys,game)) : `<div class="page-heading"><small>${char&&char!==ALL?`${tr('RANKINGS / CHARACTERS','RANKINGS / PERSONAJES')} / ${safe(nameOf(char)).toUpperCase()}`:tr('RANKINGS / CHARACTERS','RANKINGS / PERSONAJES')}</small><h1>${tr('Characters','Personajes')}</h1></div><div class="workspace"><aside class="panel sidebar"><div class="controls"><label>${tx('filterRosterGame','Filter roster by game','Filtrar lista por juego')}<select id="game">${Object.entries({all:tr('All games','Todos los juegos'),...names}).map(([k,n])=>`<option value="${k}" ${k===scope?'selected':''}>${n}</option>`).join('')}</select></label><label>${tr('CHARACTER','PERSONAJE')}<input type="search" id="search" placeholder="${tr('Search roster','Buscar personaje')}"></label></div><h2>${scope==='all'?tr('All characters','Todos los personajes'):tr(names[scope]+' roster','Personajes de '+names[scope])}</h2><div class="grid" id="grid"></div></aside><article class="detail">${char ? detailView(game,char) : overview()}</article></div>`;
+ view.innerHTML=isMobile ? (char?mobileLeaderboard(game,char):mobileOverview(scope,keys,game)) : char ? `<div class="page-heading"><small>${tr('RANKINGS / CHARACTERS','RANKINGS / PERSONAJES')} / ${safe(nameOf(char)).toUpperCase()}</small><h1>${tr('Characters','Personajes')}</h1></div><div class="workspace"><aside class="panel sidebar"><div class="controls"><label>${tx('filterRosterGame','Filter roster by game','Filtrar lista por juego')}<select id="game">${Object.entries({all:tr('All games','Todos los juegos'),...names}).map(([k,n])=>`<option value="${k}" ${k===scope?'selected':''}>${n}</option>`).join('')}</select></label><label>${tr('CHARACTER','PERSONAJE')}<input type="search" id="search" placeholder="${tr('Search roster','Buscar personaje')}"></label></div><h2>${scope==='all'?tr('All characters','Todos los personajes'):tr(names[scope]+' roster','Personajes de '+names[scope])}</h2><div class="grid" id="grid"></div></aside><article class="detail">${detailView(game,char)}</article></div>` : desktopBrowse(scope,keys);
+ if(!isMobile&&!char){const grid=view.querySelector('.browse-roster-grid');if(grid){const columns=getComputedStyle(grid).gridTemplateColumns.split(/\s+/).filter(Boolean).length;window.characterBrowseColumns=columns;const limit=Math.max(1,columns*2-1);if(limit!==window.characterBrowseLimit){window.characterBrowseLimit=limit;render();return;}}}
+ if(!isMobile&&!char){enhanceBrowseArtwork();}
  view.querySelectorAll('.character-highlights:not([hidden]),.mobile-player-details:not([hidden])').forEach(hydrateHighlights);
  if(!isMobile&&char===ALL&&desktopAllRows<allEntries.length){
   const ratingScroll=view.querySelector('.rating-scroll');
@@ -432,6 +621,7 @@ function render(){
  const sortSelect=view.querySelector('#mobile-sort');
  if(sortSelect&&char&&char!==ALL){sortSelect.value=sortKey;sortSelect.onchange=()=>{sortKey=sortSelect.value;sortDirection=-1;render();};}
  if(scope==='all')for(const link of view.querySelectorAll('.compare a')){const target=link.hash.slice(1).split('/')[0];link.hash=hashFor(char,target)}
+ const browseSearch=view.querySelector('#browse-search');if(browseSearch)browseSearch.oninput=()=>{query=browseSearch.value;const y=window.scrollY;render();window.scrollTo(0,y);view.querySelector('#browse-search')?.focus();};
  const search=document.querySelector('#search');if(search)search.value=query;
  function filter(){
   query=search.value;
@@ -456,6 +646,15 @@ function render(){
 }
 if (!view) return;
 view.addEventListener('click', event => {
+ const browseGame=event.target.closest('[data-browse-game]');
+ if(browseGame){const next=browseGame.dataset.browseGame;rosterFilter=next;query='';window.characterBrowseExpanded=false;history.pushState({rosterFilter:next},'',next==='all'?'#all':'#'+next);render();return;}
+ const browseSort=event.target.closest('[data-browse-sort]');
+ if(browseSort){window.characterBrowseSort=browseSort.dataset.browseSort;render();return;}
+ if(event.target.closest('[data-show-all]')){window.characterBrowseExpanded=true;render();return;}
+ const spotlightCharacterLink=event.target.closest('.browse-spotlight-name-link');
+ if(spotlightCharacterLink&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey&&!event.altKey){rosterFilter='all';sortKey='score';sortDirection=-1;}
+ const browseCharacter=event.target.closest('[data-character]');
+ if(browseCharacter){const key=browseCharacter.dataset.character;const selected=rosterFilter==='all'?allRoster[key]:[rosterFilter];const target=selected.find(g=>boards[g][key])||allRoster[key]?.[0];if(key&&target){history.pushState({rosterFilter},'','#'+key+'/'+target);render();window.scrollTo(0,0);}return;}
  const sortButton=event.target.closest('[data-sort]');
  if(sortButton){const next=sortButton.dataset.sort,head=sortButton.closest('th')?.dataset.sortHeader;if(sortKey===next)sortDirection*=-1;else{sortKey=next;sortDirection=next==='date'? -1:1;}const top=window.scrollY;render();view.querySelector(`[data-sort-header="${head}"] [data-sort]`)?.focus({preventScroll:true});window.scrollTo(0,top);return;}
  const gameChip=event.target.closest('.mobile-game-chips [data-game]');
@@ -515,6 +714,7 @@ view.addEventListener('keydown',event=>{
 window.addEventListener('hashchange',render);
 window.addEventListener('popstate',event=>{if(event.state?.rosterFilter)rosterFilter=event.state.rosterFilter;else if(!location.hash||location.hash==='#all')rosterFilter='all';render();});
 mobileQuery.addEventListener?.('change',render);
+window.addEventListener('resize',()=>{if(mobileMode())return;const grid=view.querySelector('.browse-roster-grid');if(!grid)return;const columns=getComputedStyle(grid).gridTemplateColumns.split(/\s+/).filter(Boolean).length;if(columns!==window.characterBrowseColumns)render();});
 window.i18n?.onChange(render);
 render();
 

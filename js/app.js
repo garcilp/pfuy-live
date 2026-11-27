@@ -170,7 +170,8 @@ Promise.all([
   window.ProfileCharacters.setData(characterData);
   const syncedEl = $('#synced');
   if (syncedEl) {
-    syncedEl.textContent = new Date().toLocaleDateString(locale(), { month: 'short', day: 'numeric', year: 'numeric' });
+    const lastSync = document.documentElement.dataset.lastSync || document.body.dataset.lastSync || new Date().toISOString();
+    syncedEl.textContent = new Date(lastSync).toLocaleDateString(locale(), { month: 'short', day: 'numeric', year: 'numeric' });
   }
   render();
   addEventListener('hashchange', () => { resultPage = 1; selectedBestPlacement = null; selectedBestFinishKey = null; render(); });
@@ -220,13 +221,26 @@ function render() {
     ? [player.city, player.country || 'Uruguay'].filter(value => typeof value === 'string' && value.trim()).join(', ')
     : player.location || '';
   const isEs = (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'es');
+  const profileText = key => esc(window.i18n?.t(key) || key);
+  const profileActions = (player.playerId || player.startggPlayerId || profileId)
+    ? `<div class="profile-compare-links">
+         <a class="profile-action profile-action-primary" href="head-to-head.html?p1=${encodeURIComponent(player.playerId || player.startggPlayerId || profileId)}">
+           <svg aria-hidden="true" viewBox="0 0 16 16" focusable="false"><path d="M3 5h8m0 0L8.5 2.5M11 5 8.5 7.5M13 11H5m0 0 2.5-2.5M5 11l2.5 2.5"/></svg>
+           <span>${profileText('player.compare')}</span>
+         </a>
+         ${player.startgg ? `<a class="profile-action profile-action-secondary" href="${esc(player.startgg)}" target="_blank" rel="noopener noreferrer" aria-label="${profileText('player.viewStartggNewTab')}" title="${profileText('player.viewStartggNewTab')}">
+           <span>start.gg</span>
+           <svg aria-hidden="true" viewBox="0 0 16 16" focusable="false"><path d="M9 3h4v4m0-4L7 9M12 9v4H3V4h4"/></svg>
+         </a>` : ''}
+       </div>`
+    : (player.startgg ? `<div class="profile-compare-links"><a class="profile-action profile-action-secondary" href="${esc(player.startgg)}" target="_blank" rel="noopener noreferrer" aria-label="${profileText('player.viewStartggNewTab')}" title="${profileText('player.viewStartggNewTab')}"><span>start.gg</span><svg aria-hidden="true" viewBox="0 0 16 16" focusable="false"><path d="M9 3h4v4m0-4L7 9M12 9v4H3V4h4"/></svg></a></div>` : '');
   $('#profile').innerHTML =
     `<span class="ini">${esc(player.tag?.[0] || '?')}</span>
      <div class="art"><img src="${esc(playerPhoto)}" alt="${esc(player.tag)}" onerror="this.closest('.profile').querySelector('.ini').classList.add('show'); this.closest('.art').remove()"></div>
      ${player.sponsor ? `<div class="profile-detail">${esc(player.sponsor)}</div>` : ''}
      <h1>${esc(player.tag)}</h1>
      ${profileLocation ? `<div class="profile-detail">${esc(profileLocation)}</div>` : ''}
-     ${(player.playerId || player.startggPlayerId || profileId) ? `<div class="profile-compare-links"><a class="profile-startgg" href="head-to-head.html?p1=${encodeURIComponent(player.playerId || player.startggPlayerId || profileId)}">${isEs ? 'Comparar' : 'Compare'}</a>${player.startgg ? `<span aria-hidden="true"> · </span><a class="profile-startgg" href="${esc(player.startgg)}" target="_blank" rel="noopener">${isEs ? 'Ver en start.gg' : 'View on start.gg'}</a>` : ''}</div>` : (player.startgg ? `<a class="profile-startgg" href="${esc(player.startgg)}" target="_blank" rel="noopener">View on start.gg</a>` : '')}`;
+     ${profileActions}`;
   fitPlayerName();
 
   if (player && player.tag) {
@@ -323,7 +337,7 @@ function render() {
     mostPlayedOpponent = oppName;
     const gameCountLabel = opp ? (opp.games > 1 ? ` · ${opp.games} games` : '') : '';
     stats.push(['ACTIVE FOR', singleEventResult ? '1 Event' : activeDuration, activityPeriod],
-      ['MOST-PLAYED OPPONENT', oppName || '—', opp ? `${opp.sets} sets · Open H2H` : 'No set data']);
+      ['MOST-PLAYED OPPONENT', oppName || '—', opp ? `${opp.sets} sets · ${window.i18n?.t?.('profile.viewRivalries') || 'View rivalries'}` : 'No set data']);
   }
   const notableWinsList = [];
   const seenOpponents = new Map();
@@ -357,7 +371,7 @@ function render() {
     const valHtml = a === 'CLOSEST UPSET' ? b : esc(b);
     const contents = `<span class="label">${esc(a)}</span><span class="val">${valHtml}</span>${c ? `<span class="sub">${esc(c)}</span>` : ''}`;
     return a === 'MOST-PLAYED OPPONENT' && mostPlayedOpponent
-      ? `<button class="${tileClass} opponent-tile-button" type="button" aria-expanded="${isOpponentListOpen}" aria-controls="opponent-history">${contents}</button>`
+      ? `<button class="${tileClass} opponent-tile-button" type="button" aria-expanded="${isOpponentListOpen}" aria-controls="opponent-history">${contents}<svg class="tile-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 6 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>`
       : a === 'BEST PLACING' && sel && bestPlace !== null
         ? `<button class="${tileClass} best-placement-tile-button" type="button" aria-expanded="${selectedBestPlacement === sel.id}" aria-controls="best-placement-history">${contents}</button>`
       : `<div class="${tileClass}">${contents}</div>`;
@@ -652,25 +666,27 @@ function render() {
     (rows.length ? rows.map((r, index) => {
       const detailsId = `set-details-${index}`;
       const sets = recentSetsForDisplay(r.sets);
+      const hasVods = sets.some(set => Array.isArray(set.vods) && set.vods.length > 0);
       const setRows = sets.length ? sets.map(set => {
         const outcome = ['win', 'loss'].includes(set.outcome) ? set.outcome : 'unknown';
-        const phase = set.phase && set.phase !== 'Phase not recorded' ? set.phase : 'Bracket';
+        const phase = set.phase && set.phase !== 'Phase not recorded' ? set.phase : window.i18n?.t?.('profile.setBracket') || 'Bracket';
         const isPools = set.phase && /\bpools\b/i.test(set.phase);
         const roundHtml = (!isPools && set.round) ? `<small>${esc(set.round)}</small>` : '';
 
-        let vodHtml = '<span class="set-vod"></span>';
+        let vodHtml = hasVods ? '<span class="set-vod"></span>' : '';
         const ytIconSvg = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>`;
         if (set.vods && set.vods.length > 0) {
           if (set.vods.length === 1) {
             const v = set.vods[0];
-            vodHtml = `<span class="set-vod"><a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" class="set-vod-yt-link" title="${esc(v.title || 'Watch VOD')}" aria-label="${esc(v.title || 'Watch VOD')}">${ytIconSvg}</a></span>`;
+            vodHtml = `<span class="set-vod"><a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" class="set-vod-yt-link" title="${esc(v.title || window.i18n?.t?.('profile.watchVod') || 'Watch VOD')}" aria-label="${esc(v.title || window.i18n?.t?.('profile.watchVod') || 'Watch VOD')}">${ytIconSvg}</a></span>`;
           } else {
             // Multiple VODs: dropdown/popover button
-            const vodItems = set.vods.map((v, vIdx) => `<li><a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">${v.title ? esc(v.title) : `Video ${vIdx + 1}`} ↗</a></li>`).join('');
+            const vodItems = set.vods.map((v, vIdx) => `<li><a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">${v.title ? esc(v.title) : esc(window.i18n?.t?.('profile.videoNumber',{n:vIdx+1}) || `Video ${vIdx + 1}`)} ↗</a></li>`).join('');
+            const vodsAvailable = window.i18n?.t?.('profile.vodsAvailable',{n:set.vods.length}) || `${set.vods.length} VODs available`;
             vodHtml = `
               <span class="set-vod">
                 <span class="set-vod-multi">
-                  <button type="button" class="set-vod-yt-link" title="${set.vods.length} VODs available" aria-label="${set.vods.length} VODs available" style="cursor:pointer; border:0;" onclick="const m=this.nextElementSibling; const isOpen=m.style.display==='block'; document.querySelectorAll('.vod-multi-menu').forEach(el=>el.style.display='none'); if(!isOpen) m.style.display='block'; event.stopPropagation();">
+                  <button type="button" class="set-vod-yt-link" title="${esc(vodsAvailable)}" aria-label="${esc(vodsAvailable)}" style="cursor:pointer; border:0;" onclick="const m=this.nextElementSibling; const isOpen=m.style.display==='block'; document.querySelectorAll('.vod-multi-menu').forEach(el=>el.style.display='none'); if(!isOpen) m.style.display='block'; event.stopPropagation();">
                     ${ytIconSvg}
                   </button>
                   <ul class="vod-multi-menu">
@@ -684,20 +700,20 @@ function render() {
 
         return `<div class="set-row">
           <span class="set-phase"><b>${esc(phase)}</b>${roundHtml}</span>
-          <span class="set-opponent">${linkifyOpponent(set.opponent || 'Unknown', set.opponentPlayerId)}</span>
+          <span class="set-opponent">${linkifyOpponent(set.opponent || window.i18n?.t?.('profile.unknownOpponent') || 'Unknown', set.opponentPlayerId)}</span>
           <span class="set-score">${esc(recentSetScore(set))}</span>
-          <span class="set-result ${outcome}">${outcome === 'unknown' ? 'RESULT UNKNOWN' : outcome.toUpperCase()}</span>
+          <span class="set-result ${outcome}">${window.i18n?.t?.(`profile.result.${outcome}`) || (outcome === 'unknown' ? 'RESULT UNKNOWN' : outcome.toUpperCase())}</span>
           ${vodHtml}
         </div>`;
       }).join('') : '<p class="set-empty muted">No set details were recorded for this event.</p>';
+      const setCount=window.i18n?.t?.(`profile.sets.${new Intl.PluralRules(locale()).select(sets.length)}`,{n:sets.length}) || `${sets.length} sets`;
+      const rowContent=`<span>${esc((r.event || '').split(' · ')[0])}${sel ? '' : `<small>${esc(r.game)}</small>`}</span><span>${fmt(r.date)}</span><span>${esc(r.seed ?? '—')}</span><span class="${r.place <= 3 ? `top3 p${r.place}` : ''}">${ord(r.place)}</span><span>${esc(r.entrants ?? '—')}<small class="expand-hint">${setCount}</small></span>`;
       return `<div class="result-entry">
-        <button class="tr result-toggle" type="button" aria-expanded="false" aria-controls="${detailsId}">
-          <span>${esc((r.event || '').split(' · ')[0])}${sel ? '' : `<small>${esc(r.game)}</small>`}</span><span>${fmt(r.date)}</span><span>${esc(r.seed ?? '—')}</span><span class="${r.place <= 3 ? `top3 p${r.place}` : ''}">${ord(r.place)}</span><span>${esc(r.entrants ?? '—')}<small class="expand-hint">${sets.length} set${sets.length === 1 ? '' : 's'}</small></span>
-        </button>
-        <div class="set-details" id="${detailsId}" hidden>
-          <div class="set-head"><span>PHASE</span><span>OPPONENT</span><span>SCORE</span><span>RESULT</span><span>VODS</span></div>
+        ${sets.length ? `<button class="tr result-toggle" type="button" aria-expanded="false" aria-controls="${detailsId}">${rowContent}<svg class="result-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 6 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>` : `<div class="tr result-toggle">${rowContent}<span></span></div>`}
+        ${sets.length ? `<div class="set-details result-set-details${hasVods?' has-vods':''}" id="${detailsId}" hidden>
+          <div class="set-head"><span>${esc(window.i18n?.t?.('profile.setHeader.phase') || 'Phase')}</span><span>${esc(window.i18n?.t?.('profile.setHeader.opponent') || 'Opponent')}</span><span>${esc(window.i18n?.t?.('profile.setHeader.score') || 'Score')}</span><span>${esc(window.i18n?.t?.('profile.setHeader.result') || 'Result')}</span>${hasVods?`<span>${esc(window.i18n?.t?.('profile.setHeader.vods') || 'VODs')}</span>`:''}</div>
           ${setRows}
-        </div>
+        </div>` : ''}
       </div>`;
     }).join('') : '<p class="muted">No event results recorded.</p>') +
     `</div>${rows.length < allRows.length ? '<button class="quiet-button load-more-results" type="button">Show more events</button>' : ''}</div>`;

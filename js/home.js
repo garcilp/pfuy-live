@@ -370,10 +370,11 @@ async function renderOnThisWeek() {
   if (!container) return;
 
   const now = new Date();
-  const startOfWeek = new Date(now);
-  startOfWeek.setDate(now.getDate() - 3);
-  const endOfWeek = new Date(now);
-  endOfWeek.setDate(now.getDate() + 3);
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const startOfWeek = new Date(today);
+  startOfWeek.setDate(today.getDate() - 3);
+  const endOfWeek = new Date(today);
+  endOfWeek.setDate(today.getDate() + 3);
   const locale = window.i18n?.getLang() === 'es' ? 'es-UY' : 'en-US';
   const weekRange = `${startOfWeek.toLocaleDateString(locale, { month: 'short', day: 'numeric' })} – ${endOfWeek.toLocaleDateString(locale, { month: 'short', day: 'numeric' })}`;
   const updateSubtitle = () => {
@@ -396,12 +397,13 @@ async function renderOnThisWeek() {
     const year = parseInt(parts[0], 10);
     if (year >= currentYear) return false;
 
-    const eventDate = new Date(parts[0], parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
-    // Compare day difference relative to current year anniversary
-    const anniversary = new Date(currentYear, parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
-    const diffTime = Math.abs(anniversary - now);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    return diffDays <= 3;
+    // Project the event month/day onto the local calendar window. If needed, the
+    // next-year date handles a window that crosses December/January.
+    let anniversary = new Date(currentYear, parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+    if (anniversary < startOfWeek) {
+      anniversary = new Date(currentYear + 1, parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+    }
+    return anniversary >= startOfWeek && anniversary <= endOfWeek;
   });
 
   if (!matchingEvents.length) {

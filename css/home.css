@@ -456,6 +456,10 @@
   align-self: center;
 }
 
+.home-history-mobile-meta {
+  display: none;
+}
+
 .home-history-games {
   grid-column: 3 / -1;
 }
@@ -756,7 +760,6 @@ a.home-result-winner:focus-visible {
     flex: 1 1 auto;
     max-height: 120px;
     min-height: min-content;
-    overflow: hidden;
   }
 }
 
