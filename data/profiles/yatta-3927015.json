@@ -59,16 +59,21 @@
           "opponent": "Dieguix2004",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Zoro",
+          "sets": 1,
+          "wins": 0
         }
       ],
-      "events": 2,
+      "events": 3,
       "wins": 1,
       "losses": 8,
       "upsets": 0,
       "bestPlace": 25,
       "bestEvent": "Mashito? GO! #7 · Ultimate Singles",
       "avgPlace": 29.0,
-      "avgSeed": 36,
+      "avgSeed": 40,
       "characters": [
         {
           "name": "Mega Man",
@@ -81,6 +86,49 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 48,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3526813_1_3",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "Zoro",
+              "opponentPlayerId": "1448875",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 48,
+              "opponentSeed": 17,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 48,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito? GO! #7 · Ultimate Singles",
           "eventKey": "tournament/mashito-go-7/event/ultimate-singles",

@@ -76,6 +76,11 @@
           "wins": 1
         },
         {
+          "opponent": "warwick",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "IamPro104",
           "sets": 1,
           "wins": 1
@@ -206,7 +211,7 @@
           "wins": 1
         }
       ],
-      "events": 6,
+      "events": 7,
       "wins": 17,
       "losses": 31,
       "upsets": 2,
@@ -234,6 +239,49 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 33,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3526813_1_1",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "warwick",
+              "opponentPlayerId": "4727436",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 33,
+              "opponentSeed": 32,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 33,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito GO! #6 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-6/event/smash-ultimate-singles",

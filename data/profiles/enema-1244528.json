@@ -1565,14 +1565,14 @@
           "wins": 1
         }
       ],
-      "events": 63,
+      "events": 64,
       "wins": 302,
       "losses": 153,
       "upsets": 61,
       "bestPlace": 1,
       "bestEvent": "Mashito GO! #3 · Smash Ultimate singles",
       "avgPlace": 8.6,
-      "avgSeed": 9,
+      "avgSeed": 8,
       "characters": [
         {
           "name": "Diddy Kong",
@@ -1642,6 +1642,49 @@
         }
       ],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 5,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3545171_2_2",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Quarter-Final",
+              "opponent": "Unknown",
+              "opponentPlayerId": null,
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 5,
+              "opponentSeed": null,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 2,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 5,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito? GO! #8 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-8/event/smash-ultimate-singles",

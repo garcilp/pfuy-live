@@ -437,6 +437,11 @@
           "wins": 1
         },
         {
+          "opponent": "#Washu",
+          "sets": 2,
+          "wins": 0
+        },
+        {
           "opponent": "BITS",
           "sets": 2,
           "wins": 0
@@ -617,11 +622,6 @@
           "wins": 1
         },
         {
-          "opponent": "#Washu",
-          "sets": 1,
-          "wins": 0
-        },
-        {
           "opponent": "s0uler",
           "sets": 1,
           "wins": 1
@@ -702,7 +702,7 @@
           "wins": 0
         }
       ],
-      "events": 29,
+      "events": 30,
       "wins": 44,
       "losses": 108,
       "upsets": 1,
@@ -730,6 +730,49 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 37,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3545171_1_5",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "#Washu",
+              "opponentPlayerId": "4837961",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 37,
+              "opponentSeed": 28,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 37,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Ultimo Smashdown · Smash Ultimate singles",
           "eventKey": "tournament/ultimo-smashdown/event/smash-ultimate-singles",

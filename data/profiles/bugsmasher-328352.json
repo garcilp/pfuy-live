@@ -4637,6 +4637,11 @@
           "wins": 1
         },
         {
+          "opponent": "nicolazer",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Cerdo",
           "sets": 1,
           "wins": 0
@@ -4842,14 +4847,14 @@
           "wins": 1
         }
       ],
-      "events": 36,
+      "events": 37,
       "wins": 155,
       "losses": 100,
       "upsets": 34,
       "bestPlace": 5,
       "bestEvent": "3 times",
       "avgPlace": 12.8,
-      "avgSeed": 14,
+      "avgSeed": 15,
       "characters": [
         {
           "name": "King K. Rool",
@@ -4919,6 +4924,49 @@
         }
       ],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 31,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3526814_1_1",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "nicolazer",
+              "opponentPlayerId": "4447090",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 31,
+              "opponentSeed": 34,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 31,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito? GO · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go/event/smash-ultimate-singles",

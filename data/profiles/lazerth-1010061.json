@@ -1580,6 +1580,11 @@
           "wins": 1
         },
         {
+          "opponent": "DJGA",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "Pencil",
           "sets": 1,
           "wins": 1
@@ -1800,14 +1805,14 @@
           "wins": 1
         }
       ],
-      "events": 45,
+      "events": 46,
       "wins": 260,
       "losses": 95,
       "upsets": 28,
       "bestPlace": 1,
       "bestEvent": "Montevideo Melee Monthly 2019 #6 · Ultimate Singles",
       "avgPlace": 6.5,
-      "avgSeed": 7,
+      "avgSeed": 8,
       "characters": [
         {
           "name": "Villager",
@@ -1877,6 +1882,49 @@
         }
       ],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 15,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3526814_1_2",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "DJGA",
+              "opponentPlayerId": "5693558",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 15,
+              "opponentSeed": 50,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 15,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito GO! #6 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-6/event/smash-ultimate-singles",

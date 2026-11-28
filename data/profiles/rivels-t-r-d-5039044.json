@@ -1089,16 +1089,21 @@
           "opponent": "Pal.Siito",
           "sets": 1,
           "wins": 0
+        },
+        {
+          "opponent": "Pato",
+          "sets": 1,
+          "wins": 0
         }
       ],
-      "events": 1,
+      "events": 2,
       "wins": 0,
       "losses": 4,
       "upsets": 0,
       "bestPlace": 33,
       "bestEvent": "Mashito GO! #2 · Smash Ultimate singles",
       "avgPlace": 33.0,
-      "avgSeed": 37,
+      "avgSeed": 42,
       "characters": [
         {
           "name": "Terry",
@@ -1111,6 +1116,49 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 46,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3545170_1_3",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "Pato",
+              "opponentPlayerId": "575693",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 46,
+              "opponentSeed": 19,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 46,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito GO! #2 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-2/event/smash-ultimate-singles",

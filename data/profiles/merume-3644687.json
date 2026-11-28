@@ -650,6 +650,11 @@
           "wins": 0
         },
         {
+          "opponent": "Robótico25",
+          "sets": 1,
+          "wins": 0
+        },
+        {
           "opponent": "OmegaX",
           "sets": 1,
           "wins": 0
@@ -660,7 +665,7 @@
           "wins": 0
         }
       ],
-      "events": 18,
+      "events": 19,
       "wins": 42,
       "losses": 66,
       "upsets": 3,
@@ -688,6 +693,49 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 30,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3545170_1_1",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "Robótico25",
+              "opponentPlayerId": "5546270",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 30,
+              "opponentSeed": 35,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 30,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito? GO! #8 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-8/event/smash-ultimate-singles",

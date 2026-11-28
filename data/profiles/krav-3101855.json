@@ -157,6 +157,11 @@
           "wins": 2
         },
         {
+          "opponent": "JoaquinYn",
+          "sets": 2,
+          "wins": 1
+        },
+        {
           "opponent": "Garox",
           "sets": 1,
           "wins": 0
@@ -342,11 +347,6 @@
           "wins": 0
         },
         {
-          "opponent": "JoaquinYn",
-          "sets": 1,
-          "wins": 1
-        },
-        {
           "opponent": "Balas",
           "sets": 1,
           "wins": 0
@@ -362,7 +362,7 @@
           "wins": 0
         }
       ],
-      "events": 20,
+      "events": 21,
       "wins": 53,
       "losses": 60,
       "upsets": 6,
@@ -382,6 +382,49 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 24,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3526813_1_7",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "JoaquinYn",
+              "opponentPlayerId": "5241086",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 24,
+              "opponentSeed": 41,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 24,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito? GO! #7 · Ultimate Singles",
           "eventKey": "tournament/mashito-go-7/event/ultimate-singles",

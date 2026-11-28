@@ -2492,6 +2492,11 @@
           "wins": 0
         },
         {
+          "opponent": "SFAN",
+          "sets": 4,
+          "wins": 0
+        },
+        {
           "opponent": "tatu8052",
           "sets": 4,
           "wins": 4
@@ -2578,11 +2583,6 @@
         },
         {
           "opponent": "Maxeer",
-          "sets": 3,
-          "wins": 0
-        },
-        {
-          "opponent": "SFAN",
           "sets": 3,
           "wins": 0
         },
@@ -3102,7 +3102,7 @@
           "wins": 0
         }
       ],
-      "events": 53,
+      "events": 54,
       "wins": 31,
       "losses": 243,
       "upsets": 6,
@@ -3130,6 +3130,49 @@
       ],
       "notableWins": [],
       "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 38,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3545170_1_5",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "SFAN",
+              "opponentPlayerId": "1385949",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 38,
+              "opponentSeed": 27,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 38,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        },
         {
           "event": "Mashito GO! #3 · Smash Ultimate singles",
           "eventKey": "tournament/mashito-go-3/event/smash-ultimate-singles",

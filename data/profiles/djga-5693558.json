@@ -1,0 +1,86 @@
+{
+  "player": {
+    "playerId": "5693558",
+    "tag": "DJGA",
+    "photo": "assets/players/5693558.png",
+    "sponsor": "",
+    "city": "",
+    "country": "Uruguay",
+    "location": "Uruguay",
+    "activeSince": "2026-11-28",
+    "startgg": "",
+    "startggPlayerId": "5693558",
+    "aliases": [
+      "DJGA"
+    ]
+  },
+  "games": [
+    {
+      "id": "ultimate",
+      "slug": "ultimate",
+      "name": "Ultimate",
+      "headToHead": [
+        {
+          "opponent": "Lazerth",
+          "sets": 1,
+          "wins": 0
+        }
+      ],
+      "events": 1,
+      "wins": 0,
+      "losses": 0,
+      "upsets": 0,
+      "bestPlace": null,
+      "bestEvent": "No placement recorded",
+      "avgPlace": null,
+      "avgSeed": 50,
+      "characters": [],
+      "notableWins": [],
+      "results": [
+        {
+          "event": "Mashito? GO! #9 · Smash Ultimate singles",
+          "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+          "displaySeparately": false,
+          "date": "2026-11-28",
+          "seed": 50,
+          "place": null,
+          "entrants": 50,
+          "sets": [
+            {
+              "setId": "preview_3526814_1_2",
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "phase": "Pools",
+              "round": "Winners Round 1",
+              "opponent": "Lazerth",
+              "opponentPlayerId": "1010061",
+              "score": "",
+              "outcome": "unknown",
+              "opponentExcluded": false,
+              "ownSeed": 50,
+              "opponentSeed": 15,
+              "isUpset": false,
+              "startedAt": null,
+              "phaseOrder": 1,
+              "roundOrder": 1,
+              "bracketType": "DOUBLE_ELIMINATION",
+              "games": []
+            }
+          ],
+          "characterCounts": {},
+          "sourceEvents": [
+            {
+              "eventKey": "tournament/mashito-go-9/event/smash-ultimate-singles",
+              "event": "Mashito? GO! #9 · Smash Ultimate singles",
+              "date": "2026-11-28",
+              "seed": 50,
+              "place": null,
+              "entrants": 50,
+              "characterCounts": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
