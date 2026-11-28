@@ -203,9 +203,16 @@ function characterEntriesFor(characterKey,games=Object.keys(characterBoards)){
 }
 function characterGamesTotal(entries){return entries.reduce((sum,player)=>sum+Number(player.games||0),0);}
 function characterPlayerCount(entries){return new Set(entries.map(player=>String(player.profile||player.tag||'').toLocaleLowerCase())).size;}
+const characterMetricCache=new Map();
 function characterMetric(characterKey,games=Object.keys(characterBoards)){
- const players=characterEntriesFor(characterKey,games),rankedGames=[...new Set(players.map(player=>player.game))];
- return {key:characterKey,name:nameOf(characterKey),games:rankedGames,players,total:characterGamesTotal(players),count:characterPlayerCount(players)};
+ const cacheKey=`${characterKey}\u0000${games.join('\u0000')}`;
+ let metric=characterMetricCache.get(cacheKey);
+ if(!metric){
+  const players=characterEntriesFor(characterKey,games),rankedGames=[...new Set(players.map(player=>player.game))];
+  metric={key:characterKey,games:rankedGames,players,total:characterGamesTotal(players),count:characterPlayerCount(players)};
+  characterMetricCache.set(cacheKey,metric);
+ }
+ return {...metric,name:nameOf(characterKey)};
 }
 function rankedCharacterPlayers(characterKey,game){return sortPlayers(characterEntriesFor(characterKey,[game]),'score',-1);}
 function topPlayersPerGame(characterKey,games=Object.keys(characterBoards),entrySource=characterEntriesFor){
@@ -481,18 +488,80 @@ function createSpotlightFact(id,value,values={}){
  return {id,value,en,es,text:tr(en.long,es.long)};
 }
 function chooseSpotlightFact(facts,characterKey,date=montevideoDate(),lang=window.i18n?.getLang()){
- if(!facts.length)return '';
- const language=lang==='es'?'es':'en',limit=language==='es'?70:60,start=stableHash(date+characterKey)%facts.length;
- const host=typeof location!=='undefined'?String(location.hostname||''):'';
- const isDev=/^(localhost|127(?:\.\d{1,3}){3}|\[::1\])$/.test(host);
- for(let offset=0;offset<facts.length;offset++){
-  const fact=facts[(start+offset)%facts.length],copy=fact[language]||fact.en;
-  for(const [form,text] of [['long',copy.long],['short',copy.short]]){
-   if(text&&Array.from(text).length<=limit)return text;
-  }
-  if(isDev&&typeof console!=='undefined')console.warn(`[Characters] Dropped spotlight fact "${fact.id}"; neither form fits the ${limit}-character ${language.toUpperCase()} budget.`);
+ const language=lang==='es'?'es':'en',limit=language==='es'?70:60;
+ let best=-1;
+ const choices=new Set();
+ for(const fact of facts){
+  const priority=fact.priority||0;
+  if(priority<best)continue;
+  const copy=fact[language]||fact.en;
+  const line=[copy.long,copy.short].find(text=>text&&Array.from(text).length<=limit);
+  if(!line)continue;
+  if(priority>best){choices.clear();best=priority;}
+  choices.add(line);
  }
- return '';
+ return choices.size?[...choices][stableHash(date+characterKey)%choices.size]:'';
+}
+
+function playerSpotlightFacts(player,multipleGames){
+ const facts=[],tag=player.tag,game=names[player.game]||player.game;
+ const prefix=multipleGames&&game?`${game} · `:'';
+ function add(id,priority,en,es,shortEn=en,shortEs=es){
+  facts.push({id,priority,en:{long:prefix+en,short:prefix+shortEn},es:{long:prefix+es,short:prefix+shortEs}});
+ }
+ for(const h of player.highlights||[]){
+  const opp=h.opponent,event=h.event;
+  if(h.kind==='story'&&opp){
+   const scores=h.scores||[],score=scores[0]||'';
+   const reverse=scores[h.reverseSweeps?.[0]];
+   const losses=h.prior?.[0]===0?h.prior[1]:0;
+   if(reverse){
+    const en=`${tag} reverse swept ${opp} ${reverse}.`,es=`${tag} remontó ante ${opp} y ganó ${reverse}.`;
+    add('comeback',3,losses>=2?`After ${losses} losses to ${opp}, ${tag} won ${reverse} on a reverse sweep.`:en,losses>=2?`Con historial 0–${losses} ante ${opp}, ${tag} remontó y ganó ${reverse}.`:es,en,es);
+   }else if(losses>=2){
+    add('breakthrough',3,`${tag} beat ${opp} after losing their first ${losses} sets.`,`${tag} venció a ${opp} tras perder sus primeros ${losses} sets.`);
+   }
+   if(scores.length>=2){
+    const en=`${tag} beat ${opp} ${scores.length} times at one event`,es=`${tag} venció a ${opp} ${scores.length} veces en un torneo`;
+    const eventLabel=event?.replace(/^Ultimate Smashdown (?=#\d+$)/,'Smashdown ');
+    add('repeat-wins',3,eventLabel?`${tag} beat ${opp} at ${eventLabel}, ${scores.join(' and ')}.`:en+'.',
+     eventLabel?`${tag} venció a ${opp} en ${eventLabel}, ${scores.join(' y ')}.`:es+'.',en+'.',es+'.');
+   }
+   if(h.own>h.seed&&h.seed>0){
+    const result=score?' '+score:'';
+    add('upset',3,`${tag} (seed #${h.own}) beat ${opp} (#${h.seed})${result}.`,`${tag} (seed #${h.own}) venció a ${opp} (#${h.seed})${result}.`);
+   }
+   if(h.title)add('title-set',3,`${tag} beat ${opp} to win the title.`,`${tag} venció a ${opp} para ganar el torneo.`);
+   if(score)add('set-win',2,`${tag} beat ${opp} ${score}.`,`${tag} venció a ${opp} ${score}.`);
+  }
+  if(h.kind==='best'&&h.majority&&h.place>0&&h.startSeed>h.place){
+   const en=`Seeded #${h.startSeed}, ${tag} finished #${h.place}`,es=`Con seed #${h.startSeed}, ${tag} terminó #${h.place}`;
+   add('beat-seed',3,event?`${en} at ${event}.`:en+'.',event?`${es} en ${event}.`:es+'.',en+'.',es+'.');
+  }
+  if(h.kind==='win'&&opp&&h.wins>0){
+   const en=`${tag} took ${h.wins===1?'a game':h.wins+' games'} off ${opp}`,es=`${tag} le ganó ${h.wins===1?'una partida':h.wins+' partidas'} a ${opp}`;
+   if(h.opponentPlace===1)add('game-vs-champion',3,en+', the eventual champion.',es+', quien ganó el torneo.');
+   add('game-win',2,en+'.',es+'.');
+  }
+  const amateur=h.kind==='amateurTitles';
+  const titles=amateur?h.count:h.kind==='appearances'?h.titles:0;
+  if(titles>0){
+   const en=amateur?'amateur bracket':'tournament',es=amateur?(titles===1?'cuadro amateur':'cuadros amateur'):(titles===1?'torneo':'torneos');
+   const shortEn=`${tag} won ${titles} ${en}${titles===1?'':'s'}.`;
+   const shortEs=`${tag} ganó ${titles} ${es}.`;
+   add(amateur?'amateur-title':'title',3,titles===1&&event?(amateur?`${tag} won the amateur bracket at ${event}.`:`${tag} won ${event}.`):shortEn,
+    titles===1&&event?(amateur?`${tag} ganó el cuadro amateur en ${event}.`:`${tag} ganó ${event}.`):shortEs,shortEn,shortEs);
+  }
+  if(event)add('event-pick',1,`${tag} picked this character at ${event}.`,`${tag} usó este personaje en ${event}.`,`${tag} competed at ${event}.`,`${tag} compitió en ${event}.`);
+ }
+ if(player.others?.length){
+  const others=player.others.slice(0,2);
+  add('other-picks',1,`${tag} also plays ${others.join(' and ')}.`,`${tag} también juega con ${others.join(' y ')}.`,
+   `${tag} also plays ${others[0]}.`,`${tag} también usa a ${others[0]}.`);
+ }
+ const year=player.date?.match(/^\d{4}/)?.[0];
+ if(year)add('recorded-pick',0,`${tag} played this character in ${year}.`,`${tag} jugó con este personaje en ${year}.`);
+ return facts;
 }
 function spotlightFact(character,topPlayers,items,activeGame=''){
  if(!character)return [];
@@ -501,7 +570,7 @@ function spotlightFact(character,topPlayers,items,activeGame=''){
  const characterTotal=characterGamesTotal(characterEntries);
  const playerCount=characterPlayerCount(characterEntries);
  const ranked=rankCharactersByGames(items),rank=ranked.findIndex(x=>x.key===character.key)+1;
- const facts=[];
+ const facts=characterEntries.flatMap(player=>playerSpotlightFacts(player,character.games.length>1));
  const actualGames=[...new Set(characterEntries.map(player=>player.game))];
  const topRowsValid=topPlayers.length===character.games.length&&new Set(topPlayers.map(row=>row.game)).size===topPlayers.length&&topPlayers.every(row=>{
   const gameEntries=characterEntries.filter(player=>player.game===row.game);
@@ -654,7 +723,7 @@ view.addEventListener('click', event => {
  const spotlightCharacterLink=event.target.closest('.browse-spotlight-name-link');
  if(spotlightCharacterLink&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey&&!event.altKey){rosterFilter='all';sortKey='score';sortDirection=-1;}
  const browseCharacter=event.target.closest('[data-character]');
- if(browseCharacter){const key=browseCharacter.dataset.character;const selected=rosterFilter==='all'?allRoster[key]:[rosterFilter];const target=selected.find(g=>boards[g][key])||allRoster[key]?.[0];if(key&&target){history.pushState({rosterFilter},'','#'+key+'/'+target);render();window.scrollTo(0,0);}return;}
+ if(browseCharacter){const key=browseCharacter.dataset.character;const selected=rosterFilter==='all'?allRoster[key]:[rosterFilter];const target=rosterFilter==='all'?'all':selected.find(g=>boards[g][key])||allRoster[key]?.[0];if(key&&target){history.pushState({rosterFilter},'','#'+key+'/'+target);render();window.scrollTo(0,0);}return;}
  const sortButton=event.target.closest('[data-sort]');
  if(sortButton){const next=sortButton.dataset.sort,head=sortButton.closest('th')?.dataset.sortHeader;if(sortKey===next)sortDirection*=-1;else{sortKey=next;sortDirection=next==='date'? -1:1;}const top=window.scrollY;render();view.querySelector(`[data-sort-header="${head}"] [data-sort]`)?.focus({preventScroll:true});window.scrollTo(0,top);return;}
  const gameChip=event.target.closest('.mobile-game-chips [data-game]');

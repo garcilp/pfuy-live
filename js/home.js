@@ -490,9 +490,7 @@ async function renderOnThisWeek() {
         : '';
       return renderHomeGameLine(game.game, winner, entrantsHtml);
     }).join('');
-    const dateLabel = h.date
-      ? new Date(`${h.date}T00:00:00`).toLocaleDateString(locale, { month: 'short', day: 'numeric' })
-      : '';
+    const dateLabel = h.date ? fmt(h.date) : '';
     const totalLabel = !hasPerGameEntrants && h.entrants
       ? ` · ${h.entrants} ${window.i18n?.getLang?.() === 'es' ? 'participantes' : 'entrants'}`
       : '';
@@ -504,7 +502,7 @@ async function renderOnThisWeek() {
           <a class="home-result-title" href="${esc(tourneyUrl)}">${esc(h.tournament)}</a>
           <small>${esc(dateLabel)}${esc(totalLabel)}</small>
         </span>
-        <span class="home-history-mobile-meta mono muted">${h.year} · ${esc(dateLabel)}</span>
+        <span class="home-history-mobile-meta mono muted">${esc(dateLabel)}</span>
         <div class="home-result-games home-history-games">${gameLines}</div>
       </div>
     `;
@@ -808,10 +806,10 @@ function renderCommunityPanel() {
 
   const questions = ['q1', 'q2', 'q3', 'q4'];
   accordion.innerHTML = questions.map((key, index) => `<div class="newcomer-accordion-item">
-    <button class="newcomer-question" type="button" aria-expanded="${index === 0}" aria-controls="newcomer-answer-${index}" id="newcomer-question-${index}">
+    <button class="newcomer-question" type="button" aria-expanded="false" aria-controls="newcomer-answer-${index}" id="newcomer-question-${index}">
       <span>${esc(t(`home.newcomer.${key}`))}</span><svg class="newcomer-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
     </button>
-    <div class="newcomer-answer" id="newcomer-answer-${index}" role="region" aria-labelledby="newcomer-question-${index}"${index === 0 ? '' : ' hidden'}>${esc(t(`home.newcomer.${key}Answer`))}</div>
+    <div class="newcomer-answer" id="newcomer-answer-${index}" role="region" aria-labelledby="newcomer-question-${index}" hidden>${esc(t(`home.newcomer.${key}Answer`))}</div>
   </div>`).join('');
   accordion.querySelectorAll('.newcomer-question').forEach(button => button.addEventListener('click', () => {
     accordion.querySelectorAll('.newcomer-question').forEach(other => {

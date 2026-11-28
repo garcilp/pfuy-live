@@ -679,14 +679,12 @@ a.home-result-winner:focus-visible {
     padding: 14px 4px;
   }
 
-  .home-history-row > .mono,
-  .home-history-row .home-result-tournament > small {
+  .home-history-row > .mono {
     display: none;
   }
 
   .home-history-mobile-meta {
-    display: block;
-    font-size: 12px;
+    display: none;
   }
 
   .home-history-row > .home-result-tournament {
